@@ -145,5 +145,9 @@ class Commonweb():
     def display_findelement(self,locator):
         return WebDriverWait(self.driver,10,1).until(lambda locator: self.find_element(locator))
         
-
     #浏览器后退与前进
+    def browser_back(self):
+        try:
+            self.driver.back()
+        except Exception as msg:
+            pub_method.log_output('browser_back').error('浏览器后退失败:{}'.format(msg))
