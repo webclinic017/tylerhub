@@ -146,14 +146,8 @@ class Commonweb():
         return WebDriverWait(self.driver,10,1).until(lambda locator: self.find_element(locator))
         
     #浏览器后退与前进
-    # """注释：谷歌浏览器无痕模式打开新窗口无前进或后退操作"""
-    # def browser_actions(self,act):
-    #     try:
-    #         if act=='back':
-    #             self.driver.back()
-    #         else:
-    #             self.driver.forward()
-    #     except Exception as msg:
-    #         pub_method.log_output('browser_back').error('浏览器前进后退失败:{}'.format(msg))
-
-    
+    def browser_back(self):
+        try:
+            self.driver.back() or self.driver.forward()
+        except Exception as msg:
+            pub_method.log_output('browser_back').error('浏览器前进后退失败:{}'.format(msg))

@@ -45,8 +45,7 @@ time.sleep(2)
 c.double_click('css,.hot-refresh-text')
 time.sleep(3)
 c.suspension('css,.s-top-right-text')
-time.sleep(1)
-c.web_click('css,.title-content-title')
+c.display_findelement('css,#kw').send_keys(13)
 
 # import os
 # import time
