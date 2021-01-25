@@ -156,7 +156,4 @@ class Commonweb():
     #     except Exception as msg:
     #         pub_method.log_output('browser_back').error('浏览器前进后退失败:{}'.format(msg))
 
-    def action(self):
-        
-
     
