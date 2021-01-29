@@ -153,7 +153,7 @@ class Commonweb():
         if not os.path.exists(self.pictdir_path):
             os.mkdir(self.pictdir_path)
         #截图保存
-        self.driver.get_screenshot_as_file(os.path.join(self.pictdir_path,'{}.png'.format(self.pict_name)))
+        return self.driver.get_screenshot_as_file(os.path.join(self.pictdir_path,'{}.png'.format(self.pict_name)))
 
     #关闭浏览器
     def close_browser(self):
