@@ -4,7 +4,6 @@ from other_actions import *
 from selenium.webdriver.common.action_chains import ActionChains
 import os
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.common.keys import Keys
 
 #实例化公共方法模块
 pub_method=public_method()
@@ -107,22 +106,18 @@ class Commonweb():
             pub_method.log_output('!!--!!error').error(msg)
 
     #清空输入框
-    def web_clear(self,locator,index=0):
+    def web_clear(self,locator,values,index=0):
         try:
-            self.input=self.find_element(locator,index)
-            self.input.send_keys(Keys.CONTROL,'a') #全选
-            self.input.clear()
-            #return self.find_element(locator,index).clear()
+            return self.find_element(locator,index).clear()
         except Exception as msg:
             pub_method.log_output('!!--!!error').e
 
     #点击操作
     def web_click(self,locator,index=0):
         try:
-            self.element=self.find_element(locator,index)
-            return ActionChains(self.driver).click(self.element).perform()
+            return self.find_element(locator,index).click()
         except Exception as msg:
-            pub_method.log_output('!!--!!click_error').error(msg)
+            pub_method.log_output('!!--!!error').error(msg)
 
     #双击
     def double_click(self,locator,index=0):
@@ -131,11 +126,6 @@ class Commonweb():
             ActionChains(self.driver).double_click(self.ele).perform()
         except Exception as msg:
             pub_method.log_output('!!--!!error').error(msg)
-
-    #强制刷新
-    def refresh_f5(self):
-        """强制刷新"""
-        ActionChains(self.driver).key_down(Keys.CONTROL).send_keys((Keys.F5)).key_up(Keys.CONTROL).perform()
 
     #鼠标悬浮
     def suspension(self,locator,index=0):
@@ -187,22 +177,9 @@ class Commonweb():
         except Exception as msg:
             pub_method.log_output('!!--!!switch_windows').error(msg)
 
-    #切换表单页
-    def switch_iframe(self,locator,index=0):
-        """存在嵌套页面，需要切换表单后定位"""
-        try:
-            self.frame=self.find_element(locator,index)
-            self.driver.switch_to_frame(self.frame) 
-        except Exception as msg:
-            pub_method.log_output('!!--!!switch_frame').error(msg)
 
-    #上传图片
-    def uploadimg(self):
-        """调用本地程序上传图片"""
-        try:
-            os.system(r'E:\test\client_kyc.exe')
-        except Exception as msg:
-            pub_method.log_output('!!--!!uploadimg').error(msg)   
+
+
 
         
     #浏览器后退与前进

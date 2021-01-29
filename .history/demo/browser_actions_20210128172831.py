@@ -119,10 +119,9 @@ class Commonweb():
     #点击操作
     def web_click(self,locator,index=0):
         try:
-            self.element=self.find_element(locator,index)
-            return ActionChains(self.driver).click(self.element).perform()
+            return self.find_element(locator,index).click()
         except Exception as msg:
-            pub_method.log_output('!!--!!click_error').error(msg)
+            pub_method.log_output('!!--!!error').error(msg)
 
     #双击
     def double_click(self,locator,index=0):

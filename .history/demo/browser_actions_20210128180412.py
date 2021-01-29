@@ -95,6 +95,7 @@ class Commonweb():
     def is_element_isdisplayed(self,locator,index=0):
         try:
             self.find_element(locator,index=0)
+            print('元素可见')
             return True,'元素可见'
         except Exception as msg:
             pub_method.log_output('!!--!!nosuch_elements').error(msg)

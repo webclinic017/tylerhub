@@ -95,6 +95,7 @@ class Commonweb():
     def is_element_isdisplayed(self,locator,index=0):
         try:
             self.find_element(locator,index=0)
+            print('元素可见')
             return True,'元素可见'
         except Exception as msg:
             pub_method.log_output('!!--!!nosuch_elements').error(msg)
@@ -122,7 +123,7 @@ class Commonweb():
             self.element=self.find_element(locator,index)
             return ActionChains(self.driver).click(self.element).perform()
         except Exception as msg:
-            pub_method.log_output('!!--!!click_error').error(msg)
+            pub_method.log_output('!!--!!error').error(msg)
 
     #双击
     def double_click(self,locator,index=0):

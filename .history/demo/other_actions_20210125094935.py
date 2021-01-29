@@ -1,5 +1,4 @@
 import logging
-import random
 
 """此模块用于存放公共方法"""
 class public_method():
@@ -20,26 +19,3 @@ class public_method():
         self.logger.addHandler(self.output_log)
         #返回输出日志级别
         return self.logger
-
-    #生成N位随机数字与字母组合随机数
-    def get_rangenum(self,n):
-        self.number=''.join(random.sample('0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',n))
-        return self.number
-
-    #生成N位随机纯数字或者纯字母组合随机数
-    def get_purerange(self,n,type):
-        if type=='letter':
-            self.string=''.join(random.sample('ABCDEFGHIJKLMNOPQRSTUVWXYZ',n))
-            return self.string
-        elif type=='number':
-            self.string=''.join((random.sample('0123456789',n)))
-            return self.string
-        else:
-            print('type变量请输入letter或number，生成随机纯数字或字母组合')
-
-    #生成随机邮箱
-    def get_rangenemail(self,n):
-        self.get_rangenum(n)
-        self.email_list = ['@qq.com','@163.com','@gmail.com',]
-        self.email = ''.join(self.number+str(random.choice(self.email_list))) # 随机生成联通号码
-        return self.email

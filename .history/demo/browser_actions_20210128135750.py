@@ -4,7 +4,6 @@ from other_actions import *
 from selenium.webdriver.common.action_chains import ActionChains
 import os
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.common.keys import Keys
 
 #实例化公共方法模块
 pub_method=public_method()
@@ -48,11 +47,8 @@ class Commonweb():
         except Exception as msg:
             pub_method.log_output('!!--!!url_error').warning('请输入正确的域名'.format(msg))
 
-    #自定义查找页面元素
+    #自定义查找页面元素，locator变量格式为‘定位方法，属性的值’例：css,.kw;class,kw
     def find_elements(self,locator):
-        """
-        locator:变量格式为‘定位方法，属性的值’例：css,.kw;class,kw
-        """
         #切片locator变量的值
         method,values=locator.split(',',maxsplit=1)
         try:
@@ -91,14 +87,6 @@ class Commonweb():
         except Exception as msg:
             pub_method.log_output('!!--!!nosuch_elements').error(msg)
 
-    #判断元素是否可见
-    def is_element_isdisplayed(self,locator,index=0):
-        try:
-            self.find_element(locator,index=0)
-            return True,'元素可见'
-        except Exception as msg:
-            pub_method.log_output('!!--!!nosuch_elements').error(msg)
-
     #输入操作
     def web_input(self,locator,values,index=0): #注：element变量格式与find_element方法中locator变量格式一致
         try:
@@ -106,23 +94,12 @@ class Commonweb():
         except Exception as msg:
             pub_method.log_output('!!--!!error').error(msg)
 
-    #清空输入框
-    def web_clear(self,locator,index=0):
-        try:
-            self.input=self.find_element(locator,index)
-            self.input.send_keys(Keys.CONTROL,'a') #全选
-            self.input.clear()
-            #return self.find_element(locator,index).clear()
-        except Exception as msg:
-            pub_method.log_output('!!--!!error').e
-
     #点击操作
     def web_click(self,locator,index=0):
         try:
-            self.element=self.find_element(locator,index)
-            return ActionChains(self.driver).click(self.element).perform()
+            return self.find_element(locator,index).click()
         except Exception as msg:
-            pub_method.log_output('!!--!!click_error').error(msg)
+            pub_method.log_output('!!--!!error').error(msg)
 
     #双击
     def double_click(self,locator,index=0):
@@ -131,11 +108,6 @@ class Commonweb():
             ActionChains(self.driver).double_click(self.ele).perform()
         except Exception as msg:
             pub_method.log_output('!!--!!error').error(msg)
-
-    #强制刷新
-    def refresh_f5(self):
-        """强制刷新"""
-        ActionChains(self.driver).key_down(Keys.CONTROL).send_keys((Keys.F5)).key_up(Keys.CONTROL).perform()
 
     #鼠标悬浮
     def suspension(self,locator,index=0):
@@ -175,34 +147,21 @@ class Commonweb():
 
     #切换窗口,n为下标
     def switch_windows(self,n):
+        #获取当前窗口句柄
+        self.present_handle=self.self.driver.current_window_handle()
+        #获取当前页面title
+        self.present_title=self.driver.title()
         #获取所有窗口句柄
-        self.all_handles=self.driver.window_handles
+        self.all_handles=self.driver.window_handles()
         #切换窗口
         try:
             if n<len(self.all_handles):
-                self.driver.switch_to.window(self.all_handles[n]) #切换窗口
-                print('当前窗口title:{}'.format(self.driver.title),'当前窗口句柄:{}'.format(self.driver.current_window_handle))
-            else:
-                print('{}超过窗口句柄列表下标最大值'.format(n))
-        except Exception as msg:
-            pub_method.log_output('!!--!!switch_windows').error(msg)
+                self.driver.switch_to.window(self.all_handles[n])
+                print(self.present_title)
+                
 
-    #切换表单页
-    def switch_iframe(self,locator,index=0):
-        """存在嵌套页面，需要切换表单后定位"""
-        try:
-            self.frame=self.find_element(locator,index)
-            self.driver.switch_to_frame(self.frame) 
-        except Exception as msg:
-            pub_method.log_output('!!--!!switch_frame').error(msg)
 
-    #上传图片
-    def uploadimg(self):
-        """调用本地程序上传图片"""
-        try:
-            os.system(r'E:\test\client_kyc.exe')
-        except Exception as msg:
-            pub_method.log_output('!!--!!uploadimg').error(msg)   
+
 
         
     #浏览器后退与前进

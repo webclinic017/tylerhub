@@ -49,15 +49,10 @@ c.double_click('css,.hot-refresh-text')
 time.sleep(3)
 c.suspension('css,.s-top-right-text')
 time.sleep(1)
-c.web_click('css,.soutu-btn')
-time.sleep(2)
-c.is_element_isdisplayed('css,.upload-pic')
-c.web_click('css,.upload-pic')
-time.sleep(1)
-c.uploadimg()
-# c.web_click('css,.upload-pic')
-# time.sleep(1)
-# c.uploadimg()
+
+c.web_input('css,#kw',p.get_rangenemail(6))
+c.web_clear('css,#kw')
+
 
 # import os
 # import time

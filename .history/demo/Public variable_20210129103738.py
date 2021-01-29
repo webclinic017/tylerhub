@@ -15,10 +15,6 @@ browser_actions.py 模块:
     get_screenpict(filename)                 截图当前页面
     close_browser()                          关闭浏览器
     quit_browser()                           退出浏览器进程
-    display_findelement(element)             显示等待方法
-    switch_windows(n)                        切换窗口
-    switch_iframe(locator,index=0)           切换表单
-    uploadimg()        
 
 变量:
 browsername:浏览器名称 如Firefox、Chrome
@@ -27,22 +23,11 @@ locator：定位方法及元素值，格式‘定位方法，元素值’如 'cs
 index：下标
 values：输入的值
 filename：文件夹名称
-element：css定位方法的元素值
-n：下标
-
 #############################################################################################
 #############################################################################################
 other_actions.py 模块:
 公共方法:
 log_output(name)                             自定义日志输出
-get_rangenum(n)                              数字与字母组合的随机数
-get_purerange(n,type)                        数字或者纯字母组合随机数
-get_rangenemail(n)                           随机邮箱
 
 name:错误日志名称
-n:位数
-type：随机数类型
-
-#############################################################################################
-#############################################################################################
 ///

@@ -54,9 +54,6 @@ time.sleep(2)
 c.is_element_isdisplayed('css,.upload-pic')
 c.web_click('css,.upload-pic')
 time.sleep(1)
-c.uploadimg()
-# c.web_click('css,.upload-pic')
-# time.sleep(1)
 # c.uploadimg()
 
 # import os

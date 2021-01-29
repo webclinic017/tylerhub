@@ -119,10 +119,9 @@ class Commonweb():
     #点击操作
     def web_click(self,locator,index=0):
         try:
-            self.element=self.find_element(locator,index)
-            return ActionChains(self.driver).click(self.element).perform()
+            return self.find_element(locator,index).click()
         except Exception as msg:
-            pub_method.log_output('!!--!!click_error').error(msg)
+            pub_method.log_output('!!--!!error').error(msg)
 
     #双击
     def double_click(self,locator,index=0):
@@ -196,13 +195,9 @@ class Commonweb():
         except Exception as msg:
             pub_method.log_output('!!--!!switch_frame').error(msg)
 
-    #上传图片
-    def uploadimg(self):
-        """调用本地程序上传图片"""
-        try:
-            os.system(r'E:\test\client_kyc.exe')
-        except Exception as msg:
-            pub_method.log_output('!!--!!uploadimg').error(msg)   
+
+
+
 
         
     #浏览器后退与前进

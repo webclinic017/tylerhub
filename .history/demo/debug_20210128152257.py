@@ -42,23 +42,26 @@ import time
 
 c=Commonweb()
 p=public_method()
-c.open_browser()
-c.open_web('https://www.baidu.com/')
-time.sleep(2)
-c.double_click('css,.hot-refresh-text')
-time.sleep(3)
-c.suspension('css,.s-top-right-text')
-time.sleep(1)
-c.web_click('css,.soutu-btn')
-time.sleep(2)
-c.is_element_isdisplayed('css,.upload-pic')
-c.web_click('css,.upload-pic')
-time.sleep(1)
-c.uploadimg()
-# c.web_click('css,.upload-pic')
+# c.open_browser()
+# c.open_web('https://www.baidu.com/')
+# time.sleep(2)
+# c.double_click('css,.hot-refresh-text')
+# time.sleep(3)
+# c.suspension('css,.s-top-right-text')
 # time.sleep(1)
-# c.uploadimg()
 
+# c.web_input('css,#kw',p.get_rangenemail(6))
+print(p.get_purerange(8,'55'))
+
+def p(n):
+    """
+    :return:
+    """
+    try:
+        int(n)
+    except Exception as msg:
+        print(msg)
+p(6)
 # import os
 # import time
 # print(os.getcwd())
@@ -91,3 +94,4 @@ c.uploadimg()
 #     return c+2
 
 # d=lambda y:test(y)
+# print(d(6))

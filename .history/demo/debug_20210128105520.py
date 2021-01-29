@@ -35,29 +35,27 @@
 # # logger.error('logger test error')
 # # logger.critical('logger test critical')
 
-from browser_actions import Commonweb
-from selenium import webdriver
-from other_actions import public_method
-import time
+# from browser_actions import Commonweb
+# import time
 
-c=Commonweb()
-p=public_method()
-c.open_browser()
-c.open_web('https://www.baidu.com/')
-time.sleep(2)
-c.double_click('css,.hot-refresh-text')
-time.sleep(3)
-c.suspension('css,.s-top-right-text')
-time.sleep(1)
-c.web_click('css,.soutu-btn')
-time.sleep(2)
-c.is_element_isdisplayed('css,.upload-pic')
-c.web_click('css,.upload-pic')
-time.sleep(1)
-c.uploadimg()
-# c.web_click('css,.upload-pic')
+# c=Commonweb()
+# c.open_browser()
+# c.open_web('https://www.baidu.com/')
+# time.sleep(2)
+# c.double_click('css,.hot-refresh-text')
+# time.sleep(3)
+# c.suspension('css,.s-top-right-text')
 # time.sleep(1)
-# c.uploadimg()
+
+# c.display_findelement('.title-content-title')
+
+
+def a(c):
+    return {
+        'bulye':'djidji'
+        'hjdhd':'c'
+    }
+print(a(123))
 
 # import os
 # import time
@@ -91,3 +89,4 @@ c.uploadimg()
 #     return c+2
 
 # d=lambda y:test(y)
+# print(d(6))
