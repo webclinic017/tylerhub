@@ -53,7 +53,7 @@ class Commonweb():
         """
         locator:变量格式为‘定位方法，属性的值’例：css,.kw;class,kw
         """
-        #切片locator值
+        #切片locator变量的值
         method,values=locator.split(',',maxsplit=1)
         try:
             if 'css' in method:
