@@ -1,2 +1,26 @@
 [0128/111047.719:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
 [0128/174432.329:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[0129/162950.434:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[0203/164743.177:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[0204/100027.452:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[0204/113035.039:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
+[0204/113035.041:ERROR:exception_snapshot_win.cc(99)] thread ID 14316 not found in process
+[0204/165426.697:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
+[0204/165426.698:ERROR:exception_snapshot_win.cc(99)] thread ID 58684 not found in process
+[0205/094744.125:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
+[0205/094744.127:ERROR:exception_snapshot_win.cc(99)] thread ID 85068 not found in process
+[0205/114237.131:ERROR:process_reader_win.cc(151)] SuspendThread: 拒绝访问。 (0x5)
+[0205/114237.132:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
+[0205/114237.133:ERROR:exception_snapshot_win.cc(99)] thread ID 77604 not found in process
+[0205/114237.169:ERROR:process_reader_win.cc(151)] SuspendThread: 拒绝访问。 (0x5)
+[0205/114237.169:ERROR:process_reader_win.cc(151)] SuspendThread: 拒绝访问。 (0x5)
+[0205/114237.169:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
+[0205/114237.169:ERROR:exception_snapshot_win.cc(99)] thread ID 2672 not found in process
+[0205/171455.105:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
+[0205/171455.107:ERROR:exception_snapshot_win.cc(99)] thread ID 74172 not found in process
+[0205/171842.477:ERROR:scoped_process_suspend.cc(31)] NtSuspendProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[0205/171842.477:ERROR:scoped_process_suspend.cc(31)] NtSuspendProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[0205/171842.478:ERROR:process_info.cc(118)] ReadProcessMemory bool __cdecl crashpad::(anonymous namespace)::ReadStruct(HANDLE, crashpad::WinVMAddress, T *) [T = crashpad::process_types::PEB<crashpad::process_types::internal::Traits64>]: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0205/171842.478:ERROR:process_info.cc(551)] ReadProcessData failed
+[0205/171842.478:ERROR:process_info.cc(118)] ReadProcessMemory bool __cdecl crashpad::(anonymous namespace)::ReadStruct(HANDLE, crashpad::WinVMAddress, T *) [T = crashpad::process_types::PEB<crashpad::process_types::internal::Traits64>]: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0205/171842.478:ERROR:process_info.cc(551)] ReadProcessData failed
