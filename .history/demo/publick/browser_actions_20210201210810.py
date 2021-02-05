@@ -14,9 +14,8 @@ class Commonweb():
     """浏览器驱动，访问url等自定义基类方法"""
     #定义全局变量
     global driver
-
     def open_browser(self,browsername='Chrome'):
-        """打开浏览器，浏览器名称：Firefox，Chrome，默认以谷歌浏览器打开"""
+        """打开浏览器，浏览器名称：Firefox，Chrome，目前只下载了这两种浏览器的驱动"""
         try:
             if browsername=='firefox' or browsername=='Firefox' or browsername=='fx': #火狐浏览器
                 #配置浏览器
@@ -25,7 +24,7 @@ class Commonweb():
                 options.add_argument('lang=zh_CN.UTF-8') #初始化浏览器默认编码格式
                 options.add_argument('--incognito') #无痕模式
                 options.add_argument('--start-maximized') #浏览器全频
-                self.driver=webdriver.Firefox(options=options) #添加配置
+                self.driver=webdriver.Firefox(firefox_options=options) #添加配置
                 self.driver.implicitly_wait(20) #隐式等待20s
             elif browsername=='chrome' or browsername=='Chrome':
                 #配置浏览器
@@ -34,14 +33,14 @@ class Commonweb():
                 options.add_argument('lang=zh_CN.UTF-8') #初始化浏览器默认编码格式
                 options.add_argument('--incognito') #无痕模式
                 options.add_argument('--start-maximized') #浏览器全频
-                self.driver=webdriver.Chrome(options=options)#添加配置
+                self.driver=webdriver.Chrome(chrome_options=options)#添加配置
                 self.driver.implicitly_wait(20) #隐式等待20s
             else:
                 pub_method.log_output('!!--!!driver_browser').info('没有找到这种浏览器驱动，你可以尝试输入firefox、Firefox、fx、chrome、Chrome')
             return self.driver
         except Exception as msg:
             pub_method.log_output('!!--!!driver_name').error('启动浏览器异常{}'.format(msg))
-
+    
     #访问url
     def open_web(self,url):
         try:
@@ -54,7 +53,7 @@ class Commonweb():
         """
         locator:变量格式为‘定位方法，属性的值’例：css,.kw;class,kw
         """
-        #切片locator值
+        #切片locator变量的值
         method,values=locator.split(',',maxsplit=1)
         try:
             if 'css' in method:
@@ -120,9 +119,8 @@ class Commonweb():
     #点击操作
     def web_click(self,locator,index=0):
         try:
-            return self.find_element(locator,index).click()
-            # self.element=self.find_element(locator,index)
-            # return ActionChains(self.driver).click(self.element).perform()
+            self.element=self.find_element(locator,index)
+            return ActionChains(self.driver).click(self.element).perform()
         except Exception as msg:
             pub_method.log_output('!!--!!click_error').error(msg)
 
@@ -148,7 +146,7 @@ class Commonweb():
             pub_method.log_output('!!--!!error').error(msg)
 
     #截图,自定义保存截图的文件夹名称
-    def get_screenpict(self,name,filename='picture',):
+    def get_screenpict(self,filename='picture',name):
         self.pict_name=time.strftime('%Y-%m-%d-%H.%M.%S',time.localtime(time.time())) #当前时间命名图片名
         self.pictdir_path=os.path.join(os.sys.path[0],filename)  #在当前路径下创建保存截图的文件夹
         #判断储存截图文件夹是否存在，如不存在则创建
