@@ -129,6 +129,9 @@ class form_operations(Commonweb):
             self.get_screenpict('表单注册页填写失败')
             pub_method.log_output('!!--!!language_error').error('表单页填写错误:{}'.format(msg))
 
+
+
+
     #关闭浏览器
     def closedriver(self):
         self.close_browser()

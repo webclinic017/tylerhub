@@ -24,7 +24,7 @@ form=form_operations()
 #数据驱动
 @ddt.ddt
 class register_cp(unittest.TestCase):
-    """会员中心注册页表单，调用form_operations类中封装的表单填写方法"""
+    """会员中心注册页表单"""
 
     #预置条件
     def setUp(self):

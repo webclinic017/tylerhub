@@ -26,7 +26,7 @@ class form_operations(Commonweb):
         self.driver=self.open_browser(browsername)
 
     #根据链接/邀请码/直客注册
-    def get_url(self,url,code,column,row): #link:专属链接；code:邀请码；cloumn:列；row:行
+    def get_url(self,url,code,column,row): #link:专属链接；code:邀请码；l&n:文档中第几行第几列 
         """判断是通过专属链接还是邀请码注册"""
         try:
             if len(url)!=0:
@@ -128,6 +128,9 @@ class form_operations(Commonweb):
             #截图
             self.get_screenpict('表单注册页填写失败')
             pub_method.log_output('!!--!!language_error').error('表单页填写错误:{}'.format(msg))
+
+
+
 
     #关闭浏览器
     def closedriver(self):

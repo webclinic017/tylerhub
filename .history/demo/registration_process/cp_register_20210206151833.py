@@ -13,10 +13,12 @@ sys.path.append(path)
 from about_data import exceldata
 from browser_actions import Commonweb
 
+
 #读取测试文档数据
 e=exceldata()
 rows=e.openexcel(r'E:\test\country.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
 testdata=e.dict_data()
+
 
 #实例化对象
 form=form_operations()
@@ -24,7 +26,7 @@ form=form_operations()
 #数据驱动
 @ddt.ddt
 class register_cp(unittest.TestCase):
-    """会员中心注册页表单，调用form_operations类中封装的表单填写方法"""
+    """会员中心注册页表单"""
 
     #预置条件
     def setUp(self):

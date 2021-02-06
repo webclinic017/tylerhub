@@ -35,14 +35,11 @@ n：下标
 #############################################################################################
 other_actions.py 模块:
 公共方法:
-    log_output(name)                           自定义日志输出
-    get_rangenum(n)                            数字与字母组合的随机数
-    get_purerange(n,type)                      数字或者纯字母组合随机数
-    get_rangenemail(n)                         随机邮箱
-    get_rangephone()                           随机手机号码
+log_output(name)                             自定义日志输出
+get_rangenum(n)                              数字与字母组合的随机数
+get_purerange(n,type)                        数字或者纯字母组合随机数
+get_rangenemail(n)                           随机邮箱
 
-
-变量:
 name:错误日志名称
 n:位数
 type：随机数类型

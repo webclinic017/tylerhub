@@ -18,15 +18,20 @@ pub_method=public_method()
 
 #创建继承基础类的注册页表单操作模块
 class form_operations(Commonweb):
-    """会员中心注册页表单方法封装，注册页表单填写，定位元素封装在此类中，若页面元素发生变化，维护此模块即可"""
+    """会员中心注册页表单方法封装，注册页表单填写"""
     global driver
     
     #默认以谷歌浏览器执行测试用例
     def browsertype(self,browsername='Chrome'):
         self.driver=self.open_browser(browsername)
 
+
+    def geturl(self,url):
+        self.open_web(url)
+        
+
     #根据链接/邀请码/直客注册
-    def get_url(self,url,code,column,row): #link:专属链接；code:邀请码；cloumn:列；row:行
+    def get_url(self,url,code,column,row): #link:专属链接；code:邀请码；l&n:文档中第几行第几列 
         """判断是通过专属链接还是邀请码注册"""
         try:
             if len(url)!=0:
@@ -42,9 +47,6 @@ class form_operations(Commonweb):
                 time.sleep(2)
                 ex.saveainfo(r'E:\test\account_number.xlsx','邀请码', column, row)#备注注册方式
                 self.register_topup()
-                time.sleep(1)
-                #输入邀请码
-                self.web_input('css,.el-textarea__inner',code)
                 print('邀请码注册')
             else:
                 #直客注册
@@ -72,7 +74,6 @@ class form_operations(Commonweb):
         try:
             self.web_click('css,.blk-sure-btn')
         except Exception as msg:
-            self.get_screenpict('去除弹窗')
             pub_method.log_output('!!--!!topup').error('注册页弹窗去除失败：{}'.format(msg))
 
     #选择注册页弹窗语言
@@ -125,9 +126,10 @@ class form_operations(Commonweb):
             self.web_input('css,.el-input__inner','验证码',9)
             time.sleep(1)
         except Exception as msg:
-            #截图
-            self.get_screenpict('表单注册页填写失败')
             pub_method.log_output('!!--!!language_error').error('表单页填写错误:{}'.format(msg))
+
+
+
 
     #关闭浏览器
     def closedriver(self):

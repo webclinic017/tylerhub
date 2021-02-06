@@ -13,10 +13,12 @@ sys.path.append(path)
 from about_data import exceldata
 from browser_actions import Commonweb
 
+
 #读取测试文档数据
 e=exceldata()
 rows=e.openexcel(r'E:\test\country.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
 testdata=e.dict_data()
+
 
 #实例化对象
 form=form_operations()
@@ -24,15 +26,15 @@ form=form_operations()
 #数据驱动
 @ddt.ddt
 class register_cp(unittest.TestCase):
-    """会员中心注册页表单，调用form_operations类中封装的表单填写方法"""
+    """会员中心注册页表单"""
 
     #预置条件
     def setUp(self):
         form.browsertype() #每个测试用例默认以谷歌浏览器打开
     
-    #环境恢复，退出并关闭浏览器进程
-    def tearDown(self):
-        form.quitdriver()
+    # #环境恢复，退出并关闭浏览器进程
+    # def tearDown(self):
+    #     form.quitdriver()
 
     @ddt.data(*testdata)
     def test_register(self,data):
@@ -50,6 +52,9 @@ class register_cp(unittest.TestCase):
             form.get_url(data['专属链接'],data['邀请码'],'F',self.data_index+2)
             #填写注册表单,参数依次为：页面语言，名字，姓氏，邮箱，密码，中文国家名，英文国家名
             form.fill_inform('EN','test','tyler',data['邮箱'],'Tl123456',data['国家'],data['country'])
-       
+
+
+
+        
 if __name__=='__main__':
     unittest.main()

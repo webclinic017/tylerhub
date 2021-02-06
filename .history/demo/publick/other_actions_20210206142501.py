@@ -37,7 +37,7 @@ class public_method():
         else:
             print('type变量请输入letter或number，生成随机纯数字或字母组合')
 
-    #生成n位数随机邮箱
+    #生成随机邮箱
     def get_rangenemail(self,n):
         self.get_rangenum(n)
         self.email_list = ['@qq.com','@163.com','@gmail.com',]
@@ -51,7 +51,7 @@ class public_method():
         self.phonenum=random.choice(self.phone_list)+''.join(random.sample('0123456789',8))
         return self.phonenum
 
-#测试
+
 if __name__=='__main__':
     pub=public_method()
     print(pub.get_rangephone())
