@@ -1,3 +1,6 @@
+from selenium import webdriver
+import unittest
+import ddt
 import sys
 import os
 import time
@@ -53,7 +56,7 @@ class form_operations(Commonweb):
             pub_method.log_output('!!--!!get_url').error('访问注册页异常{}'.format(msg))
 
     #判断注册国家是否为UK国家
-    def country_isuk(self,country):
+    def country_isuk(self):
         self.uk_list=['阿尔巴尼亚','Albania','安道尔','Andorra','奥地利','Austria','波斯尼亚和黑塞哥维那','Bosnia and Herzegovina',
         '保加利亚','Bulgaria','克罗地亚','塞浦路斯','Cyprus','捷克共和国','Czech Republic','丹麦','Denmark','爱沙尼亚','Estonia',
         '芬兰','Finland','佐治亚州','Georgia','德国','Germany','直布罗陀','Gibraltar','希腊','Greece','匈牙利','Hungary','冰岛','Iceland',
@@ -62,11 +65,11 @@ class form_operations(Commonweb):
         '塞尔维亚共和国','罗马尼亚','Romania','圣马力诺','San Marino','斯洛伐克','Slovakia','斯洛文尼亚','Slovenia','西班牙','Spain',
         '瑞典','Sweden','瑞士','Switzerland','英国','United Kingdom']
         print(self.uk_list)       
-        if country in self.uk_list:
-            print('AT Global Markets Limited 不接受居住在这个国家的个人申请。')
-            return True
-        else:
-            return False
+        # if country in self.uk_list:
+        #     print('AT Global Markets Limited 不接受居住在这个国家的个人申请。')
+        #     return True
+        # else:
+        #     return False
 
     #去除注册页弹窗
     def register_topup(self):
@@ -129,22 +132,6 @@ class form_operations(Commonweb):
             #截图
             self.get_screenpict('表单注册页填写失败')
             pub_method.log_output('!!--!!language_error').error('表单页填写错误:{}'.format(msg))
-    
-    #提交表单
-    def submit(self):
-        try:
-            self.web_click('css,.login-btn')
-        except Exception as msg:
-            pub_method.log_output('!!--!!submit').error('标题提交失败：{}'.format(msg))
-
-    #去除首次登录
-    def fistcp_top(self):
-        try:
-            self.web_click('css,.el-checkbox__inner')
-            time.sleep(1)
-            self.web_click('css,.confirm-btn')
-        except Exception as msg:
-            pub_method.log_output('!!--!!topup').error('首次登录弹窗点击失败{}'.format(msg))
 
     #关闭浏览器
     def closedriver(self):
@@ -153,7 +140,6 @@ class form_operations(Commonweb):
     #退出浏览器
     def quitdriver(self):
         self.quit_browser()
-
 
 if __name__=='__main__':
     print(pub_method.get_rangephone()+'qq.com')

@@ -4,6 +4,7 @@ import unittest
 import ddt
 import sys
 import os
+import time
 from register_method import form_operations
 """跨目录调用，需要将导入的包加入sys.path中"""
 path=os.path.dirname(os.path.dirname(__file__))
@@ -50,9 +51,9 @@ class register_cp(unittest.TestCase):
             #填写注册表单,参数依次为：页面语言，名字，姓氏，邮箱，密码，中文国家名，英文国家名
             form.fill_inform('简中','test','tyler',data['邮箱'],'Tl123456',data['国家'],data['country'])
             #提交表单
-            # form.submit()
-            # #去除登录页弹窗
-            # form.fistcp_top()
+            form.submit()
+            #去除登录页弹窗
+            form.fistcp_top()
        
 if __name__=='__main__':
     unittest.main()

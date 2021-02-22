@@ -1,3 +1,6 @@
+from selenium import webdriver
+import unittest
+import ddt
 import sys
 import os
 import time
@@ -129,22 +132,6 @@ class form_operations(Commonweb):
             #截图
             self.get_screenpict('表单注册页填写失败')
             pub_method.log_output('!!--!!language_error').error('表单页填写错误:{}'.format(msg))
-    
-    #提交表单
-    def submit(self):
-        try:
-            self.web_click('css,.login-btn')
-        except Exception as msg:
-            pub_method.log_output('!!--!!submit').error('标题提交失败：{}'.format(msg))
-
-    #去除首次登录
-    def fistcp_top(self):
-        try:
-            self.web_click('css,.el-checkbox__inner')
-            time.sleep(1)
-            self.web_click('css,.confirm-btn')
-        except Exception as msg:
-            pub_method.log_output('!!--!!topup').error('首次登录弹窗点击失败{}'.format(msg))
 
     #关闭浏览器
     def closedriver(self):
@@ -153,7 +140,6 @@ class form_operations(Commonweb):
     #退出浏览器
     def quitdriver(self):
         self.quit_browser()
-
 
 if __name__=='__main__':
     print(pub_method.get_rangephone()+'qq.com')

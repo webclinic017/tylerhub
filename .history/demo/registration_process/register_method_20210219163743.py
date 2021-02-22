@@ -1,3 +1,6 @@
+from selenium import webdriver
+import unittest
+import ddt
 import sys
 import os
 import time
@@ -60,8 +63,7 @@ class form_operations(Commonweb):
         '爱尔兰','Ireland','意大利','Italy','拉脱维亚','Latvia','列支敦士登','Liechtenstein','立陶宛','Lithuania','卢森堡','Luxembourg',
         '马其顿','North Macedonia','马耳他','摩纳哥','Monaco','黑山共和国','Montenegro','荷兰','Netherlands','挪威','Norway','葡萄牙','Portugal',
         '塞尔维亚共和国','罗马尼亚','Romania','圣马力诺','San Marino','斯洛伐克','Slovakia','斯洛文尼亚','Slovenia','西班牙','Spain',
-        '瑞典','Sweden','瑞士','Switzerland','英国','United Kingdom']
-        print(self.uk_list)       
+        '瑞典','Sweden','瑞士','Switzerland','英国','United Kingdom']           
         if country in self.uk_list:
             print('AT Global Markets Limited 不接受居住在这个国家的个人申请。')
             return True
@@ -129,22 +131,6 @@ class form_operations(Commonweb):
             #截图
             self.get_screenpict('表单注册页填写失败')
             pub_method.log_output('!!--!!language_error').error('表单页填写错误:{}'.format(msg))
-    
-    #提交表单
-    def submit(self):
-        try:
-            self.web_click('css,.login-btn')
-        except Exception as msg:
-            pub_method.log_output('!!--!!submit').error('标题提交失败：{}'.format(msg))
-
-    #去除首次登录
-    def fistcp_top(self):
-        try:
-            self.web_click('css,.el-checkbox__inner')
-            time.sleep(1)
-            self.web_click('css,.confirm-btn')
-        except Exception as msg:
-            pub_method.log_output('!!--!!topup').error('首次登录弹窗点击失败{}'.format(msg))
 
     #关闭浏览器
     def closedriver(self):
@@ -153,7 +139,6 @@ class form_operations(Commonweb):
     #退出浏览器
     def quitdriver(self):
         self.quit_browser()
-
 
 if __name__=='__main__':
     print(pub_method.get_rangephone()+'qq.com')

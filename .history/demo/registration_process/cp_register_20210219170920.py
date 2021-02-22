@@ -4,6 +4,7 @@ import unittest
 import ddt
 import sys
 import os
+import time
 from register_method import form_operations
 """跨目录调用，需要将导入的包加入sys.path中"""
 path=os.path.dirname(os.path.dirname(__file__))
