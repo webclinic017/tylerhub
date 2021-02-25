@@ -24,7 +24,7 @@ class kyc_actions(unittest.TestCase):
         kyc.browsertype() #默认以谷歌浏览器打开
         #访问CP及BOS登录页，选择页面语言
         kyc.loginweb('CN')
-        kyc.login_bos('tyler.tang','Tl123456')
+        kyc.login_bos('tyler','Tl123456')
 
 
     @ddt.data(*testdata)

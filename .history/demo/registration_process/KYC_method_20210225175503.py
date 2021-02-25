@@ -97,7 +97,6 @@ class kyc_approve(Commonweb):
             time.sleep(1)
             #点击登录
             self.web_click('css,.ivu-btn-large')
-            time.sleep(1)
         except Exception as msg:
             pub_method.log_output('!!--!!lgoin-bos').error('登录bos失败：{}'.format(msg))
 

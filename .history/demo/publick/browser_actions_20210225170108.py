@@ -207,8 +207,8 @@ class Commonweb():
             pub_method.log_output('!!--!!uploadimg').error(msg)   
 
     #JS新开窗口
-    def js_openwindows(self,url):
-        self.js = 'window.open("{}")'.format(url)
+    def js_openwindows(self):
+        self.js = 'window.open("https://at-bos-frontend-uat.atfxdev.com/login")'
         self.driver.execute_script(self.js)
 
     #浏览器后退与前进

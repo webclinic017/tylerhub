@@ -22,9 +22,8 @@ class kyc_actions(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         kyc.browsertype() #默认以谷歌浏览器打开
-        #访问CP及BOS登录页，选择页面语言
-        kyc.loginweb('CN')
-        kyc.login_bos('tyler.tang','Tl123456')
+        #新开窗口访问bos登录页
+        kyc.open_newwindow()
 
 
     @ddt.data(*testdata)
@@ -33,7 +32,7 @@ class kyc_actions(unittest.TestCase):
         self.data_index=testdata.index(data)
 
         #登录会员中心
-        kyc.login_cp(data['邮箱'],'Tl123456')
+        kyc.login_cp('CN',data['邮箱'],'Tl123456')
 
 
 if __name__=='__main__':

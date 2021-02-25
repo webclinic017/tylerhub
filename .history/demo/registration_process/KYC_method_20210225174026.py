@@ -63,18 +63,15 @@ class kyc_approve(Commonweb):
             #新开窗口访问bos登录页
             self.js_openwindows('https://at-bos-frontend-sit.atfxdev.com/login')
             #切换窗口
-            self.switch_windows(1)
+            self.switch_iframe(1)
             #选择页面语言
             self.bos_lang(lang)
-            time.sleep(1)
         except Exception as msg:
             pub_method.log_output('!!--!!loginweb').error('访问cp/bos登录页失败：{}'.format(msg))
    
     #登录会员中心
     def login_cp(self,username,psword):
         try:
-            #切换窗口
-            self.switch_windows(0)
             #输入用户名
             self.web_input('css,.el-input__inner',username,1)
             time.sleep(1)
@@ -84,24 +81,7 @@ class kyc_approve(Commonweb):
             #点击登录
             self.web_click('css,.login-btn')
         except Exception as msg:
-            pub_method.log_output('!!--!!lgoin_cp').error('登录会员中心失败：{}'.format(msg))
-
-    #登录bos
-    def login_bos(self,username,psword):
-        try:
-            #输入bos用户名
-            self.web_input('css,.ivu-input-default',username)
-            time.sleep(1)
-            #输入密码
-            self.web_input('css,.ivu-input-default',psword,1)
-            time.sleep(1)
-            #点击登录
-            self.web_click('css,.ivu-btn-large')
-            time.sleep(1)
-        except Exception as msg:
-            pub_method.log_output('!!--!!lgoin-bos').error('登录bos失败：{}'.format(msg))
-
-
+            pub_method.log_output('!!--!!lgoin').error('登录会员中心失败：{}'.format(msg))
 
     #KYC认证操作
     def get_onkyc(self):

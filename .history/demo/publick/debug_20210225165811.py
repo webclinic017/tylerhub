@@ -93,9 +93,6 @@
 #     return c+2
 
 # d=lambda y:test(y)
-from browser_actions import Commonweb
-
-c=Commonweb()
-c.open_browser()
-c.open_web('https://at-client-portal-uat-proxy.ntdevops.com/lgoin')
-c.js_openwindows('https://at-bos-frontend-uat.atfxdev.com/login')
+ from browser_actions import Commonweb
+ c=Commonweb()
+ c.open_web('https://at-client-portal-uat-proxy.ntdevops.com/lgoin')

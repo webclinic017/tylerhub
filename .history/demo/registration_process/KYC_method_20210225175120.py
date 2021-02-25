@@ -66,15 +66,12 @@ class kyc_approve(Commonweb):
             self.switch_windows(1)
             #选择页面语言
             self.bos_lang(lang)
-            time.sleep(1)
         except Exception as msg:
             pub_method.log_output('!!--!!loginweb').error('访问cp/bos登录页失败：{}'.format(msg))
    
     #登录会员中心
     def login_cp(self,username,psword):
         try:
-            #切换窗口
-            self.switch_windows(0)
             #输入用户名
             self.web_input('css,.el-input__inner',username,1)
             time.sleep(1)
@@ -94,10 +91,8 @@ class kyc_approve(Commonweb):
             time.sleep(1)
             #输入密码
             self.web_input('css,.ivu-input-default',psword,1)
-            time.sleep(1)
             #点击登录
             self.web_click('css,.ivu-btn-large')
-            time.sleep(1)
         except Exception as msg:
             pub_method.log_output('!!--!!lgoin-bos').error('登录bos失败：{}'.format(msg))
 

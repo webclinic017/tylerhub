@@ -10,6 +10,7 @@ path=os.path.dirname(os.path.dirname(__file__))
 path=os.path.join(path,'publick')
 sys.path.append(path)
 from about_data import exceldata
+from browser_actions import Commonweb
 
 #读取测试文档数据
 e=exceldata()
@@ -45,17 +46,13 @@ class register_cp(unittest.TestCase):
             form.closedriver() #关闭浏览器
         else:
             #访问不同注册地址，专属链接/直客注册
-            form.get_url(data['专属链接'],data['邀请码'],'E',self.data_index+2)
+            form.get_url(data['专属链接'],data['邀请码'],'F',self.data_index+2)
             #填写注册表单,参数依次为：页面语言，名字，姓氏，邮箱，密码，中文国家名，英文国家名
             form.fill_inform('简中','test','tyler',data['邮箱'],'Tl123456',data['国家'],data['country'])
             #提交表单
             # form.submit()
             # #去除登录页弹窗
             # form.fistcp_top()
-            #保存测试数据
-            e.saveainfo(r'E:\test\account_number.xlsx',data['国家'],'A',self.data_index+2)
-            e.saveainfo(r'E:\test\account_number.xlsx',data['邮箱'],'B',self.data_index+2)
-            e.saveainfo(r'E:\test\account_number.xlsx',data['三字码'],'D',self.data_index+2)
        
 if __name__=='__main__':
     unittest.main()

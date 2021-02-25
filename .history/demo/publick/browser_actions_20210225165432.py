@@ -208,7 +208,7 @@ class Commonweb():
 
     #JS新开窗口
     def js_openwindows(self,url):
-        self.js = 'window.open("{}")'.format(url)
+        self.js='window.open({})'.format(url)
         self.driver.execute_script(self.js)
 
     #浏览器后退与前进
