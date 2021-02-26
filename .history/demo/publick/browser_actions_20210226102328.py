@@ -199,12 +199,12 @@ class Commonweb():
             pub_method.log_output('!!--!!switch_frame').error(msg)
 
     #上传图片
-    def uploaded(self):
+    def uploadimg(self):
         """调用本地程序上传图片"""
         try:
             os.system(r'E:\test\client_kyc.exe')
         except Exception as msg:
-            pub_method.log_output('!!--!!upload').error(msg)   
+            pub_method.log_output('!!--!!uploadimg').error(msg)   
 
     #JS新开窗口
     def js_openwindows(self,url):
