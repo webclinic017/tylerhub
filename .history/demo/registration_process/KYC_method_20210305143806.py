@@ -309,6 +309,7 @@ class kyc_approve(Commonweb):
     def get_kyc_success(self):
         try:
             self.text= self.get_text('css,.title',1)
+            print(self.text)
             return self.text
         except Exception as msg:
             pub_method.log_output('!!--!!get_kyc_success').error(msg)

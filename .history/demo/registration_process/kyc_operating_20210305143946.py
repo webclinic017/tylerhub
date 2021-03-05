@@ -49,7 +49,7 @@ class kyc_actions(unittest.TestCase):
         #登录会员中心
         kyc.login_cp(data['邮箱'],'Tl123456')
         #去除首次登录会员中心的弹窗
-        kyc.fisrtcp_top()
+        # kyc.fisrtcp_top()
         #获取主账号并保存
         e.saveainfo(r'E:\test\account_number.xlsx',kyc.get_account_(),'C',self.data_index+2)
         print('当前测试数据:邮箱{}'.format(data['邮箱']))
