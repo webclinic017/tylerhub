@@ -19,7 +19,7 @@ class kyc_actions(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        kyc.browsertype() #默认以谷歌浏览器打开
+        kyc.browser() #默认以谷歌浏览器打开
         #访问CP及bos登录页，选择页面语言
         kyc.loginweb('CN')
         #登录bos，并打开客户名单页
@@ -46,7 +46,7 @@ class kyc_actions(unittest.TestCase):
         else:
             pass
         #登录会员中心
-        kyc.login_cp(data['邮箱'],'Tl123456')
+        kyc.logincp(data['邮箱'],'Tl123456')
         #去除首次登录会员中心的弹窗
         kyc.fisrtcp_top()
         #获取主账号并保存

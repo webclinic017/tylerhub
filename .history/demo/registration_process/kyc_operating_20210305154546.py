@@ -46,7 +46,7 @@ class kyc_actions(unittest.TestCase):
         else:
             pass
         #登录会员中心
-        kyc.login_cp(data['邮箱'],'Tl123456')
+        kyc.logincp(data['邮箱'],'Tl123456')
         #去除首次登录会员中心的弹窗
         kyc.fisrtcp_top()
         #获取主账号并保存
