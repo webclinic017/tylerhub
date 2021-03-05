@@ -40,20 +40,20 @@ class kyc_actions(unittest.TestCase):
     def test_kyc(self,data):
         #获取每组测试数据的下标
         self.data_index=testdata.index(data)
+        #登录会员中心
+        kyc.login_cp(data['邮箱'],'Tl123456')
         #除了第一个测试用例外，其他用例都必须点击登录页弹窗
         if self.data_index!=0:
             print(self.data_index)
             kyc.login_topup()
         else:
             pass
-        #登录会员中心
-        kyc.login_cp(data['邮箱'],'Tl123456')
         #去除首次登录会员中心的弹窗
         kyc.fisrtcp_top()
         #获取主账号并保存
         e.saveainfo(r'E:\test\account_number.xlsx',kyc.get_account_(),'C',self.data_index+2)
         print('当前测试数据:邮箱{}'.format(data['邮箱']))
-        #KYC表单认证
+
         kyc.get_on_kyc()
 
 if __name__=='__main__':

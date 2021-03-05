@@ -50,13 +50,14 @@ class register_cp(unittest.TestCase):
             form.fill_inform('简中','test','tyler',data['邮箱'],'Tl123456',data['国家'],data['country'])
             #提交表单
             # form.submit()
-            #断言
-            # self.assertIn(form.register_success(),'Company Declaration 公司声明')
+            #断言：
+            self.assertIn(form.register_success(),'Company Declaration 公司声明')
+
             #保存测试数据
             e.saveainfo(r'E:\test\account_number.xlsx',data['国家'],'A',self.data_index+2)
             e.saveainfo(r'E:\test\account_number.xlsx',data['邮箱'],'B',self.data_index+2)
             e.saveainfo(r'E:\test\account_number.xlsx',data['三字码'],'D',self.data_index+2)
-
+            #e.saveainfo(r'E:\test\account_number.xlsx',form.get_account_(),'C',self.data_index+2) #获取主账号并保存
       
 if __name__=='__main__':
     unittest.main()

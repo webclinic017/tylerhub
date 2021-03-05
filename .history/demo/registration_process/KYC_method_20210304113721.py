@@ -23,7 +23,6 @@ class kyc_approve(Commonweb):
     def login_topup(self):
         try:
             self.switch_windows(0)
-            time.sleep(1)
             self.web_click('css,.blk-sure-btn')
         except Exception as msg:
             pub_method.log_output('!!--!!topup').error('页面弹窗去除失败：{}'.format(msg))
@@ -89,48 +88,6 @@ class kyc_approve(Commonweb):
         except Exception as msg:
             pub_method.log_output('!!--!!lgoin_cp').error('登录会员中心失败：{}'.format(msg))
 
-    #去除首次登录会员中心的弹窗
-    def fisrtcp_top(self):
-        try:
-            self.switch_windows(0)
-            self.web_click('css,.el-checkbox__inner')
-            time.sleep(1)
-            self.web_click('css,.confirm-btn')
-        except Exception as msg:
-            pub_method.log_output('!!--!!topup').error('首次登录弹窗点击失败{}'.format(msg))
-
-    #获取登录成功后的主账号
-    def get_account_(self):
-        try:
-            #取消验证联系方式
-            self.web_click('css,.btn-cancel')
-            time.sleep(1)
-            #获取主账号文本
-            acc=self.get_text('css,.user-name-font')
-            #提取数字
-            self.account=pub_method.extract_numbers(acc)
-            return self.account
-        except Exception as msg:
-            pub_method.log_output('!!--!!topup').error('获取主账号失败{}'.format(msg))
-
-    #判断是否为返佣账号，如是，点击返佣申请表格
-    def is_rebate_type(self):
-        self.web_click('css,.menu-font',1)
-        time.sleep(1)
-        if self.account[0:2]=='10':
-            #点击代理申请
-            self.web_click('css,.el-button--primary')
-            time.sleep(1)
-            #同意IB协议
-            self.web_click('css,.el-checkbox__inner',2)
-            time.sleep(1)
-            #提交
-            self.web_click('css,.agree-btn')
-            time.sleep(1)
-        else:
-            #点击验证联系方式
-            self.web_click('css,.el-button--primary')
-
     #登出会员中心
     def logout_cp(self):
         self.switch_windows(0)
@@ -166,15 +123,17 @@ class kyc_approve(Commonweb):
             pub_method.log_output('!!--!!lgoin-bos').error('登录bos失败：{}'.format(msg))
 
     #验证邮箱
-    def verification_emali(self):
+    def verification_emali(self,account):
         try:
-            self.is_rebate_type()
+            time.sleep(1)
+            #认证联系方式
+            self.web_click('css,.el-button--primary')
             time.sleep(1)
             #发送邮箱验证码
             self.web_click('css,.dialog-sendCode')
             time.sleep(1)
             #获取邮箱验证码
-            self.get_emailcode_()
+            self.get_emailcode_(account)
             #填写邮箱验证
             self.switch_windows(0)
             time.sleep(1)
@@ -247,13 +206,13 @@ class kyc_approve(Commonweb):
             pub_method.log_output('!!--!!submit').error(msg)
      
     #获取邮箱验证码
-    def get_emailcode_(self):
+    def get_emailcode_(self,account):
         try:
             #切换bos窗口
             self.switch_windows(1)
             time.sleep(1)
             #根据主账号搜索
-            self.web_input('css,.ivu-input-default',self.account) #输入主账户
+            self.web_input('css,.ivu-input-default',account) #输入主账户
             time.sleep(1)
             self.web_click('css,.ivu-icon-ios-search',1) #点击搜索按钮
             time.sleep(1)
@@ -263,12 +222,12 @@ class kyc_approve(Commonweb):
             self.switch_windows(2)
             time.sleep(1)
             #点击邮件记录
-            self.web_click('css,.ivu-anchor-link-title',-2)
+            self.web_click('css,.ivu-anchor-link-title',7)
             time.sleep(1)
             #判断验证码邮件是否发送
             if self.is_element_isdisplayed('xpath,//span[.="emailCode"]'):
                 #打开验证码邮件
-                self.web_click('css,.tips',1)
+                self.web_click('css,tbody.ivu-table-tbody>tr>td>div>div>div')
                 time.sleep(1)
                 #获取验证码文本
                 acc_text=self.get_text('xpath,//div[@class="ivu-drawer-wrap"]//tr[2]//tr[4]/td[1]/span')
@@ -283,10 +242,10 @@ class kyc_approve(Commonweb):
             pub_method.log_output('!!--!!get_emailcode_').error('获取邮箱验证失败{}'.format(msg))
 
     #KYC认证表单操作
-    def get_on_kyc(self):
+    def get_on_kyc(self,account):
         try:
             #验证邮箱
-            self.verification_emali()
+            self.verification_emali(account)
             #上传证件照
             self.upload_ID_photo()
             #选择出生日期及性别

@@ -126,7 +126,6 @@ class kyc_approve(Commonweb):
             time.sleep(1)
             #提交
             self.web_click('css,.agree-btn')
-            time.sleep(1)
         else:
             #点击验证联系方式
             self.web_click('css,.el-button--primary')

@@ -144,7 +144,7 @@ class form_operations(Commonweb):
         try:
             return self.get_text('css,div.declar-dialog .el-dialog__title')
         except Exception as msg:
-            pub_method.log_output('!!--!!register_success').error('获取登录成功后的文本失败{}'.format(msg))
+            pub_method.log_output('!!--!!register_success').error('获取登录成功后的文本失败{}'.format(msg)
 
     #关闭浏览器
     def closedriver(self):

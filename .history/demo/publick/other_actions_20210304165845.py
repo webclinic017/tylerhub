@@ -76,4 +76,4 @@ class public_method():
 if __name__=='__main__':
     pub=public_method()
     print((pub.extract_numbers('ID: 1000005357')))
-    print(pub.extract_numbers('ID: 1000005357')[0:2]=='10')
+    print(pub.extract_numbers('ID: 1000005357')[0:2])

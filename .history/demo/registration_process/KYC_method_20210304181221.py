@@ -23,7 +23,6 @@ class kyc_approve(Commonweb):
     def login_topup(self):
         try:
             self.switch_windows(0)
-            time.sleep(1)
             self.web_click('css,.blk-sure-btn')
         except Exception as msg:
             pub_method.log_output('!!--!!topup').error('页面弹窗去除失败：{}'.format(msg))
@@ -126,7 +125,6 @@ class kyc_approve(Commonweb):
             time.sleep(1)
             #提交
             self.web_click('css,.agree-btn')
-            time.sleep(1)
         else:
             #点击验证联系方式
             self.web_click('css,.el-button--primary')
@@ -268,7 +266,7 @@ class kyc_approve(Commonweb):
             #判断验证码邮件是否发送
             if self.is_element_isdisplayed('xpath,//span[.="emailCode"]'):
                 #打开验证码邮件
-                self.web_click('css,.tips',1)
+                self.web_click('css,.tips'，1)
                 time.sleep(1)
                 #获取验证码文本
                 acc_text=self.get_text('xpath,//div[@class="ivu-drawer-wrap"]//tr[2]//tr[4]/td[1]/span')

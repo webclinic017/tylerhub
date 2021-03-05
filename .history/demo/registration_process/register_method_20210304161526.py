@@ -142,9 +142,22 @@ class form_operations(Commonweb):
     #登录成功后获取文本
     def register_success(self):
         try:
-            return self.get_text('css,div.declar-dialog .el-dialog__title')
+            return self.get_text('css,.el-dialog__title',2)
         except Exception as msg:
-            pub_method.log_output('!!--!!register_success').error('获取登录成功后的文本失败{}'.format(msg))
+            pub_method.log_output('!!--!!register_success').error('获取登录成功后的文本失败{}'.format(msg)
+
+    #获取主账号
+    def get_account_(self):
+        try:
+            #取消验证联系方式
+            self.web_click('css,.btn-cancel')
+            time.sleep(1)
+            #获取主账号文本
+            acc=self.get_text('css,.user-name-font')
+            #提取数字
+            return pub_method.extract_numbers(acc)
+        except Exception as msg:
+            pub_method.log_output('!!--!!topup').error('获取主账号失败{}'.format(msg))
 
     #关闭浏览器
     def closedriver(self):
