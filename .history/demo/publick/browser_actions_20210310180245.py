@@ -335,24 +335,25 @@ class Commonweb():
         try:
             #通过ID属性，回到顶部
             if type=='ID' or type=='id' and site=='top':
-                self.js='document.getElementsByid({})["{}"].scrollTop =0 '.format(element,index)
+                self.js='document.getElementsByid({})[{}].scrollTop =0 '.format(element,index)
                 self.driver.execute_script(self.js)
             #通过ID属性，回到底部
             elif type=='ID' or type=='id' and site=='down':
-                self.js='document.getElementsByid({})["{}"].scrollTop =10000'.format(element,index)
+                self.js='document.getElementsByid({})[{}].scrollTop =10000'.format(element,index)
                 self.driver.execute_script(self.js)
             #通过class属性，回到顶部
             elif type=='class' and site=='top':
-                self.js='document.getElementsByClassName("{}")[{}].scrollTop =0 '.format(element,index)
+                self.js='document.getElementsByClassName({})[{}].scrollTop =0 '.format(element,index)
                 self.driver.execute_script(self.js)
             #通过class属性，回到底部
             elif type=='class' and site=='down':
-                self.js='document.getElementsByClassName("{}")[{}].scrollTop =10000 '.format(element,index)
+                self.js='document.getElementsByClassName({})[{}].scrollTop =10000 '.format(element,index)
                 self.driver.execute_script(self.js)
             else:
                 print('参数错误请检查')
         except Exception as msg:
             pub_method.log_output('!!--!!js_scroll_inline').error(msg)
+
 
     #关闭浏览器
     def close_browser(self):

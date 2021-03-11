@@ -348,6 +348,7 @@ class Commonweb():
             #通过class属性，回到底部
             elif type=='class' and site=='down':
                 self.js='document.getElementsByClassName("{}")[{}].scrollTop =10000 '.format(element,index)
+                print(self.js)
                 self.driver.execute_script(self.js)
             else:
                 print('参数错误请检查')

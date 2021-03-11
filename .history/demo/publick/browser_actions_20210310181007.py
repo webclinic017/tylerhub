@@ -348,11 +348,13 @@ class Commonweb():
             #通过class属性，回到底部
             elif type=='class' and site=='down':
                 self.js='document.getElementsByClassName("{}")[{}].scrollTop =10000 '.format(element,index)
+                print(self.js)
                 self.driver.execute_script(self.js)
             else:
                 print('参数错误请检查')
         except Exception as msg:
             pub_method.log_output('!!--!!js_scroll_inline').error(msg)
+
 
     #关闭浏览器
     def close_browser(self):
