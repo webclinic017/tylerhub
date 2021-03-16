@@ -1,14 +1,15 @@
-import datetime
+import time
 import os
 import sys
-import time
+import datetime
 
 path_demo=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 path_publick=path_demo+r'\publick'
 sys.path.append(path_publick)
-from about_data import exceldata
 from browser_actions import Commonweb
 from other_actions import public_method
+from about_data import exceldata
+
 
 pub_method=public_method()
 exdata=exceldata()

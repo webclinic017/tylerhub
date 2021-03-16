@@ -1,14 +1,15 @@
-import datetime
+import time
 import os
 import sys
-import time
+import datetime
 
 path_demo=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 path_publick=path_demo+r'\publick'
 sys.path.append(path_publick)
-from about_data import exceldata
 from browser_actions import Commonweb
 from other_actions import public_method
+from about_data import exceldata
+
 
 pub_method=public_method()
 exdata=exceldata()
@@ -81,15 +82,15 @@ class get_account(Commonweb):
                         exdata.saveainfo(os.path.dirname(os.path.abspath(__file__))+r'\all_country.xlsx',self.ISO_name,'C',i+1)   #保存ISO
                         exdata.saveainfo(os.path.dirname(os.path.abspath(__file__))+r'\all_country.xlsx',self.PHONE_code,'D',i+1) #保存电话国码
                     elif self.page==1:
-                        exdata.saveainfo(os.path.dirname(os.path.abspath(__file__))+r'\all_country.xlsx',self.CN_country,'A',i+1) 
-                        exdata.saveainfo(os.path.dirname(os.path.abspath(__file__))+r'\all_country.xlsx',self.EN_country,'B',i+1) 
-                        exdata.saveainfo(os.path.dirname(os.path.abspath(__file__))+r'\all_country.xlsx',self.ISO_name,'C',i+1)   
-                        exdata.saveainfo(os.path.dirname(os.path.abspath(__file__))+r'\all_country.xlsx',self.PHONE_code,'D',i+1)
+                        exdata.saveainfo(r'E:\test\all_country.xlsx',self.CN_country,'A',i+1) 
+                        exdata.saveainfo(r'E:\test\all_country.xlsx',self.EN_country,'B',i+1) 
+                        exdata.saveainfo(r'E:\test\all_country.xlsx',self.ISO_name,'C',i+1)   
+                        exdata.saveainfo(r'E:\test\all_country.xlsx',self.PHONE_code,'D',i+1)
                     else:
-                        exdata.saveainfo(os.path.dirname(os.path.abspath(__file__))+r'\all_country.xlsx',self.CN_country,'A',i+1)
-                        exdata.saveainfo(os.path.dirname(os.path.abspath(__file__))+r'\all_country.xlsx',self.EN_country,'B',i+1)
-                        exdata.saveainfo(os.path.dirname(os.path.abspath(__file__))+r'\all_country.xlsx',self.ISO_name,'C',i+1)
-                        exdata.saveainfo(os.path.dirname(os.path.abspath(__file__))+r'\all_country.xlsx',self.PHONE_code,'D',i+1)
+                        exdata.saveainfo(r'E:\test\all_country.xlsx',self.CN_country,'A',i+1)
+                        exdata.saveainfo(r'E:\test\all_country.xlsx',self.EN_country,'B',i+1)
+                        exdata.saveainfo(r'E:\test\all_country.xlsx',self.ISO_name,'C',i+1)
+                        exdata.saveainfo(r'E:\test\all_country.xlsx',self.PHONE_code,'D',i+1)
 
                     dic_country={} 
                     dic_country[self.CN_country]=self.EN_country

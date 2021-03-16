@@ -315,6 +315,7 @@ class Commonweb():
         """
         try:
             if site=='down':
+                print(1111)
                 self.js='document.documentElement.scrollTop=10000'
                 #回到底部
                 self.driver.execute_script(self.js)
