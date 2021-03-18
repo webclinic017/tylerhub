@@ -119,13 +119,13 @@ class kyc_approve(Commonweb):
     #判断是否为返佣账号，如是，点击返佣申请表格
     def is_rebate_type(self):
         self.web_click('css,.menu-font',1)
-        time.sleep(2)
+        time.sleep(1)
         if self.account[0:2]=='10':
             #点击代理申请
             self.web_click('css,.el-button--primary')
             time.sleep(1)
             #同意IB协议
-            self.web_click('css,div.ps-agree-bot .el-checkbox__inner')
+            self.web_click('css,.el-checkbox__inner',2)
             time.sleep(1)
             #提交
             self.web_click('css,.agree-btn')

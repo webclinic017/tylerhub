@@ -8,21 +8,25 @@ sys.path.append(path_public)
 from browser_actions import Commonweb
 from other_actions import public_method
 
+path_process=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(path_process+r'\public_operation')
+from commom_operations import Common_method
 
 #实例化对象
 pub_method=public_method()
-
+com=Common_method()
 
 #继承基本类
 class kyc_approve(Commonweb):
     global driver
 
+    def testget(self):
+        com.get('https://www.baidu.com')
+
+
     #默认以谷歌浏览器执行测试用例
     def browsertype(self,browsername='Chrome'):
         self.driver=self.open_browser(browsername)
-
-    def testget(self,url):
-        pub_method.get(url)
 
     #去除登录页弹窗
     def login_topup(self):
@@ -82,14 +86,7 @@ class kyc_approve(Commonweb):
    
     #登录会员中心
     def login_cp(self,username,psword):
-        try:
-            self.switch_windows(0)
-            self.display_input('css,.el-input__inner',username,1)
-            self.display_input('css,.el-input__inner',psword,-1)
-            self.display_click('css,.login-btn')
-            time.sleep(5)
-        except Exception as msg:
-            pub_method.log_output('!!--!!login_cp').error(msg)
+        com.logincp(username,psword)
 
     #去除首次登录会员中心的弹窗
     def fisrtcp_top(self):
@@ -119,13 +116,13 @@ class kyc_approve(Commonweb):
     #判断是否为返佣账号，如是，点击返佣申请表格
     def is_rebate_type(self):
         self.web_click('css,.menu-font',1)
-        time.sleep(2)
+        time.sleep(1)
         if self.account[0:2]=='10':
             #点击代理申请
             self.web_click('css,.el-button--primary')
             time.sleep(1)
             #同意IB协议
-            self.web_click('css,div.ps-agree-bot .el-checkbox__inner')
+            self.web_click('css,.el-checkbox__inner',2)
             time.sleep(1)
             #提交
             self.web_click('css,.agree-btn')

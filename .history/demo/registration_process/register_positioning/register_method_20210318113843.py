@@ -2,8 +2,8 @@ import sys
 import os
 import time
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-path_public=path_demo+r'\public'
-sys.path.append(path_public)
+path_publick=path_demo+r'\publick'
+sys.path.append(path_publick)
 from browser_actions import Commonweb
 from other_actions import public_method
 from about_data import exceldata

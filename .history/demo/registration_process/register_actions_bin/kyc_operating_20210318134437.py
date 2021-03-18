@@ -1,7 +1,7 @@
-import os
-import sys
 import unittest
 import ddt
+import os
+import sys
 from BeautifulReport import BeautifulReport
 
 path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))+r'\public'
@@ -10,7 +10,6 @@ path_process=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_process+r'\register_positioning')
 from about_data import exceldata
 from KYC_method import kyc_approve
-
 #实例化对象
 kyc=kyc_approve()
 e=exceldata()

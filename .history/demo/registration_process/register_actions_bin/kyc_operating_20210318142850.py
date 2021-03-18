@@ -1,7 +1,7 @@
-import os
-import sys
 import unittest
 import ddt
+import os
+import sys
 from BeautifulReport import BeautifulReport
 
 path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))+r'\public'
@@ -10,7 +10,6 @@ path_process=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_process+r'\register_positioning')
 from about_data import exceldata
 from KYC_method import kyc_approve
-
 #实例化对象
 kyc=kyc_approve()
 e=exceldata()
@@ -25,6 +24,7 @@ class kyc_actions(unittest.TestCase):
     def setUpClass(cls):
         kyc.browsertype() #默认以谷歌浏览器打开
         #访问CP及bos登录页，选择页面语言
+        kyc.testget()
         kyc.loginweb('CN')
         #登录bos，并打开客户名单页
         kyc.login_bos('tyler.tang','Tl123456')

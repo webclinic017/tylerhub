@@ -2,8 +2,8 @@ import sys
 import os
 import time
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-path_public=path_demo+r'\public'
-sys.path.append(path_public)
+path_publick=path_demo+r'\publick'
+sys.path.append(path_publick)
 from browser_actions import Commonweb
 from other_actions import public_method
 from about_data import exceldata
@@ -46,7 +46,7 @@ class form_operations(Commonweb):
                 print('邀请码注册')
             else:
                 #直客注册
-                self.open_web('https://at-client-portal-uat.atfxdev.com/register')
+                self.open_web('https://at-client-portal-sit.atfxdev.com/register')
                 ex.saveainfo(path_process+r'\test_excel_data\account_number.xlsx','直客', column, row)#备注注册方式
                 time.sleep(2)
                 self.register_topup()
@@ -71,7 +71,7 @@ class form_operations(Commonweb):
     #去除注册页弹窗
     def register_topup(self):
         try:
-            self.display_click('css,.blk-sure-btn')
+            self.web_click('css,.blk-sure-btn')
         except Exception as msg:
             self.get_screenpict('去除弹窗')
             pub_method.log_output('!!--!!topup').error('注册页弹窗去除失败：{}'.format(msg))
@@ -96,23 +96,23 @@ class form_operations(Commonweb):
         #选择页面语言
         self.choose_lg(lang)
         try:
+            #输入名字
+            self.web_input('css,.el-input__inner',fristname)
+            time.sleep(1)
+            #输入姓氏
+            self.web_input('css,.el-input__inner',lastname,1)
+            time.sleep(1)
             #选择国家
-            self.web_click('css,.el-input__inner')
+            self.web_click('css,.el-input__inner',2)
             time.sleep(1)
             if lang=='简中' or lang=='简体中文':
-                self.web_input('css,.el-input__inner',cn_country) #输入中文国家名
+                self.web_input('css,.el-input__inner',cn_country,2) #输入中文国家名
                 time.sleep(1)
                 self.web_click('xpath,//span[.="{}"]'.format(cn_country))
             else:
-                self.web_input('css,.el-input__inner',en_country) #输入英文国家名
+                self.web_input('css,.el-input__inner',en_country,2) #输入英文国家名
                 time.sleep(1)
                 self.web_click('xpath,//span[.="{}"]'.format(en_country))
-            #输入名字
-            self.web_input('css,.el-input__inner',fristname,1)
-            time.sleep(1)
-            #输入姓氏
-            self.web_input('css,.el-input__inner',lastname,2)
-            time.sleep(1)
             #输入随机手机号码
             self.web_input('css,.el-input__inner',pub_method.get_rangephone(),4)
             time.sleep(1)
@@ -123,7 +123,7 @@ class form_operations(Commonweb):
             self.web_input('css,.el-input__inner',password,6)
             time.sleep(1)
             #输入验证码
-            self.web_input('css,.el-input__inner','',7)
+            self.web_input('css,.el-input__inner','验证码',7)
             time.sleep(1)
             #点击条款
             self.web_click('css,.el-checkbox__inner')

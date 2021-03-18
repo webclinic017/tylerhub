@@ -2,8 +2,8 @@ import sys
 import os
 import time
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-path_public=path_demo+r'\public'
-sys.path.append(path_public)
+path_publick=path_demo+r'\publick'
+sys.path.append(path_publick)
 from browser_actions import Commonweb
 from other_actions import public_method
 from about_data import exceldata
@@ -71,7 +71,7 @@ class form_operations(Commonweb):
     #去除注册页弹窗
     def register_topup(self):
         try:
-            self.display_click('css,.blk-sure-btn')
+            self.web_click('css,.blk-sure-btn')
         except Exception as msg:
             self.get_screenpict('去除弹窗')
             pub_method.log_output('!!--!!topup').error('注册页弹窗去除失败：{}'.format(msg))
