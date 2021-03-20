@@ -101,13 +101,13 @@ import time
 c=Commonweb()
 p=public_method()
 c.open_browser()
-c.open_web('https://www.baidu.com/')
-# c.web_click('css,.blk-sure-btn')
-# time.sleep(0.5)
-# if c.is_displayed('css,.la-redo-alt',2):
-#     print(1111)
-# else:
-#     print(2222)
+c.open_web('https//:baidu.com')
+c.web_click('css,.blk-sure-btn')
+time.sleep(0.5)
+if c.is_displayed('css,.la-redo-alt',2):
+    print(1111)
+else:
+    print(2222)
 
 # time.sleep(1)
 # # c.display_input('css,.s_ipt','python')
