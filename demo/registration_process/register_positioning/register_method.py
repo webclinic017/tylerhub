@@ -135,7 +135,8 @@ class form_operations(Commonweb):
             while True:
                 #清空输入框
                 self.web_clear('css,.el-input__inner',-1)
-                time.sleep(1)
+                time.sleep(1)/+
+                
                 #输入验证码
                 self.web_input('css,.el-input__inner',self.discern_code('tyler','123456','code','codeimg','css,div.code-cell>svg'),-1)
                 time.sleep(1)
