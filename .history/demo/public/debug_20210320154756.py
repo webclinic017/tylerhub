@@ -101,7 +101,7 @@ import time
 c=Commonweb()
 p=public_method()
 c.open_browser()
-c.open_web('https://www.baidu.com/')
+c.open_web('https//:baidu.com')
 # c.web_click('css,.blk-sure-btn')
 # time.sleep(0.5)
 # if c.is_displayed('css,.la-redo-alt',2):

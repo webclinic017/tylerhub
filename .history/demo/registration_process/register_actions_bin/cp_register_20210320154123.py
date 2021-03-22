@@ -19,9 +19,6 @@ e=exceldata()
 rows=e.openexcel(path_process+r'\test_excel_data\country.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
 testdata=e.dict_data()
 
-香港ip弹窗限制
-
-
 #实例化对象
 form=form_operations()
 
