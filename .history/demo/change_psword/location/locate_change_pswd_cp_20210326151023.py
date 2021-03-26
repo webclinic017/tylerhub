@@ -137,7 +137,7 @@ class location():
             self.psword=block_letter+lowser_letter+num_str
             return self.psword
         else:
-            print('N必须大于2小于等于12')
+            print('N必须大于2小于12')
 
     #清空bos的账号搜索添加
     def clear_bos_serch(self):
