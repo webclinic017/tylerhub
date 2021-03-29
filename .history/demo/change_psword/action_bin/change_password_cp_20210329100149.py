@@ -3,7 +3,6 @@ import sys
 import unittest
 
 import ddt
-from BeautifulReport import BeautifulReport
 
 path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))+r'\public'
 sys.path.append(path_public)
@@ -45,8 +44,4 @@ class _change_in_cp(unittest.TestCase):
         self.assertIn(loca.sucess_change(),'密码更新成功！Password update successful!')
 
 if __name__=='__main__':
-    #测试报告
-    suit=unittest.defaultTestLoader.discover(os.path.dirname(os.path.abspath(__file__)),
-    pattern='change_password_cp.py',top_level_dir=None)
-    BeautifulReport(suit).report(filename='忘记密码页面修改密码密',description='忘记密码页面修改修改密码流程',
-    report_dir=path_psword+r'\changepsword_report')
+    unittest.main()

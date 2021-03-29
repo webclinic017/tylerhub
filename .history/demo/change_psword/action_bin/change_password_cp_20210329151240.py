@@ -3,7 +3,6 @@ import sys
 import unittest
 
 import ddt
-from BeautifulReport import BeautifulReport
 
 path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))+r'\public'
 sys.path.append(path_public)
@@ -48,5 +47,5 @@ if __name__=='__main__':
     #测试报告
     suit=unittest.defaultTestLoader.discover(os.path.dirname(os.path.abspath(__file__)),
     pattern='change_password_cp.py',top_level_dir=None)
-    BeautifulReport(suit).report(filename='忘记密码页面修改密码密',description='忘记密码页面修改修改密码流程',
-    report_dir=path_psword+r'\changepsword_report')
+    BeautifulReport(suit).report(filename='注册页改密操作',description='修改密码',
+    report_dir=path_process+r'\changepsword_report')

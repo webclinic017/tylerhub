@@ -10,17 +10,18 @@ sys.path.append(path_public)
 path_psword=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_psword+r'\location')
 from about_data import exceldata
-from locate_change_pswd_cp import location
+from login_cp_changepsword import location
 
 loca=location()
-
+#测试文档路径
+testdata_path=path_psword+r'\test_excel_data\test_data.xlsx'
 #读取测试数据
 e=exceldata()
-rows=e.openexcel(path_psword+r'\test_excel_data\test_data.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
+rows=e.openexcel(testdata_path,'Sheet1')
 testdata=e.dict_data()
 
 @ddt.ddt
-class _change_in_cp(unittest.TestCase):
+class change_password(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -29,24 +30,25 @@ class _change_in_cp(unittest.TestCase):
 
     def tearDown(self):
         if self.data_index==testdata.index(testdata[-1]):
-            loca.quitbroswer()
+            loca.quitbrowser()
         else:
-            loca.clear_bos_serch()
-
+            loca.logoutcp()
+        
     @ddt.data(*testdata)
-    def testchange(self,data):
-        #获取每组测试数据的下标
+    def test_change(self,data):
+        #每组测试用例下标
+        print('当前测试数据：邮箱{}，主账号：{}'.format(data['邮箱'],data['主账号']))
         self.data_index=testdata.index(data)
-        print('当前测试数据：邮箱：{}，主账号：{}'.format(data['邮箱'],data['主账号']))
         if self.data_index!=0:
             loca.remove_topup()
-        loca.change_psword(data['邮箱'],data['主账号'],path_psword+r'\test_excel_data\test_data.xlsx','C',self.data_index+2)
-        #断言
-        self.assertIn(loca.sucess_change(),'密码更新成功！Password update successful!')
+        else:
+            pass
+        loca.change_psword(data['邮箱'],data['旧密码'],data['主账号'],testdata_path,'C',self.data_index+2,8)
+        self.assertIn(loca.get_sucessful_change(),'重设会员中心账号密码成功')
 
 if __name__=='__main__':
     #测试报告
     suit=unittest.defaultTestLoader.discover(os.path.dirname(os.path.abspath(__file__)),
-    pattern='change_password_cp.py',top_level_dir=None)
-    BeautifulReport(suit).report(filename='忘记密码页面修改密码密',description='忘记密码页面修改修改密码流程',
+    pattern='login_cp_changepsword_bin.py',top_level_dir=None)
+    BeautifulReport(suit).report(filename='登录后改密',description='注册流程',
     report_dir=path_psword+r'\changepsword_report')

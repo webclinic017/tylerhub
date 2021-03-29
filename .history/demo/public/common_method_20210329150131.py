@@ -69,8 +69,7 @@ class commonmethod():
     #登出会员中心
     def logout_cp(self):
         try:
-            time.sleep(1)
-            self.driver.find_element_by_css_selector('.el-icon--right').click()
+            self.driver.find_element_by_css_selector('.el-icon--right').clear()
             time.sleep(1)
             self.out_ele=self.driver.find_elements_by_css_selector('.drop-sub-title')
             time.sleep(1)

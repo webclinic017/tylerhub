@@ -66,20 +66,6 @@ class commonmethod():
         except Exception as msg:
             pub_method.log_output('!!--!!login_cp').error(msg)
 
-    #登出会员中心
-    def logout_cp(self):
-        try:
-            time.sleep(1)
-            self.driver.find_element_by_css_selector('.el-icon--right').click()
-            time.sleep(1)
-            self.out_ele=self.driver.find_elements_by_css_selector('.drop-sub-title')
-            time.sleep(1)
-            self.out_ele[-1].click()
-            time.sleep(1)
-            self.driver.find_element_by_css_selector('css,.logout-btn-confirm').click()
-            time.sleep(1)
-        except Exception as msg:
-            pub_method.log_output('!!--!!lgoout_cp').error('登出会员中心失败：{}'.format(msg))
 
     #选择bos页面语言
     def choose_bos_lang(self,lang):
@@ -105,3 +91,37 @@ class commonmethod():
             self.driver.find_element_by_css_selector('.ivu-btn-large').click() #登录
         except Exception as msg:
             pub_method.log_output('!!--!!login_bos').error(msg)
+
+    #bos根据主账号获取邮箱验证码
+    def _bos_get_email_code(self,account,n):
+        try:
+            #输入主账号搜索
+            self.driver.find_element_by_css_selector('.ivu-input-default').send_keys(account)
+            time.sleep(1)
+            self.serach_ele=self.driver.find_elements_by_class_name('.ivu-icon-ios-search')
+            time.sleep(1)
+            self.serach_ele[1].click()
+            time.sleep(1)
+            #账号详情页
+            self.page_ele=self.driver.find_elements_by_css_selector('div.ivu-table-overflowX>table>tbody.ivu-table-tbody>tr>td')
+            time.sleep(1)
+            self.page_ele[1].click()
+            #点击邮件短信记录
+            self.switchwindows(n)
+            time.sleep(1)
+            self.title_ele=self.driver.find_elements_by_css_selector('.ivu-anchor-link-title')
+            time.sleep(1)
+            self.title_ele[-2].click()
+            time.sleep(2)
+            #打开验证码邮件
+            self.email_ele=self.driver.find_elements_by_css_selector('.tips')
+            time.sleep(1)
+            self.email_ele[1].click()
+            time.sleep(1)
+            #获取验证码
+            self.emali_text=self.driver.find_element_by_xpath('//div[@class="ivu-drawer-wrap"]//tr[2]//tr[4]/td[1]/span')
+            time.sleep(1)
+            self.email_code=pub_method.extract_numbers(self.emali_text)
+            return self.email_code
+        except Exception as msg:
+            pub_method.log_output('!!--!!_bos_get_email_code').error(msg)

@@ -79,6 +79,7 @@ class location():
             time.sleep(1)
             #确认新密码
             commom.display_input('css,.el-input__inner',self.psword,3)
+            print(self.psword)
             time.sleep(1)
             excel.saveainfo(path,self.psword,column,row)
             #确认

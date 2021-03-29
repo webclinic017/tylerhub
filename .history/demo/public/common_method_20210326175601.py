@@ -66,20 +66,6 @@ class commonmethod():
         except Exception as msg:
             pub_method.log_output('!!--!!login_cp').error(msg)
 
-    #登出会员中心
-    def logout_cp(self):
-        try:
-            time.sleep(1)
-            self.driver.find_element_by_css_selector('.el-icon--right').click()
-            time.sleep(1)
-            self.out_ele=self.driver.find_elements_by_css_selector('.drop-sub-title')
-            time.sleep(1)
-            self.out_ele[-1].click()
-            time.sleep(1)
-            self.driver.find_element_by_css_selector('css,.logout-btn-confirm').click()
-            time.sleep(1)
-        except Exception as msg:
-            pub_method.log_output('!!--!!lgoout_cp').error('登出会员中心失败：{}'.format(msg))
 
     #选择bos页面语言
     def choose_bos_lang(self,lang):
