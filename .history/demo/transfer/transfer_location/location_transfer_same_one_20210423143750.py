@@ -239,8 +239,8 @@ class location_of_transfer():
         try:
             time.sleep(1)
             for i in [self.from_site,self.to_site]:
-                if not common.is_element_selected('xpath,//*[@id="tdAccount"]/div[2]/div/div/div[3]/div[1]/'
-                'div[2]/table/tbody/tr[{}]/td[8]/div/div/div/label/span/input'.format(i),-1):#未被勾选时
+                if not common.is_element_selected('xpath,//*[@id="tdAccount"]/div[2]/div/div/div[3]/div[1]'
+                '/div[2]/table/tbody/tr[{}]/td[6]/div/div/div/label/span/input'.format(i),-1):#未被勾选时
                     common.display_click('css,div.ivu-table-fixed-body>table>tbody>tr>td>div>div>div>div>a',2*i-1) #编辑
                     time.sleep(1)
                     #勾选转账权限

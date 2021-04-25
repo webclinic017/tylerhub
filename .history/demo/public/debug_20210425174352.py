@@ -169,5 +169,3 @@ import time
 com=Commonweb()
 com.open_browser()
 com.open_web('https:\\www.baidu.com')
-time.sleep(1)
-com.display_click('css,#su',-1)
