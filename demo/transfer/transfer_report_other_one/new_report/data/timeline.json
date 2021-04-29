@@ -1,0 +1,283 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "szbpc1902043",
+    "children" : [ {
+      "name" : "10952-MainThread",
+      "children" : [ {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "af80beeab4b0abff",
+        "parentUid" : "642760b0f923575c4d2cc31553c36413",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619665064371,
+          "stop" : 1619665180571,
+          "duration" : 116200
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 67200977.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      }, {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "f34e3b67a51eb071",
+        "parentUid" : "642760b0f923575c4d2cc31553c36413",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1619665200523,
+          "stop" : 1619665237690,
+          "duration" : 37167
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 67200977.0, '转入主账号': 1000004233.0, '转入交易账号': 632000449.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      }, {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "5e5e81f3ab561796",
+        "parentUid" : "642760b0f923575c4d2cc31553c36413",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1619665180597,
+          "stop" : 1619665200487,
+          "duration" : 19890
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 63200106.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      } ],
+      "uid" : "642760b0f923575c4d2cc31553c36413"
+    }, {
+      "name" : "22520-MainThread",
+      "children" : [ {
+        "name" : "test_transfer[data0]",
+        "uid" : "2d9c51e45aa8e69c",
+        "parentUid" : "298f91b01f1cde3b24f67ee38bb26546",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619605686053,
+          "stop" : 1619605807504,
+          "duration" : 121451
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 67200977.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      } ],
+      "uid" : "298f91b01f1cde3b24f67ee38bb26546"
+    }, {
+      "name" : "9884-MainThread",
+      "children" : [ {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "bd153d54ed15764f",
+        "parentUid" : "f1c5204faa034195541e7233f1792a72",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1619665851334,
+          "stop" : 1619665876388,
+          "duration" : 25054
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 63200106.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      }, {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "a421b8d50f194087",
+        "parentUid" : "f1c5204faa034195541e7233f1792a72",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619665731558,
+          "stop" : 1619665851316,
+          "duration" : 119758
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 67200977.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      } ],
+      "uid" : "f1c5204faa034195541e7233f1792a72"
+    }, {
+      "name" : "8272-MainThread",
+      "children" : [ {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "f63689837adc6da7",
+        "parentUid" : "aa64ac4e16ea53498d35e902588219a3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619666645293,
+          "stop" : 1619666758249,
+          "duration" : 112956
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 67200977.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      }, {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "3273c82cc3506ad1",
+        "parentUid" : "aa64ac4e16ea53498d35e902588219a3",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1619666779732,
+          "stop" : 1619666822979,
+          "duration" : 43247
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 67200977.0, '转入主账号': 1000004233.0, '转入交易账号': 632000449.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      }, {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "ddb8904d941dcb1e",
+        "parentUid" : "aa64ac4e16ea53498d35e902588219a3",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1619666758273,
+          "stop" : 1619666779703,
+          "duration" : 21430
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 63200106.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      } ],
+      "uid" : "aa64ac4e16ea53498d35e902588219a3"
+    }, {
+      "name" : "8588-MainThread",
+      "children" : [ {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "8ef307219b02e35f",
+        "parentUid" : "43aba3bdaf61024b032e8ff15a9b67c2",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1619667202878,
+          "stop" : 1619667224666,
+          "duration" : 21788
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 63200106.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      }, {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "dd68dd13987772d6",
+        "parentUid" : "43aba3bdaf61024b032e8ff15a9b67c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619667093053,
+          "stop" : 1619667202857,
+          "duration" : 109804
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 67200977.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      }, {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "6043873622fb8a7f",
+        "parentUid" : "43aba3bdaf61024b032e8ff15a9b67c2",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1619667224686,
+          "stop" : 1619667267965,
+          "duration" : 43279
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 67200977.0, '转入主账号': 1000004233.0, '转入交易账号': 632000449.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      } ],
+      "uid" : "43aba3bdaf61024b032e8ff15a9b67c2"
+    }, {
+      "name" : "25564-MainThread",
+      "children" : [ {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "16bb1455de4d8c9f",
+        "parentUid" : "0aa201d4c6f436f34abe329da085e843",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619666055457,
+          "stop" : 1619666182789,
+          "duration" : 127332
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 67200977.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      }, {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "efaf8dfeacb180c1",
+        "parentUid" : "0aa201d4c6f436f34abe329da085e843",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1619666182815,
+          "stop" : 1619666203867,
+          "duration" : 21052
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 63200106.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      } ],
+      "uid" : "0aa201d4c6f436f34abe329da085e843"
+    }, {
+      "name" : "22180-MainThread",
+      "children" : [ {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "afe17695954e92ff",
+        "parentUid" : "7c5082fbb93020caf06503ee73156909",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619662866311,
+          "stop" : 1619662866313,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 67200977.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      } ],
+      "uid" : "7c5082fbb93020caf06503ee73156909"
+    }, {
+      "name" : "22440-MainThread",
+      "children" : [ {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "eb1131f6b3efbcc4",
+        "parentUid" : "28559b46f33bd5d174fcd05b0ee56fcb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619666449254,
+          "stop" : 1619666564391,
+          "duration" : 115137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 67200977.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      } ],
+      "uid" : "28559b46f33bd5d174fcd05b0ee56fcb"
+    }, {
+      "name" : "2500-MainThread",
+      "children" : [ {
+        "name" : "test_transfer[data0]",
+        "uid" : "b0518408f4bcf8a6",
+        "parentUid" : "04976de6a61e87e235162263bdc6d63a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619661264985,
+          "stop" : 1619661264986,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 67200977.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      } ],
+      "uid" : "04976de6a61e87e235162263bdc6d63a"
+    }, {
+      "name" : "11508-MainThread",
+      "children" : [ {
+        "name" : "上级代理给下级代理/客户转账",
+        "uid" : "ca09639906a1f390",
+        "parentUid" : "d9950cd19b90e72fc41b6edaa971080d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619664717045,
+          "stop" : 1619664833328,
+          "duration" : 116283
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'转出主账号': 1000003759.0, '转出交易账号': 67200977.0, '转入主账号': 1000004233.0, '转入交易账号': 67201154.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '转账金额': 100.0}" ]
+      } ],
+      "uid" : "d9950cd19b90e72fc41b6edaa971080d"
+    } ],
+    "uid" : "66259f42568483498fcf806f2a01bf2b"
+  } ]
+}

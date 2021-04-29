@@ -1,0 +1,31 @@
+[ {
+  "uid" : "8ef307219b02e35f",
+  "name" : "上级代理给下级代理/客户转账",
+  "time" : {
+    "start" : 1619667202878,
+    "stop" : 1619667224666,
+    "duration" : 21788
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "6043873622fb8a7f",
+  "name" : "上级代理给下级代理/客户转账",
+  "time" : {
+    "start" : 1619667224686,
+    "stop" : 1619667267965,
+    "duration" : 43279
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "dd68dd13987772d6",
+  "name" : "上级代理给下级代理/客户转账",
+  "time" : {
+    "start" : 1619667093053,
+    "stop" : 1619667202857,
+    "duration" : 109804
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
