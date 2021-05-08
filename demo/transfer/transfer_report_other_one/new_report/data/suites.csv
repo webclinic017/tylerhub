@@ -1,4 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"skipped","Thu Apr 29 11:33:22 CST 2021","Thu Apr 29 11:33:44 CST 2021","21788","","test_transfer_action_other_one_bin","Test_transfer_other_account","","","上级代理给下级代理/客户转账","读取测试文档数据，转账给下级客户或者代理"
-"skipped","Thu Apr 29 11:33:44 CST 2021","Thu Apr 29 11:34:27 CST 2021","43279","","test_transfer_action_other_one_bin","Test_transfer_other_account","","","上级代理给下级代理/客户转账","读取测试文档数据，转账给下级客户或者代理"
-"passed","Thu Apr 29 11:31:33 CST 2021","Thu Apr 29 11:33:22 CST 2021","109804","","test_transfer_action_other_one_bin","Test_transfer_other_account","","","上级代理给下级代理/客户转账","读取测试文档数据，转账给下级客户或者代理"
+"skipped","Thu Apr 29 15:51:32 CST 2021","Thu Apr 29 15:51:51 CST 2021","18791","demo.transfer.transfer_bin","test_transfer_action_other_one_bin","Test_transfer_other_account","","","上级代理给下级代理/客户转账","读取测试文档数据，转账给下级客户或者代理"
+"skipped","Thu Apr 29 15:56:08 CST 2021","Thu Apr 29 15:56:08 CST 2021","4","demo.transfer.transfer_bin","test_transfer_action_other_one_bin","Test_transfer_other_account","","","上级代理给下级代理/客户转账","读取测试文档数据，转账给下级客户或者代理"
+"passed","Thu Apr 29 15:54:01 CST 2021","Thu Apr 29 15:56:08 CST 2021","127683","demo.transfer.transfer_bin","test_transfer_action_other_one_bin","Test_transfer_other_account","","","上级代理给下级代理/客户转账","读取测试文档数据，转账给下级客户或者代理"
+"passed","Thu Apr 29 15:51:51 CST 2021","Thu Apr 29 15:54:01 CST 2021","129966","demo.transfer.transfer_bin","test_transfer_action_other_one_bin","Test_transfer_other_account","","","上级代理给下级代理/客户转账","读取测试文档数据，转账给下级客户或者代理"
