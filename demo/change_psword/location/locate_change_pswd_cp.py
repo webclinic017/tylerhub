@@ -47,6 +47,7 @@ class location():
         time.sleep(1)
         commom.display_click('css,.ivu-menu-item',1)
         
+        
     #去除登录页弹窗
     def remove_topup(self):
         commom.switch_windows(0)
