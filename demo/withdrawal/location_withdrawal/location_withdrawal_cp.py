@@ -172,9 +172,13 @@ class location_withdrawal_incp():
         try:
             # 判断出金按钮是否被勾选
             time.sleep(1)
+            self.status_len=common.get_lenofelement('xpath,//*[@id="tdAccount"]/div[2]/div/div/div[3]/div[1]'
+            '/div[2]/table/tbody/tr[1]/td[8]/div/div/div/label')
+            for i in (0,self.status_len):
+   
             #未勾选时
-            if not common.is_element_selected('xpath,//*[@id="tdAccount"]/div[2]/div/div/div[3]/div[1]/div[2]/'
-            'table/tbody/tr[{}]/td[6]/div/div/div/label/span/input'.format(row),1):
+            if not common.is_element_selected('xpath,//*[@id="tdAccount"]/div[2]/div/div/div[3]/div[1]/'
+            'div[2]/table/tbody/tr[{}]/td[8]/div/div/div/label/span/input'.format(row),1):
                 time.sleep(1)
                 common.display_click('css,div.ivu-table-fixed-body>table>tbody>tr>td>div>div>div>div>a',2*row-1) #编辑
                 time.sleep(1)

@@ -159,8 +159,8 @@ class locations_of_deposit():
             # 判断入金按钮是否被勾选
             time.sleep(1)
             #未勾选时
-            if not common.is_element_selected('xpath,//*[@id="tdAccount"]/div[2]/div/div/div[3]/div[1]/div[2]/'
-            'table/tbody/tr[{}]/td[6]/div/div/div/label/span/input'.format(row)):
+            if not common.is_element_selected('xpath,//*[@id="tdAccount"]/div[2]/div/div/div[3]/div[1]/'
+            'div[2]/table/tbody/tr[{}]/td[8]/div/div/div/label/span/input'.format(row)):
                 time.sleep(1)
                 common.display_click('css,div.ivu-table-fixed-body>table>tbody>tr>td>div>div>div>div>a',2*row-1) #编辑
                 time.sleep(1)

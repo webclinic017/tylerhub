@@ -89,6 +89,7 @@ class review_actions(Commonweb):
     def get_success_text(self):
         try:
             #获取文本
+            time.sleep(4)
             self.status=self.display_get_text('css,div.ivu-dropdown-rel>button.ivu-btn-default>span>span')
             print(self.status)
             self.closerweb()

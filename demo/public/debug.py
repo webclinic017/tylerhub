@@ -185,7 +185,7 @@ com.display_click('css,div.pull-right > .ivu-btn')
 time.sleep(2)
 com.display_click('css,div.upload-btn > p:nth-of-type(1)')
 time.sleep(1)
-exe_path=r'D:\picture\test.exe'
-pic_path=r'D:\picture\code.jpg'
-os.system('{} {}'.format(exe_path,pic_path))
-time.sleep(10)
+# from selenium import webdriver
+
+# dr=webdriver.Chrome()
+# dr.get('https://www.baidu.com')

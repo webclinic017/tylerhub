@@ -57,8 +57,7 @@ class exceldata():
 #测试
 if __name__=='__main__':
     e=exceldata()
-    e.openexcel(r'E:\test\register_data.xlsx','Sheet1')
+    e.openexcel(r'D:\code\tylerhub\demo\registration_process\test_excel_data\account_number.xlsx','Sheet1')
     a=e.dict_data()
     print(a)
     print(a[0]['邮箱'][0:2]=='14')
-    e.saveainfo(r'E:\test\all_country.xlsx','6666','F','5')

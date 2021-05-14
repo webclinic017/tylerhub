@@ -62,7 +62,7 @@ class kyc_actions(unittest.TestCase):
         #KYC表单认证
         kyc.get_on_kyc(data['地区'])
         #断言
-        self.assertIn(kyc.get_kyc_success(),'成功提交个人验证资料！Successfully submitted personal verification information!')
+        self.assertIn(kyc.get_kyc_success(),'您的资料正在审批中，您可查看 “季度市场展望” ，了解更多行情资讯 Your information is under review, you can check the "Quarterly Market Outlook" for more market information')
 
 if __name__=='__main__':
     suit=unittest.defaultTestLoader.discover(os.path.dirname(os.path.abspath(__file__)),

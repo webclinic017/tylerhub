@@ -59,7 +59,7 @@ class kyc_approve():
         self.commethod.login_cp(username,psword)
         time.sleep(3)
 
-    #去除首次登录会员中心的弹窗，公司声明
+    #去除弹窗，公司声明
     def fisrtcp_top(self):
         try:
             common.display_click('css,.el-checkbox__inner')
@@ -250,13 +250,13 @@ class kyc_approve():
         time.sleep(4)
         common.web_click('css,.img-text-required',1)
         time.sleep(1)
-        common.upload_img(path_process+r'\test_excel_data\card_behind.exe')
+        common.upload_img(path_process+r'\test_excel_data\upimg.exe',path_process+r'\test_excel_data\behind.jpg')
         time.sleep(4)
         common.js_scroll('down')
         time.sleep(1)
         #点击下一步
         common.web_click('css,.submit-btn')
-        time.sleep(3)
+        time.sleep(4)
         #上传银行卡照片
         common.display_click('css,.img-text-required')
         time.sleep(1)
@@ -320,7 +320,12 @@ class kyc_approve():
             #去除公司声明弹窗
             self.fisrtcp_top()
             time.sleep(2)
-            self.text= common.get_text('css,.title',-1)
+            common.general_refresh_()
+            #资料审核弹出
+            time.sleep(3)
+            common.display_click('css,.el-button--primary > span')
+            time.sleep(2)
+            self.text= common.get_text('css,.alert-text')
             return self.text
         except Exception as msg:
             pub_method.log_output('!!--!!get_kyc_success').error(msg)
