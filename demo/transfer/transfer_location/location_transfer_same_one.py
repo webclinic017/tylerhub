@@ -74,7 +74,7 @@ class location_of_transfer():
             time.sleep(1)
             #主账户信息
             common.display_click('css,[href="#masterAccount"]')
-            time.sleep(10)
+            time.sleep(2)
         except Exception as msg:
             pub_method.log_output('!!--!!ender_detail_page').error(msg)
 
@@ -135,18 +135,24 @@ class location_of_transfer():
         try:
             #账户详情页
             self.ender_detail_page(account)
-            if common.get_attributes('css,label.switch>span.ivu-switch>input','value',4)=='false':
-                time.sleep(1)
-                #开启转账控制权限
-                common.display_click('css,label.switch>span.ivu-switch',4)
-                time.sleep(1)
-                #确定
-                common.display_click('css,.ivu-modal-confirm-footer > .ivu-btn-primary')
-                print('开启主账号转账控制')
-                time.sleep(6)
-            else:
-                print('主账号转账控制已开启')
-                pass
+            while True:
+                if common.ele_is_displayed('xpath,//div[@id="masterAccount"]//div[@class="ivu-collapse-content-box"]'
+                '/div[1]/div[@class="ivu-spin ivu-spin-default ivu-spin-fix ivu-spin-show-text"]//div[@class="ivu-spin-text"]', 2):
+                    continue
+                else:
+                    if common.get_attributes('css,label.switch>span.ivu-switch>input','value',4)=='false':
+                        time.sleep(1)
+                        #开启转账控制权限
+                        common.display_click('css,label.switch>span.ivu-switch',4)
+                        time.sleep(1)
+                        #确定
+                        common.display_click('css,.ivu-modal-confirm-footer > .ivu-btn-primary')
+                        print('开启主账号转账控制')
+                        time.sleep(6)
+                    else:
+                        print('主账号转账控制已开启')
+                        pass
+                    break
             #真实账户信息
             common.display_click('css,[href="#tdAccount"]')
         except Exception as msg:

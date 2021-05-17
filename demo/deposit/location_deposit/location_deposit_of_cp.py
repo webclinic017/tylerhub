@@ -84,7 +84,7 @@ class locations_of_deposit():
             time.sleep(1)
             #主账户信息
             common.display_click('css,[href="#masterAccount"]')       
-            time.sleep(5)
+            time.sleep(2)
         except Exception as msg:
             pub_method.log_output('!!--!!serarch_account').error(msg)
 
@@ -94,17 +94,23 @@ class locations_of_deposit():
             #进入账号详情页
             self.ennter_the_details_page(account)
             time.sleep(1)
-            if common.get_attributes('css,label.switch>span.ivu-switch>input','value',2)=='false':#获取input标签下value的属性值
-                time.sleep(1)
-                #开启主账号入金权限
-                common.display_click('css,label.switch>span.ivu-switch',2)
-                time.sleep(1)
-                #确认
-                common.display_click('css,.ivu-modal-confirm-footer > .ivu-btn-primary')
-                time.sleep(3)
-                print('开启主账号入金控制开关')
-            else:
-                print('主账号入金控制已开启')
+            while True:
+                if common.ele_is_displayed('xpath,//div[@id="masterAccount"]//div[@class="ivu-collapse-content-box"]'
+                '/div[1]/div[@class="ivu-spin ivu-spin-default ivu-spin-fix ivu-spin-show-text"]//div[@class="ivu-spin-text"]', 2):
+                    continue
+                else:
+                    if common.get_attributes('css,label.switch>span.ivu-switch>input','value',2)=='false':#获取input标签下value的属性值
+                        time.sleep(1)
+                        #开启主账号入金权限
+                        common.display_click('css,label.switch>span.ivu-switch',2)
+                        time.sleep(1)
+                        #确认
+                        common.display_click('css,.ivu-modal-confirm-footer > .ivu-btn-primary')
+                        time.sleep(3)
+                        print('开启主账号入金控制开关')
+                    else:
+                        print('主账号入金控制已开启')
+                    break
             #真实账户信息
             common.display_click('css,[href="#tdAccount"]')
         except Exception as msg:

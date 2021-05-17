@@ -80,18 +80,25 @@ class locathion_of_transfer():
         try:
             #主账户信息
             common.display_click('css,[href="#masterAccount"]')
-            if common.get_attributes('css,label.switch>span.ivu-switch>input','value',4)=='false':
-                time.sleep(1)
-                #开启转账控制权限
-                common.display_click('css,label.switch>span.ivu-switch',4)
-                time.sleep(1)
-                #确定
-                common.display_click('css,.ivu-modal-confirm-footer > .ivu-btn-primary')
-                time.sleep(8)
-                print('开启主账号转账控制')
-            else:
-                print('主账号转账控制已开启')
-                pass
+            time.sleep(2)
+            while True:
+                if common.ele_is_displayed('xpath,//div[@id="masterAccount"]//div[@class="ivu-collapse-content-box"]'
+                '/div[1]/div[@class="ivu-spin ivu-spin-default ivu-spin-fix ivu-spin-show-text"]//div[@class="ivu-spin-text"]', 2):
+                    continue
+                else:
+                    if common.get_attributes('css,label.switch>span.ivu-switch>input','value',4)=='false':
+                        time.sleep(1)
+                        #开启转账控制权限
+                        common.display_click('css,label.switch>span.ivu-switch',4)
+                        time.sleep(1)
+                        #确定
+                        common.display_click('css,.ivu-modal-confirm-footer > .ivu-btn-primary')
+                        time.sleep(8)
+                        print('开启主账号转账控制')
+                    else:
+                        print('主账号转账控制已开启')
+                        pass
+                    break
         except Exception as msg:
             pub_method.log_output('!!--!!transfer_control_on').error(msg)
 

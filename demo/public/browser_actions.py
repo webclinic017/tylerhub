@@ -158,7 +158,7 @@ class Commonweb():
         except Exception as msg:
             pub_method.log_output('!!--!!element_is_visible').error(msg) 
 
-    #设置等待时间查找页面元素是否可见
+    #设置等待时间查找页面元素是否可见(是否加载到了dom树中)
     def ele_is_displayed(self,locator,timeout,step=0.5):
         """
         timeout:自定义等待时间，与隐式等待时间不同，可缩短页面等待时间

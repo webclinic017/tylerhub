@@ -80,7 +80,7 @@ class location_withdrawal_incp():
             time.sleep(1)
             #主账户信息
             common.display_click('css,[href="#masterAccount"]')
-            time.sleep(7)
+            time.sleep(2)
         except Exception as msg:
             pub_method.log_output('!!--!!ender_detail_page').error(msg)
 
@@ -101,20 +101,26 @@ class location_withdrawal_incp():
         try:
             #账户详情页
             self.ender_detail_page(account)
-            #判断出金控制按钮是否开启
-            if common.get_attributes('css,label.switch>span.ivu-switch>input','value',3)=='false':#获取input标签下value的属性值
-                time.sleep(1)
-                #开启主账号入金权限
-                common.display_click('css,label.switch>span.ivu-switch',3)
-                time.sleep(1)
-                #确认
-                common.display_click('css,.ivu-modal-confirm-footer > .ivu-btn-primary')
-                time.sleep(3)
-                print('开启主账号出金控制')
-            else:
-                print('主账号出金控制已开启')
-            #真实账户信息
-            common.display_click('css,[href="#tdAccount"]')
+            while True:
+                if common.ele_is_displayed('xpath,//div[@id="masterAccount"]//div[@class="ivu-collapse-content-box"]'
+                '/div[1]/div[@class="ivu-spin ivu-spin-default ivu-spin-fix ivu-spin-show-text"]//div[@class="ivu-spin-text"]', 2):
+                    continue
+                else:
+                    #判断出金控制按钮是否开启
+                    if common.get_attributes('css,label.switch>span.ivu-switch>input','value',3)=='false':#获取input标签下value的属性值
+                        time.sleep(1)
+                        #开启主账号入金权限
+                        common.display_click('css,label.switch>span.ivu-switch',3)
+                        time.sleep(1)
+                        #确认
+                        common.display_click('css,.ivu-modal-confirm-footer > .ivu-btn-primary')
+                        time.sleep(3)
+                        print('开启主账号出金控制')
+                    else:
+                        print('主账号出金控制已开启')
+                    #真实账户信息
+                    common.display_click('css,[href="#tdAccount"]')
+                    break
         except Exception as msg:
             pub_method.log_output('!!--!!account_is_openwithdrawal').error(msg)
 
@@ -174,29 +180,35 @@ class location_withdrawal_incp():
             time.sleep(1)
             self.status_len=common.get_lenofelement('xpath,//*[@id="tdAccount"]/div[2]/div/div/div[3]/div[1]'
             '/div[2]/table/tbody/tr[1]/td[8]/div/div/div/label')
-            for i in (0,self.status_len):
-   
-            #未勾选时
-            if not common.is_element_selected('xpath,//*[@id="tdAccount"]/div[2]/div/div/div[3]/div[1]/'
-            'div[2]/table/tbody/tr[{}]/td[8]/div/div/div/label/span/input'.format(row),1):
-                time.sleep(1)
-                common.display_click('css,div.ivu-table-fixed-body>table>tbody>tr>td>div>div>div>div>a',2*row-1) #编辑
-                time.sleep(1)
-                #勾选出金权限
-                common.display_click('xpath,//div[@class="checkbox ivu-form-item"]//input[@class="ivu-checkbox-input"]',1)
-                time.sleep(1)
-                #提交
-                common.display_click('css,button.ivu-btn-success>span',1)
-                time.sleep(1)
-                if self.status_num>=5:
-                    common.display_click('xpath,//div[@class="ivu-modal-wrap"]//span',1)
+            time.sleep(1)
+            for i in range(0,self.status_len):
+                if common.display_get_text('xpath,//*[@id="tdAccount"]/div[2]/div/div/div[3]/'
+                'div[1]/div[2]/table/tbody/tr[1]/td[8]/div/div/div/label',i) in ('出金','Withdrawal'):
                     time.sleep(1)
+                    #未勾选时
+                    if not common.is_element_selected('xpath,//*[@id="tdAccount"]/div[2]/div/div/div[3]/div[1]/'
+                    'div[2]/table/tbody/tr[{}]/td[8]/div/div/div/label/span/input'.format(row),i):
+                        time.sleep(1)
+                        common.display_click('css,div.ivu-table-fixed-body>table>tbody>tr>td>div>div>div>div>a',2*row-1) #编辑
+                        time.sleep(1)
+                        #勾选出金权限
+                        common.display_click('xpath,//div[@class="checkbox ivu-form-item"]//input[@class="ivu-checkbox-input"]',i)
+                        time.sleep(1)
+                        #提交
+                        common.display_click('css,button.ivu-btn-success>span',1)
+                        time.sleep(1)
+                        if self.status_num>=5:
+                            common.display_click('xpath,//div[@class="ivu-modal-wrap"]//span',1)
+                            time.sleep(1)
+                        else:
+                            pass
+                        time.sleep(1)
+                        print('已修改交易账号{}出金权限为勾选状态'.format(traccount))
+                    else:
+                        print('交易账号{}出金权限已勾选'.format(traccount))
+                    break
                 else:
                     pass
-                time.sleep(1)
-                print('已修改交易账号{}出金权限为勾选状态'.format(traccount))
-            else:
-                print('交易账号{}出金权限已勾选'.format(traccount))
         except Exception as msg:
             pub_method.log_output('!!--!!withdrawal_is_selected').error(msg)
 
@@ -388,25 +400,27 @@ class location_withdrawal_incp():
             time.sleep(1)
             common.display_click('css,.el-client-menu > li > .drop-sub-title') #设置
             time.sleep(5)
-            for i in ['localCurrency-card','bank-card','e-wallet-card']:
-                if common.ele_is_displayed('css,.{} .isApprove'.format(i),2):
-                    if i=='localCurrency-card':
-                        self.withdrawal_type='当地货币银行转账'
-                        print('当前账号可用出金方式为：{}'.format(self.withdrawal_type))
-                        return self.withdrawal_type
-                        break
-                    elif i=='bank-card':
-                        self.withdrawal_type='国际银行电汇'
-                        print('当前账号可用出金方式为：{}'.format(self.withdrawal_type))
-                        return self.withdrawal_type
-                        break
-                    else:
-                        self.withdrawal_type='电子钱包'
-                        print('当前账号可用出金方式为：{}'.format(self.withdrawal_type))
-                        return self.withdrawal_type
-                        break
+            #出金方式
+            common.display_click('css,#tab-second')
+            time.sleep(2)
+            if common.ele_is_displayed('xpath,//span[@class="status_text status_1"]',1):
+                self.withdrawal_text=common.display_get_text('css,.bankinfo-page > div .text')
+                time.sleep(1)
+                if self.withdrawal_text in ('您最多可以添加3条当地货币银行信息','You could add up to 3 local currency bank information'):
+                    self.withdrawal_type='当地货币银行转账'
+                    print('当前主账号可用出金方式为：{}'.format(self.withdrawal_type))
+                    return self.withdrawal_type
+                elif self.withdrawal_text in ('您最多可以添加3条国际电汇信息','You could add up to 3 international wire transfer information'):
+                    self.withdrawal_type='国际银行电汇'
+                    print('当前主账号可用出金方式为：{}'.format(self.withdrawal_type))
+                    return self.withdrawal_type
                 else:
-                    print('该账号{}出金渠道不可用'.format(i))
+                    self.withdrawal_type='电子钱包'
+                    self.ewallet_type=common.display_get_text('css,.bankinfo-page div > .bankNo > .lev-val')
+                    print('当前主账号可用出金方式为：{},渠道{}'.format(self.withdrawal_type,self.ewallet_type))
+                    return self.withdrawal_type
+                    return self.ewallet_type
+            time.sleep(1)           
         except Exception as msg:
             pub_method.log_output('!!--!!usable_withdrawal').error(msg)
 
@@ -421,8 +435,8 @@ class location_withdrawal_incp():
             #判断当前账号存在哪种可用出金方式
             self.usable_withdrawal()
             #出金
-            common.display_click('css,li.el-submenu>ul>li>ul>div>li>span',3)
-            time.sleep(2)
+            common.display_click('xpath,//span[.="出金"]')
+            time.sleep(3)
             #选择交易账户
             common.display_click('xpath,//div[@class="el-select trade-account"]//input')
             time.sleep(2)
@@ -438,7 +452,7 @@ class location_withdrawal_incp():
             time.sleep(1)
             if self.withdrawal_type=='电子钱包':
                 #渠道选择skill时
-                common.display_click('xpath,//span[.="Skrill"]')
+                common.display_click('xpath,//span[.="{}"]'.format(self.ewallet_type))
                 time.sleep(1)
                 #电邮
                 common.display_click('css,.form > .left-row > div .el-select__caret',-1)
