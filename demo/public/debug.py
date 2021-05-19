@@ -164,36 +164,26 @@
 #ele.click()
 
 # from browser_actions import Commonweb
+# from common_method import commonmethod
 # import time
 # import os
 
-# com=Commonweb()
-# com.open_browser()
-# com.open_web('https://at-bos-frontend-uat.atfxdev.com/login')
-# time.sleep(1)
-# com.display_input('css,[placeholder="Account"]','tyler.tang')
-# time.sleep(1)
-# com.display_input('css,[placeholder="Password"]','Tl123456')
-# time.sleep(1)
-# com.web_click('css,.ivu-btn-large')
-# time.sleep(2)
-# com.display_click('xpath,//div[@class="scroll-content"]//span[.="Client Management"]')
-# time.sleep(1)
-# com.display_click('xpath,//li[@class="ivu-menu-submenu ivu-menu-opened"]//span[.="Client List"]')
-# time.sleep(1)
-# com.display_click('css,div.pull-right > .ivu-btn')
-# time.sleep(2)
-# com.display_click('css,div.upload-btn > p:nth-of-type(1)')
-# time.sleep(1)
-# from selenium import webdriver
+# common=Commonweb()
+# dr=common.open_browser()
+# commethed=commonmethod(dr)
 
-# dr=webdriver.Chrome()
-# dr.get('https://www.baidu.com')
+# common.open_web('https://at-client-portal-uat.atfxdev.com/login')
+# commethed.remove_register_topup()
+# time.sleep(1)
+# commethed.choose_register_lang('CN')
+# commethed.login_cp('lemon.lin@newtype.io', 'Tl123456')
+# time.sleep(10)
+# print(common.element_is_visible('xpath,//div[@class="el-loading-mask"]'))
+# while True:
+#     text=common.get_attributes('xpath,//div[@class="el-loading-mask"]', 'style')
+#     if 'display' not in text:
+#         print(text)
+#         continue
+#     else:
+#         common.display_click('xpath,//span[.="入金"]')
 
-while True:
-    a=input()
-    print(a)
-    if a==str(1):        
-        break
-    else:
-        continue

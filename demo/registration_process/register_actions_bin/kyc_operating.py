@@ -1,3 +1,11 @@
+'''
+Author: your name
+Date: 2021-05-13 10:43:00
+LastEditTime: 2021-05-18 15:57:52
+LastEditors: your name
+Description: In User Settings Edit
+FilePath: \tylerhub\demo\registration_process\register_actions_bin\kyc_operating.py
+'''
 import os
 import sys
 import unittest

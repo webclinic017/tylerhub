@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"skipped","Wed May 19 10:41:51 GMT+08:00 2021","Wed May 19 10:44:13 GMT+08:00 2021","142459","demo.withdrawal.withdrawal_bin","test_withdrawal_cp_bin","Test_withdrawal_actions_incp","","","交易账号出金","读取测试文档数据，判断是否具有出金条件"
+"skipped","Wed May 19 10:41:24 GMT+08:00 2021","Wed May 19 10:41:51 GMT+08:00 2021","26711","demo.withdrawal.withdrawal_bin","test_withdrawal_cp_bin","Test_withdrawal_actions_incp","","","交易账号出金","读取测试文档数据，判断是否具有出金条件"

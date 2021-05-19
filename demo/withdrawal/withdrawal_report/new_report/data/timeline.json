@@ -1,0 +1,73 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "一台憨憨笔记本",
+    "children" : [ {
+      "name" : "16880-MainThread",
+      "children" : [ {
+        "name" : "交易账号初级",
+        "uid" : "e67c698cf191bcaa",
+        "parentUid" : "f26c61c5f15830590469f91ce5d885bf",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1621332335772,
+          "stop" : 1621332373643,
+          "duration" : 37871
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000003759.0, '交易账号': 632000108.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '出金金额': 660.0, '出金前账户余额': 49501.0, '出金后账户余额': 4340.0, '预期结果': ''}" ]
+      } ],
+      "uid" : "f26c61c5f15830590469f91ce5d885bf"
+    }, {
+      "name" : "8436-MainThread",
+      "children" : [ {
+        "name" : "交易账号出金",
+        "uid" : "6d6005b74bb9917f",
+        "parentUid" : "95c7ed795c21729600f21adf87a14142",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1621392084555,
+          "stop" : 1621392111266,
+          "duration" : 26711
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000003759.0, '交易账号': 632000108.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '出金金额': 660.0, '出金前账户余额': 49501.0, '出金后账户余额': 4340.0, '预期结果': ''}" ]
+      }, {
+        "name" : "交易账号出金",
+        "uid" : "a128930501ba9df3",
+        "parentUid" : "95c7ed795c21729600f21adf87a14142",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1621392111277,
+          "stop" : 1621392253736,
+          "duration" : 142459
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000003759.0, '交易账号': 652002187.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '出金金额': 660.0, '出金前账户余额': '', '出金后账户余额': 4340.0, '预期结果': ''}" ]
+      } ],
+      "uid" : "95c7ed795c21729600f21adf87a14142"
+    }, {
+      "name" : "7548-MainThread",
+      "children" : [ {
+        "name" : "交易账号出金",
+        "uid" : "ae28a0daa3ed432",
+        "parentUid" : "b2ba869cdf65a1e54fd70cd57ee6faad",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1621391009126,
+          "stop" : 1621391046630,
+          "duration" : 37504
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000003759.0, '交易账号': 632000108.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '出金金额': 660.0, '出金前账户余额': 49501.0, '出金后账户余额': 4340.0, '预期结果': ''}" ]
+      } ],
+      "uid" : "b2ba869cdf65a1e54fd70cd57ee6faad"
+    } ],
+    "uid" : "70de0376cfda7d26b35740bc47604458"
+  } ]
+}

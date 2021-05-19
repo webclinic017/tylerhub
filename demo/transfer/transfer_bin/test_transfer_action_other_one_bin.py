@@ -1,9 +1,15 @@
+'''
+Author: tyler
+Date: 2021-05-13 10:43:00
+LastEditTime: 2021-05-19 11:23:36
+LastEditors: Please set LastEditors
+Description: Executive document of withdrawal
+FilePath: \tylerhub\demo\transfer\transfer_bin\test_transfer_action_other_one_bin.py
+'''
 import os
 import sys
-import pytest
-
-import ddt
 import allure
+import pytest
 
 path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))+r'\public'
 sys.path.append(path_public)
@@ -11,7 +17,6 @@ path_transfer=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_transfer+r'\transfer_location')
 from about_data import exceldata
 from location_transfer_other_one import locathion_of_transfer
-
 
 transfer=locathion_of_transfer()
 e=exceldata()
@@ -63,8 +68,6 @@ class Test_transfer_other_account():
                         #断言
                         with allure.step('判断转账是否需要审核，是否成功及断言用例是否通过'):
                             assert transfer.is_transfer_successful(int(data['转出主账号'])) in ('转账成功','Transfer Success','success'), '转账成功'
-
-
 
 if __name__=='__main__':
     #pytest.main(['-v','-s',r'{}\transfer_bin\test_transfer_action_other_one_bin.py'.format(path_transfer)])

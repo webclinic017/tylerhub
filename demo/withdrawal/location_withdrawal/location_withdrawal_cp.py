@@ -84,7 +84,7 @@ class location_withdrawal_incp():
         except Exception as msg:
             pub_method.log_output('!!--!!ender_detail_page').error(msg)
 
-    #遍历BOS交易账号列表，获取入金账号所在行数
+    #遍历BOS交易账号列表，获取出金账号所在行数
     def where_is_traccount_bos(self,traccount):
         #获取交易账号列表的总行数
         self.tdaccount_list_len=common.get_lenofelement('xpath,//*[@id="tdAccount"]/div[2]/div/div/'
@@ -95,6 +95,28 @@ class location_withdrawal_incp():
             'table/tbody/tr/td[1]/div/div/span',i))==str(traccount):
                 return i+1
                 break
+    
+    #判断交易账号币种，目前只允许USD币种
+    def is_currency_usd(self,row):
+        try:
+            time.sleep(1)
+            #查看
+            common.display_click('css,div.ivu-table-fixed-body>table>tbody>tr>td>div>div>div>div>a',2*row-2)
+            time.sleep(2)
+            #获取当前交易账号币种
+            self.currency=common.display_get_text('css,span[prop="currency"]')
+            time.sleep(1)
+            common.display_click('xpath,//div[@class="ivu-drawer-wrap"]//i[@class="ivu-icon ivu-icon-ios-close"]')
+            time.sleep(1)
+            if self.currency !='USD':
+                self.closebrowser()
+                return True
+            else:
+                return False
+        except Exception as msg:
+            pub_method.log_output('!!--!!is_currency_usd').error(msg)
+
+
 
     #判断主账号出金权限是否开启
     def account_is_openwithdrawal(self,account):
@@ -124,6 +146,7 @@ class location_withdrawal_incp():
         except Exception as msg:
             pub_method.log_output('!!--!!account_is_openwithdrawal').error(msg)
 
+    
     #判断交易账号激活+暂停状态是否超过或等于5个
     def is_status_five(self):
         self.status_num=0
@@ -424,14 +447,23 @@ class location_withdrawal_incp():
         except Exception as msg:
             pub_method.log_output('!!--!!usable_withdrawal').error(msg)
 
-
     #出金
     def withdrawal_action(self,traccount,amount,excelpath,row):
         try:
+            while True:
+                self.attribute=common.get_attributes('xpath,//div[@class="el-loading-mask"]','style')
+                if 'display' not in self.attribute:
+                    continue
+                else:
+                    break
             #获取当前交易账号的余额
             self.before_blance=self.get_traccount_balance(traccount)
             e.saveainfo(excelpath,self.before_blance,'F',row)
             print('出金前交易账户余额为{}'.format(self.before_blance))
+            if float(self.before_blance)==0:
+                return True
+            else:
+                return False
             #判断当前账号存在哪种可用出金方式
             self.usable_withdrawal()
             #出金
@@ -535,14 +567,19 @@ class location_withdrawal_incp():
             self.account_is_openwithdrawal(account)
             #获取交易账号在列表中所在位置
             self.rows=self.where_is_traccount_bos(traccount)
-            #判断交易账号激活+暂停状态是否超过或等于5个
-            self.is_status_five()
-            #判断交易账号状态
-            self.tdaccount_status(traccount,self.rows)
-            #判断交易账号出金按钮是否被勾选
-            self.withdrawal_is_selected(traccount,self.rows)
-            #判断是否存在可用的出金方式,不存在则新建
-            self.is_wayto_withdrawal()
+            #判断当前交易账号币种是否为USD，否则跳过测试用例
+            if self.is_currency_usd(self.rows):
+                return True
+            else:
+                #判断交易账号激活+暂停状态是否超过或等于5个
+                self.is_status_five()
+                #判断交易账号状态
+                self.tdaccount_status(traccount,self.rows)
+                #判断交易账号出金按钮是否被勾选
+                self.withdrawal_is_selected(traccount,self.rows)
+                #判断是否存在可用的出金方式,不存在则新建
+                self.is_wayto_withdrawal()
+                return False
         except Exception as msg:
             pub_method.log_output('!!--!!is_satisfy_withdrawal').error(msg)
 
@@ -553,16 +590,19 @@ class location_withdrawal_incp():
             self.logincp(username,psword)
             time.sleep(10)
             #出金
-            self.withdrawal_action(traccount,amount,excelpath,row)
-            #bos审核出金
-            self.review_withdrawal(traccount)
-            #获取出金后交易账号余额
-            common.switch_windows(0)
-            common.display_click('css, .el-menu-item > .menu-font')
-            time.sleep(5)
-            self.after_balance=self.get_traccount_balance(traccount)
-            e.saveainfo(excelpath,self.after_balance,'G',row)
-            print('出金后交易账号余额为：{}'.format(self.after_balance))
+            if self.withdrawal_action(traccount,amount,excelpath,row):
+                return True
+            else:
+                #bos审核出金
+                self.review_withdrawal(traccount)
+                #获取出金后交易账号余额
+                common.switch_windows(0)
+                common.display_click('css, .el-menu-item > .menu-font')
+                time.sleep(5)
+                self.after_balance=self.get_traccount_balance(traccount)
+                e.saveainfo(excelpath,self.after_balance,'G',row)
+                print('出金后交易账号余额为：{}'.format(self.after_balance))
+                return False
         except Exception as msg:
             pub_method.log_output('!!--!!withdrawal_cp').error(msg)
 

@@ -202,7 +202,7 @@ class kyc_approve():
             time.sleep(1)
             #点击提交
             common.web_click('css,.submit-btn')
-            time.sleep(1)
+            time.sleep(4)
         except Exception as msg:
             pub_method.log_output('!!--!!submit').error(msg)
      
@@ -224,7 +224,7 @@ class kyc_approve():
             time.sleep(1)
             #点击邮件记录
             common.web_click('css,.ivu-anchor-link-title',-2)
-            time.sleep(2)
+            time.sleep(5)
             #打开验证码邮件
             common.web_click('css,.tips',1)
             time.sleep(1)
@@ -247,16 +247,19 @@ class kyc_approve():
         common.display_click('css,.img-text-required')
         time.sleep(1)
         common.upload_img(path_process+r'\test_excel_data\upimg.exe',path_process+r'\test_excel_data\front.jpg')
-        time.sleep(4)
+        time.sleep(5)
         common.web_click('css,.img-text-required',1)
         time.sleep(1)
         common.upload_img(path_process+r'\test_excel_data\upimg.exe',path_process+r'\test_excel_data\behind.jpg')
-        time.sleep(4)
+        time.sleep(5)
         common.js_scroll('down')
         time.sleep(1)
+        #一键填充
+        common.display_click('css,div.el-col-8 > button > span',1)
+        time.sleep(3)
         #点击下一步
         common.web_click('css,.submit-btn')
-        time.sleep(4)
+        time.sleep(6)
         #上传银行卡照片
         common.display_click('css,.img-text-required')
         time.sleep(1)
@@ -266,19 +269,20 @@ class kyc_approve():
         common.web_clear('css,.el-input__inner')
         time.sleep(1)
         common.display_input('css,.el-input__inner',pub_method.get_purerange(14,'number'))
+        time.sleep(2)
         #一键填充
         common.web_click('css,.el-button--text')
-        time.sleep(1)
+        time.sleep(3)
         #下一步
         common.web_click('css,.submit-btn')
-        time.sleep(2)
+        time.sleep(5)
         #选择地址认证
         common.display_click('css,.btns')
         #上传地址证明
         common.display_click('css,.img-text-required')
         time.sleep(1)
         common.upload_img(path_process+r'\test_excel_data\upimg.exe',path_process+r'\test_excel_data\address.jpg')
-        time.sleep(3)
+        time.sleep(4)
         #点击提交
         common.web_click('css,.submit-btn')   
 
