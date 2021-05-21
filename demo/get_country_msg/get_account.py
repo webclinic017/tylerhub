@@ -21,7 +21,7 @@ class get_account(Commonweb):
 
     def login_bos(self,username,psword,lang='CN'):
         try:
-            self.open_web('https://at-bos-frontend-sit.atfxdev.com/login')
+            self.open_web('https://at-bos-frontend-uat.atfxdev.com/login')
             #选择页面语言
             self.bos_lang(lang)
             time.sleep(1)
@@ -42,7 +42,7 @@ class get_account(Commonweb):
             if lang=='CN' or lang=='简中':
                 self.web_click('css,.ivu-icon-ios-arrow-down')
                 time.sleep(1)
-                self.web_click('css,.ivu-select-item') #选择页面语言为中文
+                self.web_click('css,.ivu-select-item',1) #选择页面语言为中文
             else:
                 pass
         except Exception as msg:

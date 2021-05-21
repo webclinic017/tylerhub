@@ -187,3 +187,32 @@
 #     else:
 #         common.display_click('xpath,//span[.="入金"]')
 
+# import pymysql
+# import pandas as pd
+# conn=pymysql.connect(host='atfx2-dev.cey5cywit5mk.ap-east-1.rds.amazonaws.com',port=3306,user='atfx2-dev',password='W22b3yA3-ae9jTrerpb',db='')
+
+import pymongo
+import pandas as pd
+import ssl
+
+ssl._create_default_https_context=ssl._create_unverified_context()
+
+client=pymongo.MongoClient('mongodb+srv://atfx-dev-admin:m578A3MGrcR3pRXVU2pA@atfx2-dev-loa0g.azure.mongodb.net'
+'/atfx_test?authSource=admin&replicaSet=atfx2-dev-shard-0&'
+'readPreference=primary&appname=MongoDB%20Compass%20Community&retryWrites=true&ssl=true')
+
+db=client['atfxgm-uat']
+
+mydb=db['atfx_ib_links']
+data=mydb.find({'mtName':'mt4'}).limit(5)
+for i in data:
+    print(i['link'])
+
+print(type(data))
+for i in data:
+    print(data['link'])
+
+
+
+
+
