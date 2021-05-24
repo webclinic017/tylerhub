@@ -191,28 +191,102 @@
 # import pandas as pd
 # conn=pymysql.connect(host='atfx2-dev.cey5cywit5mk.ap-east-1.rds.amazonaws.com',port=3306,user='atfx2-dev',password='W22b3yA3-ae9jTrerpb',db='')
 
-import pymongo
-import pandas as pd
-import ssl
+# import pymongo
+# import ssl
 
-ssl._create_default_https_context=ssl._create_unverified_context()
+# ssl._create_default_https_context=ssl._create_unverified_context()
 
-client=pymongo.MongoClient('mongodb+srv://atfx-dev-admin:m578A3MGrcR3pRXVU2pA@atfx2-dev-loa0g.azure.mongodb.net'
-'/atfx_test?authSource=admin&replicaSet=atfx2-dev-shard-0&'
-'readPreference=primary&appname=MongoDB%20Compass%20Community&retryWrites=true&ssl=true')
-
-db=client['atfxgm-uat']
-
-mydb=db['atfx_ib_links']
-data=mydb.find({'mtName':'mt4'}).limit(5)
-for i in data:
-    print(i['link'])
-
-print(type(data))
-for i in data:
-    print(data['link'])
+# ssl._create_default_https_context=ssl._create_unverified_context()
 
 
 
+# client=pymongo.MongoClient('mongodb+srv://atfx-dev-admin:m578A3MGrcR3pRXVU2pA@atfx2-dev-loa0g.azure.mongodb.net'
+# '/atfx_test?authSource=admin&replicaSet=atfx2-dev-shard-0&'
+# 'readPreference=primary&appname=MongoDB%20Compass%20Community&retryWrites=true&ssl=true')
+
+# db=client['atfxgm-uat']
+
+# mydb=db['atfx_ib_links']
+# data=mydb.find({'mtName':'mt4'}).limit(5)
+# for i in data:
+#     print(i['link'])
+
+# print(type(data))
+# for i in data:
+#     print(data['link'])
+# def A():
+#     lis=[]
+#     for i in 'hel':
+#         dic={}
+#         dic['point']=i
+#         dic['key']=i
+#         lis.append(dic)
+#     return lis
+# print(A())
 
 
+# test={
+#     "accountNumber": 1000000593,
+#     "accountIbLink": "A03",
+#     "mtPlatform": "mt4",
+#     "currency": "USD",
+#     "markup": "0",
+#     "commission": 30,
+#     "leverage": 200,
+#     "mtGroup": "demoforex200",
+#     "spreadType": "Edge",
+#     "riskVideo": "Y",
+#     "link": "+Gdea2zEybngAKqr+Jz7TgFKwooZcyQj5Sf6SnXvdqsOHcnNDE5ImIxftKiZ7QHOoP1PE6PKEPz952y/Epv1Sg==1583223302873",
+#     "createBy": "admin",
+#     "updateBy": "admin",
+#     "isDeleted": 1,
+#     "deleteDate": {
+#       "$date": "2020-03-03T08:15:02.873Z"
+#     },
+#     "createDate": {
+#       "$date": "2020-02-27T06:43:14.086Z"
+#     },
+#     "lastUpdateDate": {
+#       "$date": "2020-02-27T06:43:14.086Z"
+#     },
+#     "__v": 0
+# },
+# {
+#     "accountNumber": 1000000593,
+#     "accountIbLink": "A03",
+#     "mtPlatform": "mt4",
+#     "currency": "USD",
+#     "markup": "0",
+#     "commission": 30,
+#     "leverage": 100,
+#     "mtGroup": "demoforex200",
+#     "spreadType": "Edge",
+#     "riskVideo": "Y",
+#     "link": "+Gdea2zEybngAKqr+Jz7TgFKwooZcyQj5Sf6SnXvdqsQfEW5wN3JYjsVL09qzf2XoP1PE6PKEPz952y/Epv1Sg==1583223305961",
+#     "createBy": "admin",
+#     "updateBy": "admin",
+#     "isDeleted": 1,
+#     "deleteDate": {
+#       "$date": "2020-03-03T08:15:05.961Z"
+#     },
+#     "createDate": {
+#       "$date": "2020-02-27T06:43:33.613Z"
+#     },
+#     "lastUpdateDate": {
+#       "$date": "2020-02-27T06:43:33.613Z"
+#     },
+#     "__v": 0
+# }
+
+# tset_list=[]
+# for i in test:
+#     test_dict={}
+#     test_dict['link']=i['link']
+#     test_dict['mtGroup']=i['mtGroup']
+#     tset_list.append(test_dict)
+# print(tset_list)
+
+def A(a,b):
+  return a,b,'ZHE'
+
+print(A(4,5))

@@ -146,6 +146,99 @@ retryWrites=true&ssl=true'.format(username,password)
             print('数据库链接或参数有误:{}'.format(msg))
 
 
+    #连接mongodb数据库，查询多个字段内容    
+    def searchs_for_mongodb(self,username,password,database,muster,filed1=None,filed2=None,filed3=None,filed4=None,num=4,N=0):
+        """
+        username:用户名
+        password：密码
+        database：数据库
+        muster：集合
+        N:查询条数，默认为0
+        filed:需具体查询的字段
+        num:每条数据具体查询的字段个数,默认最大为4(1~4)
+        """
+        try:
+            self.uri='mongodb+srv://{}:{}@atfx2-dev-loa0g.azure.mongodb.net/atfx_test?\
+authSource=admin&replicaSet=atfx2-dev-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&\
+retryWrites=true&ssl=true'.format(username,password)
+            self.client=pymongo.MongoClient(self.uri)
+            self.db=self.client[database]
+            self.colletion=self.db[muster]
+            self.list_search=[]
+            if N==0:
+                self.data=self.colletion.find()
+                if num==1:
+                    for i in self.data:
+                        self.dict_search={}
+                        self.dict_search[filed1]=i[filed1]
+                        self.list_search.append(self.dict_search)
+                    return self.list_search
+                elif num==2:
+                    for i in self.data:
+                        self.dict_search={}
+                        self.dict_search[filed1]=i[filed1]
+                        self.dict_search[filed2]=i[filed2]
+                        self.list_search.append(self.dict_search)
+                    return self.list_search
+                elif num==3:
+                    for i in self.data:
+                        self.dict_search={}
+                        self.dict_search[filed1]=i[filed1]
+                        self.dict_search[filed2]=i[filed2]
+                        self.dict_search[filed3]=i[filed3]
+                        self.list_search.append(self.dict_search)
+                    return self.list_search
+                else:
+                    for i in self.data:
+                        self.dict_search={}
+                        self.dict_search={}
+                        self.dict_search[filed1]=i[filed1]
+                        self.dict_search[filed2]=i[filed2]
+                        self.dict_search[filed3]=i[filed3]
+                        self.dict_search[filed4]=i[filed4]
+                        self.list_search.append(self.dict_search)
+                    return self.list_search
+                print('数据库查询条数：{}，查询字段个数：{}'.format(len(self.data),num))
+            else:
+                self.data=self.colletion.find().limit(N)
+                if num==1:
+                    for i in self.data:
+                        self.dict_search={}
+                        self.dict_search[filed1]=i[filed1]
+                        self.list_search.append(self.dict_search)
+                    return self.list_search
+                elif num==2:
+                    for i in self.data:
+                        self.dict_search={}
+                        self.dict_search[filed1]=i[filed1]
+                        self.dict_search[filed2]=i[filed2]
+                        self.list_search.append(self.dict_search)
+                    return self.list_search
+                elif num==3:
+                    for i in self.data:
+                        self.dict_search={}
+                        self.dict_search[filed1]=i[filed1]
+                        self.dict_search[filed2]=i[filed2]
+                        self.dict_search[filed3]=i[filed3]
+                        self.list_search.append(self.dict_search)
+                    return self.list_search
+                else:
+                    for i in self.data:
+                        self.dict_search={}
+                        self.dict_search={}
+                        self.dict_search[filed1]=i[filed1]
+                        self.dict_search[filed2]=i[filed2]
+                        self.dict_search[filed3]=i[filed3]
+                        self.dict_search[filed4]=i[filed4]
+                        self.list_search.append(self.dict_search)
+                    return self.list_search
+                print('数据库查询条数：{}，查询字段个数：{}'.format(len(self.data),num))
+        except Exception as msg:
+            print('查询数据库失败，请检查链接/参数：{}'.format(msg))
+
+
+
+
 #测试
 if __name__=='__main__':
     e=exceldata()
