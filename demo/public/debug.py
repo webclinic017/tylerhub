@@ -286,7 +286,15 @@
 #     tset_list.append(test_dict)
 # print(tset_list)
 
-def A(a,b):
-  return a,b,'ZHE'
+# dic={'currency': 'USD', 'markup': '0', 'leverage': 200, 'mtGroup': 'demoforex200', 'link': '+Gdea2zEybngAKqr+Jz7TgFKwooZcyQj5Sf6SnXvdqsOHcnNDE5ImIxftKiZ7QHOoP1PE6PKEPz952y/Epv1Sg==1583223302873'}
 
-print(A(4,5))
+# print(len(dic))
+
+# def A(d=1,a=None,b=None):
+#     print(a and b != None)
+
+# A(1)
+a=None
+b=None
+print(a and b ==None)
+print(a is None)

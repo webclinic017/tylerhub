@@ -79,7 +79,7 @@ retryWrites=true&ssl=true'.format(username,password)
             self.client=pymongo.MongoClient(self.uri)
             self.db=self.client[database]
             self.colletion=self.db[muster]
-            if condition and value !=None:
+            if condition!=None and value!=None:
                 self.list_data=[]
                 if N==0:
                     if type(value)==int:
@@ -147,7 +147,7 @@ retryWrites=true&ssl=true'.format(username,password)
 
 
     #连接mongodb数据库，查询多个字段内容    
-    def searchs_for_mongodb(self,username,password,database,muster,filed1=None,filed2=None,filed3=None,filed4=None,num=4,N=0):
+    def searchs_for_mongodb(self,username,password,database,muster,condition=None,value=None,filed1=None,filed2=None,filed3=None,filed4=None,filed5=None,num=5,N=0):
         """
         username:用户名
         password：密码
@@ -165,79 +165,274 @@ retryWrites=true&ssl=true'.format(username,password)
             self.db=self.client[database]
             self.colletion=self.db[muster]
             self.list_search=[]
-            if N==0:
-                self.data=self.colletion.find()
-                if num==1:
-                    for i in self.data:
-                        self.dict_search={}
-                        self.dict_search[filed1]=i[filed1]
-                        self.list_search.append(self.dict_search)
-                    return self.list_search
-                elif num==2:
-                    for i in self.data:
-                        self.dict_search={}
-                        self.dict_search[filed1]=i[filed1]
-                        self.dict_search[filed2]=i[filed2]
-                        self.list_search.append(self.dict_search)
-                    return self.list_search
-                elif num==3:
-                    for i in self.data:
-                        self.dict_search={}
-                        self.dict_search[filed1]=i[filed1]
-                        self.dict_search[filed2]=i[filed2]
-                        self.dict_search[filed3]=i[filed3]
-                        self.list_search.append(self.dict_search)
-                    return self.list_search
+            if condition==None and value==None:
+                if N==0:
+                    self.data=self.colletion.find()
+                    if num==1:
+                        for i in self.data:
+                            self.dict_search={}
+                            self.dict_search[filed1]=i[filed1]
+                            self.list_search.append(self.dict_search)
+                    elif num==2:
+                        for i in self.data:
+                            self.dict_search={}
+                            self.dict_search[filed1]=i[filed1]
+                            self.dict_search[filed2]=i[filed2]
+                            self.list_search.append(self.dict_search)
+                    elif num==3:
+                        for i in self.data:
+                            self.dict_search={}
+                            self.dict_search[filed1]=i[filed1]
+                            self.dict_search[filed2]=i[filed2]
+                            self.dict_search[filed3]=i[filed3]
+                            self.list_search.append(self.dict_search)
+                    elif num==4:
+                        for i in self.data:
+                            self.dict_search={}
+                            self.dict_search[filed1]=i[filed1]
+                            self.dict_search[filed2]=i[filed2]
+                            self.dict_search[filed3]=i[filed3]
+                            self.dict_search[filed4]=i[filed4]
+                            self.list_search.append(self.dict_search)
+                    else:
+                        for i in self.data:
+                            self.dict_search={}
+                            self.dict_search[filed1]=i[filed1]
+                            self.dict_search[filed2]=i[filed2]
+                            self.dict_search[filed3]=i[filed3]
+                            self.dict_search[filed4]=i[filed4]
+                            self.dict_search[filed5]=i[filed5]
+                            self.list_search.append(self.dict_search)
                 else:
-                    for i in self.data:
-                        self.dict_search={}
-                        self.dict_search={}
-                        self.dict_search[filed1]=i[filed1]
-                        self.dict_search[filed2]=i[filed2]
-                        self.dict_search[filed3]=i[filed3]
-                        self.dict_search[filed4]=i[filed4]
-                        self.list_search.append(self.dict_search)
-                    return self.list_search
-                print('数据库查询条数：{}，查询字段个数：{}'.format(len(self.data),num))
+                    self.data=self.colletion.find().limit(N)
+                    if num==1:
+                        for i in self.data:
+                            self.dict_search={}
+                            self.dict_search[filed1]=i[filed1]
+                            self.list_search.append(self.dict_search)
+                    elif num==2:
+                        for i in self.data:
+                            self.dict_search={}
+                            self.dict_search[filed1]=i[filed1]
+                            self.dict_search[filed2]=i[filed2]
+                            self.list_search.append(self.dict_search)
+                    elif num==3:
+                        for i in self.data:
+                            self.dict_search={}
+                            self.dict_search[filed1]=i[filed1]
+                            self.dict_search[filed2]=i[filed2]
+                            self.dict_search[filed3]=i[filed3]
+                            self.list_search.append(self.dict_search)
+                    elif num==4:
+                        for i in self.data:
+                            self.dict_search={}
+                            self.dict_search[filed1]=i[filed1]
+                            self.dict_search[filed2]=i[filed2]
+                            self.dict_search[filed3]=i[filed3]
+                            self.dict_search[filed4]=i[filed4]
+                            self.list_search.append(self.dict_search)
+                    else:
+                        for i in self.data:
+                            self.dict_search={}
+                            self.dict_search[filed1]=i[filed1]
+                            self.dict_search[filed2]=i[filed2]
+                            self.dict_search[filed3]=i[filed3]
+                            self.dict_search[filed4]=i[filed4]
+                            self.dict_search[filed5]=i[filed5]
+                            self.list_search.append(self.dict_search)
             else:
-                self.data=self.colletion.find().limit(N)
-                if num==1:
-                    for i in self.data:
-                        self.dict_search={}
-                        self.dict_search[filed1]=i[filed1]
-                        self.list_search.append(self.dict_search)
-                    return self.list_search
-                elif num==2:
-                    for i in self.data:
-                        self.dict_search={}
-                        self.dict_search[filed1]=i[filed1]
-                        self.dict_search[filed2]=i[filed2]
-                        self.list_search.append(self.dict_search)
-                    return self.list_search
-                elif num==3:
-                    for i in self.data:
-                        self.dict_search={}
-                        self.dict_search[filed1]=i[filed1]
-                        self.dict_search[filed2]=i[filed2]
-                        self.dict_search[filed3]=i[filed3]
-                        self.list_search.append(self.dict_search)
-                    return self.list_search
+                if N==0:
+                    if type(value)==int:
+                        self.data=self.colletion.find({'{}'.format(condition):value})
+                        if num==1:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.list_search.append(self.dict_search)
+                        elif num==2:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.list_search.append(self.dict_search)
+                        elif num==3:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.dict_search[filed3]=i[filed3]
+                                self.list_search.append(self.dict_search)
+                        elif num==4:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.dict_search[filed3]=i[filed3]
+                                self.dict_search[filed4]=i[filed4]
+                                self.list_search.append(self.dict_search)
+                        else:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.dict_search[filed3]=i[filed3]
+                                self.dict_search[filed4]=i[filed4]
+                                self.dict_search[filed5]=i[filed5]
+                                self.list_search.append(self.dict_search)
+                    else:
+                        self.data=self.colletion.find({'{}'.format(condition):'{}'.format(value)})   
+                        if num==1:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.list_search.append(self.dict_search)
+                        elif num==2:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.list_search.append(self.dict_search)
+                        elif num==3:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.dict_search[filed3]=i[filed3]
+                                self.list_search.append(self.dict_search)
+                        elif num==4:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.dict_search[filed3]=i[filed3]
+                                self.dict_search[filed4]=i[filed4]
+                                self.list_search.append(self.dict_search)
+                        else:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.dict_search[filed3]=i[filed3]
+                                self.dict_search[filed4]=i[filed4]
+                                self.dict_search[filed5]=i[filed5]
+                                self.list_search.append(self.dict_search)
                 else:
-                    for i in self.data:
-                        self.dict_search={}
-                        self.dict_search={}
-                        self.dict_search[filed1]=i[filed1]
-                        self.dict_search[filed2]=i[filed2]
-                        self.dict_search[filed3]=i[filed3]
-                        self.dict_search[filed4]=i[filed4]
-                        self.list_search.append(self.dict_search)
-                    return self.list_search
-                print('数据库查询条数：{}，查询字段个数：{}'.format(len(self.data),num))
+                    if type(value)==int:
+                        self.data=self.colletion.find({'{}'.format(condition):value}).limit(N)
+                        if num==1:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.list_search.append(self.dict_search)
+                        elif num==2:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.list_search.append(self.dict_search)
+                        elif num==3:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.dict_search[filed3]=i[filed3]
+                                self.list_search.append(self.dict_search)
+                        elif num==4:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.dict_search[filed3]=i[filed3]
+                                self.dict_search[filed4]=i[filed4]
+                                self.list_search.append(self.dict_search)
+                        else:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.dict_search[filed3]=i[filed3]
+                                self.dict_search[filed4]=i[filed4]
+                                self.dict_search[filed5]=i[filed5]
+                                self.list_search.append(self.dict_search)
+                    else:
+                        self.data=self.colletion.find({'{}'.format(condition):'{}'.format(value)}).limit(N)
+                        if num==1:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.list_search.append(self.dict_search)
+                        elif num==2:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.list_search.append(self.dict_search)
+                        elif num==3:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.dict_search[filed3]=i[filed3]
+                                self.list_search.append(self.dict_search)
+                        elif num==4:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.dict_search[filed3]=i[filed3]
+                                self.dict_search[filed4]=i[filed4]
+                                self.list_search.append(self.dict_search)
+                        else:
+                            for i in self.data:
+                                self.dict_search={}
+                                self.dict_search[filed1]=i[filed1]
+                                self.dict_search[filed2]=i[filed2]
+                                self.dict_search[filed3]=i[filed3]
+                                self.dict_search[filed4]=i[filed4]
+                                self.dict_search[filed5]=i[filed5]
+                                self.list_search.append(self.dict_search)
+            print('数据库查询条数：{}，查询字段个数：{},如下：'.format(len(self.list_search),num))
+            print(self.list_search)
+            return self.list_search
         except Exception as msg:
             print('查询数据库失败，请检查链接/参数：{}'.format(msg))
 
 
+    #数据库查询数据保存
+    def save_mongodb_data(self,excelpath,username,password,database,muster,condition=None,value=None,filed1=None,filed2=None,
+    filed3=None,filed4=None,filed5=None,column1=None,column2=None,column3=None,column4=None,column5=None,num=5,N=0):
+        try:
+            self.mongo_data=self.searchs_for_mongodb(username,password,database,muster,condition,value,filed1,filed2,filed3,filed4,filed5,num,N)
+            if num==1:
+                for i in self.mongo_data:
+                    self.saveainfo(excelpath, i[filed1], column1, self.mongo_data.index(i)+2)
+            elif num==2:
+                for i in self.mongo_data:
+                    self.saveainfo(excelpath, i[filed1], column1, self.mongo_data.index(i)+2)
+                    self.saveainfo(excelpath, i[filed2], column2, self.mongo_data.index(i)+2)
+            elif num==3:
+                for i in self.mongo_data:
+                    self.saveainfo(excelpath, i[filed1], column1, self.mongo_data.index(i)+2)
+                    self.saveainfo(excelpath, i[filed2], column2, self.mongo_data.index(i)+2)
+                    self.saveainfo(excelpath, i[filed3], column3, self.mongo_data.index(i)+2) 
+            elif num==4:
+                for i in self.mongo_data:
+                    self.saveainfo(excelpath, i[filed1], column1, self.mongo_data.index(i)+2)
+                    self.saveainfo(excelpath, i[filed2], column2, self.mongo_data.index(i)+2)
+                    self.saveainfo(excelpath, i[filed3], column3, self.mongo_data.index(i)+2) 
+                    self.saveainfo(excelpath, i[filed2], column4, self.mongo_data.index(i)+2)
+            else:
+                for i in self.mongo_data:
+                    self.saveainfo(excelpath, i[filed1], column1, self.mongo_data.index(i)+2)
+                    self.saveainfo(excelpath, i[filed2], column2, self.mongo_data.index(i)+2)
+                    self.saveainfo(excelpath, i[filed3], column3, self.mongo_data.index(i)+2)
+                    self.saveainfo(excelpath, i[filed4], column4, self.mongo_data.index(i)+2)
+                    self.saveainfo(excelpath, i[filed5], column5, self.mongo_data.index(i)+2)
+        except Exception as msg:
+            print('保存数据库数据失败，请检查链接/参数：{}'.format(msg))
 
+
+                
 
 #测试
 if __name__=='__main__':
@@ -246,4 +441,9 @@ if __name__=='__main__':
     # a=e.dict_data()
     # print(a)
     # print(a[0]['邮箱'][0:2]=='14')
-    e.search_in_mongodb('atfx-dev-admin','m578A3MGrcR3pRXVU2pA','atfxgm-uat','atfx_ib_links','mtName','mt4','accountNumber')
+    # e.search_in_mongodb('atfx-dev-admin','m578A3MGrcR3pRXVU2pA','atfxgm-uat','atfx_ib_links','isDeleted',0,'link',1)
+    # e.searchs_for_mongodb('atfx-dev-admin', 'm578A3MGrcR3pRXVU2pA', 'atfxgm-uat', 'atfx_ib_links','isDeleted',0,'currency','markup','leverage','mtGroup','link',5,3)
+    path=r'D:\code\tylerhub\demo\registration_process\test_excel_data\all_links.xlsx'
+    e.save_mongodb_data(path,'atfx-dev-admin','m578A3MGrcR3pRXVU2pA','atfxgm-uat','atfx_ib_links',condition='isDeleted',value=0,
+    filed1='link',column1='A',filed2='currency',column2='B',filed3='markup',column3='C',filed4='leverage',column4='D',filed5='mtGroup',column5='E')
+    
