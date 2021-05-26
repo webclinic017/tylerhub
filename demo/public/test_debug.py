@@ -294,7 +294,23 @@
 #     print(a and b != None)
 
 # A(1)
-a=None
-b=None
-print(a and b ==None)
-print(a is None)
+# a=None
+# b=None
+# print(a and b ==None)
+# print(a is None)
+
+import pytest
+import os
+import sys
+path_public=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+r'\public'
+
+class Testduanyan():
+
+    def testa(self):
+      assert 'a' in 'llou'
+
+    def testb(self):
+      assert 1==1
+
+if __name__=='__main__':
+  pytest.main(['-v','-s',r'{}\test_debug.py'.format(path_public)])

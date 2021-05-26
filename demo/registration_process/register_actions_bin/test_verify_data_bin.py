@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-05-24 16:11:20
-LastEditTime: 2021-05-24 18:13:15
+LastEditTime: 2021-05-26 18:14:59
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\registration_process\register_actions_bin\test_verify_data_bin.py
@@ -29,12 +29,13 @@ class Test_verify_data():
         verify.login_bos('tyler.tang', 'Tl123456')
 
     def test_verfity(self):
-        verify.enter_details_page(1000003759)
+        verify.enter_details_page(1000005349)
         if verify.is_traccount_onlyone():
+            verify.closebrowser()
             pytest.skip()
         else:
-            print('继续用例')
-
+            assert verify.get_group() in 'demoforex'
+            assert verify.get_lever() == 400
 
 
 

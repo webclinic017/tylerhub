@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-05-24 11:16:04
-LastEditTime: 2021-05-24 18:07:59
+LastEditTime: 2021-05-26 17:59:18
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\registration_process\register_positioning\verify_message_location.py
@@ -80,7 +80,7 @@ class location_of_verify_data():
             if self.account_len>1:
                 return True
             else:
-                common.display_click('xpath,//a[contains(.,"查看")]',-1)
+                common.display_click('xpath,//a[contains(.,"查看")]',-1) #查看
                 time.sleep(1)
                 return False
         except Exception as msg:
@@ -127,5 +127,11 @@ class location_of_verify_data():
             pub_method.log_output('!!--!!get_currency').error(msg)
 
 
-
+    #关闭当前页面
+    def closebrowser(self):
+        common.close_browser()
+    
+    #退出浏览器进程
+    def quitbrowser(self):
+        common.quit_browser()
 
