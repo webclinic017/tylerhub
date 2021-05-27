@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-05-24 11:16:04
-LastEditTime: 2021-05-26 17:59:18
+LastEditTime: 2021-05-27 11:17:40
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\registration_process\register_positioning\verify_message_location.py
@@ -50,9 +50,10 @@ class location_of_verify_data():
     #账户详情页
     def enter_details_page(self,account):
         try:
-            time.sleep(1)
+            common.switch_windows(0)
+            time.sleep(2)
             #清空搜索框
-            common.display_click('css,.ivu-input-group-with-append > [placeholder]')
+            common.web_clear('css,.ivu-input-group-with-append > [placeholder]')
             time.sleep(1)
             #输入主账号查询
             common.display_input('css,.ivu-input-group-with-append > [placeholder]', account)
@@ -68,7 +69,7 @@ class location_of_verify_data():
             common.display_click('css,[href="#tdAccount"]')
             time.sleep(3)
         except Exception as msg:
-            pub_method.log_output('!!--!!login_bos').error(msg)
+            pub_method.log_output('!!--!!enter_details_page').error(msg)
 
     #判断当前主账号是否只存在一个交易账号
     def is_traccount_onlyone(self):
@@ -123,6 +124,7 @@ class location_of_verify_data():
     def get_currency(self):
         try:
             self.currency=common.display_get_text('css,[prop="currency"]')
+            return self.currency
         except Exception as msg:
             pub_method.log_output('!!--!!get_currency').error(msg)
 
