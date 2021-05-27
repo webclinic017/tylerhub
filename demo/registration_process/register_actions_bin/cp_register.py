@@ -1,3 +1,11 @@
+'''
+Author: tyler
+Date: 2021-05-13 10:43:00
+LastEditTime: 2021-05-27 14:54:28
+LastEditors: Please set LastEditors
+Description: In User Settings Edit
+FilePath: \tylerhub\demo\registration_process\register_actions_bin\cp_register.py
+'''
 #导包
 import os
 import sys
@@ -58,6 +66,7 @@ class register_cp(unittest.TestCase):
             e.saveainfo(path_process+r'\test_excel_data\account_number.xlsx',data['邮箱'],'B',self.data_index+2)
             e.saveainfo(path_process+r'\test_excel_data\account_number.xlsx',data['三字码'],'D',self.data_index+2)
             e.saveainfo(path_process+r'\test_excel_data\account_number.xlsx',data['地区'],'G',self.data_index+2)
+            e.saveainfo(path_process+r'\test_excel_data\account_number.xlsx',data['邀请码'],'H',self.data_index+2)
 
 if __name__=='__main__':
     #测试报告

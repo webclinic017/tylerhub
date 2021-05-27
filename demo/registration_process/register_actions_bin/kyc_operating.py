@@ -1,8 +1,8 @@
 '''
-Author: your name
+Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-05-18 15:57:52
-LastEditors: your name
+LastEditTime: 2021-05-27 14:33:48
+LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\registration_process\register_actions_bin\kyc_operating.py
 '''

@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-05-24 11:16:04
-LastEditTime: 2021-05-27 11:17:40
+LastEditTime: 2021-05-27 14:21:17
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\registration_process\register_positioning\verify_message_location.py
@@ -136,4 +136,3 @@ class location_of_verify_data():
     #退出浏览器进程
     def quitbrowser(self):
         common.quit_browser()
-
