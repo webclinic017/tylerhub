@@ -404,7 +404,13 @@ class Commonweb():
         except Exception as msg:
             pub_method.log_output('!!--!!js_scroll_inline').error(msg)
 
-
+    #元素聚焦，移动页面至指定元素位置
+    def element_focus(self,locator,index=0):
+        try:
+           self.focus=self.display_find_element(locator,index) 
+           self.driver.execute_script('return arguments[0].scrollIntoView();',self.focus)
+        except Exception as msg:
+            pub_method.log_output('!!--!!js_scroll_inline').error(msg)
 
 
     #截取屏幕，定点截图

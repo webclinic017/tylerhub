@@ -1,3 +1,11 @@
+'''
+Author: tyler
+Date: 2021-05-14 10:11:05
+LastEditTime: 2021-06-02 16:35:56
+LastEditors: Please set LastEditors
+Description: In User Settings Edit
+FilePath: \tylerhub\demo\public\verification_code.py
+'''
 import base64
 import datetime
 import functools
@@ -32,7 +40,7 @@ def base64_api(uname,pwd,img):
 #统计某个函数的运行时间
 def time_used(info="used"):
     """
-    注：使用此装饰器时，被修饰的函数最终不能有返回值，即return函数
+    注：使用此装饰器时，被修饰的函数最终不能有返回值
     """
     def _time_me(function):
         @functools.wraps(function)
@@ -44,30 +52,22 @@ def time_used(info="used"):
     return _time_me
 
 
- 
- 
+#跳过某个用例
 def skip_dependon(depend=""):
     """
     :param depend: 依赖的用例函数名，默认为空
     :return: wraper_func
     """
     def wraper_func(test_func):
-        @wraps(test_func)  # @wraps：避免被装饰函数自身的信息丢失
+        @wraps(test_func)
         def inner_func(self):
             if depend == test_func.__name__:
                 raise ValueError("{} cannot depend on itself".format(depend))
-            # print("self._outcome", self._outcome.__dict__)
-            # 此方法适用于python3.4 +
-            # 如果是低版本的python3，请将self._outcome.result修改为self._outcomeForDoCleanups
-            # 如果你是python2版本，请将self._outcome.result修改为self._resultForDoCleanups
             failures = str([fail[0] for fail in self._outcome.result.failures])
             errors = str([error[0] for error in self._outcome.result.errors])
             skipped = str([error[0] for error in self._outcome.result.skipped])
             flag = (depend in failures) or (depend in errors) or (depend in skipped)
             if failures.find(depend) != -1:
-                # 输出结果 [<__main__.TestDemo testMethod=test_login>]
-                # 如果依赖的用例名在failures中，则判定为失败，以下两种情况同理
-                # find()方法：查找子字符串，若找到返回从0开始的下标值，若找不到返回 - 1
                 test = unittest.skipIf(flag, "{} failed".format(depend))(test_func)
             elif errors.find(depend) != -1:
                 test = unittest.skipIf(flag, "{} error".format(depend))(test_func)

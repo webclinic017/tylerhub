@@ -419,6 +419,7 @@ class location_withdrawal_incp():
     def usable_withdrawal(self):
         try:
             #账户设定
+            time.sleep(1)
             common.display_click('xpath,//i[@class="el-icon-arrow-down el-icon--right"]')
             time.sleep(1)
             common.display_click('css,.el-client-menu > li > .drop-sub-title') #设置
@@ -447,8 +448,8 @@ class location_withdrawal_incp():
         except Exception as msg:
             pub_method.log_output('!!--!!usable_withdrawal').error(msg)
 
-    #出金
-    def withdrawal_action(self,traccount,amount,excelpath,row):
+    #判断余额
+    def is_insyfficient_balance(self,traccount,excelpath):
         try:
             while True:
                 self.attribute=common.get_attributes('xpath,//div[@class="el-loading-mask"]','style')
@@ -464,7 +465,13 @@ class location_withdrawal_incp():
                 return True
             else:
                 return False
-            #判断当前账号存在哪种可用出金方式
+        except Exception as msg:
+            pub_method.log_output('!!--!!is_insyfficient_balance').error(msg)
+        
+        
+    #出金
+    def withdrawal_action(self,traccount,amount,excelpath,row):
+        try:
             self.usable_withdrawal()
             #出金
             common.display_click('xpath,//span[.="出金"]')
@@ -504,7 +511,7 @@ class location_withdrawal_incp():
             else:
                 common.display_input('xpath,//div[@class="left-row-content el-row"]'
                 '//input[@class="el-input__inner"]',int(amount))
-            time.sleep(1)
+                time.sleep(1)
             #输入验证码
             common.display_input('css,.el-input__inner','gvls',-1)
             time.sleep(1)
@@ -589,10 +596,12 @@ class location_withdrawal_incp():
             #登录会员中心
             self.logincp(username,psword)
             time.sleep(10)
-            #出金
-            if self.withdrawal_action(traccount,amount,excelpath,row):
+            #判读余额是否为0
+            if self.is_insyfficient_balance(traccount,excelpath):
                 return True
             else:
+                #出金
+                self.withdrawal_action(traccount, amount, excelpath, row)
                 #bos审核出金
                 self.review_withdrawal(traccount)
                 #获取出金后交易账号余额

@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-28 17:32:52
-LastEditTime: 2021-05-31 11:50:48
+LastEditTime: 2021-06-03 15:05:16
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\E-wallet_deposit\e-wallet_deposit_bin\test_ewallet_deposti.py
@@ -23,13 +23,13 @@ class Test_Ewallet_deposit():
 
     def setup_class(self):
         ewallet.broswertype()
-        ewallet.get_url('tyler.tang','Tl123456')
+        ewallet.get_url('https://at-bos-frontend-uat.atfxdev.com/login','tyler.tang','Tl123456')
+        ewallet.is_page_loading()
+        ewallet.is_all_ewallet_open()
         
     def test_deposit_of_ewallet(self):
-        ewallet.is_page_loading()
-        print('开始用例了哦')
-        ewallet.is_ewallet_open('Expay QRCode')
-
+        ewallet.bos_to_cp('1000003759')
+        
 
 
 if __name__=='__main__':

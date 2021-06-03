@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-05-19 10:40:28
+LastEditTime: 2021-06-03 16:25:18
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\withdrawal\withdrawal_bin\withdrawal_cp_bin.py
