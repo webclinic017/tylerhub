@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-06-03 16:25:18
+LastEditTime: 2021-06-04 11:10:59
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\withdrawal\withdrawal_bin\withdrawal_cp_bin.py
@@ -33,11 +33,9 @@ class Test_withdrawal_actions_incp():
         withdrawal.broswertype()
         withdrawal.get_url('tyler.tang','Tl123456')
 
-    def tearDown(self):
-        if self.data_index==testdata.index(testdata[-1]):
-            withdrawal.quitbrowser()
-        else:
-            withdrawal.logoutcp()
+    def teardown_class(self):
+        withdrawal.quitbrowser()
+
 
     @allure.title('交易账号出金')
     @allure.description('读取测试文档数据，判断是否具有出金条件')
@@ -56,11 +54,7 @@ class Test_withdrawal_actions_incp():
                         withdrawal.quitbrowser()
                     pytest.skip()
             else:
-                if self.data_index!=0:
-                    withdrawal.remove_topup()
-                else:
-                    pass
-                #出金审核出金
+                #出金,审核出金
                 with allure.step('判断交易账号余额是否为0'):
                     if withdrawal.withdrawal_cp(data['邮箱'],data['密码'],int(data['交易账号']),int(data['出金金额']),excelpath,self.data_index+2):
                         with allure.step('当前交易账号余额为0，跳过该用例'):

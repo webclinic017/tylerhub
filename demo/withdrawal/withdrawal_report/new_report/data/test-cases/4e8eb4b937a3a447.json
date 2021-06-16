@@ -1,0 +1,157 @@
+{
+  "uid" : "4e8eb4b937a3a447",
+  "name" : "交易账号出金",
+  "fullName" : "demo.withdrawal.withdrawal_bin.test_withdrawal_cp_bin.Test_withdrawal_actions_incp#test_withdrawal",
+  "historyId" : "5ae2bfe527dce2eabc333f32daebea29",
+  "time" : {
+    "start" : 1622715142013,
+    "stop" : 1622715287852,
+    "duration" : 145839
+  },
+  "description" : "读取测试文档数据，判断是否具有出金条件",
+  "descriptionHtml" : "<p>读取测试文档数据，判断是否具有出金条件</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_withdrawal_actions_incp",
+    "time" : {
+      "start" : 1622715012147,
+      "stop" : 1622715029918,
+      "duration" : 17771
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "读取测试文档数据，判断是否具有出金条件",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "获取当前测试数据下标",
+      "time" : {
+        "start" : 1622715142014,
+        "stop" : 1622715142014,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "判断交易账号是否满足出金条件",
+      "time" : {
+        "start" : 1622715142014,
+        "stop" : 1622715287852,
+        "duration" : 145838
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "判断交易账号余额是否为0",
+        "time" : {
+          "start" : 1622715193829,
+          "stop" : 1622715287852,
+          "duration" : 94023
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "1862d63b020fc206",
+      "name" : "log",
+      "source" : "1862d63b020fc206.txt",
+      "type" : "text/plain",
+      "size" : 2522
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_withdrawal_actions_incp::0",
+    "time" : {
+      "start" : 1622715287854,
+      "stop" : 1622715287854,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "IB/CL出金"
+  }, {
+    "name" : "feature",
+    "value" : "出金"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.withdrawal.withdrawal_bin"
+  }, {
+    "name" : "suite",
+    "value" : "test_withdrawal_cp_bin"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_withdrawal_actions_incp"
+  }, {
+    "name" : "host",
+    "value" : "SZBPC1902043"
+  }, {
+    "name" : "thread",
+    "value" : "1468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.withdrawal.withdrawal_bin.test_withdrawal_cp_bin"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'主账号': 1000003759.0, '交易账号': 652002187.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '出金金额': 660.0, '出金前账户余额': 0.0, '出金后账户余额': 4340.0, '预期结果': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4e8eb4b937a3a447.json",
+  "parameterValues" : [ "{'主账号': 1000003759.0, '交易账号': 652002187.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '出金金额': 660.0, '出金前账户余额': 0.0, '出金后账户余额': 4340.0, '预期结果': ''}" ]
+}

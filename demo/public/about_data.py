@@ -154,7 +154,7 @@ retryWrites=true&ssl=true'.format(username,password)
         password：密码
         database：数据库
         muster：集合
-        N:查询条数，默认为0
+        N:查询条数，默认为0(查询所有满足条件的数据)
         filed:需具体查询的字段
         num:每条数据具体查询的字段个数,默认最大为6(1~6)
         """

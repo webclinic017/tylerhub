@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-28 17:32:52
-LastEditTime: 2021-06-03 15:05:16
+LastEditTime: 2021-06-08 15:47:12
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\E-wallet_deposit\e-wallet_deposit_bin\test_ewallet_deposti.py
@@ -29,6 +29,8 @@ class Test_Ewallet_deposit():
         
     def test_deposit_of_ewallet(self):
         ewallet.bos_to_cp('1000003759')
+        ewallet.is_deposit_loading()
+        ewallet.have_several_ewallet()
         
 
 

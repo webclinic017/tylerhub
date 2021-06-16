@@ -1,0 +1,4 @@
+[1m[31mERROR   [0m !!--!!remove_register_topup:common_method.py:36 Message: no such element: Unable to locate element: {"method":"css selector","selector":".blk-sure-btn"}
+  (Session info: chrome=91.0.4472.77)
+
+[1m[31mERROR   [0m !!--!!login_cp:common_method.py:81 list index out of range

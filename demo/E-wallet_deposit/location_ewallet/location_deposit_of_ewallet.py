@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-28 17:29:27
-LastEditTime: 2021-06-03 15:17:55
+LastEditTime: 2021-06-08 15:52:42
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\E-wallet_deposit\location_ewallet\location_deposti_of_ewallet.py
@@ -57,6 +57,7 @@ class Ewallet_deposti():
     #bos登录cp
     def bos_to_cp(self,account):
         try:
+            common.switch_windows(0)
             time.sleep(1)
             common.web_clear('css,[placeholder]')
             time.sleep(1)
@@ -110,7 +111,7 @@ class Ewallet_deposti():
                 time.sleep(1)
                 print('开启支付渠道：{}'.format(payment_type))
             else:
-                print('{}已开启'.format(payment_type))
+                print('{} 已开启'.format(payment_type))
         except Exception as msg:
             pub_method.log_output('!!--!!is_ewallet_open').error(msg)
 
@@ -137,13 +138,49 @@ class Ewallet_deposti():
             common.display_click('css,.ivu-form div i',-1)
             time.sleep(1)
             common.display_click('xpath,//li[.="简体中文"]',-1)
+            time.sleep(1)
+            #打开即时汇率页面
+            common.js_openwindows('https://at-bos-frontend-uat.atfxdev.com/management/instantRate')
+            time.sleep(1)
+            #打开入金管理页面
+            common.js_openwindows('https://at-bos-frontend-uat.atfxdev.com/management/depositList')
+
 
     #入金页面loading处理
     def is_deposit_loading(self):
         try:
-            common.switch_windows(1)
+            common.switch_windows(3)
+            time.sleep(4)
+            #登录后页面loading
             while True:
-                self.arrtuibe=
+                self.login_attribute=common.get_attributes('xpath,//div[@class="el-loading-mask"]','style')
+                if 'display' not in self.login_attribute:
+                    continue
+                else:
+                    break
+            time.sleep(1)
+            #入金
+            common.display_click('xpath,//ul[2]//span[.="入金"]')
+            time.sleep(2)
+            while True:
+                self.arrtuibe=common.get_attributes('css,.el-loading-mask', 'style')
+                if 'display' not in self.arrtuibe:
+                    continue
+                else:
+                    break
+        except Exception as msg:
+            pub_method.log_output('!!--!!is_deposit_loading').error(msg)
+
+
+    #判断电子钱包出金方式有几种
+    def have_several_ewallet(self):
+        try:
+            self.ewallet_len=common.get_lenofelement('xpath,//*[contains(text(),"电子钱包")]/../../div[2]/div/div')
+            print('当前账号电子钱包出金方式有{}种'.format(self.ewallet_len))
+            
+        except Exception as msg:
+            pub_method.log_output('!!--!!is_all_ewallet_open').error(msg)
+
 
 
             

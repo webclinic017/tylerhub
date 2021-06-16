@@ -1,2 +1,0 @@
-[1m[31mERROR   [0m !!--!!remove_register_topup:common_method.py:36 Message: element not interactable
-  (Session info: chrome=90.0.4430.212)

@@ -90,27 +90,27 @@ class Commonweb():
         except Exception as msg:
             pub_method.log_output('!!--!!get_lenofelement').error(msg)
 
-    #显示等待查找页面元素,timeout=8s，每0.5s询问一次
-    def display_find_elements(self,locator):
+    #显示等待查找页面元素,timeout=5s，每0.5s询问一次
+    def display_find_elements(self,locator,timeout=5,step=0.5):
         #切片
         method,values=locator.split(',',maxsplit=1)
         try:
             if 'css' in method:
-                return WebDriverWait(self.driver,8,0.5).until(lambda x:x.find_elements_by_css_selector(values))
+                return WebDriverWait(self.driver,timeout,step).until(lambda x:x.find_elements_by_css_selector(values))
             elif 'xpath' in method:
-                return WebDriverWait(self.driver,8,0.5).until(lambda x:x.find_elements_by_xpath(values))
+                return WebDriverWait(self.driver,timeout,step).until(lambda x:x.find_elements_by_xpath(values))
             elif 'name' in method:
-                return WebDriverWait(self.driver,8,0.5).until(lambda x:x.find_elements_by_name(values))
+                return WebDriverWait(self.driver,timeout,step).until(lambda x:x.find_elements_by_name(values))
             elif 'id' in method:
-                return WebDriverWait(self.driver,8,0.5).until(lambda x:x.find_elements_by_id(values))
+                return WebDriverWait(self.driver,timeout,step).until(lambda x:x.find_elements_by_id(values))
             elif 'class' in method:
-                return WebDriverWait(self.driver,8,0.5).until(lambda x:x.find_elements_by_class_name(values))
+                return WebDriverWait(self.driver,timeout,step).until(lambda x:x.find_elements_by_class_name(values))
             elif 'partial' and 'link' in method:
-                return WebDriverWait(self.driver,8,0.5).until(lambda x:x.find_elements_by_partial_link_text(values))
+                return WebDriverWait(self.driver,timeout,step).until(lambda x:x.find_elements_by_partial_link_text(values))
             elif 'link' in method:
-                return WebDriverWait(self.driver,8,0.5).until(lambda x:x.find_elements_by_link_text(values))
+                return WebDriverWait(self.driver,timeout,step).until(lambda x:x.find_elements_by_link_text(values))
             elif 'tag' in method:
-                return WebDriverWait(self.driver,8,0.5).until(lambda x:x.find_elements_by_tag_name(values))
+                return WebDriverWait(self.driver,timeout,step).until(lambda x:x.find_elements_by_tag_name(values))
             else:
                 pub_method.log_output('!!--!!location_element').info('定位方法错误')
         except Exception as msg:
@@ -305,6 +305,33 @@ class Commonweb():
             pub_method.log_output('!!--!!suspension').error(msg)
 
 
+    #右键点击
+    def right_click(self,locator,index=0):
+        try:
+            self.ele=self.display_find_element(locator,index)
+            ActionChains(self.driver).context_click(self.ele).perform()
+        except Exception as msg:
+            pub_method.log_output('!!--!!right_click').error(msg)
+
+    #其他键盘操作(针对搜索框/输入框)
+    def keyboard_operation(self,locator,keys,index=0):
+        """
+        keys:a,全选;c:粘贴;v:复制；x:剪切
+        """
+        try:
+            self.ele=self.display_find_element(locator,index)
+            self.ele.send_keys(Keys.CONTROL,keys)
+        except Exception as msg:
+            pub_method.log_output('!!--!!keyboard_operation').error(msg)
+
+    #右键在新窗口打开链接打开链接
+    def right_click_link(self,locator,index=0):
+        try:
+            self.ele=self.display_find_element(locator,index)
+            self.ele.send_keys(Keys.CONTROL + Keys.ENTER)
+        except Exception as msg:
+            pub_method.log_output('!!--!!right_click_link').error(msg)      
+
     #截图,自定义保存截图的文件夹名称
     def get_screenpict(self,name,filename='picture',):
         """
@@ -332,6 +359,13 @@ class Commonweb():
                 print('{}超过窗口句柄列表下标最大值'.format(n))
         except Exception as msg:
             pub_method.log_output('!!--!!switch_windows').error(msg)
+
+    #获取当前页面的title
+    def title(self):
+        try:
+            return(self.driver.title)
+        except Exception as msg:
+            pub_method.log_output('!!--!!title').error(msg)
 
     #切换表单页
     def switch_iframe(self,locator,index=0):

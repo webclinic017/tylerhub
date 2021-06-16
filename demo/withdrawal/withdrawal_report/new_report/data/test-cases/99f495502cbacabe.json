@@ -1,0 +1,182 @@
+{
+  "uid" : "99f495502cbacabe",
+  "name" : "交易账号出金",
+  "fullName" : "demo.withdrawal.withdrawal_bin.test_withdrawal_cp_bin.Test_withdrawal_actions_incp#test_withdrawal",
+  "historyId" : "5ae2bfe527dce2eabc333f32daebea29",
+  "time" : {
+    "start" : 1622708762190,
+    "stop" : 1622708832002,
+    "duration" : 69812
+  },
+  "description" : "读取测试文档数据，判断是否具有出金条件",
+  "descriptionHtml" : "<p>读取测试文档数据，判断是否具有出金条件</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped",
+  "statusTrace" : "('d:\\\\code\\\\tylerhub\\\\demo\\\\withdrawal\\\\withdrawal_bin\\\\test_withdrawal_cp_bin.py', 69, 'Skipped')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_withdrawal_actions_incp",
+    "time" : {
+      "start" : 1622708721389,
+      "stop" : 1622708739378,
+      "duration" : 17989
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "读取测试文档数据，判断是否具有出金条件",
+    "status" : "skipped",
+    "statusMessage" : "Skipped",
+    "statusTrace" : "('d:\\\\code\\\\tylerhub\\\\demo\\\\withdrawal\\\\withdrawal_bin\\\\test_withdrawal_cp_bin.py', 69, 'Skipped')",
+    "steps" : [ {
+      "name" : "获取当前测试数据下标",
+      "time" : {
+        "start" : 1622708762191,
+        "stop" : 1622708762191,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "判断交易账号是否满足出金条件",
+      "time" : {
+        "start" : 1622708762191,
+        "stop" : 1622708832002,
+        "duration" : 69811
+      },
+      "status" : "skipped",
+      "statusMessage" : "Skipped\n",
+      "statusTrace" : "  File \"d:\\code\\tylerhub\\demo\\withdrawal\\withdrawal_bin\\test_withdrawal_cp_bin.py\", line 69, in test_withdrawal\n    pytest.skip()\n  File \"C:\\Python39\\lib\\site-packages\\_pytest\\outcomes.py\", line 139, in skip\n    raise Skipped(msg=msg, allow_module_level=allow_module_level)\n",
+      "steps" : [ {
+        "name" : "判断交易账号余额是否为0",
+        "time" : {
+          "start" : 1622708813943,
+          "stop" : 1622708832002,
+          "duration" : 18059
+        },
+        "status" : "skipped",
+        "statusMessage" : "Skipped\n",
+        "statusTrace" : "  File \"d:\\code\\tylerhub\\demo\\withdrawal\\withdrawal_bin\\test_withdrawal_cp_bin.py\", line 69, in test_withdrawal\n    pytest.skip()\n  File \"C:\\Python39\\lib\\site-packages\\_pytest\\outcomes.py\", line 139, in skip\n    raise Skipped(msg=msg, allow_module_level=allow_module_level)\n",
+        "steps" : [ {
+          "name" : "当前交易账号余额为0，跳过该用例",
+          "time" : {
+            "start" : 1622708829707,
+            "stop" : 1622708832001,
+            "duration" : 2294
+          },
+          "status" : "skipped",
+          "statusMessage" : "Skipped\n",
+          "statusTrace" : "  File \"d:\\code\\tylerhub\\demo\\withdrawal\\withdrawal_bin\\test_withdrawal_cp_bin.py\", line 69, in test_withdrawal\n    pytest.skip()\n  File \"C:\\Python39\\lib\\site-packages\\_pytest\\outcomes.py\", line 139, in skip\n    raise Skipped(msg=msg, allow_module_level=allow_module_level)\n",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "b0eb511088476607",
+      "name" : "log",
+      "source" : "b0eb511088476607.txt",
+      "type" : "text/plain",
+      "size" : 143
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 4,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_withdrawal_actions_incp::0",
+    "time" : {
+      "start" : 1622708832005,
+      "stop" : 1622708832005,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "出金"
+  }, {
+    "name" : "story",
+    "value" : "IB/CL出金"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.withdrawal.withdrawal_bin"
+  }, {
+    "name" : "suite",
+    "value" : "test_withdrawal_cp_bin"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_withdrawal_actions_incp"
+  }, {
+    "name" : "host",
+    "value" : "SZBPC1902043"
+  }, {
+    "name" : "thread",
+    "value" : "440-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.withdrawal.withdrawal_bin.test_withdrawal_cp_bin"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'主账号': 1000003759.0, '交易账号': 652002187.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '出金金额': 660.0, '出金前账户余额': 0.0, '出金后账户余额': 4340.0, '预期结果': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "99f495502cbacabe.json",
+  "parameterValues" : [ "{'主账号': 1000003759.0, '交易账号': 652002187.0, '邮箱': 'lemon.lin@newtype.io', '密码': 'Tl123456', '出金金额': 660.0, '出金前账户余额': 0.0, '出金后账户余额': 4340.0, '预期结果': ''}" ]
+}

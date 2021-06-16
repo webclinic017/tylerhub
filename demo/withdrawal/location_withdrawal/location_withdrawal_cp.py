@@ -449,7 +449,7 @@ class location_withdrawal_incp():
             pub_method.log_output('!!--!!usable_withdrawal').error(msg)
 
     #判断余额
-    def is_insyfficient_balance(self,traccount,excelpath):
+    def is_insyfficient_balance(self,traccount,excelpath,row):
         try:
             while True:
                 self.attribute=common.get_attributes('xpath,//div[@class="el-loading-mask"]','style')
@@ -462,6 +462,11 @@ class location_withdrawal_incp():
             e.saveainfo(excelpath,self.before_blance,'F',row)
             print('出金前交易账户余额为{}'.format(self.before_blance))
             if float(self.before_blance)==0:
+                self.logoutcp()
+                time.sleep(3)
+                self.remove_topup()
+                common.switch_windows(2)
+                self.closebrowser()
                 return True
             else:
                 return False
@@ -525,6 +530,7 @@ class location_withdrawal_incp():
             common.display_click('css,.allow_color')
             time.sleep(1)
             self.hand_fee()
+            time.sleep(1)
         except Exception as msg:
             pub_method.log_output('!!--!!withdrawal_action').error(msg)
 
@@ -597,7 +603,7 @@ class location_withdrawal_incp():
             self.logincp(username,psword)
             time.sleep(10)
             #判读余额是否为0
-            if self.is_insyfficient_balance(traccount,excelpath):
+            if self.is_insyfficient_balance(traccount,excelpath,row):
                 return True
             else:
                 #出金
@@ -610,6 +616,9 @@ class location_withdrawal_incp():
                 time.sleep(5)
                 self.after_balance=self.get_traccount_balance(traccount)
                 e.saveainfo(excelpath,self.after_balance,'G',row)
+                self.logoutcp()
+                time.sleep(3)
+                self.remove_topup()
                 print('出金后交易账号余额为：{}'.format(self.after_balance))
                 return False
         except Exception as msg:

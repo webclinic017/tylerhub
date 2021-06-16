@@ -324,4 +324,23 @@
 
 # print(A())
 
+from browser_actions import Commonweb
+from common_method import commonmethod
+import time
+import os
 
+common=Commonweb()
+dr=common.open_browser()
+commethed=commonmethod(dr)
+
+common.open_web('https://www.baidu.com')
+# commethed.choose_bos_lang('CN')
+# commethed.loginbos('tyler.tang', 'Tl123456')
+
+# common.display_click('xpath,//div[@class="scroll-content"]//span[.="资金管理"]')
+# time.sleep(1)
+# # common.display_input('css,#kw', 'python')
+# # common.keyboard_operation('css,#kw', 'a')
+# common.display_click('xpath,//li[@class="ivu-menu-submenu ivu-menu-opened"]//span[.="汇率调整"]')
+# common.right_click_link('xpath,//li[@class="ivu-menu-submenu ivu-menu-opened"]//span[.="汇率调整"]')
+common.right_click_link('xpath,//a[.="新闻"]')

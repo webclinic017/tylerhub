@@ -1,0 +1,32 @@
+[31m[1mERROR   [0m !!--!!remove_register_topup:common_method.py:36 Message: no such element: Unable to locate element: {"method":"css selector","selector":".blk-sure-btn"}
+  (Session info: chrome=90.0.4430.212)
+
+[31m[1mERROR   [0m !!--!!login_cp:common_method.py:81 list index out of range
+[31m[1mERROR   [0m !!--!!is_insyfficient_balance:location_withdrawal_cp.py:469 name 'row' is not defined
+[31m[1mERROR   [0m !!--!!display_finds_element:browser_actions.py:117 元素不存在或者不可见：Message: chrome not reachable
+  (Session info: chrome=90.0.4430.212)
+
+[31m[1mERROR   [0m !!--!!nosuch_elements:browser_actions.py:144 object of type 'NoneType' has no len()
+[31m[1mERROR   [0m !!--!!display_click:browser_actions.py:261 'NoneType' object has no attribute 'click'
+[31m[1mERROR   [0m !!--!!display_finds_element:browser_actions.py:117 元素不存在或者不可见：Message: chrome not reachable
+  (Session info: chrome=90.0.4430.212)
+
+[31m[1mERROR   [0m !!--!!nosuch_elements:browser_actions.py:144 object of type 'NoneType' has no len()
+[31m[1mERROR   [0m !!--!!display_click:browser_actions.py:261 'NoneType' object has no attribute 'click'
+[31m[1mERROR   [0m !!--!!display_finds_element:browser_actions.py:117 元素不存在或者不可见：Message: chrome not reachable
+  (Session info: chrome=90.0.4430.212)
+
+[31m[1mERROR   [0m !!--!!nosuch_elements:browser_actions.py:144 object of type 'NoneType' has no len()
+[31m[1mERROR   [0m !!--!!display_click:browser_actions.py:261 'NoneType' object has no attribute 'click'
+[31m[1mERROR   [0m !!--!!display_finds_element:browser_actions.py:117 元素不存在或者不可见：Message: chrome not reachable
+  (Session info: chrome=90.0.4430.212)
+
+[31m[1mERROR   [0m !!--!!nosuch_elements:browser_actions.py:144 object of type 'NoneType' has no len()
+[31m[1mERROR   [0m !!--!!display_get_text:browser_actions.py:245 'NoneType' object has no attribute 'text'
+[31m[1mERROR   [0m !!--!!extract_numbers:other_actions.py:81 expected string or bytes-like object
+[31m[1mERROR   [0m !!--!!withdrawal_action:location_withdrawal_cp.py:529 float() argument must be a string or a number, not 'NoneType'
+[31m[1mERROR   [0m !!--!!review_withdrawal:location_withdrawal_cp.py:568 Message: chrome not reachable
+  (Session info: chrome=90.0.4430.212)
+
+[31m[1mERROR   [0m !!--!!withdrawal_cp:location_withdrawal_cp.py:616 Message: chrome not reachable
+  (Session info: chrome=90.0.4430.212)

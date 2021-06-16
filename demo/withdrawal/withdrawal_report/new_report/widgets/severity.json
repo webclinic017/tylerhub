@@ -1,20 +1,30 @@
 [ {
-  "uid" : "6d6005b74bb9917f",
+  "uid" : "c10b8c5587e7f677",
   "name" : "交易账号出金",
   "time" : {
-    "start" : 1621392084555,
-    "stop" : 1621392111266,
-    "duration" : 26711
+    "start" : 1622777166793,
+    "stop" : 1622777239479,
+    "duration" : 72686
   },
   "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "a128930501ba9df3",
+  "uid" : "df8aefd3da67e767",
   "name" : "交易账号出金",
   "time" : {
-    "start" : 1621392111277,
-    "stop" : 1621392253736,
-    "duration" : 142459
+    "start" : 1622777239483,
+    "stop" : 1622777375348,
+    "duration" : 135865
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f4acfd42eb5585e",
+  "name" : "交易账号出金",
+  "time" : {
+    "start" : 1622777375352,
+    "stop" : 1622777399150,
+    "duration" : 23798
   },
   "status" : "skipped",
   "severity" : "normal"
