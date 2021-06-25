@@ -147,8 +147,7 @@ retryWrites=true&ssl=true'.format(username,password)
 
 
     #连接mongodb数据库，查询多个字段内容    
-    def searchs_for_mongodb(self,username,password,database,muster,condition=None,value=None,filed1=None,
-    filed2=None,filed3=None,filed4=None,filed5=None,filed6=None,num=6,N=0):
+    def searchs_for_mongodb(self,username,password,database,muster,condition=None,value=None,filed1=None,*vartuple,num=1,N=0):
         """
         username:用户名
         password：密码
@@ -174,46 +173,12 @@ retryWrites=true&ssl=true'.format(username,password)
                             self.dict_search={}
                             self.dict_search[filed1]=i[filed1]
                             self.list_search.append(self.dict_search)
-                    elif num==2:
-                        for i in self.data:
-                            self.dict_search={}
-                            self.dict_search[filed1]=i[filed1]
-                            self.dict_search[filed2]=i[filed2]
-                            self.list_search.append(self.dict_search)
-                    elif num==3:
-                        for i in self.data:
-                            self.dict_search={}
-                            self.dict_search[filed1]=i[filed1]
-                            self.dict_search[filed2]=i[filed2]
-                            self.dict_search[filed3]=i[filed3]
-                            self.list_search.append(self.dict_search)
-                    elif num==4:
-                        for i in self.data:
-                            self.dict_search={}
-                            self.dict_search[filed1]=i[filed1]
-                            self.dict_search[filed2]=i[filed2]
-                            self.dict_search[filed3]=i[filed3]
-                            self.dict_search[filed4]=i[filed4]
-                            self.list_search.append(self.dict_search)
-                    elif num==5:
-                        for i in self.data:
-                            self.dict_search={}
-                            self.dict_search[filed1]=i[filed1]
-                            self.dict_search[filed2]=i[filed2]
-                            self.dict_search[filed3]=i[filed3]
-                            self.dict_search[filed4]=i[filed4]
-                            self.dict_search[filed5]=i[filed5]
-                            self.list_search.append(self.dict_search)
                     else:
                         for i in self.data:
                             self.dict_search={}
-                            self.dict_search[filed1]=i[filed1]
-                            self.dict_search[filed2]=i[filed2]
-                            self.dict_search[filed3]=i[filed3]
-                            self.dict_search[filed4]=i[filed4]
-                            self.dict_search[filed5]=i[filed5]
-                            self.dict_search[filed6]=i[filed6]
-                            self.list_search.append(self.dict_search)
+                            for var in vartuple:
+                               self.dict_search[var]=i[var]
+                               self.list_search.append(self.dict_search)
                 else:
                     self.data=self.colletion.find().limit(N)
                     if num==1:
@@ -221,46 +186,12 @@ retryWrites=true&ssl=true'.format(username,password)
                             self.dict_search={}
                             self.dict_search[filed1]=i[filed1]
                             self.list_search.append(self.dict_search)
-                    elif num==2:
-                        for i in self.data:
-                            self.dict_search={}
-                            self.dict_search[filed1]=i[filed1]
-                            self.dict_search[filed2]=i[filed2]
-                            self.list_search.append(self.dict_search)
-                    elif num==3:
-                        for i in self.data:
-                            self.dict_search={}
-                            self.dict_search[filed1]=i[filed1]
-                            self.dict_search[filed2]=i[filed2]
-                            self.dict_search[filed3]=i[filed3]
-                            self.list_search.append(self.dict_search)
-                    elif num==4:
-                        for i in self.data:
-                            self.dict_search={}
-                            self.dict_search[filed1]=i[filed1]
-                            self.dict_search[filed2]=i[filed2]
-                            self.dict_search[filed3]=i[filed3]
-                            self.dict_search[filed4]=i[filed4]
-                            self.list_search.append(self.dict_search)
-                    elif num==5:
-                        for i in self.data:
-                            self.dict_search={}
-                            self.dict_search[filed1]=i[filed1]
-                            self.dict_search[filed2]=i[filed2]
-                            self.dict_search[filed3]=i[filed3]
-                            self.dict_search[filed4]=i[filed4]
-                            self.dict_search[filed5]=i[filed5]
-                            self.list_search.append(self.dict_search)
                     else:
                         for i in self.data:
                             self.dict_search={}
-                            self.dict_search[filed1]=i[filed1]
-                            self.dict_search[filed2]=i[filed2]
-                            self.dict_search[filed3]=i[filed3]
-                            self.dict_search[filed4]=i[filed4]
-                            self.dict_search[filed5]=i[filed5]
-                            self.dict_search[filed6]=i[filed6]
-                            self.list_search.append(self.dict_search)                    
+                            for var in vartuple:
+                               self.dict_search[var]=i[var]
+                               self.list_search.append(self.dict_search)
             else:
                 if N==0:
                     if type(value)==int:
@@ -270,46 +201,12 @@ retryWrites=true&ssl=true'.format(username,password)
                                 self.dict_search={}
                                 self.dict_search[filed1]=i[filed1]
                                 self.list_search.append(self.dict_search)
-                        elif num==2:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.list_search.append(self.dict_search)
-                        elif num==3:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.list_search.append(self.dict_search)
-                        elif num==4:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.dict_search[filed4]=i[filed4]
-                                self.list_search.append(self.dict_search)
-                        elif num==5:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.dict_search[filed4]=i[filed4]
-                                self.dict_search[filed5]=i[filed5]
-                                self.list_search.append(self.dict_search)
                         else:
                             for i in self.data:
                                 self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.dict_search[filed4]=i[filed4]
-                                self.dict_search[filed5]=i[filed5]
-                                self.dict_search[filed6]=i[filed6]
-                                self.list_search.append(self.dict_search)
+                                for var in vartuple:
+                                    self.dict_search[var]=i[var]
+                                    self.list_search.append(self.dict_search)
                     else:
                         self.data=self.colletion.find({'{}'.format(condition):'{}'.format(value)})   
                         if num==1:
@@ -317,46 +214,12 @@ retryWrites=true&ssl=true'.format(username,password)
                                 self.dict_search={}
                                 self.dict_search[filed1]=i[filed1]
                                 self.list_search.append(self.dict_search)
-                        elif num==2:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.list_search.append(self.dict_search)
-                        elif num==3:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.list_search.append(self.dict_search)
-                        elif num==4:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.dict_search[filed4]=i[filed4]
-                                self.list_search.append(self.dict_search)
-                        elif num==5:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.dict_search[filed4]=i[filed4]
-                                self.dict_search[filed5]=i[filed5]
-                                self.list_search.append(self.dict_search)
                         else:
                             for i in self.data:
                                 self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.dict_search[filed4]=i[filed4]
-                                self.dict_search[filed5]=i[filed5]
-                                self.dict_search[filed6]=i[filed6]
-                                self.list_search.append(self.dict_search)
+                                for var in vartuple:
+                                    self.dict_search[var]=i[var]
+                                    self.list_search.append(self.dict_search)
                 else:
                     if type(value)==int:
                         self.data=self.colletion.find({'{}'.format(condition):value}).limit(N)
@@ -365,46 +228,12 @@ retryWrites=true&ssl=true'.format(username,password)
                                 self.dict_search={}
                                 self.dict_search[filed1]=i[filed1]
                                 self.list_search.append(self.dict_search)
-                        elif num==2:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.list_search.append(self.dict_search)
-                        elif num==3:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.list_search.append(self.dict_search)
-                        elif num==4:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.dict_search[filed4]=i[filed4]
-                                self.list_search.append(self.dict_search)
-                        elif num==5:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.dict_search[filed4]=i[filed4]
-                                self.dict_search[filed5]=i[filed5]
-                                self.list_search.append(self.dict_search)
                         else:
                             for i in self.data:
                                 self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.dict_search[filed4]=i[filed4]
-                                self.dict_search[filed5]=i[filed5]
-                                self.dict_search[filed6]=i[filed6]
-                                self.list_search.append(self.dict_search)
+                                for var in vartuple:
+                                    self.dict_search[var]=i[var]
+                                    self.list_search.append(self.dict_search)
                     else:
                         self.data=self.colletion.find({'{}'.format(condition):'{}'.format(value)}).limit(N)
                         if num==1:
@@ -412,46 +241,12 @@ retryWrites=true&ssl=true'.format(username,password)
                                 self.dict_search={}
                                 self.dict_search[filed1]=i[filed1]
                                 self.list_search.append(self.dict_search)
-                        elif num==2:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.list_search.append(self.dict_search)
-                        elif num==3:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.list_search.append(self.dict_search)
-                        elif num==4:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.dict_search[filed4]=i[filed4]
-                                self.list_search.append(self.dict_search)
-                        elif num==5:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.dict_search[filed4]=i[filed4]
-                                self.dict_search[filed5]=i[filed5]
-                                self.list_search.append(self.dict_search)
                         else:
                             for i in self.data:
                                 self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.dict_search[filed2]=i[filed2]
-                                self.dict_search[filed3]=i[filed3]
-                                self.dict_search[filed4]=i[filed4]
-                                self.dict_search[filed5]=i[filed5]
-                                self.dict_search[filed6]=i[filed6]
-                                self.list_search.append(self.dict_search)
+                                for var in vartuple:
+                                    self.dict_search[var]=i[var]
+                                    self.list_search.append(self.dict_search)
             print('数据库查询条数：{}，查询字段个数：{},如下：'.format(len(self.list_search),num))
             print(self.list_search)
             return self.list_search
@@ -460,43 +255,19 @@ retryWrites=true&ssl=true'.format(username,password)
 
 
     #数据库查询数据保存
-    def save_mongodb_data(self,excelpath,username,password,database,muster,condition=None,value=None,filed1=None,filed2=None,
-    filed3=None,filed4=None,filed5=None,filed6=None,column1=None,column2=None,column3=None,column4=None,column5=None,column6=None,num=6,N=0):
+    def save_mongodb_data(self,excelpath,username,password,database,muster,condition=None,value=None,filed1=None,column1=None,num=1,N=0,**kwargs):
+        """
+        不定长参数类型：filed2='B',查询字段及其对应需保存列
+        """
         try:
-            self.mongo_data=self.searchs_for_mongodb(username,password,database,muster,condition,value,filed1,filed2,filed3,filed4,filed5,filed6,num,N)
+            self.mongo_data=self.searchs_for_mongodb(username,password,database,muster,condition,value,filed1,kwargs.kyes(),num,N)
             if num==1:
                 for i in self.mongo_data:
                     self.saveainfo(excelpath, i[filed1], column1, self.mongo_data.index(i)+2)
-            elif num==2:
-                for i in self.mongo_data:
-                    self.saveainfo(excelpath, i[filed1], column1, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed2], column2, self.mongo_data.index(i)+2)
-            elif num==3:
-                for i in self.mongo_data:
-                    self.saveainfo(excelpath, i[filed1], column1, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed2], column2, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed3], column3, self.mongo_data.index(i)+2) 
-            elif num==4:
-                for i in self.mongo_data:
-                    self.saveainfo(excelpath, i[filed1], column1, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed2], column2, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed3], column3, self.mongo_data.index(i)+2) 
-                    self.saveainfo(excelpath, i[filed2], column4, self.mongo_data.index(i)+2)
-            elif num==5:
-                for i in self.mongo_data:
-                    self.saveainfo(excelpath, i[filed1], column1, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed2], column2, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed3], column3, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed4], column4, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed5], column5, self.mongo_data.index(i)+2)
             else:
                 for i in self.mongo_data:
-                    self.saveainfo(excelpath, i[filed1], column1, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed2], column2, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed3], column3, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed4], column4, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed5], column5, self.mongo_data.index(i)+2)
-                    self.saveainfo(excelpath, i[filed6], column6, self.mongo_data.index(i)+2)
+                    for key.values in kwargs.items():
+                        self.saveainfo(excelpath, i[key], values, self.mongo_data.index(i)+2)
         except Exception as msg:
             print('保存数据库数据失败，请检查链接/参数：{}'.format(msg))
 

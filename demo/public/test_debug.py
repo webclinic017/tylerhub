@@ -383,11 +383,14 @@
 # demo2(a=1,b=2,c=3)
 # demo3('hello','tyler',a='hello',b='tyler')
 
+def serach(**kwargs):
+    for i in kwargs.keys():
+        print(type(i))
+        print(i)
+    for key,value in kwargs.items():
+        print('字段{}保存在{}列'.format(key,value))
 
-
-
-
-
+serach(zubie='A',diancha='B')
 
 
 
