@@ -385,7 +385,8 @@
 
 def serach(**kwargs):
     for i in kwargs.keys():
-        print(type(i))
+        print(i)
+    for i in kwargs.values():
         print(i)
     for key,value in kwargs.items():
         print('字段{}保存在{}列'.format(key,value))
