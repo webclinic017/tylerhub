@@ -324,23 +324,72 @@
 
 # print(A())
 
-from browser_actions import Commonweb
-from common_method import commonmethod
-import time
-import os
+# from browser_actions import Commonweb
+# from common_method import commonmethod
+# import time
+# import os
 
-common=Commonweb()
-dr=common.open_browser()
-commethed=commonmethod(dr)
+# common=Commonweb()
+# dr=common.open_browser()
+# commethed=commonmethod(dr)
 
-common.open_web('https://www.baidu.com')
-# commethed.choose_bos_lang('CN')
-# commethed.loginbos('tyler.tang', 'Tl123456')
+# common.open_web('https://www.baidu.com')
+# # commethed.choose_bos_lang('CN')
+# # commethed.loginbos('tyler.tang', 'Tl123456')
 
-# common.display_click('xpath,//div[@class="scroll-content"]//span[.="资金管理"]')
-# time.sleep(1)
-# # common.display_input('css,#kw', 'python')
-# # common.keyboard_operation('css,#kw', 'a')
-# common.display_click('xpath,//li[@class="ivu-menu-submenu ivu-menu-opened"]//span[.="汇率调整"]')
-# common.right_click_link('xpath,//li[@class="ivu-menu-submenu ivu-menu-opened"]//span[.="汇率调整"]')
-common.right_click_link('xpath,//a[.="新闻"]')
+# # common.display_click('xpath,//div[@class="scroll-content"]//span[.="资金管理"]')
+# # time.sleep(1)
+# # # common.display_input('css,#kw', 'python')
+# # # common.keyboard_operation('css,#kw', 'a')
+# # common.display_click('xpath,//li[@class="ivu-menu-submenu ivu-menu-opened"]//span[.="汇率调整"]')
+# # common.right_click_link('xpath,//li[@class="ivu-menu-submenu ivu-menu-opened"]//span[.="汇率调整"]')
+# common.right_click_link('xpath,//a[.="新闻"]')
+
+# def removeab():
+#     list_a=['aabbabc','baabaaadc']
+#     list_b=[]
+#     for i in list_a:
+#         list_b.append(i.replace('ab', ''))
+#     return list_b
+
+# # print(removeab())
+# def num_0(a,b,c,*args,city='beijing',name,**kwnum):
+#     print(a,b,c,name,city,args,kwnum)  # 输出的时候直接用*或者** 的变量名
+# num_0(1,2,3,4,5,6,7,city='hangzhou',name='jack',age=18,country='haidian')
+
+
+# def foo(**t):
+#     print(t)
+# foo(a=1,b=2)
+
+# def demo1(*canshu):
+#     print(canshu)
+#     for i in canshu:
+#         print(i)
+
+# def demo2(**canshu):
+#     print(canshu)
+#     for i in canshu:
+#         print(i)
+        
+# def demo3(*args,**kwargs):
+#     for i in args:
+#         print(i)
+#     for i in kwargs:
+#         print(i)
+
+
+# demo1('l','a','b')
+# demo2(a=1,b=2,c=3)
+# demo3('hello','tyler',a='hello',b='tyler')
+
+
+
+
+
+
+
+
+
+
+
