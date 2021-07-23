@@ -286,3 +286,4 @@ if __name__=='__main__':
     path=r'D:\code\tylerhub\demo\registration_process\test_excel_data\all_links.xlsx'
     e.save_mongodb_data(path,'atfx-dev-admin','m578A3MGrcR3pRXVU2pA','atfxgm-uat','atfx_ib_links',condition='isDeleted',value=0,
     link='A',currency='B',markup='C',leverage='D',mtGroup='E',spreadType='F',num=6)
+    print(11)
