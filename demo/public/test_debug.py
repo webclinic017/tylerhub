@@ -383,16 +383,39 @@
 # demo2(a=1,b=2,c=3)
 # demo3('hello','tyler',a='hello',b='tyler')
 
-def serach(**kwargs):
-    for i in kwargs.keys():
-        print(i)
-    for i in kwargs.values():
-        print(i)
-    for key,value in kwargs.items():
-        print('字段{}保存在{}列'.format(key,value))
+# def serach(**kwargs):
+#     for i in kwargs.keys():
+#         print(i)
+#     for i in kwargs.values():
+#         print(i)
+#     for key,value in kwargs.items():
+#         print('字段{}保存在{}列'.format(key,value))
 
-serach(zubie='A',diancha='B')
-print(111)
+# serach(zubie='A',diancha='B')
+# print(111)
+
+# a=['name', 'host', 'proxy', 'password', 'pool']
+# print(a[2])
+
+
+class A():
+
+    def __init__(self,file=None):
+
+        if file:
+            self.configpath=file
+        else:
+            self.configpath='我是一个路径'
+
+    def a(self,b):
+        print(self.configpath)
+        print(b)
+
+c=A()
+c.a('我是第二个路径')
+
+
+
 
 
 
