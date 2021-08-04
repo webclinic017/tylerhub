@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \tylerhub\demo\public\README.mdd
 -->
-# 公共模块注释
+# 公共模块注释 请放心食用 :ok_woman:
 
 ## 环境依赖
 ***python3.6及以上版本***
@@ -15,7 +15,7 @@
     2.必需第三方模块：selenium；allure-pytest；BeautifulReport；ddt；image；pymongo；cx_Oracle；PyMySQL；pytest；selenium；WMI；xlrd(指定1.2.0版本)；allure
     3.alluer环境配置
 ***
-## 模块功能
+## 模块功能 
 **模块**         |      **功能**  
    ------------- | -------------  
 config          |    配置文件    
@@ -27,7 +27,7 @@ other_actions.py | 生成随机数据，提取指定格式字符串等
 read_dataconfig.py  | 读取配置文件
 verification_code.py | 页面验证识别，统计方法运行时间等
 ***
-## 命名方式
+## 命名方式 建议用如下命名方式哦:smiley: 
     模块名：小写字母，单词间用_分割  about_data.py
     类名：首字母大写
     普通变量：小写字母，单词间用_分割 email_list
