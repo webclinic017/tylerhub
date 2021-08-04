@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-28 17:29:27
-LastEditTime: 2021-06-08 15:52:42
+LastEditTime: 2021-08-04 22:03:21
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\E-wallet_deposit\location_ewallet\location_deposti_of_ewallet.py
@@ -14,21 +14,21 @@ import time
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 path_public=path_demo+r'\public'
 sys.path.append(path_public)
-from about_data import exceldata
+from about_data import Exceldata
 from browser_actions import Commonweb
-from common_method import commonmethod
-from other_actions import public_method
+from common_method import Commonmethod
+from other_actions import Public_method
 from verification_code import time_used
 
 common=Commonweb()
-pub_method=public_method()
+pub_method=Public_method()
 
 
 class Ewallet_deposti():
 
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
-        self.commethod=commonmethod(self.driver)
+        self.commethod=Commonmethod(self.driver)
 
     def get_url(self,url,username,psword,lang='CN'):
         try:

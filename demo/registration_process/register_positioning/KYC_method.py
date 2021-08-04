@@ -6,12 +6,12 @@ path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file
 path_public=path_demo+r'\public'
 sys.path.append(path_public)
 from browser_actions import Commonweb
-from other_actions import public_method
-from common_method import commonmethod
+from other_actions import Public_method
+from common_method import Commonmethod
 
 path_process=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #实例化对象
-pub_method=public_method()
+pub_method=Public_method()
 common=Commonweb()
 
 #继承基本类
@@ -21,7 +21,7 @@ class kyc_approve():
     #默认以谷歌浏览器执行测试用例
     def browsertype(self,browsername='Chrome'):
         self.driver=common.open_browser(browsername)
-        self.commethod=commonmethod(self.driver)
+        self.commethod=Commonmethod(self.driver)
 
     #去除登录页弹窗
     def login_topup(self):
@@ -69,7 +69,7 @@ class kyc_approve():
             log.my_logger('!!--!!topup').error('首次登录弹窗点击失败{}'.format(msg))
 
     #获取登录成功后的主账号
-    def get_account_(self):
+    def Get_account_(self):
         try:
             time.sleep(5)
             #获取主账号文本

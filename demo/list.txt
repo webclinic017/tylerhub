@@ -1,0 +1,524 @@
+�ļ��� PATH �б�
+�����к�Ϊ 9693-46A9
+D:.
+��  list.txt
+��  
+����.history
+��      browser_actions_20210125094935.py
+��      browser_actions_20210125100032.py
+��      
+����change_psword
+��  ��  README.md
+��  ��  
+��  ����action_bin
+��  ��Change_passwordssword_cp.py
+��  ��  ��  login_cp_changepsword_bin.py
+��  ��  ��  
+��  ��  ����__pycache__
+��  ��  Change_passwordpassword_cp.cpython-38.pyc
+��  ��  Change_passwordpassword_cp.cpython-39.pyc
+��  ��          login_cp_changepsword_bin.cpython-38.pyc
+��  ��          login_cp_changepsword_bin.cpython-39.pyc
+��  ��          
+��  ����changepsword_report
+��  ��      ��������ҳ���޸�������.html
+��  ��      ��¼�����.html
+��  ��      
+��  ����location
+��  ��  ��  locate_change_pswd_cp.py
+��  ��  ��  login_cp_changepsword.py
+��  ��  ��  
+��  ��  ����__pycache__
+��  ��          locate_change_pswd.cpython-38.pyc
+��  ��          locate_change_pswd_cp.cpython-38.pyc
+��  ��          locate_change_pswd_cp.cpython-39.pyc
+��  ��          login_cp_changepsword.cpython-38.pyc
+��  ��          login_cp_changepsword.cpython-39.pyc
+��  ��          pubmethod.cpython-38.pyc
+��  ��          
+��  ����test_excel_data
+��          chang_psword_incp.xlsx
+��          test_data.xlsx
+��          
+����deposit
+��  ��  README.md
+��  ��  
+��  ����deposit_bin
+��  ��  ��  deposit_in_bos.py
+��  ��  ��  deposit_in_cp.py
+��  ��  ��  
+��  ��  ����__pycache__
+��  ��          deposit_in_bos.cpython-38.pyc
+��  ��          deposit_in_bos.cpython-39.pyc
+��  ��          deposit_in_cp.cpython-38.pyc
+��  ��          deposit_in_cp.cpython-39.pyc
+��  ��          
+��  ����deposit_report
+��  ��      BOS���.html
+��  ��      ��Ա�������.html
+��  ��      
+��  ����location_deposit
+��  ��  ��  location_deposit_of_bos.py
+��  ��  ��  location_deposit_of_cp.py
+��  ��  ��  
+��  ��  ����__pycache__
+��  ��          location_deposit_of_bos.cpython-38.pyc
+��  ��          location_deposit_of_bos.cpython-39.pyc
+��  ��          location_deposit_of_cp.cpython-38.pyc
+��  ��          location_deposit_of_cp.cpython-39.pyc
+��  ��          
+��  ����test_data
+��          deposit_data.xlsx
+��          
+����E-wallet_deposit
+��  ����e-wallet_deposit_bin
+��  ��  ��  test_ewallet_deposit.py
+��  ��  ��  
+��  ��  ����__pycache__
+��  ��          test_ewallet_deposit.cpython-38-pytest-6.2.4.pyc
+��  ��          test_ewallet_deposit.cpython-39-pytest-6.2.4.pyc
+��  ��          
+��  ����location_ewallet
+��      ��  location_deposit_of_ewallet.py
+��      ��  
+��      ����__pycache__
+��              location_deposit_of_ewallet.cpython-38.pyc
+��              location_deposit_of_ewallet.cpython-39.pyc
+��              
+����get_country_msg
+��      all_country.xlsx
+��      Get_account.py
+��      
+����log
+��      2021-08-04-log.log
+��      
+����public
+��  ��  about_data.py
+��  ��  browser_actions.py
+��  ��  common_method.py
+��  ��  handlelog.py
+��  ��  other_actions.py
+��  ��  Public variable.md
+��  ��  README.md
+��  ��  READMEdd.md
+��  ��  read_dataconfig.py
+��  ��  test_debug.py
+��  ��  verification_code.py
+��  ��  
+��  ����config
+��  ��  ��  config.ini
+��  ��  ��  
+��  ��  ����instantclient_19_11
+��  ��      ��  adrci.sym
+��  ��      ��  BASIC_LITE_LICENSE
+��  ��      ��  BASIC_LITE_README
+��  ��      ��  genezi.sym
+��  ��      ��  oci.sym
+��  ��      ��  ocijdbc19.sym
+��  ��      ��  ociw32.sym
+��  ��      ��  ojdbc8.jar
+��  ��      ��  orannzsbb19.sym
+��  ��      ��  oraocci19.sym
+��  ��      ��  oraocci19d.sym
+��  ��      ��  oraociicus19.sym
+��  ��      ��  orasql19.sym
+��  ��      ��  ucp.jar
+��  ��      ��  uidrvci.sym
+��  ��      ��  xstreams.jar
+��  ��      ��  
+��  ��      ����vc14
+��  ��              oraocci19.sym
+��  ��              oraocci19d.sym
+��  ��              
+��  ����__pycache__
+��          about_data.cpython-38.pyc
+��          about_data.cpython-39.pyc
+��          browser_actions.cpython-38.pyc
+��          browser_actions.cpython-39.pyc
+��          common_method.cpython-38.pyc
+��          common_method.cpython-39.pyc
+��          handlelog.cpython-38.pyc
+��          handlepath.cpython-39.pyc
+��          other_actions.cpython-38.pyc
+��          other_actions.cpython-39.pyc
+��          read_dataconfig.cpython-38.pyc
+��          read_dataconfig.cpython-39.pyc
+��          test_debug.cpython-39-pytest-6.2.4.pyc
+��          verification_code.cpython-38.pyc
+��          verification_code.cpython-39.pyc
+��          
+����registration_process
+��  ��  README.md
+��  ��  
+��  ����cp_register_process_report
+��  ��  ��  kyc��֤.html
+��  ��  ��  ��Ա����ע��.html
+��  ��  ��  ����ͨ��.html
+��  ��  ��  
+��  ��  ����new_report
+��  ��  ����report_data
+��  ����register_actions_bin
+��  ��  ��  cp_register.py
+��  ��  ��  kyc_operating.py
+��  ��  ��  review.py
+��  ��  ��  test_verify_data_bin.py
+��  ��  ��  
+��  ��  ����__pycache__
+��  ��          cp_register.cpython-38.pyc
+��  ��          cp_register.cpython-39.pyc
+��  ��          kyc_operating.cpython-38.pyc
+��  ��          kyc_operating.cpython-39.pyc
+��  ��          review.cpython-38.pyc
+��  ��          review.cpython-39.pyc
+��  ��          test_verify_data_bin.cpython-38-pytest-6.2.4.pyc
+��  ��          test_verify_data_bin.cpython-39-pytest-6.2.4.pyc
+��  ��          
+��  ����register_positioning
+��  ��  ��  KYC_method.py
+��  ��  ��  preliminary_review.py
+��  ��  ��  register_method.py
+��  ��  ��  verify_message_location.py
+��  ��  ��  
+��  ��  ����__pycache__
+��  ��          KYC_method.cpython-38.pyc
+��  ��          KYC_method.cpython-39.pyc
+��  ��          preliminary_review.cpython-38.pyc
+��  ��          preliminary_review.cpython-39.pyc
+��  ��          register_method.cpython-38.pyc
+��  ��          register_method.cpython-39.pyc
+��  ��          verify_message_location.cpython-38.pyc
+��  ��          verify_message_location.cpython-39.pyc
+��  ��          
+��  ����test_excel_data
+��  ��      account_number.xlsx
+��  ��      address.jpg
+��  ��      all_links.xlsx
+��  ��      bank_card.jpg
+��  ��      behind.jpg
+��  ��      creataccount.jpg
+��  ��      front.jpg
+��  ��      register_data.xlsx
+��  ��      upimg.exe
+��  ��      
+��  ����__pycache__
+��          cp_register.cpython-38.pyc
+��          KYC_method.cpython-38.pyc
+��          kyc_operating.cpython-38.pyc
+��          preliminary_review.cpython-38.pyc
+��          publicmethod.cpython-38.pyc
+��          register_method.cpython-38.pyc
+��          review.cpython-38.pyc
+��          
+����transfer
+��  ����test_data
+��  ��      transfer_other_one.xlsx
+��  ��      transfer_same_one.xlsx
+��  ��      
+��  ����transfer_bin
+��  ��  ��  test_transfer_action_other_one_bin.py
+��  ��  ��  transfer_action_same_one_bin.py
+��  ��  ��  
+��  ��  ����__pycache__
+��  ��          test_transfer_action_other_one_bin.cpython-38-pytest-5.4.3.pyc
+��  ��          test_transfer_action_other_one_bin.cpython-38-pytest-6.2.4.pyc
+��  ��          transfer_action_same_one_bin.cpython-38.pyc
+��  ��          
+��  ����transfer_location
+��  ��  ��  location_transfer_other_one.py
+��  ��  ��  location_transfer_same_one.py
+��  ��  ��  
+��  ��  ����__pycache__
+��  ��          location_transfer.cpython-38.pyc
+��  ��          location_transfer_other_one.cpython-38.pyc
+��  ��          location_transfer_same_one.cpython-38.pyc
+��  ��          
+��  ����transfer_report_other_one
+��  ��  ����new_report
+��  ��  ��  ��  app.js
+��  ��  ��  ��  favicon.ico
+��  ��  ��  ��  index.html
+��  ��  ��  ��  styles.css
+��  ��  ��  ��  
+��  ��  ��  ����data
+��  ��  ��  ��  ��  behaviors.csv
+��  ��  ��  ��  ��  behaviors.json
+��  ��  ��  ��  ��  categories.csv
+��  ��  ��  ��  ��  categories.json
+��  ��  ��  ��  ��  packages.json
+��  ��  ��  ��  ��  suites.csv
+��  ��  ��  ��  ��  suites.json
+��  ��  ��  ��  ��  timeline.json
+��  ��  ��  ��  ��  
+��  ��  ��  ��  ����test-cases
+��  ��  ��  ��          1374dc966b3064ab.json
+��  ��  ��  ��          1cb7db1381a586bc.json
+��  ��  ��  ��          3a209b1fdf3c554b.json
+��  ��  ��  ��          b8362beed7aafb9f.json
+��  ��  ��  ��          d101c8c36fddb0cd.json
+��  ��  ��  ��          e2ce3d2b0bc587a8.json
+��  ��  ��  ��          eb32c943d91fa89a.json
+��  ��  ��  ��          ed4c6285f995820b.json
+��  ��  ��  ��          
+��  ��  ��  ����export
+��  ��  ��  ��      influxDbData.txt
+��  ��  ��  ��      mail.html
+��  ��  ��  ��      prometheusData.txt
+��  ��  ��  ��      
+��  ��  ��  ����history
+��  ��  ��  ��      categories-trend.json
+��  ��  ��  ��      duration-trend.json
+��  ��  ��  ��      history-trend.json
+��  ��  ��  ��      history.json
+��  ��  ��  ��      retry-trend.json
+��  ��  ��  ��      
+��  ��  ��  ����plugins
+��  ��  ��  ��  ����behaviors
+��  ��  ��  ��  ��      index.js
+��  ��  ��  ��  ��      
+��  ��  ��  ��  ����packages
+��  ��  ��  ��  ��      index.js
+��  ��  ��  ��  ��      
+��  ��  ��  ��  ����screen-diff
+��  ��  ��  ��          index.js
+��  ��  ��  ��          styles.css
+��  ��  ��  ��          
+��  ��  ��  ����widgets
+��  ��  ��          behaviors.json
+��  ��  ��          categories-trend.json
+��  ��  ��          categories.json
+��  ��  ��          duration-trend.json
+��  ��  ��          duration.json
+��  ��  ��          environment.json
+��  ��  ��          executors.json
+��  ��  ��          history-trend.json
+��  ��  ��          launch.json
+��  ��  ��          retry-trend.json
+��  ��  ��          severity.json
+��  ��  ��          status-chart.json
+��  ��  ��          suites.json
+��  ��  ��          summary.json
+��  ��  ��          
+��  ��  ����report_data
+��  ��          4829317e-c5fe-430b-bac8-b244bda10328-container.json
+��  ��          80e35979-3bb7-4039-9e11-fe035cd3a358-container.json
+��  ��          8431c239-dc86-4f89-b7b0-78f356309c2d-container.json
+��  ��          867bec1e-eef5-4091-bee1-f34f5b18c3b3-container.json
+��  ��          
+��  ����transfer_report_the_same
+����website
+��  ��  AW5823.py
+��  ��  url.xlsx
+��  ��  
+��  ����404-URLreport
+��  ��      URL.html
+��  ��      
+��  ����__pycache__
+��          AW5823.cpython-38.pyc
+��          
+����withdrawal
+��  ����location_withdrawal
+��  ��  ��  location_withdrawal_cp.py
+��  ��  ��  
+��  ��  ����__pycache__
+��  ��          location_withdrawal_cp.cpython-38.pyc
+��  ��          location_withdrawal_cp.cpython-39.pyc
+��  ��          
+��  ����test_data
+��  ��      bank_card.jpg
+��  ��      upimg.exe
+��  ��      withdrawal_data.xlsx
+��  ��      
+��  ����withdrawal_bin
+��  ��  ��  test_withdrawal_cp_bin.py
+��  ��  ��  
+��  ��  ����__pycache__
+��  ��          test_withdrawal_cp_bin.cpython-38-pytest-6.2.4.pyc
+��  ��          test_withdrawal_cp_bin.cpython-39-pytest-6.2.4.pyc
+��  ��          withdrawal_cp_bin.cpython-38.pyc
+��  ��          withdrawal_cp_bin.cpython-39.pyc
+��  ��          
+��  ����withdrawal_report
+��      ��  ��Ա���ĳ���.html
+��      ��  
+��      ����new_report
+��      ��  ��  app.js
+��      ��  ��  favicon.ico
+��      ��  ��  index.html
+��      ��  ��  styles.css
+��      ��  ��  
+��      ��  ����data
+��      ��  ��  ��  behaviors.csv
+��      ��  ��  ��  behaviors.json
+��      ��  ��  ��  categories.csv
+��      ��  ��  ��  categories.json
+��      ��  ��  ��  packages.json
+��      ��  ��  ��  suites.csv
+��      ��  ��  ��  suites.json
+��      ��  ��  ��  timeline.json
+��      ��  ��  ��  
+��      ��  ��  ����attachments
+��      ��  ��  ��      1862d63b020fc206.txt
+��      ��  ��  ��      202cd5be5fa1a1b.txt
+��      ��  ��  ��      320f90c2013b0191.txt
+��      ��  ��  ��      4aef5ac08a24f2bc.txt
+��      ��  ��  ��      529ffd6597b091bb.txt
+��      ��  ��  ��      836cb20916d7e3ee.txt
+��      ��  ��  ��      9b6be9f894a565c3.txt
+��      ��  ��  ��      b0eb511088476607.txt
+��      ��  ��  ��      dfbdfb7b1e64dcbb.txt
+��      ��  ��  ��      f64f6c3af0193d0d.txt
+��      ��  ��  ��      
+��      ��  ��  ����test-cases
+��      ��  ��          155a953ca1e1c725.json
+��      ��  ��          1ae6a1126cb3e04.json
+��      ��  ��          25884951d5200ead.json
+��      ��  ��          31286edb35c2f364.json
+��      ��  ��          345050cf54e053b.json
+��      ��  ��          4004c9d441498b81.json
+��      ��  ��          4378d000315b03db.json
+��      ��  ��          49a18bbfb6903fc9.json
+��      ��  ��          4aa50401135b824a.json
+��      ��  ��          4e8eb4b937a3a447.json
+��      ��  ��          4f4acfd42eb5585e.json
+��      ��  ��          5a1007c0ac907860.json
+��      ��  ��          789bd413d8af682a.json
+��      ��  ��          8cc67441f6c8f147.json
+��      ��  ��          90c16d58549c0cc5.json
+��      ��  ��          99f495502cbacabe.json
+��      ��  ��          b47e1cb3db040c36.json
+��      ��  ��          c10b8c5587e7f677.json
+��      ��  ��          cb0eac6475db6f02.json
+��      ��  ��          d52d9484a04d31da.json
+��      ��  ��          d96a5d3a51e2a725.json
+��      ��  ��          df8aefd3da67e767.json
+��      ��  ��          e7ca46de9c7787cc.json
+��      ��  ��          
+��      ��  ����export
+��      ��  ��      influxDbData.txt
+��      ��  ��      mail.html
+��      ��  ��      prometheusData.txt
+��      ��  ��      
+��      ��  ����history
+��      ��  ��      categories-trend.json
+��      ��  ��      duration-trend.json
+��      ��  ��      history-trend.json
+��      ��  ��      history.json
+��      ��  ��      retry-trend.json
+��      ��  ��      
+��      ��  ����plugins
+��      ��  ��  ����behaviors
+��      ��  ��  ��      index.js
+��      ��  ��  ��      
+��      ��  ��  ����jira
+��      ��  ��  ����junit
+��      ��  ��  ����packages
+��      ��  ��  ��      index.js
+��      ��  ��  ��      
+��      ��  ��  ����screen-diff
+��      ��  ��  ��      index.js
+��      ��  ��  ��      styles.css
+��      ��  ��  ��      
+��      ��  ��  ����trx
+��      ��  ��  ����xctest
+��      ��  ��  ����xray
+��      ��  ��  ����xunit-xml
+��      ��  ����widgets
+��      ��          behaviors.json
+��      ��          categories-trend.json
+��      ��          categories.json
+��      ��          duration-trend.json
+��      ��          duration.json
+��      ��          environment.json
+��      ��          executors.json
+��      ��          history-trend.json
+��      ��          launch.json
+��      ��          retry-trend.json
+��      ��          severity.json
+��      ��          status-chart.json
+��      ��          suites.json
+��      ��          summary.json
+��      ��          
+��      ����report_data
+��              06dac762-1539-4c39-8dad-2787a8627058-result.json
+��              0f70dec0-900e-4bad-bb06-ada459da0d5e-container.json
+��              11a55436-f5c6-43b3-ac6a-deba16a16d64-attachment.txt
+��              12231285-428d-489b-8baa-324a6a086d39-attachment.txt
+��              131cfb4f-c5c8-45a8-a28d-a4d0a401aa98-container.json
+��              151d1266-29f7-4b7c-bbd4-7efaa991c700-container.json
+��              1b928c37-a3c2-4123-951a-ec649504dbdf-result.json
+��              25fb88c3-5aca-4aeb-b4c0-fbfa6f2c03e3-container.json
+��              27bd2a50-fb12-455a-99e7-5cbf2334dd32-container.json
+��              28c8c4c5-720f-4d95-ac5e-31def21a1388-result.json
+��              32dc5d96-6520-408d-b660-39fdd0ca9595-container.json
+��              365beda2-39b5-427a-8439-7411bf481c4e-result.json
+��              377522f9-01b4-4846-be3e-ea79442956d7-attachment.txt
+��              3e3b4253-34cf-451c-9b0b-cbaba9256234-container.json
+��              400bff1f-d891-4808-abd8-7e2e763cf5bd-container.json
+��              41a43935-9bfc-404c-8753-653da9d22e8d-attachment.txt
+��              4204284d-4793-46e3-8341-d7b4c4766174-container.json
+��              45cc9ecb-c457-431b-bb8a-0d902152dfef-attachment.txt
+��              46118093-b2ee-4157-a117-57e55519dc59-result.json
+��              4653959a-39e9-4b5d-a470-a0d738cc65d2-container.json
+��              47a199bc-27be-4db8-b0d6-e0fc2f0e92b2-result.json
+��              49d47939-621b-40d4-9c69-c7620262c253-attachment.txt
+��              4abf5471-427b-4a9d-96f5-fa2be70c8b40-container.json
+��              4db1029d-d9f0-40ce-9154-1d1c19f45bf2-container.json
+��              5121d1c3-ffd7-4815-959f-552266458141-container.json
+��              5354a7b6-1fc8-46e1-b6a6-2cb7df8d65bd-container.json
+��              540b53ed-8073-4200-a2ee-3e625887f1fb-container.json
+��              57c8ab85-b72e-49fa-8848-fd1a7da2075c-container.json
+��              57e4ccb0-16db-42eb-8543-35146c057bb9-attachment.txt
+��              5c596cf7-01b1-49cd-8be4-a3deacec399d-container.json
+��              5dbe054b-4047-453c-b88f-6a2374e1a875-container.json
+��              62a0c939-ef37-4eda-80cf-bf8baf2c0c68-container.json
+��              683e425b-3ce8-4e5c-b721-a61e3baf2499-result.json
+��              6afdada5-6076-4ba0-bc83-4d7fbec173c2-container.json
+��              7dccd787-55a3-41e5-94c6-5c07e98664ac-container.json
+��              84f47b37-d06a-4261-98b1-21f877ebf314-container.json
+��              88e0c540-02dd-4f2f-b5d1-294a905c213e-container.json
+��              8c3a7b0f-3dba-4cf3-834f-2d0632faa6d9-container.json
+��              8d66c98c-2701-431c-997b-5bc3257a71a7-result.json
+��              8e553fc8-24fc-463b-b686-20f8201e5e6b-result.json
+��              8f8d9fa2-7840-4794-97d8-7f714d91bae0-container.json
+��              905c129d-c7d9-4003-8756-ff8cc2aa0560-result.json
+��              921e9e17-d920-415b-bb24-cec048c767c8-result.json
+��              927f4cd6-6ade-467d-9292-62c11419e104-container.json
+��              94fd1709-4c93-4859-9846-6abc45d4bbe8-result.json
+��              99041ba8-74da-48e1-8231-6b12d3358276-container.json
+��              9be6b132-6ef2-4a78-932a-6159a3885fa9-container.json
+��              9c4a1e8e-02bb-4428-957c-20087550edf5-result.json
+��              9d8226fc-2168-441f-9763-0370b648b06b-attachment.txt
+��              9eea2614-f055-4e88-9acc-7811877152ad-container.json
+��              a03b281b-a3db-4a9c-9706-424abf1c03de-result.json
+��              a0661874-30de-4f78-94ba-0d31c52d40e0-container.json
+��              a5b8251f-93e2-4f57-9d83-bfd10ef69b0a-result.json
+��              a78e575f-1650-402d-b2c8-2f1e372dac7c-attachment.txt
+��              a79925a2-84e0-46b8-ba7f-4fe45f3fa101-container.json
+��              a833fb03-f53a-4d16-8c07-a30703e28c59-result.json
+��              acbea82c-7743-4ce0-b196-35975943e60c-container.json
+��              b1269f20-92b9-4a56-b118-36e7c286902d-result.json
+��              bd6e3063-b2e9-417c-99a5-8a47b4c1bc7a-result.json
+��              c1731146-2803-47b4-8c6d-a94e374beb6f-result.json
+��              c30ac532-3117-44fc-aae2-973e3a7a842c-container.json
+��              c3337508-663c-4d7f-9d38-41203fbabf11-result.json
+��              c6e86077-e913-43c9-a408-c3e85d563179-container.json
+��              caa70b25-2094-4372-8320-c99cc73eada6-container.json
+��              cad07202-4283-4971-a7df-de9484202230-container.json
+��              cd2219d4-5efb-415f-99eb-213e3ad92ed0-container.json
+��              d41a1ecb-0b09-4a97-90ec-b4ff88a55c95-container.json
+��              dc03c334-68f8-44d2-914a-405931fb3757-container.json
+��              dcd443cd-a1ca-45db-be00-a096289362db-result.json
+��              e5287e56-69b7-4222-ab85-5beb4e6edb0c-attachment.txt
+��              e610e7fc-2657-43d5-91c5-9d79949e2126-container.json
+��              e665ec32-d142-4728-8ddf-d3aeac97d7f5-container.json
+��              e6b4cb66-a553-42c2-abf2-bc0efb840289-result.json
+��              e7eb50f5-d789-46ae-b431-70cdde84d159-container.json
+��              f245d8b6-cbd4-4aa4-a794-cc3bfefcf27d-container.json
+��              f25fccc7-572f-4b8f-868d-bcb7d79b8e81-container.json
+��              f81765ed-c6eb-42a0-8dc0-989634d288b5-container.json
+��              f85f61ce-d444-4ab2-9088-dd36074cf82b-result.json
+��              
+����__pycache__
+        browser_actions.cpython-38.pyc
+        other_actions.cpython-38.pyc
+        

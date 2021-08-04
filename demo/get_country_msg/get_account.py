@@ -6,13 +6,14 @@ import time
 path_demo=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 path_public=path_demo+r'\public'
 sys.path.append(path_public)
-from about_data import exceldata
+from about_data import Exceldata
 from browser_actions import Commonweb
-from other_actions import public_method
+from other_actions import Public_method
 
-pub_method=public_method()
-exdata=exceldata()
-class get_account(Commonweb):
+pub_method=Public_method()
+exdata=Exceldata()
+
+class Get_account(Commonweb):
     """爬取国家列表数据"""
     global driver
 
@@ -149,7 +150,7 @@ class get_account(Commonweb):
 if __name__=='__main__':
     # #开始时间
     start_time=datetime.datetime.now()
-    get=get_account()
+    get=Get_account()
     get.login_bos('tyler.tang','Tl123456')
     print(get.save_msg())
     get.closer()

@@ -10,10 +10,12 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 from other_actions import *
-from verification_code import base64_api
+from verification_code import Base64_api
+from handlelog import MyLog
 
 #实例化公共方法模块
-pub_method=public_method()
+pub_method=Public_method()
+log=MyLog()
 
 class Commonweb():
     """selenium二次封装：浏览器驱动，访问url等自定义基类方法"""
@@ -489,7 +491,7 @@ class Commonweb():
         try:
             #获取验证码图片,并打开
             self.img=Image.open(self.fixed_point_image(name,filename,locator,index=0))
-            self.result_code=base64_api(username,psword,self.img)
+            self.result_code=Base64_api(username,psword,self.img)
             return self.result_code
         except Exception as msg:
             log.my_logger('discern_code').error(msg)  

@@ -9,12 +9,12 @@ path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 sys.path.append(path_public)
 path_process=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_process+r'\register_positioning')
-from about_data import exceldata
+from about_data import Exceldata
 from preliminary_review import review_actions
 
 #实例化对象
 rev=review_actions()
-e=exceldata()
+e=Exceldata()
 rows=e.openexcel(path_process+r'\test_excel_data\account_number.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
 testdata=e.dict_data()
 

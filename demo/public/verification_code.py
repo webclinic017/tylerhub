@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-14 10:11:05
-LastEditTime: 2021-06-02 16:35:56
+LastEditTime: 2021-08-04 23:46:55
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\public\verification_code.py
@@ -21,7 +21,7 @@ from PIL import Image
 """需要在图鉴网注册账号，注册成功后可使用该接口进行图片识别，另外本地需
 下载验证码图片截图，将截图路径放进接口参数中,注册地址：http://www.ttshitu.com/register.html"""
 
-def base64_api(uname,pwd,img):
+def Base64_api(uname,pwd,img):
     img = img.convert('RGB')
     buffered = BytesIO()
     img.save(buffered, format="JPEG")
@@ -81,4 +81,4 @@ def skip_dependon(depend=""):
 
 #测试
 if __name__ == "__main__":
-    result = base64_api('tyler','123456',img) #注册的账号，密码，验证码截图路径
+    result = Base64_api('tyler','123456',img) #注册的账号，密码，验证码截图路径

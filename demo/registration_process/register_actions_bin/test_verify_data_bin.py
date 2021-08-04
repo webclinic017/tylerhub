@@ -15,11 +15,11 @@ path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 sys.path.append(path_public)
 path_process=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_process+r'\register_positioning')
-from about_data import exceldata
+from about_data import Exceldata
 from verify_message_location import location_of_verify_data
 
 verify=location_of_verify_data()
-e=exceldata()
+e=Exceldata()
 excelpath=path_process+r'\test_excel_data\account_number.xlsx'
 rows=e.openexcel(excelpath,'Sheet1')
 testdata=e.dict_data()

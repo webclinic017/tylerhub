@@ -1,3 +1,11 @@
+'''
+Author: your name
+Date: 2021-05-13 10:43:00
+LastEditTime: 2021-08-04 23:50:06
+LastEditors: Please set LastEditors
+Description: In User Settings Edit
+FilePath: \tylerhub\demo\deposit\deposit_bin\deposit_in_cp.py
+'''
 import os
 import sys
 import unittest
@@ -9,18 +17,18 @@ path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 sys.path.append(path_public)
 path_deposit=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_deposit+r'\location_deposit')
-from about_data import exceldata
-from location_deposit_of_cp import locations_of_deposit
+from about_data import Exceldata
+from location_deposit_of_cp import Locations_of_deposit
 
-deposit=locations_of_deposit()
+deposit=Locations_of_deposit()
 #读取测试文档数据
-e=exceldata()
+e=Exceldata()
 excelpath=path_deposit+r'\test_data\deposit_data.xlsx'
 rows=e.openexcel(excelpath,'Sheet1') #测试文档的路径，sheet名,并获取总行数
 testdata=e.dict_data()
 
 @ddt.ddt
-class depositincp(unittest.TestCase):
+class Depositin_cp(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):

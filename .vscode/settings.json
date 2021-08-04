@@ -1,3 +1,7 @@
 {
-    "python.pythonPath": "C:\\Users\\MSI-NB\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
+    "python.pythonPath": "C:\\Users\\MSI-NB\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+    "python.analysis.extraPaths": [
+        "./demo/public",
+        "./demo/E-wallet_deposit/location_ewallet"
+    ]
 }

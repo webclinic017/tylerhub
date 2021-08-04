@@ -6,18 +6,18 @@ import time
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 path_public=path_demo+r'\public'
 sys.path.append(path_public)
-from about_data import exceldata
+from about_data import Exceldata
 from browser_actions import Commonweb
-from common_method import commonmethod
-from other_actions import public_method
+from common_method import Commonmethod
+from other_actions import Public_method
 
 
 path_withdrawal=path_demo+r'\withdrawal'
 common=Commonweb()
-pub_method=public_method()
-e=exceldata()
+pub_method=Public_method()
+e=Exceldata()
 
-class location_withdrawal_incp():
+class Location_withdrawal_incp():
     """
     判断逻辑：主账号出金权限是否开启；交易账号暂停+激活状态是否超过5个；出金交易账号状态判断；
     出金渠道判断：是否审核通过，审核通过后是否能在会员中心展示；出金方式是否超过三条，超过三条后是否都能在会员中心显示
@@ -26,7 +26,7 @@ class location_withdrawal_incp():
 
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
-        self.commethod=commonmethod(self.driver)
+        self.commethod=Commonmethod(self.driver)
 
     def get_url(self,username,psword,lang='CN'):
         try:

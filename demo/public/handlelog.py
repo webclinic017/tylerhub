@@ -1,3 +1,11 @@
+'''
+Author: your name
+Date: 2021-08-04 21:45:29
+LastEditTime: 2021-08-05 00:05:47
+LastEditors: your name
+Description: In User Settings Edit
+FilePath: \tylerhub\demo\public\handlelog.py
+'''
 import logging
 import os
 import sys
@@ -11,7 +19,7 @@ class MyLog():
     系统日志输出，调用此方法时，需在项目路径下创建一个log文件用来存放log.log
     """
     def __init__(self):
-
+        #sys._getframe().f_back.f_code.co_filename 获取调用该方法的文件路径
         #在调用此方法/类的文件目录的父级的父级创建创建一个log文件
         self.moudlePath=os.path.join(os.path.dirname(os.path.dirname(sys._getframe().f_back.f_code.co_filename)),'log')
         self.lineNo = sys._getframe().f_back.f_lineno

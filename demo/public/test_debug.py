@@ -37,11 +37,11 @@
 
 # from browser_actions import Commonweb
 # from selenium import webdriver
-# from other_actions import public_method
+# from other_actions import Public_method
 # import time
 
 # c=Commonweb()
-# p=public_method()
+# p=Public_method()
 # c.open_browser()
 # c.open_web('https://www.baidu.com/')
 # time.sleep(2)
@@ -94,12 +94,12 @@
 
 # # d=lambda y:test(y)
 # from browser_actions import Commonweb
-# from other_actions import public_method
+# from other_actions import Public_method
 # import time
 # import datetime
 
 # c=Commonweb()
-# p=public_method()
+# p=Public_method()
 # c.open_browser()
 # c.open_web('https://at-bos-frontend-uat.atfxdev.com/login')
 # c.display_input('css,.ivu-input-default','tyler.tang')
@@ -164,13 +164,13 @@
 #ele.click()
 
 # from browser_actions import Commonweb
-# from common_method import commonmethod
+# from common_method import Commonmethod
 # import time
 # import os
 
 # common=Commonweb()
 # dr=common.open_browser()
-# commethed=commonmethod(dr)
+# commethed=Commonmethod(dr)
 
 # common.open_web('https://at-client-portal-uat.atfxdev.com/login')
 # commethed.remove_register_topup()
@@ -325,13 +325,13 @@
 # print(A())
 
 # from browser_actions import Commonweb
-# from common_method import commonmethod
+# from common_method import Commonmethod
 # import time
 # import os
 
 # common=Commonweb()
 # dr=common.open_browser()
-# commethed=commonmethod(dr)
+# commethed=Commonmethod(dr)
 
 # common.open_web('https://www.baidu.com')
 # # commethed.choose_bos_lang('CN')

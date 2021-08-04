@@ -1,3 +1,11 @@
+'''
+Author: your name
+Date: 2021-05-13 10:43:00
+LastEditTime: 2021-08-04 23:48:19
+LastEditors: Please set LastEditors
+Description: In User Settings Edit
+FilePath: \tylerhub\demo\change_psword\action_bin\login_cp_changepsword_bin.py
+'''
 import os
 import sys
 import unittest
@@ -9,19 +17,19 @@ path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 sys.path.append(path_public)
 path_psword=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_psword+r'\location')
-from about_data import exceldata
+from about_data import Exceldata
 from login_cp_changepsword import location
 
-loca=location()
+loca=Location()
 #测试文档路径
 testdata_path=path_psword+r'\test_excel_data\chang_psword_incp.xlsx'
 #读取测试数据
-e=exceldata()
+e=Exceldata()
 rows=e.openexcel(testdata_path,'Sheet1')
 testdata=e.dict_data()
 
 @ddt.ddt
-class change_password(unittest.TestCase):
+class Change_password(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):

@@ -14,11 +14,11 @@ path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file
 path_public=path_demo+r'\public'
 sys.path.append(path_public)
 from browser_actions import Commonweb
-from other_actions import public_method
-from about_data import exceldata
-from common_method import commonmethod
+from other_actions import Public_method
+from about_data import Exceldata
+from common_method import Commonmethod
 
-pub_method=public_method()
+pub_method=Public_method()
 common=Commonweb()
 
 class location_of_verify_data():
@@ -26,7 +26,7 @@ class location_of_verify_data():
     #默认以谷歌浏览器执行测试用例
     def browsertype(self,browsername='Chrome'):
         self.driver=common.open_browser(browsername)
-        self.commethd=commonmethod(self.driver)
+        self.commethd=Commonmethod(self.driver)
 
     #登录bos
     def login_bos(self,username,psword,lang='CN'):

@@ -6,7 +6,7 @@ import os
 from selenium.webdriver.support.wait import WebDriverWait
 
 #实例化公共方法模块
-pub_method=public_method()
+pub_method=Public_method()
 """此模块用于存放浏览器相关操作方法"""
 
 class Commonweb():

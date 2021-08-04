@@ -6,21 +6,21 @@ import datetime
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 path_public=path_demo+r'\public'
 sys.path.append(path_public)
-from about_data import exceldata
+from about_data import Exceldata
 from browser_actions import Commonweb
-from common_method import commonmethod
-from other_actions import public_method
+from common_method import Commonmethod
+from other_actions import Public_method
 
 common=Commonweb()
-pub_method=public_method()
-e=exceldata()
+pub_method=Public_method()
+e=Exceldata()
 
 
-class location_deposit_bos():
+class Location_deposit_bos():
 
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
-        self.commethod=commonmethod(self.driver)
+        self.commethod=Commonmethod(self.driver)
 
     def get_url(self,lang='CN'):
         try:
@@ -209,7 +209,7 @@ class location_deposit_bos():
             log.my_logger('!!--!!review_deposit').error(msg)
 
     #用例执行
-    def deposit_bos_comply(self,account,traccount,username,psword,amount):
+    def Deposit_bos_comply(self,account,traccount,username,psword,amount):
         try:
             #进入账号详情页
             self.ender_detail_page(account)
@@ -220,7 +220,7 @@ class location_deposit_bos():
             #审核入金
             self.review_deposit(username,psword,traccount)
         except Exception as msg:
-            log.my_logger('!!--!!deposit_bos_comply').error(msg)
+            log.my_logger('!!--!!Deposit_bos_comply').error(msg)
 
     def closebrowser(self):
         common.close_browser()

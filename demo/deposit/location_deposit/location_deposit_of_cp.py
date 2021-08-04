@@ -6,22 +6,22 @@ import datetime
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 path_public=path_demo+r'\public'
 sys.path.append(path_public)
-from about_data import exceldata
+from about_data import Exceldata
 from browser_actions import Commonweb
-from common_method import commonmethod
-from other_actions import public_method
+from common_method import Commonmethod
+from other_actions import Public_method
 
 common=Commonweb()
-pub_method=public_method()
-e=exceldata()
+pub_method=Public_method()
+e=Exceldata()
 """
 会员中心入金：初审通过的主账号，BOS判断主账号入金权限是否开启，再判断交易账号入金权限及MT4状态是否符合入金条件，才能入金
 """
-class locations_of_deposit():
+class Locations_of_deposit():
 
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
-        self.commethod=commonmethod(self.driver)
+        self.commethod=Commonmethod(self.driver)
 
     def get_url(self,lang='CN'):
         try:

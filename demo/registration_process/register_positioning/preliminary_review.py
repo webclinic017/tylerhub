@@ -6,11 +6,11 @@ path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file
 path_public=path_demo+r'\public'
 sys.path.append(path_public)
 from browser_actions import Commonweb
-from other_actions import public_method
-from common_method import commonmethod
+from other_actions import Public_method
+from common_method import Commonmethod
 
 
-pub_method=public_method()
+pub_method=Public_method()
 
 class review_actions(Commonweb):
     
@@ -19,7 +19,7 @@ class review_actions(Commonweb):
     #默认以谷歌浏览器执行测试用例
     def browsertype(self,browsername='Chrome'):
         self.driver=self.open_browser(browsername)
-        self.commethd=commonmethod(self.driver)
+        self.commethd=Commonmethod(self.driver)
 
     #登录bos并打开客户名单页
     def login_bos(self,username,psword,lang='CN'):

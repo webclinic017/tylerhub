@@ -1,3 +1,11 @@
+'''
+Author: your name
+Date: 2021-05-13 10:43:00
+LastEditTime: 2021-08-04 23:47:52
+LastEditors: Please set LastEditors
+Description: In User Settings Edit
+FilePath: \tylerhub\demo\change_psword\action_bin\Change_password_cp.py
+'''
 import os
 import sys
 import unittest
@@ -9,18 +17,18 @@ path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 sys.path.append(path_public)
 path_psword=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_psword+r'\location')
-from about_data import exceldata
+from about_data import Exceldata
 from locate_change_pswd_cp import location
 
-loca=location()
+loca=Location()
 
 #读取测试数据
-e=exceldata()
+e=Exceldata()
 rows=e.openexcel(path_psword+r'\test_excel_data\test_data.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
 testdata=e.dict_data()
 
 @ddt.ddt
-class _change_in_cp(unittest.TestCase):
+class Change_in_cp(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -47,6 +55,6 @@ class _change_in_cp(unittest.TestCase):
 if __name__=='__main__':
     #测试报告
     suit=unittest.defaultTestLoader.discover(os.path.dirname(os.path.abspath(__file__)),
-    pattern='change_password_cp.py',top_level_dir=None)
+    pattern='Change_password_cp.py',top_level_dir=None)
     BeautifulReport(suit).report(filename='忘记密码页面修改密码密',description='非同名账号忘记密码页面修改修改密码流程',
     report_dir=path_psword+r'\changepsword_report')

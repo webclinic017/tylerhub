@@ -1,3 +1,11 @@
+'''
+Author: your name
+Date: 2021-05-13 10:43:00
+LastEditTime: 2021-08-04 23:54:06
+LastEditors: Please set LastEditors
+Description: In User Settings Edit
+FilePath: \tylerhub\demo\transfer\transfer_bin\transfer_action_same_one_bin.py
+'''
 import os
 import sys
 import unittest
@@ -9,18 +17,18 @@ path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 sys.path.append(path_public)
 path_transfer=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_transfer+r'\transfer_location')
-from about_data import exceldata
-from location_transfer_same_one import location_of_transfer
+from about_data import Exceldata
+from location_transfer_same_one import Location_of_transfer
 from verification_code import skip_dependon
 
-transfer=location_of_transfer()
-e=exceldata()
+transfer=Location_of_transfer()
+e=Exceldata()
 excelpath=path_transfer+r'\test_data\transfer_same_one.xlsx'
 rows=e.openexcel(excelpath,'Sheet1')
 testdata=e.dict_data()
 
 @ddt.ddt
-class transfertion(unittest.TestCase):
+class Transfertion(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):

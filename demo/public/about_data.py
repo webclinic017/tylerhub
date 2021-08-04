@@ -21,7 +21,7 @@ os.environ['path']=os.path.join(config_path,'instantclient_19_11')
 
 read=ReadConfig()
 
-class exceldata():
+class Exceldata():
     """此文件用于提取excel表格中的数据，并封装成含多个字典的列表
     文件格式为xlsx的后缀即可"""
     def openexcel(self,excelpath,sheetname):
@@ -306,7 +306,7 @@ retryWrites=true&ssl=true'.format(username,password)
 
 #测试
 if __name__=='__main__':
-    e=exceldata()
+    e=Exceldata()
     # e.openexcel(r'D:\code\tylerhub\demo\registration_process\test_excel_data\account_number.xlsx','Sheet1')
     # a=e.dict_data()
     # print(a)

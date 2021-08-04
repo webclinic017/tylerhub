@@ -1,11 +1,11 @@
 import time
 from selenium import webdriver
-from other_actions import public_method
+from other_actions import Public_method
 
-pub_method=public_method()
+pub_method=Public_method()
 
 
-class commonmethod():
+class Commonmethod():
     """
     此模块用于封装常用方法，例如登录会员中心/登录bos等
     """

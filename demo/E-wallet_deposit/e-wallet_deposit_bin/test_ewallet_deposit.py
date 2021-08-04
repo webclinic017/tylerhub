@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-28 17:32:52
-LastEditTime: 2021-06-08 15:47:12
+LastEditTime: 2021-08-04 21:49:49
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\E-wallet_deposit\e-wallet_deposit_bin\test_ewallet_deposti.py
@@ -14,7 +14,7 @@ path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 sys.path.append(path_public)
 path_Ewallet=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_Ewallet+r'\location_ewallet')
-from about_data import exceldata
+from about_data import Exceldata
 from location_deposit_of_ewallet import Ewallet_deposti
 
 ewallet=Ewallet_deposti()

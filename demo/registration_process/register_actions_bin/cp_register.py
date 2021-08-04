@@ -17,11 +17,11 @@ sys.path.append(path_public)
 #registration_process路径
 path_process=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_process+r'\register_positioning')
-from about_data import exceldata
+from about_data import Exceldata
 from register_method import form_operations
 
 #读取测试文档数据
-e=exceldata()
+e=Exceldata()
 rows=e.openexcel(path_process+r'\test_excel_data\register_data.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
 testdata=e.dict_data()
 

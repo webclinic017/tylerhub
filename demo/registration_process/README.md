@@ -79,7 +79,7 @@ bos_lang(lang)                              选择bos登录页语言
 loginweb(lang)                              访问会员中心及BOS登录页,选择页面语言
 login_cp(username,psword)                   登录会员中心
 fisrtcp_top()                               去除首次登录会员中心的弹窗
-get_account_()                              获取登录成功后的主账号
+Get_account_()                              获取登录成功后的主账号
 is_rebate_type()                            判断是否为返佣账号，如是，点击返佣申请表格
 logout_cp()                                 登出会员中心
 login_bos(username,psword)                  登录bos
@@ -108,7 +108,7 @@ kyc_operating.py
     tearDown()              环境恢复
     test_kyc(data)     执行测试用例
         关键字驱动：loginweb();login_bos();quitdriver();logout_cp();clearaccount();
-        login_topup();login_cp();fisrtcp_top();get_account_();get_on_kyc();get_kyc_success()
+        login_topup();login_cp();fisrtcp_top();Get_account_();get_on_kyc();get_kyc_success()
 
 
 ################################################################################################

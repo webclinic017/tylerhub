@@ -6,22 +6,22 @@ import time
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 path_public=path_demo+r'\public'
 sys.path.append(path_public)
-from about_data import exceldata
+from about_data import Exceldata
 from browser_actions import Commonweb
-from common_method import commonmethod
-from other_actions import public_method
+from common_method import Commonmethod
+from other_actions import Public_method
 
 commom=Commonweb()
-pub_method=public_method()
-excel=exceldata()
+pub_method=Public_method()
+excel=Exceldata()
 
-class location():
+class Location():
     global driver
     
     # #赋值对象driver
     def broswertype(self,broswername='Chrome'):
         self.driver=commom.open_browser(broswername)
-        self.commethod=commonmethod(self.driver)
+        self.commethod=Commonmethod(self.driver)
     
     #访问cp注册页和登录bos
     def geturl(self,username,psword,lang='CN'):

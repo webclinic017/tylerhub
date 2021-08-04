@@ -6,22 +6,22 @@ import time
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 path_public=os.path.join(path_demo,'public')
 sys.path.append(path_public)
-from about_data import exceldata
+from about_data import Exceldata
 from browser_actions import Commonweb
-from common_method import commonmethod
-from other_actions import public_method
+from common_method import Commonmethod
+from other_actions import Public_method
 from handlelog import MyLog
 
 common=Commonweb()
-pub_method=public_method()
-e=exceldata()
+pub_method=Public_method()
+e=Exceldata()
 lgo=MyLog()
 
-class locathion_of_transfer():
+class Locathion_of_transfer():
 
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
-        self.commethod=commonmethod(self.driver)
+        self.commethod=Commonmethod(self.driver)
 
     def get_url(self,username,psword,lang='CN'):
         try:

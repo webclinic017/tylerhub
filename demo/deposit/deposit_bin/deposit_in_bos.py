@@ -1,3 +1,11 @@
+'''
+Author: your name
+Date: 2021-05-13 10:43:00
+LastEditTime: 2021-08-04 23:49:42
+LastEditors: Please set LastEditors
+Description: In User Settings Edit
+FilePath: \tylerhub\demo\deposit\deposit_bin\deposit_in_bos.py
+'''
 import os
 import sys
 import unittest
@@ -9,18 +17,18 @@ path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 sys.path.append(path_public)
 path_deposit=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_deposit+r'\location_deposit')
-from about_data import exceldata
-from location_deposit_of_bos import location_deposit_bos
+from about_data import Exceldata
+from location_deposit_of_bos import Location_deposit_bos
 
-deposit=location_deposit_bos()
+deposit=Location_deposit_bos()
 #读取测试文档数据
-e=exceldata()
+e=Exceldata()
 excelpath=path_deposit+r'\test_data\deposit_data.xlsx'
 rows=e.openexcel(excelpath,'Sheet1') #测试文档的路径，sheet名,并获取总行数
 testdata=e.dict_data()
 
 @ddt.ddt
-class deposit_bos(unittest.TestCase):
+class Deposit_bos(unittest.TestCase):
     
     @classmethod
     def setUpClass(cls):
@@ -40,7 +48,7 @@ class deposit_bos(unittest.TestCase):
         self.data_index=testdata.index(data)
         print('当前测试账号：主账号：{}；交易账号：{}；入金金额；{}'.format(data['主账号'],data['交易账号'],data['入金金额']))
         deposit.login_bos('tyler.tang','Tl123456')
-        deposit.deposit_bos_comply(data['主账号'],data['交易账号'],'tyler.tang2','Tl123456',int(float(data['入金金额'])))
+        deposit.Deposit_bos_comply(data['主账号'],data['交易账号'],'tyler.tang2','Tl123456',int(float(data['入金金额'])))
 
 if __name__=='__main__':
     #测试报告
