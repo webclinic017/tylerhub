@@ -1,7 +1,7 @@
 <!--
  * @Author: tyler
  * @Date: 2021-05-13 10:43:00
- * @LastEditTime: 2021-08-05 00:21:46
+ * @LastEditTime: 2021-08-05 00:30:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \tylerhub\demo\public\README.mdd
@@ -9,10 +9,10 @@
 # 公共模块注释
 
 ## 环境依赖
-***python3.6以上版本***
+***python3.6及以上版本***
 ### *部署步骤*：
     1.python3.6及以上版本下载
-    2.必需第三方模块：selenium；allure-pytest；BeautifulReport；ddt；image；pymongo；PyMySQL；pytest；selenium；WMI；xlrd(指定1.2.0版本)；allure
+    2.必需第三方模块：selenium；allure-pytest；BeautifulReport；ddt；image；pymongo；cx_Oracle；PyMySQL；pytest；selenium；WMI；xlrd(指定1.2.0版本)；allure
     3.alluer环境配置
 ***
 ## 模块功能
@@ -44,11 +44,11 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
 ***
 ## 公共模块方法及变量释义
 ### 模块:
-***browser_actions.py：*** 
+***[browser_actions.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/about_data.py)*** 
 
 *公共方法*
 
-    open_browser(browsername='Chrome')  打开浏览器，默认为谷歌浏览器
+    open_browser(browsername='Chrome')       打开浏览器，默认为谷歌浏览器
     open_web(url)                            访问url
     find_element(locator,index=0)            定位页面元素(无论是否唯一)，默认下标为0
     get_lenofelement(locator)                获取页面元素个数
@@ -107,7 +107,7 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     psword：图鉴网密码
     n：下标
 
-***other_actions.py：***
+***[other_actions.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/other_actions.py)***
 
 *公共方法*
 
@@ -128,7 +128,7 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     str:含有数字的字符串
     x,y:整数，x<y
 
-***about_data.py：***
+***[about_data.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/about_data.py)***
 
 *公共方法*
 
@@ -145,7 +145,7 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     column：列
     row：行
 
-***verification_code.py：***
+***[verification_code.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/verification_code.py)***
 
 *公共方法*
 
