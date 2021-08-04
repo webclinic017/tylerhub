@@ -28,7 +28,7 @@ class location_deposit_bos():
             time.sleep(1)
             self.commethod.choose_bos_lang(lang)
         except Exception as msg:
-            pub_method.log_output('!!--!!get_url').error(msg)
+            log.my_logger('!!--!!get_url').error(msg)
 
     #登录bos并进入客户名单页
     def login_bos(self,username,psword):
@@ -41,7 +41,7 @@ class location_deposit_bos():
             #客户名单
             common.display_click('css,[data-old-padding-top] > [href="/client/clientListNew/:type*"]')
         except Exception as msg:
-            pub_method.log_output('!!--!!login_bos').error(msg)
+            log.my_logger('!!--!!login_bos').error(msg)
 
     #登出bos
     def logoutbos(self):
@@ -49,14 +49,14 @@ class location_deposit_bos():
             common.display_click('xpath,//div[@class="scroll-content"]//li[@class="ivu-menu-item"]')
             time.sleep(1)
         except Exception as smg:
-            pub_method.log_output('!!--!!login_bos').error(msg)
+            log.my_logger('!!--!!login_bos').error(msg)
         
     #刷新页面
     def refresh(self):
         try:
             common.general_refresh_()
         except Exception as msg:
-            pub_method.log_output('!!--!!refresh').error(msg)
+            log.my_logger('!!--!!refresh').error(msg)
 
     #进入客户详情页
     def ender_detail_page(self,account):
@@ -78,7 +78,7 @@ class location_deposit_bos():
             common.display_click('css,[href="#tdAccount"]')
             time.sleep(2)
         except Exception as msg:
-            pub_method.log_output('!!--!!login_bos').error(msg)
+            log.my_logger('!!--!!login_bos').error(msg)
 
     #遍历BOS交易账号列表，获取入金账号所在行数
     def where_is_traccount_bos(self,traccount):
@@ -118,7 +118,7 @@ class location_deposit_bos():
             else:
                 print('交易账号{}状态为:{}'.format(traccount,self.account_status))
         except Exception as msg:
-            pub_method.log_output('!!--!!tdaccount_status').error(msg)
+            log.my_logger('!!--!!tdaccount_status').error(msg)
 
     #bos入金
     def deposit_action(self,account,traccount,amount):
@@ -133,7 +133,7 @@ class location_deposit_bos():
             #填写新增入金表单
             self.deposit_form(account,traccount,amount)
         except Exception as msg:
-            pub_method.log_output('!!--!!deposit_action').error(msg)
+            log.my_logger('!!--!!deposit_action').error(msg)
 
 
     #入金表单
@@ -167,7 +167,7 @@ class location_deposit_bos():
             #退出当前用户
             self.logoutbos()
         except Exception as msg:
-            pub_method.log_output('!!--!!deposit_form').error(msg)
+            log.my_logger('!!--!!deposit_form').error(msg)
 
     #审核入金
     def review_deposit(self,username,psword,traccount):
@@ -206,7 +206,7 @@ class location_deposit_bos():
             self.closebrowser()
             common.switch_windows(0)
         except Exception as msg:
-            pub_method.log_output('!!--!!review_deposit').error(msg)
+            log.my_logger('!!--!!review_deposit').error(msg)
 
     #用例执行
     def deposit_bos_comply(self,account,traccount,username,psword,amount):
@@ -220,7 +220,7 @@ class location_deposit_bos():
             #审核入金
             self.review_deposit(username,psword,traccount)
         except Exception as msg:
-            pub_method.log_output('!!--!!deposit_bos_comply').error(msg)
+            log.my_logger('!!--!!deposit_bos_comply').error(msg)
 
     def closebrowser(self):
         common.close_browser()

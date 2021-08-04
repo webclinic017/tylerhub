@@ -37,7 +37,7 @@ class review_actions(Commonweb):
             self.display_click('css,.ivu-menu-item',1)
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!lgoin-bos').error('登录bos失败：{}'.format(msg))
+            log.my_logger('!!--!!lgoin-bos').error('登录bos失败：{}'.format(msg))
 
     #初审
     def review_operation(self,account):
@@ -77,7 +77,7 @@ class review_actions(Commonweb):
             self.web_click('css,button.ivu-btn-primary>span>span',2)
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!review_operation').error(msg) 
+            log.my_logger('!!--!!review_operation').error(msg) 
 
     #清空主账号搜索条件
     def clear_serach(self):
@@ -95,7 +95,7 @@ class review_actions(Commonweb):
             self.closerweb()
             return self.status
         except Exception as msg:
-            pub_method.log_output('!!--!!get_success_text').error(msg)
+            log.my_logger('!!--!!get_success_text').error(msg)
 
     def ibtype(self):
         try:
@@ -138,7 +138,7 @@ class review_actions(Commonweb):
             self.web_click('css,.ivu-icon-md-checkmark')
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!ibtype').error(msg)
+            log.my_logger('!!--!!ibtype').error(msg)
 
     #截图
     def get_img(self,name,filename='review_failed'):

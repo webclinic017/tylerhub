@@ -34,7 +34,7 @@ class get_account(Commonweb):
             #点击登录
             self.web_click('css,.ivu-btn-large')
         except Exception as msg:
-            pub_method.log_output('!!--!!login_bos').error(msg)
+            log.my_logger('!!--!!login_bos').error(msg)
 
     #选择bos登录页语言
     def bos_lang(self,lang='CN'):
@@ -46,7 +46,7 @@ class get_account(Commonweb):
             else:
                 pass
         except Exception as msg:
-            pub_method.log_output('!!--!!lang').error('bos页面语言选择错误,参数CN/EN：{}'.format(msg)) 
+            log.my_logger('!!--!!lang').error('bos页面语言选择错误,参数CN/EN：{}'.format(msg)) 
 
     #爬取数据并保存到本地
     def save_msg(self):
@@ -138,7 +138,7 @@ class get_account(Commonweb):
                         continue
             return self.country_list
         except Exception as msg:
-            pub_method.log_output('!!--!!save_msg').error(msg)
+            log.my_logger('!!--!!save_msg').error(msg)
 
 
     #关闭浏览器

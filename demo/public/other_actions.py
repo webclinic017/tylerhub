@@ -94,5 +94,6 @@ if __name__=='__main__':
     # print((pub.extract_numbers('ID: 1000005357')))
     # print(pub.extract_numbers('ID: 1000005357')[0:2]=='10')
     # print(pub.random_int(10,20))
-    print(float(pub.extract_numbers('( 可取款金额 |3,065.65USD )'))/100)
-    print(pub.get_purerange(14,'number'))
+    # print(float(pub.extract_numbers('( 可取款金额 |3,065.65USD )'))/100)
+    # print(pub.get_purerange(14,'number'))
+    pub.log_output('test').error('testttttt')

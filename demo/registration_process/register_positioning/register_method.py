@@ -56,7 +56,7 @@ class form_operations():
                 time.sleep(2)
                 self.commethod.remove_register_topup()
         except Exception as msg:
-            pub_method.log_output('!!--!!get_url').error('访问注册页异常{}'.format(msg))
+            log.my_logger('!!--!!get_url').error('访问注册页异常{}'.format(msg))
 
     #判断注册国家是否为UK国家
     def country_isuk(self,country):
@@ -107,7 +107,7 @@ class form_operations():
         except Exception as msg:
             #截图
             common.get_screenpict('表单注册页填写失败')
-            pub_method.log_output('!!--!!fill_inform').error('表单页填写错误:{}'.format(msg))
+            log.my_logger('!!--!!fill_inform').error('表单页填写错误:{}'.format(msg))
 
     # #识别验证码
     # @time_used('调用接口返回验证码并判断是否正确总共耗时：')
@@ -131,7 +131,7 @@ class form_operations():
     #             else:
     #                 break
     #     except Exception as msg:
-    #         pub_method.log_output('!!--!!_code_').error(msg)
+    #         log.my_logger('!!--!!_code_').error(msg)
 
 
 
@@ -141,7 +141,7 @@ class form_operations():
             common.web_click('css,.b-confirm')
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!submit').error('标题提交失败：{}'.format(msg))
+            log.my_logger('!!--!!submit').error('标题提交失败：{}'.format(msg))
 
     #登录成功后获取文本
     def register_success(self):
@@ -149,7 +149,7 @@ class form_operations():
         try:
             return common.display_get_text('css,div.declar-dialog .el-dialog__title')
         except Exception as msg:
-            pub_method.log_output('!!--!!register_success').error('获取登录成功后的文本失败{}'.format(msg))
+            log.my_logger('!!--!!register_success').error('获取登录成功后的文本失败{}'.format(msg))
 
     #关闭浏览器
     def closedriver(self):

@@ -46,14 +46,14 @@ class location():
             time.sleep(1)
             common.display_click('css,.ivu-menu-item',1)
         except Exception as msg:
-            pub_method.log_output('!!--!!geturl').error(msg)
+            log.my_logger('!!--!!geturl').error(msg)
 
     #去除登录页弹窗
     def remove_topup(self):
         try:
             self.commethod.remove_register_topup()
         except Exception as msg:
-            pub_method.log_output('!!--!!remove_topup').error(msg)
+            log.my_logger('!!--!!remove_topup').error(msg)
 
     #登录会员中心并发送验证码
     def login_and_send_emailcode(self,username,psword):
@@ -78,7 +78,7 @@ class location():
             common.display_click('css,.sendBtn>span')
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!login_and_send_emailcode').error(msg)
+            log.my_logger('!!--!!login_and_send_emailcode').error(msg)
         
     #获取验证码
     def get_emailcode(self,account):
@@ -113,7 +113,7 @@ class location():
             self.closerbrowser()
             return self.email_code
         except Exception as msg:
-            pub_method.log_output('!!--!!get_code').error(msg)
+            log.my_logger('!!--!!get_code').error(msg)
 
     #生成N为数字与大小写字母组合的随机数
     def get_psword_type(self,N):
@@ -153,7 +153,7 @@ class location():
             excel.saveainfo(excelpath,self.psword,column,row)
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!change_psword').error(msg)
+            log.my_logger('!!--!!change_psword').error(msg)
 
     #登出会员中心
     def logoutcp(self):
@@ -166,7 +166,7 @@ class location():
             print(self.sucesstext)
             return self.sucesstext
         except Exception as smg:
-            pub_method.log_output('!!--!!get_sucessful_change').error(msg)
+            log.my_logger('!!--!!get_sucessful_change').error(msg)
 
     #关闭当前页面
     def closerbrowser(self):

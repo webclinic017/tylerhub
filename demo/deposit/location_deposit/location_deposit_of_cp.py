@@ -39,7 +39,7 @@ class locations_of_deposit():
             #选择页面语言
             self.commethod.choose_bos_lang(lang)
         except Exception as msg:
-            pub_method.log_output('!!--!!get_url').error(msg)
+            log.my_logger('!!--!!get_url').error(msg)
 
     #登录bos
     def login_bos(self,username,psword):
@@ -48,7 +48,7 @@ class locations_of_deposit():
             time.sleep(1)
             self.commethod.loginbos(username,psword)
         except Exception as msg:
-            pub_method.log_output('!!--!!login_bos').error(msg)
+            log.my_logger('!!--!!login_bos').error(msg)
 
 
     #去除登录页弹窗
@@ -57,7 +57,7 @@ class locations_of_deposit():
             common.switch_windows(0)
             self.commethod.remove_register_topup()
         except Exception as msg:
-            pub_method.log_output('!!--!!remove_topup').error(msg)
+            log.my_logger('!!--!!remove_topup').error(msg)
 
 
     #进入账号详情页
@@ -86,7 +86,7 @@ class locations_of_deposit():
             common.display_click('css,[href="#masterAccount"]')       
             time.sleep(2)
         except Exception as msg:
-            pub_method.log_output('!!--!!serarch_account').error(msg)
+            log.my_logger('!!--!!serarch_account').error(msg)
 
     #判断该主账号是否开启入金权限
     def open_deposit_permissions(self,account):
@@ -114,7 +114,7 @@ class locations_of_deposit():
             #真实账户信息
             common.display_click('css,[href="#tdAccount"]')
         except Exception as msg:
-            pub_method.log_output('!!--!!open_deposit_permissions').error(msg)
+            log.my_logger('!!--!!open_deposit_permissions').error(msg)
 
 
     #判断交易账号激活+暂停状态是否超过或等于5个
@@ -157,7 +157,7 @@ class locations_of_deposit():
             else:
                 print('交易账号{}状态为:{}'.format(traccount,self.account_status))
         except Exception as msg:
-            pub_method.log_output('!!--!!tdaccount_status').error(msg)
+            log.my_logger('!!--!!tdaccount_status').error(msg)
 
     #判断交易账号入金按钮是否被勾选
     def deposti_is_selected(self,traccount,row):
@@ -186,7 +186,7 @@ class locations_of_deposit():
             #关闭页面
             self.closebrowser()
         except Exception as msg:
-            pub_method.log_output('!!--!!deposti_is_selected').error(msg)
+            log.my_logger('!!--!!deposti_is_selected').error(msg)
 
 
     #遍历BOS交易账号列表，获取入金账号所在行数
@@ -220,7 +220,7 @@ class locations_of_deposit():
             self.balance=common.display_get_text('css,div.card-for-loop>div>div.el-card__body>div>p>span',4*self.cprows-4)
             return self.balance
         except Exception as msg:
-            pub_method.log_output('!!--!!get_traccount_balance').error(msg)
+            log.my_logger('!!--!!get_traccount_balance').error(msg)
 
     #入金
     def deposit_actions(self,traccount,amount):
@@ -252,7 +252,7 @@ class locations_of_deposit():
             common.switch_windows(2)
             self.closebrowser()
         except Exception as msg:
-            pub_method.log_output('!!--!!deposit_actions').error(msg)
+            log.my_logger('!!--!!deposit_actions').error(msg)
 
     #BOS审核入金请求
     def review_deposit(self,bos_username,bos_psword,traccount,path,row):
@@ -323,7 +323,7 @@ class locations_of_deposit():
             #获取交易账户余额
             e.saveainfo(path,self.get_traccount_balance(traccount),'G',row)
         except Exception as msg:
-            pub_method.log_output('!!--!!review_deposit').error(msg)
+            log.my_logger('!!--!!review_deposit').error(msg)
 
     #判断交易账号是否满足入金条件
     def is_traccount_can_deposit(self,account,traccount):
@@ -341,7 +341,7 @@ class locations_of_deposit():
             #判断交易账号入金按钮是否被勾选
             self.deposti_is_selected(traccount,self.rows)
         except Exception as msg:
-            pub_method.log_output('!!--!!is_traccount_can_deposit').error(msg)
+            log.my_logger('!!--!!is_traccount_can_deposit').error(msg)
 
 
     def deposit_cp(self,traccount,username,psword,amount,bos_username,bos_psword,path,row):
@@ -360,14 +360,14 @@ class locations_of_deposit():
             #bos审核入金
             self.review_deposit(bos_username,bos_psword,traccount,path,row)
         except Exception as msg:
-            pub_method.log_output('!!--!!deposit_cp').error(msg)
+            log.my_logger('!!--!!deposit_cp').error(msg)
 
     #登出会员中心
     def logoutcp(self):
         try:
             self.commethod.logout_cp()
         except Exception as msg:
-            pub_method.log_output('!!--!!logoutcp').error(msg)
+            log.my_logger('!!--!!logoutcp').error(msg)
 
     #登出bos
     def logoutbos(self):
@@ -375,7 +375,7 @@ class locations_of_deposit():
             common.switch_windows(1)
             common.display_click('xpath,//div[@class="scroll-content"]//li[@class="ivu-menu-item"]')
         except Exception as smg:
-            pub_method.log_output('!!--!!logoutbos').error(msg)
+            log.my_logger('!!--!!logoutbos').error(msg)
 
     def closebrowser(self):
         common.close_browser()

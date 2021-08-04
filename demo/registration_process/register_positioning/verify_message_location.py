@@ -45,7 +45,7 @@ class location_of_verify_data():
             common.display_click('css,[data-old-padding-top] > [href="/client/clientListNew/:type*"]')
             time.sleep(2)
         except Exception as msg:
-            pub_method.log_output('!!--!!login_bos').error(msg)
+            log.my_logger('!!--!!login_bos').error(msg)
 
     #账户详情页
     def enter_details_page(self,account):
@@ -69,7 +69,7 @@ class location_of_verify_data():
             common.display_click('css,[href="#tdAccount"]')
             time.sleep(3)
         except Exception as msg:
-            pub_method.log_output('!!--!!enter_details_page').error(msg)
+            log.my_logger('!!--!!enter_details_page').error(msg)
 
     #判断当前主账号是否只存在一个交易账号
     def is_traccount_onlyone(self):
@@ -85,7 +85,7 @@ class location_of_verify_data():
                 time.sleep(1)
                 return False
         except Exception as msg:
-            pub_method.log_output('!!--!!is_traccount_onlyone').error(msg)
+            log.my_logger('!!--!!is_traccount_onlyone').error(msg)
 
     #获取当前交易账号组别
     def get_group(self):
@@ -93,7 +93,7 @@ class location_of_verify_data():
             self.group=common.display_get_text('css,[prop="group"]')
             return self.group
         except Exception as msg:
-            pub_method.log_output('!!--!!get_group').error(msg)
+            log.my_logger('!!--!!get_group').error(msg)
 
     #获取当前交易账号杠杆
     def get_lever(self):
@@ -101,7 +101,7 @@ class location_of_verify_data():
             self.lever=int(common.display_get_text('css,[prop="leverage"]'))
             return self.lever
         except Exception as msg:
-            pub_method.log_output('!!--!!get_lever').error(msg)
+            log.my_logger('!!--!!get_lever').error(msg)
 
     #获取当前交易账号点差类型
     def get_spreadType(self):
@@ -109,7 +109,7 @@ class location_of_verify_data():
             self.spreadType=common.display_get_text('css,[prop="spreadType"]')
             return self.spreadType
         except Exception as msg:
-            pub_method.log_output('!!--!!get_spreadType').error(msg)
+            log.my_logger('!!--!!get_spreadType').error(msg)
 
 
     #获取当前交易账号加点
@@ -118,7 +118,7 @@ class location_of_verify_data():
             self.markup=int(common.display_get_text('css,[prop="markup"]'))
             return self.markup
         except Exception as msg:
-            pub_method.log_output('!!--!!get_markup').error(msg)
+            log.my_logger('!!--!!get_markup').error(msg)
     
     #获取当前交易账号币种
     def get_currency(self):
@@ -126,7 +126,7 @@ class location_of_verify_data():
             self.currency=common.display_get_text('css,[prop="currency"]')
             return self.currency
         except Exception as msg:
-            pub_method.log_output('!!--!!get_currency').error(msg)
+            log.my_logger('!!--!!get_currency').error(msg)
 
 
     #关闭当前页面

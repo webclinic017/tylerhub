@@ -51,7 +51,7 @@ class location_withdrawal_incp():
             #客户名单
             common.display_click('css,[data-old-padding-top] > [href="/client/clientListNew/:type*"]')
         except Exception as msg:
-            pub_method.log_output('!!--!!get_url').error(msg)
+            log.my_logger('!!--!!get_url').error(msg)
 
     #去除登录页弹窗
     def remove_topup(self):
@@ -59,7 +59,7 @@ class location_withdrawal_incp():
             common.switch_windows(0)
             self.commethod.remove_register_topup()
         except Exception as msg:
-            pub_method.log_output('!!--!!remove_topup').error(msg)
+            log.my_logger('!!--!!remove_topup').error(msg)
 
     #进入客户详情页
     def ender_detail_page(self,account):
@@ -82,7 +82,7 @@ class location_withdrawal_incp():
             common.display_click('css,[href="#masterAccount"]')
             time.sleep(2)
         except Exception as msg:
-            pub_method.log_output('!!--!!ender_detail_page').error(msg)
+            log.my_logger('!!--!!ender_detail_page').error(msg)
 
     #遍历BOS交易账号列表，获取出金账号所在行数
     def where_is_traccount_bos(self,traccount):
@@ -114,7 +114,7 @@ class location_withdrawal_incp():
             else:
                 return False
         except Exception as msg:
-            pub_method.log_output('!!--!!is_currency_usd').error(msg)
+            log.my_logger('!!--!!is_currency_usd').error(msg)
 
 
 
@@ -144,7 +144,7 @@ class location_withdrawal_incp():
                     common.display_click('css,[href="#tdAccount"]')
                     break
         except Exception as msg:
-            pub_method.log_output('!!--!!account_is_openwithdrawal').error(msg)
+            log.my_logger('!!--!!account_is_openwithdrawal').error(msg)
 
     
     #判断交易账号激活+暂停状态是否超过或等于5个
@@ -194,7 +194,7 @@ class location_withdrawal_incp():
             else:
                 print('交易账号{}状态为:{}'.format(traccount,self.account_status))
         except Exception as msg:
-            pub_method.log_output('!!--!!tdaccount_status').error(msg)    
+            log.my_logger('!!--!!tdaccount_status').error(msg)    
 
     #判断交易账号出金按钮是否被勾选
     def withdrawal_is_selected(self,traccount,row):
@@ -233,7 +233,7 @@ class location_withdrawal_incp():
                 else:
                     pass
         except Exception as msg:
-            pub_method.log_output('!!--!!withdrawal_is_selected').error(msg)
+            log.my_logger('!!--!!withdrawal_is_selected').error(msg)
 
 
     #判断是否存在出金方式且审核通过
@@ -276,7 +276,7 @@ class location_withdrawal_incp():
                 print('该账号不存在本地银行支付及国际银行电汇出金方式')
                 self.creat_local_currency()
         except Exception as msg:
-            pub_method.log_output('!!--!!is_wayto_withdrawal').error(msg)
+            log.my_logger('!!--!!is_wayto_withdrawal').error(msg)
 
 
     #判断当地货币支付方式是否超过三条且都能在会员中心展示
@@ -298,7 +298,7 @@ class location_withdrawal_incp():
             else:
                 return self.cpsum
         except Exception as msg:
-            pub_method.log_output('!!--!!is_wayto_withdrawal').error(msg)
+            log.my_logger('!!--!!is_wayto_withdrawal').error(msg)
 
 
 
@@ -372,7 +372,7 @@ class location_withdrawal_incp():
                 time.sleep(2)
                 print('新增E-wallet出金方式')
         except Exception as msg:
-            pub_method.log_output('!!--!!creat_local_currency').error(msg)
+            log.my_logger('!!--!!creat_local_currency').error(msg)
 
 
     #登录会员中心
@@ -381,7 +381,7 @@ class location_withdrawal_incp():
             common.switch_windows(0)
             self.commethod.login_cp(username,psword)
         except Exception as msg:
-            pub_method.log_output('!!--!!logincp').error(msg)
+            log.my_logger('!!--!!logincp').error(msg)
 
     #登出会员中心
     def logoutcp(self):
@@ -389,7 +389,7 @@ class location_withdrawal_incp():
             common.switch_windows(0)
             self.commethod.logout_cp()
         except Exception as msg:
-            pub_method.log_output('!!--!!logoutcp').error(msg)
+            log.my_logger('!!--!!logoutcp').error(msg)
 
 
     #遍历会员中心首页的交易账户列表，找到入金交易账户所处位置
@@ -413,7 +413,7 @@ class location_withdrawal_incp():
             self.balance=float(self.balance_text.replace(',',''))
             return self.balance
         except Exception as msg:
-            pub_method.log_output('!!--!!get_traccount_balance').error(msg)
+            log.my_logger('!!--!!get_traccount_balance').error(msg)
 
     #判断该账号存在哪种可用出金方式
     def usable_withdrawal(self):
@@ -446,7 +446,7 @@ class location_withdrawal_incp():
                     return self.ewallet_type
             time.sleep(1)           
         except Exception as msg:
-            pub_method.log_output('!!--!!usable_withdrawal').error(msg)
+            log.my_logger('!!--!!usable_withdrawal').error(msg)
 
     #判断余额
     def is_insyfficient_balance(self,traccount,excelpath,row):
@@ -471,7 +471,7 @@ class location_withdrawal_incp():
             else:
                 return False
         except Exception as msg:
-            pub_method.log_output('!!--!!is_insyfficient_balance').error(msg)
+            log.my_logger('!!--!!is_insyfficient_balance').error(msg)
         
         
     #出金
@@ -532,7 +532,7 @@ class location_withdrawal_incp():
             self.hand_fee()
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!withdrawal_action').error(msg)
+            log.my_logger('!!--!!withdrawal_action').error(msg)
 
     def hand_fee(self):
         try:
@@ -540,7 +540,7 @@ class location_withdrawal_incp():
             common.display_click('css,.btn-confirm')
         except:
             print('此次出金不需要手续费')
-            pub_method.log_output('!!--!!hand_fee').error(msg)
+            log.my_logger('!!--!!hand_fee').error(msg)
             
     #BOS审核出金
     def review_withdrawal(self,traccount):
@@ -571,7 +571,7 @@ class location_withdrawal_incp():
             time.sleep(1)
             self.closebrowser()
         except Exception as msg:
-            pub_method.log_output('!!--!!review_withdrawal').error(msg)
+            log.my_logger('!!--!!review_withdrawal').error(msg)
 
     #判断主账号交易账号是否满足出金条件
     def is_satisfy_withdrawal(self,account,traccount):
@@ -594,7 +594,7 @@ class location_withdrawal_incp():
                 self.is_wayto_withdrawal()
                 return False
         except Exception as msg:
-            pub_method.log_output('!!--!!is_satisfy_withdrawal').error(msg)
+            log.my_logger('!!--!!is_satisfy_withdrawal').error(msg)
 
     #登录会员中心出金，bos审核
     def withdrawal_cp(self,username,psword,traccount,amount,excelpath,row):
@@ -622,7 +622,7 @@ class location_withdrawal_incp():
                 print('出金后交易账号余额为：{}'.format(self.after_balance))
                 return False
         except Exception as msg:
-            pub_method.log_output('!!--!!withdrawal_cp').error(msg)
+            log.my_logger('!!--!!withdrawal_cp').error(msg)
 
 
 

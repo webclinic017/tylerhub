@@ -45,14 +45,14 @@ class Ewallet_deposti():
             #支付渠道管理
             common.display_click('xpath,//div[@class="scroll-content"]//span[.="支付渠道管理"]')
         except Exception as msg:
-            pub_method.log_output('!!--!!get_url').error(msg)
+            log.my_logger('!!--!!get_url').error(msg)
 
     #登录bos
     def login_bos(self,username,psword):
         try:
             self.commethod.loginbos(username, psword)
         except Exception as msg:
-            pub_method.log_output('!!--!!login_bos').error(msg)
+            log.my_logger('!!--!!login_bos').error(msg)
 
     #bos登录cp
     def bos_to_cp(self,account):
@@ -66,7 +66,7 @@ class Ewallet_deposti():
             common.display_click('xpath,//span[.="登录"]')
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!bos_to_cp').error(msg)
+            log.my_logger('!!--!!bos_to_cp').error(msg)
 
     #判断支付渠道页面是否处于加载状态
     def is_page_loading(self):
@@ -77,7 +77,7 @@ class Ewallet_deposti():
                 else:
                     break
         except Exception as msg:
-            pub_method.log_output('!!--!!is_page_loading').error(msg)
+            log.my_logger('!!--!!is_page_loading').error(msg)
 
 
     #获取电子钱包入金在渠道支付列表中的位置
@@ -92,7 +92,7 @@ class Ewallet_deposti():
                     return i
                     break
         except Exception as msg:
-            pub_method.log_output('!!--!!where_is_pay').error(msg)
+            log.my_logger('!!--!!where_is_pay').error(msg)
 
 
     #查询电子钱包出金方式在会员中心是否开启
@@ -113,7 +113,7 @@ class Ewallet_deposti():
             else:
                 print('{} 已开启'.format(payment_type))
         except Exception as msg:
-            pub_method.log_output('!!--!!is_ewallet_open').error(msg)
+            log.my_logger('!!--!!is_ewallet_open').error(msg)
 
     #判断所有的电子钱包入金方式是否开启
     @time_used('统计所有电子钱包入金渠道是否开启耗时')
@@ -125,7 +125,7 @@ class Ewallet_deposti():
                 self.is_ewallet_open(i)
                 time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!is_all_ewallet_open').error(msg)
+            log.my_logger('!!--!!is_all_ewallet_open').error(msg)
         finally:
             #再次点击保存
             common.display_click('css,.pull-right')
@@ -169,7 +169,7 @@ class Ewallet_deposti():
                 else:
                     break
         except Exception as msg:
-            pub_method.log_output('!!--!!is_deposit_loading').error(msg)
+            log.my_logger('!!--!!is_deposit_loading').error(msg)
 
 
     #判断电子钱包出金方式有几种
@@ -179,7 +179,7 @@ class Ewallet_deposti():
             print('当前账号电子钱包出金方式有{}种'.format(self.ewallet_len))
             
         except Exception as msg:
-            pub_method.log_output('!!--!!is_all_ewallet_open').error(msg)
+            log.my_logger('!!--!!is_all_ewallet_open').error(msg)
 
 
 

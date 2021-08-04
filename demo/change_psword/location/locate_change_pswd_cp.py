@@ -86,7 +86,7 @@ class location():
             commom.display_click('css,form.el-form .el-form-item__content > .el-button > span')
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!change_psword').error(msg)
+            log.my_logger('!!--!!change_psword').error(msg)
 
     #获取重置密码成功后的文本
     def sucess_change(self):
@@ -126,7 +126,7 @@ class location():
             self.closerbrowser()
             return self.email_code
         except Exception as msg:
-            pub_method.log_output('!!--!!get_code').error(msg)
+            log.my_logger('!!--!!get_code').error(msg)
 
     #生成N为数字与大小写字母组合的随机数
     def get_psword_type(self,N):

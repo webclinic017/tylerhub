@@ -42,17 +42,17 @@ class Commonweb():
                 self.driver=webdriver.Chrome(options=options)#添加配置
                 self.driver.implicitly_wait(5) #隐式等待5s
             else:
-                pub_method.log_output('!!--!!driver_browser').info('没有找到这种浏览器驱动，你可以尝试输入firefox、Firefox、fx、chrome、Chrome')
+                log.my_logger('!!--!!driver_browser').info('没有找到这种浏览器驱动，你可以尝试输入firefox、Firefox、fx、chrome、Chrome')
             return self.driver
         except Exception as msg:
-            pub_method.log_output('!!--!!driver_name').error('启动浏览器异常{}'.format(msg))
+            log.my_logger('!!--!!driver_name').error('启动浏览器异常{}'.format(msg))
 
     #访问url
     def open_web(self,url):
         try:
             self.driver.get(url)
         except Exception as msg:
-            pub_method.log_output('!!--!!url_error').warning('请输入正确的域名'.format(msg))
+            log.my_logger('!!--!!url_error').warning('请输入正确的域名'.format(msg))
 
     #自定义查找页面元素
     def find_elements(self,locator):
@@ -79,16 +79,16 @@ class Commonweb():
             elif 'tag' in method:
                 return self.driver.find_elements_by_tag_name(values) #通过标签名定位
             else:
-                pub_method.log_output('!!--!!location_element').info('定位方法错误')
+                log.my_logger('!!--!!location_element').info('定位方法错误')
         except Exception as msg:
-            pub_method.log_output('!!--!!find_elements').error('元素不存在或者不可见：{}'.format(msg))
+            log.my_logger('!!--!!find_elements').error('元素不存在或者不可见：{}'.format(msg))
 
     #获取页面元素的个数
     def get_lenofelement(self,locator):
         try:
             return len(self.find_elements(locator))
         except Exception as msg:
-            pub_method.log_output('!!--!!get_lenofelement').error(msg)
+            log.my_logger('!!--!!get_lenofelement').error(msg)
 
     #显示等待查找页面元素,timeout=5s，每0.5s询问一次
     def display_find_elements(self,locator,timeout=5,step=0.5):
@@ -112,9 +112,9 @@ class Commonweb():
             elif 'tag' in method:
                 return WebDriverWait(self.driver,timeout,step).until(lambda x:x.find_elements_by_tag_name(values))
             else:
-                pub_method.log_output('!!--!!location_element').info('定位方法错误')
+                log.my_logger('!!--!!location_element').info('定位方法错误')
         except Exception as msg:
-            pub_method.log_output('!!--!!display_finds_element').error('元素不存在或者不可见：{}'.format(msg))
+            log.my_logger('!!--!!display_finds_element').error('元素不存在或者不可见：{}'.format(msg))
 
     #判断页面元素是否唯一,若唯一，取第一个值，若不唯一，取第*个值
     def find_element(self,locator,index=0):
@@ -126,9 +126,9 @@ class Commonweb():
             elif len(self.elements)!=1 and index<len(self.elements): #不唯一取第index个值
                 return self.elements[index]
             else:
-                pub_method.log_output('!!--!!index_error').info('index值错误，超过列表下标')
+                log.my_logger('!!--!!index_error').info('index值错误，超过列表下标')
         except Exception as msg:
-            pub_method.log_output('!!--!!find_element').error(msg)
+            log.my_logger('!!--!!find_element').error(msg)
 
     #判断显示等待查找的元素是否唯一，不唯一取第n个值，唯一取唯一值
     def display_find_element(self,locator,index=0):
@@ -139,16 +139,16 @@ class Commonweb():
             elif len(self.display_elements)!=1 and index<len(self.display_elements):
                 return self.display_elements[index]
             else:
-                pub_method.log_output('!!--!!index_error').info('index值错误，超过列表下标')                
+                log.my_logger('!!--!!index_error').info('index值错误，超过列表下标')                
         except Exception as msg:
-            pub_method.log_output('!!--!!nosuch_elements').error(msg)
+            log.my_logger('!!--!!nosuch_elements').error(msg)
     
     #显示等待获取页面某个元素的属性
     def get_attributes(self,locator,element,index=0):
         try:
             return self.display_find_element(locator,index).get_attribute(element)
         except Exception as msg:
-            pub_method.log_output('!!--!!get_attributes').error(msg)
+            log.my_logger('!!--!!get_attributes').error(msg)
 
     #判断元素是否可见
     def element_is_visible(self,locator,index=0):
@@ -156,7 +156,7 @@ class Commonweb():
             self.boll=self.find_element(locator,index)
             return self.boll.is_displayed()
         except Exception as msg:
-            pub_method.log_output('!!--!!element_is_visible').error(msg) 
+            log.my_logger('!!--!!element_is_visible').error(msg) 
 
     #设置等待时间查找页面元素是否可见(是否加载到了dom树中)
     def ele_is_displayed(self,locator,timeout,step=0.5):
@@ -192,7 +192,7 @@ class Commonweb():
             else:
                 print('请输入正确的定位方法或者等待时间')
         except Exception as msg:
-            pub_method.log_output('!!--!!is_displayed').error(msg)
+            log.my_logger('!!--!!is_displayed').error(msg)
 
 
 
@@ -211,14 +211,14 @@ class Commonweb():
         try:
             return self.find_element(locator,index).send_keys(values)
         except Exception as msg:
-            pub_method.log_output('!!--!!input_error').error(msg)
+            log.my_logger('!!--!!input_error').error(msg)
 
     #显示等待输入
     def display_input(self,locator,values,index=0):
         try:
             return self.display_find_element(locator,index).send_keys(values)
         except Exception as msg:
-            pub_method.log_output('!!--!!display_input').error(msg)
+            log.my_logger('!!--!!display_input').error(msg)
 
     #清空输入框
     def web_clear(self,locator,index=0):
@@ -228,21 +228,21 @@ class Commonweb():
             self.input.clear()
             #return self.find_element(locator,index).clear()
         except Exception as msg:
-            pub_method.log_output('!!--!!clear_error').error(msg)
+            log.my_logger('!!--!!clear_error').error(msg)
 
     #获取页面文本
     def get_text(self,locator,index=0):
         try:
             return self.find_element(locator,index).text
         except Exception as msg:
-            pub_method.log_output('!!--!!get_text_error').error(msg)
+            log.my_logger('!!--!!get_text_error').error(msg)
 
     #显示等待获取页面文本
     def display_get_text(self,locator,index=0):
         try:
             return self.display_find_element(locator,index).text
         except Exception as msg:
-             pub_method.log_output('!!--!!display_get_text').error(msg)
+             log.my_logger('!!--!!display_get_text').error(msg)
 
     #点击操作
     def web_click(self,locator,index=0):
@@ -251,14 +251,14 @@ class Commonweb():
             # self.element=self.find_element(locator,index)
             # return ActionChains(self.driver).click(self.element).perform()
         except Exception as msg:
-            pub_method.log_output('!!--!!click_error').error(msg)
+            log.my_logger('!!--!!click_error').error(msg)
 
     #显示等待点击
     def display_click(self,locator,index=0):
         try:
             return self.display_find_element(locator,index).click()
         except Exception as msg:
-            pub_method.log_output('!!--!!display_click').error(msg)      
+            log.my_logger('!!--!!display_click').error(msg)      
 
     #双击
     def doubleclick(self,locator,index=0):
@@ -266,7 +266,7 @@ class Commonweb():
             self.ele=self.find_element(locator,index)
             ActionChains(self.driver).double_click(self.ele).perform()
         except Exception as msg:
-            pub_method.log_output('!!--!!doubleclick_error').error(msg)
+            log.my_logger('!!--!!doubleclick_error').error(msg)
 
     #显示等待双击
     def display_doubleclick(self,locator,index=0):
@@ -274,7 +274,7 @@ class Commonweb():
             self.ele=self.display_find_element(locator,index)
             ActionChains(self.driver).double_click(self.ele).perform()
         except Exception as msg:
-            pub_method.log_output('!!--!!display_doubleclick').error(msg)
+            log.my_logger('!!--!!display_doubleclick').error(msg)
 
     #强制刷新
     def refresh_f5(self):
@@ -286,7 +286,7 @@ class Commonweb():
         try:
             self.driver.refresh()
         except Exception as msg:
-            pub_method.log_output('!!--!!refresh').error(msg)
+            log.my_logger('!!--!!refresh').error(msg)
 
     #鼠标悬浮
     def suspension(self,locator,index=0):
@@ -294,7 +294,7 @@ class Commonweb():
             self.ele=self.find_element(locator,index)
             ActionChains(self.driver).move_to_element(self.ele).perform()
         except Exception as msg:
-            pub_method.log_output('!!--!!suspension_error').error(msg)
+            log.my_logger('!!--!!suspension_error').error(msg)
 
     #显示等待-鼠标悬停
     def display_suspension(self,locator,index=0):
@@ -302,7 +302,7 @@ class Commonweb():
             self.ele=self.display_find_element(locator,index)
             ActionChains(self.driver).move_to_element(self.ele).perform()
         except Exception as msg:
-            pub_method.log_output('!!--!!suspension').error(msg)
+            log.my_logger('!!--!!suspension').error(msg)
 
 
     #右键点击
@@ -311,7 +311,7 @@ class Commonweb():
             self.ele=self.display_find_element(locator,index)
             ActionChains(self.driver).context_click(self.ele).perform()
         except Exception as msg:
-            pub_method.log_output('!!--!!right_click').error(msg)
+            log.my_logger('!!--!!right_click').error(msg)
 
     #其他键盘操作(针对搜索框/输入框)
     def keyboard_operation(self,locator,keys,index=0):
@@ -322,7 +322,7 @@ class Commonweb():
             self.ele=self.display_find_element(locator,index)
             self.ele.send_keys(Keys.CONTROL,keys)
         except Exception as msg:
-            pub_method.log_output('!!--!!keyboard_operation').error(msg)
+            log.my_logger('!!--!!keyboard_operation').error(msg)
 
     #右键在新窗口打开链接打开链接
     def right_click_link(self,locator,index=0):
@@ -330,7 +330,7 @@ class Commonweb():
             self.ele=self.display_find_element(locator,index)
             self.ele.send_keys(Keys.CONTROL + Keys.ENTER)
         except Exception as msg:
-            pub_method.log_output('!!--!!right_click_link').error(msg)      
+            log.my_logger('!!--!!right_click_link').error(msg)      
 
     #截图,自定义保存截图的文件夹名称
     def get_screenpict(self,name,filename='picture',):
@@ -358,14 +358,14 @@ class Commonweb():
             else:
                 print('{}超过窗口句柄列表下标最大值'.format(n))
         except Exception as msg:
-            pub_method.log_output('!!--!!switch_windows').error(msg)
+            log.my_logger('!!--!!switch_windows').error(msg)
 
     #获取当前页面的title
     def title(self):
         try:
             return(self.driver.title)
         except Exception as msg:
-            pub_method.log_output('!!--!!title').error(msg)
+            log.my_logger('!!--!!title').error(msg)
 
     #切换表单页
     def switch_iframe(self,locator,index=0):
@@ -374,7 +374,7 @@ class Commonweb():
             self.frame=self.find_element(locator,index)
             self.driver.switch_to_frame(self.frame) 
         except Exception as msg:
-            pub_method.log_output('!!--!!switch_frame').error(msg)
+            log.my_logger('!!--!!switch_frame').error(msg)
 
     #上传图片
     def upload_img(self,exe_path,pic_path):
@@ -382,7 +382,7 @@ class Commonweb():
         try:
             os.system('{} {}'.format(exe_path,pic_path))
         except Exception as msg:
-            pub_method.log_output('!!--!!upload').error(msg)   
+            log.my_logger('!!--!!upload').error(msg)   
 
     #JS新开窗口
     def js_openwindows(self,url):
@@ -407,7 +407,7 @@ class Commonweb():
             else:
                 print('site参数：顶部：{}；底部：{}'.format('top','down'))
         except Exception as msg:
-            pub_method.log_output('!!--!!js_scroll').error(msg)
+            log.my_logger('!!--!!js_scroll').error(msg)
 
     #JS处理内嵌滚动条滚动
     def js_scroll_inline(self,type,element,site,index=0):
@@ -436,7 +436,7 @@ class Commonweb():
             else:
                 print('参数错误请检查')
         except Exception as msg:
-            pub_method.log_output('!!--!!js_scroll_inline').error(msg)
+            log.my_logger('!!--!!js_scroll_inline').error(msg)
 
     #元素聚焦，移动页面至指定元素位置
     def element_focus(self,locator,index=0):
@@ -444,7 +444,7 @@ class Commonweb():
            self.focus=self.display_find_element(locator,index) 
            self.driver.execute_script('return arguments[0].scrollIntoView();',self.focus)
         except Exception as msg:
-            pub_method.log_output('!!--!!js_scroll_inline').error(msg)
+            log.my_logger('!!--!!js_scroll_inline').error(msg)
 
 
     #截取屏幕，定点截图
@@ -475,7 +475,7 @@ class Commonweb():
             self.new_image.save(self.new_image_path)
             return self.new_image_path
         except Exception as msg:
-            pub_method.log_output('coed_img').error(msg)
+            log.my_logger('coed_img').error(msg)
 
     #调用三方接口，读取验证码
     def discern_code(self,username,psword,name,filename,locator,index=0):
@@ -492,18 +492,18 @@ class Commonweb():
             self.result_code=base64_api(username,psword,self.img)
             return self.result_code
         except Exception as msg:
-            pub_method.log_output('discern_code').error(msg)  
+            log.my_logger('discern_code').error(msg)  
 
     #关闭当前页
     def close_browser(self):
         try:
             self.driver.close()
         except Exception as msg:
-            pub_method.log_output('close_browser').error('浏览器关闭异常:{}'.format(msg))
+            log.my_logger('close_browser').error('浏览器关闭异常:{}'.format(msg))
         
     #退出浏览器进程
     def quit_browser(self):
         try:
             self.driver.quit()
         except Exception as msg:
-            pub_method.log_output('qiut_browser').error('浏览器退出异常{}'.format(msg)) 
+            log.my_logger('qiut_browser').error('浏览器退出异常{}'.format(msg)) 

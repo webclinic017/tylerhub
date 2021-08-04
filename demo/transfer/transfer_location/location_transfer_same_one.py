@@ -46,14 +46,14 @@ class location_of_transfer():
             #客户名单
             common.display_click('css,[data-old-padding-top] > [href="/client/clientListNew/:type*"]')
         except Exception as msg:
-            pub_method.log_output('!!--!!get_url').error(msg)
+            log.my_logger('!!--!!get_url').error(msg)
 
     #登录页弹窗
     def remove_topup(self):
         try:
             self.commethod.remove_register_topup()
         except Exception as msg:
-            pub_method.log_output('!!--!!remove_topup').error(msg)
+            log.my_logger('!!--!!remove_topup').error(msg)
 
     #进入客户详情页
     def ender_detail_page(self,account):
@@ -76,7 +76,7 @@ class location_of_transfer():
             common.display_click('css,[href="#masterAccount"]')
             time.sleep(2)
         except Exception as msg:
-            pub_method.log_output('!!--!!ender_detail_page').error(msg)
+            log.my_logger('!!--!!ender_detail_page').error(msg)
 
     #遍历BOS交易账号列表，获取入金账号所在行数
     def where_is_tdaccount_bos(self,tdaccount):
@@ -113,7 +113,7 @@ class location_of_transfer():
             self.balance=float(self.balance_text.replace(',',''))
             return self.balance
         except Exception as msg:
-            pub_method.log_output('!!--!!get_tdaccount_balance')
+            log.my_logger('!!--!!get_tdaccount_balance')
 
 
     #判断交易账号激活+暂停状态是否超过或等于5个
@@ -156,7 +156,7 @@ class location_of_transfer():
             #真实账户信息
             common.display_click('css,[href="#tdAccount"]')
         except Exception as msg:
-            pub_method.log_output('!!--!!transfer_control_on').error(msg)
+            log.my_logger('!!--!!transfer_control_on').error(msg)
 
     #判断主账号转账给下级客户/代理控制是否开启
     def transfer_to_lower(self):
@@ -174,7 +174,7 @@ class location_of_transfer():
                 else:
                     print('转账给下级控制开关未开启，可进行非返佣账号转返佣账户转账方式')
         except Exception as msg:
-            pub_method.log_output('!!--!!transfer_to_lower').error(msg)
+            log.my_logger('!!--!!transfer_to_lower').error(msg)
 
 
 
@@ -203,7 +203,7 @@ class location_of_transfer():
                 print('转入交易账号为非返佣账户')
                 return False
         except Exception as msg:
-            pub_method.log_output('!!--!!tdaccount_to_is_rebate').error(msg)
+            log.my_logger('!!--!!tdaccount_to_is_rebate').error(msg)
     
     #判断转入转出账号状态是否满足转账条件
     def tdaccount_status_is_satisfy(self):
@@ -237,7 +237,7 @@ class location_of_transfer():
                 else:
                     print('交易账号状态满足转账条件')
         except Exception as msg:
-            pub_method.log_output('!!--!!tdaccount_status').error(msg)
+            log.my_logger('!!--!!tdaccount_status').error(msg)
 
 
     #判断交易账户转账按钮是否被勾选
@@ -265,7 +265,7 @@ class location_of_transfer():
                 else:
                     print('交易账号转账权限已勾选')
         except Exception as msg:
-            pub_method.log_output('!!--!!transfer_is_selected').error(msg)
+            log.my_logger('!!--!!transfer_is_selected').error(msg)
             
     
     #判断主账号交易账号是否满足转账条件
@@ -294,7 +294,7 @@ class location_of_transfer():
             else:
                 pass
         except Exception as msg:
-            pub_method.log_output('!!--!!is_satisfy_transfer').error(msg)
+            log.my_logger('!!--!!is_satisfy_transfer').error(msg)
 
     #登录会员中心
     def logincp(self,username,psword):
@@ -302,7 +302,7 @@ class location_of_transfer():
             common.switch_windows(0)
             self.commethod.login_cp(username,psword)
         except Exception as msg:
-            pub_method.log_output('!!--!!logincp').error(msg)
+            log.my_logger('!!--!!logincp').error(msg)
 
     #登出会员中心
     def logoutcp(self):
@@ -311,7 +311,7 @@ class location_of_transfer():
             time.sleep(1)
             self.commethod.logout_cp()
         except Exception as msg:
-            pub_method.log_output('!!--!!logoutcp').error(msg)
+            log.my_logger('!!--!!logoutcp').error(msg)
 
 
     def transfer_action(self,tdaccount_from,tdaccount_to,amount,excelpath,row):
@@ -354,7 +354,7 @@ class location_of_transfer():
             common.display_click('css,.submit .el-button')
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!transfer_action').error(msg)
+            log.my_logger('!!--!!transfer_action').error(msg)
 
     #判断转账是否完成或在处理中状态
     def is_successful_transfer(self):
@@ -370,7 +370,7 @@ class location_of_transfer():
                 print('转账处理中需要审核')
                 return False
         except Exception as msg:
-            pub_method.log_output('!!--!!is_successful_transfer').error(msg)
+            log.my_logger('!!--!!is_successful_transfer').error(msg)
 
     def review_transfer(self,account):
         try:
@@ -408,7 +408,7 @@ class location_of_transfer():
                 self.closebrowser()
                 return 'failed'
         except Exception as msg:
-            pub_method.log_output('!!--!!review_transfer').error(msg)
+            log.my_logger('!!--!!review_transfer').error(msg)
 
 
 
@@ -434,7 +434,7 @@ class location_of_transfer():
             print('转账成功后转出交易账号余额为：{}'.format(self.after_transfer_balance))
             e.saveainfo(excelpath,self.after_transfer_balance,'H',row)
         except Exception as msg:
-            pub_method.log_output('!!--!!transfer_in_cp').error(msg)
+            log.my_logger('!!--!!transfer_in_cp').error(msg)
 
 
     def closebrowser(self):

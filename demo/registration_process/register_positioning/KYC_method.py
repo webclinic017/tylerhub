@@ -51,7 +51,7 @@ class kyc_approve():
             self.commethod.choose_bos_lang(lang)
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!loginweb').error('访问cp/bos登录页失败：{}'.format(msg))
+            log.my_logger('!!--!!loginweb').error('访问cp/bos登录页失败：{}'.format(msg))
    
     #登录会员中心
     def login_cp(self,username,psword):
@@ -66,7 +66,7 @@ class kyc_approve():
             time.sleep(1)
             common.web_click('css,.confirm-btn')
         except Exception as msg:
-            pub_method.log_output('!!--!!topup').error('首次登录弹窗点击失败{}'.format(msg))
+            log.my_logger('!!--!!topup').error('首次登录弹窗点击失败{}'.format(msg))
 
     #获取登录成功后的主账号
     def get_account_(self):
@@ -78,7 +78,7 @@ class kyc_approve():
             self.account=pub_method.extract_numbers(acc)
             return self.account
         except Exception as msg:
-            pub_method.log_output('!!--!!topup').error('获取主账号失败{}'.format(msg))
+            log.my_logger('!!--!!topup').error('获取主账号失败{}'.format(msg))
 
     #判断是否为返佣账号，如是，点击返佣申请表格
     def is_rebate_type(self):
@@ -108,7 +108,7 @@ class kyc_approve():
             common.web_click('css,.logout-btn-confirm')
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!lgoout_cp').error('登出会员中心失败：{}'.format(msg))
+            log.my_logger('!!--!!lgoout_cp').error('登出会员中心失败：{}'.format(msg))
 
     #登录bos并打开客户名单页
     def login_bos(self,username,psword):
@@ -123,7 +123,7 @@ class kyc_approve():
             common.web_click('css,.ivu-menu-item',1)
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!lgoin-bos').error('登录bos失败：{}'.format(msg))
+            log.my_logger('!!--!!lgoin-bos').error('登录bos失败：{}'.format(msg))
 
     #验证邮箱
     def verification_emali(self):
@@ -150,7 +150,7 @@ class kyc_approve():
             common.web_click('css,.dialog-submit')
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!verification_emali').error(msg)
+            log.my_logger('!!--!!verification_emali').error(msg)
 
     #上传证件照
     def upload_ID_photo(self,exe_path,pic_path):
@@ -161,7 +161,7 @@ class kyc_approve():
             common.upload_img(exe_path,pic_path)
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!upload_ID_photo').error(msg)
+            log.my_logger('!!--!!upload_ID_photo').error(msg)
 
     #随机选择出生日期与性别
     def choose_data_gender(self):
@@ -186,7 +186,7 @@ class kyc_approve():
             common.web_click('css,.el-radio__inner',pub_method.random_int(0,1))
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!choose_data_gender').error(msg)
+            log.my_logger('!!--!!choose_data_gender').error(msg)
 
     #输入地址，勾选协议并提交表单
     def submit(self):
@@ -204,7 +204,7 @@ class kyc_approve():
             common.web_click('css,.submit-btn')
             time.sleep(4)
         except Exception as msg:
-            pub_method.log_output('!!--!!submit').error(msg)
+            log.my_logger('!!--!!submit').error(msg)
      
     #获取邮箱验证码
     def get_emailcode_(self):
@@ -236,7 +236,7 @@ class kyc_approve():
             self.closedriver()
             return self.emailcode
         except Exception as msg:
-            pub_method.log_output('!!--!!get_emailcode_').error('获取邮箱验证失败{}'.format(msg))
+            log.my_logger('!!--!!get_emailcode_').error('获取邮箱验证失败{}'.format(msg))
 
     #中国区账号操作
     def china_kyc(self):
@@ -303,7 +303,7 @@ class kyc_approve():
                 self.submit()
                 time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!get_on_kyc').error('kyc表单填写失败：{}'.format(msg))
+            log.my_logger('!!--!!get_on_kyc').error('kyc表单填写失败：{}'.format(msg))
 
     #清空主账号搜索条件
     def clearaccount(self):
@@ -312,7 +312,7 @@ class kyc_approve():
             time.sleep(1)
             common.web_clear('css,.ivu-input-default') #清空主账户
         except Exception as msg:
-            pub_method.log_output('!!--!!clearaccount').error('清空主账号证失败{}'.format(msg))
+            log.my_logger('!!--!!clearaccount').error('清空主账号证失败{}'.format(msg))
 
     #获取KYC成功后的文本
     def get_kyc_success(self):
@@ -332,7 +332,7 @@ class kyc_approve():
             self.text= common.get_text('css,.alert-text')
             return self.text
         except Exception as msg:
-            pub_method.log_output('!!--!!get_kyc_success').error(msg)
+            log.my_logger('!!--!!get_kyc_success').error(msg)
 
     #关闭页面             
     def closedriver(self):
@@ -347,4 +347,4 @@ class kyc_approve():
         try:
             common.get_screenpict(name,filename)
         except Exception as msg:
-            pub_method.log_output('!!--!!get_fail_img').error(msg)
+            log.my_logger('!!--!!get_fail_img').error(msg)

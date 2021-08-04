@@ -24,7 +24,7 @@ class commonmethod():
             else:
                 print('{}超过窗口句柄列表下标最大值'.format(n))
         except Exception as msg:
-            pub_method.log_output('!!--!!switch_windows').error(msg)
+            log.my_logger('!!--!!switch_windows').error(msg)
 
 
     #去除注册页弹窗
@@ -33,7 +33,7 @@ class commonmethod():
             time.sleep(1)
             self.driver.find_element_by_css_selector('.blk-sure-btn').click()
         except Exception as msg:
-            pub_method.log_output('!!--!!remove_register_topup').error(msg)
+            log.my_logger('!!--!!remove_register_topup').error(msg)
 
     #选择会员中心页面语言
     def choose_register_lang(self,lang):
@@ -65,7 +65,7 @@ class commonmethod():
             else:
                 print('请输入正确的页面语言')
         except Exception as msg:
-            pub_method.log_output('!!--!!choose_register_lang').error(msg)
+            log.my_logger('!!--!!choose_register_lang').error(msg)
 
     #登录会员中心
     def login_cp(self,username,psword):
@@ -78,7 +78,7 @@ class commonmethod():
             time.sleep(1)
             self.driver.find_element_by_css_selector('.login-btn').click()
         except Exception as msg:
-            pub_method.log_output('!!--!!login_cp').error(msg)
+            log.my_logger('!!--!!login_cp').error(msg)
 
     #登出会员中心
     def logout_cp(self):
@@ -95,7 +95,7 @@ class commonmethod():
             self.quit_ele[-1].click()
             time.sleep(1)
         except Exception as msg:
-            pub_method.log_output('!!--!!lgoout_cp').error('登出会员中心失败：{}'.format(msg))
+            log.my_logger('!!--!!lgoout_cp').error('登出会员中心失败：{}'.format(msg))
 
     #选择bos页面语言
     def choose_bos_lang(self,lang):
@@ -107,7 +107,7 @@ class commonmethod():
             else:
                 pass
         except Exception as msg:
-            pub_method.log_output('!!--!!choose_bos_lang').error(msg)
+            log.my_logger('!!--!!choose_bos_lang').error(msg)
 
     #登录bos
     def loginbos(self,username,psword):
@@ -120,4 +120,4 @@ class commonmethod():
             time.sleep(1)
             self.driver.find_element_by_css_selector('.ivu-btn-large').click() #登录
         except Exception as msg:
-            pub_method.log_output('!!--!!login_bos').error(msg)
+            log.my_logger('!!--!!login_bos').error(msg)
