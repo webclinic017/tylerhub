@@ -10,7 +10,7 @@
 
 ## 环境依赖
 ***python3.6及以上版本***
-### *部署步骤*：
+### *部署步骤*：:blush:
     1.python3.6及以上版本下载
     2.必需第三方模块：selenium；allure-pytest；BeautifulReport；ddt；image；pymongo；cx_Oracle；PyMySQL；pytest；selenium；WMI；xlrd(指定1.2.0版本)；allure
     3.alluer环境配置
