@@ -40,7 +40,6 @@ class locathion_of_transfer():
             self.commethod.choose_bos_lang(lang)
             #登录bos
             self.commethod.loginbos(username,psword)
-            
             time.sleep(1)
             #客户管理
             common.display_click('css,.ivu-badge>span')

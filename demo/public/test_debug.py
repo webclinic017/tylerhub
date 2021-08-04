@@ -394,27 +394,27 @@
 # serach(zubie='A',diancha='B')
 # print(111)
 
-# a=['name', 'host', 'proxy', 'password', 'pool']
-# print(a[2])
+# # a=['name', 'host', 'proxy', 'password', 'pool']
+# # print(a[2])
 
 
-class A():
+# class A():
 
-    def __init__(self,file=None):
+#     def __init__(self,file=None):
 
-        if file:
-            self.configpath=file
-        else:
-            self.configpath='我是一个路径'
+#         if file:
+#             self.configpath=file
+#         else:
+#             self.configpath='我是一个路径'
 
-    def a(self,b):
-        print(self.configpath)
-        print(b)
+#     def a(self,b):
+#         print(self.configpath)
+#         print(b)
 
-c=A()
-c.a('我是第二个路径')
+# c=A()
+# c.a('我是第二个路径')
 
-
+import ddt 
 
 
 
