@@ -27,7 +27,7 @@ other_actions.py | 生成随机数据，提取指定格式字符串等
 read_dataconfig.py  | 读取配置文件
 verification_code.py | 页面验证识别，统计方法运行时间等
 ***
-## 命名方式 建议用如下命名方式哦:smiley: 
+## 命名方式 建议使用如下命名方式哦:smiley: 
     模块名：小写字母，单词间用_分割  about_data.py
     类名：首字母大写
     普通变量：小写字母，单词间用_分割 email_list
