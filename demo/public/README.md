@@ -158,3 +158,25 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     uname：图鉴网账号
     pwd：图鉴网密码
     img：被识别的验证码图片路径
+    
+ ***[handlelog.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/handlelog.py)***  
+    
+ *公共方法*
+
+    my_logger(name=read.get_value('log','name')) 输出日志到控制台及日志文件中,只有高于WARN级别的日志才会输出到日志文件中，其他级别日志仅输出到控制台
+
+*变量*
+
+    name：日志名称
+    
+  ***[read_dataconfig.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/read_dataconfig.py)***     
+  
+  *公共方法*
+  
+    get_option(section,index=None)            获取section下的option值，列表返回，index值具体取第几项
+    get_value(section,opthon)                 获取某个section节点下option的具体值
+    
+ *变量*
+    section：节点
+    opthon：节点中的key
+    
