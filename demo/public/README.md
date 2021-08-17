@@ -176,6 +176,7 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     get_option(section,index=None)            获取section下的option值，列表返回，index值具体取第几项
     get_value(section,opthon)                 获取某个section节点下option的具体值
     
+    
  *变量*
     section：节点
     opthon：节点中的key
