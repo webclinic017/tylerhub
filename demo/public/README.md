@@ -106,7 +106,7 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     username:图鉴网用户名
     psword：图鉴网密码
     n：下标
-
+***
 ***[other_actions.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/other_actions.py)***
 
 *公共方法*
@@ -127,7 +127,7 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     type:letter or number
     str:含有数字的字符串
     x,y:整数，x<y
-
+***
 ***[about_data.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/about_data.py)***
 
 *公共方法*
@@ -144,7 +144,7 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     values：保存进文档的值
     column：列
     row：行
-
+***
 ***[verification_code.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/verification_code.py)***
 
 *公共方法*
@@ -158,7 +158,7 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     uname：图鉴网账号
     pwd：图鉴网密码
     img：被识别的验证码图片路径
-    
+***  
  ***[handlelog.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/handlelog.py)***  
     
  *公共方法*
@@ -168,16 +168,16 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
 *变量*
 
     name：日志名称
-    
+ ***  
   ***[read_dataconfig.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/read_dataconfig.py)***     
   
   *公共方法*
   
     get_option(section,index=None)            获取section下的option值，列表返回，index值具体取第几项
     get_value(section,opthon)                 获取某个section节点下option的具体值
-    
-    
+     
  *变量*
+ 
     section：节点
     opthon：节点中的key
     
