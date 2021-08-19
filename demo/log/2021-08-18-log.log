@@ -1,0 +1,45 @@
+!!--!!find_elements - 2021-08-18 16:44:36,489 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_element - 2021-08-18 16:44:36,491 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2021-08-18 16:44:36,492 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2021-08-18 16:44:37,505 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_elements - 2021-08-18 16:44:37,505 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_element - 2021-08-18 16:44:37,507 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-08-18 16:44:37,507 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2021-08-18 16:44:37,508 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!input_error - 2021-08-18 16:44:37,508 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2021-08-18 16:59:40,221 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_element - 2021-08-18 16:59:40,222 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2021-08-18 16:59:40,223 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2021-08-18 16:59:41,237 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_elements - 2021-08-18 16:59:41,237 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_element - 2021-08-18 16:59:41,238 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-08-18 16:59:41,238 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2021-08-18 16:59:41,239 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!input_error - 2021-08-18 16:59:41,239 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2021-08-18 17:00:36,115 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_element - 2021-08-18 17:00:38,171 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2021-08-18 17:00:38,171 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2021-08-18 17:00:39,177 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_elements - 2021-08-18 17:00:39,177 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_element - 2021-08-18 17:00:39,178 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-08-18 17:00:39,178 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2021-08-18 17:00:39,179 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!input_error - 2021-08-18 17:00:39,179 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2021-08-18 17:02:38,003 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_element - 2021-08-18 17:02:38,005 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2021-08-18 17:02:38,006 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2021-08-18 17:02:39,016 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_elements - 2021-08-18 17:02:39,016 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_element - 2021-08-18 17:02:39,017 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-08-18 17:02:39,017 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2021-08-18 17:02:39,018 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!input_error - 2021-08-18 17:02:39,018 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2021-08-18 17:03:37,039 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_element - 2021-08-18 17:03:37,040 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2021-08-18 17:03:37,041 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2021-08-18 17:03:38,054 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_elements - 2021-08-18 17:03:38,054 - browser_actions - [browser_actions.py-->line:86] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_element - 2021-08-18 17:03:38,056 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-08-18 17:03:38,056 - browser_actions - [browser_actions.py-->line:133] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2021-08-18 17:03:38,057 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!input_error - 2021-08-18 17:03:38,057 - browser_actions - [browser_actions.py-->line:216] - ERROR: 'NoneType' object has no attribute 'send_keys'

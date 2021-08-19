@@ -3,6 +3,7 @@ from openpyxl import load_workbook
 import pymongo
 import ssl
 import  cx_Oracle
+import pymysql
 import os
 import sys
 from read_dataconfig import ReadConfig
@@ -286,7 +287,7 @@ retryWrites=true&ssl=true'.format(username,password)
             print('保存数据库数据失败，请检查链接/参数：{}'.format(msg))
 
    #连接oracle数据库 
-    def serach_in_oracle(self,sql):
+    def serach_in_oracle(self,sql,type='single'):
         try:
             #连接
             self.con = cx_Oracle.connect('{}/{}@{}:{}/{}'.format(read.get_value('oracle','username'),read.get_value('oracle','password'),
@@ -295,14 +296,44 @@ retryWrites=true&ssl=true'.format(username,password)
             self.cursor= self.con.cursor()  
             #执行sql
             self.cursor.execute(sql)
+            if type=='single':
             #获取单条数据
-            self.data=self.cursor.fetchone()
+                self.data=self.cursor.fetchone()
+            else:
+            #获取所有数据
+                self.data=self.cursor.fetchall()
             self.cursor.close()
             self.con.close()
             return self.data
         except Exception as msg:
             print('请检查连接信息及sql语句是否正确：{}'.format(msg))
-                
+
+    #连接mysql数据库查询
+    def search_in_mysql(self,*vartuple,sql,type='single'):
+        """
+        :param vartuple:host,username,password,db,port,charset=utf-8
+        :param sql: 执行查询的sql语句
+        :param type: 查询单条或者所有符合sql语句的数据
+        :return 返回查询数据
+        """
+        try:
+            #连接
+            self.db = pymysql.connect(vartuple)
+            #创建游标对象
+            self.cursor=self.db.cursor()
+            #执行sql语句
+            self.cursor.execute(sql)
+            #查询单条数据
+            if type=='single':
+                self.data=self.cursor.fetchone()
+            #查询所有数据
+            else:
+                self.data=self.cursor.fetchall()
+            self.cursor.close()
+            self.db.close()
+            return self.data
+        except Exception as msg:
+            print('请检查连接信息及sql语句是否正确：{}'.format(msg)) 
 
 #测试
 if __name__=='__main__':
