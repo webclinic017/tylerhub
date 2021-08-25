@@ -1,30 +1,35 @@
 '''
-Author: your name
+Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-08-04 23:49:42
+LastEditTime: 2021-08-24 17:18:52
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\deposit\deposit_bin\deposit_in_bos.py
 '''
 import os
 import sys
-import unittest
 import time
+import unittest
+
 import ddt
 from BeautifulReport import BeautifulReport
 
-path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))+r'\public'
+path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'public')
 sys.path.append(path_public)
 path_deposit=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_deposit+r'\location_deposit')
 from about_data import Exceldata
+from read_dataconfig import ReadConfig
 from location_deposit_of_bos import Location_deposit_bos
 
+#实例化
 deposit=Location_deposit_bos()
+conFig=ReadConfig()
+
 #读取测试文档数据
 e=Exceldata()
-excelpath=path_deposit+r'\test_data\deposit_data.xlsx'
-rows=e.openexcel(excelpath,'Sheet1') #测试文档的路径，sheet名,并获取总行数
+excelpath=os.path.join(path_deposit,'test_data\deposit_bos.xlsx')
+rows=e.openexcel(excelpath,'Sheet1')
 testdata=e.dict_data()
 
 @ddt.ddt
@@ -33,7 +38,7 @@ class Deposit_bos(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         deposit.broswertype()
-        deposit.get_url()
+        deposit.get_url('sit')
 
     def tearDown(self):
         if self.data_index==testdata.index(testdata[-1]):
@@ -46,13 +51,14 @@ class Deposit_bos(unittest.TestCase):
     def test_deposti_bos(self,data):
         #获取每组测试数据的下标
         self.data_index=testdata.index(data)
-        print('当前测试账号：主账号：{}；交易账号：{}；入金金额；{}'.format(data['主账号'],data['交易账号'],data['入金金额']))
-        deposit.login_bos('tyler.tang','Tl123456')
-        deposit.Deposit_bos_comply(data['主账号'],data['交易账号'],'tyler.tang2','Tl123456',int(float(data['入金金额'])))
+        print('当前测试账号：主账号：{}；交易账号：{}；入金金额；{}'.format(int(data['主账号']),int(data['交易账号']),data['入金金额']))
+        deposit.login_bos(conFig.get_value('bos_login', 'username'),conFig.get_value('bos_login', 'password'))
+        deposit.Deposit_bos_comply(int(data['主账号']),int(data['交易账号']),
+        conFig.get_value('bos_login', 'username2'),conFig.get_value('bos_login', 'password'),int(float(data['入金金额'])))
+        #断言
+        self.assertEqual('成功', deposit.deposit_success())
 
 if __name__=='__main__':
     #测试报告
-    suit=unittest.defaultTestLoader.discover(os.path.dirname(os.path.abspath(__file__)),
-    pattern='deposit_in_bos.py',top_level_dir=None)
-    BeautifulReport(suit).report(filename='BOS入金',description='BOS入金流程',
-    report_dir=path_deposit+r'\deposit_report')
+    suit=unittest.defaultTestLoader.discover(os.path.dirname(os.path.abspath(__file__)),pattern='deposit_in_bos.py',top_level_dir=None)
+    BeautifulReport(suit).report(filename='BOS入金',description='BOS入金流程',report_dir=path_deposit+r'\report')

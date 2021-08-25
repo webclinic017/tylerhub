@@ -4,31 +4,35 @@ import sys
 import time
 
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-path_public=path_demo+r'\public'
+path_public=os.path.join(path_demo,'public')
+path_withdrawal=os.path.join(path_demo,'withdrawal')
 sys.path.append(path_public)
 from about_data import Exceldata
 from browser_actions import Commonweb
 from common_method import Commonmethod
-from other_actions import Public_method
+from randomdata import Random_data
+from handlelog import MyLog
+from read_dataconfig import ReadConfig
 
-
-path_withdrawal=path_demo+r'\withdrawal'
+#实例化
 common=Commonweb()
-pub_method=Public_method()
+randomData=Random_data()
 e=Exceldata()
+log=MyLog()
+conFig=ReadConfig()
 
-class Location_withdrawal_incp():
+
+class Location_withdrawal_incp(object):
     """
     判断逻辑：主账号出金权限是否开启；交易账号暂停+激活状态是否超过5个；出金交易账号状态判断；
     出金渠道判断：是否审核通过，审核通过后是否能在会员中心展示；出金方式是否超过三条，超过三条后是否都能在会员中心显示
-
     """
 
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
         self.commethod=Commonmethod(self.driver)
 
-    def get_url(self,username,psword,lang='CN'):
+    def get_url(self,environment,username,psword,lang='CN'):
         try:
             common.open_web('https://at-client-portal-uat.atfxdev.com/login')
             time.sleep(1)
@@ -344,7 +348,7 @@ class Location_withdrawal_incp():
                 common.display_input('xpath,//div[@class="ivu-drawer-wrap"]//input','testcity',6)
                 time.sleep(1)
                 #银行卡号
-                common.display_input('xpath,//div[@class="ivu-drawer-wrap"]//input',pub_method.get_purerange(14,'number'),7)
+                common.display_input('xpath,//div[@class="ivu-drawer-wrap"]//input',randomData.get_purerange(14,'number'),7)
                 time.sleep(1)
                 #上传银行图片
                 common.display_click('xpath,//div[@class="ivu-drawer-wrap"]//span',3)
@@ -365,7 +369,7 @@ class Location_withdrawal_incp():
                 common.display_click('css,.ivu-select-visible .ivu-select-dropdown-list > li')
                 time.sleep(1)
                 #输入随机邮箱
-                common.display_input('xpath,//div[@class="ivu-drawer-wrap"]//input',pub_method.get_rangenemail(9),-1)
+                common.display_input('xpath,//div[@class="ivu-drawer-wrap"]//input',randomData.get_rangenemail(9),-1)
                 time.sleep(1)
                 #新增
                 common.display_click('xpath,//div[@class="ivu-drawer-wrap"]//span',-1)
@@ -399,7 +403,7 @@ class Location_withdrawal_incp():
         time.sleep(1)
         new_str=str(4)+str(traccount)
         for i in range(0,self.len_incp):
-            if pub_method.extract_numbers(common.get_text('css,.account-number-cla',i)) == new_str:
+            if randomData.extract_numbers(common.get_text('css,.account-number-cla',i)) == new_str:
                 return i+1
                 break
 
@@ -507,7 +511,7 @@ class Location_withdrawal_incp():
                 common.display_click('css,[x-placement="bottom-start"] .el-select-dropdown__item')
                 time.sleep(1)
             #获取当前交易账号可取款金额
-            self.withdrawal_amount=float(pub_method.extract_numbers(common.display_get_text('xpath,//div[@class="balance"]')))/100
+            self.withdrawal_amount=float(randomData.extract_numbers(common.display_get_text('xpath,//div[@class="balance"]')))/100
             print('当前交易账号可取款金额为：{}'.format(self.withdrawal_amount))
             if int(amount)>=self.withdrawal_amount:
                 print('取款金额大于可取款金额，更改出金金额为可取款金额的1/2：{}'.format(int(self.withdrawal_amount/2)))

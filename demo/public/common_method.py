@@ -1,9 +1,13 @@
 import time
+
 from selenium import webdriver
-from other_actions import Public_method
 
-pub_method=Public_method()
+from read_dataconfig import ReadConfig
 
+from handlelog import MyLog
+#实例化
+conFig=ReadConfig()
+log=MyLog()
 
 class Commonmethod():
     """
@@ -31,7 +35,10 @@ class Commonmethod():
     def remove_register_topup(self):
         try:
             time.sleep(1)
-            self.driver.find_element_by_css_selector('.blk-sure-btn').click()
+            if conFig.get_value('ip', 'ip')=='香港':
+                self.driver.find_element_by_css_selector('.blk-sure-btn').click()
+            else:
+                pass
         except Exception as msg:
             log.my_logger('!!--!!remove_register_topup').error(msg)
 
@@ -99,6 +106,9 @@ class Commonmethod():
 
     #选择bos页面语言
     def choose_bos_lang(self,lang):
+        """
+        :param lang:CN/简中
+        """
         try:
             if lang=='CN' or lang=='简中':
                 self.driver.find_element_by_css_selector('.ivu-icon-ios-arrow-down').click()

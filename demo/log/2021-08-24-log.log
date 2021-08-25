@@ -1,0 +1,108 @@
+!!--!!display_input - 2021-08-24 11:23:45,419 - browser_actions - [browser_actions.py-->line:221] - ERROR: object of type 'float' has no len()
+!!--!!display_click - 2021-08-24 11:33:04,168 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_click - 2021-08-24 11:40:14,810 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_click - 2021-08-24 11:44:54,617 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_click - 2021-08-24 15:07:35,081 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!choose_bos_lang - 2021-08-24 15:26:41,466 - common_method - [common_method.py-->line:120] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (1089, 237). Other element would receive the click: <div data-v-78625cba="" class="background"></div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!choose_bos_lang - 2021-08-24 15:34:22,004 - common_method - [common_method.py-->line:120] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (594, 216). Other element would receive the click: <div data-v-78625cba="" class="border-part"></div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!choose_bos_lang - 2021-08-24 15:34:41,834 - common_method - [common_method.py-->line:120] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (594, 216). Other element would receive the click: <div data-v-78625cba="" class="border-part"></div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-24 16:00:54,889 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-24 16:00:54,890 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-24 16:00:54,891 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!login_bos - 2021-08-24 16:23:30,425 - common_method - [common_method.py-->line:133] - ERROR: HTTPConnectionPool(host='127.0.0.1', port=64676): Max retries exceeded with url: /session/9e3d484e736989af1ffdf31bf493d102/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x152869B8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+!!--!!display_finds_element - 2021-08-24 16:23:39,591 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：HTTPConnectionPool(host='127.0.0.1', port=64676): Max retries exceeded with url: /session/9e3d484e736989af1ffdf31bf493d102/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x154D23A0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+!!--!!nosuch_elements - 2021-08-24 16:23:39,592 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-24 16:23:39,593 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-08-24 16:23:47,759 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：HTTPConnectionPool(host='127.0.0.1', port=64676): Max retries exceeded with url: /session/9e3d484e736989af1ffdf31bf493d102/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x154D2988>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+!!--!!display_finds_element - 2021-08-24 16:23:47,759 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：HTTPConnectionPool(host='127.0.0.1', port=64676): Max retries exceeded with url: /session/9e3d484e736989af1ffdf31bf493d102/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x154D2988>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+!!--!!nosuch_elements - 2021-08-24 16:23:47,760 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-24 16:23:47,760 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-24 16:23:47,761 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-08-24 16:23:47,761 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_elements - 2021-08-24 16:23:55,916 - browser_actions - [browser_actions.py-->line:84] - ERROR: 元素不存在或者不可见：HTTPConnectionPool(host='127.0.0.1', port=64676): Max retries exceeded with url: /session/9e3d484e736989af1ffdf31bf493d102/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x154C2640>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+!!--!!find_element - 2021-08-24 16:23:55,917 - browser_actions - [browser_actions.py-->line:131] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2021-08-24 16:23:55,918 - browser_actions - [browser_actions.py-->line:231] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!login_bos - 2021-08-24 16:33:29,924 - common_method - [common_method.py-->line:133] - ERROR: HTTPConnectionPool(host='127.0.0.1', port=60168): Max retries exceeded with url: /session/a51008a4d50d1e6c3c58fdea4fb973a2/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x154D5898>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+!!--!!url_error - 2021-08-24 17:03:34,535 - browser_actions - [browser_actions.py-->line:55] - WARNING: 请输入正确的域名
+!!--!!display_click - 2021-08-24 17:45:33,470 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_click - 2021-08-24 18:05:56,594 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element click intercepted: Element <li data-v-80f70554="" class="ivu-menu-item">...</li> is not clickable at point (100, 435). Other element would receive the click: <div data-v-efcf8c52="" class="sider ivu-layout-sider smooth-vuebar" data-scrollbar="true" tabindex="-1" style="width: 200px; min-width: 200px; max-width: 200px; flex: 0 0 200px; overflow: hidden; outline: none;">...</div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!login_bos - 2021-08-24 18:06:05,836 - common_method - [common_method.py-->line:133] - ERROR: Message: no such element: Unable to locate element: {"method":"css selector","selector":".ivu-btn-large"}
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-24 18:06:18,897 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-24 18:06:18,898 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-24 18:06:18,898 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-08-24 18:06:18,898 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-08-24 18:08:03,837 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element click intercepted: Element <li data-v-80f70554="" class="ivu-menu-item">...</li> is not clickable at point (100, 633). Other element would receive the click: <div data-v-efcf8c52="" class="sider ivu-layout-sider smooth-vuebar" data-scrollbar="true" tabindex="-1" style="width: 200px; min-width: 200px; max-width: 200px; flex: 0 0 200px; overflow: hidden; outline: none;">...</div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!login_bos - 2021-08-24 18:08:13,073 - common_method - [common_method.py-->line:133] - ERROR: Message: no such element: Unable to locate element: {"method":"css selector","selector":".ivu-btn-large"}
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!login_bos - 2021-08-24 18:12:35,165 - common_method - [common_method.py-->line:133] - ERROR: Message: no such element: Unable to locate element: {"method":"css selector","selector":".ivu-btn-large"}
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-24 18:21:06,169 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-24 18:21:06,170 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-24 18:21:06,171 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-08-24 18:21:11,740 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-08-24 18:21:11,740 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-24 18:21:11,742 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-24 18:21:11,742 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-24 18:21:11,743 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-08-24 18:21:11,743 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!nosuch_elements - 2021-08-24 18:21:11,752 - browser_actions - [browser_actions.py-->line:144] - ERROR: list index out of range
+!!--!!nosuch_elements - 2021-08-24 18:21:11,752 - browser_actions - [browser_actions.py-->line:144] - ERROR: list index out of range
+!!--!!nosuch_elements - 2021-08-24 18:21:11,752 - browser_actions - [browser_actions.py-->line:144] - ERROR: list index out of range
+!!--!!display_click - 2021-08-24 18:21:11,754 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-08-24 18:21:11,754 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-08-24 18:21:11,754 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-08-24 18:25:16,191 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-24 18:25:16,191 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-24 18:25:16,191 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-08-24 18:25:27,432 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-08-24 18:25:27,432 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-24 18:25:27,433 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-24 18:25:27,433 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-24 18:25:27,434 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-08-24 18:25:27,434 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-08-24 18:27:46,714 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-24 18:27:46,715 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2021-08-24 18:27:46,716 - browser_actions - [browser_actions.py-->line:151] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2021-08-24 18:27:52,247 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-08-24 18:27:52,247 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-24 18:27:52,248 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-24 18:27:52,248 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-24 18:27:52,249 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!login_bos - 2021-08-24 19:01:25,435 - common_method - [common_method.py-->line:133] - ERROR: Message: no such element: Unable to locate element: {"method":"css selector","selector":".ivu-btn-large"}
+  (Session info: chrome=92.0.4515.159)
+

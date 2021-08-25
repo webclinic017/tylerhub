@@ -1,18 +1,23 @@
-import sys
 import os
-import time
 import random
+import sys
+import time
+
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 path_public=path_demo+r'\public'
 sys.path.append(path_public)
 from browser_actions import Commonweb
-from other_actions import Public_method
 from common_method import Commonmethod
+from handlelog import MyLog
+from randomdata import Random_data
+from read_dataconfig import ReadConfig
 
+#实例化
+randomData=Random_data()
+conFig=ReadConfig()
+log=MyLog()
 
-pub_method=Public_method()
-
-class review_actions(Commonweb):
+class Review_actions(Commonweb):
     
     global driver
 
@@ -22,9 +27,9 @@ class review_actions(Commonweb):
         self.commethd=Commonmethod(self.driver)
 
     #登录bos并打开客户名单页
-    def login_bos(self,username,psword,lang='CN'):
+    def login_bos(self,environment,username,psword,lang='CN'):
         try:
-            self.open_web('https://at-bos-frontend-uat.atfxdev.com/login')
+            self.open_web(conFig.get_value('bos_login', '{}'.format(environment)))
             #选择页面语言
             self.commethd.choose_bos_lang(lang)
             time.sleep(1)
@@ -50,10 +55,11 @@ class review_actions(Commonweb):
             #点击主账号进入账号详情页
             self.web_click('css,div.ivu-table-overflowX>table>tbody>tr>td',1)
             time.sleep(1)
+            print(self.title())
             self.switch_windows(1)
             time.sleep(1)
             #IB账户
-            if account[0:2]=='10':
+            if str(account)[0:2]=='10':
                 self.ibtype()
             else:
                 pass
@@ -71,7 +77,7 @@ class review_actions(Commonweb):
             self.display_click('css,ul.ivu-dropdown-menu>li.ivu-dropdown-item',1)
             time.sleep(1)
             #输入随机邮编
-            self.web_input('css,div.ivu-form-item-required>div>div>input',pub_method.get_purerange(6,'number'),1)
+            self.web_input('css,div.ivu-form-item-required>div>div>input',randomData.get_purerange(6,'number'),1)
             time.sleep(2)
             #点击确定
             self.web_click('css,button.ivu-btn-primary>span>span',2)
@@ -116,7 +122,7 @@ class review_actions(Commonweb):
             self.web_clear('css,.ivu-input-small')
             time.sleep(1)
             #输入随机代理代码
-            self.display_input('css,.ivu-input-small',pub_method.get_rangenum(8))
+            self.display_input('css,.ivu-input-small',randomData.get_rangenum(8))
             time.sleep(1)
             #保存
             self.web_click('css,.ivu-icon-md-checkmark')
@@ -153,5 +159,5 @@ class review_actions(Commonweb):
         self.quit_browser()
     
 if __name__=='__main__':
-    print(pub_method.get_rangenum(8))
-    print(pub_method.get_purerange(8,'number'))
+    print(randomData.get_rangenum(8))
+    print(randomData.get_purerange(8,'number'))

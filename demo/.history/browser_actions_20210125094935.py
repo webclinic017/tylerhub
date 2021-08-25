@@ -1,12 +1,12 @@
 from selenium import webdriver
 import time
-from other_actions import *
+from randomdata import *
 from selenium.webdriver.common.action_chains import ActionChains
 import os
 from selenium.webdriver.support.wait import WebDriverWait
 
 #实例化公共方法模块
-pub_method=Public_method()
+randomData=Random_data()
 """此模块用于存放浏览器相关操作方法"""
 
 class Commonweb():

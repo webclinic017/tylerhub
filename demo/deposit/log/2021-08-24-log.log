@@ -1,0 +1,3 @@
+!!--!!Deposit_bos_comply - 2021-08-24 16:24:25,073 - location_deposit_of_bos - [location_deposit_of_bos.py-->line:268] - ERROR: 'Location_deposit_bos' object has no attribute 'tdaccount_list_len'
+!!--!!deposti_is_selected - 2021-08-24 17:24:24,420 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:194] - ERROR: 'Locations_of_deposit' object has no attribute 'status_num'
+!!--!!get_traccount_balance - 2021-08-24 18:25:10,603 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:228] - ERROR: unsupported operand type(s) for *: 'int' and 'NoneType'

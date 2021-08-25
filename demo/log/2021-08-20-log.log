@@ -1,0 +1,137 @@
+!!--!!display_finds_element - 2021-08-20 09:43:38,167 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!nosuch_elements - 2021-08-20 09:43:38,168 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-20 09:43:38,169 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-08-20 09:43:45,573 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-20 09:43:45,573 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!nosuch_elements - 2021-08-20 09:43:45,575 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-20 09:43:45,575 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2021-08-20 09:43:45,576 - browser_actions - [browser_actions.py-->line:245] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2021-08-20 09:43:46,583 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-20 09:43:46,583 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-20 09:43:46,583 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!nosuch_elements - 2021-08-20 09:43:46,585 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-20 09:43:46,585 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-20 09:43:46,585 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-20 09:43:46,586 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-08-20 09:43:46,586 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-08-20 09:43:47,597 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-20 09:43:47,597 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-20 09:43:47,597 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-20 09:43:47,597 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!nosuch_elements - 2021-08-20 09:43:47,601 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-20 09:43:47,601 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-20 09:43:47,601 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-20 09:43:47,601 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2021-08-20 09:43:47,602 - browser_actions - [browser_actions.py-->line:245] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2021-08-20 09:43:47,602 - browser_actions - [browser_actions.py-->line:245] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2021-08-20 09:43:48,606 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-20 09:43:48,606 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-20 09:43:48,606 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-20 09:43:48,606 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-20 09:43:48,606 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!nosuch_elements - 2021-08-20 09:43:48,610 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-20 09:43:48,610 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-20 09:43:48,610 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-20 09:43:48,610 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-20 09:43:48,610 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-20 09:43:48,613 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-08-20 09:43:48,613 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-08-20 09:43:48,613 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-08-20 09:44:49,185 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-20 09:44:49,186 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2021-08-20 09:44:49,187 - browser_actions - [browser_actions.py-->line:245] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2021-08-20 09:44:55,751 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-08-20 09:44:55,751 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-20 09:44:55,753 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-20 09:44:55,753 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-20 09:44:55,754 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-08-20 09:45:56,123 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-20 09:45:56,123 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2021-08-20 09:45:56,124 - browser_actions - [browser_actions.py-->line:245] - ERROR: 'NoneType' object has no attribute 'text'
+Tyler - 2021-08-20 10:49:35,849 - handlelog - [handlelog.py-->line:56] - ERROR: itestet
+!!--!!click_error - 2021-08-20 11:02:46,151 - browser_actions - [browser_actions.py-->line:254] - ERROR: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_click - 2021-08-20 11:02:52,191 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-20 11:02:58,737 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-20 11:02:58,739 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-20 11:02:58,740 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-08-20 11:02:58,740 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-08-20 15:42:22,593 - browser_actions - [browser_actions.py-->line:254] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-08-20 15:42:28,607 - browser_actions - [browser_actions.py-->line:254] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-08-20 15:42:28,607 - browser_actions - [browser_actions.py-->line:254] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-08-20 15:46:55,947 - browser_actions - [browser_actions.py-->line:254] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-08-20 15:47:02,007 - browser_actions - [browser_actions.py-->line:254] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-08-20 15:47:02,007 - browser_actions - [browser_actions.py-->line:254] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-08-20 15:49:45,259 - browser_actions - [browser_actions.py-->line:254] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-08-20 16:34:04,255 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_click - 2021-08-20 16:45:58,208 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!input_error - 2021-08-20 17:39:37,492 - browser_actions - [browser_actions.py-->line:214] - ERROR: object of type 'float' has no len()
+!!--!!display_click - 2021-08-20 18:02:14,939 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element click intercepted: Element <span data-v-2b64de05="" class="badge ivu-badge">...</span> is not clickable at point (1473, 25). Other element would receive the click: <div data-v-efcf8c52="" class="header_1 ivu-layout-header">...</div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_click - 2021-08-20 18:02:20,996 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_click - 2021-08-20 18:02:20,996 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!click_error - 2021-08-20 18:14:44,084 - browser_actions - [browser_actions.py-->line:254] - ERROR: Message: element click intercepted: Element <td class="ivu-table-column-LOYRkz">...</td> is not clickable at point (493, 313). Other element would receive the click: <div class="ivu-spin ivu-spin-large ivu-spin-fix fade-leave fade-leave-active">...</div>
+  (Session info: chrome=92.0.4515.159)
+

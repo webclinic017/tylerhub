@@ -1,0 +1,15 @@
+!!--!!get_lever - 2021-08-23 11:43:19,807 - verify_message_location - [verify_message_location.py-->line:108] - ERROR: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+!!--!!login_bos - 2021-08-23 15:17:48,106 - verify_message_location - [verify_message_location.py-->line:52] - ERROR: name 'log' is not defined
+!!--!!enter_details_page - 2021-08-23 15:17:52,169 - verify_message_location - [verify_message_location.py-->line:76] - ERROR: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!is_traccount_onlyone - 2021-08-23 15:17:53,188 - verify_message_location - [verify_message_location.py-->line:92] - ERROR: '>' not supported between instances of 'NoneType' and 'int'
+!!--!!get_lever - 2021-08-23 15:17:53,487 - verify_message_location - [verify_message_location.py-->line:108] - ERROR: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+!!--!!get_markup - 2021-08-23 15:17:53,512 - verify_message_location - [verify_message_location.py-->line:125] - ERROR: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+!!--!!login_bos - 2021-08-23 15:53:03,477 - verify_message_location - [verify_message_location.py-->line:52] - ERROR: name 'log' is not defined
+!!--!!enter_details_page - 2021-08-23 15:53:03,755 - verify_message_location - [verify_message_location.py-->line:76] - ERROR: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!is_traccount_onlyone - 2021-08-23 15:53:16,931 - verify_message_location - [verify_message_location.py-->line:92] - ERROR: '>' not supported between instances of 'NoneType' and 'int'
+!!--!!get_lever - 2021-08-23 15:53:41,646 - verify_message_location - [verify_message_location.py-->line:108] - ERROR: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+!!--!!get_markup - 2021-08-23 15:54:05,970 - verify_message_location - [verify_message_location.py-->line:125] - ERROR: int() argument must be a string, a bytes-like object or a number, not 'NoneType'

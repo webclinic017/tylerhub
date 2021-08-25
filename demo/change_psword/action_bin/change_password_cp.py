@@ -1,9 +1,9 @@
 '''
-Author: your name
+Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-08-04 23:47:52
+LastEditTime: 2021-08-24 10:47:34
 LastEditors: Please set LastEditors
-Description: In User Settings Edit
+Description: Enforcement change password testcase
 FilePath: \tylerhub\demo\change_psword\action_bin\Change_password_cp.py
 '''
 import os
@@ -13,14 +13,18 @@ import unittest
 import ddt
 from BeautifulReport import BeautifulReport
 
-path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))+r'\public'
+path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'public')
+print(path_public)
 sys.path.append(path_public)
 path_psword=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_psword+r'\location')
 from about_data import Exceldata
-from locate_change_pswd_cp import location
+from locate_change_pswd_cp import Location
+from read_dataconfig import ReadConfig
 
+#实例化
 loca=Location()
+conFig=ReadConfig()
 
 #读取测试数据
 e=Exceldata()
@@ -33,7 +37,7 @@ class Change_in_cp(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         loca.broswertype()
-        loca.geturl('tyler.tang','Tl123456')
+        loca.geturl('sit',conFig.get_value('bos_login', 'username'),conFig.get_value('bos_login', 'password'))
 
     def tearDown(self):
         if self.data_index==testdata.index(testdata[-1]):
@@ -55,6 +59,6 @@ class Change_in_cp(unittest.TestCase):
 if __name__=='__main__':
     #测试报告
     suit=unittest.defaultTestLoader.discover(os.path.dirname(os.path.abspath(__file__)),
-    pattern='Change_password_cp.py',top_level_dir=None)
+    pattern='change_password_cp.py',top_level_dir=None)
     BeautifulReport(suit).report(filename='忘记密码页面修改密码密',description='非同名账号忘记密码页面修改修改密码流程',
-    report_dir=path_psword+r'\changepsword_report')
+    report_dir=path_psword+r'\report')

@@ -37,11 +37,11 @@
 
 # from browser_actions import Commonweb
 # from selenium import webdriver
-# from other_actions import Public_method
+# from randomdata import Random_data
 # import time
 
 # c=Commonweb()
-# p=Public_method()
+# p=Random_data()
 # c.open_browser()
 # c.open_web('https://www.baidu.com/')
 # time.sleep(2)
@@ -94,12 +94,12 @@
 
 # # d=lambda y:test(y)
 # from browser_actions import Commonweb
-# from other_actions import Public_method
+# from randomdata import Random_data
 # import time
 # import datetime
 
 # c=Commonweb()
-# p=Public_method()
+# p=Random_data()
 # c.open_browser()
 # c.open_web('https://at-bos-frontend-uat.atfxdev.com/login')
 # c.display_input('css,.ivu-input-default','tyler.tang')
@@ -409,10 +409,69 @@
 
 #     def a(self,b):
 #         print(self.configpath)
-#         print(b)
+# #         print(b)
 
-# c=A()
-# c.a('我是第二个路径')
+# # c=A()
+# # c.a('我是第二个路径')
+
+# # def test_kwargs(**kwargs):
+# #     print(kwargs)
+# #     print(type(kwargs))
+# #     for key, value in kwargs.items():
+# #         print("{} = {}".format(key, value))
+
+# # test_kwargs(a=122,b=888)
+
+# import allure
+# import pytest
+# import os 
+# import sys
+# import subprocess
+# from handlelog import MyLog
+
+# path_public=os.path.dirname(os.path.abspath(__file__))
+# sys.path.append(path_public)
+
+# @allure.feature("智能质检系统")
+# class TestCheck():
+
+#     @allure.story("智能质检系统-接口用例")
+#     def test_case_check(self):
+#         with allure.step('我是一个步骤'):
+#             print(55555)
+
+# if __name__ == "__main__":
+#     pytest.main(['-s','-v',r'{}\test_debug.py'.format(path_public),
+#     r'--alluredir={}\report\report_data'.format(path_public),'--disable-pytest-warnings'])
+#     subprocess.call(r'allure generate {}\report\report_data -o {}\report\new_report --clean'.format(path_public,path_public),shell=True)
+#     subprocess.call(r'allure serve {}\report\report_data'.format(path_public),shell=True)
+# with open(r'D:\code\tylerhub\demo\registration_process\register_actions_bin\picture\test11.png','rb') as f:
+#     comtent=f.read()
+
+# def A(a:int)->int:
+#     print(type(a))
+
+from browser_actions import Commonweb
+from common_method import Commonmethod
+import time
+
+common=Commonweb()
+comthod=Commonmethod(common.open_browser())
+
+common.open_web('https://at-bos-frontend-sit.atfxdev.com/login')
+time.sleep(1)
+comthod.choose_bos_lang('CN')
+comthod.loginbos('tyler.tang', 'Tl123456')
+common.display_click('css,.ivu-badge >span',3)
+
+print(common.get_attributes('xpath,//*[@id="app"]/div/div/div[1]/div[1]/div[1]/div/ul/li[2]/ul', 'style')=='')
+common.display_click('css,.ivu-badge >span',3)
+print(common.get_attributes('xpath,//*[@id="app"]/div/div/div[1]/div[1]/div[1]/div/ul/li[2]/ul', 'style'))
+
+
+
+
+
 
 
 

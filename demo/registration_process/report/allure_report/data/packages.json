@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "demo.registration_process.register_actions_bin.test_verify_data_bin",
+    "children" : [ {
+      "name" : "test_verfity[data0]",
+      "uid" : "b54627ee28530083",
+      "parentUid" : "261cfc81a50b785716fa301798fb2525",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629722575835,
+        "stop" : 1629722593054,
+        "duration" : 17219
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+    } ],
+    "uid" : "demo.registration_process.register_actions_bin.test_verify_data_bin"
+  } ]
+}

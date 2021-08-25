@@ -1,18 +1,20 @@
 '''
-Author: your name
+Author: tyler
 Date: 2021-08-04 21:45:29
-LastEditTime: 2021-08-05 00:05:47
-LastEditors: your name
-Description: In User Settings Edit
+LastEditTime: 2021-08-24 10:52:52
+LastEditors: Please set LastEditors
+Description: Logoutput
 FilePath: \tylerhub\demo\public\handlelog.py
 '''
+import datetime
 import logging
 import os
 import sys
-from read_dataconfig import ReadConfig
-import datetime
 
-read=ReadConfig()
+from read_dataconfig import ReadConfig
+
+#实例化
+conFig=ReadConfig()
 
 class MyLog():
     """
@@ -25,21 +27,21 @@ class MyLog():
         self.lineNo = sys._getframe().f_back.f_lineno
 
     # @staticmethod
-    def my_logger(self,name=read.get_value('log','name')):
+    def my_logger(self,name=conFig.get_value('log','name')):
         """
         输出日志到控制台及日志文件中,只有高于WARN级别的日志才会输出到日志文件中，其他级别日志仅输出到控制台
         """
         try:
             # 创建收集器，设置收集器的等级
             logger = logging.getLogger(name)
-            logger.setLevel(read.get_value('log','level'))
+            logger.setLevel(conFig.get_value('log','level'))
             # 创建输出到控制台的渠道，设置等级
             sh_log = logging.StreamHandler()
-            sh_log.setLevel(read.get_value('log','info_level'))
+            sh_log.setLevel(conFig.get_value('log','info_level'))
             logger.addHandler(sh_log)
             # 创建输出到文件的渠道，设置等级
             fh_log = logging.FileHandler(filename=os.path.join(self.moudlePath,'{}-log.log'.format(datetime.datetime.now().strftime('%Y-%m-%d'))), encoding="utf8")
-            fh_log.setLevel(read.get_value('log','warn_level')) 
+            fh_log.setLevel(conFig.get_value('log','warn_level')) 
             logger.addHandler(fh_log)
             # 设置日志输出格式
             formater = '%(name)s - %(asctime)s - %(module)s - [%(filename)s-->line:%(lineno)d] - %(levelname)s: %(message)s'

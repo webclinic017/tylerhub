@@ -1,0 +1,2 @@
+!!--!!get_code - 2021-08-19 18:16:30,043 - locate_change_pswd_cp - [locate_change_pswd_cp.py-->line:135] - ERROR: name 'randomData' is not defined
+!!--!!change_psword - 2021-08-19 18:16:30,057 - locate_change_pswd_cp - [locate_change_pswd_cp.py-->line:95] - ERROR: 'Location' object has no attribute 'email_code'

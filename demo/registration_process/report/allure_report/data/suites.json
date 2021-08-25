@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "demo.registration_process.register_actions_bin",
+    "children" : [ {
+      "name" : "test_verify_data_bin",
+      "children" : [ {
+        "name" : "Test_verify_data",
+        "children" : [ {
+          "name" : "test_verfity[data0]",
+          "uid" : "b54627ee28530083",
+          "parentUid" : "25fa6d497d8fe6a0da6e3a7432c41619",
+          "status" : "passed",
+          "time" : {
+            "start" : 1629722575835,
+            "stop" : 1629722593054,
+            "duration" : 17219
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+        } ],
+        "uid" : "25fa6d497d8fe6a0da6e3a7432c41619"
+      } ],
+      "uid" : "4d72936afe7c34359d69a902cbfbaaa4"
+    } ],
+    "uid" : "0675ce4e42eb51adeb0c7087b244ba96"
+  } ]
+}

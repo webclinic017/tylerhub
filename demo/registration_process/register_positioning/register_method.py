@@ -1,22 +1,26 @@
-import sys
 import os
+import sys
 import time
-path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-path_public=path_demo+r'\public'
+
+path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'public')
 sys.path.append(path_public)
-from browser_actions import Commonweb
-from other_actions import Public_method
 from about_data import Exceldata
-from verification_code import time_used
+from browser_actions import Commonweb
 from common_method import Commonmethod
+from handlelog import MyLog
+from randomdata import Random_data
+from read_dataconfig import ReadConfig
+from verification_code import time_used
 
-ex=Exceldata()
-pub_method=Public_method()
+#实例化
 common=Commonweb()
-
+randomData=Random_data()
+ex=Exceldata()
+log=MyLog()
+conFig=ReadConfig()
 
 #创建继承基础类的注册页表单操作模块
-class form_operations():
+class Form_operations():
     """会员中心注册页表单方法封装，注册页表单填写，定位元素封装在此类中，若页面元素发生变化，维护此模块即可"""
     global driver
     
@@ -27,7 +31,7 @@ class form_operations():
 
 
     #根据链接/邀请码/直客注册
-    def get_url(self,url,code,column,row): #link:专属链接；code:邀请码；cloumn:列；row:行
+    def get_url(self,environment,url,code,column,row): #link:专属链接；code:邀请码；cloumn:列；row:行
         """判断是通过专属链接还是邀请码注册"""
         #获取当前项目路径
         path_process=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -35,13 +39,13 @@ class form_operations():
             if len(url)!=0:
                 #通过ib专属链接注册
                 common.open_web(url)
-                ex.saveainfo(path_process+r'\test_excel_data\account_number.xlsx','专属链接', column, row) #
+                ex.saveainfo(os.path.join(path_process,'test_excel_data\account_number.xlsx'),'专属链接', column, row) #
                 time.sleep(2)
                 self.commethod.remove_register_topup() #去除弹窗
                 print('专属链接注册')
             elif len(code)!=0:
                 #通过邀请码
-                common.open_web('https://at-client-portal-uat.atfxdev.com/register')
+                common.open_web(conFig.get_value('cp_register','{}'.format(environment)))
                 time.sleep(2)
                 ex.saveainfo(path_process+r'\test_excel_data\account_number.xlsx','邀请码', column, row)#备注注册方式
                 self.commethod.remove_register_topup()
@@ -51,7 +55,7 @@ class form_operations():
                 print('邀请码注册')
             else:
                 #直客注册
-                common.open_web('https://at-client-portal-uat.atfxdev.com/register')
+                common.open_web(conFig.get_value('cp_register','{}'.format(environment)))
                 ex.saveainfo(path_process+r'\test_excel_data\account_number.xlsx','直客', column, row)#备注注册方式
                 time.sleep(2)
                 self.commethod.remove_register_topup()
@@ -94,7 +98,7 @@ class form_operations():
             #输入姓氏
             common.display_input('css,.el-input__inner',lastname,2)
             #输入随机手机号码
-            common.display_input('css,.el-input__inner',pub_method.get_rangephone(),4)
+            common.display_input('css,.el-input__inner',randomData.get_rangephone(),4)
             #输入电子邮箱
             common.display_input('css,.el-input__inner',emali,5)
             #输入登录密码

@@ -9,10 +9,10 @@ sys.path.append(path_public)
 from about_data import Exceldata
 from browser_actions import Commonweb
 from common_method import Commonmethod
-from other_actions import Public_method
+from randomdata import Random_data
 
 common=Commonweb()
-pub_method=Public_method()
+randomData=Random_data()
 e=Exceldata()
 
 
@@ -98,7 +98,7 @@ class Location_of_transfer():
         time.sleep(1)
         new_str=str(4)+str(tdaccount)
         for i in range(0,self.len_incp):
-            if pub_method.extract_numbers(common.get_text('css,.account-number-cla',i)) == new_str:
+            if randomData.extract_numbers(common.get_text('css,.account-number-cla',i)) == new_str:
                 return i+1
                 break
 
@@ -332,7 +332,7 @@ class Location_of_transfer():
             common.display_click('xpath,//span[contains(.,"MT4 - {} (USD)")]'.format(tdaccount_from),-1)
             time.sleep(3)
             #获取当前交易账号可转金额
-            self.transfer_balance=float(pub_method.extract_numbers(common.display_get_text('xpath,//div[@class="balance"]')))/100
+            self.transfer_balance=float(randomData.extract_numbers(common.display_get_text('xpath,//div[@class="balance"]')))/100
             print('当前交易账号可转余额为：{}'.format(self.transfer_balance))
             time.sleep(1)
             if self.transfer_balance >= int(amount):#可转金额大于转账金额

@@ -23,7 +23,7 @@
 
 [31m[1mERROR   [0m !!--!!nosuch_elements:browser_actions.py:144 object of type 'NoneType' has no len()
 [31m[1mERROR   [0m !!--!!display_get_text:browser_actions.py:245 'NoneType' object has no attribute 'text'
-[31m[1mERROR   [0m !!--!!extract_numbers:other_actions.py:81 expected string or bytes-like object
+[31m[1mERROR   [0m !!--!!extract_numbers:randomdata.py:81 expected string or bytes-like object
 [31m[1mERROR   [0m !!--!!withdrawal_action:location_withdrawal_cp.py:529 float() argument must be a string or a number, not 'NoneType'
 [31m[1mERROR   [0m !!--!!review_withdrawal:location_withdrawal_cp.py:568 Message: chrome not reachable
   (Session info: chrome=90.0.4430.212)

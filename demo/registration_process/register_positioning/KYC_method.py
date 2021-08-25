@@ -2,20 +2,24 @@ import os
 import sys
 import time
 
-path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-path_public=path_demo+r'\public'
+path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'public')
 sys.path.append(path_public)
 from browser_actions import Commonweb
-from other_actions import Public_method
 from common_method import Commonmethod
+from handlelog import MyLog
+from randomdata import Random_data
+from read_dataconfig import ReadConfig
 
 path_process=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 #实例化对象
-pub_method=Public_method()
+randomData=Random_data()
 common=Commonweb()
+log=MyLog()
+conFig=ReadConfig()
 
 #继承基本类
-class kyc_approve():
+class Kyc_approve():
     global driver
 
     #默认以谷歌浏览器执行测试用例
@@ -33,9 +37,9 @@ class kyc_approve():
         self.commethod.choose_register_lang(lang)
 
     #访问会员中心及BOS登录页,选择页面语言
-    def loginweb(self,lang):
+    def loginweb(self,environment,lang):
         try:
-            common.open_web('https://at-client-portal-uat.atfxdev.com/login')
+            common.open_web(conFig.get_value('cp_login', '{}'.format(environment)))
             #点击弹窗
             common.switch_windows(0)
             self.commethod.remove_register_topup()
@@ -44,7 +48,7 @@ class kyc_approve():
             self.cp_lang(lang)
             time.sleep(1)
             #新开窗口访问bos登录页
-            common.js_openwindows('https://at-bos-frontend-uat.atfxdev.com/login')
+            common.js_openwindows(conFig.get_value('bos_login', '{}'.format(environment)))
             #切换窗口
             common.switch_windows(1)
             #选择页面语言
@@ -66,26 +70,26 @@ class kyc_approve():
             time.sleep(1)
             common.web_click('css,.confirm-btn')
         except Exception as msg:
-            log.my_logger('!!--!!topup').error('首次登录弹窗点击失败{}'.format(msg))
+            log.my_logger('!!--!!fisrtcp_top').error('首次登录弹窗点击失败{}'.format(msg))
 
     #获取登录成功后的主账号
-    def Get_account_(self):
+    def get_account_(self):
         try:
             time.sleep(5)
             #获取主账号文本
             acc=common.display_get_text('css,.user-name-font')
             #提取数字
-            self.account=pub_method.extract_numbers(acc)
+            self.account=randomData.extract_numbers(acc)
             return self.account
         except Exception as msg:
-            log.my_logger('!!--!!topup').error('获取主账号失败{}'.format(msg))
+            log.my_logger('!!--!!get_account_').error('获取主账号失败{}'.format(msg))
 
     #判断是否为返佣账号，如是，点击返佣申请表格
     def is_rebate_type(self):
         if self.account[0:2]=='10':
             #点击代理申请
-            time.sleep(2)
-            common.display_click('css,.el-button--primary')
+            # time.sleep(1)
+            # common.display_click('css,.el-button--primary')
             time.sleep(2)
             #同意IB协议
             common.web_click('css,div.ps-agree-bot .el-checkbox__inner')
@@ -175,15 +179,15 @@ class kyc_approve():
             time.sleep(1)
             #双击选择年份
             common.doubleclick('css,.el-picker-panel__icon-btn')
-            time.sleep(2)
-            common.web_click('css,table>tbody>tr>td.available',pub_method.random_int(31,40)) #年
             time.sleep(1)
-            common.web_click('css,table.el-month-table>tbody>tr>td',pub_method.random_int(0,11))#月
+            common.web_click('css,table>tbody>tr>td.available',randomData.random_int(31,40)) #年
             time.sleep(1)
-            common.web_click('css,table.el-date-table>tbody>tr.el-date-table__row>td',pub_method.random_int(0,41))#日
+            common.web_click('css,table.el-month-table>tbody>tr>td',randomData.random_int(0,11))#月
+            time.sleep(1)
+            common.web_click('css,table.el-date-table>tbody>tr.el-date-table__row>td',randomData.random_int(0,41))#日
             time.sleep(1)
             #随机性别
-            common.web_click('css,.el-radio__inner',pub_method.random_int(0,1))
+            common.web_click('css,.el-radio__inner',randomData.random_int(0,1))
             time.sleep(1)
         except Exception as msg:
             log.my_logger('!!--!!choose_data_gender').error(msg)
@@ -192,10 +196,10 @@ class kyc_approve():
     def submit(self):
         try:
             #输入证件号码
-            common.web_input('css,.el-input__inner',pub_method.get_purerange(12,'number'),5)
+            common.web_input('css,.el-input__inner',randomData.get_purerange(12,'number'),5)
             time.sleep(1)
             #输入居住地址
-            common.web_input('css,.el-input__inner',pub_method.get_purerange(12,'letter'),8)
+            common.web_input('css,.el-input__inner',randomData.get_purerange(12,'letter'),8)
             time.sleep(1)
             #勾选协议
             common.web_click('css,.el-checkbox__inner',1)
@@ -231,7 +235,7 @@ class kyc_approve():
             #获取验证码文本
             acc_text=common.get_text('xpath,//div[@class="ivu-drawer-wrap"]//tr[2]//tr[4]/td[1]/span')
             #提取数字
-            self.emailcode=pub_method.extract_numbers(acc_text)
+            self.emailcode=randomData.extract_numbers(acc_text)
             #关闭当前页面
             self.closedriver()
             return self.emailcode
@@ -240,9 +244,6 @@ class kyc_approve():
 
     #中国区账号操作
     def china_kyc(self):
-        #点击完善个人资料
-        common.web_click('css,.el-button--primary')
-        time.sleep(1)
         #上传正反面证件照
         common.display_click('css,.img-text-required')
         time.sleep(1)
@@ -255,7 +256,7 @@ class kyc_approve():
         common.js_scroll('down')
         time.sleep(1)
         #一键填充
-        common.display_click('css,div.el-col-8 > button > span',1)
+        #common.display_click('css,div.el-col-8 > button > span',1)
         time.sleep(3)
         #点击下一步
         common.web_click('css,.submit-btn')
@@ -268,7 +269,7 @@ class kyc_approve():
         #重新输入银行卡号
         common.web_clear('css,.el-input__inner')
         time.sleep(1)
-        common.display_input('css,.el-input__inner',pub_method.get_purerange(14,'number'))
+        common.display_input('css,.el-input__inner',randomData.get_purerange(14,'number'))
         time.sleep(2)
         #一键填充
         common.web_click('css,.el-button--text')
@@ -277,7 +278,7 @@ class kyc_approve():
         common.web_click('css,.submit-btn')
         time.sleep(5)
         #选择地址认证
-        common.display_click('css,.btns')
+        common.display_click('css,.img-text')
         #上传地址证明
         common.display_click('css,.img-text-required')
         time.sleep(1)

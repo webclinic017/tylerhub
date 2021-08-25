@@ -8,9 +8,9 @@ path_public=path_demo+r'\public'
 sys.path.append(path_public)
 from about_data import Exceldata
 from browser_actions import Commonweb
-from other_actions import Public_method
+from randomdata import Random_data
 
-pub_method=Public_method()
+randomData=Random_data()
 exdata=Exceldata()
 
 class Get_account(Commonweb):

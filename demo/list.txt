@@ -97,7 +97,7 @@ D:.
 ��  ��  browser_actions.py
 ��  ��  common_method.py
 ��  ��  handlelog.py
-��  ��  other_actions.py
+��  ��  randomdata.py
 ��  ��  Public variable.md
 ��  ��  README.md
 ��  ��  READMEdd.md
@@ -139,8 +139,8 @@ D:.
 ��          common_method.cpython-39.pyc
 ��          handlelog.cpython-38.pyc
 ��          handlepath.cpython-39.pyc
-��          other_actions.cpython-38.pyc
-��          other_actions.cpython-39.pyc
+��          randomdata.cpython-38.pyc
+��          randomdata.cpython-39.pyc
 ��          read_dataconfig.cpython-38.pyc
 ��          read_dataconfig.cpython-39.pyc
 ��          test_debug.cpython-39-pytest-6.2.4.pyc
@@ -520,5 +520,5 @@ D:.
 ��              
 ����__pycache__
         browser_actions.cpython-38.pyc
-        other_actions.cpython-38.pyc
+        randomdata.cpython-38.pyc
         

@@ -1,27 +1,33 @@
 '''
-Author: your name
+Author: tyler
 Date: 2021-05-24 11:16:04
-LastEditTime: 2021-05-27 14:21:17
+LastEditTime: 2021-08-24 11:01:12
 LastEditors: Please set LastEditors
-Description: In User Settings Edit
+Description: Page positioning
 FilePath: \tylerhub\demo\registration_process\register_positioning\verify_message_location.py
 '''
 
-import sys
 import os
+import sys
 import time
+
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-path_public=path_demo+r'\public'
+path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'public')
 sys.path.append(path_public)
-from browser_actions import Commonweb
-from other_actions import Public_method
 from about_data import Exceldata
+from browser_actions import Commonweb
 from common_method import Commonmethod
+from handlelog import MyLog
+from randomdata import Random_data
+from read_dataconfig import ReadConfig
 
-pub_method=Public_method()
+#实例化
+randomData=Random_data()
 common=Commonweb()
+log=MyLog()
+conFig=ReadConfig()
 
-class location_of_verify_data():
+class Location_of_verify_data():
 
     #默认以谷歌浏览器执行测试用例
     def browsertype(self,browsername='Chrome'):
@@ -29,9 +35,9 @@ class location_of_verify_data():
         self.commethd=Commonmethod(self.driver)
 
     #登录bos
-    def login_bos(self,username,psword,lang='CN'):
+    def login_bos(self,environment,username,psword,lang='CN'):
         try:
-            common.open_web('https://at-bos-frontend-uat.atfxdev.com/login')
+            common.open_web(conFig.get_value('bos_login', '{}'.format(environment)))
             time.sleep(1)
             #页面语言
             self.commethd.choose_bos_lang(lang)
@@ -128,6 +134,9 @@ class location_of_verify_data():
         except Exception as msg:
             log.my_logger('!!--!!get_currency').error(msg)
 
+    #截图,返回截图路径
+    def screenshots_path(self,name,filename='picture'):
+        return common.get_screenpict_path(name)
 
     #关闭当前页面
     def closebrowser(self):

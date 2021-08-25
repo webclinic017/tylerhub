@@ -9,12 +9,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from other_actions import *
-from verification_code import Base64_api
 from handlelog import MyLog
+from verification_code import Base64_api
 
-#实例化公共方法模块
-pub_method=Public_method()
+#实例化
 log=MyLog()
 
 class Commonweb():
@@ -335,7 +333,7 @@ class Commonweb():
             log.my_logger('!!--!!right_click_link').error(msg)      
 
     #截图,自定义保存截图的文件夹名称
-    def get_screenpict(self,name,filename='picture',):
+    def get_screenpict(self,name,filename='picture'):
         """
         name:截图名称
         filename:保存截图文件名称
@@ -347,8 +345,18 @@ class Commonweb():
             os.mkdir(self.pictdir_path)
         #截图保存
         self.picture=self.driver.get_screenshot_as_file(os.path.join(self.pictdir_path,'{}{}.png'.format(name,self.pict_name)))
+        print('截图成功，图片存放在{}路径下'.format(self.pictdir_path))
         return self.picture
-        
+
+    #返回截图路径
+    def get_screenpict_path(self,name,filename='picture'):
+        """
+        name:截图名称
+        filename:保存截图文件名称
+        """
+        self.get_screenpict(name, filename)
+        return os.path.join(self.pictdir_path,'{}{}.png'.format(name,self.pict_name))
+
     #切换窗口,n为下标
     def switch_windows(self,n):
         #获取所有窗口句柄
@@ -415,7 +423,7 @@ class Commonweb():
     def js_scroll_inline(self,type,element,site,index=0):
         """
         JS处理内嵌滚动条目前只封装了两种方法：通过ID和CLASSNAME两种
-        type:id or calss
+        type:id or class
         site:down or top
         """
         try:

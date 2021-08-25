@@ -1,0 +1,7 @@
+!!--!!get_code - 2021-08-20 09:43:44,265 - locate_change_pswd_cp - [locate_change_pswd_cp.py-->line:136] - ERROR: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!change_psword - 2021-08-20 09:43:44,560 - locate_change_pswd_cp - [locate_change_pswd_cp.py-->line:96] - ERROR: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!geturl - 2021-08-20 10:51:24,244 - login_cp_changepsword - [login_cp_changepsword.py-->line:51] - ERROR: name 'conFig' is not defined

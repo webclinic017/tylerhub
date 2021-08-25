@@ -1,0 +1,15 @@
+!!--!!lgoin-bos - 2021-08-20 17:33:38,446 - preliminary_review - [preliminary_review.py-->line:44] - ERROR: 登录bos失败：name 'log' is not defined
+!!--!!lgoin-bos - 2021-08-20 17:34:51,444 - preliminary_review - [preliminary_review.py-->line:44] - ERROR: 登录bos失败：name 'log' is not defined
+!!--!!lgoin-bos - 2021-08-20 17:41:51,171 - preliminary_review - [preliminary_review.py-->line:44] - ERROR: 登录bos失败：name 'log' is not defined
+!!--!!lgoin-bos - 2021-08-20 17:48:12,263 - preliminary_review - [preliminary_review.py-->line:44] - ERROR: 登录bos失败：name 'log' is not defined
+!!--!!review_operation - 2021-08-20 17:52:23,803 - preliminary_review - [preliminary_review.py-->line:84] - ERROR: 'int' object is not subscriptable
+!!--!!review_operation - 2021-08-20 17:54:00,762 - preliminary_review - [preliminary_review.py-->line:84] - ERROR: 'int' object is not subscriptable
+!!--!!review_operation - 2021-08-20 17:57:35,152 - preliminary_review - [preliminary_review.py-->line:84] - ERROR: 'int' object is not subscriptable
+!!--!!lgoin-bos - 2021-08-20 17:58:02,149 - preliminary_review - [preliminary_review.py-->line:44] - ERROR: 登录bos失败：name 'log' is not defined
+!!--!!-bos - 2021-08-20 18:00:31,244 - preliminary_review - [preliminary_review.py-->line:18] - ERROR: 登录bos失败
+!!--!!lgoin-bos - 2021-08-20 18:01:56,394 - preliminary_review - [preliminary_review.py-->line:44] - ERROR: 登录bos失败：name 'log' is not defined
+!!--!!review_operation - 2021-08-20 18:03:37,708 - preliminary_review - [preliminary_review.py-->line:84] - ERROR: 'int' object is not subscriptable
+!!--!!review_operation - 2021-08-20 18:04:10,940 - preliminary_review - [preliminary_review.py-->line:84] - ERROR: 'int' object is not subscriptable
+!!--!!review_operation - 2021-08-20 18:07:24,644 - preliminary_review - [preliminary_review.py-->line:85] - ERROR: 'int' object is not subscriptable
+!!--!!review_operation - 2021-08-20 18:10:57,879 - preliminary_review - [preliminary_review.py-->line:85] - ERROR: 'int' object is not subscriptable
+!!--!!review_operation - 2021-08-20 18:13:21,974 - preliminary_review - [preliminary_review.py-->line:85] - ERROR: 'int' object is not subscriptable

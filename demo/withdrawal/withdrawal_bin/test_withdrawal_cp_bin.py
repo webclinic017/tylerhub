@@ -1,9 +1,9 @@
 '''
-Author: your name
+Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-06-04 11:10:59
+LastEditTime: 2021-08-25 10:02:40
 LastEditors: Please set LastEditors
-Description: In User Settings Edit
+Description: Execution testcase
 FilePath: \tylerhub\demo\withdrawal\withdrawal_bin\withdrawal_cp_bin.py
 '''
 import os

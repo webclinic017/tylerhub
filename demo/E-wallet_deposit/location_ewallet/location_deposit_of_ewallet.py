@@ -17,11 +17,11 @@ sys.path.append(path_public)
 from about_data import Exceldata
 from browser_actions import Commonweb
 from common_method import Commonmethod
-from other_actions import Public_method
+from randomdata import Random_data
 from verification_code import time_used
 
 common=Commonweb()
-pub_method=Public_method()
+randomData=Random_data()
 
 
 class Ewallet_deposti():

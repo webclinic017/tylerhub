@@ -1,24 +1,30 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-05-27 14:54:28
+LastEditTime: 2021-08-24 10:56:35
 LastEditors: Please set LastEditors
-Description: In User Settings Edit
+Description: Perform cases of register
 FilePath: \tylerhub\demo\registration_process\register_actions_bin\cp_register.py
 '''
 #导包
 import os
 import sys
 import unittest
+
 import ddt
 from BeautifulReport import BeautifulReport
-path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))+r'\public'
+
+path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'public')
 sys.path.append(path_public)
-#registration_process路径
 path_process=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_process+r'\register_positioning')
 from about_data import Exceldata
-from register_method import form_operations
+from read_dataconfig import ReadConfig
+from register_method import Form_operations
+
+#实例化
+conFig=ReadConfig()
+form=Form_operations()
 
 #读取测试文档数据
 e=Exceldata()
@@ -26,12 +32,9 @@ rows=e.openexcel(path_process+r'\test_excel_data\register_data.xlsx','Sheet1') #
 testdata=e.dict_data()
 
 
-#实例化对象
-form=form_operations()
-
 #数据驱动
 @ddt.ddt
-class register_cp(unittest.TestCase):
+class Register_cp(unittest.TestCase):
     """关键字驱动：会员中心注册页表单，调用form_operations类中封装的表单填写方法"""
 
     #预置条件
@@ -54,9 +57,9 @@ class register_cp(unittest.TestCase):
             form.closedriver() #关闭浏览器
         else:
             #访问不同注册地址，专属链接/直客注册
-            form.get_url(data['专属链接'],data['邀请码'],'E',self.data_index+2)
+            form.get_url('sit',data['专属链接'],data['邀请码'],'E',self.data_index+2)
             #填写注册表单,参数依次为：页面语言，名字，姓氏，邮箱，密码，中文国家名，英文国家名
-            form.fill_inform('简中','tyler','uitest',data['邮箱'],'Tl123456',data['国家'],data['country'])
+            form.fill_inform('简中',conFig.get_value('bos_login','username'),'uitest',data['邮箱'],conFig.get_value('bos_login', 'password'),data['国家'],data['country'])
             #提交表单
             form.submit()
             #断言
@@ -73,4 +76,4 @@ if __name__=='__main__':
     suit=unittest.defaultTestLoader.discover(os.path.dirname(os.path.abspath(__file__)),
     pattern='cp_register.py',top_level_dir=None)
     BeautifulReport(suit).report(filename='会员中心注册',description='注册流程',
-    report_dir=path_process+r'\cp_register_process_report')
+    report_dir=path_process+r'\report')

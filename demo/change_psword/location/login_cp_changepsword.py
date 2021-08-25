@@ -3,17 +3,20 @@ import random
 import sys
 import time
 
-path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-path_public=path_demo+r'\public'
+path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'public')
 sys.path.append(path_public)
 from about_data import Exceldata
 from browser_actions import Commonweb
 from common_method import Commonmethod
-from other_actions import Public_method
+from handlelog import MyLog
+from randomdata import Random_data
+from read_dataconfig import ReadConfig
 
 common=Commonweb()
-pub_method=Public_method()
+log=MyLog()
 excel=Exceldata()
+conFig=ReadConfig()
+randomData=Random_data()
 
 class Location():
     global driver
@@ -21,25 +24,26 @@ class Location():
     #赋值对象driver
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
-        self.commethod=Commonmethod(self.driver)
+        self.commeThod=Commonmethod(self.driver)
 
     #访问url
-    def geturl(self,username,psword,lang='CN'):
+    def geturl(self,environment,username,psword,lang='CN'):
         try:
-            common.open_web('https://at-client-portal-uat.atfxdev.com/login')
+            #cp
+            common.open_web(conFig.get_value('cp_login', '{}'.format(environment)))
             #去除弹窗
             self.remove_topup()
             time.sleep(1)
             #页面语言
-            self.commethod.choose_register_lang(lang)
+            self.commeThod.choose_register_lang(lang)
             #新开窗口访问bos登录页
-            common.js_openwindows('https://at-bos-frontend-uat.atfxdev.com/login')
+            common.js_openwindows(conFig.get_value('bos_login', '{}'.format(environment)))
             time.sleep(1)
             common.switch_windows(1)
             #选择页面语言
-            self.commethod.choose_bos_lang(lang)
+            self.commeThod.choose_bos_lang(lang)
             #登录bos
-            self.commethod.loginbos(username,psword)
+            self.commeThod.loginbos(username,psword)
             time.sleep(2)
             #进入客户名单页面
             common.display_click('css,.ivu-badge')
@@ -51,7 +55,7 @@ class Location():
     #去除登录页弹窗
     def remove_topup(self):
         try:
-            self.commethod.remove_register_topup()
+            self.commeThod.remove_register_topup()
         except Exception as msg:
             log.my_logger('!!--!!remove_topup').error(msg)
 
@@ -61,8 +65,8 @@ class Location():
             #登录会员中心
             common.switch_windows(0)
             time.sleep(1)
-            self.commethod.login_cp(username,psword)
-            time.sleep(6)
+            self.commeThod.login_cp(username,psword)
+            time.sleep(3)
             #进入账号设定页面
             common.display_click('css,.el-icon--right.el-icon-arrow-down')
             time.sleep(1)
@@ -107,7 +111,7 @@ class Location():
             code_text=common.display_get_text('xpath,//div[@class="ivu-drawer-wrap"]//tr[2]//tr[4]/td[1]/span')
             time.sleep(1)
             #提取验证码
-            self.email_code=pub_method.extract_numbers(code_text)
+            self.email_code=randomData.extract_numbers(code_text)
             time.sleep(1)
             #关闭当前页面
             self.closerbrowser()
@@ -157,7 +161,7 @@ class Location():
 
     #登出会员中心
     def logoutcp(self):
-        self.commethod.logout_cp()
+        self.commeThod.logout_cp()
 
     #捕获修改成功后的文本
     def get_sucessful_change(self):

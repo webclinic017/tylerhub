@@ -4,28 +4,33 @@ import sys
 import time
 import datetime
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-path_public=path_demo+r'\public'
+path_public=os.path.join(path_demo,'public')
 sys.path.append(path_public)
 from about_data import Exceldata
 from browser_actions import Commonweb
 from common_method import Commonmethod
-from other_actions import Public_method
+from randomdata import Random_data
+from handlelog import MyLog
+from read_dataconfig import ReadConfig
 
+#实例化
 common=Commonweb()
-pub_method=Public_method()
+randomData=Random_data()
 e=Exceldata()
-"""
-会员中心入金：初审通过的主账号，BOS判断主账号入金权限是否开启，再判断交易账号入金权限及MT4状态是否符合入金条件，才能入金
-"""
-class Locations_of_deposit():
+log=MyLog()
+conFig=ReadConfig()
 
+class Locations_of_deposit(object):
+    """
+    会员中心入金：初审通过的主账号，BOS判断主账号入金权限是否开启，再判断交易账号入金权限及MT4状态是否符合入金条件，才能入金
+    """
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
         self.commethod=Commonmethod(self.driver)
 
-    def get_url(self,lang='CN'):
+    def get_url(self,environment,lang='CN'):
         try:
-            common.open_web('https://at-client-portal-uat.atfxdev.com/login')
+            common.open_web(conFig.get_value('cp_login', '{}'.format(environment)))
             time.sleep(1)
             #去除弹窗
             self.remove_topup()
@@ -33,7 +38,7 @@ class Locations_of_deposit():
             self.commethod.choose_register_lang(lang)
             time.sleep(1)
             #新开窗口访问bos登录页
-            common.js_openwindows('https://at-bos-frontend-uat.atfxdev.com/login')
+            common.js_openwindows(conFig.get_value('bos_login', '{}'.format(environment)))
             time.sleep(1)
             common.switch_windows(1)
             #选择页面语言
@@ -208,7 +213,7 @@ class Locations_of_deposit():
         time.sleep(1)
         new_str=str(4)+str(traccount)
         for i in range(0,self.len_incp):
-            if pub_method.extract_numbers(common.get_text('css,.account-number-cla',i)) == new_str:
+            if randomData.extract_numbers(common.get_text('css,.account-number-cla',i)) == new_str:
                 return i+1
                 break
     
@@ -240,7 +245,7 @@ class Locations_of_deposit():
             common.web_input('xpath,//div[@class="el-input el-input-group el-input-group--prepend deposit-amount"]/input[@class="el-input__inner"]',amount)
             time.sleep(1)
             #输入随机邮箱
-            common.web_input('xpath,//div[@class="el-input"]/input[@class="el-input__inner"]',pub_method.get_rangenemail(8))
+            common.web_input('xpath,//div[@class="el-input"]/input[@class="el-input__inner"]',randomData.get_rangenemail(8))
             time.sleep(1)
             #确认提交
             common.display_click('css,.common-btn > span')
@@ -255,7 +260,7 @@ class Locations_of_deposit():
             log.my_logger('!!--!!deposit_actions').error(msg)
 
     #BOS审核入金请求
-    def review_deposit(self,bos_username,bos_psword,traccount,path,row):
+    def review_deposit(self,bos_username,bos_psword,traccount,path,column2,row):
         try:
             common.switch_windows(1)
             #资金管理
@@ -282,12 +287,19 @@ class Locations_of_deposit():
             time.sleep(2)
             #勾选入金记录
             common.display_click('css,.ivu-table-tbody > tr .ivu-checkbox-input')
+            time.sleep(1)
             #转未处理
             common.display_click('css,button > span',6)
             time.sleep(1)
+            #判断资金管理模块是展开
+            if common.get_attributes('xpath,//*[@id="app"]/div/div/div[1]/div[1]/div[1]/div/ul/li[2]/ul', 'style')=='':
+                common.display_click('css,.ivu-badge >span',3)
+            else:
+                pass
             #登出bos，切换用户审核
-            common.display_click('xpath,//div[@class="scroll-content"]//li[@class="ivu-menu-item"]')
             time.sleep(1)
+            common.display_click('xpath,//div[@class="scroll-content"]//li[@class="ivu-menu-item"]')
+            time.sleep(2)
             self.commethod.loginbos(bos_username,bos_psword)
             time.sleep(2)
             #资金管理
@@ -306,6 +318,7 @@ class Locations_of_deposit():
             common.display_click('css,.ivu-btn-icon-only > .ivu-icon')
             time.sleep(2)
             common.display_click('css,.ivu-table-tbody > tr .ivu-checkbox-input')
+            time.sleep(1)
             #处理完成
             common.display_click('css,.ivu-btn-success > span')
             time.sleep(2)
@@ -321,7 +334,7 @@ class Locations_of_deposit():
             common.display_click('css,.menu .el-menu')
             time.sleep(5)
             #获取交易账户余额
-            e.saveainfo(path,self.get_traccount_balance(traccount),'G',row)
+            e.saveainfo(path,self.get_traccount_balance(traccount),column2,row)
         except Exception as msg:
             log.my_logger('!!--!!review_deposit').error(msg)
 
@@ -336,6 +349,8 @@ class Locations_of_deposit():
             self.open_deposit_permissions(account)
             #获取入金交易账号在交易列表中的行数
             self.rows=self.where_is_traccount_bos(traccount)
+            #判断当前主账号暂定+激活状态个数
+            self.is_status_five()
             #判断交易账号状态
             self.tdaccount_status(traccount,self.rows)
             #判断交易账号入金按钮是否被勾选
@@ -344,7 +359,7 @@ class Locations_of_deposit():
             log.my_logger('!!--!!is_traccount_can_deposit').error(msg)
 
 
-    def deposit_cp(self,traccount,username,psword,amount,bos_username,bos_psword,path,row):
+    def deposit_cp(self,traccount,username,psword,amount,bos_username,bos_psword,path,column1,column2,row):
         """
         满足入金条件后，会员中心入金并审核
         """
@@ -352,28 +367,49 @@ class Locations_of_deposit():
             #登录会员中心
             common.switch_windows(0)
             self.commethod.login_cp(username,psword)
-            time.sleep(10)
+            time.sleep(5)
             #获取入金前交易账号余额
-            e.saveainfo(path,self.get_traccount_balance(traccount),'F',row)
+            e.saveainfo(path,self.get_traccount_balance(traccount),column1,row)
             #入金
             self.deposit_actions(traccount,amount)
             #bos审核入金
-            self.review_deposit(bos_username,bos_psword,traccount,path,row)
+            self.review_deposit(bos_username,bos_psword,traccount,path,column2,row)
         except Exception as msg:
             log.my_logger('!!--!!deposit_cp').error(msg)
 
     #登出会员中心
     def logoutcp(self):
         try:
+            common.switch_windows(0)
             self.commethod.logout_cp()
         except Exception as msg:
             log.my_logger('!!--!!logoutcp').error(msg)
+
+    #获取审核成功后文本
+    def deposit_success(self):
+        try:
+            common.switch_windows(1)
+            time.sleep(1)
+            self.successText=common.display_get_text('xpath,//*[@id="app"]/div/div/div[4]/div/div[3]/div/'
+            'div[3]/div/div/div[1]/div[2]/table/tbody/tr[1]/td[3]/div/div/div/span')
+            time.sleep(1)
+            return self.successText
+        except Exception as msg:
+            log.my_logger('!!--!!deposit_success').error(msg)
 
     #登出bos
     def logoutbos(self):
         try:
             common.switch_windows(1)
+            time.sleep(1)
+            #判断资金管理模块是展开
+            if common.get_attributes('xpath,//*[@id="app"]/div/div/div[1]/div[1]/div[1]/div/ul/li[2]/ul', 'style')=='':
+                common.display_click('css,.ivu-badge >span',3)
+            else:
+                pass
+            time.sleep(1)
             common.display_click('xpath,//div[@class="scroll-content"]//li[@class="ivu-menu-item"]')
+            time.sleep(1)
         except Exception as smg:
             log.my_logger('!!--!!logoutbos').error(msg)
 

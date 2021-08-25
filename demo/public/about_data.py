@@ -7,23 +7,19 @@ import pymysql
 import os
 import sys
 from read_dataconfig import ReadConfig
-
 config_path=os.path.join(os.path.dirname(os.path.abspath(__file__)),'config')
-
-from read_dataconfig import ReadConfig
 
 
 #全局取消证书验证
 ssl._create_default_https_context=ssl._create_unverified_context()
 
-#添加oracle驱动程序
-os.environ['path']=os.path.join(config_path,'instantclient_19_11')
-
+#添加oracle驱动程序(添加驱动后系统找不到allure程序/系统无法同时运行两个驱动程序)
+# os.environ['path']=os.path.join(config_path,'instantclient_19_11')
 
 read=ReadConfig()
 
 class Exceldata():
-    """此文件用于提取excel表格中的数据，并封装成含多个字典的列表
+    """此模块用于提取excel表格中的数据，并封装成含多个字典的列表
     文件格式为xlsx的后缀即可"""
     def openexcel(self,excelpath,sheetname):
         """excelpath为excel文件存储路径，sheetname为sheet名"""
@@ -58,7 +54,7 @@ class Exceldata():
             return l
 
     # 创建存储注册数据的函数，写入已存在的本地文档中,cloumn:列；row:行
-    def saveainfo(self,excelpath,values,column,row):
+    def saveainfo(self,excelpath,values,column,row:int)->str:
         """
         param:column 列
         param:row 行
@@ -286,30 +282,30 @@ retryWrites=true&ssl=true'.format(username,password)
         except Exception as msg:
             print('保存数据库数据失败，请检查链接/参数：{}'.format(msg))
 
-   #连接oracle数据库 
-    def serach_in_oracle(self,sql,type='single'):
-        try:
-            #连接
-            self.con = cx_Oracle.connect('{}/{}@{}:{}/{}'.format(read.get_value('oracle','username'),read.get_value('oracle','password'),
-            read.get_value('oracle','host'),read.get_value('oracle','port'),read.get_value('oracle','server_name')))
-            #创建游标
-            self.cursor= self.con.cursor()  
-            #执行sql
-            self.cursor.execute(sql)
-            if type=='single':
-            #获取单条数据
-                self.data=self.cursor.fetchone()
-            else:
-            #获取所有数据
-                self.data=self.cursor.fetchall()
-            self.cursor.close()
-            self.con.close()
-            return self.data
-        except Exception as msg:
-            print('请检查连接信息及sql语句是否正确：{}'.format(msg))
+#    #连接oracle数据库 
+#     def serach_in_oracle(self,sql,type='single'):
+#         try:
+#             #连接
+#             self.con = cx_Oracle.connect('{}/{}@{}:{}/{}'.format(conFig.get_value('oracle','username'),conFig.get_value('oracle','password'),
+#             conFig.get_value('oracle','host'),conFig.get_value('oracle','port'),conFig.get_value('oracle','server_name')))
+#             #创建游标
+#             self.cursor= self.con.cursor()  
+#             #执行sql
+#             self.cursor.execute(sql)
+#             if type=='single':
+#             #获取单条数据
+#                 self.data=self.cursor.fetchone()
+#             else:
+#             #获取所有数据
+#                 self.data=self.cursor.fetchall()
+#             self.cursor.close()
+#             self.con.close()
+#             return self.data
+#         except Exception as msg:
+#             print('请检查连接信息及sql语句是否正确：{}'.format(msg))
 
     #连接mysql数据库查询
-    def search_in_mysql(self,*vartuple,sql,type='single'):
+    def search_in_mysql(self,sql,host,user,psword,port:int,type='single')->str:
         """
         :param vartuple:host,username,password,db,port,charset=utf-8
         :param sql: 执行查询的sql语句
@@ -318,7 +314,7 @@ retryWrites=true&ssl=true'.format(username,password)
         """
         try:
             #连接
-            self.db = pymysql.connect(vartuple)
+            self.db = pymysql.connect(host=host,user=user,password=psword,port=port)
             #创建游标对象
             self.cursor=self.db.cursor()
             #执行sql语句
@@ -334,7 +330,6 @@ retryWrites=true&ssl=true'.format(username,password)
             return self.data
         except Exception as msg:
             print('请检查连接信息及sql语句是否正确：{}'.format(msg)) 
-
 #测试
 if __name__=='__main__':
     e=Exceldata()
@@ -348,4 +343,11 @@ if __name__=='__main__':
     # e.save_mongodb_data(path,'atfx-dev-admin','m578A3MGrcR3pRXVU2pA','atfxgm-uat','atfx_ib_links',condition='isDeleted',value=0,
     # link='A',currency='B',markup='C',leverage='D',mtGroup='E',spreadType='F',num=6)
     # print(11)
-    print(e.serach_in_oracle("SELECT * FROM (SELECT NOTE FROM HQYTZSC.MBMESSAGE WHERE REVMBNO='17688937072'  ORDER BY DTMAKEDATE DESC)  WHERE ROWNUM<2"))
+    #print(e.serach_in_oracle("SELECT * FROM (SELECT NOTE FROM HQYTZSC.MBMESSAGE WHERE REVMBNO='17688937072'  ORDER BY DTMAKEDATE DESC)  WHERE ROWNUM<2"))
+    # e.search_in_mysql(sql="SELECT * FROM client_relationship2_sit.relationship where node_Id='100004'",
+    # host=conFig.get_value('mysql_AWS', 'host'),user=conFig.get_value('mysql_AWS', 'user'),
+    # psword=conFig.get_value('mysql_AWS', 'password'),port=conFig.get_int('mysql_AWS', 'port'))
+    e.openexcel(r'D:\code\tylerhub\demo\registration_process\test_excel_data\account_number.xlsx', 'Sheet1')
+    a=e.dict_data()
+    print(a)
+    print(a[0]['主账号']=='')

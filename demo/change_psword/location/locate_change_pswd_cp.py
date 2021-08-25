@@ -9,38 +9,46 @@ sys.path.append(path_public)
 from about_data import Exceldata
 from browser_actions import Commonweb
 from common_method import Commonmethod
-from other_actions import Public_method
+from handlelog import MyLog
+from randomdata import Random_data
+from read_dataconfig import ReadConfig
 
+#实例化
 commom=Commonweb()
-pub_method=Public_method()
 excel=Exceldata()
+conFig=ReadConfig()
+log=MyLog()
+digital=Random_data()
 
 class Location():
+    """
+    会员中心登录页改密
+    """
     global driver
     
     # #赋值对象driver
     def broswertype(self,broswername='Chrome'):
         self.driver=commom.open_browser(broswername)
-        self.commethod=Commonmethod(self.driver)
+        self.commeThod=Commonmethod(self.driver)
     
     #访问cp注册页和登录bos
-    def geturl(self,username,psword,lang='CN'):
-        #cp
-        commom.open_web('https://at-client-portal-uat.atfxdev.com/login')
+    def geturl(self,environment,username,psword,lang='CN'):
+        #cp,environment:uat/sit环境
+        commom.open_web(conFig.get_value('cp_login', '{}'.format(environment)))
         #去除弹窗
         self.remove_topup()
         #选择页面语言
-        self.commethod.choose_register_lang(lang)
+        self.commeThod.choose_register_lang(lang)
         time.sleep(1)
         #js打开新窗口
-        commom.js_openwindows('https://at-bos-frontend-uat.atfxdev.com/login')
+        commom.js_openwindows(conFig.get_value('bos_login', '{}'.format(environment)))
         time.sleep(1)
         commom.switch_windows(1)
         #页面语言，默认为简中
-        self.commethod.choose_bos_lang(lang)
+        self.commeThod.choose_bos_lang(lang)
         time.sleep(1)
         #登录bos
-        self.commethod.loginbos(username,psword)
+        self.commeThod.loginbos(username,psword)
         time.sleep(1)
         #进入客户名单页面
         commom.display_click('css,.ivu-badge')
@@ -51,7 +59,7 @@ class Location():
     #去除登录页弹窗
     def remove_topup(self):
         commom.switch_windows(0)
-        self.commethod.remove_register_topup()
+        self.commeThod.remove_register_topup()
 
     #忘记密码
     def change_psword(self,email,account,path,column,row):
@@ -121,7 +129,7 @@ class Location():
             #获取验证码文本
             code_text=commom.display_get_text('xpath,//div[@class="ivu-drawer-wrap"]//tr[2]//tr[4]/td[1]/span')
             #提取验证码
-            self.email_code=pub_method.extract_numbers(code_text)
+            self.email_code=digital.extract_numbers(code_text)
             #关闭当前页面
             self.closerbrowser()
             return self.email_code
