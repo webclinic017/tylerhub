@@ -17,7 +17,7 @@ path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path
 sys.path.append(path_public)
 path_psword=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_psword+r'\location')
-from about_data import Exceldata
+from about_data import Aboutdata
 from login_cp_changepsword import Location
 from read_dataconfig import ReadConfig
 
@@ -27,7 +27,7 @@ conFig=ReadConfig()
 #测试文档路径
 testdata_path=os.path.join(path_psword,'test_excel_data\chang_psword_incp.xlsx')
 #读取测试数据
-e=Exceldata()
+e=Aboutdata()
 rows=e.openexcel(testdata_path,'Sheet1')
 testdata=e.dict_data()
 

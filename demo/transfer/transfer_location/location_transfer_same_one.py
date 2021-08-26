@@ -6,14 +6,14 @@ import time
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 path_public=path_demo+r'\public'
 sys.path.append(path_public)
-from about_data import Exceldata
+from about_data import Aboutdata
 from browser_actions import Commonweb
 from common_method import Commonmethod
 from randomdata import Random_data
 
 common=Commonweb()
 randomData=Random_data()
-e=Exceldata()
+e=Aboutdata()
 
 
 

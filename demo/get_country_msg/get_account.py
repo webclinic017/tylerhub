@@ -6,12 +6,12 @@ import time
 path_demo=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 path_public=path_demo+r'\public'
 sys.path.append(path_public)
-from about_data import Exceldata
+from about_data import Aboutdata
 from browser_actions import Commonweb
 from randomdata import Random_data
 
 randomData=Random_data()
-exdata=Exceldata()
+exdata=Aboutdata()
 
 class Get_account(Commonweb):
     """爬取国家列表数据"""

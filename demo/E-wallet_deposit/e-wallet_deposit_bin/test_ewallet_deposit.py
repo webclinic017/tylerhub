@@ -14,7 +14,7 @@ path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 sys.path.append(path_public)
 path_Ewallet=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_Ewallet+r'\location_ewallet')
-from about_data import Exceldata
+from about_data import Aboutdata
 from location_deposit_of_ewallet import Ewallet_deposti
 
 ewallet=Ewallet_deposti()

@@ -16,9 +16,9 @@ ssl._create_default_https_context=ssl._create_unverified_context()
 #添加oracle驱动程序(添加驱动后系统找不到allure程序/系统无法同时运行两个驱动程序)
 # os.environ['path']=os.path.join(config_path,'instantclient_19_11')
 
-read=ReadConfig()
+conFig=ReadConfig()
 
-class Exceldata():
+class Aboutdata():
     """此模块用于提取excel表格中的数据，并封装成含多个字典的列表
     文件格式为xlsx的后缀即可"""
     def openexcel(self,excelpath,sheetname):
@@ -53,6 +53,20 @@ class Exceldata():
                 j=j+1
             return l
 
+    def str_insert(self,old_str,pos:int,add_str)->str:
+        """
+        字符串指定位置添加字符串
+        :param old_str : 被添加字符的字符串
+        :param pos : 添加的位置
+        :param add_str : 添加的字符串
+        :return 返回新字符串
+        """
+        self.str_list=list(old_str)
+        self.str_list.insert(pos, add_str)
+        self.str_out=''.join(self.str_list)
+        return self.str_out
+
+
     # 创建存储注册数据的函数，写入已存在的本地文档中,cloumn:列；row:行
     def saveainfo(self,excelpath,values,column,row:int)->str:
         """
@@ -70,217 +84,128 @@ class Exceldata():
             print('请勿打开需要写入文件的文档：{}'.format(msg))
 
 
-    #连接mongodb数据库，查询指定字段内容
-    def search_in_mongodb(self,username,password,database,muster,condition=None,value=None,filed=None,N=0):
+    #连接mongodb数据库查询数据
+    def search_in_mongodb(self,uri,database,muster,mongodbserch:dict=None,*args,N:int=0,sortTerm:list=[('_id',-1)])->list:
         """
-        username:用户名
-        password：密码
-        database：数据库
-        muster：集合
-        condition:搜索条件
-        value:搜索条件的值
-        N:查询条数，默认为0
-        filed:需具体查询的字段
+        读取配置文件中的mongodb链接，传入查询条件查询指定数据库集合中的数据，默认最新数据排序并以列表形式返回
+        :param uri:数据库链接
+        :param database：数据库
+        :param muster：集合
+        :param mongodbserch:mongodb查询语句,字典,类似于sql语句 如{"$and": [{"latdec": 9.3547792}, {"watlev": "always dry"}]}
+        :param N:查询条数，默认为0
+        :param args:需具体查询的字段
+        :param sortTerm:是否排序，字典。1升序，-1降序，_id,-1 查询最新数据
+        :return 以列表类型返回查询数据
         """
         #2.0数据库链接
         try:
-            self.uri='mongodb+srv://{}:{}@atfx2-dev-loa0g.azure.mongodb.net/atfx_test?\
-authSource=admin&replicaSet=atfx2-dev-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&\
-retryWrites=true&ssl=true'.format(username,password)
-            self.client=pymongo.MongoClient(self.uri)
+            self.client=pymongo.MongoClient(uri,ssl_cert_reqs=ssl.CERT_NONE)
             self.db=self.client[database]
             self.colletion=self.db[muster]
-            if condition!=None and value!=None:
+            #查询条件不为空
+            if not mongodbserch==None:
                 self.list_data=[]
+                #查询所有数据
                 if N==0:
-                    if type(value)==int:
-                        self.data=self.colletion.find({'{}'.format(condition):value})
-                        if filed==None:
-                            for i in self.data:
-                                self.list_data.append(i)
-                        else:
-                            for i in self.data:
-                                self.list_data.append(i[filed])
+                    self.data=self.colletion.find(mongodbserch).sort(sortTerm)
+                    #查所有字段
+                    if len(args)==0:
+                        for i in self.data:
+                            self.list_data.append(i)
+                    #查询指定字段
                     else:
-                        self.data=self.colletion.find({'{}'.format(condition):'{}'.format(value)})
-                        if filed==None:
-                            for i in self.data:
-                                self.list_data.append(i)
-                        else:
-                            for i in self.data:
-                                self.list_data.append(i[filed])
-                    print(self.list_data)
-                    print('读取数据库数据条数：{}'.format(len(self.list_data)))
-                    return self.list_data
+                        for i in self.data:
+                            self.dict_search={}
+                            for x in args:
+                                self.dict_search[x]=i[x]
+                            self.list_data.append(self.dict_search)    
+                #查询部分数据
                 else:
-                    if type(value)==int:
-                        self.data=self.colletion.find({'{}'.format(condition):value}).limit(N)
-                        if filed==None:
-                            for i in self.data:
-                                self.list_data.append(i)
-                        else:
-                            for i in self.data:
-                                self.list_data.append(i[filed])
+                    self.data=self.colletion.find(mongodbserch).limit(N).sort(sortTerm)
+                    #查询所有字段
+                    if len(args)==0:
+                        for i in self.data:
+                            self.list_data.append(i)
+                        #查询指定字段
                     else:
-                        self.data=self.colletion.find({'{}'.format(condition):'{}'.format(value)}).limit(N)
-                        if filed==None:
-                            for i in self.data:
-                                self.list_data.append(i)
-                        else:
-                            for i in self.data:
-                                self.list_data.append(i[filed])
+                        for i in self.data:
+                            self.dict_search={}
+                            for x in args:
+                                self.dict_search[x]=i[x]
+                            self.list_data.append(self.dict_search)   
                 print(self.list_data)
-                print('读取数据库数据条数：{}'.format(len(self.list_data)))
+                print('返回数据库数据{}条'.format(len(self.list_data)))
                 return self.list_data
+            #查询条件为空时
             else:
                 self.list_data=[]
+                #查询所有数据
                 if N==0:
-                    self.data=self.colletion.find()
-                    if filed==None:
+                    self.data=self.colletion.find().sort(sortTerm)
+                    #查询所有字段
+                    if len(args)==0:
                         for i in self.data:
                             self.list_data.append(i)
+                    #查询指定字段
                     else:
                         for i in self.data:
-                            self.list_data.append(i[filed])
+                            self.dict_search={}
+                            for x in args:
+                                self.dict_search[x]=i[x]
+                            self.list_data.append(self.dict_search)    
+                #查询部分数据
                 else:
-                    self.data=self.colletion.find().limit(N)
-                    if filed==None:
+                    self.data=self.colletion.find().limit(N).sort(sortTerm)
+                    #查询所有字段
+                    if len(args)==0:
                         for i in self.data:
                             self.list_data.append(i)
+                    #查询指定字段
                     else:
                         for i in self.data:
-                            self.list_data.append(i[filed])
+                            self.dict_search={}
+                            for x in args:
+                                self.dict_search[x]=i[x]
+                            self.list_data.append(self.dict_search)    
                 print(self.list_data)
-                print('读取数据库数据条数：{}'.format(len(self.list_data)))
+                print('读取数据库数据{}条'.format(len(self.list_data)))
                 return self.list_data
         except Exception as msg:
-            print('数据库链接或参数有误:{}'.format(msg))
+            print('数据库连接或参数有误,请检查用户密码,参数或本机ip是否能连接数据库:{}'.format(msg))
 
 
-    #连接mongodb数据库，查询多个字段内容    
-    def searchs_for_mongodb(self,username,password,database,muster,condition=None,value=None,filed1=None,*vartuple,num=1,N=0):
+    #mongodb数据保存
+    def save_mongodb_data(self,excelpath,uri,database,muster,mongodbserch:dict=None,N:int=0,sortTerm:list=[('_id',-1)],**kwargs)->str:
         """
-        username:用户名
-        password：密码
-        database：数据库
-        muster：集合
-        N:查询条数，默认为0(查询所有满足条件的数据)
-        filed:需具体查询的字段
-        num:每条数据具体查询的字段个数,默认最大为6(1~6)
+        调用save_mongodb_data查询，保存查询数据到本地文档
+        :param excelpath:本地文档路径
+        :param uri:数据库链接
+        :param database：数据库
+        :param muster：集合
+        :param mongodbserch:mongodb查询语句,字典,类似于sql语句 如{"$and": [{"latdec": 9.3547792}, {"watlev": "always dry"}]}
+        :param N:查询条数，默认为0
+        :param sortTerm:是否排序，字典。1升序，-1降序，_id,-1 查询最新数据
+        :param kwargs:键值对，key对应需查询字段，value对应查询字段保存在本地文档中列，如title='A',runtime='B',rated='C'
         """
+        
         try:
-            self.uri='mongodb+srv://{}:{}@atfx2-dev-loa0g.azure.mongodb.net/atfx_test?\
-authSource=admin&replicaSet=atfx2-dev-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&\
-retryWrites=true&ssl=true'.format(username,password)
-            self.client=pymongo.MongoClient(self.uri)
-            self.db=self.client[database]
-            self.colletion=self.db[muster]
+            #拆分kwargs参数
             self.list_search=[]
-            if condition==None and value==None:
-                if N==0:
-                    self.data=self.colletion.find()
-                    if num==1:
-                        for i in self.data:
-                            self.dict_search={}
-                            self.dict_search[filed1]=i[filed1]
-                            self.list_search.append(self.dict_search)
-                    else:
-                        for i in self.data:
-                            self.dict_search={}
-                            for var in vartuple:
-                               self.dict_search[var]=i[var]
-                               self.list_search.append(self.dict_search)
-                else:
-                    self.data=self.colletion.find().limit(N)
-                    if num==1:
-                        for i in self.data:
-                            self.dict_search={}
-                            self.dict_search[filed1]=i[filed1]
-                            self.list_search.append(self.dict_search)
-                    else:
-                        for i in self.data:
-                            self.dict_search={}
-                            for var in vartuple:
-                               self.dict_search[var]=i[var]
-                               self.list_search.append(self.dict_search)
-            else:
-                if N==0:
-                    if type(value)==int:
-                        self.data=self.colletion.find({'{}'.format(condition):value})
-                        if num==1:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.list_search.append(self.dict_search)
-                        else:
-                            for i in self.data:
-                                self.dict_search={}
-                                for var in vartuple:
-                                    self.dict_search[var]=i[var]
-                                    self.list_search.append(self.dict_search)
-                    else:
-                        self.data=self.colletion.find({'{}'.format(condition):'{}'.format(value)})   
-                        if num==1:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.list_search.append(self.dict_search)
-                        else:
-                            for i in self.data:
-                                self.dict_search={}
-                                for var in vartuple:
-                                    self.dict_search[var]=i[var]
-                                    self.list_search.append(self.dict_search)
-                else:
-                    if type(value)==int:
-                        self.data=self.colletion.find({'{}'.format(condition):value}).limit(N)
-                        if num==1:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.list_search.append(self.dict_search)
-                        else:
-                            for i in self.data:
-                                self.dict_search={}
-                                for var in vartuple:
-                                    self.dict_search[var]=i[var]
-                                    self.list_search.append(self.dict_search)
-                    else:
-                        self.data=self.colletion.find({'{}'.format(condition):'{}'.format(value)}).limit(N)
-                        if num==1:
-                            for i in self.data:
-                                self.dict_search={}
-                                self.dict_search[filed1]=i[filed1]
-                                self.list_search.append(self.dict_search)
-                        else:
-                            for i in self.data:
-                                self.dict_search={}
-                                for var in vartuple:
-                                    self.dict_search[var]=i[var]
-                                    self.list_search.append(self.dict_search)
-            print('数据库查询条数：{}，查询字段个数：{},如下：'.format(len(self.list_search),num))
-            print(self.list_search)
-            return self.list_search
-        except Exception as msg:
-            print('查询数据库失败，请检查链接/参数：{}'.format(msg))
+            self.list_save=[]
+            #获取key与value值
+            for key,value in kwargs.items():
+                self.list_search.append(key)
+                self.list_save.append(value)
+            #调用函数查询数据库
+            self.mongo_data=self.search_in_mongodb(uri, database, muster,mongodbserch,*self.list_search,N=N,sortTerm=sortTerm)
+            # #保存数据
+            for i in self.list_search:
+                for y in self.mongo_data:
+                    self.saveainfo(excelpath, y[i], self.list_save[self.list_search.index(i)], self.mongo_data.index(y)+2)
 
-
-    #数据库查询数据保存
-    def save_mongodb_data(self,excelpath,username,password,database,muster,condition=None,value=None,filed1=None,column1=None,num=1,N=0,**kwargs):
-        """
-        不定长参数类型：filed2='B',查询字段及其对应需保存列
-        """
-        try:
-            self.mongo_data=self.searchs_for_mongodb(username,password,database,muster,condition,value,filed1,kwargs.kyes(),num,N)
-            if num==1:
-                for i in self.mongo_data:
-                    self.saveainfo(excelpath, i[filed1], column1, self.mongo_data.index(i)+2)
-            else:
-                for i in self.mongo_data:
-                    for key,values in kwargs.items():
-                        self.saveainfo(excelpath, i[key], values, self.mongo_data.index(i)+2)
+                print('字段"{}"保存在{}列'.format(i,self.list_save[self.list_search.index(i)]))
         except Exception as msg:
-            print('保存数据库数据失败，请检查链接/参数：{}'.format(msg))
+            print('请检查参数及数据库链接是否有误：{}'.format(msg))
 
 #    #连接oracle数据库 
 #     def serach_in_oracle(self,sql,type='single'):
@@ -332,7 +257,7 @@ retryWrites=true&ssl=true'.format(username,password)
             print('请检查连接信息及sql语句是否正确：{}'.format(msg)) 
 #测试
 if __name__=='__main__':
-    e=Exceldata()
+    e=Aboutdata()
     # e.openexcel(r'D:\code\tylerhub\demo\registration_process\test_excel_data\account_number.xlsx','Sheet1')
     # a=e.dict_data()
     # print(a)
@@ -347,7 +272,12 @@ if __name__=='__main__':
     # e.search_in_mysql(sql="SELECT * FROM client_relationship2_sit.relationship where node_Id='100004'",
     # host=conFig.get_value('mysql_AWS', 'host'),user=conFig.get_value('mysql_AWS', 'user'),
     # psword=conFig.get_value('mysql_AWS', 'password'),port=conFig.get_int('mysql_AWS', 'port'))
-    e.openexcel(r'D:\code\tylerhub\demo\registration_process\test_excel_data\account_number.xlsx', 'Sheet1')
-    a=e.dict_data()
-    print(a)
-    print(a[0]['主账号']=='')
+    # e.openexcel(r'D:\code\tylerhub\demo\registration_process\test_excel_data\account_number.xlsx', 'Sheet1')
+    # a=e.dict_data()
+    # print(a)
+    # print(a[0]['主账号']=='')
+    # e.search_in_mongodb(conFig.get_value('mongodb_test', 'uri'), 'sample_mflix', 
+    # 'movies',{"year":1915},'title','runtime',N=0)
+    excelpath=r'D:\code\tylerhub\demo\public\about_data.xlsx'
+    e.save_mongodb_data(excelpath,conFig.get_value('mongodb_test', 'uri'),'sample_mflix','movies',
+    {"year":1915},N=0,sortTerm=[('_id',-1)],title='A',runtime='B',rated='C')

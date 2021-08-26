@@ -18,7 +18,7 @@ print(path_public)
 sys.path.append(path_public)
 path_psword=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_psword+r'\location')
-from about_data import Exceldata
+from about_data import Aboutdata
 from locate_change_pswd_cp import Location
 from read_dataconfig import ReadConfig
 
@@ -27,7 +27,7 @@ loca=Location()
 conFig=ReadConfig()
 
 #读取测试数据
-e=Exceldata()
+e=Aboutdata()
 rows=e.openexcel(path_psword+r'\test_excel_data\test_data.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
 testdata=e.dict_data()
 

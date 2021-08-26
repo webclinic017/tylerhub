@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-18 16:08:10
-LastEditTime: 2021-08-24 10:55:38
+LastEditTime: 2021-08-25 15:21:23
 LastEditors: Please set LastEditors
 Description: Read configuration file
 FilePath: \tylerhub\demo\public\read_dataconfig.py
@@ -22,7 +22,7 @@ class ReadConfig():
         else:
             self.configpath=os.path.join(os.path.dirname(os.path.abspath(__file__)),'config\config.ini')
         
-        self.config=configparser.ConfigParser()
+        self.config=configparser.RawConfigParser()
         self.config.read(self.configpath,encoding='utf-8')#读取配置文件
 
     def get_option(self,section,index=None):

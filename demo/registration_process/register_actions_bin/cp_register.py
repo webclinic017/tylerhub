@@ -18,7 +18,7 @@ path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path
 sys.path.append(path_public)
 path_process=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_process+r'\register_positioning')
-from about_data import Exceldata
+from about_data import Aboutdata
 from read_dataconfig import ReadConfig
 from register_method import Form_operations
 
@@ -27,7 +27,7 @@ conFig=ReadConfig()
 form=Form_operations()
 
 #读取测试文档数据
-e=Exceldata()
+e=Aboutdata()
 rows=e.openexcel(path_process+r'\test_excel_data\register_data.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
 testdata=e.dict_data()
 

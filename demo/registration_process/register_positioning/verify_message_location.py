@@ -14,7 +14,7 @@ import time
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'public')
 sys.path.append(path_public)
-from about_data import Exceldata
+from about_data import Aboutdata
 from browser_actions import Commonweb
 from common_method import Commonmethod
 from handlelog import MyLog

@@ -15,12 +15,12 @@ path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 sys.path.append(path_public)
 path_withdrawal=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_withdrawal+r'\location_withdrawal')
-from about_data import Exceldata
+from about_data import Aboutdata
 from location_withdrawal_cp import Location_withdrawal_incp
 
 withdrawal=Location_withdrawal_incp()
 #读取测试文档数据
-e=Exceldata()
+e=Aboutdata()
 excelpath=path_withdrawal+r'\test_data\withdrawal_data.xlsx'
 rows=e.openexcel(excelpath,'Sheet1') #测试文档的路径，sheet名,并获取总行数
 testdata=e.dict_data()

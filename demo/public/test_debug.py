@@ -451,27 +451,118 @@
 # def A(a:int)->int:
 #     print(type(a))
 
-from browser_actions import Commonweb
-from common_method import Commonmethod
-import time
+# from browser_actions import Commonweb
+# from common_method import Commonmethod
+# import time
 
-common=Commonweb()
-comthod=Commonmethod(common.open_browser())
+# common=Commonweb()
+# comthod=Commonmethod(common.open_browser())
 
-common.open_web('https://at-bos-frontend-sit.atfxdev.com/login')
-time.sleep(1)
-comthod.choose_bos_lang('CN')
-comthod.loginbos('tyler.tang', 'Tl123456')
-common.display_click('css,.ivu-badge >span',3)
+# common.open_web('https://at-bos-frontend-sit.atfxdev.com/login')
+# time.sleep(1)
+# comthod.choose_bos_lang('CN')
+# comthod.loginbos('tyler.tang', 'Tl123456')
+# common.display_click('css,.ivu-badge >span',3)
 
-print(common.get_attributes('xpath,//*[@id="app"]/div/div/div[1]/div[1]/div[1]/div/ul/li[2]/ul', 'style')=='')
-common.display_click('css,.ivu-badge >span',3)
-print(common.get_attributes('xpath,//*[@id="app"]/div/div/div[1]/div[1]/div[1]/div/ul/li[2]/ul', 'style'))
+# print(common.get_attributes('xpath,//*[@id="app"]/div/div/div[1]/div[1]/div[1]/div/ul/li[2]/ul', 'style')=='')
+# common.display_click('css,.ivu-badge >span',3)
+# print(common.get_attributes('xpath,//*[@id="app"]/div/div/div[1]/div[1]/div[1]/div/ul/li[2]/ul', 'style'))
+
+# import pymongo
+# import ssl
 
 
 
+# ssl._create_default_https_context = ssl._create_unverified_context()
+# ssl._create_default_https_context = ssl._create_unverified_context
+
+# uri='mongodb+srv://tylertest:Tl123456@test.6wmyw.mongodb.net/test?authSource=admin&replicaSet=atlas-8x0ltw-shard-0&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true'
+
+# client=pymongo.MongoClient(uri)
+# db=client['sample_analytics']
+# colletion=db['accounts']
+# list_data=[]
+
+# data=colletion.find().limit(3)
+# for i in data:
+#     list_data.append(i)
+# print(list_data)
+
+# from read_dataconfig import ReadConfig
+# from about_data import Aboutdata
+
+# conFig=ReadConfig()
+# abDate=Aboutdata()
+
+# old_uri=abDate.str_insert(conFig.get_value('mongodb_test', 'uri'), 14, conFig.get_value('mongodb_test', 'username'))
+# uri=abDate.str_insert(old_uri, 24, conFig.get_value('mongodb_test', 'psword'))
+# print(uri)
+
+import pymongo
+import ssl
 
 
+# ssl._create_default_https_context = ssl._create_unverified_context()
+# ssl._create_default_https_context = ssl._create_unverified_context
+
+# uri='mongodb+srv://tylertest:Tl123456@test.6wmyw.mongodb.net/test?authSource=admin&replicaSet=atlas-8x0ltw-shard-0&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true'
+
+# client=pymongo.MongoClient(uri)
+# db=client['sample_geospatial']
+# colletion=db['shipwrecks']
+# list_data=[]
+
+# search={"watlev":"always dry"}
+# data=colletion.find(search).limit(2).sort([('_id',-1)])
+# for i in data:
+#     list_data.append(i)
+# print(list_data)
+
+# def A(b=5,**kwargs):
+#     print(b)
+#     print(str(kwargs.keys()))
+#     for key,value in kwargs.items():
+#         print(key)
+
+
+
+# def demo1(*args):
+#     print(args)
+#     for i in args:
+#         print(i)
+
+# def demo2(**canshu):
+#     list_a=[]
+#     list_b=[]
+#     for key,value in canshu.items():
+#         list_a.append(key)
+#         list_b.append(value)
+#     # str_a=tuple(list_a)
+#     demo1(*list_a)
+#     print(list_b)
+
+# demo2(a='A')
+
+
+# list_a=['a','b']
+# print(list_a[0])
+# h=tuple(item for item in list_a)
+# # h=tuple(list_a)
+# print(h[0])
+# print(h)
+
+# def demo2(**canshu):
+#     for i in canshu.keys():
+#         print(i)
+
+# demo2(a=2,c='ddd')
+
+# for i in range(0,2):
+#     print(i)
+a=['c','d','f']
+b=[1,2,4]
+for x,y,z in a,b:
+    print(x)
 
 
 

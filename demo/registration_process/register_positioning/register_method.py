@@ -4,7 +4,7 @@ import time
 
 path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'public')
 sys.path.append(path_public)
-from about_data import Exceldata
+from about_data import Aboutdata
 from browser_actions import Commonweb
 from common_method import Commonmethod
 from handlelog import MyLog
@@ -15,7 +15,7 @@ from verification_code import time_used
 #实例化
 common=Commonweb()
 randomData=Random_data()
-ex=Exceldata()
+ex=Aboutdata()
 log=MyLog()
 conFig=ReadConfig()
 

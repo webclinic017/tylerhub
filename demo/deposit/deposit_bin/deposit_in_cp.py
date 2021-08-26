@@ -17,7 +17,7 @@ path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path
 sys.path.append(path_public)
 path_deposit=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_deposit+r'\location_deposit')
-from about_data import Exceldata
+from about_data import Aboutdata
 from read_dataconfig import ReadConfig
 from location_deposit_of_cp import Locations_of_deposit
 
@@ -26,7 +26,7 @@ conFig=ReadConfig()
 deposit=Locations_of_deposit()
 
 #读取测试文档数据
-e=Exceldata()
+e=Aboutdata()
 excelpath=os.path.join(path_deposit,'test_data\deposit_cp.xlsx')
 rows=e.openexcel(excelpath,'Sheet1')
 testdata=e.dict_data()

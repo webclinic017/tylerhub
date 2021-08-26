@@ -18,14 +18,14 @@ path_process=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_process+r'\register_positioning')
 
 
-from about_data import Exceldata
+from about_data import Aboutdata
 from browser_actions import Commonweb
 from read_dataconfig import ReadConfig
 from verify_message_location import Location_of_verify_data
 
 #实例化
 verify=Location_of_verify_data()
-e=Exceldata()
+e=Aboutdata()
 conFig=ReadConfig()
 common=Commonweb()
 

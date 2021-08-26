@@ -15,14 +15,14 @@ from BeautifulReport import BeautifulReport
 path_demo=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 path_public=path_demo+r'\public'
 sys.path.append(path_public)
-from about_data import Exceldata
+from about_data import Aboutdata
 from browser_actions import Commonweb
 from randomdata import Random_data
 
 
 common=Commonweb()
 #读取测试文档数据
-e=Exceldata()
+e=Aboutdata()
 excelpath=path_demo+r'\website\url.xlsx'
 rows=e.openexcel(excelpath,'Sheet1') #测试文档的路径，sheet名,并获取总行数
 testdata=e.dict_data()

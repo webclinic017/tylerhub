@@ -15,11 +15,11 @@ path_public=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 sys.path.append(path_public)
 path_transfer=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_transfer+r'\transfer_location')
-from about_data import Exceldata
+from about_data import Aboutdata
 from location_transfer_other_one import Locathion_of_transfer
 
 transfer=Locathion_of_transfer()
-e=Exceldata()
+e=Aboutdata()
 excelpath=path_transfer+r'\test_data\transfer_other_one.xlsx'
 rows=e.openexcel(excelpath,'Sheet1')
 testdata=e.dict_data()
