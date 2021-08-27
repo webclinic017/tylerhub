@@ -559,10 +559,37 @@ import ssl
 
 # for i in range(0,2):
 #     print(i)
-a=['c','d','f']
-b=[1,2,4]
-for x,y,z in a,b:
-    print(x)
+# a=['c','d','f']
+# b=[1,2,4]
+# for x,y,z in a,b:
+#     print(x)
+
+# def demo1(*args):
+#     print(args)
+#     for i in args:
+#         print(i)
+
+# def demo2(**kwargs):
+#     print(kwargs)
+#     for i in kwargs:
+#         print(i)
+
+# demo1(*['a','b',5])
+# demo2(**{'a':1,'b':'jdk','c':'ello'})
+# demo2(a=1,b='jdk',c='ello')
+# list=[['a','b',5],[1,3,5]]
+# print(*list)
+
+import random
+print(random.randint(0, 5))
+
+
+
+
+
+
+
+
 
 
 

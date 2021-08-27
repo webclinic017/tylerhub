@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-24 16:11:20
-LastEditTime: 2021-08-24 10:59:35
+LastEditTime: 2021-08-26 19:23:02
 LastEditors: Please set LastEditors
 Description: Execution testcase
 FilePath: \tylerhub\demo\registration_process\register_actions_bin\test_verify_data_bin.py
@@ -71,7 +71,7 @@ class Test_verify_data():
 
 
 if __name__=='__main__':
-    pytest.main(['-s','-v',r'{}\register_actions_bin\test_verify_data_bin.py'.format(path_process),
+    pytest.main(['-s','-v',os.path.abspath(__file__),
     r'--alluredir={}\report\result'.format(path_process),'--disable-pytest-warnings'])
     os.system(r'allure generate {}\report\result -o {}\report\allure_report --clean'.format(path_process,path_process))
     os.system(r'allure serve {}\report\result'.format(path_process))

@@ -4,7 +4,7 @@ import sys
 import time
 
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-path_public=path_demo+r'\public'
+path_public=os.path.join(path_demo,'public')
 sys.path.append(path_public)
 from about_data import Aboutdata
 from browser_actions import Commonweb
@@ -26,7 +26,7 @@ class Location():
     """
     global driver
     
-    # #赋值对象driver
+    #赋值对象driver
     def broswertype(self,broswername='Chrome'):
         self.driver=commom.open_browser(broswername)
         self.commeThod=Commonmethod(self.driver)

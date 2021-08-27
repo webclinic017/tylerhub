@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-08-24 10:47:34
+LastEditTime: 2021-08-26 19:03:37
 LastEditors: Please set LastEditors
 Description: Enforcement change password testcase
 FilePath: \tylerhub\demo\change_psword\action_bin\Change_password_cp.py
@@ -14,7 +14,6 @@ import ddt
 from BeautifulReport import BeautifulReport
 
 path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'public')
-print(path_public)
 sys.path.append(path_public)
 path_psword=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_psword+r'\location')
