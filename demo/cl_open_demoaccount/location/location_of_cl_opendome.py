@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:21:05
-LastEditTime: 2021-08-27 16:28:01
+LastEditTime: 2021-08-27 17:32:12
 LastEditors: Please set LastEditors
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\cl_open_demoaccount\location\location_of_cl_opendome.py
@@ -21,6 +21,7 @@ from handle_database import Dadabase_operate
 from handlelog import MyLog
 from randomdata import Random_data
 from read_dataconfig import ReadConfig
+
 
 
 class Location_of_opendemo(object):
@@ -54,7 +55,7 @@ class Location_of_opendemo(object):
             log.my_logger('!!--!!get_url').error(msg)
 
 
-    #登录页弹唱
+    #登录页弹窗
     def remove_login_topup(self):
         try:
             self.commeThod.remove_register_topup()
@@ -99,11 +100,20 @@ class Location_of_opendemo(object):
             log.my_logger('!!--!!creat_demoaccount').error(msg)
 
     #获取dmo账号信息
-    def get_demoaccount_info(self):
+    def get_demoaccount(self,account:int):
         try:
             #获取创建成功后文本
             time.sleep(1)
             self.successText=common.display_get_text('css,.title')
-            if '创建成功' in self.successText:
-                
+            if '创建完成' in self.successText:
+                #查询数据库获取最新创建的demo账号
+                self.serchData=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atfxgm-sit', 'atfx_trade_account',
+                {"accountNumber":account},'tradeAccount',N=1)
+                self.demoAccount=int(self.serchData[0]['tradeAccount'])
+                print('demo账号创建成功：{}'.format(self.demoAccount))
+            else:
+                common.get_screenpict('creat_demo_failed')
+                print('创建失败,截图保持在项目目录picture下')
+        except Exception as msg:
+            log.my_logger('!!--!!get_demoaccount').error(msg)
 

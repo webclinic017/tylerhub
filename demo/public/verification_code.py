@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-14 10:11:05
-LastEditTime: 2021-08-04 23:46:55
+LastEditTime: 2021-08-27 17:07:48
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\public\verification_code.py
@@ -38,18 +38,15 @@ def Base64_api(uname,pwd,img):
     return ""
 
 #统计某个函数的运行时间
-def time_used(info="used"):
-    """
-    注：使用此装饰器时，被修饰的函数最终不能有返回值
-    """
-    def _time_me(function):
-        @functools.wraps(function)
-        def _wrapper(*args, **kwargs):
-            start = datetime.datetime.now()
-            function(*args, **kwargs)
-            print ('{} {} {}'.format(function.__name__, info,datetime.datetime.now()-start))
-        return _wrapper
-    return _time_me
+def use_time(function):
+  @wraps(function)
+  def function_timer(*args, **kwargs):
+    t0 = time.time()
+    result = function(*args, **kwargs)
+    t1 = time.time()
+    print ("该函数 {} 运行 : {} seconds" .format(function.__name__, str(t1-t0)))
+    return result
+  return function_timer
 
 
 #跳过某个用例

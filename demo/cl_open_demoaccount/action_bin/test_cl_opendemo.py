@@ -1,7 +1,7 @@
 '''
 Author:tyler
 Date: 2021-08-26 18:21:36
-LastEditTime: 2021-08-27 11:15:59
+LastEditTime: 2021-08-27 17:22:14
 LastEditors: Please set LastEditors
 Description: Execution use case
 FilePath: \tylerhub\demo\cl_open_demoaccount\action_bin\test_cl_opendemo.py
@@ -35,6 +35,7 @@ class Test_opendemo_cl(object):
     def test_execution_demo(self):
         openDemo.logincp('tyler.tang@test.com', 'Tl123456')
         openDemo.creat_demoaccount()
-    
+        openDemo.get_demoaccount(1000005349)
+        
 if __name__=='__main__':
     pytest.main(['-s','-v',os.path.abspath(__file__)])

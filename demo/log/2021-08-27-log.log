@@ -1,3 +1,16 @@
 !!--!!get_attributes - 2021-08-27 11:48:37,881 - browser_actions - [browser_actions.py-->line:151] - ERROR: Message: stale element reference: element is not attached to the page document
   (Session info: chrome=92.0.4515.159)
 
+!!--!!choose_register_lang - 2021-08-27 17:19:55,810 - common_method - [common_method.py-->line:75] - ERROR: Message: element click intercepted: Element <i data-v-5dd75122="" class="el-icon-arrow-down el-icon--right"></i> is not clickable at point (1859, 43). Other element would receive the click: <div data-v-85d46342="" class="el-dialog__wrapper" style="z-index: 2001;">...</div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!login_cp - 2021-08-27 17:20:00,113 - common_method - [common_method.py-->line:88] - ERROR: Message: element click intercepted: Element <button data-v-5dd75122="" type="button" class="el-button login-btn el-button--default">...</button> is not clickable at point (1246, 610). Other element would receive the click: <div data-v-85d46342="" class="el-dialog__wrapper" style="z-index: 2001;">...</div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!choose_register_lang - 2021-08-27 17:20:19,522 - common_method - [common_method.py-->line:75] - ERROR: Message: element click intercepted: Element <i data-v-5dd75122="" class="el-icon-arrow-down el-icon--right"></i> is not clickable at point (1475, 42). Other element would receive the click: <div data-v-85d46342="" class="el-dialog__wrapper" style="z-index: 2001;">...</div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-08-27 17:30:01,325 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-27 17:30:01,328 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-27 17:30:01,330 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'

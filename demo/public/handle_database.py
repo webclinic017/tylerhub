@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:27:17
-LastEditTime: 2021-08-26 18:44:09
+LastEditTime: 2021-08-27 17:08:28
 LastEditors: Please set LastEditors
 Description: Query database and save
 FilePath: \tylerhub\demo\public\handle_database.py
@@ -15,6 +15,7 @@ import os
 import sys
 from read_dataconfig import ReadConfig
 from about_data import Aboutdata
+from verification_code import use_time
 
 #全局取消证书验证
 ssl._create_default_https_context=ssl._create_unverified_context()
@@ -34,6 +35,7 @@ class Dadabase_operate(object):
     aboutData=Aboutdata()
 
     #连接mongodb数据库查询数据
+    @use_time #统计查询时间
     def search_in_mongodb(self,uri,database,muster,mongodbserch:dict=None,*args,N:int=0,sortTerm:list=[('_id',-1)])->list:
         
         """
@@ -126,6 +128,7 @@ class Dadabase_operate(object):
 
 
     #mongodb数据保存
+    @use_time #统计函数运行时间
     def save_mongodb_data(self,excelpath,uri,database,muster,mongodbserch:dict=None,N:int=0,sortTerm:list=[('_id',-1)],**kwargs)->str:
         
         """
@@ -184,6 +187,7 @@ class Dadabase_operate(object):
 
 
     #连接mysql数据库查询
+    @use_time #统计函数运行时间
     def search_in_mysql(self,sql,host,user,psword,port:int,type='single')->str:
         """
         :param vartuple:host,username,password,db,port,charset=utf-8
@@ -213,8 +217,10 @@ class Dadabase_operate(object):
 #测试
 if __name__=='__main__':
     dataBase=Dadabase_operate()
-    dataBase.search_in_mongodb(conFig.get_value('mongodb_test', 'uri'), 'sample_mflix', 
-    'movies',{"year":1915},'title','runtime',N=0)
-    excelpath=r'D:\code\tylerhub\demo\public\about_data.xlsx'
-    dataBase.save_mongodb_data(excelpath,conFig.get_value('mongodb_test', 'uri'),'sample_mflix','movies',
-    {"year":1915},N=0,sortTerm=[('_id',-1)],title='A',runtime='B',rated='C')
+    # dataBase.search_in_mongodb(conFig.get_value('mongodb_test', 'uri'), 'sample_mflix', 
+    # 'movies',{"year":1915},'title','runtime',N=0)
+    # excelpath=r'D:\code\tylerhub\demo\public\about_data.xlsx'
+    # dataBase.save_mongodb_data(excelpath,conFig.get_value('mongodb_test', 'uri'),'sample_mflix','movies',
+    # {"year":1915},N=0,sortTerm=[('_id',-1)],title='A',runtime='B',rated='C')
+    dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atfxgm-sit', 'atfx_trade_account',
+    {"accountNumber":1000005349},'tradeAccount',N=1)
