@@ -1,7 +1,7 @@
 '''
 Author:tyler
 Date: 2021-08-26 18:21:36
-LastEditTime: 2021-08-30 14:48:18
+LastEditTime: 2021-08-30 18:46:11
 LastEditors: Please set LastEditors
 Description: Execution use case
 FilePath: \tylerhub\demo\cl_open_demoaccount\action_bin\test_cl_opendemo.py
@@ -40,10 +40,17 @@ class Test_opendemo_cl(object):
         openDemo.creat_demoaccount()
         openDemo.get_demoaccount(1000005349)
         openDemo.get_demo_info()
-        openDemo.search_mongodb_demoinfo(1000005349)
+        openDemo.search_mongodb_demoinfo(1000005349,openDemo.demoAccount)
         with allure.step('判断新开demo账号信息是否与数据库一致'):
-            pytest.assume(openDemo.demoGroup == openDemo.serchDemodata)
+            pytest.assume(openDemo.demoGroup == str(openDemo.serchDemodata[0]['group']))
+            pytest.assume(openDemo.demoLever == int(openDemo.serchDemodata[0]['leverage']))
+            pytest.assume(openDemo.demoSpread == str(openDemo.serchDemodata[0]['spreadType']))
+        openDemo.where_demo_incp(openDemo.demoAccount)
+        with allure.step('修改demo账号杠杆'):
+            openDemo.revise_demolever(openDemo.rows)
+            #断言修改后杠杆是否与数据库一致
+            pytest.assume(openDemo.reviseLever == openDemo.revise_mongolever(1000005349,openDemo.demoAccount))
 
-        
+
 if __name__=='__main__':
     pytest.main(['-s','-v',os.path.abspath(__file__)])

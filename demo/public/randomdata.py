@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-08-24 10:53:09
+LastEditTime: 2021-08-30 17:46:56
 LastEditors: Please set LastEditors
 Description: This module is used to store random data and data processing.Including regular matching of the re module, etc
 FilePath: tylerhub\demo\public\randomdata.py
@@ -71,13 +71,29 @@ class Random_data():
         except Exception as msg:
             self.log_output('!!--!!extract_numbers').error(msg)
 
+    #正则提取字符串
+    def regex(self,regextype,str)->str:
+        """
+        正则匹配，返回字符串,findall方法
+        :param regextype:正则表达式
+        :param str:匹配的字符串
+        :return str
+        """
+        try:
+            self.pattern=re.compile(regextype)
+            self.set=self.pattern.findall(str)
+            return ''.join(self.set)
+        except Exception as msg:
+            log.my_logger('!!--!!regex').error(msg)
+
+
     #生成x-y之间的单个随机整数
     def random_int(self,x,y):
         try:
             return random.randint(x,y)
         except Exception as msg:
             self.log_output('!!--!!random_int').error('请输入正确的参数：x<y:{}'.format(msg))
-        
+    
             
 #测试
 if __name__=='__main__':

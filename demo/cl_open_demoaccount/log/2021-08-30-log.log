@@ -1,0 +1,12 @@
+!!--!!search_mongodb_demoinfo - 2021-08-30 15:29:12,760 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:222] - ERROR: 'Location_of_opendemo' object has no attribute 'demoAccount'
+!!--!!search_mongodb_demoinfo - 2021-08-30 15:31:41,503 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:222] - ERROR: 'Location_of_opendemo' object has no attribute 'demoAccount'
+!!--!!where_demo_incp - 2021-08-30 17:45:58,074 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:246] - ERROR: 'Random_data' object has no attribute 'regex'
+!!--!!creat_demoaccount - 2021-08-30 17:48:25,724 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:130] - ERROR: argument of type 'NoneType' is not iterable
+!!--!!get_demoaccount - 2021-08-30 17:48:33,268 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:154] - ERROR: argument of type 'NoneType' is not iterable
+!!--!!revise_demolever - 2021-08-30 18:19:11,835 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:271] - ERROR: invalid literal for int() with base 10: ''
+!!--!!revise_demolever - 2021-08-30 18:22:19,159 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:271] - ERROR: invalid literal for int() with base 10: ''
+!!--!!revise_mongolever - 2021-08-30 18:25:34,034 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:282] - ERROR: 'Location_of_opendemo' object has no attribute 'tdAccount'
+!!--!!creat_demoaccount - 2021-08-30 18:29:24,481 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:130] - ERROR: argument of type 'NoneType' is not iterable
+!!--!!get_demoaccount - 2021-08-30 18:29:32,019 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:154] - ERROR: argument of type 'NoneType' is not iterable
+!!--!!revise_mongolever - 2021-08-30 18:32:42,292 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:282] - ERROR: list index out of range
+!!--!!revise_mongolever - 2021-08-30 18:35:36,507 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:283] - ERROR: list index out of range
