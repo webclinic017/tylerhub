@@ -14,3 +14,4 @@
 
 !!--!!nosuch_elements - 2021-08-27 17:30:01,328 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
 !!--!!display_click - 2021-08-27 17:30:01,330 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!enter_details_page - 2021-08-27 18:19:30,446 - common_method - [common_method.py-->line:153] - ERROR: 'list' object has no attribute 'click'

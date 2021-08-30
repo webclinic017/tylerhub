@@ -580,10 +580,12 @@ import ssl
 # list=[['a','b',5],[1,3,5]]
 # print(*list)
 
-import random
-print(random.randint(0, 5))
+# import random
+# print(random.randint(0, 5))
 
-
+a=44444
+b="//a[.='{}']".format(a)
+print(b)
 
 
 
