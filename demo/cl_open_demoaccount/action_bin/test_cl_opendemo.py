@@ -1,7 +1,7 @@
 '''
 Author:tyler
 Date: 2021-08-26 18:21:36
-LastEditTime: 2021-08-30 12:10:09
+LastEditTime: 2021-08-30 14:48:18
 LastEditors: Please set LastEditors
 Description: Execution use case
 FilePath: \tylerhub\demo\cl_open_demoaccount\action_bin\test_cl_opendemo.py
@@ -40,7 +40,7 @@ class Test_opendemo_cl(object):
         openDemo.creat_demoaccount()
         openDemo.get_demoaccount(1000005349)
         openDemo.get_demo_info()
-        openDemo.search_mongodb_demoinfo()
+        openDemo.search_mongodb_demoinfo(1000005349)
         with allure.step('判断新开demo账号信息是否与数据库一致'):
             pytest.assume(openDemo.demoGroup == openDemo.serchDemodata)
 

@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:21:05
-LastEditTime: 2021-08-30 12:03:35
+LastEditTime: 2021-08-30 14:47:31
 LastEditors: Please set LastEditors
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\cl_open_demoaccount\location\location_of_cl_opendome.py
@@ -139,8 +139,8 @@ class Location_of_opendemo(object):
                 self.serchData=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atfxgm-sit', 'atfx_trade_account',
                 {"accountNumber":account},'tradeAccount',N=1)
                 self.demoAccount=int(self.serchData[0]['tradeAccount'])
-                return self.demoAccount
                 print('demo账号创建成功：{}'.format(self.demoAccount))
+                return self.demoAccount
             else:
                 common.get_screenpict('creat_demo_failed')
                 print('创建失败,截图保持在项目目录picture下')
@@ -164,6 +164,7 @@ class Location_of_opendemo(object):
             time.sleep(1)
             #获取组别
             self.demoGroup=str(common.get_text("xpath,//div[@class='ivu-drawer-wrap']//span",2))
+            print('新开demo账号组别：{}'.format(self.demoGroup))
             return self.demoGroup
         except Exception as msg:
             log.my_logger('!!--!!get_demo_group').error(msg)
@@ -173,6 +174,7 @@ class Location_of_opendemo(object):
         try:
             #获取杠杆
             self.demoLever=int(common.display_get_text("xpath,//div[@class='ivu-drawer-wrap']//span",6))
+            print('新开demo账号杠杆：{}'.format(self.demoLever))
             return self.demoLever
         except Exception as msg:
             log.my_logger('!!--!!get_demo_lever').error(msg)
@@ -182,6 +184,7 @@ class Location_of_opendemo(object):
         try:
             #获取点差类型
             self.demoSpread=str(common.display_get_text("xpath,//div[@class='ivu-drawer-wrap']//span",7))
+            print('新开demo账号点差：{}'.format(self.demoSpread))
             return self.demoSpread
         except Exception as msg:
             log.my_logger('!!--!!get_demo_spreadtype').error(msg)
@@ -191,8 +194,9 @@ class Location_of_opendemo(object):
         try:
             #获取加点
             self.demoBit=int(common.display_get_text("xpath,//div[@class='ivu-drawer-wrap']//span",8))
-            return self.demoBit
+            print('新开demo账号加点：{}'.format(self.demoBit))
             self.closebrowser()
+            return self.demoBit
         except Exception as msg:
             log.my_logger('!!--!!get_demo_markup').error(msg)
 
@@ -210,6 +214,9 @@ class Location_of_opendemo(object):
             #查询数据库
             self.serchDemodata=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atfxgm-sit', 'atfx_trade_account',
             {"$and": [{"accountNumber": account}, {"tradeAccount": "{}".format(self.demoAccount)}]},'group','leverage','spreadType','markup',N=1)
+            #输出
+            print('新开demo账号数据信息，组别：{}，杠杆：{}，点差：{}，加点：{}'.format(self.serchDemodata[0]['group'],
+            self.serchDemodata[0]['leverage'],self.serchDemodata[0]['spreadType'],self.serchDemodata[0]['markup']))
             return self.serchDemodata
         except Exception as msg:
             log.my_logger('!!--!!search_mongodb_demoinfo').error(msg)
