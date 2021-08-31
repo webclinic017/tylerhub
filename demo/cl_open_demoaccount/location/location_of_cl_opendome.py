@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:21:05
-LastEditTime: 2021-08-30 18:42:49
+LastEditTime: 2021-08-31 10:09:43
 LastEditors: Please set LastEditors
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\cl_open_demoaccount\location\location_of_cl_opendome.py
@@ -78,6 +78,16 @@ class Location_of_opendemo(object):
             self.commeThod.login_cp(username, password)
         except Exception as msg:
             log.my_logger('!!--!!logincp').error(msg)
+
+    #登出cp
+    def logoutcp(self):
+        try:
+            common.switch_windows(0)
+            time.sleep(1)
+            self.commeThod.logout_cp()
+        except Exception as msg:
+            log.my_logger('!!--!!logoutcp').error(msg)
+
 
     #登录bos
     def login_bos(self,username,password):
