@@ -1,7 +1,7 @@
 '''
 Author:tyler
 Date: 2021-08-26 18:21:36
-LastEditTime: 2021-08-31 11:11:17
+LastEditTime: 2021-09-01 10:48:12
 LastEditors: Please set LastEditors
 Description: Execution use case
 FilePath: \tylerhub\demo\cl_open_demoaccount\action_bin\test_cl_opendemo.py
@@ -22,7 +22,7 @@ from location_of_cl_opendome import Location_of_opendemo
 @allure.epic('CL账号开通demo')
 class Test_opendemo_cl(object):
 
-    global openDemo,conFig,dealData
+    global openDemo,conFig,dealData,testdata,excelpath
     openDemo=Location_of_opendemo()
     conFig=ReadConfig()
     dealData=Aboutdata()
@@ -52,29 +52,39 @@ class Test_opendemo_cl(object):
     @allure.story('用例执行')
     @allure.description('读取测试文档数据，执行用例：登录CP新开demo，bos获取demo账号信息与数据库比对，CP修改杠杆')
     @pytest.mark.parametrize('data',testdata)
-    def test_execution_demo(self):
+    def test_execution_demo(self,data):
+        print('当前测试数据：主账号：{}'.format(int(data['主账号'])))
         with allure.step('获取当前测试数据下标'):
             self.data_index=testdata.index(data)
         if self.data_index!=0:
             openDemo.remove_login_topup()
+        
         with allure.step('登录cp新开demo'):
-            openDemo.details_page(data['主账号'])
+            openDemo.details_page(int(data['主账号']))
             openDemo.logincp(data['邮箱'], data['密码'])
             openDemo.creat_demoaccount()
+        
         with allure.step('查询数据库，获取新开demo账号信息'):
-            openDemo.get_demoaccount(data['主账号'])
+            openDemo.get_demoaccount(int(data['主账号']))
             openDemo.get_demo_info()
-            openDemo.search_mongodb_demoinfo(data['主账号'],openDemo.demoAccount)
+            openDemo.search_mongodb_demoinfo(int(data['主账号']),openDemo.demoAccount)
+        
         with allure.step('断言新开demo账号信息是否与数据库一致'):
             pytest.assume(openDemo.demoGroup == str(openDemo.serchDemodata[0]['group']))
             pytest.assume(openDemo.demoLever == int(openDemo.serchDemodata[0]['leverage']))
             pytest.assume(openDemo.demoSpread == str(openDemo.serchDemodata[0]['spreadType']))
-            pytest.assume(openDemo.demoBit == str(openDemo.serchDemodata[0]['markup']))
-        openDemo.where_demo_incp(openDemo.demoAccount)
+            pytest.assume(openDemo.demoBit == int(openDemo.serchDemodata[0]['markup']))
+
+        with allure.step('获取新开demo位于demo列表中第几个'):
+            openDemo.where_demo_incp(openDemo.demoAccount)
+
         with allure.step('修改demo账号杠杆'):
-            openDemo.revise_demolever(openDemo.rows)
-            #断言修改后杠杆是否与数据库一致
-            pytest.assume(openDemo.reviseLever == openDemo.revise_mongolever(1000005349,openDemo.demoAccount))
+            openDemo.revise_demolever(openDemo.row)
+
+        with allure.step('断言修改后杠杆是否与数据库一致'):
+            openDemo.revise_mongolever(int(data['主账号']),openDemo.demoAccount)
+            pytest.assume(openDemo.reviseLever == int(openDemo.serchData[0]['leverage']))
+        
         with allure.step('保存测试数据'):
             dealData.saveainfo(excelpath, openDemo.demoAccount, 'D', self.data_index+2)
             dealData.saveainfo(excelpath, openDemo.demoGroup, 'E', self.data_index+2)
@@ -85,4 +95,8 @@ class Test_opendemo_cl(object):
 
 
 if __name__=='__main__':
-    pytest.main(['-s','-v',os.path.abspath(__file__)])
+    #pytest.main(['-s','-v',os.path.abspath(__file__)])
+    pytest.main(['-s','-v',os.path.abspath(__file__),
+    r'--alluredir={}\report\result'.format(path_project),'--disable-pytest-warnings'])
+    os.system(r'allure generate {}\report\result -o {}\report\allure_report --clean'.format(path_project,path_project))
+    os.system(r'allure serve {}\report\result'.format(path_project))

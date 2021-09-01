@@ -4,27 +4,10 @@
   "children" : [ {
     "name" : "一台憨憨笔记本",
     "children" : [ {
-      "name" : "24732-MainThread",
-      "children" : [ {
-        "name" : "test_verfity[data0]",
-        "uid" : "833b55dd6785e72c",
-        "parentUid" : "f5a6543746d626672a6df327ddd119a0",
-        "status" : "passed",
-        "time" : {
-          "start" : 1629722463290,
-          "stop" : 1629722480527,
-          "duration" : 17237
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
-      } ],
-      "uid" : "f5a6543746d626672a6df327ddd119a0"
-    }, {
       "name" : "10896-MainThread",
       "children" : [ {
         "name" : "test_verfity[data0]",
-        "uid" : "e850522dc0e4ca2d",
+        "uid" : "af7b6005f20cb52a",
         "parentUid" : "63cd03e10a5634a84fd2f894137e8b40",
         "status" : "passed",
         "time" : {
@@ -38,180 +21,10 @@
       } ],
       "uid" : "63cd03e10a5634a84fd2f894137e8b40"
     }, {
-      "name" : "18684-MainThread",
-      "children" : [ {
-        "name" : "test_verfity[data0]",
-        "uid" : "a25c6abb68c7d085",
-        "parentUid" : "06b3bca80bc79dcbe1f0f2f62d3ee0cf",
-        "status" : "broken",
-        "time" : {
-          "start" : 1629721739859,
-          "stop" : 1629721768846,
-          "duration" : 28987
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
-      } ],
-      "uid" : "06b3bca80bc79dcbe1f0f2f62d3ee0cf"
-    }, {
-      "name" : "21780-MainThread",
-      "children" : [ {
-        "name" : "test_verfity[data0]",
-        "uid" : "719fc226e7aa87aa",
-        "parentUid" : "9f520e798000feab15d4ccd5e6637554",
-        "status" : "broken",
-        "time" : {
-          "start" : 1629716597465,
-          "stop" : 1629716614592,
-          "duration" : 17127
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
-      } ],
-      "uid" : "9f520e798000feab15d4ccd5e6637554"
-    }, {
-      "name" : "20948-MainThread",
-      "children" : [ {
-        "name" : "test_verfity[data0]",
-        "uid" : "f19fbdb00df74743",
-        "parentUid" : "de8303aeee48dbf277fa9722cf52f731",
-        "status" : "passed",
-        "time" : {
-          "start" : 1629718658210,
-          "stop" : 1629718675255,
-          "duration" : 17045
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
-      } ],
-      "uid" : "de8303aeee48dbf277fa9722cf52f731"
-    }, {
-      "name" : "23884-MainThread",
-      "children" : [ {
-        "name" : "test_verfity[data0]",
-        "uid" : "917a8a28fd668917",
-        "parentUid" : "b17677aedf13f89f7e03dca15c11b644",
-        "status" : "passed",
-        "time" : {
-          "start" : 1629719631135,
-          "stop" : 1629719703746,
-          "duration" : 72611
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
-      } ],
-      "uid" : "b17677aedf13f89f7e03dca15c11b644"
-    }, {
-      "name" : "8724-MainThread",
-      "children" : [ {
-        "name" : "test_verfity[data0]",
-        "uid" : "9d1bcf4cccfcb1e",
-        "parentUid" : "d6dcb820cbeebacae76ba72917842d7b",
-        "status" : "broken",
-        "time" : {
-          "start" : 1629718381828,
-          "stop" : 1629718398876,
-          "duration" : 17048
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
-      } ],
-      "uid" : "d6dcb820cbeebacae76ba72917842d7b"
-    }, {
-      "name" : "24496-MainThread",
-      "children" : [ {
-        "name" : "test_verfity[data0]",
-        "uid" : "9a243e549757c3cf",
-        "parentUid" : "1e4f70d5deb703bdd8512c4c856de6c0",
-        "status" : "passed",
-        "time" : {
-          "start" : 1629720055212,
-          "stop" : 1629720072391,
-          "duration" : 17179
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
-      } ],
-      "uid" : "1e4f70d5deb703bdd8512c4c856de6c0"
-    }, {
-      "name" : "6652-MainThread",
-      "children" : [ {
-        "name" : "test_verfity[data0]",
-        "uid" : "d618d8991bb8c0cd",
-        "parentUid" : "ad822ea958592e6cdde37454b288013a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1629720865961,
-          "stop" : 1629720882982,
-          "duration" : 17021
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
-      } ],
-      "uid" : "ad822ea958592e6cdde37454b288013a"
-    }, {
-      "name" : "20516-MainThread",
-      "children" : [ {
-        "name" : "test_verfity[data0]",
-        "uid" : "4a05de30b8c6b639",
-        "parentUid" : "9e2ac2e58bf26bd4351af9b363fbf614",
-        "status" : "broken",
-        "time" : {
-          "start" : 1629721446130,
-          "stop" : 1629721463231,
-          "duration" : 17101
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
-      } ],
-      "uid" : "9e2ac2e58bf26bd4351af9b363fbf614"
-    }, {
-      "name" : "21224-MainThread",
-      "children" : [ {
-        "name" : "test_verfity[data0]",
-        "uid" : "b54627ee28530083",
-        "parentUid" : "9a31204032a85f6d7eb74f5509690eae",
-        "status" : "passed",
-        "time" : {
-          "start" : 1629722575835,
-          "stop" : 1629722593054,
-          "duration" : 17219
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
-      } ],
-      "uid" : "9a31204032a85f6d7eb74f5509690eae"
-    }, {
-      "name" : "11604-MainThread",
-      "children" : [ {
-        "name" : "test_verfity[data0]",
-        "uid" : "15393d9d2029f0d4",
-        "parentUid" : "c6ef091818bfc90097ea7132bf20068a",
-        "status" : "broken",
-        "time" : {
-          "start" : 1629716478639,
-          "stop" : 1629716495857,
-          "duration" : 17218
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
-      } ],
-      "uid" : "c6ef091818bfc90097ea7132bf20068a"
-    }, {
       "name" : "22240-MainThread",
       "children" : [ {
         "name" : "test_verfity[data0]",
-        "uid" : "400e1db3ef8b3dac",
+        "uid" : "55b36d0d60149a57",
         "parentUid" : "14e284cf01b4520bc426435eac25a02a",
         "status" : "broken",
         "time" : {
@@ -225,10 +38,27 @@
       } ],
       "uid" : "14e284cf01b4520bc426435eac25a02a"
     }, {
+      "name" : "8724-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "b9b6c3b0dbb6aba8",
+        "parentUid" : "d6dcb820cbeebacae76ba72917842d7b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629718381828,
+          "stop" : 1629718398876,
+          "duration" : 17048
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "d6dcb820cbeebacae76ba72917842d7b"
+    }, {
       "name" : "12832-MainThread",
       "children" : [ {
         "name" : "test_verfity[data0]",
-        "uid" : "7ebd72d12fcd78cb",
+        "uid" : "8aaaf32df6dc9492",
         "parentUid" : "51bfe9a2b8e3f2b7be2aa991e39214e1",
         "status" : "broken",
         "time" : {
@@ -242,44 +72,10 @@
       } ],
       "uid" : "51bfe9a2b8e3f2b7be2aa991e39214e1"
     }, {
-      "name" : "17972-MainThread",
-      "children" : [ {
-        "name" : "test_verfity[data0]",
-        "uid" : "9739ee2811ced0f2",
-        "parentUid" : "995abc6efa0a201b2a335f726118103c",
-        "status" : "broken",
-        "time" : {
-          "start" : 1629721016495,
-          "stop" : 1629721033517,
-          "duration" : 17022
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
-      } ],
-      "uid" : "995abc6efa0a201b2a335f726118103c"
-    }, {
-      "name" : "10320-MainThread",
-      "children" : [ {
-        "name" : "test_verfity[data0]",
-        "uid" : "264030994e090d6d",
-        "parentUid" : "3461c8280673359d3e0187641dc00781",
-        "status" : "passed",
-        "time" : {
-          "start" : 1629721092846,
-          "stop" : 1629721110376,
-          "duration" : 17530
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
-      } ],
-      "uid" : "3461c8280673359d3e0187641dc00781"
-    }, {
       "name" : "21980-MainThread",
       "children" : [ {
         "name" : "test_verfity[data0]",
-        "uid" : "6e35f6d17477e8e2",
+        "uid" : "66f6eb3e27fc4923",
         "parentUid" : "4b879900ecde0450dd916c9e5686ba12",
         "status" : "broken",
         "time" : {
@@ -293,10 +89,112 @@
       } ],
       "uid" : "4b879900ecde0450dd916c9e5686ba12"
     }, {
+      "name" : "21224-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "c7b92845e03a3d0f",
+        "parentUid" : "9a31204032a85f6d7eb74f5509690eae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629722575835,
+          "stop" : 1629722593054,
+          "duration" : 17219
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "9a31204032a85f6d7eb74f5509690eae"
+    }, {
+      "name" : "10320-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "88791888a94ee8af",
+        "parentUid" : "3461c8280673359d3e0187641dc00781",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629721092846,
+          "stop" : 1629721110376,
+          "duration" : 17530
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "3461c8280673359d3e0187641dc00781"
+    }, {
+      "name" : "23884-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "d33ab652ea806e3e",
+        "parentUid" : "b17677aedf13f89f7e03dca15c11b644",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629719631135,
+          "stop" : 1629719703746,
+          "duration" : 72611
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "b17677aedf13f89f7e03dca15c11b644"
+    }, {
+      "name" : "18684-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "cd7d086491f15452",
+        "parentUid" : "06b3bca80bc79dcbe1f0f2f62d3ee0cf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629721739859,
+          "stop" : 1629721768846,
+          "duration" : 28987
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "06b3bca80bc79dcbe1f0f2f62d3ee0cf"
+    }, {
+      "name" : "11604-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "7315ff3925569b8b",
+        "parentUid" : "c6ef091818bfc90097ea7132bf20068a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629716478639,
+          "stop" : 1629716495857,
+          "duration" : 17218
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "c6ef091818bfc90097ea7132bf20068a"
+    }, {
+      "name" : "24496-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "4ee5f9ccacc4ce3b",
+        "parentUid" : "1e4f70d5deb703bdd8512c4c856de6c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629720055212,
+          "stop" : 1629720072391,
+          "duration" : 17179
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "1e4f70d5deb703bdd8512c4c856de6c0"
+    }, {
       "name" : "168-MainThread",
       "children" : [ {
         "name" : "test_verfity[data0]",
-        "uid" : "4f794bfbc5db468e",
+        "uid" : "c12afd5869bd0ff7",
         "parentUid" : "b34b034866d84ea884ae76c78912c403",
         "status" : "broken",
         "time" : {
@@ -310,10 +208,44 @@
       } ],
       "uid" : "b34b034866d84ea884ae76c78912c403"
     }, {
+      "name" : "6652-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "4c1195aede68a663",
+        "parentUid" : "ad822ea958592e6cdde37454b288013a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629720865961,
+          "stop" : 1629720882982,
+          "duration" : 17021
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "ad822ea958592e6cdde37454b288013a"
+    }, {
+      "name" : "21780-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "35719bccc65e6e03",
+        "parentUid" : "9f520e798000feab15d4ccd5e6637554",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629716597465,
+          "stop" : 1629716614592,
+          "duration" : 17127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "9f520e798000feab15d4ccd5e6637554"
+    }, {
       "name" : "19068-MainThread",
       "children" : [ {
         "name" : "test_verfity[data0]",
-        "uid" : "b8408f4bbb7ad170",
+        "uid" : "b2e3cd856d686442",
         "parentUid" : "033fc4817cd86848a089bdb5319b04f4",
         "status" : "broken",
         "time" : {
@@ -326,7 +258,113 @@
         "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
       } ],
       "uid" : "033fc4817cd86848a089bdb5319b04f4"
+    }, {
+      "name" : "17972-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "65872f199eae7831",
+        "parentUid" : "995abc6efa0a201b2a335f726118103c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629721016495,
+          "stop" : 1629721033517,
+          "duration" : 17022
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "995abc6efa0a201b2a335f726118103c"
+    }, {
+      "name" : "20948-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "15b304670b18937d",
+        "parentUid" : "de8303aeee48dbf277fa9722cf52f731",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629718658210,
+          "stop" : 1629718675255,
+          "duration" : 17045
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "de8303aeee48dbf277fa9722cf52f731"
+    }, {
+      "name" : "24732-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "6fa9af8a57e02d6b",
+        "parentUid" : "f5a6543746d626672a6df327ddd119a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629722463290,
+          "stop" : 1629722480527,
+          "duration" : 17237
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "f5a6543746d626672a6df327ddd119a0"
+    }, {
+      "name" : "20516-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "b938b29e67ac804b",
+        "parentUid" : "9e2ac2e58bf26bd4351af9b363fbf614",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629721446130,
+          "stop" : 1629721463231,
+          "duration" : 17101
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "9e2ac2e58bf26bd4351af9b363fbf614"
     } ],
     "uid" : "70de0376cfda7d26b35740bc47604458"
+  }, {
+    "name" : "SZ01-QA-G-10",
+    "children" : [ {
+      "name" : "13848-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "fe95b56224608cc0",
+        "parentUid" : "079e734fbc0dc1050f844454bdb6f4a7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630399238280,
+          "stop" : 1630399258354,
+          "duration" : 20074
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "079e734fbc0dc1050f844454bdb6f4a7"
+    }, {
+      "name" : "6076-MainThread",
+      "children" : [ {
+        "name" : "test_verfity[data0]",
+        "uid" : "83856f651a91eaea",
+        "parentUid" : "7507a1e5dd690747d205ee8cf6453b8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630399486224,
+          "stop" : 1630399504832,
+          "duration" : 18608
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+      } ],
+      "uid" : "7507a1e5dd690747d205ee8cf6453b8d"
+    } ],
+    "uid" : "22c9a7ca73ac7ac9efe14f8b8f896b03"
   } ]
 }

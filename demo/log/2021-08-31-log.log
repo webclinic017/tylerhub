@@ -1,0 +1,20 @@
+!!--!!display_finds_element - 2021-08-31 16:08:00,793 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-31 16:08:00,813 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2021-08-31 16:08:00,815 - browser_actions - [browser_actions.py-->line:151] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2021-08-31 17:03:37,379 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-31 17:03:37,382 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-31 17:03:37,387 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-08-31 17:03:43,956 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-08-31 17:03:43,956 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-31 17:03:43,961 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-08-31 17:03:43,961 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-31 17:03:43,965 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-08-31 17:03:43,965 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-08-31 17:13:21,110 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-08-31 17:13:21,123 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-08-31 17:13:21,144 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'

@@ -135,12 +135,6 @@ class Commonmethod():
     #进入账号详情页
     def enter_details_page(self,account):
         try:
-            #客户管理
-            self.driver.find_element_by_css_selector('[width="200"] li .ivu-icon-ios-arrow-down').click()
-            time.sleep(1)
-            #客户名单
-            self.driver.find_element_by_xpath("//div[@class='scroll-content']//a[.='客户名单']").click()
-            time.sleep(1)
             #输入主账号
             self.driver.find_element_by_css_selector('.ivu-input-group-with-append > [placeholder]').clear()
             time.sleep(1)
@@ -153,4 +147,3 @@ class Commonmethod():
             self.driver.find_element_by_xpath("//a[.='{}']".format(account)).click()
         except Exception as msg:
             log.my_logger('!!--!!enter_details_page').error(msg)
-

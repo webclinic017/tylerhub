@@ -1,0 +1,154 @@
+{
+  "uid" : "c7b92845e03a3d0f",
+  "name" : "test_verfity[data0]",
+  "fullName" : "demo.registration_process.register_actions_bin.test_verify_data_bin.Test_verify_data#test_verfity",
+  "historyId" : "3682f4280185b5731bc6d6e1702abf57",
+  "time" : {
+    "start" : 1629722575835,
+    "stop" : 1629722593054,
+    "duration" : 17219
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_verify_data",
+    "time" : {
+      "start" : 1629722560959,
+      "stop" : 1629722575834,
+      "duration" : 14875
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "新开账号详情页",
+      "time" : {
+        "start" : 1629722575835,
+        "stop" : 1629722590398,
+        "duration" : 14563
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "判断当前交易账号是否唯一，不唯一则跳过，唯一则验证开户信息：",
+      "time" : {
+        "start" : 1629722590398,
+        "stop" : 1629722593054,
+        "duration" : 2656
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "断言，判断当前交易账号开户信息是否与链接一致",
+        "time" : {
+          "start" : 1629722592494,
+          "stop" : 1629722593054,
+          "duration" : 560
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "744970d32bf3a38f",
+          "name" : "账号信息",
+          "source" : "744970d32bf3a38f.png",
+          "type" : "image/png",
+          "size" : 168142
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_verify_data::0",
+    "time" : {
+      "start" : 1629722593055,
+      "stop" : 1629722595152,
+      "duration" : 2097
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "验证审核后信息"
+  }, {
+    "name" : "story",
+    "value" : "获取组别点差等信息"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.registration_process.register_actions_bin"
+  }, {
+    "name" : "suite",
+    "value" : "test_verify_data_bin"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_verify_data"
+  }, {
+    "name" : "host",
+    "value" : "一台憨憨笔记本"
+  }, {
+    "name" : "thread",
+    "value" : "21224-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.registration_process.register_actions_bin.test_verify_data_bin"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c7b92845e03a3d0f.json",
+  "parameterValues" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+}

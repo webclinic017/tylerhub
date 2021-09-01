@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "0ac4fdcbf058abeae604c269887c9a60",
+    "name" : "demo.cl_open_demoaccount.action_bin",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  } ]
+}

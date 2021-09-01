@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:21:05
-LastEditTime: 2021-08-31 10:09:43
+LastEditTime: 2021-09-01 10:19:59
 LastEditors: Please set LastEditors
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\cl_open_demoaccount\location\location_of_cl_opendome.py
@@ -43,7 +43,7 @@ class Location_of_opendemo(object):
         self.driver=common.open_browser(broswername)
         self.commeThod=Commonmethod(self.driver)
 
-    #cp登录页
+    #登录页
     def get_url(self,environment,lang='CN'):
         try:
             common.open_web(conFig.get_value('cp_login', '{}'.format(environment)))
@@ -95,6 +95,13 @@ class Location_of_opendemo(object):
             common.switch_windows(1)
             time.sleep(1)
             self.commeThod.loginbos(username, password)
+            time.sleep(2)
+            #客户管理
+            common.display_click('css,[width="200"] li .ivu-icon-ios-arrow-down')
+            time.sleep(1)
+            #客户名单
+            common.display_click('xpath,//div[@class="scroll-content"]//a[.="客户名单"]')
+            time.sleep(1)
         except Exception as msg:
             log.my_logger('!!--!!login_bos').error(msg)
         
@@ -122,7 +129,7 @@ class Location_of_opendemo(object):
             common.display_click('css,.el-tabs__item',1)
             time.sleep(1)
             #开立模拟账号
-            common.display_click('css,.weak-apply-account-btn')
+            common.display_click('xpath,//span[text()="开立模拟交易账号"]')
             time.sleep(1)
             #随机选择投资金额
             common.display_click('css,.el-input__inner',2)
@@ -253,8 +260,8 @@ class Location_of_opendemo(object):
             for i in range(0,self.cpDemolist):
                 if tdAccount==int(randomData.regex(r'\d{9}', common.get_text('css,.tradeAccount-info > div .account-number-cla',i))):
                     print('新开demo账号位于第{}个'.format(i+1))
-                    self.rows=i
-                    return self.rows
+                    self.row=i
+                    return self.row
                     break
                 else:
                     continue

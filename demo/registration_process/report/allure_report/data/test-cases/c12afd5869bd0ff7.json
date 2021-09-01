@@ -1,0 +1,82 @@
+{
+  "uid" : "c12afd5869bd0ff7",
+  "name" : "test_verfity[data0]",
+  "fullName" : "demo.registration_process.register_actions_bin.test_verify_data_bin.Test_verify_data#test_verfity",
+  "historyId" : "3682f4280185b5731bc6d6e1702abf57",
+  "time" : {
+    "start" : 1629718305355,
+    "stop" : 1629718305355,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'verify' is not defined",
+  "statusTrace" : "self = <class 'test_verify_data_bin.Test_verify_data'>\n\n    def setup_class(self):\n>       verify.browsertype()\nE       NameError: name 'verify' is not defined\n\ndemo\\registration_process\\register_actions_bin\\test_verify_data_bin.py:52: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_verify_data",
+    "time" : {
+      "start" : 1629718305356,
+      "stop" : 1629718305356,
+      "duration" : 0
+    },
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'verify' is not defined\n",
+    "statusTrace" : "  File \"C:\\Users\\MSI-NB\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"C:\\Users\\MSI-NB\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\_pytest\\fixtures.py\", line 1126, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"C:\\Users\\MSI-NB\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\_pytest\\fixtures.py\", line 925, in call_fixture_func\n    fixture_result = next(generator)\n  File \"C:\\Users\\MSI-NB\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\_pytest\\python.py\", line 811, in xunit_setup_class_fixture\n    _call_with_optional_argument(func, self.obj)\n  File \"C:\\Users\\MSI-NB\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\_pytest\\python.py\", line 739, in _call_with_optional_argument\n    func(arg)\n  File \"d:\\code\\tylerhub\\demo\\registration_process\\register_actions_bin\\test_verify_data_bin.py\", line 52, in setup_class\n    verify.browsertype()\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "验证审核后信息"
+  }, {
+    "name" : "story",
+    "value" : "获取组别点差等信息"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.registration_process.register_actions_bin"
+  }, {
+    "name" : "suite",
+    "value" : "test_verify_data_bin"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_verify_data"
+  }, {
+    "name" : "host",
+    "value" : "一台憨憨笔记本"
+  }, {
+    "name" : "thread",
+    "value" : "168-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.registration_process.register_actions_bin.test_verify_data_bin"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c12afd5869bd0ff7.json",
+  "parameterValues" : [ "{'国家': '南韩', '邮箱': '1100000010@uitest.com', '主账号': 1000006091.0, '三字码': 'KOR', '通过专属链接/邀请码': '', '密码': '', '地区': '', '邀请码': '', '币种': 'USD', '加点': 1.0, '杠杆': 400.0, '组别': 'demoforex2-atfx', '点差': 'Standard'}" ]
+}

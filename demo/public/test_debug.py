@@ -583,16 +583,19 @@ import ssl
 # import random
 # print(random.randint(0, 5))
 
-a=44444
-b="//a[.='{}']".format(a)
-print(b)
+# a=44444
+# b="//a[.='{}']".format(a)
+# print(b)
+# import allure
+
+import os
+import sys
 
 
+print(os.environ['path'])
 
 
+# import allure
+# import os
 
-
-
-
-
-
+# os.system(r'allure generate {}\report\result -o {}\report\allure_report --clean'.format(path_process,path_process))

@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Aug 31 17:19:40 CST 2021","Tue Aug 31 17:20:23 CST 2021","43002","demo.cl_open_demoaccount.action_bin","test_cl_opendemo","Test_opendemo_cl","","","test_execution_demo[data0]","读取测试文档数据，执行用例：登录CP新开demo，bos获取demo账号信息与数据库比对，CP修改杠杆"
+"passed","Tue Aug 31 17:20:30 CST 2021","Tue Aug 31 17:21:13 CST 2021","43118","demo.cl_open_demoaccount.action_bin","test_cl_opendemo","Test_opendemo_cl","","","test_execution_demo[data1]","读取测试文档数据，执行用例：登录CP新开demo，bos获取demo账号信息与数据库比对，CP修改杠杆"

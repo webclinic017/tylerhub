@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-18 16:08:10
-LastEditTime: 2021-08-26 18:45:04
+LastEditTime: 2021-08-31 11:19:41
 LastEditors: Please set LastEditors
 Description: Data of read and save
 FilePath: \tylerhub\demo\public\about_data.py
@@ -88,7 +88,7 @@ class Aboutdata(object):
 #测试
 if __name__=='__main__':
     e=Aboutdata()
-    e.openexcel(r'D:\code\tylerhub\demo\registration_process\test_excel_data\account_number.xlsx','Sheet1')
+    e.openexcel(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\cl_open_demoaccount\test_data\cl_open_demo.xlsx','Sheet1')
     a=e.dict_data()
     print(a)
-    print(a[0]['主账号']=='')
+    print(a[0]['主账号'])

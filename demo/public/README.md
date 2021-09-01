@@ -1,7 +1,7 @@
 <!--
  * @Author: tyler
  * @Date: 2021-05-13 10:43:00
- * @LastEditTime: 2021-08-20 09:59:49
+ * @LastEditTime: 2021-09-01 11:11:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \tylerhub\demo\public\README.mdd
@@ -118,6 +118,7 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     get_rangephone()                           随机手机号码
     extract_numbers(str)                       提取数字
     random_int(x,y)                            生成x-y之间的单个随机整数
+    regex(regextype,str)                       正则提取字符串
 
 *变量*
 
@@ -127,6 +128,8 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     type:letter or number
     str:含有数字的字符串
     x,y:整数，x<y
+    regextype:正则表达式
+    str:被匹配的字符串
 ***
 ***[about_data.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/about_data.py)***
 
@@ -134,8 +137,7 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
 
     openexcel(excelpath,sheetname)              提取excel表格中的数据
     saveainfo(excelpath,values,column,row)      创建存储注册数据的函数，写入已存在的本地文档中
-    search_in_mongodb(username,password,database,muster,condition=None,value=None,filed=None,N=0)                  mongodb数据库查询
-    serach_in_oracle                            oracle数据库查询
+    str_insert(old_str,pos:int,add_str)         字符串指定位置添加字符串               
 
 *变量*
 
@@ -144,13 +146,17 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     values：保存进文档的值
     column：列
     row：行
+    old_str:被添加字符的字符串
+    pos:添加的位置
+    add_str:添加的字符串
 ***
+
 ***[verification_code.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/verification_code.py)***
 
 *公共方法*
 
     Base64_api(uname,pwd,img)                   图鉴网接口，识别验证码
-    time_used(info="used")                      统计某个函数的运行时间
+    use_time(function)                          统计某个函数的运行时间
     skip_dependon(depend="")                    跳过某个用例（适用于unittest框架）
 
 *变量*
@@ -168,6 +174,7 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
 *变量*
 
     name：日志名称
+
  ***  
   ***[read_dataconfig.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/read_dataconfig.py)***     
   
@@ -175,9 +182,36 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
   
     get_option(section,index=None)            获取section下的option值，列表返回，index值具体取第几项
     get_value(section,opthon)                 获取某个section节点下option的具体值
+    get_int(section,opthon)                   获取指定section节点下的opthon值，并以int类型返回
      
  *变量*
  
     section：节点
     opthon：节点中的key
-    
+***
+
+ ***[handle_database.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/public/handle_database.py)***  
+
+  *公共方法*
+
+    search_in_mongodb(uri,database,muster,mongodbserch:dict=None,*args,N:int=0,sortTerm:list=[('_id',-1)])  连接mongodb数据库查询数据
+    save_mongodb_data(excelpath,uri,database,muster,mongodbserch:dict=None,N:int=0,sortTerm:list=[('_id',-1)],**kwargs) mongodb数据保存
+    search_in_mysql(sql,host,user,psword,port:int,type='single')              连接mysql数据库查询
+ 
+ *变量*
+ 
+    uri:数据库链接
+    database：数据库
+    muster：集合
+    mongodbserch:mongodb查询语句,字典,类似于sql语句 如{"$and": [{"latdec": 9.3547792}, {"watlev": "always dry"}]}
+    N:查询条数，默认为0
+    args:需具体查询的字段
+    sortTerm:是否排序，字典。1升序，-1降序，_id,-1 查询最新数据
+    excelpath:文档路径
+    kwargs:键值对，key对应需查询字段，value对应查询字段保存在本地文档中列，如title='A',runtime='B',rated='C'
+    ql: 执行查询的sql语句
+    type: 查询单条或者所有符合sql语句的数据
+    host:数据库host
+    user:用户名
+    psword:密码
+    port:端口
