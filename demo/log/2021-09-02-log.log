@@ -1,0 +1,5 @@
+!!--!!url_error - 2021-09-02 15:36:03,783 - browser_actions - [browser_actions.py-->line:55] - WARNING: 请输入正确的域名
+!!--!!remove_register_topup - 2021-09-02 15:40:25,077 - common_method - [common_method.py-->line:43] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!choose_register_lang - 2021-09-02 15:40:38,941 - common_method - [common_method.py-->line:75] - ERROR: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+

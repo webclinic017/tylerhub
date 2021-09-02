@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:21:05
-LastEditTime: 2021-09-01 10:19:59
+LastEditTime: 2021-09-02 11:46:06
 LastEditors: Please set LastEditors
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\cl_open_demoaccount\location\location_of_cl_opendome.py
@@ -21,7 +21,6 @@ from handle_database import Dadabase_operate
 from handlelog import MyLog
 from randomdata import Random_data
 from read_dataconfig import ReadConfig
-
 
 
 class Location_of_opendemo(object):

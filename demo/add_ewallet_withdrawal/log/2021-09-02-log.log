@@ -1,0 +1,15 @@
+!!--!!get_url - 2021-09-02 15:40:51,128 - location_of_add_ewallet - [location_of_add_ewallet.py-->line:59] - ERROR: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!login_bos - 2021-09-02 15:40:51,376 - location_of_add_ewallet - [location_of_add_ewallet.py-->line:104] - ERROR: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!details_page - 2021-09-02 15:40:55,229 - location_of_add_ewallet - [location_of_add_ewallet.py-->line:113] - ERROR: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!details_page - 2021-09-02 15:40:55,449 - location_of_add_ewallet - [location_of_add_ewallet.py-->line:133] - ERROR: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!details_page - 2021-09-02 15:40:55,449 - location_of_add_ewallet - [location_of_add_ewallet.py-->line:133] - ERROR: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+

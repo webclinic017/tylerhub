@@ -79,7 +79,11 @@ class Commonmethod():
         try:
             self.eles=self.driver.find_elements_by_css_selector('.el-input__inner')
             #输入用户名
+            self.eles[1].clear()
+            time.sleep(1)
             self.eles[1].send_keys(username)
+            time.sleep(1)
+            self.eles[-1].clear()
             time.sleep(1)
             self.eles[-1].send_keys(psword)
             time.sleep(1)
@@ -124,7 +128,11 @@ class Commonmethod():
         try:
             self.ele_bos=self.driver.find_elements_by_css_selector('.ivu-input-default')
             time.sleep(1)
+            self.ele_bos[0].clear()
+            time.sleep(1)
             self.ele_bos[0].send_keys(username)
+            time.sleep(1)
+            self.ele_bos[1].clear()
             time.sleep(1)
             self.ele_bos[1].send_keys(psword)
             time.sleep(1)

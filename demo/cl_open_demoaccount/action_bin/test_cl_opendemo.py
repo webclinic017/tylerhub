@@ -1,7 +1,7 @@
 '''
 Author:tyler
 Date: 2021-08-26 18:21:36
-LastEditTime: 2021-09-01 10:48:12
+LastEditTime: 2021-09-02 11:44:12
 LastEditors: Please set LastEditors
 Description: Execution use case
 FilePath: \tylerhub\demo\cl_open_demoaccount\action_bin\test_cl_opendemo.py
@@ -52,6 +52,7 @@ class Test_opendemo_cl(object):
     @allure.story('用例执行')
     @allure.description('读取测试文档数据，执行用例：登录CP新开demo，bos获取demo账号信息与数据库比对，CP修改杠杆')
     @pytest.mark.parametrize('data',testdata)
+    @pytest.mark.flaky(reruns=2, reruns_delay=2) #失败重跑
     def test_execution_demo(self,data):
         print('当前测试数据：主账号：{}'.format(int(data['主账号'])))
         with allure.step('获取当前测试数据下标'):

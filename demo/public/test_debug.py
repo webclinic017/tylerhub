@@ -588,14 +588,29 @@ import ssl
 # print(b)
 # import allure
 
-import os
-import sys
+# import os
+# import sys
 
 
-print(os.environ['path'])
+# print(os.environ['path'])
 
 
 # import allure
 # import os
 
 # os.system(r'allure generate {}\report\result -o {}\report\allure_report --clean'.format(path_process,path_process))
+import pytest
+import os
+
+@pytest.mark.flaky(reruns=2, reruns_delay=2)
+def test_01():
+    print('执行1')
+    assert 0 == 1
+
+def test_02():
+    print('执行2')
+    assert 0 == 0
+
+if __name__=='__main__':
+    pytest.main(['-s','-v',os.path.abspath(__file__),'--reruns=2','--reruns-delay=2'])
+    pytest.main(['-s','-v',os.path.abspath(__file__)])
