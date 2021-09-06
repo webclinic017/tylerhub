@@ -599,18 +599,171 @@ import ssl
 # import os
 
 # os.system(r'allure generate {}\report\result -o {}\report\allure_report --clean'.format(path_process,path_process))
-import pytest
-import os
+# import pytest
+# import os
 
-@pytest.mark.flaky(reruns=2, reruns_delay=2)
-def test_01():
-    print('执行1')
-    assert 0 == 1
+# @pytest.mark.flaky(reruns=2, reruns_delay=2)
+# def test_01():
+#     print('执行1')
+#     assert 0 == 1
 
-def test_02():
-    print('执行2')
-    assert 0 == 0
+# def test_02():
+#     print('执行2')
+#     assert 0 == 0
 
-if __name__=='__main__':
-    pytest.main(['-s','-v',os.path.abspath(__file__),'--reruns=2','--reruns-delay=2'])
-    pytest.main(['-s','-v',os.path.abspath(__file__)])
+# if __name__=='__main__':
+#     pytest.main(['-s','-v',os.path.abspath(__file__),'--reruns=2','--reruns-delay=2'])
+#     pytest.main(['-s','-v',os.path.abspath(__file__)])
+
+# a=2
+# for i in range(0,3-a):
+#     print(i)
+
+# import collections
+# list=['nlpay','cashu','cashu','cashu','nlpay','sticpay']
+
+# result=collections.Counter(list)
+# a=''
+# for key,values in result.items():
+#     if values>=3:
+#         a=key
+#         b=values
+#         break
+#     else:
+#         a=list[0]
+#         times=result[a]
+        
+
+# print(a)
+# print(b)
+
+list=[{'skill':2},{'casshu':'4'}]
+ewallet=int(list[0]['skill'])
+print(ewallet)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

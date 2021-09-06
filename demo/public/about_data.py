@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-18 16:08:10
-LastEditTime: 2021-08-31 11:19:41
+LastEditTime: 2021-09-03 14:22:38
 LastEditors: Please set LastEditors
 Description: Data of read and save
 FilePath: \tylerhub\demo\public\about_data.py
@@ -11,7 +11,7 @@ import sys
 
 import xlrd
 from openpyxl import load_workbook
-
+from collections import Counter
 
 class Aboutdata(object):
 

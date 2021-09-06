@@ -1,0 +1,4 @@
+!!--!!get_verify_code - 2021-09-06 14:41:50,166 - location_of_add_ewallet - [location_of_add_ewallet.py-->line:212] - ERROR: 'Random_data' object has no attribute 'log_output'
+!!--!!get_verify_code - 2021-09-06 14:58:34,605 - location_of_add_ewallet - [location_of_add_ewallet.py-->line:213] - ERROR: 'Random_data' object has no attribute 'log_output'
+!!--!!get_tips - 2021-09-06 14:58:34,627 - location_of_add_ewallet - [location_of_add_ewallet.py-->line:266] - ERROR: 'Location_of_add_ewallet' object has no attribute 'emailcode'
+!!--!!is_ewallet_morethan_three - 2021-09-06 15:32:20,682 - location_of_add_ewallet - [location_of_add_ewallet.py-->line:188] - ERROR: ele_is_displayed() missing 1 required positional argument: 'timeout'

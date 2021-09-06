@@ -402,7 +402,7 @@ class Commonweb():
     #JS控制滚动条
     def js_scroll(self,site):
         """
-        site:top or down,
+        :param site:top or down,
         Control window movement
         """
         try:

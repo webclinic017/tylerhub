@@ -1,0 +1,145 @@
+!!--!!display_click - 2021-09-06 10:58:47,852 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_click - 2021-09-06 10:58:53,925 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_click - 2021-09-06 10:58:53,925 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_click - 2021-09-06 11:07:24,003 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element click intercepted: Element <span data-v-a2a4e38c="" class="lev-val">...</span> is not clickable at point (576, 410). Other element would receive the click: <span>...</span>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-09-06 11:07:29,576 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 11:07:29,577 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2021-09-06 11:07:29,578 - browser_actions - [browser_actions.py-->line:245] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2021-09-06 14:39:08,261 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 14:39:08,262 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2021-09-06 14:39:08,263 - browser_actions - [browser_actions.py-->line:221] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_click - 2021-09-06 14:41:37,583 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element click intercepted: Element <a data-v-417a71f4="" class="tips">...</a> is not clickable at point (561, 304). Other element would receive the click: <div data-v-9fae2ab0="" class="ivu-spin ivu-spin-default ivu-spin-fix">...</div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!get_text_error - 2021-09-06 14:41:43,614 - browser_actions - [browser_actions.py-->line:238] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2021-09-06 14:41:50,161 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 14:41:50,163 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-06 14:41:50,164 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 14:41:50,164 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-09-06 14:44:22,180 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 14:44:22,183 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2021-09-06 14:44:22,184 - browser_actions - [browser_actions.py-->line:221] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2021-09-06 14:53:27,425 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 14:53:27,427 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-06 14:53:27,428 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-09-06 14:54:05,686 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-09-06 14:54:05,686 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 14:54:05,689 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-09-06 14:54:05,689 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-06 14:54:05,690 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 14:54:05,690 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 14:58:21,995 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element click intercepted: Element <a data-v-417a71f4="" class="tips">...</a> is not clickable at point (561, 304). Other element would receive the click: <div data-v-9fae2ab0="" class="ivu-spin ivu-spin-default ivu-spin-fix">...</div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!get_text_error - 2021-09-06 14:58:28,053 - browser_actions - [browser_actions.py-->line:238] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2021-09-06 14:58:34,600 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 14:58:34,602 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-06 14:58:34,603 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 14:58:34,603 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-09-06 15:01:49,635 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: no such window: window was already closed
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!nosuch_elements - 2021-09-06 15:01:49,636 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-06 15:01:49,637 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-09-06 15:25:35,898 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 15:25:35,900 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-06 15:25:35,901 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!element_is_visible - 2021-09-06 15:29:20,057 - browser_actions - [browser_actions.py-->line:159] - ERROR: 'NoneType' object has no attribute 'is_displayed'
+!!--!!nosuch_elements - 2021-09-06 15:34:34,306 - browser_actions - [browser_actions.py-->line:144] - ERROR: list index out of range
+!!--!!display_click - 2021-09-06 15:34:34,307 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 15:34:36,647 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (759, 534). Other element would receive the click: <div class="el-scrollbar__bar is-horizontal">...</div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_click - 2021-09-06 15:34:36,647 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (759, 534). Other element would receive the click: <div class="el-scrollbar__bar is-horizontal">...</div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-09-06 15:34:44,236 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 15:34:44,238 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-09-06 15:34:44,238 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-06 15:34:44,240 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 15:34:44,240 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 15:34:44,240 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!nosuch_elements - 2021-09-06 15:34:45,280 - browser_actions - [browser_actions.py-->line:144] - ERROR: list index out of range
+!!--!!nosuch_elements - 2021-09-06 15:34:45,280 - browser_actions - [browser_actions.py-->line:144] - ERROR: list index out of range
+!!--!!nosuch_elements - 2021-09-06 15:34:45,280 - browser_actions - [browser_actions.py-->line:144] - ERROR: list index out of range
+!!--!!display_click - 2021-09-06 15:34:45,281 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 15:34:45,281 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 15:34:45,281 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 15:34:45,281 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!nosuch_elements - 2021-09-06 15:37:54,856 - browser_actions - [browser_actions.py-->line:144] - ERROR: list index out of range
+!!--!!display_click - 2021-09-06 15:37:54,858 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 16:29:41,710 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element click intercepted: Element <span data-v-558fc37c="" class="menu-font">...</span> is not clickable at point (69, 284). Other element would receive the click: <div data-v-40f3c96f="" class="el-dialog__wrapper add-bankinfo" style="z-index: 2006;">...</div>
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_finds_element - 2021-09-06 16:29:49,227 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 16:29:49,228 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-06 16:29:49,229 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 16:29:49,229 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-09-06 16:29:55,758 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-09-06 16:29:55,758 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 16:29:55,761 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-09-06 16:29:55,761 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-06 16:29:55,762 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 16:29:55,762 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 16:29:55,762 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-09-06 16:30:02,298 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-09-06 16:30:02,298 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-09-06 16:30:02,298 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 16:30:02,299 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-09-06 16:30:02,299 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-09-06 16:30:02,299 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-06 16:30:02,301 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 16:30:02,301 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 16:30:02,301 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 16:30:02,301 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-09-06 16:30:08,869 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-09-06 16:30:08,869 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-09-06 16:30:08,869 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-09-06 16:30:08,869 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 16:30:08,875 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-09-06 16:30:08,875 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-09-06 16:30:08,875 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-09-06 16:30:08,875 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-06 16:30:08,878 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 16:30:08,878 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 16:30:08,878 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 16:30:08,878 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 16:30:08,878 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-09-06 16:34:01,700 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-06 16:34:01,702 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-06 16:34:01,703 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-06 16:34:07,725 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+!!--!!display_click - 2021-09-06 16:34:07,725 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+

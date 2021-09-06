@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-09-02 10:18:01
-LastEditTime: 2021-09-02 11:24:12
+LastEditTime: 2021-09-06 17:35:55
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\add_ewallet_withdrawal\action_bin\test_add_ewallet.py
@@ -39,13 +39,24 @@ class Test_opendemo_cl(object):
 
     
     def test_ewallet(self):
-        addEwaller.details_page(1000005349)
+        addEwaller.details_page(1200008143)
         #居住国家为中国，跳过该用例
         if addEwaller.get_live_country():
-            addEwaller.closebrowser()
             pytest.skip()
-
-
+        else:
+            addEwaller.logincp('235345346@qq.com', 'Tl123456')
+            addEwaller.is_ewallet_morethan_three()
+            addEwaller.get_tips()
+            #断言提示语是否正确
+            pytest.assume(addEwaller.tips == '每种电子钱包您最多可以添加3条，若需再新增，您需先删除其中一条。')
+            addEwaller.is_ewallet_available()
+            #断言新增电子琴钱包出金方式是否在会员中心可用及数据库中是否添加
+            if addEwaller.times<3:
+                #查询数据库
+                addEwaller.search_mongodb_ewallet(1200008143)
+                pytest.assume(addEwaller.available_ewallet == 3)
+                pytest.assume(''.join(addEwaller.availableList) in addEwaller.databaseList)
+            
 
 
 

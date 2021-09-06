@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:27:17
-LastEditTime: 2021-08-27 17:08:28
+LastEditTime: 2021-09-06 17:25:02
 LastEditors: Please set LastEditors
 Description: Query database and save
 FilePath: \tylerhub\demo\public\handle_database.py
@@ -86,7 +86,6 @@ class Dadabase_operate(object):
                             for x in args:
                                 self.dict_search[x]=i[x]
                             self.list_data.append(self.dict_search)   
-                print(self.list_data)
                 print('返回数据库数据{}条'.format(len(self.list_data)))
                 return self.list_data
             #查询条件为空时
@@ -120,7 +119,6 @@ class Dadabase_operate(object):
                             for x in args:
                                 self.dict_search[x]=i[x]
                             self.list_data.append(self.dict_search)    
-                print(self.list_data)
                 print('读取数据库数据{}条'.format(len(self.list_data)))
                 return self.list_data
         except Exception as msg:
