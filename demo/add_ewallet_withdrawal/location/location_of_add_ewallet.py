@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-02 10:17:39
-LastEditTime: 2021-09-06 17:34:25
+LastEditTime: 2021-09-07 16:43:37
 LastEditors: Please set LastEditors
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\add_ewallet_withdrawal\location\location_of_add_ewallet.py
@@ -180,7 +180,7 @@ class Location_of_add_ewallet(object):
                         #赋值ewallet
                         self.ewallet=''.join(self.ewallet_list[0].keys())
                         self.times=int(self.ewallet_list[0][self.ewallet])
-                        print('需添加{}条{}出金方式'.format(3-self.times,self.ewallet))
+                    print('需添加{}条{}出金方式'.format(3-self.times,self.ewallet))
             else:
                 print('当前账号不存在电子钱包出金方式')
                 self.ewallet='Skrill'
@@ -206,10 +206,9 @@ class Location_of_add_ewallet(object):
             #获取验证码文本
             acc_text=common.get_text('xpath,//div[@class="ivu-drawer-wrap"]//tr[2]//tr[4]/td[1]/span')
             time.sleep(1)
-            #关闭邮件侧边栏
-            common.display_click("xpath,//div[@class='ivu-drawer-wrap']//i[@class='ivu-icon ivu-icon-ios-close']")
             #提取验证码
             self.emailcode=randomData.extract_numbers(acc_text)
+            self.closebrowser()
             return self.emailcode
         except Exception as msg:
             log.my_logger('!!--!!get_verify_code').error(msg)
@@ -237,10 +236,12 @@ class Location_of_add_ewallet(object):
             if self.times>=3:
                 #选择超过三条的电子钱包出金方式
                 common.display_click('css,.el-form > div .el-select__caret')
+                time.sleep(1)
                 common.display_click("xpath,//span[.='{}']".format(self.ewallet),-1)
                 time.sleep(1)
                 self.tips=common.display_get_text('css,.el-message__content')
                 print(self.tips)
+                common.display_click('css,.bankinfo-page > div .el-dialog__close',3)
                 return self.tips
             else:
                 for i in range(0,4-self.times):
@@ -253,6 +254,7 @@ class Location_of_add_ewallet(object):
                         time.sleep(1)
                         self.tips=common.display_get_text('css,.el-message__content')
                         print(self.tips)
+                        common.display_click('css,.bankinfo-page > div .el-dialog__close',3)
                         return self.tips
                     else:
                         if self.ewallet=='M-Pesa':
@@ -268,10 +270,8 @@ class Location_of_add_ewallet(object):
                         common.display_click('xpath,//span[.="继续添加"]')
         except Exception as msg:
             log.my_logger('!!--!!get_tips').error(msg)
-        finally:
-            common.switch_windows(2)
-            self.closebrowser()
-        
+
+       
     #判断新增出金方式会员中心是否可用
     def is_ewallet_available(self):
         try:
@@ -279,15 +279,7 @@ class Location_of_add_ewallet(object):
                 #出金
                 common.switch_windows(0)
                 time.sleep(1)
-                common.display_click('css,.bankinfo-page > div .el-dialog__close',3)
-                time.sleep(1)
                 common.display_click('xpath,//span[.="出金"]')
-                time.sleep(2)
-                #交易账户
-                common.display_click("css,[placeholder='交易账户']")
-                time.sleep(1)
-                common.display_click("css,[x-placement='bottom-start'] li")
-                time.sleep(1)
                 #取款方式
                 common.display_click('css,#typeSelection')
                 time.sleep(1)
@@ -308,10 +300,12 @@ class Location_of_add_ewallet(object):
                 self.availableList=[]
                 for i in range(0,self.available_ewallet):
                     self.availableList.append(common.display_get_text("css,[x-placement='bottom-start'] li > span",i))
+                print('当前所有可用渠道支付方式：{}'.format(self.availableList))
             else:
                 self.available_ewallet=self.times
         except Exception as msg:
             log.my_logger('!!--!!is_ewallet_available').error(msg)
+
 
     #查询数据库，判断新增电子钱包出金方式是否添加进库中
     def search_mongodb_ewallet(self,account):
@@ -321,97 +315,15 @@ class Location_of_add_ewallet(object):
             self.databaseList=[]
             for i in self.dabasData[0]['eChannel']:
                 self.databaseList.append(i['payAccount'])
+            print('数据库中所有可用支付方式：{}'.format(self.databaseList))
             return self.databaseList
         except Exception as msg:
             log.my_logger('!!--!!search_mongodb_ewallet').error(msg)
-
-
-                    
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    #截图,返回截图路径
+    def screenshots_path(self,name,filename='picture'):
+        return common.get_screenpict_path(name)
 
     def closebrowser(self):
         common.close_browser()

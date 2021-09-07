@@ -637,15 +637,14 @@ import ssl
 # print(a)
 # print(b)
 
-list=[{'skill':2},{'casshu':'4'}]
-ewallet=int(list[0]['skill'])
-print(ewallet)
+list1=['4stgYLRT5@qq.com', 'AWzB0iRgH@qq.com', 'P3mD8ZQqg@qq.com']
+list2=['5345645464@q.com', '1564564545@qq.com', '1564654466@qq.com', '54346575', '456456464@qq.com', 'yLopt0nHv@gmail.com', 'mPZG69XfH@qq.com', 'nr6pcNkSx@163.com', 'wT41opAuL@gmail.com', 
+'pAqVXmZGf@qq.com', 'uT0MX1gmZ@qq.com', 'O4msn7b3v@gmail.com', 'AtBNRmklP@qq.com', 'wFm8J7zyL@qq.com', 'NwQbDXW0h@163.com', '15345644646@qq.com', 'P3mD8ZQqg@qq.com', 'uYpLrISnl@gmail.com', 'tvGgU5q7a@gmail.com', 'HhbKOdg9J@gmail.com', 'FbYdWO0hV@gmail.com', 'uYpLrISnl@gmail.com', 'AWzB0iRgH@qq.com', 'gFlA7mSNH@gmail.com', '4stgYLRT5@qq.com']
 
 
-
-
-
-
+a='/'.join(list1)
+b='/'.join(list2)
+print(a in b)
 
 
 

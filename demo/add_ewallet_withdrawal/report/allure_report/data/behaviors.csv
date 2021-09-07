@@ -1,0 +1,2 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"账户设定添加电子钱包出金方式","会员中心判断ewallet电子钱包是否超过三条，否则添加至三条，并且验证是否可以及数据库中是否添加成功","用例执行","0","0","2","0","0"

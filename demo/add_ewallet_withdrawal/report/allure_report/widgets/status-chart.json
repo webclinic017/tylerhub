@@ -1,0 +1,21 @@
+[ {
+  "uid" : "33bb008e2b19a684",
+  "name" : "test_ewallet[data1]",
+  "time" : {
+    "start" : 1631003937807,
+    "stop" : 1631003999095,
+    "duration" : 61288
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89f6085152e3c58",
+  "name" : "test_ewallet[data0]",
+  "time" : {
+    "start" : 1631003876448,
+    "stop" : 1631003930181,
+    "duration" : 53733
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

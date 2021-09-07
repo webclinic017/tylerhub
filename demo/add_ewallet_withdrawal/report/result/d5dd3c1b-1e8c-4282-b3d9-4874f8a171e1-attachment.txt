@@ -1,0 +1,2 @@
+[31m[1mERROR   [0m !!--!!lgoout_cp:common_method.py:109 登出会员中心失败：Message: element click intercepted: Element <i data-v-f16ca312="" class="el-icon-arrow-down el-icon--right"></i> is not clickable at point (1504, 46). Other element would receive the click: <div data-v-40f3c96f="" class="el-dialog__wrapper add-bankinfo" style="z-index: 2006;">...</div>
+  (Session info: chrome=92.0.4515.159)

@@ -1,0 +1,43 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "demo.add_ewallet_withdrawal.action_bin",
+    "children" : [ {
+      "name" : "test_add_ewallet",
+      "children" : [ {
+        "name" : "Test_addEwallet",
+        "children" : [ {
+          "name" : "test_ewallet[data0]",
+          "uid" : "89f6085152e3c58",
+          "parentUid" : "e3833c73d41b912f24fcf67579db554d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1631003876448,
+            "stop" : 1631003930181,
+            "duration" : 53733
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
+        }, {
+          "name" : "test_ewallet[data1]",
+          "uid" : "33bb008e2b19a684",
+          "parentUid" : "e3833c73d41b912f24fcf67579db554d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1631003937807,
+            "stop" : 1631003999095,
+            "duration" : 61288
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
+        } ],
+        "uid" : "e3833c73d41b912f24fcf67579db554d"
+      } ],
+      "uid" : "6f40c52427398cf16a8ba9fa8eee5876"
+    } ],
+    "uid" : "90fd53695d51597c7a7eb83e70bd6368"
+  } ]
+}

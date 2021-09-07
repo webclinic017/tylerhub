@@ -1,0 +1,43 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "账户设定添加电子钱包出金方式",
+    "children" : [ {
+      "name" : "会员中心判断ewallet电子钱包是否超过三条，否则添加至三条，并且验证是否可以及数据库中是否添加成功",
+      "children" : [ {
+        "name" : "用例执行",
+        "children" : [ {
+          "name" : "test_ewallet[data0]",
+          "uid" : "89f6085152e3c58",
+          "parentUid" : "0f1df4342bf6f817fd13e5074a72a6f0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1631003876448,
+            "stop" : 1631003930181,
+            "duration" : 53733
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
+        }, {
+          "name" : "test_ewallet[data1]",
+          "uid" : "33bb008e2b19a684",
+          "parentUid" : "0f1df4342bf6f817fd13e5074a72a6f0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1631003937807,
+            "stop" : 1631003999095,
+            "duration" : 61288
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
+        } ],
+        "uid" : "0f1df4342bf6f817fd13e5074a72a6f0"
+      } ],
+      "uid" : "79fa063d11462e12b36818db4148d7b5"
+    } ],
+    "uid" : "43d2e17b1c6bd92326709081729e961c"
+  } ]
+}

@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Sep 07 16:38:57 CST 2021","Tue Sep 07 16:39:59 CST 2021","61288","demo.add_ewallet_withdrawal.action_bin","test_add_ewallet","Test_addEwallet","","","test_ewallet[data1]","读取测试文档数据，执行用例：登录CP判断电子钱包出金方式是否超过三条"
+"passed","Tue Sep 07 16:37:56 CST 2021","Tue Sep 07 16:38:50 CST 2021","53733","demo.add_ewallet_withdrawal.action_bin","test_add_ewallet","Test_addEwallet","","","test_ewallet[data0]","读取测试文档数据，执行用例：登录CP判断电子钱包出金方式是否超过三条"

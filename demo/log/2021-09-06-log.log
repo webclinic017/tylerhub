@@ -143,3 +143,6 @@
 !!--!!display_click - 2021-09-06 16:34:07,725 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
   (Session info: chrome=92.0.4515.159)
 
+!!--!!choose_register_lang - 2021-09-06 17:43:40,146 - common_method - [common_method.py-->line:75] - ERROR: Message: element click intercepted: Element <i data-v-5dd75122="" class="el-icon-arrow-down el-icon--right"></i> is not clickable at point (1475, 42). Other element would receive the click: <div data-v-85d46342="" class="el-dialog__wrapper" style="z-index: 2001;">...</div>
+  (Session info: chrome=92.0.4515.159)
+
