@@ -1,7 +1,15 @@
 <!--
  * @Author: tyler
+ * @Date: 2021-09-07 16:59:11
+ * @LastEditTime: 2021-09-07 17:21:20
+ * @LastEditors: Please set LastEditors
+ * @Description: IModule notes
+ * @FilePath: \tylerhub\demo\add_ewallet_withdrawal\README.md
+-->
+<!--
+ * @Author: tyler
  * @Date: 2021-08-26 18:22:45
- * @LastEditTime: 2021-09-07 17:11:46
+ * @LastEditTime: 2021-09-07 16:59:47
  * @LastEditors: Please set LastEditors
  * @Description: Module notes
  * @FilePath: \tylerhub\demo\cl_open_demoaccount\README.md
@@ -18,8 +26,8 @@
 ## 模块功能 
 **模块**         |      **功能**  
    ------------- | -------------  
-location.location_of_cl_opendome.py          |    页面操作   
-action_bin.test_cl_opendemo.py   | 用例执行 
+location.location_of_add_ewallet.py          |    页面操作   
+action_bin.test_add_ewallet.py   | 用例执行 
 test_data       | *excel* 测试用例存放 
 report    | 存放测试报告
 log        |          存放日志         |
@@ -28,12 +36,13 @@ log        |          存放日志         |
 
 **脚本逻辑** 
 
-    调用location_of_cl_opendome.py模块中方法，执行测试用例：登录cp，创建demo账号，查询数据库，bos获取新建demo账号组别点差加点等信息与数据库比对；CP修改
-    杠杆后查询数据库该demo账号杠杆是否更新，是否与修改杠杆一致
+    调用location_of_add_ewallet.py模块中方法，执行测试用例：登录bos判断当前账号是否满足居住国条件（非中国），登录cp，判断当前账号是否存在电子钱包出金方式，若存在，再判断某个渠道电子钱包出金方式是否超过三条，未超过则添加至三条获取提示语，并在出金模块验证是否可用，验证是否成功添加进数据库；若不存在，则默认添加skill渠道至三条，并获取提示语及验证数据库
 
 **用例预置条件** 
-    用例数据必须是kyc通过后的账号
-    
+
+    用例数据必须是kyc通过，且能出金的账号
+
+
 ## 命名方式 建议使用如下命名方式哦:smiley: 
     模块名：小写字母，单词间用_分割  about_data.py
     类名：首字母大写
@@ -51,7 +60,7 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
 ***
 ## 模块方法及变量释义
 ### 模块:
-***[location_of_cl_opendome.py :](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/cl_open_demoaccount/action_bin/test_cl_opendemo.py)*** 
+***[location_of_add_ewallet.py :](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/add_ewallet_withdrawal/location/location_of_add_ewallet.py)*** 
 
 *方法*
 
@@ -62,16 +71,14 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     logoutcp()                                                      登出cp
     login_bos()                                                     登录bos  
     details_page(account)                                           账号详情页     
-    creat_demoaccount()                                             创建demo账号
+    get_live_country()                                              获取该账号居住国
     get_demoaccount(account)                                        数据库查询获取新开demo账号
-    get_demo_group()                                                bos获取demo账号组别
-    get_demo_lever()                                                bos获取demo账号杠杆
-    get_demo_spreadtype()                                           bos获取demo账号点差类型
-    get_demo_markup()                                               bos获取demo账号加点
-    search_mongodb_demoinfo()                                       数据库查询demo账号信息
-    where_demo_incp()                                               新开demo账号在cp位置
-    revise_demolever()                                              cp修改demo账号杠杆
-    revise_mongolever()                                             数据库查询修改后杠杆
+    is_ewallet_morethan_three()                                     会员中心判断该账号电子钱包出金方式是否超过三条
+    get_verify_code()                                               获取验证码
+    get_tips()                                                      获取电子钱包超过三条后再次添加后的提示
+    is_ewallet_available()                                          判断新增出金方式会员中心是否可用
+    search_mongodb_ewallet()                                        查询数据库，判断新增电子钱包出金方式是否添加进库中
+    screenshots_path()                                              截图,返回截图路径
     closebrowser()                                                  关闭当前页面
     quitbrowser()                                                   退出浏览器进程
 
@@ -83,16 +90,17 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     password                                                        登录密码，bos读取配置文件中密码，cp读取测试文档中密码
     account                                                         主账号
     tdAccount                                                       demo账号
+    name                                                            截图名
 ***
 
 ### 模块:
-***[test_cl_opendemo.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/cl_open_demoaccount/action_bin/test_cl_opendemo.py)*** 
+***[test_add_ewallet.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/add_ewallet_withdrawal/action_bin/test_add_ewallet.py)*** 
 
 *方法*
 
     setup_class()                                                   预置条件
     teardown()                                                      环境恢复
-    test_execution_demo()                                           用例执行
+    test_ewallet()                                                  用例执行
 
 *变量*
 

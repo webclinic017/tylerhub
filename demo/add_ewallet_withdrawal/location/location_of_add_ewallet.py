@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-02 10:17:39
-LastEditTime: 2021-09-07 16:43:37
+LastEditTime: 2021-09-07 17:14:04
 LastEditors: Please set LastEditors
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\add_ewallet_withdrawal\location\location_of_add_ewallet.py
@@ -330,18 +330,3 @@ class Location_of_add_ewallet(object):
 
     def quitbrowser(self):
         common.quit_browser()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
