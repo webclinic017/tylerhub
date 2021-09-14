@@ -1,19 +1,12 @@
 <!--
  * @Author: tyler
  * @Date: 2021-09-07 16:59:11
- * @LastEditTime: 2021-09-07 17:21:20
+ * @LastEditTime: 2021-09-07 17:27:38
  * @LastEditors: Please set LastEditors
  * @Description: IModule notes
  * @FilePath: \tylerhub\demo\add_ewallet_withdrawal\README.md
 -->
-<!--
- * @Author: tyler
- * @Date: 2021-08-26 18:22:45
- * @LastEditTime: 2021-09-07 16:59:47
- * @LastEditors: Please set LastEditors
- * @Description: Module notes
- * @FilePath: \tylerhub\demo\cl_open_demoaccount\README.md
--->
+
 # 模块注释 :ok_woman:
 
 ## 环境依赖

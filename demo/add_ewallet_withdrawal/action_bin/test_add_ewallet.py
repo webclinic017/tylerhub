@@ -1,9 +1,9 @@
 '''
 Author: tyler
 Date: 2021-09-02 10:18:01
-LastEditTime: 2021-09-07 16:53:14
+LastEditTime: 2021-09-08 15:06:53
 LastEditors: Please set LastEditors
-Description: xecution use case
+Description: Execute testcase
 FilePath: \tylerhub\demo\add_ewallet_withdrawal\action_bin\test_add_ewallet.py
 '''
 import pytest
@@ -21,8 +21,8 @@ from location_of_add_ewallet import Location_of_add_ewallet
 @allure.epic('账户设定添加电子钱包出金方式')
 class Test_addEwallet(object):
 
-    global addEwaller,conFig,dealData,testdata,excelpath
-    addEwaller=Location_of_add_ewallet()
+    global addEwallet,conFig,dealData,testdata,excelpath
+    addEwallet=Location_of_add_ewallet()
     conFig=ReadConfig()
     dealData=Aboutdata()
 
@@ -33,17 +33,17 @@ class Test_addEwallet(object):
 
     def setup_class(self):
         #默认谷歌浏览器打开
-        addEwaller.broswertype()
+        addEwallet.broswertype()
         #cp，bos登录页
-        addEwaller.get_url('sit')
+        addEwallet.get_url('sit')
         #登录bos
-        addEwaller.login_bos(conFig.get_value('bos_login', 'username'), conFig.get_value('bos_login', 'password'))
+        addEwallet.login_bos(conFig.get_value('bos_login', 'username'), conFig.get_value('bos_login', 'password'))
 
     def teardown(self):
         if self.data_index==testdata.index(testdata[-1]):
-            addEwaller.quitbrowser()
+            addEwallet.quitbrowser()
         else:
-            addEwaller.logoutcp()
+            addEwallet.logoutcp()
 
     @allure.feature('会员中心判断ewallet电子钱包是否超过三条，否则添加至三条，并且验证是否可以及数据库中是否添加成功')
     @allure.story('用例执行')
@@ -56,46 +56,46 @@ class Test_addEwallet(object):
         with allure.step('获取当前测试数据下标'):
             self.data_index=testdata.index(data)
         if self.data_index!=0:
-            addEwaller.remove_login_topup()
+            addEwallet.remove_login_topup()
 
         with allure.step('进入账号详情页判断该账号居住国是否为中国'):
-            addEwaller.details_page(int(data['主账号']))
+            addEwallet.details_page(int(data['主账号']))
             #居住国家为中国，跳过该用例
-            if addEwaller.get_live_country():
+            if addEwallet.get_live_country():
                 pytest.skip()
             else:
                 with allure.step('登录会员中心判断电子钱包出金方式是否超过三条'):
-                    addEwaller.logincp(data['邮箱'], data['密码'])
-                    addEwaller.is_ewallet_morethan_three()
-                    with open(addEwaller.screenshots_path('ewallet出金方式'),'rb') as f:
+                    addEwallet.logincp(data['邮箱'], data['密码'])
+                    addEwallet.is_ewallet_morethan_three()
+                    with open(addEwallet.screenshots_path('ewallet出金方式'),'rb') as f:
                         comtent=f.read()
                     allure.attach(comtent,'ewallet出金方式',allure.attachment_type.PNG)
                 
                 with allure.step('获取提示语'):
-                    addEwaller.get_tips()
-                    with open(addEwaller.screenshots_path('tips'),'rb') as f:
+                    addEwallet.get_tips()
+                    with open(addEwallet.screenshots_path('tips'),'rb') as f:
                         comtent=f.read()
                     allure.attach(comtent,'tips',allure.attachment_type.PNG)
                 
 
                 with allure.step('断言提示语是否正确'):
-                    pytest.assume(addEwaller.tips == '每种电子钱包您最多可以添加3条，若需再新增，您需先删除其中一条。')
+                    pytest.assume(addEwallet.tips == '每种电子钱包您最多可以添加3条，若需再新增，您需先删除其中一条。')
 
                 with allure.step('若新增电子钱包出金方式，判断在出金模块是否可用'):
-                    addEwaller.is_ewallet_available()
-                    if addEwaller.times<3:
-                        with open(addEwaller.screenshots_path('出金模块是否可用'),'rb') as f:
+                    addEwallet.is_ewallet_available()
+                    if addEwallet.times<3:
+                        with open(addEwallet.screenshots_path('出金模块是否可用'),'rb') as f:
                             comtent=f.read()
                         allure.attach(comtent,'出金模块是否可用',allure.attachment_type.PNG)
                 
                 #断言新增电子琴钱包出金方式是否在会员中心可用及数据库中是否添加
-                if addEwaller.times<3:
+                if addEwallet.times<3:
                     #查询数据库
-                    addEwaller.search_mongodb_ewallet(int(data['主账号']))
-                    pytest.assume(addEwaller.available_ewallet == 3)
+                    addEwallet.search_mongodb_ewallet(int(data['主账号']))
+                    pytest.assume(addEwallet.available_ewallet == 3)
                     with allure.step('断言新增电子钱包是否成功添加进数据库'):
-                        for i in addEwaller.availableList:
-                            pytest.assume(i in addEwaller.databaseList)
+                        for i in addEwallet.availableList:
+                            pytest.assume(i in addEwallet.databaseList)
 
 
 if __name__=='__main__':

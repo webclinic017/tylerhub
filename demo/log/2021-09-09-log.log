@@ -1,0 +1,50 @@
+!!--!!driver_name - 2021-09-09 15:51:07,328 - browser_actions - [browser_actions.py-->line:48] - ERROR: 启动浏览器异常Message: session not created: This version of ChromeDriver only supports Chrome version 91
+Current browser version is 93.0.4577.63 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+!!--!!url_error - 2021-09-09 15:51:07,329 - browser_actions - [browser_actions.py-->line:55] - WARNING: 请输入正确的域名
+!!--!!choose_register_lang - 2021-09-09 15:51:08,334 - common_method - [common_method.py-->line:75] - ERROR: 'NoneType' object has no attribute 'find_element_by_css_selector'
+!!--!!display_finds_element - 2021-09-09 15:57:17,922 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-09 15:57:17,923 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-09 15:57:17,924 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-09 15:57:25,122 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=93.0.4577.63)
+
+!!--!!display_click - 2021-09-09 15:57:25,122 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=93.0.4577.63)
+
+!!--!!display_finds_element - 2021-09-09 16:04:59,137 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-09 16:04:59,139 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-09 16:04:59,139 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!get_attributes - 2021-09-09 16:12:23,511 - browser_actions - [browser_actions.py-->line:151] - ERROR: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=93.0.4577.63)
+
+!!--!!display_click - 2021-09-09 16:12:53,769 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element not interactable
+  (Session info: chrome=93.0.4577.63)
+
+!!--!!display_finds_element - 2021-09-09 16:12:59,805 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-09 16:12:59,806 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-09 16:12:59,807 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-09 16:12:59,807 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!get_attributes - 2021-09-09 16:17:12,045 - browser_actions - [browser_actions.py-->line:151] - ERROR: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=93.0.4577.63)
+
+!!--!!display_click - 2021-09-09 17:25:39,815 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element click intercepted: Element <span data-v-558fc37c="" class="menu-font">...</span> is not clickable at point (69, 360). Other element would receive the click: <div data-v-43bfd2f8="" class="el-dialog__wrapper add-bankinfo" style="z-index: 2006;">...</div>
+  (Session info: chrome=93.0.4577.63)
+
+!!--!!display_finds_element - 2021-09-09 17:25:46,379 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-09 17:25:46,381 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-09 17:25:46,381 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-09 17:25:46,381 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-09-09 17:25:52,450 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-09-09 17:25:52,450 - browser_actions - [browser_actions.py-->line:117] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-09 17:25:52,451 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-09-09 17:25:52,451 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-09 17:25:52,452 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-09 17:25:52,452 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-09 17:25:52,452 - browser_actions - [browser_actions.py-->line:261] - ERROR: 'NoneType' object has no attribute 'click'

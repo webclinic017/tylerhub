@@ -1,0 +1,324 @@
+{
+  "uid" : "536f31070ec2e1ba",
+  "name" : "test_ewallet[data0]",
+  "fullName" : "demo.add_ewallet_withdrawal.action_bin.test_add_ewallet.Test_addEwallet#test_ewallet",
+  "historyId" : "ccf26edd8e304520f3375cf8befdf1d8",
+  "time" : {
+    "start" : 1631070082595,
+    "stop" : 1631070120304,
+    "duration" : 37709
+  },
+  "description" : "读取测试文档数据，执行用例：登录CP判断电子钱包出金方式是否超过三条",
+  "descriptionHtml" : "<p>读取测试文档数据，执行用例：登录CP判断电子钱包出金方式是否超过三条</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_addEwallet",
+    "time" : {
+      "start" : 1631070029493,
+      "stop" : 1631070082593,
+      "duration" : 53100
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "读取测试文档数据，执行用例：登录CP判断电子钱包出金方式是否超过三条",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "获取当前测试数据下标",
+      "time" : {
+        "start" : 1631070082595,
+        "stop" : 1631070082595,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进入账号详情页判断该账号居住国是否为中国",
+      "time" : {
+        "start" : 1631070082595,
+        "stop" : 1631070120304,
+        "duration" : 37709
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "登录会员中心判断电子钱包出金方式是否超过三条",
+        "time" : {
+          "start" : 1631070093100,
+          "stop" : 1631070107881,
+          "duration" : 14781
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "816ecbbee5c3fe1e",
+          "name" : "ewallet出金方式",
+          "source" : "816ecbbee5c3fe1e.png",
+          "type" : "image/png",
+          "size" : 128284
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "获取提示语",
+        "time" : {
+          "start" : 1631070107881,
+          "stop" : 1631070119944,
+          "duration" : 12063
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "83aa218f0d357d3f",
+          "name" : "tips",
+          "source" : "83aa218f0d357d3f.png",
+          "type" : "image/png",
+          "size" : 153929
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "断言提示语是否正确",
+        "time" : {
+          "start" : 1631070119944,
+          "stop" : 1631070120304,
+          "duration" : 360
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "若新增电子钱包出金方式，判断在出金模块是否可用",
+        "time" : {
+          "start" : 1631070120304,
+          "stop" : 1631070120304,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_addEwallet::0",
+    "time" : {
+      "start" : 1631070169453,
+      "stop" : 1631070169453,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用例执行"
+  }, {
+    "name" : "epic",
+    "value" : "账户设定添加电子钱包出金方式"
+  }, {
+    "name" : "feature",
+    "value" : "会员中心判断ewallet电子钱包是否超过三条，否则添加至三条，并且验证是否可以及数据库中是否添加成功"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=2, reruns_delay=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.add_ewallet_withdrawal.action_bin"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_ewallet"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_addEwallet"
+  }, {
+    "name" : "host",
+    "value" : "一台憨憨笔记本"
+  }, {
+    "name" : "thread",
+    "value" : "18592-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.add_ewallet_withdrawal.action_bin.test_add_ewallet"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "da6d3fbf21a2e8b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631003876448,
+        "stop" : 1631003930181,
+        "duration" : 53733
+      }
+    }, {
+      "uid" : "4f79a50ff802fedb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631003595529,
+        "stop" : 1631003636198,
+        "duration" : 40669
+      }
+    }, {
+      "uid" : "2d20867ce1e3a62",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631003254389,
+        "stop" : 1631003307612,
+        "duration" : 53223
+      }
+    }, {
+      "uid" : "cf58f94d41ea8102",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631003020017,
+        "stop" : 1631003059661,
+        "duration" : 39644
+      }
+    }, {
+      "uid" : "b7f0c2fa152c150",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631002115394,
+        "stop" : 1631002155445,
+        "duration" : 40051
+      }
+    }, {
+      "uid" : "b527dff0e7a76361",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631001920484,
+        "stop" : 1631001961975,
+        "duration" : 41491
+      }
+    }, {
+      "uid" : "60a45d7dc26744bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631001615662,
+        "stop" : 1631001655404,
+        "duration" : 39742
+      }
+    }, {
+      "uid" : "dfe2ce55bbe670f3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=92.0.4515.159)",
+      "time" : {
+        "start" : 1631000845802,
+        "stop" : 1631000884669,
+        "duration" : 38867
+      }
+    }, {
+      "uid" : "53e02072a34111a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631000567017,
+        "stop" : 1631000607824,
+        "duration" : 40807
+      }
+    }, {
+      "uid" : "96037232ad92a9ba",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=92.0.4515.159)",
+      "time" : {
+        "start" : 1631000432785,
+        "stop" : 1631000474438,
+        "duration" : 41653
+      }
+    }, {
+      "uid" : "783878f7f2522c7e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=92.0.4515.159)",
+      "time" : {
+        "start" : 1631000107557,
+        "stop" : 1631000148073,
+        "duration" : 40516
+      }
+    }, {
+      "uid" : "8e9bc06e4eb4ee70",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=92.0.4515.159)",
+      "time" : {
+        "start" : 1631000040368,
+        "stop" : 1631000079172,
+        "duration" : 38804
+      }
+    }, {
+      "uid" : "23ffb1966e5111e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630999464632,
+        "stop" : 1630999505402,
+        "duration" : 40770
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=2, reruns_delay=2)" ]
+  },
+  "source" : "536f31070ec2e1ba.json",
+  "parameterValues" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
+}

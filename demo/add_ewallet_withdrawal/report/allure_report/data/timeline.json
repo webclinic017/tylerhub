@@ -4,66 +4,27 @@
   "children" : [ {
     "name" : "SZ01-QA-G-10",
     "children" : [ {
-      "name" : "13652-MainThread",
+      "name" : "14256-MainThread",
       "children" : [ {
-        "name" : "test_ewallet[data1]",
-        "uid" : "34c46ef5cc2da746",
-        "parentUid" : "ccd0f143bbef1576272f76bfe2aef909",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631002018502,
-          "stop" : 1631002018538,
-          "duration" : 36
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
-      }, {
-        "name" : "test_ewallet[data1]",
-        "uid" : "b4c6c81f79031f3b",
-        "parentUid" : "ccd0f143bbef1576272f76bfe2aef909",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631001991061,
-          "stop" : 1631001991062,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
-      }, {
         "name" : "test_ewallet[data0]",
-        "uid" : "af4ac508b2e35288",
-        "parentUid" : "ccd0f143bbef1576272f76bfe2aef909",
+        "uid" : "b7f0c2fa152c150",
+        "parentUid" : "e991e1f002fe723fc5954234ae222f55",
         "status" : "passed",
         "time" : {
-          "start" : 1631001920484,
-          "stop" : 1631001961975,
-          "duration" : 41491
+          "start" : 1631002115394,
+          "stop" : 1631002155445,
+          "duration" : 40051
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
-      }, {
-        "name" : "test_ewallet[data1]",
-        "uid" : "896cf74e77fb123c",
-        "parentUid" : "ccd0f143bbef1576272f76bfe2aef909",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631001965053,
-          "stop" : 1631001965053,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
       } ],
-      "uid" : "ccd0f143bbef1576272f76bfe2aef909"
+      "uid" : "e991e1f002fe723fc5954234ae222f55"
     }, {
       "name" : "16828-MainThread",
       "children" : [ {
         "name" : "test_ewallet[data1]",
-        "uid" : "33bb008e2b19a684",
+        "uid" : "2d8ebb9f64656f8b",
         "parentUid" : "0b1ce365f41835642e83d02cc1d2adf5",
         "status" : "passed",
         "time" : {
@@ -76,7 +37,7 @@
         "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
       }, {
         "name" : "test_ewallet[data0]",
-        "uid" : "89f6085152e3c58",
+        "uid" : "da6d3fbf21a2e8b1",
         "parentUid" : "0b1ce365f41835642e83d02cc1d2adf5",
         "status" : "passed",
         "time" : {
@@ -92,21 +53,8 @@
     }, {
       "name" : "15736-MainThread",
       "children" : [ {
-        "name" : "test_ewallet[data1]",
-        "uid" : "46b20cec06e11078",
-        "parentUid" : "4268fd9c5139f74916ab7ce258276ea5",
-        "status" : "passed",
-        "time" : {
-          "start" : 1631003643597,
-          "stop" : 1631003687923,
-          "duration" : 44326
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
-      }, {
         "name" : "test_ewallet[data0]",
-        "uid" : "cd36fb9fd5d0f88d",
+        "uid" : "4f79a50ff802fedb",
         "parentUid" : "4268fd9c5139f74916ab7ce258276ea5",
         "status" : "passed",
         "time" : {
@@ -117,73 +65,99 @@
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
+      }, {
+        "name" : "test_ewallet[data1]",
+        "uid" : "ad368e7b69c83189",
+        "parentUid" : "4268fd9c5139f74916ab7ce258276ea5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631003643597,
+          "stop" : 1631003687923,
+          "duration" : 44326
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
       } ],
       "uid" : "4268fd9c5139f74916ab7ce258276ea5"
     }, {
-      "name" : "4176-MainThread",
+      "name" : "13920-MainThread",
       "children" : [ {
         "name" : "test_ewallet[data0]",
-        "uid" : "70c000c179f51be",
-        "parentUid" : "ab55f9d8767161cce875cf183973f010",
+        "uid" : "60a45d7dc26744bd",
+        "parentUid" : "79d96f84dbfb10d9fa205e190cb0b150",
         "status" : "passed",
         "time" : {
-          "start" : 1631003254389,
-          "stop" : 1631003307612,
-          "duration" : 53223
+          "start" : 1631001615662,
+          "stop" : 1631001655404,
+          "duration" : 39742
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
+      } ],
+      "uid" : "79d96f84dbfb10d9fa205e190cb0b150"
+    }, {
+      "name" : "13652-MainThread",
+      "children" : [ {
+        "name" : "test_ewallet[data0]",
+        "uid" : "b527dff0e7a76361",
+        "parentUid" : "ccd0f143bbef1576272f76bfe2aef909",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631001920484,
+          "stop" : 1631001961975,
+          "duration" : 41491
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
       }, {
         "name" : "test_ewallet[data1]",
-        "uid" : "a6cf912a846e119",
-        "parentUid" : "ab55f9d8767161cce875cf183973f010",
-        "status" : "passed",
+        "uid" : "8a70bfd979ff4c11",
+        "parentUid" : "ccd0f143bbef1576272f76bfe2aef909",
+        "status" : "broken",
         "time" : {
-          "start" : 1631003315126,
-          "stop" : 1631003375331,
-          "duration" : 60205
+          "start" : 1631001965053,
+          "stop" : 1631001965053,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
+      }, {
+        "name" : "test_ewallet[data1]",
+        "uid" : "eb4e7523aed01c32",
+        "parentUid" : "ccd0f143bbef1576272f76bfe2aef909",
+        "status" : "broken",
+        "time" : {
+          "start" : 1631002018502,
+          "stop" : 1631002018538,
+          "duration" : 36
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
+      }, {
+        "name" : "test_ewallet[data1]",
+        "uid" : "b6be32638a91070c",
+        "parentUid" : "ccd0f143bbef1576272f76bfe2aef909",
+        "status" : "broken",
+        "time" : {
+          "start" : 1631001991061,
+          "stop" : 1631001991062,
+          "duration" : 1
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
       } ],
-      "uid" : "ab55f9d8767161cce875cf183973f010"
-    }, {
-      "name" : "6800-MainThread",
-      "children" : [ {
-        "name" : "test_ewallet[data0]",
-        "uid" : "77fda4a2f5739d72",
-        "parentUid" : "522c9942f93c5cea50a0e37425909400",
-        "status" : "passed",
-        "time" : {
-          "start" : 1630999464632,
-          "stop" : 1630999505402,
-          "duration" : 40770
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
-      } ],
-      "uid" : "522c9942f93c5cea50a0e37425909400"
+      "uid" : "ccd0f143bbef1576272f76bfe2aef909"
     }, {
       "name" : "8040-MainThread",
       "children" : [ {
         "name" : "test_ewallet[data0]",
-        "uid" : "8d5f078b3586cb2d",
-        "parentUid" : "f8ec3ba064aa285e5c2814054702b04e",
-        "status" : "broken",
-        "time" : {
-          "start" : 1631000040368,
-          "stop" : 1631000079172,
-          "duration" : 38804
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
-      }, {
-        "name" : "test_ewallet[data0]",
-        "uid" : "3e0ab734f6b09172",
+        "uid" : "783878f7f2522c7e",
         "parentUid" : "f8ec3ba064aa285e5c2814054702b04e",
         "status" : "broken",
         "time" : {
@@ -194,47 +168,26 @@
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
-      } ],
-      "uid" : "f8ec3ba064aa285e5c2814054702b04e"
-    }, {
-      "name" : "9080-MainThread",
-      "children" : [ {
+      }, {
         "name" : "test_ewallet[data0]",
-        "uid" : "399b0cf302d1f64b",
-        "parentUid" : "909a7b12b916cb65eca5c4504288bb30",
+        "uid" : "8e9bc06e4eb4ee70",
+        "parentUid" : "f8ec3ba064aa285e5c2814054702b04e",
         "status" : "broken",
         "time" : {
-          "start" : 1631000432785,
-          "stop" : 1631000474438,
-          "duration" : 41653
+          "start" : 1631000040368,
+          "stop" : 1631000079172,
+          "duration" : 38804
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
       } ],
-      "uid" : "909a7b12b916cb65eca5c4504288bb30"
-    }, {
-      "name" : "15160-MainThread",
-      "children" : [ {
-        "name" : "test_ewallet[data0]",
-        "uid" : "77912e97dcee6f7",
-        "parentUid" : "61c6c8dee4b4585abc4e46954c45502c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1631000567017,
-          "stop" : 1631000607824,
-          "duration" : 40807
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
-      } ],
-      "uid" : "61c6c8dee4b4585abc4e46954c45502c"
+      "uid" : "f8ec3ba064aa285e5c2814054702b04e"
     }, {
       "name" : "11720-MainThread",
       "children" : [ {
         "name" : "test_ewallet[data0]",
-        "uid" : "933943bf8e0b0b15",
+        "uid" : "cf58f94d41ea8102",
         "parentUid" : "5ba33f74e9bc1a1b9ac564cdbd99bc33",
         "status" : "passed",
         "time" : {
@@ -248,27 +201,74 @@
       } ],
       "uid" : "5ba33f74e9bc1a1b9ac564cdbd99bc33"
     }, {
-      "name" : "14256-MainThread",
+      "name" : "15160-MainThread",
       "children" : [ {
         "name" : "test_ewallet[data0]",
-        "uid" : "5124662e429abc97",
-        "parentUid" : "e991e1f002fe723fc5954234ae222f55",
+        "uid" : "53e02072a34111a",
+        "parentUid" : "61c6c8dee4b4585abc4e46954c45502c",
         "status" : "passed",
         "time" : {
-          "start" : 1631002115394,
-          "stop" : 1631002155445,
-          "duration" : 40051
+          "start" : 1631000567017,
+          "stop" : 1631000607824,
+          "duration" : 40807
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
       } ],
-      "uid" : "e991e1f002fe723fc5954234ae222f55"
+      "uid" : "61c6c8dee4b4585abc4e46954c45502c"
+    }, {
+      "name" : "6800-MainThread",
+      "children" : [ {
+        "name" : "test_ewallet[data0]",
+        "uid" : "23ffb1966e5111e2",
+        "parentUid" : "522c9942f93c5cea50a0e37425909400",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630999464632,
+          "stop" : 1630999505402,
+          "duration" : 40770
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
+      } ],
+      "uid" : "522c9942f93c5cea50a0e37425909400"
+    }, {
+      "name" : "4176-MainThread",
+      "children" : [ {
+        "name" : "test_ewallet[data1]",
+        "uid" : "b7182911fa93bd34",
+        "parentUid" : "ab55f9d8767161cce875cf183973f010",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631003315126,
+          "stop" : 1631003375331,
+          "duration" : 60205
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
+      }, {
+        "name" : "test_ewallet[data0]",
+        "uid" : "2d20867ce1e3a62",
+        "parentUid" : "ab55f9d8767161cce875cf183973f010",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631003254389,
+          "stop" : 1631003307612,
+          "duration" : 53223
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
+      } ],
+      "uid" : "ab55f9d8767161cce875cf183973f010"
     }, {
       "name" : "14688-MainThread",
       "children" : [ {
         "name" : "test_ewallet[data0]",
-        "uid" : "63c154929ff2c644",
+        "uid" : "dfe2ce55bbe670f3",
         "parentUid" : "f55517a87d9d5c08743cedcb1c45ff15",
         "status" : "broken",
         "time" : {
@@ -282,23 +282,57 @@
       } ],
       "uid" : "f55517a87d9d5c08743cedcb1c45ff15"
     }, {
-      "name" : "13920-MainThread",
+      "name" : "9080-MainThread",
       "children" : [ {
         "name" : "test_ewallet[data0]",
-        "uid" : "27ee2183cd7f0db0",
-        "parentUid" : "79d96f84dbfb10d9fa205e190cb0b150",
-        "status" : "passed",
+        "uid" : "96037232ad92a9ba",
+        "parentUid" : "909a7b12b916cb65eca5c4504288bb30",
+        "status" : "broken",
         "time" : {
-          "start" : 1631001615662,
-          "stop" : 1631001655404,
-          "duration" : 39742
+          "start" : 1631000432785,
+          "stop" : 1631000474438,
+          "duration" : 41653
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
       } ],
-      "uid" : "79d96f84dbfb10d9fa205e190cb0b150"
+      "uid" : "909a7b12b916cb65eca5c4504288bb30"
     } ],
     "uid" : "22c9a7ca73ac7ac9efe14f8b8f896b03"
+  }, {
+    "name" : "一台憨憨笔记本",
+    "children" : [ {
+      "name" : "18592-MainThread",
+      "children" : [ {
+        "name" : "test_ewallet[data1]",
+        "uid" : "d157ba4e893b8249",
+        "parentUid" : "f895cc1c139e8699ca6d098b469370fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631070127481,
+          "stop" : 1631070167290,
+          "duration" : 39809
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
+      }, {
+        "name" : "test_ewallet[data0]",
+        "uid" : "536f31070ec2e1ba",
+        "parentUid" : "f895cc1c139e8699ca6d098b469370fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631070082595,
+          "stop" : 1631070120304,
+          "duration" : 37709
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456'}" ]
+      } ],
+      "uid" : "f895cc1c139e8699ca6d098b469370fd"
+    } ],
+    "uid" : "70de0376cfda7d26b35740bc47604458"
   } ]
 }

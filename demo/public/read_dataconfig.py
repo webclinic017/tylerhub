@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-18 16:08:10
-LastEditTime: 2021-08-25 15:21:23
+LastEditTime: 2021-09-14 11:36:29
 LastEditors: Please set LastEditors
 Description: Read configuration file
 FilePath: \tylerhub\demo\public\read_dataconfig.py
@@ -56,10 +56,20 @@ class ReadConfig():
         else:
             print('请检查配置文件是否存在该section节点')
 
+    def modify(self,section,options,value):
+        if self.config.has_section(section):
+            fb=open(self.configpath,'w',encoding='utf-8')
+            self.config.set(section, options, value)
+            #保存
+            self.config.write(fb)
+            fb.close()
+        else:
+            print('请检查配置文件是否存在该section节点')
 
 
 if __name__=='__main__':
     conFig=ReadConfig()
+    conFig.modify('login_cpToken', 'x-token', '中国')
     # print(conFig.get_option('mysql',0))
     print(conFig.get_value('ip','ip'))
     # print(type(conFig.get_int('ip','ip')))

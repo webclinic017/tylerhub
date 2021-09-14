@@ -637,44 +637,117 @@ import ssl
 # print(a)
 # print(b)
 
-list1=['4stgYLRT5@qq.com', 'AWzB0iRgH@qq.com', 'P3mD8ZQqg@qq.com']
-list2=['5345645464@q.com', '1564564545@qq.com', '1564654466@qq.com', '54346575', '456456464@qq.com', 'yLopt0nHv@gmail.com', 'mPZG69XfH@qq.com', 'nr6pcNkSx@163.com', 'wT41opAuL@gmail.com', 
-'pAqVXmZGf@qq.com', 'uT0MX1gmZ@qq.com', 'O4msn7b3v@gmail.com', 'AtBNRmklP@qq.com', 'wFm8J7zyL@qq.com', 'NwQbDXW0h@163.com', '15345644646@qq.com', 'P3mD8ZQqg@qq.com', 'uYpLrISnl@gmail.com', 'tvGgU5q7a@gmail.com', 'HhbKOdg9J@gmail.com', 'FbYdWO0hV@gmail.com', 'uYpLrISnl@gmail.com', 'AWzB0iRgH@qq.com', 'gFlA7mSNH@gmail.com', '4stgYLRT5@qq.com']
+# list1=['4stgYLRT5@qq.com', 'AWzB0iRgH@qq.com', 'P3mD8ZQqg@qq.com']
+# list2=['5345645464@q.com', '1564564545@qq.com', '1564654466@qq.com', '54346575', '456456464@qq.com', 'yLopt0nHv@gmail.com', 'mPZG69XfH@qq.com', 'nr6pcNkSx@163.com', 'wT41opAuL@gmail.com', 
+# 'pAqVXmZGf@qq.com', 'uT0MX1gmZ@qq.com', 'O4msn7b3v@gmail.com', 'AtBNRmklP@qq.com', 'wFm8J7zyL@qq.com', 'NwQbDXW0h@163.com', '15345644646@qq.com', 'P3mD8ZQqg@qq.com', 'uYpLrISnl@gmail.com', 'tvGgU5q7a@gmail.com', 'HhbKOdg9J@gmail.com', 'FbYdWO0hV@gmail.com', 'uYpLrISnl@gmail.com', 'AWzB0iRgH@qq.com', 'gFlA7mSNH@gmail.com', '4stgYLRT5@qq.com']
 
 
-a='/'.join(list1)
-b='/'.join(list2)
-print(a in b)
+# a='/'.join(list1)
+# b='/'.join(list2)
+# print(a in b)
+
+# import keyword
+
+# print(keyword.kwlist)
+
+# import random
+# a=random.random()
+
+
+# print(a)
+
+# a='''你是一个憨憨 
+# 天天不吃早餐
+# 爱情与你无关 
+# 整天郁郁寡欢'''
+# print(a)
+
+# print("xpath,//div[@class='bankinfo-page']/div[1]//div[@class='bank-row']/div[{}]//div/span[@class='del-btn c-float']",end='')
+# print(111)
+import requests
+
+import requests
+import json
+
+# host = "http://httpbin.org/"
+# endpoint = "get"
+
+# url = ''.join([host,endpoint])
+# print(url)
+# r = requests.get(url)
+# #response = r.json()
+
+# print (type(r.text))
+# print (eval(r.text))
 
 
 
+import requests
+import json
+
+# host = "http://httpbin.org/"
+# endpoint = "post"
+
+# url = ''.join([host,endpoint])
+# headers = {"User-Agent":"test request headers"}
+# data = {
+#     "sites": [
+#                 { "name":"test" , "url":"www.test.com" },
+#                 { "name":"google" , "url":"www.google.com" },
+#                 { "name":"weibo" , "url":"www.weibo.com" }
+#     ]
+# }
+
+# r = requests.post(url,headers=headers,json=data)
+# # r = requests.post(url,data=json.dumps(data))
+# response = (r.text)
+# print(response)
+
+from api import Api
+from read_dataconfig import ReadConfig
+
+
+host='https://at-client-portal-api-sit.atfxdev.com/'
+endpoint='login'
+url=''.join([host,endpoint])
+
+headers={
+    'accept':'application/json, text/plain, */*',
+    'accept-encoding':'gzip, deflate, br',
+    'accept-language':'zh,zh-CN;q=0.9,en;q=0.8',
+    'content-type':'application/json;charset=UTF-8',
+    'sec-ch-ua':'"Google Chrome";v="93","Not;A Brand";v="99", "Chromium";v="93"',
+    'sec-fetch-dest':'empty',
+    'sec-fetch-mode':'cors',
+    'sec-fetch-site':'same-site',
+    'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36'
+}
+
+data={
+    "entity": "GM",
+    "email": "tyler.tang@test.com",
+    "password": "CzOMlg2xtgC0UmkRPdpi+Q==",
+    "loginType": "email",
+    "accountNumber":1000005349
+}
+
+re=Api()
+conFig=ReadConfig()
+tesda=re.api_post(host,path=endpoint,headers=headers,json=data)
+print(tesda.json()['data']['storageValue']['id_token'])
+conFig.modify('login_cpToken', 'x-token', tesda.json()['data']['storageValue']['id_token'])
+
+
+# r=requests.post(url,headers=headers,json=data)
+# retdata=r.json()
+# # print(retdata)
+# print(retdata['data']['storageValue']['id_token'])
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+a=10
+b=10*5%
+print(b)
 
 
 

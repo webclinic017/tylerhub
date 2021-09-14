@@ -1,0 +1,3 @@
+!!--!!display_click - 2021-09-12 17:30:56,527 - browser_actions - [browser_actions.py-->line:261] - ERROR: Message: element click intercepted: Element <i data-v-5dd75122="" class="el-icon-arrow-down el-icon--right"></i> is not clickable at point (1475, 42). Other element would receive the click: <div class="el-loading-mask" style="">...</div>
+  (Session info: chrome=93.0.4577.63)
+

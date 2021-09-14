@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-02 10:17:39
-LastEditTime: 2021-09-07 17:14:04
+LastEditTime: 2021-09-08 16:26:05
 LastEditors: Please set LastEditors
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\add_ewallet_withdrawal\location\location_of_add_ewallet.py
@@ -10,12 +10,11 @@ import os
 import sys
 import time
 import random
-import collections
+
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-path_public=path_demo+r'\public'
 path_public=os.path.join(path_demo,'public')
 sys.path.append(path_public)
-from about_data import Aboutdata
+
 from browser_actions import Commonweb
 from common_method import Commonmethod
 from handle_database import Dadabase_operate
@@ -28,9 +27,8 @@ class Location_of_add_ewallet(object):
     添加ewallet出金方式，页面定位等操作
     """
 
-    global dealData,common,dataBase,log,randomData,conFig
+    global common,dataBase,log,randomData,conFig
 
-    dealData=Aboutdata()
     common=Commonweb()
     dataBase=Dadabase_operate()
     log=MyLog()
@@ -157,15 +155,17 @@ class Location_of_add_ewallet(object):
             if common.ele_is_displayed("xpath,//div[@class='bankinfo-page']/div[@class='info-row el-row']//div//span[.='渠道:']",2):
                 print('当前账号存在电子钱包出金方式')
                 #判断存在几种电子钱包出金方式
-                self.ewalletType_len=common.get_lenofelement("xpath,//div[@class='bankinfo-page']/div[@class='info-row el-row']//div//span[.='渠道:']")
+                self.ewalletType_len=common.get_lenofelement("xpath,//div[@class='bankinfo-page']/div\
+                    [@class='info-row el-row']//div//span[.='渠道:']")
                 self.ewallet_list=[]
                 for i in range(0,self.ewalletType_len):
                     self.ewallet_dict={}
-                    common.display_click("xpath,//div[@class='bankinfo-page']/div[@class='info-row el-row']//div//span[.='渠道:']",i)
+                    common.display_click("xpath,//div[@class='bankinfo-page']/div\
+                        [@class='info-row el-row']//div//span[.='渠道:']",i)
                     time.sleep(1)
                     #获取当前出金类型存在几个出金方式
-                    self.ewallet_len=common.get_lenofelement(
-                        "xpath,//div[@class='bankinfo-page']/div[1]//div[@class='bank-row']/div[{}]//div/span[@class='del-btn c-float']".format(i+1))
+                    self.ewallet_len=common.get_lenofelement("xpath,//div[@class='bankinfo-page']/div[1]//div\
+                        [@class='bank-row']/div[{}]//div/span[@class='del-btn c-float']".format(i+1))
                     #当该电子钱包出金方式大于等于三时：
                     if self.ewallet_len>=3:
                         #赋值ewallet

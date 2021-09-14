@@ -1,0 +1,267 @@
+{
+  "uid" : "d157ba4e893b8249",
+  "name" : "test_ewallet[data1]",
+  "fullName" : "demo.add_ewallet_withdrawal.action_bin.test_add_ewallet.Test_addEwallet#test_ewallet",
+  "historyId" : "cee2a778cd8362483adde97dea36f044",
+  "time" : {
+    "start" : 1631070127481,
+    "stop" : 1631070167290,
+    "duration" : 39809
+  },
+  "description" : "读取测试文档数据，执行用例：登录CP判断电子钱包出金方式是否超过三条",
+  "descriptionHtml" : "<p>读取测试文档数据，执行用例：登录CP判断电子钱包出金方式是否超过三条</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_addEwallet",
+    "time" : {
+      "start" : 1631070029493,
+      "stop" : 1631070082593,
+      "duration" : 53100
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "读取测试文档数据，执行用例：登录CP判断电子钱包出金方式是否超过三条",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "获取当前测试数据下标",
+      "time" : {
+        "start" : 1631070127481,
+        "stop" : 1631070127481,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进入账号详情页判断该账号居住国是否为中国",
+      "time" : {
+        "start" : 1631070129505,
+        "stop" : 1631070167290,
+        "duration" : 37785
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "登录会员中心判断电子钱包出金方式是否超过三条",
+        "time" : {
+          "start" : 1631070140167,
+          "stop" : 1631070155056,
+          "duration" : 14889
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "dc8c3b431f5f2d24",
+          "name" : "ewallet出金方式",
+          "source" : "dc8c3b431f5f2d24.png",
+          "type" : "image/png",
+          "size" : 132097
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "获取提示语",
+        "time" : {
+          "start" : 1631070155056,
+          "stop" : 1631070167282,
+          "duration" : 12226
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "3ce432afb449f481",
+          "name" : "tips",
+          "source" : "3ce432afb449f481.png",
+          "type" : "image/png",
+          "size" : 157760
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "断言提示语是否正确",
+        "time" : {
+          "start" : 1631070167282,
+          "stop" : 1631070167290,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "若新增电子钱包出金方式，判断在出金模块是否可用",
+        "time" : {
+          "start" : 1631070167290,
+          "stop" : 1631070167290,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_addEwallet::0",
+    "time" : {
+      "start" : 1631070169453,
+      "stop" : 1631070169453,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用例执行"
+  }, {
+    "name" : "epic",
+    "value" : "账户设定添加电子钱包出金方式"
+  }, {
+    "name" : "feature",
+    "value" : "会员中心判断ewallet电子钱包是否超过三条，否则添加至三条，并且验证是否可以及数据库中是否添加成功"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=2, reruns_delay=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.add_ewallet_withdrawal.action_bin"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_ewallet"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_addEwallet"
+  }, {
+    "name" : "host",
+    "value" : "一台憨憨笔记本"
+  }, {
+    "name" : "thread",
+    "value" : "18592-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.add_ewallet_withdrawal.action_bin.test_add_ewallet"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2d8ebb9f64656f8b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631003937807,
+        "stop" : 1631003999095,
+        "duration" : 61288
+      }
+    }, {
+      "uid" : "ad368e7b69c83189",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631003643597,
+        "stop" : 1631003687923,
+        "duration" : 44326
+      }
+    }, {
+      "uid" : "b7182911fa93bd34",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631003315126,
+        "stop" : 1631003375331,
+        "duration" : 60205
+      }
+    }, {
+      "uid" : "eb4e7523aed01c32",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'openDemo' is not defined",
+      "time" : {
+        "start" : 1631002018502,
+        "stop" : 1631002018538,
+        "duration" : 36
+      }
+    }, {
+      "uid" : "b6be32638a91070c",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'openDemo' is not defined",
+      "time" : {
+        "start" : 1631001991061,
+        "stop" : 1631001991062,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8a70bfd979ff4c11",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'openDemo' is not defined",
+      "time" : {
+        "start" : 1631001965053,
+        "stop" : 1631001965053,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=2, reruns_delay=2)" ]
+  },
+  "source" : "d157ba4e893b8249.json",
+  "parameterValues" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456'}" ]
+}

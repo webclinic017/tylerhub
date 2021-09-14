@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-08-30 17:46:56
+LastEditTime: 2021-09-09 15:10:51
 LastEditors: Please set LastEditors
 Description: This module is used to store random data and data processing.Including regular matching of the re module, etc
 FilePath: tylerhub\demo\public\randomdata.py
@@ -103,4 +103,12 @@ if __name__=='__main__':
     # print(pub.random_int(10,20))
     # print(float(pub.extract_numbers('( 可取款金额 |3,065.65USD )'))/100)
     # print(pub.get_purerange(14,'number'))
-    pub.log_output('test').error('testttttt')
+    #pub.log_output('test').error('testttttt')
+    # print(int(pub.extract_numbers('( 可取款金额 | 50,265.01 USD )'))/100)
+    print(int(50265.01/2))
+    print(50265.01/2)
+
+
+
+
+

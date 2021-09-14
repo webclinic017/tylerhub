@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-04 21:45:29
-LastEditTime: 2021-08-24 10:52:52
+LastEditTime: 2021-09-14 14:30:56
 LastEditors: Please set LastEditors
 Description: Logoutput
 FilePath: \tylerhub\demo\public\handlelog.py
