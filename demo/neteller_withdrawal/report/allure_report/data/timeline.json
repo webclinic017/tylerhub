@@ -1,0 +1,150 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "SZ01-QA-G-10",
+    "children" : [ {
+      "name" : "14240-MainThread",
+      "children" : [ {
+        "name" : "test_neteller[data0]",
+        "uid" : "d264505437bba1be",
+        "parentUid" : "4ce6204a9c912e2f180d3673bc958655",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631696171856,
+          "stop" : 1631696242056,
+          "duration" : 70200
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456', '出金交易账号': 612000064.0, '出金金额': 101.11, 'bos出金时间': '2021-09-15 16:52:49', 'cp出金时间': '15/09/2021 11:52', '数据库出金时间': 44454.37001855324}" ]
+      } ],
+      "uid" : "4ce6204a9c912e2f180d3673bc958655"
+    }, {
+      "name" : "10416-MainThread",
+      "children" : [ {
+        "name" : "test_neteller[data1]",
+        "uid" : "70823f2345ae292c",
+        "parentUid" : "506b519d6e840c40579365fd3c77b781",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631695241535,
+          "stop" : 1631695303961,
+          "duration" : 62426
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '出金交易账号': 672005304.0, '出金金额': 55.55, 'bos出金时间': '', 'cp出金时间': '', '数据库出金时间': ''}" ]
+      }, {
+        "name" : "test_neteller[data0]",
+        "uid" : "cfd881d49dc6f087",
+        "parentUid" : "506b519d6e840c40579365fd3c77b781",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631695181566,
+          "stop" : 1631695234269,
+          "duration" : 52703
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456', '出金交易账号': 612000064.0, '出金金额': 101.11, 'bos出金时间': '2021-09-15 16:34:31', 'cp出金时间': '15/09/2021 11:34', '数据库出金时间': 44454.357305706}" ]
+      } ],
+      "uid" : "506b519d6e840c40579365fd3c77b781"
+    }, {
+      "name" : "13668-MainThread",
+      "children" : [ {
+        "name" : "test_neteller[data0]",
+        "uid" : "98d8cb5499843ee4",
+        "parentUid" : "aaf171e424ca87cee9ce213dd68e35f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631695934254,
+          "stop" : 1631695986951,
+          "duration" : 52697
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456', '出金交易账号': 612000064.0, '出金金额': 101.11, 'bos出金时间': '2021-09-15 16:40:16', 'cp出金时间': '15/09/2021 11:40', '数据库出金时间': 44454.36130753472}" ]
+      }, {
+        "name" : "test_neteller[data1]",
+        "uid" : "8e56abfb9d881a45",
+        "parentUid" : "aaf171e424ca87cee9ce213dd68e35f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631695996331,
+          "stop" : 1631696056150,
+          "duration" : 59819
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '出金交易账号': 672005304.0, '出金金额': 55.55, 'bos出金时间': '2021-09-15 16:41:19', 'cp出金时间': '15/09/2021 11:41', '数据库出金时间': 44454.36203233797}" ]
+      } ],
+      "uid" : "aaf171e424ca87cee9ce213dd68e35f6"
+    }, {
+      "name" : "15296-MainThread",
+      "children" : [ {
+        "name" : "test_neteller[data0]",
+        "uid" : "447cf8fd96b46364",
+        "parentUid" : "2476ddba56c9bce296fb9211a6ac6980",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631696951643,
+          "stop" : 1631697041934,
+          "duration" : 90291
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456', '出金交易账号': 612000064.0, '出金金额': 101.11, 'bos出金时间': '2021-09-15 17:04:46', 'cp出金时间': '15/09/2021 12:04', '数据库出金时间': 44454.37831435185}" ]
+      }, {
+        "name" : "test_neteller[data1]",
+        "uid" : "82c82b6799c039a8",
+        "parentUid" : "2476ddba56c9bce296fb9211a6ac6980",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631697051472,
+          "stop" : 1631697145663,
+          "duration" : 94191
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '出金交易账号': 672005304.0, '出金金额': 55.55, 'bos出金时间': '2021-09-15 16:53:54', 'cp出金时间': '15/09/2021 11:53', '数据库出金时间': 44454.37076888889}" ]
+      } ],
+      "uid" : "2476ddba56c9bce296fb9211a6ac6980"
+    }, {
+      "name" : "4804-MainThread",
+      "children" : [ {
+        "name" : "test_neteller[data0]",
+        "uid" : "910c77aaf6707f8b",
+        "parentUid" : "9f1e851a2859b5e27aa79f9214241e46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631696617566,
+          "stop" : 1631696703525,
+          "duration" : 85959
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456', '出金交易账号': 612000064.0, '出金金额': 101.11, 'bos出金时间': '2021-09-15 16:56:46', 'cp出金时间': '15/09/2021 11:56', '数据库出金时间': 44454.37276490741}" ]
+      } ],
+      "uid" : "9f1e851a2859b5e27aa79f9214241e46"
+    }, {
+      "name" : "12312-MainThread",
+      "children" : [ {
+        "name" : "test_neteller[data0]",
+        "uid" : "26573e55ea7a81f2",
+        "parentUid" : "77193af2d3b90b77385d33e4a7251b62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631694741669,
+          "stop" : 1631694931887,
+          "duration" : 190218
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456', '出金交易账号': 612000064.0, '出金金额': 101.11, 'bos出金时间': '', 'cp出金时间': '', '数据库出金时间': ''}" ]
+      } ],
+      "uid" : "77193af2d3b90b77385d33e4a7251b62"
+    } ],
+    "uid" : "22c9a7ca73ac7ac9efe14f8b8f896b03"
+  } ]
+}

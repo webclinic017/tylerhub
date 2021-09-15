@@ -1,0 +1,8 @@
+!!--!!driver_name - 2021-09-14 15:44:56,071 - browser_actions - [browser_actions.py-->line:48] - ERROR: 启动浏览器异常Message: session not created: This version of ChromeDriver only supports Chrome version 91
+Current browser version is 93.0.4577.63 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+
+!!--!!url_error - 2021-09-14 15:44:56,075 - browser_actions - [browser_actions.py-->line:55] - WARNING: 请输入正确的域名
+!!--!!choose_register_lang - 2021-09-14 15:44:57,090 - common_method - [common_method.py-->line:75] - ERROR: 'NoneType' object has no attribute 'find_element_by_css_selector'
+!!--!!remove_register_topup - 2021-09-14 18:30:28,529 - common_method - [common_method.py-->line:43] - ERROR: Message: no such element: Unable to locate element: {"method":"css selector","selector":".blk-sure-btn"}
+  (Session info: chrome=93.0.4577.63)
+

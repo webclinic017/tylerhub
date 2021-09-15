@@ -1,0 +1,43 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "demo.neteller_withdrawal.action_bin",
+    "children" : [ {
+      "name" : "test_neteller_withdrawal",
+      "children" : [ {
+        "name" : "Test_neteller_withdrawal",
+        "children" : [ {
+          "name" : "test_neteller[data0]",
+          "uid" : "447cf8fd96b46364",
+          "parentUid" : "f719e06f0b8523eff8572c3acc746bb7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1631696951643,
+            "stop" : 1631697041934,
+            "duration" : 90291
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'主账号': 1200008143.0, '邮箱': '235345346@qq.com', '密码': 'Tl123456', '出金交易账号': 612000064.0, '出金金额': 101.11, 'bos出金时间': '2021-09-15 17:04:46', 'cp出金时间': '15/09/2021 12:04', '数据库出金时间': 44454.37831435185}" ]
+        }, {
+          "name" : "test_neteller[data1]",
+          "uid" : "82c82b6799c039a8",
+          "parentUid" : "f719e06f0b8523eff8572c3acc746bb7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1631697051472,
+            "stop" : 1631697145663,
+            "duration" : 94191
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '出金交易账号': 672005304.0, '出金金额': 55.55, 'bos出金时间': '2021-09-15 16:53:54', 'cp出金时间': '15/09/2021 11:53', '数据库出金时间': 44454.37076888889}" ]
+        } ],
+        "uid" : "f719e06f0b8523eff8572c3acc746bb7"
+      } ],
+      "uid" : "162a00ce735ee75afe376f1628c5a455"
+    } ],
+    "uid" : "847904e57dbd0c1b338bd164661d6942"
+  } ]
+}

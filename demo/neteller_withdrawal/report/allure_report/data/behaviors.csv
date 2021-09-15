@@ -1,0 +1,2 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"neteller出金","判断是否存在neteller出金方式、判断交易账号余额、调用接口获取出金手续费","用例执行","0","0","2","0","0"

@@ -1,0 +1,21 @@
+[ {
+  "uid" : "447cf8fd96b46364",
+  "name" : "test_neteller[data0]",
+  "time" : {
+    "start" : 1631696951643,
+    "stop" : 1631697041934,
+    "duration" : 90291
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82c82b6799c039a8",
+  "name" : "test_neteller[data1]",
+  "time" : {
+    "start" : 1631697051472,
+    "stop" : 1631697145663,
+    "duration" : 94191
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

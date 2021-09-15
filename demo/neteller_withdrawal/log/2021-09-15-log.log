@@ -1,0 +1,14 @@
+!!--!!get_url - 2021-09-15 14:32:07,945 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:65] - ERROR: 'Location_of_netellerWithdrawal' object has no attribute 'login_mask'
+!!--!!check_cp - 2021-09-15 14:37:00,896 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:473] - ERROR: name 'ttradeaccount' is not defined
+!!--!!check_cp - 2021-09-15 14:43:36,608 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:474] - ERROR: 'tradeaccount'
+!!--!!remove_login_topup - 2021-09-15 15:00:53,625 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:74] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!get_url - 2021-09-15 15:00:54,635 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:64] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!login_bos - 2021-09-15 15:00:54,636 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:133] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!logincp - 2021-09-15 15:00:54,638 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:85] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!is_balance_nil - 2021-09-15 15:00:57,657 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:187] - ERROR: argument of type 'NoneType' is not iterable
+!!--!!add_neteller - 2021-09-15 15:01:03,734 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:255] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!use_neteller_withdrawal - 2021-09-15 15:01:10,986 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:327] - ERROR: 'Random_data' object has no attribute 'log_output'
+!!--!!get_tradeaccount_balance - 2021-09-15 15:04:42,911 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:111] - ERROR: unsupported operand type(s) for *: 'int' and 'NoneType'
+!!--!!get_tradeaccount_balance - 2021-09-15 15:22:52,522 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:111] - ERROR: unsupported operand type(s) for *: 'int' and 'NoneType'
+!!--!!get_tradeaccount_balance - 2021-09-15 15:24:47,467 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:111] - ERROR: unsupported operand type(s) for *: 'int' and 'NoneType'
+!!--!!get_tradeaccount_balance - 2021-09-15 15:31:44,749 - location_of_neteller_withdrawal - [location_of_neteller_withdrawal.py-->line:111] - ERROR: unsupported operand type(s) for *: 'int' and 'NoneType'

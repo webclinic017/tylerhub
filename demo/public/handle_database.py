@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:27:17
-LastEditTime: 2021-09-06 17:25:02
+LastEditTime: 2021-09-15 14:45:42
 LastEditors: Please set LastEditors
 Description: Query database and save
 FilePath: \tylerhub\demo\public\handle_database.py
@@ -220,5 +220,10 @@ if __name__=='__main__':
     # excelpath=r'D:\code\tylerhub\demo\public\about_data.xlsx'
     # dataBase.save_mongodb_data(excelpath,conFig.get_value('mongodb_test', 'uri'),'sample_mflix','movies',
     # {"year":1915},N=0,sortTerm=[('_id',-1)],title='A',runtime='B',rated='C')
-    dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atfxgm-sit', 'atfx_trade_account',
-    {"accountNumber":1000005349},'tradeAccount',N=1)
+    # dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atfxgm-sit', 'atfx_trade_account',
+    # {"accountNumber":1000005349},'tradeAccount',N=1)
+    # encrypt_secret=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atclientpoolsit', 'usersgm',{"email":'tyler.tang@test.com'},'encrypt_secret',N=0)
+    # print(encrypt_secret[0]['encrypt_secret'])
+    times=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 
+    'atfxgm-sit', 'atfx_withdrawal',{"tradeAccount":"672005304"},'createDate',N=1)[0]['createDate']
+    print(times)

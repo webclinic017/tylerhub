@@ -664,21 +664,21 @@ import ssl
 
 # print("xpath,//div[@class='bankinfo-page']/div[1]//div[@class='bank-row']/div[{}]//div/span[@class='del-btn c-float']",end='')
 # print(111)
-import requests
+# import requests
 
-import requests
-import json
+# import requests
+# import json
 
-# host = "http://httpbin.org/"
-# endpoint = "get"
+# # host = "http://httpbin.org/"
+# # endpoint = "get"
 
-# url = ''.join([host,endpoint])
-# print(url)
-# r = requests.get(url)
-# #response = r.json()
+# # url = ''.join([host,endpoint])
+# # print(url)
+# # r = requests.get(url)
+# # #response = r.json()
 
-# print (type(r.text))
-# print (eval(r.text))
+# # print (type(r.text))
+# # print (eval(r.text))
 
 
 
@@ -703,51 +703,63 @@ import json
 # response = (r.text)
 # print(response)
 
-from api import Api
-from read_dataconfig import ReadConfig
+# from api import Api
+# from read_dataconfig import ReadConfig
+
+# re=Api()
+# conFig=ReadConfig()
+
+# host='https://at-client-portal-api-sit.atfxdev.com/'
+# endpoint='login'
+# url=''.join([host,endpoint])
+
+# headers={
+#     'accept':'application/json, text/plain, */*',
+#     'accept-encoding':'gzip, deflate, br',
+#     'accept-language':'zh,zh-CN;q=0.9,en;q=0.8',
+#     'content-type':'application/json;charset=UTF-8',
+#     'sec-ch-ua':'"Google Chrome";v="93","Not;A Brand";v="99", "Chromium";v="93"',
+#     'sec-fetch-dest':'empty',
+#     'sec-fetch-mode':'cors',
+#     'sec-fetch-site':'same-site',
+#     'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36',
+#     'x-token':conFig.get_value('api_login_cp', 'x-token')
+# }
+
+# data={
+#     "entity": "GM",
+#     "email": "tyler.tang@test.com",
+#     "password": "CzOMlg2xtgC0UmkRPdpi+Q==",
+#     "loginType": "email",
+#     "accountNumber":1000005349
+# }
+
+# data2={
+# 	"entity": "GM", 
+# 	"accountNumber": 1000005349, 
+# 	"channel":"ewallet",
+# 	"country":"",
+# 	"currency":"USD",
+# 	"mtAmt":"666",
+# 	"tradeAccount":672005304,
+# 	"tradeAccountServer": "mt4_s03", 
+# 	"commissionTD": ""
+# }
+
+# # tesda=re.api_post(host,path=endpoint,headers=headers,json=data)
+# # print(tesda.json()['data']['storageValue']['id_token'])
+# # conFig.modify('api_login_cp', 'x-token', tesda.json()['data']['storageValue']['id_token'])
+# testda=re.api_post(host,conFig.get_value('api_login_cp', 'path_charge'),headers=headers,json=data2)
+# print(float(testda.json()['data']['charge']))
 
 
-host='https://at-client-portal-api-sit.atfxdev.com/'
-endpoint='login'
-url=''.join([host,endpoint])
+# # r=requests.post(url,headers=headers,json=data)
+# # retdata=r.json()
+# # # print(retdata)
+# # print(retdata['data']['storageValue']['id_token'])
 
-headers={
-    'accept':'application/json, text/plain, */*',
-    'accept-encoding':'gzip, deflate, br',
-    'accept-language':'zh,zh-CN;q=0.9,en;q=0.8',
-    'content-type':'application/json;charset=UTF-8',
-    'sec-ch-ua':'"Google Chrome";v="93","Not;A Brand";v="99", "Chromium";v="93"',
-    'sec-fetch-dest':'empty',
-    'sec-fetch-mode':'cors',
-    'sec-fetch-site':'same-site',
-    'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36'
-}
+print(5.00==5)
 
-data={
-    "entity": "GM",
-    "email": "tyler.tang@test.com",
-    "password": "CzOMlg2xtgC0UmkRPdpi+Q==",
-    "loginType": "email",
-    "accountNumber":1000005349
-}
-
-re=Api()
-conFig=ReadConfig()
-tesda=re.api_post(host,path=endpoint,headers=headers,json=data)
-print(tesda.json()['data']['storageValue']['id_token'])
-conFig.modify('login_cpToken', 'x-token', tesda.json()['data']['storageValue']['id_token'])
-
-
-# r=requests.post(url,headers=headers,json=data)
-# retdata=r.json()
-# # print(retdata)
-# print(retdata['data']['storageValue']['id_token'])
-
-
-
-a=10
-b=10*5%
-print(b)
 
 
 
