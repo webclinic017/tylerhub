@@ -1,7 +1,7 @@
 <!--
  * @Author: tyler
  * @Date: 2021-09-07 16:59:11
- * @LastEditTime: 2021-09-15 17:19:32
+ * @LastEditTime: 2021-09-16 10:14:29
  * @LastEditors: Please set LastEditors
  * @Description: IModule notes
  * @FilePath: \tylerhub\demo\add_ewallet_withdrawal\README.md
@@ -29,18 +29,18 @@ log        |          存放日志         |
 
 **脚本逻辑** 
 
-    调用location_of_neteller_withdrawal.py模块中方法，执行测试用例：登录bos判断当前账号是否满足居住国条件（非中国），登录cp，判断当前账号是否存在电子钱包出金方式，若存在，再判断某个渠道电子钱包出金方式是否超过三条，未超过则添加至三条获取提示语，并在出金模块验证是否可用，验证是否成功添加进数据库；若不存在，则默认添加skill渠道至三条，并获取提示语及验证数据库
+    调用location_of_neteller_withdrawal.py模块中方法，执行测试用例：登录cp判断当前账号是否存在neteller出金方式，若不存在则新增一条neteller出金方式，截图；判断出金交易账号余额和可出金金额是否为0，若为0则跳过用例；若出金金额大于余额，默认出金余额的1/2；会员中心出金，并调用接口查询出金手续费，断言会员中心手续费与接口返回手续费是否一致；bos审核出金，保存cp，bos，mongodb数据库出金创建时间到本地
 
 **用例预置条件** 
 
     用例数据必须是kyc通过，且能出金的账号
 
 
-## 命名方式 建议使用如下命名方式哦:smiley: 
+## 命名方式 建议使用如下命名方式:smiley: 
     模块名：小写字母，单词间用_分割  about_data.py
     类名：首字母大写
     普通变量：小写字母，单词间用_分割 email_list;无下划线第二个单词大写开头（驼峰命名法）例：readConfig
-    私有函数：以__双下划线开头小写字母，单词之间用分割  外部访问，引用会报错
+    私有函数：以__双下划线开头小写字母，单词之间_用分割  外部访问，引用会报错
     普通函数：小写字母，单词之间用_分割 get_rangenemail
 *注释*：
 
@@ -53,7 +53,7 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
 ***
 ## 模块方法及变量释义
 ### 模块:
-***[location_of_add_ewallet.py :](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/add_ewallet_withdrawal/location/location_of_add_ewallet.py)*** 
+***[location_of_neteller_withdrawal.py :](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/neteller_withdrawal/location/location_of_neteller_withdrawal.py)*** 
 
 *方法*
 
@@ -64,14 +64,18 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     logoutcp()                                                      登出cp
     login_bos()                                                     登录bos  
     details_page(account)                                           账号详情页     
-    get_live_country()                                              获取该账号居住国
-    get_demoaccount(account)                                        数据库查询获取新开demo账号
-    is_ewallet_morethan_three()                                     会员中心判断该账号电子钱包出金方式是否超过三条
-    get_verify_code()                                               获取验证码
-    get_tips()                                                      获取电子钱包超过三条后再次添加后的提示
-    is_ewallet_available()                                          判断新增出金方式会员中心是否可用
-    search_mongodb_ewallet()                                        查询数据库，判断新增电子钱包出金方式是否添加进库中
-    screenshots_path()                                              截图,返回截图路径
+    where_is_tradeaccount_cp(tradeaccount)                          获取交易账号在cp账号列表位置
+    get_tradeaccount_balance(tradeaccount)                          获取交易账号余额
+    details_page(account)                                           进入账号详情页
+    is_balance_nil(tradeaccount)                                    判断交易账号余额是否为0
+    is_exist_neteller()                                             判断当前账号是否存在neteller出金方式
+    add_neteller(account)                                           添加neteller出金方式
+    use_neteller_withdrawal(account,tradeaccount,username,amount,excelpath,column,row) 出金,并判断出金交易账号余额是否大于出金金额
+    action_neteller(account,tradeaccount,username,amount,excelpath,column,row)   出金
+    api_get_charge(account,tradeaccount,username,amount)            调用接口，获取当前出金手续费
+    review_withdrawal(tradeaccount,excelpath,column,row)            bos审核出金
+    check_cp(tradeaccount,excelpath,column1,column2,row)            会员中心查看
+    screenshots_path(name,filename='picture')                       截图,返回截图路径
     closebrowser()                                                  关闭当前页面
     quitbrowser()                                                   退出浏览器进程
 
@@ -82,18 +86,21 @@ __双下划线开头：模块内的成员，表示私有成员，外部无法直
     username                                                        登录用户名，bos读取配置文件中用户，cp读取测试文档中用户
     password                                                        登录密码，bos读取配置文件中密码，cp读取测试文档中密码
     account                                                         主账号
-    tdAccount                                                       demo账号
+    tradeaccount                                                    交易账号
     name                                                            截图名
+    amount                                                          出金金额
+    column                                                          列
+    row                                                             行
 ***
 
 ### 模块:
-***[test_add_ewallet.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/add_ewallet_withdrawal/action_bin/test_add_ewallet.py)*** 
+***[test_neteller_withdrawal.py:](https://github.com/Tyler96-QA/tylerhub/blob/main/demo/neteller_withdrawal/action_bin/test_neteller_withdrawal.py)*** 
 
 *方法*
 
     setup_class()                                                   预置条件
     teardown()                                                      环境恢复
-    test_ewallet()                                                  用例执行
+    test_neteller()                                                 用例执行
 
 *变量*
 

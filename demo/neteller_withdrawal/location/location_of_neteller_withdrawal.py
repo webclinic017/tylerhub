@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-08 15:05:02
-LastEditTime: 2021-09-15 17:14:05
+LastEditTime: 2021-09-15 17:53:42
 LastEditors: Please set LastEditors
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\neteller_withdrawal\location\location_of_neteller_withdrawal.py
@@ -259,7 +259,7 @@ class Location_of_netellerWithdrawal(object):
 
     
     #出金,并判断出金交易账号余额是否大于出金金额
-    def use_neteller_withdrawal(self,account,tradeaccount,username,amount):
+    def use_neteller_withdrawal(self,account,tradeaccount,username,amount,excelpath,column,row):
         try:
             time.sleep(1)
             common.display_click("xpath,//span[.='出金']")
@@ -325,6 +325,8 @@ class Location_of_netellerWithdrawal(object):
                     #再次确认
                     common.display_click('css,.btn-confirm')
                     print('当前出金手续费为：{}'.format(self.charge))
+                #保存接口手续费到本地
+                dealData.saveainfo(excelpath, self.api_charge, column, row)
                 return False
         except Exception as msg:
             log.my_logger('!!--!!use_neteller_withdrawal').error(msg)
@@ -332,13 +334,13 @@ class Location_of_netellerWithdrawal(object):
 
 
     #出金
-    def action_neteller(self,account,tradeaccount,username,amount):
+    def action_neteller(self,account,tradeaccount,username,amount,excelpath,column,row):
         try:
             if self.is_exist_neteller():#存在neteller出金方式
-                self.use_neteller_withdrawal(account,tradeaccount,username,amount)
+                self.use_neteller_withdrawal(account,tradeaccount,username,amount,excelpath,column,row)
             else:
                 self.add_neteller(account)
-                self.use_neteller_withdrawal(account,tradeaccount,username,amount)
+                self.use_neteller_withdrawal(account,tradeaccount,username,amount,excelpath,column,row)
         except Exception as msg:
             log.my_logger('!!--!!use_neteller_withdrawal').error(msg)
 

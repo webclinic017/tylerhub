@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-08 15:05:37
-LastEditTime: 2021-09-15 16:31:55
+LastEditTime: 2021-09-15 17:52:59
 LastEditors: Please set LastEditors
 Description: Execute testcase
 FilePath: \tylerhub\demo\neteller_withdrawal\action_bin\test_neteller_withdrawal.py
@@ -67,7 +67,8 @@ class Test_neteller_withdrawal(object):
                 pytest.skip()
             else:
                 with allure.step('会员中心出金，调用接口查询手续费，当可出金金额为0时跳过用例'):
-                    if netteLler.action_neteller(int(data['主账号']),int(data['出金交易账号']),data['邮箱'],int(data['出金金额'])):
+                    if netteLler.action_neteller(int(data['主账号']),int(data['出金交易账号']),
+                    data['邮箱'],int(data['出金金额']),excelpath,'I',self.data_index+2):
                         pytest.skip()
                     else:
                         with open(netteLler.charge_path,'rb') as f:
