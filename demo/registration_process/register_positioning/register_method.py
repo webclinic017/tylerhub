@@ -10,7 +10,7 @@ from common_method import Commonmethod
 from handlelog import MyLog
 from randomdata import Random_data
 from read_dataconfig import ReadConfig
-from verification_code import time_used
+
 
 #实例化
 common=Commonweb()
