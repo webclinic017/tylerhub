@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-09-17 10:46:28
+LastEditTime: 2021-09-17 10:52:38
 LastEditors: Please set LastEditors
 Description: Perform cases of register
 FilePath: \tylerhub\demo\registration_process\register_actions_bin\cp_register.py
@@ -66,11 +66,11 @@ class Register_cp(unittest.TestCase):
             self.assertIn(form.register_success(),'Company Declaration 公司声明')
             #保存测试数据
             
-            e.saveainfo(path_process+r'\test_excel_data\account_number.xlsx',data['国家'],'A',self.data_index+2)
-            e.saveainfo(path_process+r'\test_excel_data\account_number.xlsx',data['邮箱'],'B',self.data_index+2)
-            e.saveainfo(path_process+r'\test_excel_data\account_number.xlsx',data['三字码'],'D',self.data_index+2)
-            e.saveainfo(path_process+r'\test_excel_data\account_number.xlsx',data['地区'],'G',self.data_index+2)
-            e.saveainfo(path_process+r'\test_excel_data\account_number.xlsx',data['邀请码'],'H',self.data_index+2)
+            e.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx',data['国家'],'A',self.data_index+2)
+            e.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx',data['邮箱'],'B',self.data_index+2)
+            e.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx',data['三字码'],'D',self.data_index+2)
+            e.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx',data['地区'],'G',self.data_index+2)
+            e.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx',data['邀请码'],'H',self.data_index+2)
 
 if __name__=='__main__':
     #测试报告

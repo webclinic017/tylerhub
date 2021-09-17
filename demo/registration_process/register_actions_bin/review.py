@@ -27,7 +27,7 @@ rev=Review_actions()
 
 #读取测试数据
 e=Aboutdata()
-rows=e.openexcel(path_process+r'\test_excel_data\account_number.xlsx','Sheet1')
+rows=e.openexcel(path_process+r'\test_excel_data\Account_number.xlsx','Sheet1')
 testdata=e.dict_data()
 
 @ddt.ddt

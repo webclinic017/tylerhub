@@ -92,4 +92,4 @@ if __name__=='__main__':
     # a=e.dict_data()
     # print(a)
     # print(a[0]['主账号'])
-    e.saveainfo(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\registration_process\test_excel_data\account_number.xlsx', 'd', 'A', 4)
+    e.saveainfo(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\registration_process\test_excel_data\Account_number.xlsx', 'd', 'A', 4)

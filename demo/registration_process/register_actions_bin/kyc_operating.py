@@ -25,7 +25,7 @@ from read_dataconfig import ReadConfig
 kyc=Kyc_approve()
 conFig=ReadConfig()
 e=Aboutdata()
-rows=e.openexcel(path_process+r'\test_excel_data\account_number.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
+rows=e.openexcel(path_process+r'\test_excel_data\Account_number.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
 testdata=e.dict_data()
 
 @ddt.ddt
@@ -75,7 +75,7 @@ class Kyc_actions(unittest.TestCase):
             #登录会员中心
             kyc.login_cp(data['邮箱'],'Tl123456')
             #获取主账号并保存
-            e.saveainfo(path_process+r'\test_excel_data\account_number.xlsx',kyc.get_account_(),'C',self.data_index+2)
+            e.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx',kyc.get_account_(),'C',self.data_index+2)
             print('当前测试数据:邮箱{}'.format(data['邮箱']))
             #KYC表单认证
             kyc.get_on_kyc(data['地区'])

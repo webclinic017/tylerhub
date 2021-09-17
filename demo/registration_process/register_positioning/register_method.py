@@ -39,7 +39,7 @@ class Form_operations():
             if len(url)!=0:
                 #通过ib专属链接注册
                 common.open_web(url)
-                ex.saveainfo(os.path.join(path_process,'test_excel_data\account_number.xlsx'),'专属链接', column, row) #
+                ex.saveainfo(os.path.join(path_process,'test_excel_data\Account_number.xlsx'),'专属链接', column, row) #
                 time.sleep(2)
                 self.commethod.remove_register_topup() #去除弹窗
                 print('专属链接注册')
@@ -47,7 +47,7 @@ class Form_operations():
                 #通过邀请码
                 common.open_web(conFig.get_value('cp_register','{}'.format(environment)))
                 time.sleep(2)
-                ex.saveainfo(path_process+r'\test_excel_data\account_number.xlsx','邀请码', column, row)#备注注册方式
+                ex.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx','邀请码', column, row)#备注注册方式
                 self.commethod.remove_register_topup()
                 time.sleep(1)
                 #输入邀请码
@@ -56,7 +56,7 @@ class Form_operations():
             else:
                 #直客注册
                 common.open_web(conFig.get_value('cp_register','{}'.format(environment)))
-                ex.saveainfo(path_process+r'\test_excel_data\account_number.xlsx','直客', column, row)#备注注册方式
+                ex.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx','直客', column, row)#备注注册方式
                 time.sleep(2)
                 self.commethod.remove_register_topup()
         except Exception as msg:

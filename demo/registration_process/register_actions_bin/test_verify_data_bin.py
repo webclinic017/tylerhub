@@ -30,7 +30,7 @@ conFig=ReadConfig()
 common=Commonweb()
 
 #读取测试数据
-excelpath=path_process+r'\test_excel_data\account_number.xlsx'
+excelpath=path_process+r'\test_excel_data\Account_number.xlsx'
 rows=e.openexcel(excelpath,'Sheet1')
 testdata=e.dict_data()
 
