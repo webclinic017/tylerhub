@@ -1,0 +1,16 @@
+!!--!!display_finds_element - 2021-09-23 11:52:45,041 - browser_actions - [browser_actions.py-->line:118] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-23 11:52:45,044 - browser_actions - [browser_actions.py-->line:145] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-23 11:52:45,045 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-09-23 11:52:51,598 - browser_actions - [browser_actions.py-->line:118] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-09-23 11:52:51,598 - browser_actions - [browser_actions.py-->line:118] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-23 11:52:51,608 - browser_actions - [browser_actions.py-->line:145] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-09-23 11:52:51,608 - browser_actions - [browser_actions.py-->line:145] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-23 11:52:51,609 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-09-23 11:52:51,609 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!choose_register_lang - 2021-09-23 15:11:33,705 - common_method - [common_method.py-->line:75] - ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=93.0.4577.82)
+

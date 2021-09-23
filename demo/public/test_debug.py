@@ -664,7 +664,7 @@ import ssl
 
 # print("xpath,//div[@class='bankinfo-page']/div[1]//div[@class='bank-row']/div[{}]//div/span[@class='del-btn c-float']",end='')
 # print(111)
-# import requests
+import requests
 
 # import requests
 # import json
@@ -682,32 +682,30 @@ import ssl
 
 
 
-import requests
-import json
+# import requests
+# import json
 
-# host = "http://httpbin.org/"
-# endpoint = "post"
+# # host = "http://httpbin.org/"
+# # endpoint = "post"
 
-# url = ''.join([host,endpoint])
-# headers = {"User-Agent":"test request headers"}
-# data = {
-#     "sites": [
-#                 { "name":"test" , "url":"www.test.com" },
-#                 { "name":"google" , "url":"www.google.com" },
-#                 { "name":"weibo" , "url":"www.weibo.com" }
-#     ]
-# }
+# # url = ''.join([host,endpoint])
+# # headers = {"User-Agent":"test request headers"}
+# # data = {
+# #     "sites": [
+# #                 { "name":"test" , "url":"www.test.com" },
+# #                 { "name":"google" , "url":"www.google.com" },
+# #                 { "name":"weibo" , "url":"www.weibo.com" }
+# #     ]
+# # }
 
-# r = requests.post(url,headers=headers,json=data)
-# # r = requests.post(url,data=json.dumps(data))
-# response = (r.text)
-# print(response)
+# # r = requests.post(url,headers=headers,json=data)
+# # # r = requests.post(url,data=json.dumps(data))
+# # response = (r.text)
+# # print(response)
 
 # from api import Api
 # from read_dataconfig import ReadConfig
 
-# re=Api()
-# conFig=ReadConfig()
 
 # host='https://at-client-portal-api-sit.atfxdev.com/'
 # endpoint='login'
@@ -722,8 +720,7 @@ import json
 #     'sec-fetch-dest':'empty',
 #     'sec-fetch-mode':'cors',
 #     'sec-fetch-site':'same-site',
-#     'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36',
-#     'x-token':conFig.get_value('api_login_cp', 'x-token')
+#     'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36'
 # }
 
 # data={
@@ -734,23 +731,11 @@ import json
 #     "accountNumber":1000005349
 # }
 
-# data2={
-# 	"entity": "GM", 
-# 	"accountNumber": 1000005349, 
-# 	"channel":"ewallet",
-# 	"country":"",
-# 	"currency":"USD",
-# 	"mtAmt":"666",
-# 	"tradeAccount":672005304,
-# 	"tradeAccountServer": "mt4_s03", 
-# 	"commissionTD": ""
-# }
-
-# # tesda=re.api_post(host,path=endpoint,headers=headers,json=data)
-# # print(tesda.json()['data']['storageValue']['id_token'])
-# # conFig.modify('api_login_cp', 'x-token', tesda.json()['data']['storageValue']['id_token'])
-# testda=re.api_post(host,conFig.get_value('api_login_cp', 'path_charge'),headers=headers,json=data2)
-# print(float(testda.json()['data']['charge']))
+# re=Api()
+# conFig=ReadConfig()
+# tesda=re.api_post(host,path=endpoint,headers=headers,json=data)
+# print(tesda.json()['data']['storageValue']['id_token'])
+# conFig.modify('login_cpToken', 'x-token', tesda.json()['data']['storageValue']['id_token'])
 
 
 # # r=requests.post(url,headers=headers,json=data)
@@ -758,37 +743,74 @@ import json
 # # # print(retdata)
 # # print(retdata['data']['storageValue']['id_token'])
 
-print(5.00==5)
+
+
+# a=10
+# b=10*0.05
+# print(b)
+
+# from browser_actions import Commonweb
+
+# common=Commonweb()
+
+# common.open_browser()
+# common.open_web('https://www.baidu.com/')
+
+# common.right_click_link("css,[href='http://tieba.baidu.com']")
+
+
+# for i in range(0,7):
+#     print(i)
+#     if i==4:
+#         print('到头了')
+#         break
+    
 
 
 
+# from api import Api
+# from read_dataconfig import ReadConfig
+
+# host='https://at-bos-api-sit.atfxdev.com'
+# endpoint='/v1/privilege/login'
+# url=''.join([host,endpoint])
+
+# headers_login={
+#     'accept':'application/json, text/plain, */*',
+#     'accept-encoding':'gzip, deflate, br',
+#     'accept-language':'zh,zh-CN;q=0.9,en;q=0.8',
+#     'content-type':'application/json;charset=UTF-8',
+#     'sec-ch-ua':'"Google Chrome";v="93","Not;A Brand";v="99", "Chromium";v="93"',
+#     'sec-fetch-dest':'empty',
+#     'sec-fetch-mode':'cors',
+#     'sec-fetch-site':'same-site',
+#     'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36'
+#     }
+
+# data_login={
+# 	"account": "tyler.tang", 
+# 	"passwd": "a12e16f04b1794c327b5d70f8954ff2f"
+#     }
+
+# re=Api()
+# conFig=ReadConfig()
+# deel=re.api_post(conFig.get_value('api_login_bos', 'host'),conFig.get_value('api_login_bos', 'path'),headers=headers_login,json=data_login)
+
+# print(deel.json()['data']['token'])
 
 
+# from browser_actions import Commonweb
 
+# common1=Commonweb()
+# common2=Commonweb()
+# driver1=common1.open_browser()
 
+# driver2=common2.open_browser()
 
+# common1.open_web('https://at-bos-frontend-sit.atfxdev.com/login')
+# common2.open_web('https://at-bos-frontend-sit.atfxdev.com/login')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(round(5*4.1935))
 
 
 

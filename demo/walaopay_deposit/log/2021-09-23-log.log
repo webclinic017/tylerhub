@@ -1,0 +1,13 @@
+!!--!!get_url - 2021-09-23 15:11:33,709 - location_of_walaopay_deposit - [location_of_walaopay_deposit.py-->line:78] - ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=93.0.4577.82)
+
+!!--!!login_bos - 2021-09-23 15:11:37,799 - location_of_walaopay_deposit - [location_of_walaopay_deposit.py-->line:189] - ERROR: Message: chrome not reachable
+  (Session info: chrome=93.0.4577.82)
+
+!!--!!is_have_walaopay - 2021-09-23 15:11:38,071 - location_of_walaopay_deposit - [location_of_walaopay_deposit.py-->line:249] - ERROR: Message: chrome not reachable
+  (Session info: chrome=93.0.4577.82)
+
+!!--!!logincp - 2021-09-23 15:11:41,876 - location_of_walaopay_deposit - [location_of_walaopay_deposit.py-->line:99] - ERROR: Message: chrome not reachable
+  (Session info: chrome=93.0.4577.82)
+

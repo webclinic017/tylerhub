@@ -1,0 +1,21 @@
+!!--!!choose_register_lang - 2021-09-18 15:45:44,468 - common_method - [common_method.py-->line:75] - ERROR: Message: no such element: Unable to locate element: {"method":"css selector","selector":".el-icon-arrow-down"}
+  (Session info: chrome=93.0.4577.82)
+
+!!--!!display_finds_element - 2021-09-18 15:48:42,449 - browser_actions - [browser_actions.py-->line:118] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-18 15:48:42,450 - browser_actions - [browser_actions.py-->line:145] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2021-09-18 15:48:42,451 - browser_actions - [browser_actions.py-->line:152] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2021-09-18 16:25:58,521 - browser_actions - [browser_actions.py-->line:118] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-18 16:25:58,522 - browser_actions - [browser_actions.py-->line:145] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2021-09-18 16:25:58,523 - browser_actions - [browser_actions.py-->line:152] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!enter_details_page - 2021-09-18 16:34:50,684 - common_method - [common_method.py-->line:157] - ERROR: Message: no such element: Unable to locate element: {"method":"css selector","selector":".ivu-input-group-with-append > [placeholder]"}
+  (Session info: chrome=93.0.4577.82)
+
+!!--!!display_finds_element - 2021-09-18 16:35:00,270 - browser_actions - [browser_actions.py-->line:118] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-09-18 16:35:00,272 - browser_actions - [browser_actions.py-->line:145] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-09-18 16:35:00,273 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!choose_register_lang - 2021-09-18 17:16:38,362 - common_method - [common_method.py-->line:75] - ERROR: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=93.0.4577.82)
+

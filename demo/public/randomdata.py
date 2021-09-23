@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-09-15 15:33:54
+LastEditTime: 2021-09-22 15:54:40
 LastEditors: Please set LastEditors
 Description: This module is used to store random data and data processing.Including regular matching of the re module, etc
 FilePath: tylerhub\demo\public\randomdata.py
@@ -9,6 +9,7 @@ FilePath: tylerhub\demo\public\randomdata.py
 import logging
 import random
 import re
+import time
 
 """此模块用于存放生成随机数据及数据的处理"""
 class Random_data():
@@ -18,7 +19,7 @@ class Random_data():
         self.number=''.join(random.sample('0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',n))
         return self.number
 
-    #生成N为数字与大小写字母组合的随机数
+    #生成N位数字与大小写字母组合的随机数(密码)
     def get_psword_type(self,N):
         if 1<N<=12:
             num_str=''.join(random.sample('0123456789',N-2))
@@ -32,7 +33,7 @@ class Random_data():
     #生成N位随机纯数字或者纯字母组合随机数
     def get_purerange(self,n,type):
         """
-        type:letter;number
+        :param type:letter;number
         """
 
         if type=='letter':
@@ -94,6 +95,26 @@ class Random_data():
         except Exception as msg:
             self.log_output('!!--!!random_int').error('请输入正确的参数：x<y:{}'.format(msg))
     
+
+    #生成随机格式化日期(>18岁)
+    def random_date(self):
+        #设置开始时间元祖
+        data1=(1976,1,1,0,0,0,0,0,0)
+        #设置结束时间元祖
+        data2=(2002,12,31,23,59,59,0,0,0)
+        #开始时间戳
+        startime=time.mktime(data1)
+        #结束时间戳
+        endtime=time.mktime(data2)
+        #在开始和结束时间戳段内随机选取
+        t=random.randint(startime, endtime)
+        #生成时间元祖
+        data_tuple=time.localtime(t)
+        #格式化
+        data_time=time.strftime('%Y-%m-%d',data_tuple)
+        return data_time
+
+
             
 #测试
 if __name__=='__main__':
@@ -106,7 +127,7 @@ if __name__=='__main__':
     #pub.log_output('test').error('testttttt')
     # print(int(pub.extract_numbers('( 可取款金额 | 50,265.01 USD )'))/100)
     # print(float(int(pub.extract_numbers('您的出金申请將收取5.00USD美元手续费'))/100))
-    print(pub.extract_numbers('交易账户 : mt4 - 612000064')=='4'+'612000064')
+    print(int(pub.extract_numbers('0.00 USD')))
 
 
 

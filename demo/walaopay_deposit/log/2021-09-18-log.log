@@ -1,0 +1,3 @@
+!!--!!get_tradeaccount_balance - 2021-09-18 15:48:42,452 - location_of_walaopay_deposit - [location_of_walaopay_deposit.py-->line:249] - ERROR: argument of type 'NoneType' is not iterable
+!!--!!is_have_walaopay - 2021-09-18 16:23:10,913 - location_of_walaopay_deposit - [location_of_walaopay_deposit.py-->line:217] - ERROR: 'Commonweb' object has no attribute 'switch'
+!!--!!get_tradeaccount_balance - 2021-09-18 16:25:58,524 - location_of_walaopay_deposit - [location_of_walaopay_deposit.py-->line:250] - ERROR: argument of type 'NoneType' is not iterable

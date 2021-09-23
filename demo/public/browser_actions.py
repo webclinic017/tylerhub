@@ -1,5 +1,6 @@
 import os
 import time
+import pyautogui
 
 from PIL import Image
 from selenium import webdriver
@@ -327,8 +328,11 @@ class Commonweb():
     #右键在新窗口打开链接打开链接
     def right_click_link(self,locator,index=0):
         try:
-            self.ele=self.display_find_element(locator,index)
-            self.ele.send_keys(Keys.CONTROL + Keys.ENTER)
+            self.right_click(locator,index)
+            time.sleep(1)
+            pyautogui.typewrite(['down'])
+            time.sleep(1)
+            pyautogui.typewrite(['enter'])
         except Exception as msg:
             log.my_logger('!!--!!right_click_link').error(msg)      
 
@@ -351,8 +355,9 @@ class Commonweb():
     #返回截图路径
     def get_screenpict_path(self,name,filename='picture'):
         """
-        name:截图名称
-        filename:保存截图文件名称
+        :param name:截图名称
+        :param filename:保存截图文件名称
+        :return 返回截图路径
         """
         self.get_screenpict(name, filename)
         return os.path.join(self.pictdir_path,'{}{}.png'.format(name,self.pict_name))
@@ -420,28 +425,20 @@ class Commonweb():
             log.my_logger('!!--!!js_scroll').error(msg)
 
     #JS处理内嵌滚动条滚动
-    def js_scroll_inline(self,type,element,site,index=0):
+    def js_scroll_inline(self,type,element,num,index=0):
         """
         JS处理内嵌滚动条目前只封装了两种方法：通过ID和CLASSNAME两种
-        type:id or class
-        site:down or top
+        :param type:id or class
+        :param num:[0,10000]
         """
         try:
-            #通过ID属性，回到顶部
-            if type=='ID' or type=='id' and site=='top':
-                self.js='document.getElementsByid({})["{}"].scrollTop =0 '.format(element,index)
+            #通过ID属性
+            if type=='ID' or type=='id':
+                self.js='document.getElementsByid({})["{}"].scrollTop ={} '.format(element,index,num)
                 self.driver.execute_script(self.js)
-            #通过ID属性，回到底部
-            elif type=='ID' or type=='id' and site=='down':
-                self.js='document.getElementsByid({})["{}"].scrollTop =10000'.format(element,index)
-                self.driver.execute_script(self.js)
-            #通过class属性，回到顶部
-            elif type=='class' and site=='top':
-                self.js='document.getElementsByClassName("{}")[{}].scrollTop =0 '.format(element,index)
-                self.driver.execute_script(self.js)
-            #通过class属性，回到底部
-            elif type=='class' and site=='down':
-                self.js='document.getElementsByClassName("{}")[{}].scrollTop =10000 '.format(element,index)
+            #通过class属性
+            elif type=='class' or type=='Class':
+                self.js='document.getElementsByClassName("{}")[{}].scrollTop ={} '.format(element,index,num)
                 self.driver.execute_script(self.js)
             else:
                 print('参数错误请检查')

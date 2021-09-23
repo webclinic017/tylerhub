@@ -10,3 +10,12 @@
 !!--!!nosuch_elements - 2021-09-17 11:07:19,824 - browser_actions - [browser_actions.py-->line:144] - ERROR: object of type 'NoneType' has no len()
 !!--!!display_get_text - 2021-09-17 11:07:19,825 - browser_actions - [browser_actions.py-->line:245] - ERROR: 'NoneType' object has no attribute 'text'
 !!--!!display_get_text - 2021-09-17 11:07:19,825 - browser_actions - [browser_actions.py-->line:245] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!right_click_link - 2021-09-17 16:03:53,086 - browser_actions - [browser_actions.py-->line:333] - ERROR: Message: element not interactable
+  (Session info: chrome=93.0.4577.82)
+
+!!--!!right_click_link - 2021-09-17 16:07:02,974 - browser_actions - [browser_actions.py-->line:334] - ERROR: Message: element not interactable
+  (Session info: chrome=93.0.4577.82)
+
+!!--!!right_click_link - 2021-09-17 16:24:31,348 - browser_actions - [browser_actions.py-->line:336] - ERROR: name 'K_CODE' is not defined
+!!--!!right_click_link - 2021-09-17 16:26:44,830 - browser_actions - [browser_actions.py-->line:337] - ERROR: name 'key' is not defined
+!!--!!right_click_link - 2021-09-17 16:27:38,216 - browser_actions - [browser_actions.py-->line:337] - ERROR: type object 'Keys' has no attribute 'Control'
