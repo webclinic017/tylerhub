@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-17 15:00:40
-LastEditTime: 2021-09-23 17:17:46
+LastEditTime: 2021-09-24 10:44:39
 LastEditors: Please set LastEditors
 Description: Page operation
 FilePath: \tylerhub\demo\walaopay_withdrawal\location\location_of_walaopay_withdrawal.py
@@ -48,7 +48,7 @@ class Location_of_walaopay(object):
 
 
     #登录页
-    def get_url(self,environment,username,password,lang='CN'):
+    def get_url(self,environment,lang='CN'):
         try:
             common.open_web(conFig.get_value('cp_login', '{}'.format(environment)))
             #去除登录页弹窗
@@ -61,20 +61,6 @@ class Location_of_walaopay(object):
             common.switch_windows(1)
             #选择bos页面语言,默认简中
             self.commeThod.choose_bos_lang(lang)
-            #浏览器新进程，登录bos第二个账号
-            common2.open_web(conFig.get_value('bos_login', '{}'.format(environment)))
-            self.commeThod2.choose_bos_lang(lang)
-            #登录
-            self.commeThod2.loginbos(username,password)
-            #进入入金管理页面
-            time.sleep(1)
-            common2.display_click('css,[width="200"] li .ivu-icon-ios-arrow-down',1)
-            time.sleep(0.5)
-            common2.display_click("xpath,//span[.='入金管理']")
-            time.sleep(1)
-            common2.display_click('css,.ivu-select-single .ivu-icon',2)
-            time.sleep(0.5)
-            common2.display_click("xpath,//li[.='交易账号']")
         except Exception as msg:
             log.my_logger('!!--!!get_url').error(msg)
 
@@ -182,14 +168,33 @@ class Location_of_walaopay(object):
             common.right_click_link("xpath,//span[.='入金管理']")
             time.sleep(1)
             common.switch_windows(3)
-            time.sleep(0.5)
+            time.sleep(2)
             common.display_click('css,.ivu-select-single .ivu-icon',2)
             time.sleep(0.5)
             common.display_click("xpath,//li[.='交易账号']")
         except Exception as msg:
             log.my_logger('!!--!!login_bos').error(msg)
 
-  #进入账号详情页
+     
+    def new_driver(self,environment,username,password,lang='CN'):
+        #浏览器新进程，登录bos第二个账号
+        common2.open_web(conFig.get_value('bos_login', '{}'.format(environment)))
+        self.commeThod2.choose_bos_lang(lang)
+        #登录
+        self.commeThod2.loginbos(username,password)
+        #进入入金管理页面
+        time.sleep(1)
+        common2.display_click('css,[width="200"] li .ivu-icon-ios-arrow-down',1)
+        time.sleep(0.5)
+        common2.display_click("xpath,//span[.='入金管理']")
+        time.sleep(1)
+        common2.display_click('css,.ivu-select-single .ivu-icon',2)
+        time.sleep(0.5)
+        common2.display_click("xpath,//li[.='交易账号']")
+
+
+
+    #进入账号详情页
     def details_page(self,account):
         try:
             common.switch_windows(1)
@@ -493,3 +498,4 @@ class Location_of_walaopay(object):
 
     def quitbrowser(self):
         common.quit_browser()
+        common2.quit_browser()

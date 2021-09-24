@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-17 15:06:27
-LastEditTime: 2021-09-23 17:22:22
+LastEditTime: 2021-09-24 10:45:01
 LastEditors: Please set LastEditors
 Description: Execute testcase
 FilePath: \tylerhub\demo\walaopay_withdrawal\action_bin\test_walaopay_withdrawal.py
@@ -35,9 +35,11 @@ class Test_addEwallet(object):
         #默认谷歌浏览器打开
         walaoPay.broswertype()
         #cp，bos登录页
-        walaoPay.get_url('sit',conFig.get_value('bos_login', 'username2'),conFig.get_value('bos_login', 'password'))
+        walaoPay.get_url('sit')
         #登录bos
         walaoPay.login_bos(conFig.get_value('bos_login', 'username'), conFig.get_value('bos_login', 'password'))
+        #登录bos第二个账号
+        walaoPay.new_driver('sit',conFig.get_value('bos_login', 'username2'),conFig.get_value('bos_login', 'password'))
 
     def teardown(self):
         if self.data_index==testdata.index(testdata[-1]):
@@ -79,8 +81,8 @@ class Test_addEwallet(object):
             
             with allure.step('断言汇率是否与数据库一致,转换金额是否计算正确'):
                 pytest.assume(walaoPay.exchangeRate==walaoPay.baseCharge)
-                pytest.assume(walaoPay.exchangeAmount==round(walaoPay.lowestDeposit*alaoPay.baseCharge))
-                pytest.assume(walaoPay.exchangeAmount2==round(walaoPay.highestDeposit*alaoPay.baseCharge))
+                pytest.assume(walaoPay.exchangeAmount==round(walaoPay.lowestDeposit*walaoPay.baseCharge))
+                # pytest.assume(walaoPay.exchangeAmount2==round(walaoPay.highestDeposit*walaoPay.baseCharge))
         
         with allure.step('bos审核入金'):
             walaoPay.bos_verify(int(data['交易账号']))
@@ -93,4 +95,8 @@ class Test_addEwallet(object):
 
 
 if __name__=='__main__':
-    pytest.main(['-s','-v',os.path.abspath(__file__)])
+    # pytest.main(['-s','-v',os.path.abspath(__file__)])
+    pytest.main(['-s','-v',os.path.abspath(__file__),
+    r'--alluredir={}\report\result'.format(path_project),'--disable-pytest-warnings'])
+    os.system(r'allure generate {}\report\result -o {}\report\allure_report --clean'.format(path_project,path_project))
+    os.system(r'allure serve {}\report\result'.format(path_project))

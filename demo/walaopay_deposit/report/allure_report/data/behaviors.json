@@ -1,0 +1,30 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "walao pay入金",
+    "children" : [ {
+      "name" : "bos判断walaopay入金方式是否开启，判断当前账号是否存在该入金方式，测试最低最高金额入金",
+      "children" : [ {
+        "name" : "用例执行",
+        "children" : [ {
+          "name" : "test_walaopay[data0]",
+          "uid" : "12b492207fb29803",
+          "parentUid" : "cfd4467aeb46b62ac3f77938110ad6ed",
+          "status" : "passed",
+          "time" : {
+            "start" : 1632453465087,
+            "stop" : 1632453549290,
+            "duration" : 84203
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '交易账号': 672006152.0, '入金前余额': 150028.68, '入金后余额': 200034.91}" ]
+        } ],
+        "uid" : "cfd4467aeb46b62ac3f77938110ad6ed"
+      } ],
+      "uid" : "c3aee24289ea4e42f23fa240c7991c2f"
+    } ],
+    "uid" : "61fd235bfb0d32e4ac04ce530ec1cb39"
+  } ]
+}

@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "demo.walaopay_deposit.action_bin.test_walaopay_deposti",
+    "children" : [ {
+      "name" : "test_walaopay[data0]",
+      "uid" : "12b492207fb29803",
+      "parentUid" : "4fb62d6035482e38b498dc5e607a4705",
+      "status" : "passed",
+      "time" : {
+        "start" : 1632453465087,
+        "stop" : 1632453549290,
+        "duration" : 84203
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '交易账号': 672006152.0, '入金前余额': 150028.68, '入金后余额': 200034.91}" ]
+    } ],
+    "uid" : "demo.walaopay_deposit.action_bin.test_walaopay_deposti"
+  } ]
+}

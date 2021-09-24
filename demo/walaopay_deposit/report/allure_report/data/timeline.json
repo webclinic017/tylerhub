@@ -1,0 +1,111 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "SZ01-QA-G-10",
+    "children" : [ {
+      "name" : "19980-MainThread",
+      "children" : [ {
+        "name" : "test_walaopay[data0]",
+        "uid" : "adb811da70b0b494",
+        "parentUid" : "e3fc484b7b51887a70ce012fff065606",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632451989910,
+          "stop" : 1632452075302,
+          "duration" : 85392
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '交易账号': 672006152.0, '入金前余额': 100022.45, '入金后余额': 150028.68}" ]
+      } ],
+      "uid" : "e3fc484b7b51887a70ce012fff065606"
+    }, {
+      "name" : "26200-MainThread",
+      "children" : [ {
+        "name" : "test_walaopay[data0]",
+        "uid" : "3a159775632b49a6",
+        "parentUid" : "f3e75868f61d27a9b33e614d303c653b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1632390561304,
+          "stop" : 1632391328386,
+          "duration" : 767082
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '交易账号': 672006152.0, '入金前余额': '', '入金后余额': ''}" ]
+      } ],
+      "uid" : "f3e75868f61d27a9b33e614d303c653b"
+    }, {
+      "name" : "5724-MainThread",
+      "children" : [ {
+        "name" : "test_walaopay[data0]",
+        "uid" : "697a835098e307ef",
+        "parentUid" : "4dd45b41c9ec7ee708d45abcac376f97",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632451612202,
+          "stop" : 1632451792975,
+          "duration" : 180773
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '交易账号': 672006152.0, '入金前余额': 50016.22, '入金后余额': 100022.45}" ]
+      } ],
+      "uid" : "4dd45b41c9ec7ee708d45abcac376f97"
+    }, {
+      "name" : "5444-MainThread",
+      "children" : [ {
+        "name" : "test_walaopay[data0]",
+        "uid" : "a4c2cde87274f548",
+        "parentUid" : "a5836d97959d8add4e3fd62199b052e8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632449881877,
+          "stop" : 1632449818147,
+          "duration" : -63730
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '交易账号': 672006152.0, '入金前余额': 50016.22, '入金后余额': ''}" ]
+      } ],
+      "uid" : "a5836d97959d8add4e3fd62199b052e8"
+    }, {
+      "name" : "8788-MainThread",
+      "children" : [ {
+        "name" : "test_walaopay[data0]",
+        "uid" : "6ac1ac520faba627",
+        "parentUid" : "971779a9e85e7cec1fb2b957d466fadd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1632451348261,
+          "stop" : 1632451348261,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '交易账号': 672006152.0, '入金前余额': 50016.22, '入金后余额': 100022.45}" ]
+      } ],
+      "uid" : "971779a9e85e7cec1fb2b957d466fadd"
+    }, {
+      "name" : "20664-MainThread",
+      "children" : [ {
+        "name" : "test_walaopay[data0]",
+        "uid" : "12b492207fb29803",
+        "parentUid" : "c2421a29035b2e613ea74054edab355d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632453465087,
+          "stop" : 1632453549290,
+          "duration" : 84203
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '交易账号': 672006152.0, '入金前余额': 150028.68, '入金后余额': 200034.91}" ]
+      } ],
+      "uid" : "c2421a29035b2e613ea74054edab355d"
+    } ],
+    "uid" : "22c9a7ca73ac7ac9efe14f8b8f896b03"
+  } ]
+}

@@ -1,0 +1,2 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"walao pay入金","bos判断walaopay入金方式是否开启，判断当前账号是否存在该入金方式，测试最低最高金额入金","用例执行","0","0","1","0","0"

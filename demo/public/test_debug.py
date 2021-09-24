@@ -809,8 +809,8 @@ import requests
 
 # common1.open_web('https://at-bos-frontend-sit.atfxdev.com/login')
 # common2.open_web('https://at-bos-frontend-sit.atfxdev.com/login')
-
-print(round(5*4.1935))
+print(50001*4.1783)
+print(round(50001*4.1783))
 
 
 
