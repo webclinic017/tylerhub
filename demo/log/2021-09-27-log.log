@@ -1,0 +1,3 @@
+!!--!!choose_bos_lang - 2021-09-27 15:35:49,020 - common_method - [common_method.py-->line:124] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (593, 232). Other element would receive the click: <div data-v-78625cba="" class="border-part"></div>
+  (Session info: chrome=94.0.4606.61)
+

@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-17 15:06:27
-LastEditTime: 2021-09-24 10:45:01
+LastEditTime: 2021-09-27 15:32:47
 LastEditors: Please set LastEditors
 Description: Execute testcase
 FilePath: \tylerhub\demo\walaopay_withdrawal\action_bin\test_walaopay_withdrawal.py
@@ -19,7 +19,7 @@ from read_dataconfig import ReadConfig
 from location_of_walaopay_deposit import Location_of_walaopay
 
 @allure.epic('walao pay入金')
-class Test_addEwallet(object):
+class Test_walaopay_type(object):
 
     global walaoPay,conFig,dealData,testdata,excelpath
     walaoPay=Location_of_walaopay()

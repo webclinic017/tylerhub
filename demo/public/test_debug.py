@@ -809,41 +809,79 @@ import requests
 
 # common1.open_web('https://at-bos-frontend-sit.atfxdev.com/login')
 # common2.open_web('https://at-bos-frontend-sit.atfxdev.com/login')
-print(50001*4.1783)
-print(round(50001*4.1783))
+# print(50001*4.1783)
+# print(round(50001*4.1783))
+
+
+# str=input('请输入：')
+# print(str)
+
+import datetime
+from dateutil import parser
+
+from handle_database import Dadabase_operate
+from read_dataconfig import ReadConfig
+
+
+now=datetime.datetime.now()
+# print(now)
+
+# yes=(datetime.datetime.now()-datetime.timedelta(days=2)).strftime('%Y-%m-%d')
+# print(yes)
+
+# yes2=(datetime.datetime.now() - datetime.timedelta(days=now.weekday()+1)).strftime('%Y-%m-%d')
+# print(yes2)
+# last_week_start = now - datetime.timedelta(days=now.weekday()+8)
+# print(last_week_start)
+# last_week_end = now - datetime.timedelta(days=now.weekday()+2)
+# print(last_week_end)
+this_month_start = datetime.datetime(now.year, now.month, 1)
+# # print(yes)
+# print(this_month_start)
+# print(last_week_start)
+# print(last_week_end)
+
+# print(last_week_start.strftime('%Y-%m-%d'))
+
+last_month_end = this_month_start - datetime.timedelta(days=1)
+print(last_month_end)
+last_month_start = (datetime.datetime(last_month_end.year, last_month_end.month, 1)).strftime('%Y-%m-%d')
+print(last_month_start)
+# print(b)
+
+
+# dataBase=Dadabase_operate()
+# conFig=ReadConfig()
+# dateStr1 = '2021-09-06T00:00:00Z'
+# dateStr2 = '2021-09-16T23:59:59Z'
+# myDatetime1 = parser.parse(dateStr1)
+# myDatetime2 = parser.parse(dateStr2)
+# print(myDatetime1)
+# print(myDatetime2)
+# # times=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 
+# # 'atfxgm-sit', 'atfx_deposit',{"$and": [{"createDate_mt": {"$gte": myDatetime1,"$lte": myDatetime2}}, 
+# # {"accountNumber": 1200008143}]},'createDate_mt',N=0)
+# # print(times)
+# print(datetime.datetime(2021, 9, 10, 6, 1, 35, 831000))
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+dataBase=Dadabase_operate()
+conFig=ReadConfig()
+dateStr1 = '{}T00:00:00Z'.format(last_month_start)
+dateStr2 = '2021-09-16T23:59:59Z'
+myDatetime1 = parser.parse(dateStr1)
+print(myDatetime1)
+# myDatetime2 = parser.parse(dateStr2)
+# print(myDatetime1)
+# print(myDatetime2)
+# times=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 
+# 'atfxgm-sit', 'atfx_deposit',{"$and": [{"createDate_mt": {"$gte": myDatetime1,"$lte": myDatetime2}}, 
+# {"accountNumber": 1200008143}]},'createDate_mt',N=0)
+# print(times)
 
 
 
