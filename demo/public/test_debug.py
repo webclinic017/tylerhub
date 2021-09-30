@@ -816,14 +816,14 @@ import requests
 # str=input('请输入：')
 # print(str)
 
-import datetime
-from dateutil import parser
+# import datetime
+# from dateutil import parser
 
-from handle_database import Dadabase_operate
-from read_dataconfig import ReadConfig
+# from handle_database import Dadabase_operate
+# from read_dataconfig import ReadConfig
 
 
-now=datetime.datetime.now()
+# now=datetime.datetime.now()
 # print(now)
 
 # yes=(datetime.datetime.now()-datetime.timedelta(days=2)).strftime('%Y-%m-%d')
@@ -835,7 +835,7 @@ now=datetime.datetime.now()
 # print(last_week_start)
 # last_week_end = now - datetime.timedelta(days=now.weekday()+2)
 # print(last_week_end)
-this_month_start = datetime.datetime(now.year, now.month, 1)
+# this_month_start = datetime.datetime(now.year, now.month, 1)
 # # print(yes)
 # print(this_month_start)
 # print(last_week_start)
@@ -843,10 +843,10 @@ this_month_start = datetime.datetime(now.year, now.month, 1)
 
 # print(last_week_start.strftime('%Y-%m-%d'))
 
-last_month_end = this_month_start - datetime.timedelta(days=1)
-print(last_month_end)
-last_month_start = (datetime.datetime(last_month_end.year, last_month_end.month, 1)).strftime('%Y-%m-%d')
-print(last_month_start)
+# last_month_end = this_month_start - datetime.timedelta(days=1)
+# print(last_month_end)
+# last_month_start = (datetime.datetime(last_month_end.year, last_month_end.month, 1)).strftime('%Y-%m-%d')
+# print(last_month_start)
 # print(b)
 
 
@@ -869,12 +869,12 @@ print(last_month_start)
 
 
 
-dataBase=Dadabase_operate()
-conFig=ReadConfig()
-dateStr1 = '{}T00:00:00Z'.format(last_month_start)
-dateStr2 = '2021-09-16T23:59:59Z'
-myDatetime1 = parser.parse(dateStr1)
-print(myDatetime1)
+# dataBase=Dadabase_operate()
+# conFig=ReadConfig()
+# dateStr1 = '{}T00:00:00Z'.format(last_month_start)
+# dateStr2 = '2021-09-16T23:59:59Z'
+# myDatetime1 = parser.parse(dateStr1)
+# print(myDatetime1)
 # myDatetime2 = parser.parse(dateStr2)
 # print(myDatetime1)
 # print(myDatetime2)
@@ -885,7 +885,8 @@ print(myDatetime1)
 
 
 
-
+if 1==1 and 2==2:
+    print(25555)
 
 
 

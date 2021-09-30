@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-27 15:13:40
-LastEditTime: 2021-09-27 15:49:23
+LastEditTime: 2021-09-30 10:33:41
 LastEditors: Please set LastEditors
 Description: Execute testcase
 FilePath: \tylerhub\demo\deposit_withdrawal_list\action_bin\test_deposti_withdrawal.py
@@ -38,6 +38,7 @@ class Test_deposti_withdrawal_list(object):
 
     def test_verify_deposit_withdrawal_list(self):
         verifyList.logincp(1000005349)
+        verifyList.serch_list(1000005349)
         
 
 if __name__=='__main__':
