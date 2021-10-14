@@ -1,0 +1,214 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "SZ01-QA-G-10",
+    "children" : [ {
+      "name" : "31368-MainThread",
+      "children" : [ {
+        "name" : "test_verify_deposit_withdrawal_list[data0]",
+        "uid" : "c3cfeac18856496a",
+        "parentUid" : "99ddbf3713a1522c386f5a880bcc08c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634179079325,
+          "stop" : 1634179152482,
+          "duration" : 73157
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0}" ]
+      } ],
+      "uid" : "99ddbf3713a1522c386f5a880bcc08c5"
+    }, {
+      "name" : "11164-MainThread",
+      "children" : [ {
+        "name" : "test_verify_deposit_withdrawal_list[data1]",
+        "uid" : "a9994c178f1cdf0a",
+        "parentUid" : "16751303cfd3c85808144b18dea635a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634180426878,
+          "stop" : 1634180457850,
+          "duration" : 30972
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0}" ]
+      }, {
+        "name" : "test_verify_deposit_withdrawal_list[data0]",
+        "uid" : "e82cd9800a7a6d6f",
+        "parentUid" : "16751303cfd3c85808144b18dea635a1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634180374103,
+          "stop" : 1634180426507,
+          "duration" : 52404
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0}" ]
+      } ],
+      "uid" : "16751303cfd3c85808144b18dea635a1"
+    }, {
+      "name" : "14716-MainThread",
+      "children" : [ {
+        "name" : "test_verify_deposit_withdrawal_list[data1]",
+        "uid" : "84cd84cf9cad138c",
+        "parentUid" : "d46762021e7b8b2e68a7aae7128d5d83",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634179878690,
+          "stop" : 1634179909369,
+          "duration" : 30679
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0}" ]
+      }, {
+        "name" : "test_verify_deposit_withdrawal_list[data0]",
+        "uid" : "e069670f49b84a32",
+        "parentUid" : "d46762021e7b8b2e68a7aae7128d5d83",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634179826196,
+          "stop" : 1634179878275,
+          "duration" : 52079
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0}" ]
+      } ],
+      "uid" : "d46762021e7b8b2e68a7aae7128d5d83"
+    }, {
+      "name" : "28260-MainThread",
+      "children" : [ {
+        "name" : "test_verify_deposit_withdrawal_list[data0]",
+        "uid" : "25609c4dc4ef0b96",
+        "parentUid" : "dda08d5e95cb4486a01f6176cbefb881",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634121310682,
+          "stop" : 1634121393387,
+          "duration" : 82705
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0}" ]
+      } ],
+      "uid" : "dda08d5e95cb4486a01f6176cbefb881"
+    }, {
+      "name" : "27576-MainThread",
+      "children" : [ {
+        "name" : "test_verify_deposit_withdrawal_list[data0]",
+        "uid" : "88e7e77bfa8b320f",
+        "parentUid" : "82f98c9a94148eb9d111f2365965fa70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634178819933,
+          "stop" : 1634178858968,
+          "duration" : 39035
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0}" ]
+      }, {
+        "name" : "test_verify_deposit_withdrawal_list[data1]",
+        "uid" : "e0a35d195e67ba04",
+        "parentUid" : "82f98c9a94148eb9d111f2365965fa70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634178859129,
+          "stop" : 1634178903105,
+          "duration" : 43976
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0}" ]
+      } ],
+      "uid" : "82f98c9a94148eb9d111f2365965fa70"
+    }, {
+      "name" : "7024-MainThread",
+      "children" : [ {
+        "name" : "test_verify_deposit_withdrawal_list[data1]",
+        "uid" : "91649ca399c73ae2",
+        "parentUid" : "83d1edba97aadf19b92b18be253d40ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634180213224,
+          "stop" : 1634180244106,
+          "duration" : 30882
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008143.0}" ]
+      }, {
+        "name" : "test_verify_deposit_withdrawal_list[data0]",
+        "uid" : "30e0afbe2f3e3ab5",
+        "parentUid" : "83d1edba97aadf19b92b18be253d40ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634180173012,
+          "stop" : 1634180212992,
+          "duration" : 39980
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0}" ]
+      } ],
+      "uid" : "83d1edba97aadf19b92b18be253d40ab"
+    }, {
+      "name" : "21672-MainThread",
+      "children" : [ {
+        "name" : "test_verify_deposit_withdrawal_list[data0]",
+        "uid" : "c64422d6956c8b1",
+        "parentUid" : "0d7ef472cf6143639140352387123f8a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634120844075,
+          "stop" : 1634120919506,
+          "duration" : 75431
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0}" ]
+      } ],
+      "uid" : "0d7ef472cf6143639140352387123f8a"
+    }, {
+      "name" : "24588-MainThread",
+      "children" : [ {
+        "name" : "test_verify_deposit_withdrawal_list[data0]",
+        "uid" : "7ea0244e7770bd3d",
+        "parentUid" : "c178ed1edb901e3c2d99896fa33697e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634123559064,
+          "stop" : 1634123611121,
+          "duration" : 52057
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0}" ]
+      } ],
+      "uid" : "c178ed1edb901e3c2d99896fa33697e2"
+    }, {
+      "name" : "15232-MainThread",
+      "children" : [ {
+        "name" : "test_verify_deposit_withdrawal_list[data0]",
+        "uid" : "347fe3f847558249",
+        "parentUid" : "302db0b5ba0f16687dc5daa3b8664673",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634122377840,
+          "stop" : 1634122416434,
+          "duration" : 38594
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0}" ]
+      } ],
+      "uid" : "302db0b5ba0f16687dc5daa3b8664673"
+    } ],
+    "uid" : "22c9a7ca73ac7ac9efe14f8b8f896b03"
+  } ]
+}

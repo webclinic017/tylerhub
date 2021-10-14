@@ -1,15 +1,7 @@
 '''
-Author: your name
+Author: tyler
 Date: 2021-09-14 10:54:12
-LastEditTime: 2021-09-14 10:54:13
-LastEditors: Please set LastEditors
-Description: In User Settings Edit
-FilePath: \tylerhub\demo\public\jiami.py
-'''
-'''
-Author: your name
-Date: 2021-09-14 10:22:34
-LastEditTime: 2021-09-14 10:51:02
+LastEditTime: 2021-10-12 16:10:30
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\public\jiami.py

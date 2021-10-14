@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:27:17
-LastEditTime: 2021-09-30 16:09:47
+LastEditTime: 2021-10-12 17:46:58
 LastEditors: Please set LastEditors
 Description: Query database and save
 FilePath: \tylerhub\demo\public\handle_database.py
@@ -224,6 +224,10 @@ if __name__=='__main__':
     # {"accountNumber":1000005349},'tradeAccount',N=1)
     # encrypt_secret=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atclientpoolsit', 'usersgm',{"email":'tyler.tang@test.com'},'encrypt_secret',N=0)
     # print(encrypt_secret[0]['encrypt_secret'])
-    times=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 
-    'atfxgm-sit', 'atfx_withdrawal',{"tradeAccount":"672005304"},'createDate',N=1)[0]['createDate']
-    print(times)
+    times=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'),
+    'atfxgm-sit', 'atfx_deposit',{"currStatus":"S"},'channel',N=0)
+    withdrawal_list=[]
+    for i in range(0,len(times)):
+        withdrawal_list.append(times[i]['channel'])
+
+    print(list(set(withdrawal_list)))

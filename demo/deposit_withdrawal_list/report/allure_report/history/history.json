@@ -1,0 +1,41 @@
+{
+  "682cf6603bcd17c41f8ceac3fec44f0b" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e82cd9800a7a6d6f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: FAILURE: 数据库交易金额：50;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：50;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：50;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：227.05;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：738.15;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：50;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：39;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：49;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：100.69;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：222;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：95;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：120;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：111;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：120;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：520;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\n------------------------------------------------------------\nFailed Checks: 15",
+      "time" : {
+        "start" : 1634180374103,
+        "stop" : 1634180426507,
+        "duration" : 52404
+      }
+    } ]
+  },
+  "83ac68768f7423ce4a0ced1cd7a3b6bc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a9994c178f1cdf0a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634180426878,
+        "stop" : 1634180457850,
+        "duration" : 30972
+      }
+    } ]
+  }
+}

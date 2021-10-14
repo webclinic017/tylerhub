@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-09-22 15:54:40
+LastEditTime: 2021-10-08 18:12:06
 LastEditors: Please set LastEditors
 Description: This module is used to store random data and data processing.Including regular matching of the re module, etc
 FilePath: tylerhub\demo\public\randomdata.py
@@ -127,7 +127,7 @@ if __name__=='__main__':
     #pub.log_output('test').error('testttttt')
     # print(int(pub.extract_numbers('( 可取款金额 | 50,265.01 USD )'))/100)
     # print(float(int(pub.extract_numbers('您的出金申请將收取5.00USD美元手续费'))/100))
-    print(int(pub.extract_numbers('0.00 USD')))
+    print(int(pub.extract_numbers('20.00 USD'))/100)
 
 
 

@@ -866,32 +866,58 @@ import requests
 
 
 
-
+# from handle_database import Dadabase_operate
+# from read_dataconfig import ReadConfig
+# from dateutil import parser
+# import datetime
 
 
 # dataBase=Dadabase_operate()
 # conFig=ReadConfig()
-# dateStr1 = '{}T00:00:00Z'.format(last_month_start)
-# dateStr2 = '2021-09-16T23:59:59Z'
+# dateStr1 = '2021-09-01T00:00:00Z'
+# dateStr2 = '2021-09-30T23:59:59Z'
 # myDatetime1 = parser.parse(dateStr1)
-# print(myDatetime1)
+
 # myDatetime2 = parser.parse(dateStr2)
-# print(myDatetime1)
-# print(myDatetime2)
+
+
 # times=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 
-# 'atfxgm-sit', 'atfx_deposit',{"$and": [{"createDate_mt": {"$gte": myDatetime1,"$lte": myDatetime2}}, 
-# {"accountNumber": 1200008143}]},'createDate_mt',N=0)
-# print(times)
+# 'atfxgm-sit', 'atfx_deposit',{"$and": [{"createDate_mt": {"$gte": myDatetime1,"$lte": myDatetime2}},{"$or":[{"currStatus":'S'},{"currStatus":'U'}]}, 
+# {"accountNumber": 1000005349}]},'createDate_mt','fromAmt','rate','mt4Amt','channel','currStatus',N=0)
+# print(times[0]['createDate_mt'])
+
+# print(times[0]['createDate_mt']+datetime.timedelta(hours=3))
+
+# times2=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 
+# 'atfxgm-sit', 'atfx_withdrawal',{"$and": [{"createDate_mt": {"$gte": myDatetime1,"$lte": myDatetime2}}, 
+# {"accountNumber": 1000005349}]},'createDate_mt','settleAmt','realRate','mtAmt','channel','currStatus',N=0)
+# print(times2)
+
+
+# times3=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'),'atfxgm-sit', 'atfx_fund_transfer',
+# {"$and": [{"createDate_mt": {"$gte": myDatetime1,"$lte": myDatetime2}},{"currStatus":"S"},
+# {"$or":[{"fromAccountNumber":1000005349},{"toAccountNumber":1000005349}]}]},'createDate_mt','toMtAmt','rate','currStatus',N=0)
+# print(times3)
+
+
+import pytest
+import os
+import pytest_check
+
+class Testca():
+
+    def test01(self):
+        print('aaaa')
+
+    def test02(self):
+        for i in range(0,4):
+            pytest_check.equal(i,2,i)
 
 
 
-if 1==1 and 2==2:
-    print(25555)
 
-
-
-
-
+if __name__=='__main__':
+    pytest.main(['-s','-v',os.path.abspath(__file__)])
 
 
 

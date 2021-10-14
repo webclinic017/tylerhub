@@ -1,0 +1,43 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "查询出入金列表",
+    "children" : [ {
+      "name" : "随机选择时间，查询两次出入金列表数据并与数据库对应数据内数据核对",
+      "children" : [ {
+        "name" : "用例执行",
+        "children" : [ {
+          "name" : "test_verify_deposit_withdrawal_list[data0]",
+          "uid" : "e82cd9800a7a6d6f",
+          "parentUid" : "ee71e81beee0347eabaf29abd0f9b0f0",
+          "status" : "failed",
+          "time" : {
+            "start" : 1634180374103,
+            "stop" : 1634180426507,
+            "duration" : 52404
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'主账号': 1000005349.0}" ]
+        }, {
+          "name" : "test_verify_deposit_withdrawal_list[data1]",
+          "uid" : "a9994c178f1cdf0a",
+          "parentUid" : "ee71e81beee0347eabaf29abd0f9b0f0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634180426878,
+            "stop" : 1634180457850,
+            "duration" : 30972
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'主账号': 1200008143.0}" ]
+        } ],
+        "uid" : "ee71e81beee0347eabaf29abd0f9b0f0"
+      } ],
+      "uid" : "b74e3b20ce83a142eb9f12aecbafcb35"
+    } ],
+    "uid" : "ba7cea363ce94f37f8a008fe990e7e58"
+  } ]
+}

@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: FAILURE: 数据库交易金额：50;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：50;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：50;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：227.05;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：738.15;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：50;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：39;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：49;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：100.69;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：222;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：95;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：120;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：111;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：120;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：520;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\n------------------------------------------------------------\nFailed Checks: 15",
+      "children" : [ {
+        "name" : "test_verify_deposit_withdrawal_list[data0]",
+        "uid" : "e82cd9800a7a6d6f",
+        "parentUid" : "572c23a1815870207f713fb7baf771ab",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634180374103,
+          "stop" : 1634180426507,
+          "duration" : 52404
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0}" ]
+      } ],
+      "uid" : "572c23a1815870207f713fb7baf771ab"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

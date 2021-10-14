@@ -1,0 +1,21 @@
+[ {
+  "uid" : "e82cd9800a7a6d6f",
+  "name" : "test_verify_deposit_withdrawal_list[data0]",
+  "time" : {
+    "start" : 1634180374103,
+    "stop" : 1634180426507,
+    "duration" : 52404
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9994c178f1cdf0a",
+  "name" : "test_verify_deposit_withdrawal_list[data1]",
+  "time" : {
+    "start" : 1634180426878,
+    "stop" : 1634180457850,
+    "duration" : 30972
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
