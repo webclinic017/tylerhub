@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-27 15:13:40
-LastEditTime: 2021-10-14 15:08:07
+LastEditTime: 2021-11-09 11:13:45
 LastEditors: Please set LastEditors
 Description: Execute testcase
 FilePath: \tylerhub\demo\deposit_withdrawal_list\action_bin\test_deposti_withdrawal.py
@@ -198,9 +198,6 @@ class Test_deposti_withdrawal_list(object):
                         check.equal(verifyList.mongodbDeposit,[],'数据库查询不为空')
                         check.equal(verifyList.mongodbTransfer,[],'数据库查询不为空')
                         print('当前时间段出入金记录为空')
-
-
-        
 
 if __name__=='__main__':
     # pytest.main(['-s','-v',os.path.abspath(__file__)])
