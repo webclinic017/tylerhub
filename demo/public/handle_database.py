@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:27:17
-LastEditTime: 2021-10-12 17:46:58
+LastEditTime: 2021-11-02 11:37:17
 LastEditors: Please set LastEditors
 Description: Query database and save
 FilePath: \tylerhub\demo\public\handle_database.py
@@ -186,7 +186,7 @@ class Dadabase_operate(object):
 
     #连接mysql数据库查询
     @use_time #统计函数运行时间
-    def search_in_mysql(self,sql,host,user,psword,port:int,type='single')->str:
+    def search_in_mysql(self,sql,host,user,psword,port:int=3306,type='single')->str:
         """
         :param vartuple:host,username,password,db,port,charset=utf-8
         :param sql: 执行查询的sql语句
@@ -224,10 +224,13 @@ if __name__=='__main__':
     # {"accountNumber":1000005349},'tradeAccount',N=1)
     # encrypt_secret=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atclientpoolsit', 'usersgm',{"email":'tyler.tang@test.com'},'encrypt_secret',N=0)
     # print(encrypt_secret[0]['encrypt_secret'])
-    times=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'),
-    'atfxgm-sit', 'atfx_deposit',{"currStatus":"S"},'channel',N=0)
-    withdrawal_list=[]
-    for i in range(0,len(times)):
-        withdrawal_list.append(times[i]['channel'])
+    # times=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'),
+    # 'atfxgm-sit', 'atfx_deposit',{"currStatus":"S"},'channel',N=0)
+    # withdrawal_list=[]
+    # for i in range(0,len(times)):
+    #     withdrawal_list.append(times[i]['channel'])
 
-    print(list(set(withdrawal_list)))
+    # print(list(set(withdrawal_list)))
+
+    mysql_closeOrder=dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="66200125" and Close_Time!="1970-01-01 00:00:00" order by Ticket', conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')
+    print(mysql_closeOrder[0][6])

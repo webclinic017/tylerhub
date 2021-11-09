@@ -1,0 +1,2 @@
+!!--!!search_symbol_closeOrder - 2021-10-26 17:03:06,831 - location_of_order_list - [location_of_order_list.py-->line:420] - ERROR: strptime() argument 1 must be str, not None
+!!--!!search_symbol_closeOrder - 2021-10-26 17:05:07,810 - location_of_order_list - [location_of_order_list.py-->line:420] - ERROR: strptime() argument 1 must be str, not None

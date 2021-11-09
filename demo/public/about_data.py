@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-18 16:08:10
-LastEditTime: 2021-09-17 10:45:01
+LastEditTime: 2021-11-01 15:17:52
 LastEditors: Please set LastEditors
 Description: Data of read and save
 FilePath: \tylerhub\demo\public\about_data.py
@@ -10,6 +10,7 @@ import os
 import sys
 
 import xlrd
+import xlwt
 from openpyxl import load_workbook
 from collections import Counter
 
@@ -84,12 +85,57 @@ class Aboutdata(object):
         self.str_out=''.join(self.str_list)
         return self.str_out
 
+    def txt_xlsx(self,filename,xlsxname):   
+        """txt转换成xlsx 
+        :param filename txt文本文件名称、  
+        :param xlsxname 表示转换后的excel文件名  
+        """   
+        try:      
+            f = open(filename,'r')
+            f.seek(0,0) #游标回到txt文本头部
+            xls=xlwt.Workbook()        
+            #生成excel的方法，声明excel        
+            sheet = xls.add_sheet('sheet1',cell_overwrite_ok=True)        
+            x = 0
+            while True:            
+                #按行循环，读取文本文件           
+                line = f.readline()            
+                if not line:               
+                    break  #如果没有内容，则退出循环            
+                for i in range(len(line.split('\t'))):             
+                    item=line.split('\t')[i]               
+                    sheet.write(x,i,item)
+                    #x单元格经度，i 单元格纬度           
+                x += 1 #excel另起一行      
+            f.close()        
+            xls.save(xlsxname)
+            #保存xls文件   
+        except:        
+            raise
 
 #测试
 if __name__=='__main__':
-    e=Aboutdata()
+    dealData=Aboutdata()
     # e.openexcel(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\cl_open_demoaccount\test_data\cl_open_demo.xlsx','Sheet1')
     # a=e.dict_data()
     # print(a)
     # print(a[0]['主账号'])
-    e.saveainfo(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\registration_process\test_excel_data\Account_number.xlsx', 'd', 'A', 4)
+    #e.saveainfo(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\registration_process\test_excel_data\Account_number.xlsx', 'd', 'A', 4)
+    # dealData.openexcel(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\copy_openOrder.xlsx','sheet1')
+    # data=dealData.dict_data()
+    # print(data)
+    # import pyperclip
+    # data=pyperclip.paste()
+    # li=[]
+    # for i in data:
+    #     li.append(i.strip('\n'))
+
+    # with open(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\test.txt', 'w+') as f:
+    #     f.write(''.join(li))
+
+    # filename=r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\test.txt'
+    # xlsxname=r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\Open_orderlist.xlsx'
+    # dealData.txt_xlsx(filename,xlsxname)
+    dealData.openexcel(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\Open_orderlist.xlsx', 'sheet1')
+    data=dealData.dict_data()
+    print(data)

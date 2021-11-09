@@ -1,0 +1,4 @@
+!!--!!search_symbol_closeOrder - 2021-10-25 17:31:28,575 - location_of_order_list - [location_of_order_list.py-->line:420] - ERROR: 'Location_of_order_list' object has no attribute 'symbol_openLen'
+!!--!!search_symbol_closeOrder - 2021-10-25 17:40:47,675 - location_of_order_list - [location_of_order_list.py-->line:420] - ERROR: 'Location_of_order_list' object has no attribute 'symbol_openLen'
+!!--!!search_symbol_closeOrder - 2021-10-25 18:20:53,431 - location_of_order_list - [location_of_order_list.py-->line:420] - ERROR: 'Location_of_order_list' object has no attribute 'symbol_openLen'
+!!--!!search_symbol_closeOrder - 2021-10-25 18:22:05,012 - location_of_order_list - [location_of_order_list.py-->line:420] - ERROR: 'Location_of_order_list' object has no attribute 'timestr'

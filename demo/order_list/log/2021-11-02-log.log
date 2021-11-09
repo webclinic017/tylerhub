@@ -1,0 +1,2 @@
+!!--!!search_order_len - 2021-11-02 17:33:44,553 - location_of_order_list - [location_of_order_list.py-->line:261] - ERROR: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+!!--!!search_order_len - 2021-11-02 17:38:01,458 - location_of_order_list - [location_of_order_list.py-->line:260] - ERROR: int() argument must be a string, a bytes-like object or a number, not 'NoneType'

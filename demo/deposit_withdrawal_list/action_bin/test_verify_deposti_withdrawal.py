@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-27 15:13:40
-LastEditTime: 2021-10-14 11:13:28
+LastEditTime: 2021-10-14 15:08:07
 LastEditors: Please set LastEditors
 Description: Execute testcase
 FilePath: \tylerhub\demo\deposit_withdrawal_list\action_bin\test_deposti_withdrawal.py

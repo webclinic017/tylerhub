@@ -1,20 +1,20 @@
 [ {
-  "uid" : "447cf8fd96b46364",
+  "uid" : "6c69b3305473bbf3",
   "name" : "test_neteller[data0]",
   "time" : {
-    "start" : 1631696951643,
-    "stop" : 1631697041934,
-    "duration" : 90291
+    "start" : 1634544354598,
+    "stop" : 1634544406553,
+    "duration" : 51955
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "82c82b6799c039a8",
+  "uid" : "d18628c06bc6b99c",
   "name" : "test_neteller[data1]",
   "time" : {
-    "start" : 1631697051472,
-    "stop" : 1631697145663,
-    "duration" : 94191
+    "start" : 1634544415820,
+    "stop" : 1634544473734,
+    "duration" : 57914
   },
   "status" : "passed",
   "severity" : "normal"

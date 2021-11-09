@@ -1,0 +1,2 @@
+!!--!!search_period_openOrder - 2021-10-21 16:53:42,864 - location_of_order_list - [location_of_order_list.py-->line:241] - ERROR: could not convert string to float: '5,338.14'
+!!--!!search_period_closeOrder - 2021-10-21 18:30:04,268 - location_of_order_list - [location_of_order_list.py-->line:301] - ERROR: 'Location_of_order_list' object has no attribute 'dateStart'

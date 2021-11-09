@@ -900,41 +900,214 @@ import requests
 # print(times3)
 
 
-import pytest
-import os
-import pytest_check
+# import pytest
+# import os
+# import pytest_check
 
-class Testca():
+# class Testca():
 
-    def test01(self):
-        print('aaaa')
+#     def test01(self):
+#         print('aaaa')
 
-    def test02(self):
-        for i in range(0,4):
-            pytest_check.equal(i,2,i)
-
-
-
-
-if __name__=='__main__':
-    pytest.main(['-s','-v',os.path.abspath(__file__)])
+#     def test02(self):
+#         for i in range(0,4):
+#             pytest_check.equal(i,2,i)
 
 
 
 
+# if __name__=='__main__':
+#     pytest.main(['-s','-v',os.path.abspath(__file__)])
+# from handle_database import Dadabase_operate
+# from read_dataconfig import ReadConfig
+
+# dataBase=Dadabase_operate()
+# conFig=ReadConfig()
+# data=dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order where login ="{}" and Close_Time="1970-01-01 00:00:00"'.format(66200125),
+# conFig.get_value('mysql_AWS', 'host'),conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'))
+
+# print(data[6])
+
+# import datetime
+
+# timestr='16/09/2021 09:15:05'
+
+# print((datetime.datetime.strptime(timestr,'%d/%m/%Y %H:%M:%S'))==data[6])
+
+
+
+# import locale
+
+# locale.setlocale(locale.LC_NUMERIC, "us")
+# price = '-59,083.79'
+# print(locale.atof(price))
+
+
+# a=((536752,672003923,'2021-01-20 12:06:07'),(535449,65200841,'2020-10-30 05:24:46'),(533749,632000032,'2020-07-14 13:02:46'))
+# b=[{'Ticket':535449,'account':65200841,'time':'2020-10-30 05:24:46'},{'Ticket':536752,'account':672003923,'time':'2021-01-20 12:06:07'}]
+
+# for i in b:
+#     for y in range(0,len(a)):
+#         if i['Ticket']==a[y][0]:
+#             print(i,y)
+#             print(i['account']==a[y][1])
+#             print(i['time']==a[y][2])
+#             print('----------------')
+#             break
+#         else:
+#             print(i,y)
+#             print('没对上')
+
+# import pytest
+# import os
+# import pytest_check
+
+# class Testca():
+
+#     def test01(self):
+#         print('aaaa')
+
+#     def test02(self):
+#         print(pytest_check.equal(2,2,'断言失败'))
 
 
 
 
+# if __name__=='__main__':
+#     pytest.main(['-s','-v',os.path.abspath(__file__)])
+
+
+# from browser_actions import Commonweb
+
+# common=Commonweb()
+
+# common.open_browser()
+
+# common.open_web('https:///www.baidu.com')
+
+# a='Open_Trade_List_2021-10-29.xlsx'
+
+# import re
+
+# b=re.findall('Open_Trade_List_...........xlsx',a)
+# print(''.join(b))
+
+# import os
+
+# for i,x,y in os.walk(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data'):
+#     print(i,x,y)
+# import re
+# if re.findall('Close_Trade_List_...........xlsx', 'Close_Trade_List_2021-10-27.xlsx')!= None:
+#     print(55555)
+# print(re.findall('Trade_List_.........xlsx', 'Close_Trade_List_2021-10-27.xlsx'))
+# openOrder_excel=''.join(re.findall('Close_Trade_List_...........xlsx', 'Close_Trade_List_2021-10-27.xlsx'))
+# print(openOrder_excel)
+
+import pyperclip
+
+
+
+# pyperclip.copy('Hello World!')
+
+
+
+# from about_data import Aboutdata
+# dealData=Aboutdata()
+# # workbook = openpyxl.load_workbook(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\test.xlsx')
+# pyperclip.copy(data)
+# sheet=workbook.active
+
+
+
+# workbook.save(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\test.xlsx')
+# print(pyperclip.paste())
+# import openpyxl
+# data=pyperclip.paste()
+# li=[]
+# for i in data:
+#     li.append(i.strip('\n'))
+
+# print(li)
+
+# with open(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\test.txt', 'w+') as f:
+#     f.write(''.join(li))
 
 
 
 
+# dealData.openexcel(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\copy_openOrder.xlsx','copy_openOrder')
+# a=dealData.dict_data()
+# print(a)     
+
+# import dbf
+
+
+# dbf.Table(r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\copy_openOrder.xlsx').export(filename=r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\copy_openOrder2.xlsx')
 
 
 
 
+import xlwt                     #需要的模块
+def txt_xls(filename,xlsname):   
+    """    :文本转换成xls的函数   
+    :param filename txt文本文件名称、  
+    :param xlsname 表示转换后的excel文件名  
+    """   
+    try:      
+        f = open(filename,'r')
+        print(f.read())
+        f.seek(0,0)
+        xls=xlwt.Workbook()        
+        #生成excel的方法，声明excel        
+        sheet = xls.add_sheet('sheet1',cell_overwrite_ok=True)        
+        x = 0        
+        while True:            
+            #按行循环，读取文本文件           
+            line = f.readline()
+            print(line)            
+            if not line:               
+                break  #如果没有内容，则退出循环            
+            for i in range(len(line.split('\t'))):               
 
 
+                item=line.split('\t')[i]               
+                sheet.write(x,i,item)
+                #x单元格经度，i 单元格纬度           
+            x += 1 #excel另起一行      
+        f.close()        
+        xls.save(xlsname)
+        #保存xls文件   
+    except:        
+        raise
+
+# if __name__ == "__main__" :   
+#     filename =r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\test.txt'
+#     xlsname  =r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\copy_openOrder1.xlsx'
+#     txt_xls(filename,xlsname)
+
+# filename =r'C:\Users\tyler.tang\Desktop\code\tylerhub\demo\order_list\test_data\test.txt'
+# with open(filename,'r') as f:
+#     data=f.read()
+#     print(data)
+#     f.seek(0.0)
+#     line=f.readline()
+#     print(line)
+# print(len(line.split('\t'))-1)
+# print(line)
+# for i in range(len(line.split('\t'))-1):
+#     item=line.split('\t')[i]
+#     print(item) 
+
+# import datetime
+
+# str1='16/09/2021 09:35:30'
+# time1=(datetime.datetime.strptime(str1,'%d/%m/%Y %H:%M:%S')).strftime('%Y-%m-%d %H:%M:%S')
+
+# print(type(time1))
+# print(time1)
+# time2='2021-09-16 09:35:30'
+
+# print(time1==time2)
 
 
+print(7.0==7)

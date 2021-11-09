@@ -4,27 +4,10 @@
   "children" : [ {
     "name" : "SZ01-QA-G-10",
     "children" : [ {
-      "name" : "17288-MainThread",
-      "children" : [ {
-        "name" : "test_execution_demo[data0]",
-        "uid" : "7d2bf6fc2ff9b2ac",
-        "parentUid" : "52059a0a0ff899bd9940810bf2084cd4",
-        "status" : "passed",
-        "time" : {
-          "start" : 1630400531733,
-          "stop" : 1630400579817,
-          "duration" : 48084
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '新开demo': 200001741.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
-      } ],
-      "uid" : "52059a0a0ff899bd9940810bf2084cd4"
-    }, {
       "name" : "14352-MainThread",
       "children" : [ {
         "name" : "test_execution_demo[data0]",
-        "uid" : "41186271c7c4b7df",
+        "uid" : "55565693844c6204",
         "parentUid" : "9e5df3bc278f2dacfa6791dc2afb333d",
         "status" : "passed",
         "time" : {
@@ -37,7 +20,7 @@
         "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '新开demo': 200001743.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
       }, {
         "name" : "test_execution_demo[data1]",
-        "uid" : "3c30e9cb702d82e3",
+        "uid" : "75934b6b06398a3e",
         "parentUid" : "9e5df3bc278f2dacfa6791dc2afb333d",
         "status" : "passed",
         "time" : {
@@ -54,7 +37,7 @@
       "name" : "13320-MainThread",
       "children" : [ {
         "name" : "test_execution_demo[data0]",
-        "uid" : "61e9473eeb6accca",
+        "uid" : "cd6537eaee2d5c45",
         "parentUid" : "e735d7c08da27694eac193a8fc4cf9ff",
         "status" : "passed",
         "time" : {
@@ -67,7 +50,7 @@
         "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '新开demo': 200001742.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
       }, {
         "name" : "test_execution_demo[data1]",
-        "uid" : "ca26ddd27b881a24",
+        "uid" : "8053740638112639",
         "parentUid" : "e735d7c08da27694eac193a8fc4cf9ff",
         "status" : "passed",
         "time" : {
@@ -80,6 +63,53 @@
         "parameters" : [ "{'主账号': 1200008141.0, '邮箱': '18696194961@qq.com', '密码': 'Tl123456', '新开demo': '', '组别': '', '点差': '', '加点': '', '杠杆': '', '修改后杠杆': ''}" ]
       } ],
       "uid" : "e735d7c08da27694eac193a8fc4cf9ff"
+    }, {
+      "name" : "17288-MainThread",
+      "children" : [ {
+        "name" : "test_execution_demo[data0]",
+        "uid" : "aff9a4916acc10ad",
+        "parentUid" : "52059a0a0ff899bd9940810bf2084cd4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630400531733,
+          "stop" : 1630400579817,
+          "duration" : 48084
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '新开demo': 200001741.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
+      } ],
+      "uid" : "52059a0a0ff899bd9940810bf2084cd4"
+    }, {
+      "name" : "5492-MainThread",
+      "children" : [ {
+        "name" : "test_execution_demo[data0]",
+        "uid" : "79feeaed01f10708",
+        "parentUid" : "bb6d073f23440c143e94463e9724e8b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634542475229,
+          "stop" : 1634542523026,
+          "duration" : 47797
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '新开demo': 200001745.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
+      }, {
+        "name" : "test_execution_demo[data1]",
+        "uid" : "809e2fa6048de81c",
+        "parentUid" : "bb6d073f23440c143e94463e9724e8b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634542530659,
+          "stop" : 1634542578916,
+          "duration" : 48257
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1200008141.0, '邮箱': '18696194961@qq.com', '密码': 'Tl123456', '新开demo': 200001746.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
+      } ],
+      "uid" : "bb6d073f23440c143e94463e9724e8b5"
     } ],
     "uid" : "22c9a7ca73ac7ac9efe14f8b8f896b03"
   } ]

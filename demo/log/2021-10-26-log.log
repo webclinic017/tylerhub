@@ -1,0 +1,2 @@
+!!--!!get_text_error - 2021-10-26 17:03:06,828 - browser_actions - [browser_actions.py-->line:239] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!get_text_error - 2021-10-26 17:05:07,808 - browser_actions - [browser_actions.py-->line:239] - ERROR: 'NoneType' object has no attribute 'text'

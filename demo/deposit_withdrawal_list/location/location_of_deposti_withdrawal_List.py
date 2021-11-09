@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-17 15:00:40
-LastEditTime: 2021-10-13 19:15:15
+LastEditTime: 2021-10-27 15:52:25
 LastEditors: Please set LastEditors
 Description: Page operation
 FilePath: \tylerhub\demo\walaopay_withdrawal\location\location_of_walaopay_withdrawal.py
@@ -42,8 +42,8 @@ class Location_of_deposit_withdrawal(object):
     dealData=Aboutdata()
 
     #赋值对象driver
-    def broswertype(self,broswername=conFig.get_value('browser', 'default')):
-        self.driver=common.open_browser(broswername)
+    def broswertype(self,browsername=conFig.get_value('browser', 'default')):
+        self.driver=common.open_browser(browsername)
         self.commeThod=Commonmethod(self.driver)
 
 

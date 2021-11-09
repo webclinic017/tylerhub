@@ -21,9 +21,14 @@ class Commonweb():
     #定义全局变量
     global driver
 
-    def open_browser(self,browsername='Chrome'):
-        """打开浏览器，浏览器名称：Firefox，Chrome，默认以谷歌浏览器打开"""
+    def open_browser(self,download_path=None,browsername='Chrome'):
+        """
+        :param download_path :下载路径
+        :param browsername: 浏览器名称
+        打开浏览器，浏览器名称：Firefox，Chrome，默认以谷歌浏览器打开
+        """
         try:
+            prefs={'download.default_directory':'{}'.format(download_path)} #设置下载路径
             if browsername=='firefox' or browsername=='Firefox' or browsername=='fx': #火狐浏览器
                 #配置浏览器
                 options=webdriver.FirefoxOptions()
@@ -31,6 +36,7 @@ class Commonweb():
                 options.add_argument('lang=zh_CN.UTF-8') #初始化浏览器默认编码格式
                 options.add_argument('--incognito') #无痕模式
                 options.add_argument('--start-maximized') #浏览器全频
+                options.add_experimental_option('prefs',prefs) #设置下载路径
                 self.driver=webdriver.Firefox(options=options) #添加配置
                 self.driver.implicitly_wait(5) #隐式等待5s
             elif browsername=='chrome' or browsername=='Chrome':
@@ -40,6 +46,7 @@ class Commonweb():
                 options.add_argument('lang=zh_CN.UTF-8') #初始化浏览器默认编码格式
                 options.add_argument('--incognito') #无痕模式
                 options.add_argument('--start-maximized') #浏览器全频
+                options.add_experimental_option('prefs',prefs) #设置下载路径
                 self.driver=webdriver.Chrome(options=options)#添加配置
                 self.driver.implicitly_wait(5) #隐式等待5s
             else:

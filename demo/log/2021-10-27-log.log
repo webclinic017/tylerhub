@@ -1,0 +1,80 @@
+!!--!!get_text_error - 2021-10-27 10:15:19,911 - browser_actions - [browser_actions.py-->line:239] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!login_bos - 2021-10-27 10:30:33,798 - common_method - [common_method.py-->line:141] - ERROR: Message: element click intercepted: Element <button data-v-ed6d4d3c="" type="button" class="ivu-btn ivu-btn-primary ivu-btn-large">...</button> is not clickable at point (768, 469). Other element would receive the click: <div class="ivu-spin ivu-spin-default ivu-spin-fix ivu-spin-show-text ivu-spin-fullscreen">...</div>
+  (Session info: chrome=94.0.4606.81)
+
+!!--!!display_finds_element - 2021-10-27 10:30:40,332 - browser_actions - [browser_actions.py-->line:118] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-10-27 10:30:40,339 - browser_actions - [browser_actions.py-->line:145] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-10-27 10:30:40,341 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-10-27 17:14:04,302 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-10-27 17:14:04,308 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-10-27 17:14:04,310 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-10-27 17:14:10,879 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-10-27 17:14:10,879 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-10-27 17:14:10,882 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-10-27 17:14:10,882 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-10-27 17:14:10,884 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-10-27 17:14:10,884 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-10-27 17:14:16,962 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-10-27 17:14:16,962 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-10-27 17:14:16,962 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-10-27 17:14:16,966 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-10-27 17:14:16,966 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-10-27 17:14:16,966 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-10-27 17:14:16,970 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-10-27 17:14:16,970 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-10-27 17:14:16,970 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!clear_error - 2021-10-27 17:14:23,008 - browser_actions - [browser_actions.py-->line:239] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2021-10-27 17:14:29,054 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-10-27 17:14:29,054 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-10-27 17:14:29,054 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-10-27 17:14:29,054 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-10-27 17:14:29,058 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-10-27 17:14:29,058 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-10-27 17:14:29,058 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-10-27 17:14:29,058 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2021-10-27 17:14:29,062 - browser_actions - [browser_actions.py-->line:229] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2021-10-27 17:14:35,147 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-10-27 17:14:35,147 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-10-27 17:14:35,147 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-10-27 17:14:35,147 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-10-27 17:14:35,147 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-10-27 17:14:35,154 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-10-27 17:14:35,154 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-10-27 17:14:35,154 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-10-27 17:14:35,154 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-10-27 17:14:35,154 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-10-27 17:14:35,157 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-10-27 17:14:35,157 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-10-27 17:14:35,157 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-10-27 17:14:35,157 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!choose_bos_lang - 2021-10-27 17:22:13,820 - common_method - [common_method.py-->line:124] - ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class="ivu-select-item"]"}
+  (Session info: chrome=94.0.4606.81)
+
+!!--!!display_finds_element - 2021-10-27 17:22:25,080 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-10-27 17:22:25,086 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-10-27 17:22:25,089 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-10-27 17:22:31,130 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-10-27 17:22:31,130 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-10-27 17:22:31,137 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-10-27 17:22:31,137 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-10-27 17:22:31,140 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2021-10-27 17:22:31,140 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'

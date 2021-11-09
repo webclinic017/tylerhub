@@ -1,0 +1,266 @@
+{
+  "uid" : "f6ffc4f2b7d57e36",
+  "name" : "test_verify_deposit_withdrawal_list[data1]",
+  "fullName" : "demo.deposit_withdrawal_list.action_bin.test_verify_deposti_withdrawal.Test_deposti_withdrawal_list#test_verify_deposit_withdrawal_list",
+  "historyId" : "83ac68768f7423ce4a0ced1cd7a3b6bc",
+  "time" : {
+    "start" : 1634543496415,
+    "stop" : 1634543520205,
+    "duration" : 23790
+  },
+  "description" : "读取测试文档数据，执行用例",
+  "descriptionHtml" : "<p>读取测试文档数据，执行用例</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_deposti_withdrawal_list",
+    "time" : {
+      "start" : 1634543445090,
+      "stop" : 1634543460275,
+      "duration" : 15185
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "读取测试文档数据，执行用例",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "获取当前测试数据下标",
+      "time" : {
+        "start" : 1634543496416,
+        "stop" : 1634543496416,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "bos登录cp，进入出入金记录页面",
+      "time" : {
+        "start" : 1634543496416,
+        "stop" : 1634543507372,
+        "duration" : 10956
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "判断当前时间段是否存在出入金转账记录",
+      "time" : {
+        "start" : 1634543507373,
+        "stop" : 1634543513839,
+        "duration" : 6466
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "当前时间段不存在出入金转账记录,断言数据库查询是否为空",
+        "time" : {
+          "start" : 1634543513838,
+          "stop" : 1634543513838,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "判断当前时间段是否存在出入金转账记录",
+      "time" : {
+        "start" : 1634543513839,
+        "stop" : 1634543520205,
+        "duration" : 6366
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "当前时间段不存在出入金转账记录,断言数据库查询是否为空",
+        "time" : {
+          "start" : 1634543520205,
+          "stop" : 1634543520205,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 6
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_deposti_withdrawal_list::0",
+    "time" : {
+      "start" : 1634543523653,
+      "stop" : 1634543523653,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "查询出入金列表"
+  }, {
+    "name" : "story",
+    "value" : "用例执行"
+  }, {
+    "name" : "feature",
+    "value" : "随机选择时间，查询两次出入金列表数据并与数据库对应数据内数据核对"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.deposit_withdrawal_list.action_bin"
+  }, {
+    "name" : "suite",
+    "value" : "test_verify_deposti_withdrawal"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_deposti_withdrawal_list"
+  }, {
+    "name" : "host",
+    "value" : "SZ01-QA-G-10"
+  }, {
+    "name" : "thread",
+    "value" : "16752-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.deposit_withdrawal_list.action_bin.test_verify_deposti_withdrawal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'主账号': 1200008143.0}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3690859ed710d371",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634541164741,
+        "stop" : 1634541188287,
+        "duration" : 23546
+      }
+    }, {
+      "uid" : "e64b89bd95432b9e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634541058618,
+        "stop" : 1634541082582,
+        "duration" : 23964
+      }
+    }, {
+      "uid" : "c64ac44897db01db",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: FAILURE: 数据库交易金额：95.95;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：95.95;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：95.95;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：95.95;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：95.95;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：95.95;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：95.95;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：738.15;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：96.9;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：7;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\nFAILURE: 数据库交易金额：5;页面交易金额：20\ndemo\\deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:91 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],20,\n------------------------------------------------------------\nFailed Checks: 11",
+      "time" : {
+        "start" : 1634194925647,
+        "stop" : 1634194973245,
+        "duration" : 47598
+      }
+    }, {
+      "uid" : "d4d24e3fcd37dac8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634194530363,
+        "stop" : 1634194589744,
+        "duration" : 59381
+      }
+    }, {
+      "uid" : "7083013ea2c3279c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634180426878,
+        "stop" : 1634180457850,
+        "duration" : 30972
+      }
+    }, {
+      "uid" : "3a551cb4ceaa79da",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634180213224,
+        "stop" : 1634180244106,
+        "duration" : 30882
+      }
+    }, {
+      "uid" : "8559afcf43426163",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634179878690,
+        "stop" : 1634179909369,
+        "duration" : 30679
+      }
+    }, {
+      "uid" : "98f58a7cfb6efc46",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634178859129,
+        "stop" : 1634178903105,
+        "duration" : 43976
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f6ffc4f2b7d57e36.json",
+  "parameterValues" : [ "{'主账号': 1200008143.0}" ]
+}

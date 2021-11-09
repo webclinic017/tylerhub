@@ -4,10 +4,10 @@
     "uid" : "f5ca0ecbb5b2baafcf3bba47499c532a",
     "name" : "demo.deposit_withdrawal_list.action_bin",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
       "total" : 2
     }

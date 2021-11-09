@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-08 15:05:37
-LastEditTime: 2021-09-15 17:52:59
+LastEditTime: 2021-10-19 11:20:47
 LastEditors: Please set LastEditors
 Description: Execute testcase
 FilePath: \tylerhub\demo\neteller_withdrawal\action_bin\test_neteller_withdrawal.py
@@ -17,7 +17,7 @@ sys.path.append(path_project+r'\location')
 from about_data import Aboutdata
 from read_dataconfig import ReadConfig
 from location_of_neteller_withdrawal import Location_of_netellerWithdrawal
-
+#需新增居住国判断，非中国才存在电子钱包出金方式，中国账号跳过用例，非中国判断是否存在neteller出金方式
 @allure.epic('neteller出金')
 class Test_neteller_withdrawal(object):
 
@@ -29,8 +29,7 @@ class Test_neteller_withdrawal(object):
     #读取测试数据
     excelpath=os.path.join(path_project,r'test_data\neteller_withdrawal.xlsx')
     rows=dealData.openexcel(excelpath,'Sheet1')
-    testdata=dealData.dict_data()
-
+    testdata=dealData.dict_data() 
     def setup_class(self):
         #默认谷歌浏览器打开
         netteLler.broswertype()

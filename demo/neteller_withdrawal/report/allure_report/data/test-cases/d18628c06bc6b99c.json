@@ -1,0 +1,246 @@
+{
+  "uid" : "d18628c06bc6b99c",
+  "name" : "test_neteller[data1]",
+  "fullName" : "demo.neteller_withdrawal.action_bin.test_neteller_withdrawal.Test_neteller_withdrawal#test_neteller",
+  "historyId" : "6c37ae3966f0bb437ba94a22d2561a0d",
+  "time" : {
+    "start" : 1634544415820,
+    "stop" : 1634544473734,
+    "duration" : 57914
+  },
+  "description" : "读取测试文档数据，执行用例，判断出金方式；交易账号余额；出金手续费，断言手续费；保存cp，bos，数据库出金时间到本地文档",
+  "descriptionHtml" : "<p>读取测试文档数据，执行用例，判断出金方式；交易账号余额；出金手续费，断言手续费；保存cp，bos，数据库出金时间到本地文档</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_neteller_withdrawal",
+    "time" : {
+      "start" : 1634544330889,
+      "stop" : 1634544354594,
+      "duration" : 23705
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "读取测试文档数据，执行用例，判断出金方式；交易账号余额；出金手续费，断言手续费；保存cp，bos，数据库出金时间到本地文档",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "获取当前测试数据下标",
+      "time" : {
+        "start" : 1634544415821,
+        "stop" : 1634544415821,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "登录会员中心",
+      "time" : {
+        "start" : 1634544422889,
+        "stop" : 1634544429384,
+        "duration" : 6495
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "判断当前出金交易账号余额，余额为0时跳过用例",
+      "time" : {
+        "start" : 1634544429384,
+        "stop" : 1634544473734,
+        "duration" : 44350
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "会员中心出金，调用接口查询手续费，当可出金金额为0时跳过用例",
+        "time" : {
+          "start" : 1634544435509,
+          "stop" : 1634544473734,
+          "duration" : 38225
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "断言出金手续费是否与接口返回手续费一致",
+          "time" : {
+            "start" : 1634544457296,
+            "stop" : 1634544457329,
+            "duration" : 33
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "hasContent" : false,
+          "stepsCount" : 0
+        }, {
+          "name" : "bos审核出金，保存bos，cp，数据库出金时间到本地",
+          "time" : {
+            "start" : 1634544457329,
+            "stop" : 1634544473734,
+            "duration" : 16405
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "a8d3989aa03bf729",
+            "name" : "bos审核",
+            "source" : "a8d3989aa03bf729.png",
+            "type" : "image/png",
+            "size" : 66239
+          } ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1,
+          "hasContent" : true,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ {
+          "uid" : "18dd69d59623632c",
+          "name" : "是否存在出金手续费",
+          "source" : "18dd69d59623632c.png",
+          "type" : "image/png",
+          "size" : 200375
+        } ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2,
+        "hasContent" : true,
+        "stepsCount" : 2
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2,
+      "hasContent" : true,
+      "stepsCount" : 3
+    } ],
+    "attachments" : [ {
+      "uid" : "460e7c01f07afa76",
+      "name" : "log",
+      "source" : "460e7c01f07afa76.txt",
+      "type" : "text/plain",
+      "size" : 141
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3,
+    "hasContent" : true,
+    "stepsCount" : 6
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_neteller_withdrawal::0",
+    "time" : {
+      "start" : 1634544475947,
+      "stop" : 1634544475947,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "neteller出金"
+  }, {
+    "name" : "story",
+    "value" : "用例执行"
+  }, {
+    "name" : "feature",
+    "value" : "判断是否存在neteller出金方式、判断交易账号余额、调用接口获取出金手续费"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=2, reruns_delay=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.neteller_withdrawal.action_bin"
+  }, {
+    "name" : "suite",
+    "value" : "test_neteller_withdrawal"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_neteller_withdrawal"
+  }, {
+    "name" : "host",
+    "value" : "SZ01-QA-G-10"
+  }, {
+    "name" : "thread",
+    "value" : "19448-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.neteller_withdrawal.action_bin.test_neteller_withdrawal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '出金交易账号': 672005304.0, '出金金额': 55.55, 'bos出金时间': '2021-09-15 17:12:08', 'cp出金时间': '15/09/2021 12:12', '数据库出金时间': 44454.38343446761, '接口返回手续费': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d999fdd87651b55a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631697051472,
+        "stop" : 1631697145663,
+        "duration" : 94191
+      }
+    }, {
+      "uid" : "c2c5af6edf339489",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631695996331,
+        "stop" : 1631696056150,
+        "duration" : 59819
+      }
+    }, {
+      "uid" : "80b5dfedd708f2db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1631695241535,
+        "stop" : 1631695303961,
+        "duration" : 62426
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=2, reruns_delay=2)" ]
+  },
+  "source" : "d18628c06bc6b99c.json",
+  "parameterValues" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '出金交易账号': 672005304.0, '出金金额': 55.55, 'bos出金时间': '2021-09-15 17:12:08', 'cp出金时间': '15/09/2021 12:12', '数据库出金时间': 44454.38343446761, '接口返回手续费': ''}" ]
+}
