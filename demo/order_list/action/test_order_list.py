@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-10-20 10:30:09
-LastEditTime: 2021-11-18 18:18:30
+LastEditTime: 2021-11-18 18:36:24
 LastEditors: Please set LastEditors
 Description: Execute testcase
 FilePath: \tylerhub\demo\order_list\action\test_order_list.py
@@ -497,6 +497,7 @@ class Test_verify_order_list(object):
             else:
                 with allure.step('当前主账号不存在该商品类型的已平仓订单'):
                     check.equal(verifyOrder.symbol_closeLen,0)
+                    
 
 
 if __name__=='__main__':
