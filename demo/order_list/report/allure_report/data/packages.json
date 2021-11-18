@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "demo.order_list.action.test_order_list",
+    "children" : [ {
+      "name" : "test_orderList[data0]",
+      "uid" : "3e6ef8355893778e",
+      "parentUid" : "d30b2c92b3283c71a0901154814d56ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637231146621,
+        "stop" : 1637231290537,
+        "duration" : 143916
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+    } ],
+    "uid" : "demo.order_list.action.test_order_list"
+  } ]
+}

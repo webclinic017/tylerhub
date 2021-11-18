@@ -1,0 +1,26 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "查询已平仓未平仓订单列表",
+    "children" : [ {
+      "name" : "用例执行",
+      "children" : [ {
+        "name" : "test_orderList[data0]",
+        "uid" : "3e6ef8355893778e",
+        "parentUid" : "0dfc7ac48c8062b584b6accc0f38f501",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637231146621,
+          "stop" : 1637231290537,
+          "duration" : 143916
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+      } ],
+      "uid" : "0dfc7ac48c8062b584b6accc0f38f501"
+    } ],
+    "uid" : "3aa1cebb77b57d100b7d2e007feace7c"
+  } ]
+}

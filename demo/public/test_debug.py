@@ -1110,4 +1110,4 @@ def txt_xls(filename,xlsname):
 # print(time1==time2)
 
 
-print(7.0==7)
+float(3.5+4)

@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-10-20 10:29:51
-LastEditTime: 2021-11-09 10:29:48
+LastEditTime: 2021-11-18 18:28:17
 LastEditors: Please set LastEditors
 Description: Page operation
 FilePath: \tylerhub\demo\order_list\location\location_of_order_list.py
@@ -287,7 +287,7 @@ class Location_of_order_list(object):
     #格式化查询时间
     def fromat_datetime(self):
         #随机选择时间random.randint(1, 6)
-        self.index=1
+        self.index=random.randint(1, 6)
         #今天
         self.nowTime=datetime.datetime.now()
         #本月第一天
@@ -329,7 +329,7 @@ class Location_of_order_list(object):
             ' Open_Time between "{} 00:00:00" and "{} 23:59:59" order by Open_Time desc'.
             format(trandaccount,self.dateStart,self.dateEnd), conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')
             print('数据库查询返回{}条数据'.format(len(self.mysql_openOrder)))
-            common.switch_windows(1)
+
             #查询页面时间段未平仓订单
             common.display_click("xpath,//span[.='未平仓订单']")
             time.sleep(1)
@@ -392,8 +392,7 @@ class Location_of_order_list(object):
             ' Close_Time between "{} 00:00:00" and "{} 23:59:59" order by Ticket desc'.
             format(trandaccount,self.dateStart,self.dateEnd), conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')
             print('数据库查询返回{}条数据'.format(len(self.mysql_closeOrder)))
-            #查询页面时间段未平仓订单
-            common.switch_windows(1)
+            
             common.display_click("xpath,//span[.='已平仓订单']")
             time.sleep(1)
             common.general_refresh_()
@@ -422,11 +421,11 @@ class Location_of_order_list(object):
                 self.close_order_len=0
                 return False
             else:
-                print('处理页面数据中.........')
                 self.close_orderList=[]
                 self.close_order_len=common.get_lenofelement("xpath,//tr//span[.='{}']".format(trandaccount))
                 print('当前交易账号{} 在{} 00:00:00 至{} 23:59:59 时间段内存在{}条已平仓订单'.format(trandaccount,self.dateStart,self.dateEnd,self.close_order_len))
                 #处理页面数据
+                print('处理页面数据中.........')
                 for i in range(0,self.close_order_len):
                     self.close_orderDict={}
                     self.close_orderDict['Ticket']=int(common.get_text('css,tbody > tr > .el-table_1_column_1 div span',i)) #订单号码
@@ -454,10 +453,12 @@ class Location_of_order_list(object):
             self.mysql_symbol_openOrder=dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Symbol="{}" and Close_Time="1970-01-01 00:00:00"'.
             format(symbol), conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')
             print('数据库查询返回{}条数据'.format(len(self.mysql_symbol_openOrder)))
-            common.switch_windows(1)
+
             #未平仓订单
             common.display_click("xpath,//span[.='未平仓订单']")
             time.sleep(1)
+            common.general_refresh_()
+            time.sleep(2)
             #每页显示全部
             common.display_click('css,.tradeList div > .el-select .el-select__caret',-1)
             time.sleep(0.5)
@@ -480,6 +481,7 @@ class Location_of_order_list(object):
                 self.symbol_openLen=0
                 return False
             else:
+                print('处理页面数据中.......')
                 self.symbol_openLen=common.get_lenofelement("xpath,//span[.='{}']".format(symbol))
                 #处理页面数据
                 self.symbol_openLsit=[]
@@ -496,7 +498,6 @@ class Location_of_order_list(object):
                     self.symbol_openDict['Swaps']=locale.atof(common.get_text('css,tbody > tr > .el-table_1_column_11 div span',i)) #隔夜利息
                     self.symbol_openDict['Profit']=locale.atof(common.get_text('css,tbody > tr > .el-table_1_column_12 div span',i)) #盈亏
                     self.symbol_openLsit.append(self.symbol_openDict)
-                print(self.symbol_openLsit)
                 return True
         except Exception as msg:
             log.my_logger('!!--!!search_period_closeOrder').error(msg)
@@ -509,10 +510,12 @@ class Location_of_order_list(object):
             self.mysql_symbol_closeOrder=dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Symbol="{}" and Close_Time!="1970-01-01 00:00:00"'.
             format(symbol), conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')
             print('数据库查询返回{}条数据'.format(len(self.mysql_symbol_closeOrder)))
-            common.switch_windows(1)
+
             #已平仓订单
             common.display_click("xpath,//span[.='已平仓订单']")
             time.sleep(1)
+            common.general_refresh_()
+            time.sleep(2)
             #每页显示全部
             common.display_click('css,.tradeList div > .el-select .el-select__caret',-1)
             time.sleep(0.5)
@@ -540,6 +543,7 @@ class Location_of_order_list(object):
                 self.symbol_closeLen=0
                 return False
             else:
+                print('处理页面数据中.......')
                 self.symbol_closeLen=common.get_lenofelement("xpath,//span[.='{}']".format(symbol))
                 #处理页面数据
                 self.symbol_closeLsit=[]
@@ -559,7 +563,13 @@ class Location_of_order_list(object):
                     self.symbol_closeDict['Swaps']=locale.atof(common.get_text('css,tbody > tr > .el-table_1_column_13 div span',i)) #隔夜利息
                     self.symbol_closeDict['Profit']=locale.atof(common.get_text('css,tbody > tr > .el-table_1_column_14 div span',i)) #盈亏
                     self.symbol_closeLsit.append(self.symbol_closeDict)
-                print(self.symbol_closeLsit)
                 return True
         except Exception as msg:
             log.my_logger('!!--!!search_symbol_closeOrder').error(msg)
+
+
+    def closebrowser(self):
+        common.close_browser()
+
+    def quitbrowser(self):
+        common.quit_browser()

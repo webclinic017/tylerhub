@@ -1,0 +1,5491 @@
+{
+  "uid" : "647b1b7440ba86b9",
+  "name" : "test_orderList[data0]",
+  "fullName" : "demo.order_list.action.test_order_list.Test_verify_order_list#test_orderList",
+  "historyId" : "75f7695a540a724597d49991a7368041",
+  "time" : {
+    "start" : 1637141805945,
+    "stop" : 1637141872207,
+    "duration" : 66262
+  },
+  "description" : "读取测试文档数据，执行用例",
+  "descriptionHtml" : "<p>读取测试文档数据，执行用例</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_verify_order_list",
+    "time" : {
+      "start" : 1637141786122,
+      "stop" : 1637141805938,
+      "duration" : 19816
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "读取测试文档数据，执行用例",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "获取当前测试数据下标",
+      "time" : {
+        "start" : 1637141805946,
+        "stop" : 1637141805947,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "bos登录cp",
+      "time" : {
+        "start" : 1637141805947,
+        "stop" : 1637141810429,
+        "duration" : 4482
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "查询交易账号所有平仓未平仓订单",
+      "time" : {
+        "start" : 1637141810429,
+        "stop" : 1637141872108,
+        "duration" : 61679
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "判断交易账号是否存在未平仓订单",
+      "time" : {
+        "start" : 1637141872108,
+        "stop" : 1637141872207,
+        "duration" : 99
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "交易账号存在未平仓订单",
+        "time" : {
+          "start" : 1637141872108,
+          "stop" : 1637141872207,
+          "duration" : 99
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "断言导出数据是否与页面一致",
+          "time" : {
+            "start" : 1637141872108,
+            "stop" : 1637141872162,
+            "duration" : 54
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "断言下载文件订单号：544118.0，页面订单号：544118",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:09:13，页面开仓时间：2021-11-05 12:09:13",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：EURNZD，页面商品代码：EURNZD",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：1.62913，页面开仓价：1.62913",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：279.43，页面隔夜利息：279.43",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544120.0，页面订单号：544120",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:09:19，页面开仓时间：2021-11-05 12:09:19",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：CHFJPY，页面商品代码：CHFJPY",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：124.486，页面开仓价：124.486",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：-22.77，页面隔夜利息：-22.77",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544122.0，页面订单号：544122",
+            "time" : {
+              "start" : 1637141872108,
+              "stop" : 1637141872108,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872119,
+              "stop" : 1637141872119,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:09:28，页面开仓时间：2021-11-05 12:09:28",
+            "time" : {
+              "start" : 1637141872119,
+              "stop" : 1637141872119,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872119,
+              "stop" : 1637141872119,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872119,
+              "stop" : 1637141872120,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：AUDUSD，页面商品代码：AUDUSD",
+            "time" : {
+              "start" : 1637141872120,
+              "stop" : 1637141872120,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：0.73779，页面开仓价：0.73779",
+            "time" : {
+              "start" : 1637141872120,
+              "stop" : 1637141872120,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872120,
+              "stop" : 1637141872120,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872120,
+              "stop" : 1637141872120,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872121,
+              "stop" : 1637141872121,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：-273.71，页面隔夜利息：-273.71",
+            "time" : {
+              "start" : 1637141872121,
+              "stop" : 1637141872121,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544123.0，页面订单号：544123",
+            "time" : {
+              "start" : 1637141872121,
+              "stop" : 1637141872121,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872121,
+              "stop" : 1637141872121,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:09:31，页面开仓时间：2021-11-05 12:09:31",
+            "time" : {
+              "start" : 1637141872121,
+              "stop" : 1637141872121,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872122,
+              "stop" : 1637141872122,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872122,
+              "stop" : 1637141872122,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：EURCHF，页面商品代码：EURCHF",
+            "time" : {
+              "start" : 1637141872122,
+              "stop" : 1637141872122,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：1.05536，页面开仓价：1.05536",
+            "time" : {
+              "start" : 1637141872123,
+              "stop" : 1637141872123,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872123,
+              "stop" : 1637141872123,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872123,
+              "stop" : 1637141872123,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872123,
+              "stop" : 1637141872123,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：-58.27，页面隔夜利息：-58.27",
+            "time" : {
+              "start" : 1637141872123,
+              "stop" : 1637141872123,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544124.0，页面订单号：544124",
+            "time" : {
+              "start" : 1637141872124,
+              "stop" : 1637141872124,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872124,
+              "stop" : 1637141872124,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:09:34，页面开仓时间：2021-11-05 12:09:34",
+            "time" : {
+              "start" : 1637141872124,
+              "stop" : 1637141872124,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872124,
+              "stop" : 1637141872124,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872124,
+              "stop" : 1637141872125,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：GBPCHF，页面商品代码：GBPCHF",
+            "time" : {
+              "start" : 1637141872125,
+              "stop" : 1637141872125,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：1.22970，页面开仓价：1.2297",
+            "time" : {
+              "start" : 1637141872125,
+              "stop" : 1637141872125,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872125,
+              "stop" : 1637141872125,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872125,
+              "stop" : 1637141872125,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872125,
+              "stop" : 1637141872126,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：190.05，页面隔夜利息：190.05",
+            "time" : {
+              "start" : 1637141872126,
+              "stop" : 1637141872126,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544125.0，页面订单号：544125",
+            "time" : {
+              "start" : 1637141872126,
+              "stop" : 1637141872126,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872126,
+              "stop" : 1637141872126,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:09:38，页面开仓时间：2021-11-05 12:09:38",
+            "time" : {
+              "start" : 1637141872126,
+              "stop" : 1637141872127,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872127,
+              "stop" : 1637141872127,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872127,
+              "stop" : 1637141872127,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：CADJPY，页面商品代码：CADJPY",
+            "time" : {
+              "start" : 1637141872127,
+              "stop" : 1637141872127,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：91.283，页面开仓价：91.283",
+            "time" : {
+              "start" : 1637141872127,
+              "stop" : 1637141872127,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872129,
+              "stop" : 1637141872129,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872129,
+              "stop" : 1637141872129,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872129,
+              "stop" : 1637141872129,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：52.28，页面隔夜利息：52.28",
+            "time" : {
+              "start" : 1637141872130,
+              "stop" : 1637141872130,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544127.0，页面订单号：544127",
+            "time" : {
+              "start" : 1637141872130,
+              "stop" : 1637141872130,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872130,
+              "stop" : 1637141872130,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:09:45，页面开仓时间：2021-11-05 12:09:45",
+            "time" : {
+              "start" : 1637141872130,
+              "stop" : 1637141872130,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872130,
+              "stop" : 1637141872130,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872131,
+              "stop" : 1637141872131,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：CHFJPY，页面商品代码：CHFJPY",
+            "time" : {
+              "start" : 1637141872131,
+              "stop" : 1637141872131,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：124.454，页面开仓价：124.454",
+            "time" : {
+              "start" : 1637141872131,
+              "stop" : 1637141872131,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872131,
+              "stop" : 1637141872131,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872131,
+              "stop" : 1637141872131,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872132,
+              "stop" : 1637141872132,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：-22.77，页面隔夜利息：-22.77",
+            "time" : {
+              "start" : 1637141872132,
+              "stop" : 1637141872132,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544128.0，页面订单号：544128",
+            "time" : {
+              "start" : 1637141872132,
+              "stop" : 1637141872132,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872132,
+              "stop" : 1637141872132,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:09:49，页面开仓时间：2021-11-05 12:09:49",
+            "time" : {
+              "start" : 1637141872132,
+              "stop" : 1637141872133,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872133,
+              "stop" : 1637141872133,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872133,
+              "stop" : 1637141872133,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：GBPJPY，页面商品代码：GBPJPY",
+            "time" : {
+              "start" : 1637141872133,
+              "stop" : 1637141872133,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：153.083，页面开仓价：153.083",
+            "time" : {
+              "start" : 1637141872133,
+              "stop" : 1637141872133,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872133,
+              "stop" : 1637141872134,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872134,
+              "stop" : 1637141872134,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872134,
+              "stop" : 1637141872134,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：16.62，页面隔夜利息：16.62",
+            "time" : {
+              "start" : 1637141872134,
+              "stop" : 1637141872134,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544130.0，页面订单号：544130",
+            "time" : {
+              "start" : 1637141872134,
+              "stop" : 1637141872134,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872135,
+              "stop" : 1637141872135,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:09:56，页面开仓时间：2021-11-05 12:09:56",
+            "time" : {
+              "start" : 1637141872135,
+              "stop" : 1637141872135,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872135,
+              "stop" : 1637141872135,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872135,
+              "stop" : 1637141872135,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：AUDJPY，页面商品代码：AUDJPY",
+            "time" : {
+              "start" : 1637141872135,
+              "stop" : 1637141872135,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：83.926，页面开仓价：83.926",
+            "time" : {
+              "start" : 1637141872136,
+              "stop" : 1637141872136,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872136,
+              "stop" : 1637141872136,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872136,
+              "stop" : 1637141872136,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872137,
+              "stop" : 1637141872137,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：-151.64，页面隔夜利息：-151.64",
+            "time" : {
+              "start" : 1637141872138,
+              "stop" : 1637141872138,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544131.0，页面订单号：544131",
+            "time" : {
+              "start" : 1637141872138,
+              "stop" : 1637141872138,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872138,
+              "stop" : 1637141872139,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:09:59，页面开仓时间：2021-11-05 12:09:59",
+            "time" : {
+              "start" : 1637141872139,
+              "stop" : 1637141872139,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872139,
+              "stop" : 1637141872139,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872139,
+              "stop" : 1637141872139,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：CADJPY，页面商品代码：CADJPY",
+            "time" : {
+              "start" : 1637141872139,
+              "stop" : 1637141872139,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：91.250，页面开仓价：91.25",
+            "time" : {
+              "start" : 1637141872140,
+              "stop" : 1637141872140,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872140,
+              "stop" : 1637141872140,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872140,
+              "stop" : 1637141872140,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872140,
+              "stop" : 1637141872140,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：-191.01，页面隔夜利息：-191.01",
+            "time" : {
+              "start" : 1637141872140,
+              "stop" : 1637141872141,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544132.0，页面订单号：544132",
+            "time" : {
+              "start" : 1637141872141,
+              "stop" : 1637141872141,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872141,
+              "stop" : 1637141872141,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:10:03，页面开仓时间：2021-11-05 12:10:03",
+            "time" : {
+              "start" : 1637141872141,
+              "stop" : 1637141872141,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872141,
+              "stop" : 1637141872141,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872141,
+              "stop" : 1637141872142,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：GBPUSD，页面商品代码：GBPUSD",
+            "time" : {
+              "start" : 1637141872142,
+              "stop" : 1637141872142,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：1.34486，页面开仓价：1.34486",
+            "time" : {
+              "start" : 1637141872142,
+              "stop" : 1637141872142,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872142,
+              "stop" : 1637141872142,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872142,
+              "stop" : 1637141872142,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872142,
+              "stop" : 1637141872143,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：293.61，页面隔夜利息：293.61",
+            "time" : {
+              "start" : 1637141872143,
+              "stop" : 1637141872143,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544133.0，页面订单号：544133",
+            "time" : {
+              "start" : 1637141872143,
+              "stop" : 1637141872143,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872143,
+              "stop" : 1637141872143,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:10:06，页面开仓时间：2021-11-05 12:10:06",
+            "time" : {
+              "start" : 1637141872143,
+              "stop" : 1637141872143,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872144,
+              "stop" : 1637141872144,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872144,
+              "stop" : 1637141872144,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：USDCAD，页面商品代码：USDCAD",
+            "time" : {
+              "start" : 1637141872144,
+              "stop" : 1637141872144,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：1.24665，页面开仓价：1.24665",
+            "time" : {
+              "start" : 1637141872144,
+              "stop" : 1637141872144,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872144,
+              "stop" : 1637141872144,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872145,
+              "stop" : 1637141872145,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872145,
+              "stop" : 1637141872145,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：-225.42，页面隔夜利息：-225.42",
+            "time" : {
+              "start" : 1637141872145,
+              "stop" : 1637141872145,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544134.0，页面订单号：544134",
+            "time" : {
+              "start" : 1637141872145,
+              "stop" : 1637141872145,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872145,
+              "stop" : 1637141872145,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:10:09，页面开仓时间：2021-11-05 12:10:09",
+            "time" : {
+              "start" : 1637141872146,
+              "stop" : 1637141872146,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872146,
+              "stop" : 1637141872146,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872146,
+              "stop" : 1637141872146,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：EURGBP，页面商品代码：EURGBP",
+            "time" : {
+              "start" : 1637141872146,
+              "stop" : 1637141872146,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：0.85842，页面开仓价：0.85842",
+            "time" : {
+              "start" : 1637141872147,
+              "stop" : 1637141872147,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872147,
+              "stop" : 1637141872147,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872147,
+              "stop" : 1637141872147,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872147,
+              "stop" : 1637141872147,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：-410.3，页面隔夜利息：-410.3",
+            "time" : {
+              "start" : 1637141872148,
+              "stop" : 1637141872148,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544135.0，页面订单号：544135",
+            "time" : {
+              "start" : 1637141872148,
+              "stop" : 1637141872148,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872148,
+              "stop" : 1637141872148,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:10:12，页面开仓时间：2021-11-05 12:10:12",
+            "time" : {
+              "start" : 1637141872148,
+              "stop" : 1637141872148,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872148,
+              "stop" : 1637141872148,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872149,
+              "stop" : 1637141872149,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：EURCHF，页面商品代码：EURCHF",
+            "time" : {
+              "start" : 1637141872149,
+              "stop" : 1637141872149,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：1.05562，页面开仓价：1.05562",
+            "time" : {
+              "start" : 1637141872149,
+              "stop" : 1637141872149,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872150,
+              "stop" : 1637141872150,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872150,
+              "stop" : 1637141872150,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872150,
+              "stop" : 1637141872150,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：-58.27，页面隔夜利息：-58.27",
+            "time" : {
+              "start" : 1637141872150,
+              "stop" : 1637141872150,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544136.0，页面订单号：544136",
+            "time" : {
+              "start" : 1637141872150,
+              "stop" : 1637141872150,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872151,
+              "stop" : 1637141872151,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:10:16，页面开仓时间：2021-11-05 12:10:16",
+            "time" : {
+              "start" : 1637141872151,
+              "stop" : 1637141872151,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872151,
+              "stop" : 1637141872151,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872151,
+              "stop" : 1637141872151,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：AUDCHF，页面商品代码：AUDCHF",
+            "time" : {
+              "start" : 1637141872151,
+              "stop" : 1637141872152,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：0.67464，页面开仓价：0.67464",
+            "time" : {
+              "start" : 1637141872152,
+              "stop" : 1637141872152,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872152,
+              "stop" : 1637141872152,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872152,
+              "stop" : 1637141872152,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872152,
+              "stop" : 1637141872152,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：154.51，页面隔夜利息：154.51",
+            "time" : {
+              "start" : 1637141872152,
+              "stop" : 1637141872152,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件订单号：544137.0，页面订单号：544137",
+            "time" : {
+              "start" : 1637141872159,
+              "stop" : 1637141872159,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件交易账号：672005306.0，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872159,
+              "stop" : 1637141872159,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓时间：2021-11-05 12:10:19，页面开仓时间：2021-11-05 12:10:19",
+            "time" : {
+              "start" : 1637141872159,
+              "stop" : 1637141872159,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872159,
+              "stop" : 1637141872160,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件手数：7.00，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872160,
+              "stop" : 1637141872160,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件商品代码：EURNZD，页面商品代码：EURNZD",
+            "time" : {
+              "start" : 1637141872160,
+              "stop" : 1637141872160,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件开仓价：1.62906，页面开仓价：1.62906",
+            "time" : {
+              "start" : 1637141872160,
+              "stop" : 1637141872160,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872160,
+              "stop" : 1637141872160,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872161,
+              "stop" : 1637141872161,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件佣金：-70.00，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872162,
+              "stop" : 1637141872162,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言下载文件隔夜利息：279.43，页面隔夜利息：279.43",
+            "time" : {
+              "start" : 1637141872162,
+              "stop" : 1637141872162,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "hasContent" : true,
+          "stepsCount" : 176
+        }, {
+          "name" : "断言复制数据是否与页面一致",
+          "time" : {
+            "start" : 1637141872164,
+            "stop" : 1637141872207,
+            "duration" : 43
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "断言复制内容订单号码：544118，页面订单号码：544118",
+            "time" : {
+              "start" : 1637141872164,
+              "stop" : 1637141872164,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872164,
+              "stop" : 1637141872164,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:09:13，页面开仓时间：2021-11-05 12:09:13",
+            "time" : {
+              "start" : 1637141872164,
+              "stop" : 1637141872164,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872164,
+              "stop" : 1637141872164,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872165,
+              "stop" : 1637141872165,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：EURNZD，页面商品代码：EURNZD",
+            "time" : {
+              "start" : 1637141872165,
+              "stop" : 1637141872165,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：1.62913，页面开仓价：1.62913",
+            "time" : {
+              "start" : 1637141872165,
+              "stop" : 1637141872165,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872165,
+              "stop" : 1637141872165,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872165,
+              "stop" : 1637141872165,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872166,
+              "stop" : 1637141872166,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：279.43，页面隔夜利息：279.43",
+            "time" : {
+              "start" : 1637141872166,
+              "stop" : 1637141872166,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544120，页面订单号码：544120",
+            "time" : {
+              "start" : 1637141872166,
+              "stop" : 1637141872166,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872166,
+              "stop" : 1637141872166,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:09:19，页面开仓时间：2021-11-05 12:09:19",
+            "time" : {
+              "start" : 1637141872166,
+              "stop" : 1637141872167,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872167,
+              "stop" : 1637141872167,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872167,
+              "stop" : 1637141872167,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：CHFJPY，页面商品代码：CHFJPY",
+            "time" : {
+              "start" : 1637141872167,
+              "stop" : 1637141872167,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：124.486，页面开仓价：124.486",
+            "time" : {
+              "start" : 1637141872168,
+              "stop" : 1637141872168,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872168,
+              "stop" : 1637141872168,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872168,
+              "stop" : 1637141872168,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872168,
+              "stop" : 1637141872168,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：-22.77，页面隔夜利息：-22.77",
+            "time" : {
+              "start" : 1637141872168,
+              "stop" : 1637141872168,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544122，页面订单号码：544122",
+            "time" : {
+              "start" : 1637141872169,
+              "stop" : 1637141872169,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872169,
+              "stop" : 1637141872169,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:09:28，页面开仓时间：2021-11-05 12:09:28",
+            "time" : {
+              "start" : 1637141872169,
+              "stop" : 1637141872169,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872170,
+              "stop" : 1637141872170,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872170,
+              "stop" : 1637141872170,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：AUDUSD，页面商品代码：AUDUSD",
+            "time" : {
+              "start" : 1637141872170,
+              "stop" : 1637141872170,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：0.73779，页面开仓价：0.73779",
+            "time" : {
+              "start" : 1637141872170,
+              "stop" : 1637141872170,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872170,
+              "stop" : 1637141872170,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872171,
+              "stop" : 1637141872171,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872171,
+              "stop" : 1637141872171,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：-273.71，页面隔夜利息：-273.71",
+            "time" : {
+              "start" : 1637141872171,
+              "stop" : 1637141872171,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544123，页面订单号码：544123",
+            "time" : {
+              "start" : 1637141872171,
+              "stop" : 1637141872171,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872171,
+              "stop" : 1637141872171,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:09:31，页面开仓时间：2021-11-05 12:09:31",
+            "time" : {
+              "start" : 1637141872172,
+              "stop" : 1637141872172,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872172,
+              "stop" : 1637141872172,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872172,
+              "stop" : 1637141872172,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：EURCHF，页面商品代码：EURCHF",
+            "time" : {
+              "start" : 1637141872172,
+              "stop" : 1637141872172,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：1.05536，页面开仓价：1.05536",
+            "time" : {
+              "start" : 1637141872172,
+              "stop" : 1637141872173,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872173,
+              "stop" : 1637141872173,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872173,
+              "stop" : 1637141872173,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872173,
+              "stop" : 1637141872173,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：-58.27，页面隔夜利息：-58.27",
+            "time" : {
+              "start" : 1637141872173,
+              "stop" : 1637141872173,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544124，页面订单号码：544124",
+            "time" : {
+              "start" : 1637141872174,
+              "stop" : 1637141872174,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872174,
+              "stop" : 1637141872174,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:09:34，页面开仓时间：2021-11-05 12:09:34",
+            "time" : {
+              "start" : 1637141872174,
+              "stop" : 1637141872174,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872174,
+              "stop" : 1637141872174,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872174,
+              "stop" : 1637141872175,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：GBPCHF，页面商品代码：GBPCHF",
+            "time" : {
+              "start" : 1637141872175,
+              "stop" : 1637141872175,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：1.22970，页面开仓价：1.2297",
+            "time" : {
+              "start" : 1637141872175,
+              "stop" : 1637141872175,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872175,
+              "stop" : 1637141872175,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872175,
+              "stop" : 1637141872175,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872175,
+              "stop" : 1637141872176,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：190.05，页面隔夜利息：190.05",
+            "time" : {
+              "start" : 1637141872176,
+              "stop" : 1637141872176,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544125，页面订单号码：544125",
+            "time" : {
+              "start" : 1637141872176,
+              "stop" : 1637141872176,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872176,
+              "stop" : 1637141872176,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:09:38，页面开仓时间：2021-11-05 12:09:38",
+            "time" : {
+              "start" : 1637141872176,
+              "stop" : 1637141872176,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872176,
+              "stop" : 1637141872177,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872177,
+              "stop" : 1637141872177,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：CADJPY，页面商品代码：CADJPY",
+            "time" : {
+              "start" : 1637141872177,
+              "stop" : 1637141872177,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：91.283，页面开仓价：91.283",
+            "time" : {
+              "start" : 1637141872178,
+              "stop" : 1637141872178,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872178,
+              "stop" : 1637141872178,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872178,
+              "stop" : 1637141872178,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872178,
+              "stop" : 1637141872178,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：52.28，页面隔夜利息：52.28",
+            "time" : {
+              "start" : 1637141872179,
+              "stop" : 1637141872179,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544127，页面订单号码：544127",
+            "time" : {
+              "start" : 1637141872179,
+              "stop" : 1637141872179,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872180,
+              "stop" : 1637141872180,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:09:45，页面开仓时间：2021-11-05 12:09:45",
+            "time" : {
+              "start" : 1637141872180,
+              "stop" : 1637141872180,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872180,
+              "stop" : 1637141872180,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872180,
+              "stop" : 1637141872180,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：CHFJPY，页面商品代码：CHFJPY",
+            "time" : {
+              "start" : 1637141872180,
+              "stop" : 1637141872184,
+              "duration" : 4
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：124.454，页面开仓价：124.454",
+            "time" : {
+              "start" : 1637141872184,
+              "stop" : 1637141872184,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872184,
+              "stop" : 1637141872184,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872184,
+              "stop" : 1637141872184,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872184,
+              "stop" : 1637141872184,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：-22.77，页面隔夜利息：-22.77",
+            "time" : {
+              "start" : 1637141872184,
+              "stop" : 1637141872185,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544128，页面订单号码：544128",
+            "time" : {
+              "start" : 1637141872185,
+              "stop" : 1637141872185,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872185,
+              "stop" : 1637141872185,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:09:49，页面开仓时间：2021-11-05 12:09:49",
+            "time" : {
+              "start" : 1637141872186,
+              "stop" : 1637141872186,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872186,
+              "stop" : 1637141872186,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872186,
+              "stop" : 1637141872186,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：GBPJPY，页面商品代码：GBPJPY",
+            "time" : {
+              "start" : 1637141872186,
+              "stop" : 1637141872186,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：153.083，页面开仓价：153.083",
+            "time" : {
+              "start" : 1637141872187,
+              "stop" : 1637141872187,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872187,
+              "stop" : 1637141872187,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872187,
+              "stop" : 1637141872187,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872187,
+              "stop" : 1637141872187,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：16.62，页面隔夜利息：16.62",
+            "time" : {
+              "start" : 1637141872187,
+              "stop" : 1637141872187,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544130，页面订单号码：544130",
+            "time" : {
+              "start" : 1637141872188,
+              "stop" : 1637141872188,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872188,
+              "stop" : 1637141872188,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:09:56，页面开仓时间：2021-11-05 12:09:56",
+            "time" : {
+              "start" : 1637141872188,
+              "stop" : 1637141872188,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872188,
+              "stop" : 1637141872188,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872188,
+              "stop" : 1637141872189,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：AUDJPY，页面商品代码：AUDJPY",
+            "time" : {
+              "start" : 1637141872189,
+              "stop" : 1637141872189,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：83.926，页面开仓价：83.926",
+            "time" : {
+              "start" : 1637141872189,
+              "stop" : 1637141872189,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872189,
+              "stop" : 1637141872189,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872189,
+              "stop" : 1637141872189,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872189,
+              "stop" : 1637141872190,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：-151.64，页面隔夜利息：-151.64",
+            "time" : {
+              "start" : 1637141872190,
+              "stop" : 1637141872190,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544131，页面订单号码：544131",
+            "time" : {
+              "start" : 1637141872190,
+              "stop" : 1637141872190,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872190,
+              "stop" : 1637141872190,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:09:59，页面开仓时间：2021-11-05 12:09:59",
+            "time" : {
+              "start" : 1637141872190,
+              "stop" : 1637141872190,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872190,
+              "stop" : 1637141872191,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872191,
+              "stop" : 1637141872191,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：CADJPY，页面商品代码：CADJPY",
+            "time" : {
+              "start" : 1637141872191,
+              "stop" : 1637141872191,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：91.250，页面开仓价：91.25",
+            "time" : {
+              "start" : 1637141872191,
+              "stop" : 1637141872191,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872191,
+              "stop" : 1637141872191,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872192,
+              "stop" : 1637141872192,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872192,
+              "stop" : 1637141872192,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：-191.01，页面隔夜利息：-191.01",
+            "time" : {
+              "start" : 1637141872192,
+              "stop" : 1637141872192,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544132，页面订单号码：544132",
+            "time" : {
+              "start" : 1637141872192,
+              "stop" : 1637141872192,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872192,
+              "stop" : 1637141872192,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:10:03，页面开仓时间：2021-11-05 12:10:03",
+            "time" : {
+              "start" : 1637141872193,
+              "stop" : 1637141872193,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872193,
+              "stop" : 1637141872193,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872193,
+              "stop" : 1637141872193,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：GBPUSD，页面商品代码：GBPUSD",
+            "time" : {
+              "start" : 1637141872193,
+              "stop" : 1637141872193,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：1.34486，页面开仓价：1.34486",
+            "time" : {
+              "start" : 1637141872193,
+              "stop" : 1637141872194,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872194,
+              "stop" : 1637141872194,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872194,
+              "stop" : 1637141872194,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872194,
+              "stop" : 1637141872194,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：293.61，页面隔夜利息：293.61",
+            "time" : {
+              "start" : 1637141872194,
+              "stop" : 1637141872194,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544133，页面订单号码：544133",
+            "time" : {
+              "start" : 1637141872194,
+              "stop" : 1637141872195,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872195,
+              "stop" : 1637141872195,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:10:06，页面开仓时间：2021-11-05 12:10:06",
+            "time" : {
+              "start" : 1637141872195,
+              "stop" : 1637141872195,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872195,
+              "stop" : 1637141872195,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872195,
+              "stop" : 1637141872196,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：USDCAD，页面商品代码：USDCAD",
+            "time" : {
+              "start" : 1637141872196,
+              "stop" : 1637141872196,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：1.24665，页面开仓价：1.24665",
+            "time" : {
+              "start" : 1637141872196,
+              "stop" : 1637141872196,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872196,
+              "stop" : 1637141872196,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872196,
+              "stop" : 1637141872196,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872197,
+              "stop" : 1637141872197,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：-225.42，页面隔夜利息：-225.42",
+            "time" : {
+              "start" : 1637141872197,
+              "stop" : 1637141872197,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544134，页面订单号码：544134",
+            "time" : {
+              "start" : 1637141872197,
+              "stop" : 1637141872197,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872197,
+              "stop" : 1637141872197,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:10:09，页面开仓时间：2021-11-05 12:10:09",
+            "time" : {
+              "start" : 1637141872198,
+              "stop" : 1637141872198,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872198,
+              "stop" : 1637141872198,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872198,
+              "stop" : 1637141872198,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：EURGBP，页面商品代码：EURGBP",
+            "time" : {
+              "start" : 1637141872198,
+              "stop" : 1637141872198,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：0.85842，页面开仓价：0.85842",
+            "time" : {
+              "start" : 1637141872199,
+              "stop" : 1637141872199,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872199,
+              "stop" : 1637141872199,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872199,
+              "stop" : 1637141872199,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872199,
+              "stop" : 1637141872199,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：-410.3，页面隔夜利息：-410.3",
+            "time" : {
+              "start" : 1637141872199,
+              "stop" : 1637141872200,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544135，页面订单号码：544135",
+            "time" : {
+              "start" : 1637141872200,
+              "stop" : 1637141872200,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872200,
+              "stop" : 1637141872200,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:10:12，页面开仓时间：2021-11-05 12:10:12",
+            "time" : {
+              "start" : 1637141872200,
+              "stop" : 1637141872200,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872200,
+              "stop" : 1637141872200,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872201,
+              "stop" : 1637141872201,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：EURCHF，页面商品代码：EURCHF",
+            "time" : {
+              "start" : 1637141872201,
+              "stop" : 1637141872201,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：1.05562，页面开仓价：1.05562",
+            "time" : {
+              "start" : 1637141872201,
+              "stop" : 1637141872201,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872202,
+              "stop" : 1637141872202,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872202,
+              "stop" : 1637141872202,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872202,
+              "stop" : 1637141872202,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：-58.27，页面隔夜利息：-58.27",
+            "time" : {
+              "start" : 1637141872202,
+              "stop" : 1637141872202,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544136，页面订单号码：544136",
+            "time" : {
+              "start" : 1637141872202,
+              "stop" : 1637141872202,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872203,
+              "stop" : 1637141872203,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:10:16，页面开仓时间：2021-11-05 12:10:16",
+            "time" : {
+              "start" : 1637141872203,
+              "stop" : 1637141872203,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：买，页面类型：买",
+            "time" : {
+              "start" : 1637141872203,
+              "stop" : 1637141872203,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872203,
+              "stop" : 1637141872203,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：AUDCHF，页面商品代码：AUDCHF",
+            "time" : {
+              "start" : 1637141872203,
+              "stop" : 1637141872203,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：0.67464，页面开仓价：0.67464",
+            "time" : {
+              "start" : 1637141872204,
+              "stop" : 1637141872204,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872204,
+              "stop" : 1637141872204,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872204,
+              "stop" : 1637141872204,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872204,
+              "stop" : 1637141872204,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：154.51，页面隔夜利息：154.51",
+            "time" : {
+              "start" : 1637141872204,
+              "stop" : 1637141872204,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容订单号码：544137，页面订单号码：544137",
+            "time" : {
+              "start" : 1637141872205,
+              "stop" : 1637141872205,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容交易账号：672005306，页面交易账号：672005306",
+            "time" : {
+              "start" : 1637141872205,
+              "stop" : 1637141872205,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓时间：2021-11-05 12:10:19，页面开仓时间：2021-11-05 12:10:19",
+            "time" : {
+              "start" : 1637141872205,
+              "stop" : 1637141872205,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容类型：卖，页面类型：卖",
+            "time" : {
+              "start" : 1637141872205,
+              "stop" : 1637141872205,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容手数：7.0，页面交易量：7.0",
+            "time" : {
+              "start" : 1637141872205,
+              "stop" : 1637141872205,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容商品代码：EURNZD，页面商品代码：EURNZD",
+            "time" : {
+              "start" : 1637141872206,
+              "stop" : 1637141872206,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容开仓价：1.62906，页面开仓价：1.62906",
+            "time" : {
+              "start" : 1637141872206,
+              "stop" : 1637141872206,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容S/L：0.00000，页面S/L：0.0",
+            "time" : {
+              "start" : 1637141872206,
+              "stop" : 1637141872206,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容T/P：0.00000，页面T/P：0.0",
+            "time" : {
+              "start" : 1637141872206,
+              "stop" : 1637141872206,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容佣金：-70.0，页面佣金：-70.0",
+            "time" : {
+              "start" : 1637141872206,
+              "stop" : 1637141872207,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "断言复制内容隔夜利息：279.43，页面隔夜利息：279.43",
+            "time" : {
+              "start" : 1637141872207,
+              "stop" : 1637141872207,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "hasContent" : true,
+          "stepsCount" : 176
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : true,
+        "stepsCount" : 354
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 355
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 359
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_verify_order_list::0",
+    "time" : {
+      "start" : 1637141893902,
+      "stop" : 1637141893903,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用例执行"
+  }, {
+    "name" : "feature",
+    "value" : "根据交易账号查询已平仓未平仓订单"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.order_list.action"
+  }, {
+    "name" : "suite",
+    "value" : "test_order_list"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_verify_order_list"
+  }, {
+    "name" : "host",
+    "value" : "SZ01-QA-G-10"
+  }, {
+    "name" : "thread",
+    "value" : "5760-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.order_list.action.test_order_list"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "647b1b7440ba86b9.json",
+  "parameterValues" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+}

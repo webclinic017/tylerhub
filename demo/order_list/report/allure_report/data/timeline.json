@@ -1,0 +1,196 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "SZ01-QA-G-10",
+    "children" : [ {
+      "name" : "12692-MainThread",
+      "children" : [ {
+        "name" : "test_orderList[data0]",
+        "uid" : "763f3acd04ad1563",
+        "parentUid" : "51e282820fc796b12c5ec9eacc8ae40b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637203234113,
+          "stop" : 1637203303427,
+          "duration" : 69314
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+      } ],
+      "uid" : "51e282820fc796b12c5ec9eacc8ae40b"
+    }, {
+      "name" : "14028-MainThread",
+      "children" : [ {
+        "name" : "test_orderList[data0]",
+        "uid" : "2714e430a8d7c36b",
+        "parentUid" : "ffdca9252119ead65e26215a31cc6173",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637230789554,
+          "stop" : 1637230955072,
+          "duration" : 165518
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+      } ],
+      "uid" : "ffdca9252119ead65e26215a31cc6173"
+    }, {
+      "name" : "8180-MainThread",
+      "children" : [ {
+        "name" : "test_orderList[data0]",
+        "uid" : "bbc74a10e938339b",
+        "parentUid" : "b3028500a57999eb1e8cb32386b216e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637142923669,
+          "stop" : 1637142989272,
+          "duration" : 65603
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+      } ],
+      "uid" : "b3028500a57999eb1e8cb32386b216e1"
+    }, {
+      "name" : "15440-MainThread",
+      "children" : [ {
+        "name" : "test_orderList[data0]",
+        "uid" : "3ec63327949eb787",
+        "parentUid" : "da969999392c67eb66486961055c000f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637225414049,
+          "stop" : 1637225499609,
+          "duration" : 85560
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+      } ],
+      "uid" : "da969999392c67eb66486961055c000f"
+    }, {
+      "name" : "17328-MainThread",
+      "children" : [ {
+        "name" : "test_orderList[data0]",
+        "uid" : "3e6ef8355893778e",
+        "parentUid" : "50f62ae67714069ba9a6565980465e80",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637231146621,
+          "stop" : 1637231290537,
+          "duration" : 143916
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+      } ],
+      "uid" : "50f62ae67714069ba9a6565980465e80"
+    }, {
+      "name" : "11532-MainThread",
+      "children" : [ {
+        "name" : "test_orderList[data0]",
+        "uid" : "4b99bdec0d30154f",
+        "parentUid" : "0fab7dc5eab3f64af9599786fd9b7769",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637227339803,
+          "stop" : 1637227448263,
+          "duration" : 108460
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+      } ],
+      "uid" : "0fab7dc5eab3f64af9599786fd9b7769"
+    }, {
+      "name" : "11788-MainThread",
+      "children" : [ {
+        "name" : "test_orderList[data0]",
+        "uid" : "9c3b8525591e146b",
+        "parentUid" : "f97e1a0d7c10e8652cc2f5fa59475941",
+        "status" : "failed",
+        "time" : {
+          "start" : 1637204861510,
+          "stop" : 1637204929516,
+          "duration" : 68006
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+      } ],
+      "uid" : "f97e1a0d7c10e8652cc2f5fa59475941"
+    }, {
+      "name" : "16184-MainThread",
+      "children" : [ {
+        "name" : "test_orderList[data0]",
+        "uid" : "2174245b2ef2a4d3",
+        "parentUid" : "b2752fb18fb73f7f04dd460b9b7319d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637224506830,
+          "stop" : 1637224602807,
+          "duration" : 95977
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+      } ],
+      "uid" : "b2752fb18fb73f7f04dd460b9b7319d5"
+    }, {
+      "name" : "5760-MainThread",
+      "children" : [ {
+        "name" : "test_orderList[data0]",
+        "uid" : "647b1b7440ba86b9",
+        "parentUid" : "4180900cc15f8f1d059c1bba3cbb9d2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637141805945,
+          "stop" : 1637141872207,
+          "duration" : 66262
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+      } ],
+      "uid" : "4180900cc15f8f1d059c1bba3cbb9d2a"
+    }, {
+      "name" : "12768-MainThread",
+      "children" : [ {
+        "name" : "test_orderList[data0]",
+        "uid" : "c12b9a39ad446e4d",
+        "parentUid" : "d234a94448c897ddb67d82be2a1ab2b9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637141353451,
+          "stop" : 1637141439911,
+          "duration" : 86460
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+      } ],
+      "uid" : "d234a94448c897ddb67d82be2a1ab2b9"
+    }, {
+      "name" : "10396-MainThread",
+      "children" : [ {
+        "name" : "test_orderList[data0]",
+        "uid" : "43b79c1e6821a068",
+        "parentUid" : "94c41665ac3bbda3b1d6376bdce59bb4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637204064900,
+          "stop" : 1637204137819,
+          "duration" : 72919
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 672005306.0, '商品代码': 'CADJPY'}" ]
+      } ],
+      "uid" : "94c41665ac3bbda3b1d6376bdce59bb4"
+    } ],
+    "uid" : "22c9a7ca73ac7ac9efe14f8b8f896b03"
+  } ]
+}
