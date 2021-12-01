@@ -7159,29 +7159,48 @@ body.skin-3 {
 
 
     var resultData = {
-    "testPass": 1,
+    "testPass": 0,
     "testResult": [
         {
             "className": "Register_cp",
             "methodName": "test_register_1",
             "description": null,
-            "spendTime": "29.8 s",
-            "status": "成功",
+            "spendTime": "28.0 s",
+            "status": "错误",
             "log": [
-                "当前测试数据:国家：菲律宾,英文国家名：Philippines；三字码：PHL；邮箱：00088000011@uitest.com；专属链接：https://at-client-portal-sit.atfxdev.com/register?redirect_uri=ibRebateDetail&utm_medium=ibcustomelink&invitationCode=3sTGC4n%2BiuR8TUigWY2skk56XbRbkCcuVA%2Fd6%2FyQjnM%3D；邀请码：",
-                "!!--!!remove_register_topup - 2021-10-18 15:17:25,459 - common_method - [common_method.py-->line:43] - ERROR: Message: element not interactable",
-                "  (Session info: chrome=94.0.4606.81)",
-                "",
-                "专属链接注册",
-                ""
+                "当前测试数据:国家：中国,英文国家名：China；三字码：CHN；邮箱：00112400010@uitest.com；专属链接：；邀请码：3sTGC4n+iuR8TUigWY2skk56XbRbkCcuVA/d6/yQjnM=\n邀请码注册\n",
+                "Traceback (most recent call last):\n",
+                "  File \"C:\\Users\\tyler.tang\\Program Files\\Python38-32\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
+                "  File \"C:\\Users\\tyler.tang\\Program Files\\Python38-32\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
+                "  File \"C:\\Users\\tyler.tang\\Program Files\\Python38-32\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
+                "  File \"C:\\Users\\tyler.tang\\Program Files\\Python38-32\\lib\\site-packages\\ddt.py\", line 182, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"c:\\Users\\tyler.tang\\Desktop\\code\\tylerhub\\demo\\registration_process\\register_actions_bin\\cp_register.py\", line 69, in test_register\n    e.saveainfo(path_process+r'\\test_excel_data\\Account_number.xlsx',data['国家'],'A',self.data_index+2)\n",
+                "NameError: name 'e' is not defined\n"
+            ]
+        },
+        {
+            "className": "Register_cp",
+            "methodName": "test_register_2",
+            "description": null,
+            "spendTime": "20.6 s",
+            "status": "错误",
+            "log": [
+                "当前测试数据:国家：南韩,英文国家名：kor；三字码：KOR；邮箱：00112400011@uitest.com；专属链接：；邀请码：\n",
+                "Traceback (most recent call last):\n",
+                "  File \"C:\\Users\\tyler.tang\\Program Files\\Python38-32\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
+                "  File \"C:\\Users\\tyler.tang\\Program Files\\Python38-32\\lib\\unittest\\case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n",
+                "  File \"C:\\Users\\tyler.tang\\Program Files\\Python38-32\\lib\\unittest\\case.py\", line 633, in _callTestMethod\n    method()\n",
+                "  File \"C:\\Users\\tyler.tang\\Program Files\\Python38-32\\lib\\site-packages\\ddt.py\", line 182, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"c:\\Users\\tyler.tang\\Desktop\\code\\tylerhub\\demo\\registration_process\\register_actions_bin\\cp_register.py\", line 69, in test_register\n    e.saveainfo(path_process+r'\\test_excel_data\\Account_number.xlsx',data['国家'],'A',self.data_index+2)\n",
+                "NameError: name 'e' is not defined\n"
             ]
         }
     ],
     "testName": "注册流程",
-    "testAll": 1,
-    "testFail": 0,
-    "beginTime": "2021-10-18 15:17:12",
-    "totalTime": "30s",
+    "testAll": 2,
+    "testFail": 2,
+    "beginTime": "2021-12-01 16:43:02",
+    "totalTime": "49s",
     "testSkip": 0,
     "testError": 0
 };

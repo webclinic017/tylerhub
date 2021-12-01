@@ -1,0 +1,8 @@
+!!--!!click_error - 2021-11-26 10:53:28,080 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-11-26 10:53:34,114 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-11-26 10:53:34,114 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!input_error - 2021-11-26 11:20:39,435 - browser_actions - [browser_actions.py-->line:222] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2021-11-26 11:38:09,115 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-11-26 11:38:09,121 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-11-26 11:38:09,123 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'

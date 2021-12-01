@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-18 16:08:10
-LastEditTime: 2021-08-24 11:01:57
+LastEditTime: 2021-11-30 17:55:41
 LastEditors: Please set LastEditors
 Description: Execute test cases
 FilePath: \tylerhub\demo\registration_process\register_actions_bin\review.py
@@ -21,17 +21,19 @@ from about_data import Aboutdata
 from preliminary_review import Review_actions
 from read_dataconfig import ReadConfig
 
-#实例化
-conFig=ReadConfig()
-rev=Review_actions()
-
-#读取测试数据
-e=Aboutdata()
-rows=e.openexcel(path_process+r'\test_excel_data\Account_number.xlsx','Sheet1')
-testdata=e.dict_data()
 
 @ddt.ddt
 class Review_account(unittest.TestCase):
+
+    global conFig,rev,dealData,testdata
+
+    conFig=ReadConfig()
+    rev=Review_actions()
+
+    #读取测试数据
+    dealData=Aboutdata()
+    rows=dealData.openexcel(path_process+r'\test_excel_data\Account_number.xlsx','Sheet1')
+    testdata=dealData.dict_data()
 
     @classmethod
     def setUpClass(cls):
@@ -46,8 +48,6 @@ class Review_account(unittest.TestCase):
         else:
             if self.case=='':
                 pass
-            else:
-                rev.clear_serach()
 
     @ddt.data(*testdata)
     def test_review(self,data):

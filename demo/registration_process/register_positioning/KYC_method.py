@@ -96,7 +96,7 @@ class Kyc_approve():
             time.sleep(1)
             #提交
             common.web_click('css,.agree-btn')
-            time.sleep(1)
+            time.sleep(2)
         else:
             #点击验证联系方式
             common.web_click('css,.el-button--primary')
@@ -132,7 +132,6 @@ class Kyc_approve():
     #验证邮箱
     def verification_emali(self):
         try:
-            self.is_rebate_type()
             time.sleep(1)
             #发送邮箱验证码
             common.web_click('css,.dialog-sendCode')
@@ -171,7 +170,7 @@ class Kyc_approve():
     def choose_data_gender(self):
         try:
             #出生日期
-            common.web_click('css,.el-input__inner',4)
+            common.web_click('css,.el-input__inner',5)
             time.sleep(1)
             common.web_click('css,.el-date-picker__header-label')
             time.sleep(1)
@@ -180,7 +179,7 @@ class Kyc_approve():
             #双击选择年份
             common.doubleclick('css,.el-picker-panel__icon-btn')
             time.sleep(1)
-            common.web_click('css,table>tbody>tr>td.available',randomData.random_int(31,40)) #年
+            common.web_click('css,table>tbody>tr>td.available',randomData.random_int(30,39)) #年
             time.sleep(1)
             common.web_click('css,table.el-month-table>tbody>tr>td',randomData.random_int(0,11))#月
             time.sleep(1)
@@ -189,6 +188,9 @@ class Kyc_approve():
             #随机性别
             common.web_click('css,.el-radio__inner',randomData.random_int(0,1))
             time.sleep(1)
+            #中间名
+            common.web_input('css,.el-input__inner', 'test',3)
+            time.sleep(0.5)
         except Exception as msg:
             log.my_logger('!!--!!choose_data_gender').error(msg)
 
@@ -196,10 +198,10 @@ class Kyc_approve():
     def submit(self):
         try:
             #输入证件号码
-            common.web_input('css,.el-input__inner',randomData.get_purerange(12,'number'),5)
+            common.web_input('css,.el-input__inner',randomData.get_purerange(12,'number'),6)
             time.sleep(1)
             #输入居住地址
-            common.web_input('css,.el-input__inner',randomData.get_purerange(12,'letter'),8)
+            common.web_input('css,.el-input__inner',randomData.get_purerange(12,'letter'),9)
             time.sleep(1)
             #勾选协议
             common.web_click('css,.el-checkbox__inner',1)
@@ -217,18 +219,21 @@ class Kyc_approve():
             common.switch_windows(1)
             time.sleep(1)
             #根据主账号搜索
+            common.web_clear('css,.ivu-input-default')
+            time.sleep(0.5)
             common.web_input('css,.ivu-input-default',self.account) #输入主账户
             time.sleep(1)
             common.web_click('css,.ivu-icon-ios-search',1) #点击搜索按钮
             time.sleep(1)
             #点击主账号进入账号详情页
             common.web_click('css,div.ivu-table-overflowX>table>tbody.ivu-table-tbody>tr>td',1)
+            time.sleep(0.5)
             #切换到主账号详情页窗口
             common.switch_windows(2)
-            time.sleep(1)
+            time.sleep(5)
             #点击邮件记录
             common.web_click('css,.ivu-anchor-link-title',-2)
-            time.sleep(5)
+            time.sleep(1)
             #打开验证码邮件
             common.web_click('css,.tips',1)
             time.sleep(1)
@@ -248,37 +253,50 @@ class Kyc_approve():
         common.display_click('css,.img-text-required')
         time.sleep(1)
         common.upload_img(path_process+r'\test_excel_data\upimg.exe',path_process+r'\test_excel_data\front.jpg')
-        time.sleep(5)
+        time.sleep(4)
         common.web_click('css,.img-text-required',1)
         time.sleep(1)
         common.upload_img(path_process+r'\test_excel_data\upimg.exe',path_process+r'\test_excel_data\behind.jpg')
-        time.sleep(5)
+        time.sleep(4)
         common.js_scroll('down')
-        time.sleep(1)
         #一键填充
         #common.display_click('css,div.el-col-8 > button > span',1)
-        time.sleep(3)
+        time.sleep(1)
         #点击下一步
         common.web_click('css,.submit-btn')
         time.sleep(6)
         #上传银行卡照片
         common.display_click('css,.img-text-required')
         time.sleep(1)
-        common.upload_img(path_process+r'\test_excel_data\upimg.exe',path_process+r'\test_excel_data\behind.jpg')
+        common.upload_img(path_process+r'\test_excel_data\upimg.exe',path_process+r'\test_excel_data\bank_card.jpg')
         time.sleep(4)
         #重新输入银行卡号
         common.web_clear('css,.el-input__inner')
         time.sleep(1)
         common.display_input('css,.el-input__inner',randomData.get_purerange(14,'number'))
-        time.sleep(2)
-        #一键填充
-        common.web_click('css,.el-button--text')
-        time.sleep(3)
+        time.sleep(1)
+        #银行名称
+        common.web_clear('css,.el-input__inner',2)
+        time.sleep(0.5)
+        common.display_input('css,.el-input__inner', 'bankname',2)
+        time.sleep(0.5)
+        #分行名称
+        common.display_input('css,.el-input__inner', 'bankbranch',3)
+        time.sleep(0.5)
+        #分行省份
+        common.display_input('css,.el-input__inner', 'bankprovince',4)
+        time.sleep(0.5)
+        #分行城市
+        common.display_input('css,.el-input__inner', 'bankcity',5)
+        time.sleep(0.5)
+        #勾选协议
+        common.display_click('css,.el-checkbox__inner')
+        time.sleep(0.5)
         #下一步
         common.web_click('css,.submit-btn')
         time.sleep(5)
         #选择地址认证
-        common.display_click('css,.img-text')
+        common.display_click('css,.la-file-alt')
         #上传地址证明
         common.display_click('css,.img-text-required')
         time.sleep(1)
@@ -291,13 +309,16 @@ class Kyc_approve():
     #KYC认证表单操作
     def get_on_kyc(self,region):
         try:
+            self.is_rebate_type()
             if region=='中国':
                 self.china_kyc()
             else:
                 #验证邮箱
                 self.verification_emali()
+                time.sleep(1)
                 #上传证件照
                 self.upload_ID_photo(path_process+r'\test_excel_data\upimg.exe',path_process+r'\test_excel_data\creataccount.jpg')
+                time.sleep(2)
                 #选择出生日期及性别
                 self.choose_data_gender()
                 #输入证件号码，地址，勾选协议并提交表单
@@ -327,7 +348,7 @@ class Kyc_approve():
             time.sleep(2)
             common.general_refresh_()
             #资料审核弹出
-            time.sleep(3)
+            time.sleep(2)
             common.display_click('css,.el-button--primary > span')
             time.sleep(2)
             self.text= common.get_text('css,.alert-text')

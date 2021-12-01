@@ -346,8 +346,8 @@ class Commonweb():
     #截图,自定义保存截图的文件夹名称
     def get_screenpict(self,name,filename='picture'):
         """
-        name:截图名称
-        filename:保存截图文件名称
+        :param name:截图名称
+        :param filename:保存截图文件名称
         """
         self.pict_name=time.strftime('%Y-%m-%d-%H.%M.%S',time.localtime(time.time())) #当前时间命名图片名
         self.pictdir_path=os.path.join(os.sys.path[0],filename)  #在当前路径下创建保存截图的文件夹

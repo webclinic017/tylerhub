@@ -12,17 +12,17 @@ from randomdata import Random_data
 from read_dataconfig import ReadConfig
 
 
-#实例化
-common=Commonweb()
-randomData=Random_data()
-ex=Aboutdata()
-log=MyLog()
-conFig=ReadConfig()
-
 #创建继承基础类的注册页表单操作模块
 class Form_operations():
     """会员中心注册页表单方法封装，注册页表单填写，定位元素封装在此类中，若页面元素发生变化，维护此模块即可"""
-    global driver
+    global driver,common,randomData,ex,log,conFig
+
+    common=Commonweb()
+    randomData=Random_data()
+    ex=Aboutdata()
+    log=MyLog()
+    conFig=ReadConfig()
+
     
     #默认以谷歌浏览器执行测试用例
     def browsertype(self,browsername='Chrome'):
@@ -32,7 +32,13 @@ class Form_operations():
 
     #根据链接/邀请码/直客注册
     def get_url(self,environment,url,code,column,row): #link:专属链接；code:邀请码；cloumn:列；row:行
-        """判断是通过专属链接还是邀请码注册"""
+        """
+        判断是通过专属链接还是邀请码注册
+        :param link:专属链接
+        :param code:邀请码
+        :param cloumn:列
+        :param row:行
+        """
         #获取当前项目路径
         path_process=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         try:
@@ -78,7 +84,7 @@ class Form_operations():
             return False
 
     #注册页表单填写
-    def fill_inform(self,lang,fristname,lastname,emali,password,cn_country,en_country):
+    def fill_inform(self,lang,fristname,lastname,emali,password,cn_country,en_country,code=None):
         #选择页面语言
         self.commethod.choose_register_lang(lang)
         try:
@@ -89,10 +95,18 @@ class Form_operations():
                 common.web_input('css,.el-input__inner',cn_country) #输入中文国家名
                 time.sleep(1)
                 common.web_click('xpath,//span[.="{}"]'.format(cn_country))
+                if cn_country == '中国':
+                    common.web_clear('css,.el-textarea__inner')
+                    time.sleep(0.5)
+                    common.web_input('css,.el-textarea__inner', code)
             else:
                 common.web_input('css,.el-input__inner',en_country) #输入英文国家名
                 time.sleep(1)
                 common.web_click('xpath,//span[.="{}"]'.format(en_country))
+                if en_country == 'China':
+                    common.web_clear('css,.el-textarea__inner')
+                    time.sleep(0.5)
+                    common.web_input('css,.el-textarea__inner', code)
             #输入名字
             common.display_input('css,.el-input__inner',fristname,1)
             #输入姓氏
@@ -162,3 +176,4 @@ class Form_operations():
     #退出浏览器
     def quitdriver(self):
         common.quit_browser()
+ 

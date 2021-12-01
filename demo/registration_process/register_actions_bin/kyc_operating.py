@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-08-24 10:58:50
+LastEditTime: 2021-12-01 17:01:27
 LastEditors: Please set LastEditors
 Description: Execute kyc test case
 FilePath: \tylerhub\demo\registration_process\register_actions_bin\kyc_operating.py
@@ -21,16 +21,18 @@ from about_data import Aboutdata
 from KYC_method import Kyc_approve
 from read_dataconfig import ReadConfig
 
-#实例化
-kyc=Kyc_approve()
-conFig=ReadConfig()
-e=Aboutdata()
-rows=e.openexcel(path_process+r'\test_excel_data\Account_number.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
-testdata=e.dict_data()
 
 @ddt.ddt
 class Kyc_actions(unittest.TestCase):
     """关键字驱动：完成邮箱注册及KYC表单操作,账号类型包括IB和CL以及中国区账号的处理"""
+
+    global kyc,conFig,dealData,testdata
+
+    kyc=Kyc_approve()
+    conFig=ReadConfig()
+    dealData=Aboutdata()
+    rows=dealData.openexcel(path_process+r'\test_excel_data\Account_number.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
+    testdata=dealData.dict_data()
 
     @classmethod
     def setUpClass(cls):
@@ -51,13 +53,9 @@ class Kyc_actions(unittest.TestCase):
             else:
                 #登出会员中心
                 kyc.logout_cp()
-                if not self.region=='中国':
-                    #清空主账号搜索条件
-                    kyc.clearaccount()
-                else:
-                    pass
 
-    @ddt.data(*e.dict_data())
+
+    @ddt.data(*dealData.dict_data())
     def test_kyc(self,data):
         #获取每组测试数据的下标
         self.data_index=testdata.index(data)
@@ -75,12 +73,13 @@ class Kyc_actions(unittest.TestCase):
             #登录会员中心
             kyc.login_cp(data['邮箱'],'Tl123456')
             #获取主账号并保存
-            e.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx',kyc.get_account_(),'C',self.data_index+2)
+            dealData.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx',kyc.get_account_(),'C',self.data_index+2)
             print('当前测试数据:邮箱{}'.format(data['邮箱']))
             #KYC表单认证
             kyc.get_on_kyc(data['地区'])
             #断言
             self.assertIn(kyc.get_kyc_success(),'您的资料正在审批中，您可查看 “季度市场展望” ，了解更多行情资讯 Your information is under review, you can check the "Quarterly Market Outlook" for more market information')
+
 
 if __name__=='__main__':
     suit=unittest.defaultTestLoader.discover(os.path.dirname(os.path.abspath(__file__)),

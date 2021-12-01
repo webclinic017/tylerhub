@@ -1,0 +1,4 @@
+!!--!!click_error - 2021-12-01 16:31:25,704 - browser_actions - [browser_actions.py-->line:262] - ERROR: Message: element not interactable
+  (Session info: chrome=95.0.4638.69)
+
+!!--!!clear_error - 2021-12-01 16:36:21,279 - browser_actions - [browser_actions.py-->line:239] - ERROR: 'NoneType' object has no attribute 'send_keys'

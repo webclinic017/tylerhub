@@ -1109,5 +1109,6 @@ def txt_xls(filename,xlsname):
 
 # print(time1==time2)
 
-
-float(3.5+4)
+import random
+for i in range(10):
+    print(random.randint(31, 40))

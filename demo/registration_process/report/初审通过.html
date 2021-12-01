@@ -7159,27 +7159,30 @@ body.skin-3 {
 
 
     var resultData = {
-    "testPass": 1,
+    "testPass": 0,
     "testResult": [
         {
             "className": "Review_account",
             "methodName": "test_review_1",
             "description": null,
-            "spendTime": "1.99e+02 s",
-            "status": "成功",
+            "spendTime": "0.213 s",
+            "status": "错误",
             "log": [
-                "当前测试数据:邮箱：1100000010@uitest.com，主账号：1000006091",
-                "AT Backoffice",
-                "成功(初审)",
-                ""
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"C:\\Users\\tyler.tang\\Program Files\\Python38-32\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
+                "  File \"C:\\Users\\tyler.tang\\Program Files\\Python38-32\\lib\\unittest\\case.py\", line 679, in run\n    self._callTearDown()\n",
+                "  File \"C:\\Users\\tyler.tang\\Program Files\\Python38-32\\lib\\unittest\\case.py\", line 636, in _callTearDown\n    self.tearDown()\n",
+                "  File \"c:\\Users\\tyler.tang\\Desktop\\code\\tylerhub\\demo\\registration_process\\register_actions_bin\\review.py\", line 46, in tearDown\n    if self.data_index==testdata.index(testdata[-1]):\n",
+                "AttributeError: 'Review_account' object has no attribute 'data_index'\n"
             ]
         }
     ],
     "testName": "审核流程",
     "testAll": 1,
-    "testFail": 0,
-    "beginTime": "2021-08-23 10:26:51",
-    "totalTime": "210s",
+    "testFail": 2,
+    "beginTime": "2021-11-30 17:54:22",
+    "totalTime": "16s",
     "testSkip": 0,
     "testError": 0
 };

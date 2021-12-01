@@ -1,0 +1,2 @@
+!!--!!click_error - 2021-11-30 10:33:10,529 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!clear_error - 2021-11-30 10:36:46,181 - browser_actions - [browser_actions.py-->line:239] - ERROR: 'NoneType' object has no attribute 'send_keys'

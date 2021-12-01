@@ -12,14 +12,15 @@ from handlelog import MyLog
 from randomdata import Random_data
 from read_dataconfig import ReadConfig
 
-#实例化
-randomData=Random_data()
-conFig=ReadConfig()
-log=MyLog()
+
 
 class Review_actions(Commonweb):
     
-    global driver
+    global driver,randomData,conFig,log
+
+    randomData=Random_data()
+    conFig=ReadConfig()
+    log=MyLog()
 
     #默认以谷歌浏览器执行测试用例
     def browsertype(self,browsername='Chrome'):
@@ -48,6 +49,8 @@ class Review_actions(Commonweb):
     def review_operation(self,account):
         try:
             #根据主账号搜索
+            self.web_clear('css,.ivu-input-default')
+            time.sleep(0.5)
             self.web_input('css,.ivu-input-default',account) #输入主账户
             time.sleep(1)
             self.web_click('css,.ivu-icon-ios-search',1) #点击搜索按钮
@@ -55,7 +58,6 @@ class Review_actions(Commonweb):
             #点击主账号进入账号详情页
             self.web_click('css,div.ivu-table-overflowX>table>tbody>tr>td',1)
             time.sleep(1)
-            print(self.title())
             self.switch_windows(1)
             time.sleep(1)
             #IB账户
@@ -107,7 +109,7 @@ class Review_actions(Commonweb):
         try:
             #移动到底部
             self.js_scroll('down')
-            time.sleep(3)
+            time.sleep(4)
             #点击返佣申请表格
             self.display_click('css,div#ibRebate > .ivu-collapse-header')
             #打开审核开关
