@@ -80,13 +80,13 @@ class Commonmethod():
             self.eles=self.driver.find_elements_by_css_selector('.el-input__inner')
             #输入用户名
             self.eles[1].clear()
-            time.sleep(1)
+            time.sleep(0.5)
             self.eles[1].send_keys(username)
-            time.sleep(1)
+            time.sleep(0.5)
             self.eles[-1].clear()
-            time.sleep(1)
+            time.sleep(0.5)
             self.eles[-1].send_keys(psword)
-            time.sleep(1)
+            time.sleep(0.5)
             self.driver.find_element_by_css_selector('.login-btn').click()
         except Exception as msg:
             log.my_logger('!!--!!login_cp').error(msg)
@@ -127,15 +127,15 @@ class Commonmethod():
     def loginbos(self,username,psword):
         try:
             self.ele_bos=self.driver.find_elements_by_css_selector('.ivu-input-default')
-            time.sleep(1)
+            time.sleep(0.5)
             self.ele_bos[0].clear()
             time.sleep(0.5)
             self.ele_bos[0].send_keys(username)
-            time.sleep(1)
+            time.sleep(0.5)
             self.ele_bos[1].clear()
             time.sleep(0.5)
             self.ele_bos[1].send_keys(psword)
-            time.sleep(1)
+            time.sleep(0.5)
             self.driver.find_element_by_css_selector('.ivu-btn-large').click() #登录
         except Exception as msg:
             log.my_logger('!!--!!login_bos').error(msg)

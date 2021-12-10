@@ -2,3 +2,54 @@
   (Session info: chrome=95.0.4638.69)
 
 !!--!!clear_error - 2021-12-01 16:36:21,279 - browser_actions - [browser_actions.py-->line:239] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!driver_name - 2021-12-01 17:10:44,360 - browser_actions - [browser_actions.py-->line:56] - ERROR: 启动浏览器异常Message: session not created: This version of ChromeDriver only supports Chrome version 94
+Current browser version is 96.0.4664.45 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+!!--!!url_error - 2021-12-01 17:10:44,361 - browser_actions - [browser_actions.py-->line:63] - WARNING: 请输入正确的域名
+!!--!!login_bos - 2021-12-01 17:10:44,362 - common_method - [common_method.py-->line:141] - ERROR: 'NoneType' object has no attribute 'find_elements_by_css_selector'
+!!--!!find_elements - 2021-12-01 17:10:45,372 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_element - 2021-12-01 17:10:45,373 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!click_error - 2021-12-01 17:10:45,373 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_elements - 2021-12-01 17:10:46,383 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_elements - 2021-12-01 17:10:46,383 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_element - 2021-12-01 17:10:46,384 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-12-01 17:10:46,384 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!click_error - 2021-12-01 17:10:46,385 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:10:46,385 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+qiut_browser - 2021-12-01 17:10:47,400 - browser_actions - [browser_actions.py-->line:523] - ERROR: 浏览器退出异常'Commonweb' object has no attribute 'driver'
+!!--!!find_element - 2021-12-01 17:14:40,068 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-01 17:14:40,068 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!get_text_error - 2021-12-01 17:14:46,118 - browser_actions - [browser_actions.py-->line:246] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!click_error - 2021-12-01 17:14:53,213 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:14:53,213 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:14:57,757 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:14:57,757 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:14:57,757 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_element - 2021-12-01 17:27:14,570 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-01 17:27:14,572 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!get_text_error - 2021-12-01 17:27:20,607 - browser_actions - [browser_actions.py-->line:246] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2021-12-01 17:35:03,450 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-12-01 17:35:03,451 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-12-01 17:35:03,452 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-12-01 17:36:27,541 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-12-01 17:36:27,543 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2021-12-01 17:36:27,544 - browser_actions - [browser_actions.py-->line:269] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_element - 2021-12-01 17:39:30,865 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-01 17:39:30,866 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!get_text_error - 2021-12-01 17:39:36,914 - browser_actions - [browser_actions.py-->line:246] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!click_error - 2021-12-01 17:39:44,023 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:39:44,023 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:39:48,629 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:39:48,629 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:39:48,629 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:39:54,667 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:39:54,667 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:39:54,667 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:39:54,667 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:40:00,681 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:40:00,681 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:40:00,681 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:40:00,681 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-01 17:40:00,681 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'

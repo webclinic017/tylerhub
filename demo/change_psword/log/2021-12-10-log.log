@@ -1,0 +1,3 @@
+!!--!!get_code - 2021-12-10 10:15:33,863 - locate_change_pswd_cp - [locate_change_pswd_cp.py-->line:144] - ERROR: name 'common' is not defined
+!!--!!change_psword - 2021-12-10 10:15:33,888 - locate_change_pswd_cp - [locate_change_pswd_cp.py-->line:97] - ERROR: 'Location' object has no attribute 'email_code'
+!!--!!change_psword - 2021-12-10 10:20:51,286 - locate_change_pswd_cp - [locate_change_pswd_cp.py-->line:97] - ERROR: 'Location' object has no attribute 'psword'

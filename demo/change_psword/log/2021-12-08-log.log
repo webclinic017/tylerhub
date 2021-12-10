@@ -1,0 +1,12 @@
+!!--!!get_code - 2021-12-08 17:04:18,837 - login_cp_changepsword - [login_cp_changepsword.py-->line:129] - ERROR: 'Random_data' object has no attribute 'log_output'
+!!--!!change_psword - 2021-12-08 17:04:19,860 - login_cp_changepsword - [login_cp_changepsword.py-->line:169] - ERROR: 'Location' object has no attribute 'email_code'
+!!--!!get_code - 2021-12-08 17:09:29,235 - login_cp_changepsword - [login_cp_changepsword.py-->line:126] - ERROR: 'Random_data' object has no attribute 'log_output'
+!!--!!change_psword - 2021-12-08 17:09:30,262 - login_cp_changepsword - [login_cp_changepsword.py-->line:166] - ERROR: 'Location' object has no attribute 'email_code'
+!!--!!get_code - 2021-12-08 17:14:12,537 - login_cp_changepsword - [login_cp_changepsword.py-->line:127] - ERROR: 'Random_data' object has no attribute 'log_output'
+!!--!!change_psword - 2021-12-08 17:14:13,561 - login_cp_changepsword - [login_cp_changepsword.py-->line:167] - ERROR: 'Location' object has no attribute 'email_code'
+!!--!!get_code - 2021-12-08 17:25:39,145 - login_cp_changepsword - [login_cp_changepsword.py-->line:127] - ERROR: 'Random_data' object has no attribute 'log_output'
+!!--!!get_code - 2021-12-08 17:27:50,012 - login_cp_changepsword - [login_cp_changepsword.py-->line:126] - ERROR: 'Random_data' object has no attribute 'log_output'
+!!--!!get_code - 2021-12-08 17:40:17,824 - login_cp_changepsword - [login_cp_changepsword.py-->line:127] - ERROR: 'Random_data' object has no attribute 'log_output'
+!!--!!change_psword - 2021-12-08 17:40:18,849 - login_cp_changepsword - [login_cp_changepsword.py-->line:167] - ERROR: 'Location' object has no attribute 'email_code'
+!!--!!change_psword - 2021-12-08 17:50:30,525 - login_cp_changepsword - [login_cp_changepsword.py-->line:167] - ERROR: name 'dealDta' is not defined
+!!--!!change_psword - 2021-12-08 17:54:37,877 - login_cp_changepsword - [login_cp_changepsword.py-->line:168] - ERROR: name 'dealData' is not defined

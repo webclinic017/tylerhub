@@ -1,0 +1,4 @@
+!!--!!review_operation - 2021-12-07 11:26:25,272 - preliminary_review - [preliminary_review.py-->line:101] - ERROR: argument of type 'NoneType' is not iterable
+!!--!!get_success_text - 2021-12-07 11:26:25,279 - preliminary_review - [preliminary_review.py-->line:124] - ERROR: argument of type 'NoneType' is not iterable
+!!--!!review_operation - 2021-12-07 11:45:53,953 - preliminary_review - [preliminary_review.py-->line:106] - ERROR: argument of type 'NoneType' is not iterable
+!!--!!get_success_text - 2021-12-07 11:45:53,960 - preliminary_review - [preliminary_review.py-->line:129] - ERROR: argument of type 'NoneType' is not iterable

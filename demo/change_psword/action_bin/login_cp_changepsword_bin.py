@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-08-24 10:47:57
+LastEditTime: 2021-12-08 17:00:10
 LastEditors: Please set LastEditors
 Description: Enforcement change password testcase
 FilePath: \tylerhub\demo\change_psword\action_bin\login_cp_changepsword_bin.py
@@ -21,18 +21,19 @@ from about_data import Aboutdata
 from login_cp_changepsword import Location
 from read_dataconfig import ReadConfig
 
-#实例化
-loca=Location()
-conFig=ReadConfig()
-#测试文档路径
-testdata_path=os.path.join(path_psword,'test_excel_data\chang_psword_incp.xlsx')
-#读取测试数据
-e=Aboutdata()
-rows=e.openexcel(testdata_path,'Sheet1')
-testdata=e.dict_data()
 
 @ddt.ddt
 class Change_password(unittest.TestCase):
+
+    global loca,conFig,testdata_path,dealData,testdata
+
+    loca=Location()
+    conFig=ReadConfig()
+
+    testdata_path=os.path.join(path_psword,'test_excel_data\chang_psword_incp.xlsx')
+    dealData=Aboutdata()
+    rows=dealData.openexcel(testdata_path,'Sheet1')
+    testdata=dealData.dict_data()
 
     @classmethod
     def setUpClass(cls):

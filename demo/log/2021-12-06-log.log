@@ -1,0 +1,72 @@
+!!--!!click_error - 2021-12-06 10:39:23,700 - browser_actions - [browser_actions.py-->line:262] - ERROR: Message: element not interactable
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!click_error - 2021-12-06 10:39:29,772 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-06 10:39:29,772 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!choose_bos_lang - 2021-12-06 17:18:54,177 - common_method - [common_method.py-->line:124] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (1089, 237). Other element would receive the click: <div data-v-78625cba="" class="background"></div>
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-06 18:10:54,581 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_element - 2021-12-06 18:10:54,583 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2021-12-06 18:10:54,584 - browser_actions - [browser_actions.py-->line:242] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2021-12-06 18:10:55,098 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-06 18:10:55,098 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_element - 2021-12-06 18:10:55,100 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-12-06 18:10:55,100 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2021-12-06 18:10:55,101 - browser_actions - [browser_actions.py-->line:225] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2021-12-06 18:10:56,104 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-06 18:10:56,104 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-06 18:10:56,104 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_element - 2021-12-06 18:10:56,106 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-12-06 18:10:56,106 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-12-06 18:10:56,106 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!click_error - 2021-12-06 18:10:56,108 - browser_actions - [browser_actions.py-->line:265] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_elements - 2021-12-06 18:10:58,121 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-06 18:10:58,121 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-06 18:10:58,121 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-06 18:10:58,121 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_element - 2021-12-06 18:10:58,124 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-12-06 18:10:58,124 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-12-06 18:10:58,124 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-12-06 18:10:58,124 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!click_error - 2021-12-06 18:10:58,126 - browser_actions - [browser_actions.py-->line:265] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-06 18:10:58,126 - browser_actions - [browser_actions.py-->line:265] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-06 18:12:15,863 - browser_actions - [browser_actions.py-->line:265] - ERROR: Message: element not interactable
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!click_error - 2021-12-06 18:12:21,413 - browser_actions - [browser_actions.py-->line:265] - ERROR: Message: element not interactable
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!click_error - 2021-12-06 18:12:21,413 - browser_actions - [browser_actions.py-->line:265] - ERROR: Message: element not interactable
+  (Session info: chrome=96.0.4664.45)
+

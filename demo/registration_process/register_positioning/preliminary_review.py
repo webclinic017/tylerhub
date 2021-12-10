@@ -54,7 +54,7 @@ class Review_actions(Commonweb):
             self.web_input('css,.ivu-input-default',account) #输入主账户
             time.sleep(1)
             self.web_click('css,.ivu-icon-ios-search',1) #点击搜索按钮
-            time.sleep(1)
+            time.sleep(2)
             #点击主账号进入账号详情页
             self.web_click('css,div.ivu-table-overflowX>table>tbody>tr>td',1)
             time.sleep(1)
@@ -66,21 +66,39 @@ class Review_actions(Commonweb):
             else:
                 pass
             #指派
+            while True:
+                if self.ele_is_displayed('css,.ivu-spin .spin-icon-load', 2):
+                    continue
+                else:
+                    break
             self.js_scroll('top')
             time.sleep(1)
             self.display_click('css,.ivu-btn-info')
             time.sleep(1)
             self.display_click('css,div.ivu-row-flex-center>button.ivu-btn-default')
-            time.sleep(5)
+            while True:
+                if 'display' in (self.get_attributes('xpath,/html/body/div[7]/div[2]/div', 'style')):
+                    break
+                else:
+                    continue
             #选择审核状态
             self.display_click('css,div.ivu-dropdown-rel>button.ivu-btn-default')
             time.sleep(1)
             #成功初审
-            self.display_click('css,ul.ivu-dropdown-menu>li.ivu-dropdown-item',1)
+            self.display_click("xpath,//li[contains(.,'成功(初审)')]")
             time.sleep(1)
             #输入随机邮编
             self.web_input('css,div.ivu-form-item-required>div>div>input',randomData.get_purerange(6,'number'),1)
-            time.sleep(2)
+            time.sleep(0.5)
+            #判断组别是否为空
+            if self.get_attributes('xpath,/html/body/div[6]/div[2]/div/div/div[2]/div[4]/form/div[2]/div[6]/div/div/div/div/div[1]/input', 'value')=='':
+                self.web_click('xpath,/html/body/div[6]/div[2]/div/div/div[2]/div[4]/form/div[2]/div[6]/div/div/div/div/div[1]/div/i')
+                time.sleep(0.5)
+                #默认选择'demoforex-atfx'
+                self.web_click("xpath,//li[.='demoforex-atfx']")
+                time.sleep(0.5)
+            else:
+                pass
             #点击确定
             self.web_click('css,button.ivu-btn-primary>span>span',2)
             time.sleep(1)
@@ -97,7 +115,12 @@ class Review_actions(Commonweb):
     def get_success_text(self):
         try:
             #获取文本
-            time.sleep(4)
+            while True:
+                if 'display' in (self.get_attributes('css,button.ivu-btn-primary>span>span', 'style',2)):
+                    continue
+                else:
+                    break
+            time.sleep(2)
             self.status=self.display_get_text('css,div.ivu-dropdown-rel>button.ivu-btn-default>span>span')
             print(self.status)
             self.closerweb()
@@ -109,7 +132,11 @@ class Review_actions(Commonweb):
         try:
             #移动到底部
             self.js_scroll('down')
-            time.sleep(4)
+            while True:
+                if self.ele_is_displayed('css,.ivu-spin .spin-icon-load', 2):
+                    continue
+                else:
+                    break
             #点击返佣申请表格
             self.display_click('css,div#ibRebate > .ivu-collapse-header')
             #打开审核开关
@@ -128,7 +155,11 @@ class Review_actions(Commonweb):
             time.sleep(1)
             #保存
             self.web_click('css,.ivu-icon-md-checkmark')
-            time.sleep(5)
+            while True:
+                if self.ele_is_displayed('css,.ivu-spin .spin-icon-load', 2):
+                    continue
+                else:
+                    break
             self.js_scroll('down')
             time.sleep(1)
             #双击代理连接

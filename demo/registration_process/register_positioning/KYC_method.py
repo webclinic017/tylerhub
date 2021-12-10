@@ -170,7 +170,7 @@ class Kyc_approve():
     def choose_data_gender(self):
         try:
             #出生日期
-            common.web_click('css,.el-input__inner',5)
+            common.web_click('css,.el-input__inner',4)
             time.sleep(1)
             common.web_click('css,.el-date-picker__header-label')
             time.sleep(1)
@@ -188,9 +188,9 @@ class Kyc_approve():
             #随机性别
             common.web_click('css,.el-radio__inner',randomData.random_int(0,1))
             time.sleep(1)
-            #中间名
-            common.web_input('css,.el-input__inner', 'test',3)
-            time.sleep(0.5)
+            # #中间名
+            # common.web_input('css,.el-input__inner', 'test',3)
+            # time.sleep(0.5)
         except Exception as msg:
             log.my_logger('!!--!!choose_data_gender').error(msg)
 
@@ -198,10 +198,10 @@ class Kyc_approve():
     def submit(self):
         try:
             #输入证件号码
-            common.web_input('css,.el-input__inner',randomData.get_purerange(12,'number'),6)
+            common.web_input('css,.el-input__inner',randomData.get_purerange(12,'number'),5)
             time.sleep(1)
             #输入居住地址
-            common.web_input('css,.el-input__inner',randomData.get_purerange(12,'letter'),9)
+            common.web_input('css,.el-input__inner',randomData.get_purerange(12,'letter'),8)
             time.sleep(1)
             #勾选协议
             common.web_click('css,.el-checkbox__inner',1)
@@ -224,18 +224,25 @@ class Kyc_approve():
             common.web_input('css,.ivu-input-default',self.account) #输入主账户
             time.sleep(1)
             common.web_click('css,.ivu-icon-ios-search',1) #点击搜索按钮
-            time.sleep(1)
+            time.sleep(3)
             #点击主账号进入账号详情页
             common.web_click('css,div.ivu-table-overflowX>table>tbody.ivu-table-tbody>tr>td',1)
             time.sleep(0.5)
             #切换到主账号详情页窗口
             common.switch_windows(2)
-            time.sleep(5)
+            time.sleep(2)
             #点击邮件记录
-            common.web_click('css,.ivu-anchor-link-title',-2)
+            common.web_click("xpath,//a[.='邮件记录']")
             time.sleep(1)
-            #打开验证码邮件
-            common.web_click('css,.tips',1)
+ 
+            while True:
+                emailtext=common.get_text('css,.emailRecod-table .ivu-table-tip span')
+                if not emailtext=='暂无数据':
+                    break
+                else:
+                    continue
+            time.sleep(2)
+            common.web_click('css,.tips',1)            
             time.sleep(1)
             #获取验证码文本
             acc_text=common.get_text('xpath,//div[@class="ivu-drawer-wrap"]//tr[2]//tr[4]/td[1]/span')
@@ -297,6 +304,7 @@ class Kyc_approve():
         time.sleep(5)
         #选择地址认证
         common.display_click('css,.la-file-alt')
+        time.sleep(1)
         #上传地址证明
         common.display_click('css,.img-text-required')
         time.sleep(1)
@@ -316,9 +324,11 @@ class Kyc_approve():
                 #验证邮箱
                 self.verification_emali()
                 time.sleep(1)
+                common.display_click('css,.img-text')
+                time.sleep(1)
                 #上传证件照
-                self.upload_ID_photo(path_process+r'\test_excel_data\upimg.exe',path_process+r'\test_excel_data\creataccount.jpg')
-                time.sleep(2)
+                common.upload_img(path_process+r'\test_excel_data\upimg.exe',path_process+r'\test_excel_data\creataccount.jpg')
+                time.sleep(3)
                 #选择出生日期及性别
                 self.choose_data_gender()
                 #输入证件号码，地址，勾选协议并提交表单

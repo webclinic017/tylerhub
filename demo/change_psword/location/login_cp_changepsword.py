@@ -12,14 +12,16 @@ from handlelog import MyLog
 from randomdata import Random_data
 from read_dataconfig import ReadConfig
 
-common=Commonweb()
-log=MyLog()
-excel=Aboutdata()
-conFig=ReadConfig()
-randomData=Random_data()
 
 class Location():
-    global driver
+
+    global driver,common,log,conFig,randomData,dealData
+
+    common=Commonweb()
+    log=MyLog()
+    dealData=Aboutdata()
+    conFig=ReadConfig()
+    randomData=Random_data()
 
     #赋值对象driver
     def broswertype(self,broswername='Chrome'):
@@ -95,17 +97,23 @@ class Location():
             time.sleep(1)
             #搜索
             common.web_click('css,.ivu-icon-ios-search',1)
-            time.sleep(1)
+            time.sleep(3)
             #进入详情页
             common.display_click('css,div.ivu-table-overflowX>table>tbody.ivu-table-tbody>tr>td',1)
             #点击邮件短信记录
-            time.sleep(2)
+            time.sleep(1)
             common.switch_windows(2)
             time.sleep(1)
-            common.display_click('css,.ivu-anchor-link-title',-2)
-            time.sleep(1)
-            #打开验证码邮件
-            common.display_click('css,.tips',1)
+            common.display_click("xpath,//a[.='邮件记录']")
+            time.sleep(0.5)
+            while True:
+                emailtext=common.get_text('css,.emailRecod-table .ivu-table-tip span')
+                if not emailtext=='暂无数据':
+                    break
+                else:
+                    continue
+            time.sleep(2)
+            common.web_click('css,.tips',1)
             time.sleep(1)
             #获取验证码文本
             code_text=common.display_get_text('xpath,//div[@class="ivu-drawer-wrap"]//tr[2]//tr[4]/td[1]/span')
@@ -118,17 +126,6 @@ class Location():
             return self.email_code
         except Exception as msg:
             log.my_logger('!!--!!get_code').error(msg)
-
-    #生成N为数字与大小写字母组合的随机数
-    def get_psword_type(self,N):
-        if 2<N<=12:
-            num_str=''.join(random.sample('0123456789',N-2))
-            block_letter=random.choice('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-            lowser_letter=random.choice('abcdefghijklmnopqrstuvwxyz')
-            self.psword=block_letter+lowser_letter+num_str
-            return self.psword
-        else:
-            print('N必须大于2小于等于12')
 
     #修改密码
     def change_psword(self,username,psword,account,excelpath,column,row,N):
@@ -145,16 +142,17 @@ class Location():
             common.display_click('css,.el-button--primary.sendBtn > span')
             time.sleep(1)
             #生成随机新密码
-            self.get_psword_type(N)
+            self.newpsword=randomData.get_psword_type(8)
             #输入新密码
-            common.display_input('css,.el-input__inner',self.psword,2)
+            common.display_input('css,.el-input__inner',self.newpsword,2)
             #确认新密码
-            common.display_input('css,.el-input__inner',self.psword,-1)
+            common.display_input('css,.el-input__inner',self.newpsword,-1)
             time.sleep(1)
             #提交
             common.display_click('css,.save>span')
+            time.sleep(1)
             #存储测试数据
-            excel.saveainfo(excelpath,self.psword,column,row)
+            dealData.saveainfo(excelpath,self.newpsword,column,row)
             time.sleep(1)
         except Exception as msg:
             log.my_logger('!!--!!change_psword').error(msg)
@@ -166,6 +164,7 @@ class Location():
     #捕获修改成功后的文本
     def get_sucessful_change(self):
         try:
+            time.sleep(1)
             self.sucesstext=common.display_get_text('css,.el-message__content')
             print(self.sucesstext)
             return self.sucesstext

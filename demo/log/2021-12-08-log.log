@@ -1,0 +1,55 @@
+!!--!!find_element - 2021-12-08 17:04:10,128 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-08 17:04:10,130 - browser_actions - [browser_actions.py-->line:265] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!nosuch_elements - 2021-12-08 17:04:11,146 - browser_actions - [browser_actions.py-->line:152] - ERROR: list index out of range
+!!--!!display_click - 2021-12-08 17:04:11,147 - browser_actions - [browser_actions.py-->line:272] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-12-08 17:04:17,827 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-12-08 17:04:17,832 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-12-08 17:04:17,832 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2021-12-08 17:04:17,833 - browser_actions - [browser_actions.py-->line:256] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!find_element - 2021-12-08 17:09:21,676 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-08 17:09:21,678 - browser_actions - [browser_actions.py-->line:265] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-12-08 17:09:28,225 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-12-08 17:09:28,226 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2021-12-08 17:09:28,227 - browser_actions - [browser_actions.py-->line:256] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2021-12-08 17:09:35,826 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-12-08 17:09:35,826 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-12-08 17:09:35,828 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-12-08 17:09:35,828 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2021-12-08 17:09:35,830 - browser_actions - [browser_actions.py-->line:256] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2021-12-08 17:09:35,830 - browser_actions - [browser_actions.py-->line:256] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!find_element - 2021-12-08 17:14:04,965 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-08 17:14:04,967 - browser_actions - [browser_actions.py-->line:265] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-12-08 17:14:11,525 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-12-08 17:14:11,526 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2021-12-08 17:14:11,527 - browser_actions - [browser_actions.py-->line:256] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2021-12-08 17:14:19,119 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2021-12-08 17:14:19,119 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-12-08 17:14:19,120 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2021-12-08 17:14:19,120 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2021-12-08 17:14:19,121 - browser_actions - [browser_actions.py-->line:256] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2021-12-08 17:14:19,121 - browser_actions - [browser_actions.py-->line:256] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!find_element - 2021-12-08 17:25:31,614 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-08 17:25:31,616 - browser_actions - [browser_actions.py-->line:265] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-12-08 17:25:38,130 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-12-08 17:25:38,132 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2021-12-08 17:25:38,132 - browser_actions - [browser_actions.py-->line:256] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!find_element - 2021-12-08 17:27:43,432 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-08 17:27:43,433 - browser_actions - [browser_actions.py-->line:265] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-12-08 17:27:48,998 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-12-08 17:27:48,999 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2021-12-08 17:27:49,000 - browser_actions - [browser_actions.py-->line:256] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!find_element - 2021-12-08 17:40:10,233 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-08 17:40:10,234 - browser_actions - [browser_actions.py-->line:265] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2021-12-08 17:40:16,810 - browser_actions - [browser_actions.py-->line:125] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2021-12-08 17:40:16,811 - browser_actions - [browser_actions.py-->line:152] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2021-12-08 17:40:16,812 - browser_actions - [browser_actions.py-->line:256] - ERROR: 'NoneType' object has no attribute 'text'

@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-08-26 19:03:37
+LastEditTime: 2021-12-10 10:08:10
 LastEditors: Please set LastEditors
 Description: Enforcement change password testcase
 FilePath: \tylerhub\demo\change_psword\action_bin\Change_password_cp.py
@@ -21,17 +21,18 @@ from about_data import Aboutdata
 from locate_change_pswd_cp import Location
 from read_dataconfig import ReadConfig
 
-#实例化
-loca=Location()
-conFig=ReadConfig()
-
-#读取测试数据
-e=Aboutdata()
-rows=e.openexcel(path_psword+r'\test_excel_data\test_data.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
-testdata=e.dict_data()
 
 @ddt.ddt
 class Change_in_cp(unittest.TestCase):
+
+    global loca,conFig,dealData,testdata
+
+    loca=Location()
+    conFig=ReadConfig()
+
+    dealData=Aboutdata()
+    rows=dealData.openexcel(path_psword+r'\test_excel_data\test_data.xlsx','Sheet1') #测试文档的路径，sheet名,并获取总行数
+    testdata=dealData.dict_data()
 
     @classmethod
     def setUpClass(cls):

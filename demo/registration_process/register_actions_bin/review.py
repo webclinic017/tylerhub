@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-18 16:08:10
-LastEditTime: 2021-11-30 17:55:41
+LastEditTime: 2021-12-07 11:12:42
 LastEditors: Please set LastEditors
 Description: Execute test cases
 FilePath: \tylerhub\demo\registration_process\register_actions_bin\review.py
@@ -32,7 +32,7 @@ class Review_account(unittest.TestCase):
 
     #读取测试数据
     dealData=Aboutdata()
-    rows=dealData.openexcel(path_process+r'\test_excel_data\Account_number.xlsx','Sheet1')
+    rows=dealData.openexcel(path_process+r'\test_excel_data\account_number.xlsx','Sheet1')
     testdata=dealData.dict_data()
 
     @classmethod
@@ -60,7 +60,7 @@ class Review_account(unittest.TestCase):
             print('当前测试数据:邮箱：{}，主账号：{}'.format(data['邮箱'],int(data['主账号'])))
             rev.review_operation(int(data['主账号']))
             #断言
-            self.assertIn(rev.get_success_text(),' 成功(初审) Successful (1st Review)')
+            self.assertIn('初审处理中',rev.get_success_text())
 
 
 if __name__=='__main__':

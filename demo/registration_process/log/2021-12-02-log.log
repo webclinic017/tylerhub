@@ -1,0 +1,2 @@
+!!--!!get_emailcode_ - 2021-12-02 16:06:45,269 - KYC_method - [KYC_method.py-->line:248] - ERROR: 获取邮箱验证失败'Random_data' object has no attribute 'log_output'
+!!--!!verification_emali - 2021-12-02 16:06:46,296 - KYC_method - [KYC_method.py-->line:156] - ERROR: 'Kyc_approve' object has no attribute 'emailcode'

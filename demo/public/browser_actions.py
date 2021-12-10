@@ -154,6 +154,9 @@ class Commonweb():
     #显示等待获取页面某个元素的属性
     def get_attributes(self,locator,element,index=0):
         try:
+            """
+            获取元素属性
+            """
             return self.display_find_element(locator,index).get_attribute(element)
         except Exception as msg:
             log.my_logger('!!--!!get_attributes').error(msg)

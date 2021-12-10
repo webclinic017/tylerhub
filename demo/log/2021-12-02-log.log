@@ -1,0 +1,90 @@
+!!--!!find_element - 2021-12-02 16:06:39,229 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-02 16:06:39,230 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!get_text_error - 2021-12-02 16:06:45,268 - browser_actions - [browser_actions.py-->line:246] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!find_element - 2021-12-02 16:14:26,546 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-02 16:14:26,547 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_element - 2021-12-02 16:16:36,873 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-02 16:16:36,874 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_element - 2021-12-02 16:18:29,264 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-02 16:18:29,266 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-02 16:24:46,115 - browser_actions - [browser_actions.py-->line:262] - ERROR: Message: element click intercepted: Element <td class="ivu-table-column-Yo3U5l">...</td> is not clickable at point (493, 314). Other element would receive the click: <div class="ivu-spin ivu-spin-large ivu-spin-fix">...</div>
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_element - 2021-12-02 16:27:50,966 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-02 16:27:50,968 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_element - 2021-12-02 16:31:37,274 - browser_actions - [browser_actions.py-->line:139] - ERROR: list index out of range
+!!--!!click_error - 2021-12-02 16:31:37,275 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-02 17:08:39,996 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-02 17:08:46,050 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-02 17:08:46,050 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-02 17:09:03,000 - browser_actions - [browser_actions.py-->line:262] - ERROR: Message: element not interactable
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!click_error - 2021-12-02 17:09:03,000 - browser_actions - [browser_actions.py-->line:262] - ERROR: Message: element not interactable
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!click_error - 2021-12-02 17:09:03,000 - browser_actions - [browser_actions.py-->line:262] - ERROR: Message: element not interactable
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-02 17:09:06,804 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_element - 2021-12-02 17:09:06,806 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!click_error - 2021-12-02 17:09:06,806 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-02 17:09:06,806 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-02 17:09:06,806 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-02 17:09:06,806 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_elements - 2021-12-02 17:09:07,821 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-02 17:09:07,821 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_element - 2021-12-02 17:09:07,822 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-12-02 17:09:07,822 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!click_error - 2021-12-02 17:09:07,823 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-02 17:09:07,823 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-02 17:09:07,823 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-02 17:09:07,823 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!click_error - 2021-12-02 17:09:07,823 - browser_actions - [browser_actions.py-->line:262] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_elements - 2021-12-02 17:09:08,828 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-02 17:09:08,828 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-02 17:09:08,828 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_element - 2021-12-02 17:09:08,831 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-12-02 17:09:08,831 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-12-02 17:09:08,831 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2021-12-02 17:09:08,832 - browser_actions - [browser_actions.py-->line:222] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2021-12-02 17:09:09,343 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-02 17:09:09,343 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-02 17:09:09,343 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_elements - 2021-12-02 17:09:09,343 - browser_actions - [browser_actions.py-->line:92] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.45)
+
+!!--!!find_element - 2021-12-02 17:09:09,347 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-12-02 17:09:09,347 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-12-02 17:09:09,347 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2021-12-02 17:09:09,347 - browser_actions - [browser_actions.py-->line:139] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2021-12-02 17:09:09,349 - browser_actions - [browser_actions.py-->line:222] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!input_error - 2021-12-02 17:09:09,349 - browser_actions - [browser_actions.py-->line:222] - ERROR: 'NoneType' object has no attribute 'send_keys'
