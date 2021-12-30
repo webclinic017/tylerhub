@@ -1109,6 +1109,145 @@ def txt_xls(filename,xlsname):
 
 # print(time1==time2)
 
-import random
-for i in range(10):
-    print(random.randint(31, 40))
+# import random
+# for i in range(10):
+#     print(random.randint(31, 40))
+# if  (not 1==3) and (7>9 and 9>8):
+#     print(111)
+# else:
+#     print(222)
+
+# from browser_actions import Commonweb
+
+# common=Commonweb()
+
+# common.open_browser(browsername='opera')
+
+# common.open_web('https://www.baidu.com/')
+
+# from selenium import webdriver
+
+# dr=webdriver.Opera()
+
+# dr.get('https://www.baidu.com/')
+
+
+# import sys
+
+# import re
+
+# # path1=sys.path
+# pattern = r'[Pp]ython\d*\S?\d{1,}$'
+
+# # list1=['D:\Python\Python38-32\DLLs', 'D:\Python\Python38-32\lib', 'D:\Python\Python3-32']
+
+# # for i in list1:
+# #     result=re.findall(pattern, i)
+# #     print(result)
+
+# for i in sys.path:
+#     if (''.join(re.findall(pattern, i))) !='':
+#         print(i)
+#         print(type(i))
+
+
+# a=100
+# b=100
+# print(a is b)
+
+# from browser_actions import Commonweb
+
+# common=Commonweb()
+
+# common.open_browser(browsername='chrome')
+
+# common.open_web('https://www.baidu.com/')
+
+
+# from selenium import webdriver
+# options = webdriver.ChromeOptions()
+# options.add_argument('--user-agent=Mozilla/5.0 (Linux; Android 10; JER-TN10 Build/HUAWEIJER-TN10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/12.4 SP-engine/2.25.0 baiduboxapp/12.4.0.11 (Baidu; P1 10) NABar/1.0')
+# # options.add_argument('--headless')  # 浏览器不提供可视化页面
+# # options.add_argument('--user-agent=iphone8')
+# driver=webdriver.Chrome(options=options)
+# driver.get('https://at-client-portal-sit.atfxdev.com/login')
+
+
+# chrome的user-agent配置
+# firefox的安装路径
+# 其他浏览器的驱动验证
+# safari浏览器驱动下载
+# 其他浏览器的无痕模式
+
+
+# import win32con,win32api
+# def get_Reg_key(path,key_):
+#     # coding:utf-8
+#     reg_root = win32con.HKEY_LOCAL_MACHINE
+#     #reg_root = win32con.HKEY_CLASSES_ROOT
+#     reg_path = r'%s' % path
+#     reg_flags = win32con.KEY_READ | win32con.KEY_WOW64_64KEY
+#     # 读取键值
+#     key = win32api.RegOpenKey(reg_root, reg_path, 0, reg_flags)
+#     value, key_type = win32api.RegQueryValueEx(key, key_)
+    
+#     #关闭键
+#     win32api.RegCloseKey(key)
+#     return {"value":value}
+
+
+# import winreg
+	
+# reg_path=r"Software\\ThunderCloudToolboxs" #不要填入HKEY_CURRENT_USER，在openkey的时候填
+# key=winreg.OpenKeyEx(winreg.HKEY_CURRENT_USER,reg_path)
+# data=winreg.QueryValueEx(key,None) # 获取默认值 传递 None
+# #data=winreg.QueryValueEx(key,'DisplayIcon') #默认值传递None
+# print(data[0])#获取数据
+
+from selenium import webdriver
+import os
+from read_dataconfig import ReadConfig
+options = webdriver.ChromeOptions()
+# options.add_argument('--user-agent=Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11t Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045410 Mobile Safari/537.36 V1_AND_SQ_7.7.0_884_YYB_D QQ/7.7.0.3645 NetType/WIFI WebP/0.3.0 Pixel/1080')
+# options.add_argument('--user-agent=Iphone X')
+
+
+
+
+filepath=os.path.join(os.path.dirname(os.path.abspath(__file__)),'config\Chrome_userAgnet.ini')
+conFig_agnet=ReadConfig(filepath=filepath)
+conFig=ReadConfig()
+options.add_argument('--user-agent={}'.format(conFig_agnet.get_value('user_agnet','Ipad_Mini')))
+dr=webdriver.Chrome(options=options)
+# dr.maximize_window()
+dr.get(conFig.get_value('cp_login', 'sit'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

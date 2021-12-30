@@ -1,0 +1,16 @@
+!!--!!driver_name - 2021-12-16 10:42:14,461 - browser_actions - [browser_actions.py-->line:82] - ERROR: 启动浏览器异常'Options' object has no attribute 'add_experimental_option'
+!!--!!url_error - 2021-12-16 10:42:14,462 - browser_actions - [browser_actions.py-->line:89] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2021-12-16 10:42:46,364 - browser_actions - [browser_actions.py-->line:81] - ERROR: 启动浏览器异常Message: 'geckodriver' executable needs to be in PATH. 
+
+!!--!!url_error - 2021-12-16 10:42:46,365 - browser_actions - [browser_actions.py-->line:88] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2021-12-16 10:45:40,922 - browser_actions - [browser_actions.py-->line:81] - ERROR: 启动浏览器异常Message: 'geckodriver.exe' executable needs to be in PATH. 
+
+!!--!!url_error - 2021-12-16 10:45:40,923 - browser_actions - [browser_actions.py-->line:88] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2021-12-16 10:46:36,410 - browser_actions - [browser_actions.py-->line:81] - ERROR: 启动浏览器异常[WinError 3] 系统找不到指定的路径。: 'D:\\Python\\Python38-32\\geckodriver.exe'
+!!--!!url_error - 2021-12-16 10:46:36,411 - browser_actions - [browser_actions.py-->line:88] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2021-12-16 10:53:46,734 - browser_actions - [browser_actions.py-->line:81] - ERROR: 启动浏览器异常[WinError 267] 目录名称无效。: 'D:\\Python\\Python38-32\\geckodriver.exe'
+!!--!!url_error - 2021-12-16 10:53:46,734 - browser_actions - [browser_actions.py-->line:88] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2021-12-16 10:56:02,561 - browser_actions - [browser_actions.py-->line:83] - ERROR: 启动浏览器异常'Options' object has no attribute 'add_experimental_option'
+!!--!!url_error - 2021-12-16 10:56:02,561 - browser_actions - [browser_actions.py-->line:90] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2021-12-16 11:02:27,691 - browser_actions - [browser_actions.py-->line:81] - ERROR: 启动浏览器异常'Commonweb' object has no attribute 'driver'
+!!--!!url_error - 2021-12-16 11:02:27,692 - browser_actions - [browser_actions.py-->line:88] - WARNING: 请输入正确的域名

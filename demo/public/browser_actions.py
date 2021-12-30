@@ -1,5 +1,7 @@
 import os
+import sys
 import time
+import re
 import pyautogui
 
 from PIL import Image
@@ -25,18 +27,24 @@ class Commonweb():
         """
         :param download_path :下载路径
         :param browsername: 浏览器名称
-        打开浏览器，浏览器名称：Firefox，Chrome，默认以谷歌浏览器打开
+        打开浏览器，浏览器名称：Firefox，Chrome,Ie,Opera,Edge，默认以谷歌浏览器打开(Opera暂时找不到对应版本驱动)
         """
         try:
             prefs={'download.default_directory':'{}'.format(download_path)} #设置下载路径
+            
+            self.pattern=r'[Pp]ython\d*\S?\d{1,}$'
+            for i in sys.path:
+                if (''.join(re.findall(self.pattern, i)))!='':
+                    self.pyPath=i #获取本地python安装目录
+                else:
+                    pass
             if browsername=='firefox' or browsername=='Firefox' or browsername=='fx': #火狐浏览器
                 #配置浏览器
                 options=webdriver.FirefoxOptions()
                 #设置浏览器配置
                 options.add_argument('lang=zh_CN.UTF-8') #初始化浏览器默认编码格式
                 options.add_argument('--incognito') #无痕模式
-                options.add_argument('--start-maximized') #浏览器全频
-                options.add_experimental_option('prefs',prefs) #设置下载路径
+                options.add_argument('--start-maximized') 
                 self.driver=webdriver.Firefox(options=options) #添加配置
                 self.driver.implicitly_wait(5) #隐式等待5s
             elif browsername=='chrome' or browsername=='Chrome':
@@ -49,8 +57,26 @@ class Commonweb():
                 options.add_experimental_option('prefs',prefs) #设置下载路径
                 self.driver=webdriver.Chrome(options=options)#添加配置
                 self.driver.implicitly_wait(5) #隐式等待5s
+            elif browsername=='IE' or browsername=='ie':
+                #配置浏览器
+                options=webdriver.IeOptions()
+                #设置浏览器配置
+                options.add_argument('lang=zh_CN.UTF-8') #初始化浏览器默认编码格式
+                options.add_argument('--incognito') #无痕模式
+                options.add_argument('--start-maximized') #浏览器全频
+                self.driver=webdriver.Ie(options=options)#添加配置
+                self.driver.implicitly_wait(5) #隐式等待5s
+            # elif browsername=='Opera' or browsername=='opera':
+            #     self.driver=webdriver.Opera(os.path.join(self.pyPath,'operadriver.exe'))
+            #     self.driver.maximize_window()
+            #     self.driver.implicitly_wait(5)
+            elif browsername=='Edge' or browsername=='edge':
+                self.driver=webdriver.Edge(os.path.join(self.pyPath,'msedgedriver.exe'))
+                self.driver.implicitly_wait(5)
             else:
-                log.my_logger('!!--!!driver_browser').info('没有找到这种浏览器驱动，你可以尝试输入firefox、Firefox、fx、chrome、Chrome')
+                log.my_logger('!!--!!driver_browser').info('没有找到这种浏览器驱动，你可以尝试输入firefox、Firefox、chrome、Chrome、ie、opera等')
+            
+            # self.driver.maximize_window()
             return self.driver
         except Exception as msg:
             log.my_logger('!!--!!driver_name').error('启动浏览器异常{}'.format(msg))
@@ -204,10 +230,6 @@ class Commonweb():
                 print('请输入正确的定位方法或者等待时间')
         except Exception as msg:
             log.my_logger('!!--!!is_displayed').error(msg)
-
-
-
-
 
 
     #判断某个元素是否被选中

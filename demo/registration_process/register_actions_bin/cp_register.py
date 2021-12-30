@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-12-01 16:44:54
+LastEditTime: 2021-12-22 11:10:30
 LastEditors: Please set LastEditors
 Description: Perform cases of register
 FilePath: \tylerhub\demo\registration_process\register_actions_bin\cp_register.py
@@ -71,6 +71,7 @@ class Register_cp(unittest.TestCase):
             dealData.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx',data['三字码'],'D',self.data_index+2)
             dealData.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx',data['国家'],'G',self.data_index+2)
             dealData.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx',data['邀请码'],'H',self.data_index+2)
+
 
 if __name__=='__main__':
     #测试报告

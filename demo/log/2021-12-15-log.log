@@ -1,0 +1,18 @@
+!!--!!driver_name - 2021-12-15 16:15:53,332 - browser_actions - [browser_actions.py-->line:73] - ERROR: 启动浏览器异常Message: unknown error: cannot find Opera binary
+  (Driver info: operadriver=83.0.4103.97 (326d148b9655369b86498d9ecca39f63dd2bdd2d-refs/branch-heads/4103@{#657}),platform=Windows NT 10.0.19043 x86_64)
+
+!!--!!url_error - 2021-12-15 16:15:53,333 - browser_actions - [browser_actions.py-->line:80] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2021-12-15 16:19:17,076 - browser_actions - [browser_actions.py-->line:73] - ERROR: 启动浏览器异常Message: 'MicrosoftWebDriver.exe' executable needs to be in PATH. Please download from http://go.microsoft.com/fwlink/?LinkId=619687
+
+!!--!!url_error - 2021-12-15 16:19:17,079 - browser_actions - [browser_actions.py-->line:80] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2021-12-15 17:58:47,854 - browser_actions - [browser_actions.py-->line:82] - ERROR: 启动浏览器异常name 're' is not defined
+!!--!!url_error - 2021-12-15 17:58:47,855 - browser_actions - [browser_actions.py-->line:89] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2021-12-15 17:59:05,713 - browser_actions - [browser_actions.py-->line:83] - ERROR: 启动浏览器异常Message: Desired Capabilities must be a dictionary
+
+!!--!!url_error - 2021-12-15 17:59:05,714 - browser_actions - [browser_actions.py-->line:90] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2021-12-15 18:03:49,563 - browser_actions - [browser_actions.py-->line:82] - ERROR: 启动浏览器异常Message: Desired Capabilities must be a dictionary
+
+!!--!!url_error - 2021-12-15 18:03:49,564 - browser_actions - [browser_actions.py-->line:89] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2021-12-15 18:04:59,432 - browser_actions - [browser_actions.py-->line:82] - ERROR: 启动浏览器异常Message: Desired Capabilities must be a dictionary
+
+!!--!!url_error - 2021-12-15 18:04:59,433 - browser_actions - [browser_actions.py-->line:89] - WARNING: 请输入正确的域名

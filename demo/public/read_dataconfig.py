@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-18 16:08:10
-LastEditTime: 2021-09-14 11:36:29
+LastEditTime: 2021-12-23 16:50:06
 LastEditors: Please set LastEditors
 Description: Read configuration file
 FilePath: \tylerhub\demo\public\read_dataconfig.py

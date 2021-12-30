@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-27 15:13:40
-LastEditTime: 2021-10-14 15:08:07
+LastEditTime: 2021-12-22 14:26:48
 LastEditors: Please set LastEditors
 Description: Execute testcase
 FilePath: \tylerhub\demo\deposit_withdrawal_list\action_bin\test_deposti_withdrawal.py
@@ -12,7 +12,7 @@ import allure
 import sys
 import pytest_check as check
 path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'public')
-sys.path.append(path_public)
+sys.path.append(path_public)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 path_project=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(path_project+r'\location')
 from about_data import Aboutdata
@@ -113,7 +113,7 @@ class Test_deposti_withdrawal_list(object):
                                     check.equal(verifyList.mongodbWithdrawal,[],'数据库查询不为空')
                                     print('当前时间段出金记录为空')
 
-                        with allure.step('判断当前时间段是否存在入金记录'):    
+                        with allure.step('判断当前时间段是否存在入金记录'):
                             if verifyList.search_deposit(int(data['主账号'])):
 
                                 with allure.step('存在入金记录{}条，断言页面每条入金记录是否与数据库一致'.format(verifyList.deposit_len)):
@@ -200,7 +200,7 @@ class Test_deposti_withdrawal_list(object):
                         print('当前时间段出入金记录为空')
 
 
-        
+
 
 if __name__=='__main__':
     # pytest.main(['-s','-v',os.path.abspath(__file__)])
