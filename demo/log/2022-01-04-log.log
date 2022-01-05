@@ -1,0 +1,7 @@
+!!--!!driver_name - 2022-01-04 17:27:33,877 - browser_actions - [browser_actions.py-->line:84] - ERROR: 启动浏览器异常'Commonweb' object has no attribute 'driver'
+!!--!!url_error - 2022-01-04 17:27:33,878 - browser_actions - [browser_actions.py-->line:91] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2022-01-04 17:30:46,077 - browser_actions - [browser_actions.py-->line:85] - ERROR: 启动浏览器异常module 'selenium.webdriver' has no attribute 'EdgeOptions'
+!!--!!url_error - 2022-01-04 17:30:46,078 - browser_actions - [browser_actions.py-->line:92] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2022-01-04 17:30:58,127 - browser_actions - [browser_actions.py-->line:84] - ERROR: 启动浏览器异常Message: 'msedgedriver.exe.exe' executable needs to be in PATH. Please download from http://go.microsoft.com/fwlink/?LinkId=619687
+
+!!--!!url_error - 2022-01-04 17:30:58,128 - browser_actions - [browser_actions.py-->line:91] - WARNING: 请输入正确的域名

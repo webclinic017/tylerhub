@@ -1204,30 +1204,44 @@ def txt_xls(filename,xlsname):
 # #data=winreg.QueryValueEx(key,'DisplayIcon') #默认值传递None
 # print(data[0])#获取数据
 
+# from selenium import webdriver
+# dr=webdriver.Edge(r'D:\Python\Python38-32\msedgedriver.exe')
+
+# import os
+# from read_dataconfig import ReadConfig
+# options = webdriver.ChromeOptions()
+# # options.add_argument('--user-agent=Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11t Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045410 Mobile Safari/537.36 V1_AND_SQ_7.7.0_884_YYB_D QQ/7.7.0.3645 NetType/WIFI WebP/0.3.0 Pixel/1080')
+# # options.add_argument('--user-agent=Iphone X')
+
+# import sys
+# path=sys.executable.replace('python.exe', 'chromedriver.exe')
+
+# from selenium import webdriver
+# options=webdriver.ChromeOptions()
+# options.add_argument('--start-maximized')
+# dr=webdriver.Chrome(options=options,executable_path=path)
+# filepath=os.path.join(os.path.dirname(os.path.abspath(__file__)),'config\Chrome_userAgnet.ini')
+# conFig_agnet=ReadConfig(filepath=filepath)
+# conFig=ReadConfig()
+# options.add_argument('--user-agent={}'.format(conFig_agnet.get_value('user_agnet','Ipad_Mini')))
+# dr=webdriver.Chrome(options=options)
+# # dr.maximize_window()
+# dr.get(conFig.get_value('cp_login', 'sit'))
+
+
+# from browser_actions import Commonweb
+
+# common=Commonweb()
+
+# common.open_browser(browsername='Edge')
+
+# common.open_web('https://www.baidu.com/')
+
 from selenium import webdriver
-import os
-from read_dataconfig import ReadConfig
-options = webdriver.ChromeOptions()
-# options.add_argument('--user-agent=Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11t Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045410 Mobile Safari/537.36 V1_AND_SQ_7.7.0_884_YYB_D QQ/7.7.0.3645 NetType/WIFI WebP/0.3.0 Pixel/1080')
-# options.add_argument('--user-agent=Iphone X')
 
 
-
-
-filepath=os.path.join(os.path.dirname(os.path.abspath(__file__)),'config\Chrome_userAgnet.ini')
-conFig_agnet=ReadConfig(filepath=filepath)
-conFig=ReadConfig()
-options.add_argument('--user-agent={}'.format(conFig_agnet.get_value('user_agnet','Ipad_Mini')))
-dr=webdriver.Chrome(options=options)
-# dr.maximize_window()
-dr.get(conFig.get_value('cp_login', 'sit'))
-
-
-
-
-
-
-
+driver = webdriver.Safari()
+driver.get("https://baidu.com/")
 
 
 
