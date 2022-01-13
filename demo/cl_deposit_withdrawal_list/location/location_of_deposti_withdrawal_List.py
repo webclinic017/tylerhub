@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-17 15:00:40
-LastEditTime: 2021-10-27 15:52:25
+LastEditTime: 2022-01-13 14:40:59
 LastEditors: Please set LastEditors
 Description: Page operation
 FilePath: \tylerhub\demo\walaopay_withdrawal\location\location_of_walaopay_withdrawal.py
@@ -47,7 +47,7 @@ class Location_of_deposit_withdrawal(object):
         self.commeThod=Commonmethod(self.driver)
 
 
-        #登录页
+    #登录页
     def get_url(self,environment,username,password,lang='CN'):
         try:
             common.open_web(conFig.get_value('bos_login', '{}'.format(environment)))

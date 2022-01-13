@@ -3,6 +3,7 @@ import sys
 import time
 import re
 import pyautogui
+import langid
 
 from PIL import Image
 from selenium import webdriver
@@ -43,18 +44,16 @@ class Commonweb():
             #获取可执行文件安装路径
             self.pythonPath=sys.executable
             if browsername=='firefox' or browsername=='Firefox' or browsername=='fx': #火狐浏览器
-                #配置浏览器
-                options=webdriver.FirefoxOptions()
                 #设置浏览器配置
-                self.driver=webdriver.Firefox(executable_path=self.pythonPath.replace('python.exe','geckodriver.exe'),options=options) #添加配置
-                self.driver.implicitly_wait(5) #隐式等待5s
+                self.driver=webdriver.Firefox(executable_path=self.pythonPath.replace('python.exe','geckodriver.exe')) #添加配置
                 self.driver.maximize_window()
+                self.driver.implicitly_wait(5) #隐式等待5s
             elif browsername=='chrome' or browsername=='Chrome':
                 #配置浏览器
                 options=webdriver.ChromeOptions()
                 #设置浏览器配置
                 options.add_argument('lang=zh_CN.UTF-8') #初始化浏览器默认编码格式
-                options.add_argument('--incognito') #无痕模式
+                # options.add_argument('--incognito') #无痕模式
                 options.add_argument('--start-maximized') #浏览器全频
                 options.add_experimental_option('prefs',prefs) #设置下载路径
                 self.driver=webdriver.Chrome(options=options,executable_path=self.pythonPath.replace('python.exe','chromedriver.exe'))#添加配置
@@ -74,8 +73,8 @@ class Commonweb():
             #     self.driver.implicitly_wait(5)
             elif browsername=='Edge' or browsername=='edge':
                 self.driver=webdriver.Edge(executable_path=self.pythonPath.replace('python.exe','msedgedriver.exe'))
-                self.driver.implicitly_wait(5)
                 self.driver.maximize_window()
+                self.driver.implicitly_wait(5)
             else:
                 log.my_logger('!!--!!driver_browser').info('没有找到这种浏览器驱动，你可以尝试输入firefox、Firefox、chrome、Chrome、ie、opera等')
             
@@ -535,6 +534,12 @@ class Commonweb():
             return self.result_code
         except Exception as msg:
             log.my_logger('discern_code').error(msg)  
+
+
+    #判断语种
+    def check_language(self,locator,index=0):
+       self.checkStr=self.display_get_text(locator,index)
+       return (langid.classify(self.checkStr))[0]
 
     #关闭当前页
     def close_browser(self):

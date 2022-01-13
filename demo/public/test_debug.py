@@ -1237,19 +1237,33 @@ def txt_xls(filename,xlsname):
 
 # common.open_web('https://www.baidu.com/')
 
-from selenium import webdriver
+# from selenium import webdriver
 
 
-driver = webdriver.Safari()
-driver.get("https://baidu.com/")
+# driver = webdriver.Safari()
+# driver.get("https://baidu.com/")
 
 
+# def is_chinese(string):
+#     for ch in string.decode('utf-8'):
+#         if u'/u4e00' <= ch <= u'/u9fa5':
+#             print('这东西是中文')
+#         else:
+#             print('不知道是啥')
 
+# is_chinese('中文')
+# import langid
+# print(langid.classify('عذرًا ، لم تكمل بعد تطبيق')[0])
 
+from browser_actions import Commonweb
 
+common=Commonweb()
 
+common.open_browser(browsername='chrome')
 
+common.open_web('https://www.baidu.com/')
 
+print(common.check_language("css,[href='http://image.baidu.com/']"))
 
 
 
