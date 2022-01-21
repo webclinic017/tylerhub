@@ -53,7 +53,7 @@ class Commonweb():
                 options=webdriver.ChromeOptions()
                 #设置浏览器配置
                 options.add_argument('lang=zh_CN.UTF-8') #初始化浏览器默认编码格式
-                # options.add_argument('--incognito') #无痕模式
+                options.add_argument('--incognito') #无痕模式
                 options.add_argument('--start-maximized') #浏览器全频
                 options.add_experimental_option('prefs',prefs) #设置下载路径
                 self.driver=webdriver.Chrome(options=options,executable_path=self.pythonPath.replace('python.exe','chromedriver.exe'))#添加配置
@@ -538,8 +538,14 @@ class Commonweb():
 
     #判断语种
     def check_language(self,locator,index=0):
-       self.checkStr=self.display_get_text(locator,index)
-       return (langid.classify(self.checkStr))[0]
+        self.checkStr=self.display_get_text(locator,index)
+        if (langid.classify(self.checkStr))[0]=='fa':
+            self.language_type='ur'
+        else:
+            self.language_type=(langid.classify(self.checkStr))[0]
+        return self.language_type
+
+        
 
     #关闭当前页
     def close_browser(self):

@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-01-13 14:30:22
-LastEditTime: 2022-01-13 14:46:01
+LastEditTime: 2022-01-21 16:11:56
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\change_email_language\action_bin\test_change_emali_language.py
@@ -31,12 +31,13 @@ class Test_change_emailLanguage(object):
     def setup_class(self):
         #默认谷歌浏览器打开
         changeLanguage.broswertype()
-        #bos登录页
         changeLanguage.get_url('sit',conFig.get_value('bos_login', 'username'),conFig.get_value('bos_login', 'password'))
 
     def test_change_language(self):
-        print(88888)
-    
+        changeLanguage.from_bos_to_cp(1000005349)
+        changeLanguage.change_emailLanguage()
+        check.equal(changeLanguage.randomLanguage, changeLanguage.checkDataBase_emailLang)
+
 
 
 if __name__=='__main__':
@@ -44,4 +45,4 @@ if __name__=='__main__':
     # pytest.main(['-s','-v',os.path.abspath(__file__),
     # r'--alluredir={}\report\result'.format(path_project),'--disable-pytest-warnings'])
     # os.system(r'allure generate {}\report\result -o {}\report\allure_report --clean'.format(path_project,path_project))
-    # os.system(r'allure serve {}\report\result'.format(path_project))
+    # os.system(r'allure serve {}\report\result'.format(path_project))、、ppppppppppppppppppppppppppppppppppppp

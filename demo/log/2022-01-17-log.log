@@ -1,0 +1,85 @@
+!!--!!display_finds_element - 2022-01-17 16:39:02,402 - browser_actions - [browser_actions.py-->line:153] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-01-17 16:39:02,404 - browser_actions - [browser_actions.py-->line:180] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-01-17 16:39:02,404 - browser_actions - [browser_actions.py-->line:190] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!login_bos - 2022-01-17 17:23:43,875 - common_method - [common_method.py-->line:141] - ERROR: Message: element click intercepted: Element <button data-v-ed6d4d3c="" type="button" class="ivu-btn ivu-btn-primary ivu-btn-large">...</button> is not clickable at point (759, 470). Other element would receive the click: <div class="ivu-spin ivu-spin-default ivu-spin-fix ivu-spin-show-text ivu-spin-fullscreen fade-leave-active fade-leave-to">...</div>
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_finds_element - 2022-01-17 17:23:50,402 - browser_actions - [browser_actions.py-->line:153] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-01-17 17:23:50,404 - browser_actions - [browser_actions.py-->line:180] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-01-17 17:23:50,405 - browser_actions - [browser_actions.py-->line:296] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2022-01-17 17:23:56,491 - browser_actions - [browser_actions.py-->line:153] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-01-17 17:23:56,491 - browser_actions - [browser_actions.py-->line:153] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-01-17 17:23:56,494 - browser_actions - [browser_actions.py-->line:180] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-01-17 17:23:56,494 - browser_actions - [browser_actions.py-->line:180] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-01-17 17:23:56,496 - browser_actions - [browser_actions.py-->line:296] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-01-17 17:23:56,496 - browser_actions - [browser_actions.py-->line:296] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-01-17 17:24:02,563 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 17:24:02,563 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 17:24:02,563 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 17:24:08,152 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 17:24:08,152 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 17:24:08,152 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 17:24:08,152 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 18:12:46,861 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (1091, 535). Other element would receive the click: <div class="el-scrollbar__bar is-horizontal">...</div>
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!login_bos - 2022-01-17 18:19:59,785 - common_method - [common_method.py-->line:141] - ERROR: Message: element click intercepted: Element <button data-v-ed6d4d3c="" type="button" class="ivu-btn ivu-btn-primary ivu-btn-large">...</button> is not clickable at point (768, 470). Other element would receive the click: <div class="ivu-spin-fullscreen ivu-spin-fullscreen-wrapper" style="z-index: 2016;">...</div>
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_finds_element - 2022-01-17 18:20:06,342 - browser_actions - [browser_actions.py-->line:153] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-01-17 18:20:06,343 - browser_actions - [browser_actions.py-->line:180] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-01-17 18:20:06,344 - browser_actions - [browser_actions.py-->line:296] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2022-01-17 18:20:12,405 - browser_actions - [browser_actions.py-->line:153] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-01-17 18:20:12,405 - browser_actions - [browser_actions.py-->line:153] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-01-17 18:20:12,407 - browser_actions - [browser_actions.py-->line:180] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-01-17 18:20:12,407 - browser_actions - [browser_actions.py-->line:180] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-01-17 18:20:12,408 - browser_actions - [browser_actions.py-->line:296] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-01-17 18:20:12,408 - browser_actions - [browser_actions.py-->line:296] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-01-17 18:20:18,467 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 18:20:18,467 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 18:20:18,467 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 18:20:24,028 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 18:20:24,028 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 18:20:24,028 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 18:20:24,028 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element not interactable
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 18:35:07,761 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (1082, 535). Other element would receive the click: <div class="el-scrollbar__bar is-horizontal">...</div>
+  (Session info: chrome=97.0.4692.71)
+
+!!--!!display_click - 2022-01-17 18:36:38,794 - browser_actions - [browser_actions.py-->line:296] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (1082, 535). Other element would receive the click: <div class="el-scrollbar__bar is-horizontal">...</div>
+  (Session info: chrome=97.0.4692.71)
+

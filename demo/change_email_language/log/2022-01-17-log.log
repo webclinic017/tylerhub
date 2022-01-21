@@ -1,0 +1,3 @@
+!!--!!from_bos_to_cp - 2022-01-17 16:40:52,329 - location_of_email_language - [location_of_email_language.py-->line:87] - ERROR: argument of type 'NoneType' is not iterable
+!!--!!from_bos_to_cp - 2022-01-17 16:45:05,774 - location_of_email_language - [location_of_email_language.py-->line:87] - ERROR: argument of type 'NoneType' is not iterable
+!!--!!from_bos_to_cp - 2022-01-17 17:22:51,963 - location_of_email_language - [location_of_email_language.py-->line:93] - ERROR: argument of type 'NoneType' is not iterable

@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-01-13 14:29:47
-LastEditTime: 2022-01-13 14:43:11
+LastEditTime: 2022-01-21 11:44:54
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\change_email_language\location\location_of_email_language.py
@@ -11,6 +11,8 @@ import sys
 import time
 import random
 import datetime
+
+import langid
 
 path_demo=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 path_public=os.path.join(path_demo,'public')
@@ -65,3 +67,86 @@ class Location_email_language_change(object):
             log.my_logger('!!--!!get_url').error(msg)
 
 
+    #从bos登录会员中心
+    def from_bos_to_cp(self,account):
+        try:
+            common.web_clear('css,[placeholder]')
+            time.sleep(0.5)
+            common.display_input('css,[placeholder]', account)
+            time.sleep(0.5)
+            #登录
+            common.display_click("xpath,//span[.='登录']")
+            time.sleep(2)
+            common.switch_windows(1)
+            time.sleep(1)
+            #判断页面是否加载完成
+            while True:
+                if common.ele_is_displayed("css,[src='/static/img/loading.webm']", 1):
+                    continue
+                else:
+                    break
+            time.sleep(1)
+            # while True:
+            #     self.loading_attributes=common.get_attributes('css,.el-loading-mask', 'style')
+            #     if 'none' in self.loading_attributes:
+            #         break
+            #     else:
+            #         continue
+        except Exception as msg:
+            log.my_logger('!!--!!from_bos_to_cp').error(msg)
+
+    #更改邮箱语音
+    def change_emailLanguage(self):
+        try:
+            common.display_click('css,.el-icon--right.el-icon-arrow-down')
+            time.sleep(0.5)
+            common.display_click("xpath,//span[.='设置']")
+            time.sleep(1)
+            common.display_click("xpath,//div[@id='tab-fourth']")
+            time.sleep(1)
+            common.display_click('css,.opt-btn')
+            time.sleep(0.5)
+            common.display_click('css,.el-select__caret')
+            time.sleep(0.5)
+            #随机选择邮箱语言random.randint(1,9)
+            self.index=random.randint(0,9)
+            #判断随机选择邮箱语种 
+            time.sleep(0.5)
+            if self.index==1:
+                self.randomLanguage='cht' 
+            elif self.index==7:
+                self.randomLanguage='ms'
+            else:
+                self.randomLanguage=common.check_language('css,.el-select-dropdown__list > li > span',self.index)
+            time.sleep(0.5)
+            common.display_click('css,.el-select-dropdown__list > li > span',self.index)
+            print(self.randomLanguage)
+        except Exception as msg:
+            log.my_logger('!!--!!change_emailLanguage').error(msg)    
+
+    def check_dataBase_language(self):
+        try:
+            self.database_lang=dealData.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info','{"accountNumber":1000005349}','lang',N=0)[0]['lang']
+            if self.database_lang=='CHC':
+                self.checkDataBase_emailLang='zh'
+            elif self.database_lang=='CHT':
+                self.checkDataBase_emailLang='cht'
+            elif self.database_lang=='ENG':
+                self.checkDataBase_emailLang='en'
+            elif self.database_lang=='ARA':
+                self.checkDataBase_emailLang='ar'
+            elif self.database_lang=='URD':
+                self.checkDataBase_emailLang='ur'
+            elif self.database_lang=='IND':
+                self.checkDataBase_emailLang='es'
+            elif self.database_lang=='KOR':
+                self.checkDataBase_emailLang='ko'
+            elif self.database_lang=='MYS':
+                self.checkDataBase_emailLang='ms'
+            elif self.database_lang=='THA':
+                self.checkDataBase_emailLang='th'
+            else:
+                self.checkDataBase_emailLang='vi'
+            return self.checkDataBase_emailLang
+        except Exception as msg:
+            log.my_logger('!!--!!change_emailLanguage').error(msg) 
