@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-01-13 14:29:47
-LastEditTime: 2022-01-21 11:44:54
+LastEditTime: 2022-01-27 10:43:52
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\change_email_language\location\location_of_email_language.py
@@ -120,13 +120,17 @@ class Location_email_language_change(object):
                 self.randomLanguage=common.check_language('css,.el-select-dropdown__list > li > span',self.index)
             time.sleep(0.5)
             common.display_click('css,.el-select-dropdown__list > li > span',self.index)
+            time.sleep(0.5)
+            #保存
+            common.display_click('xpath,//span[.="保存"]')
             print(self.randomLanguage)
         except Exception as msg:
             log.my_logger('!!--!!change_emailLanguage').error(msg)    
 
-    def check_dataBase_language(self):
+    def check_dataBase_language(self,account):
         try:
-            self.database_lang=dealData.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info','{"accountNumber":1000005349}','lang',N=0)[0]['lang']
+            time.sleep(2)
+            self.database_lang=dataBase.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info',{"accountNumber":account},'lang',N=1)[0]['lang']
             if self.database_lang=='CHC':
                 self.checkDataBase_emailLang='zh'
             elif self.database_lang=='CHT':
@@ -149,4 +153,4 @@ class Location_email_language_change(object):
                 self.checkDataBase_emailLang='vi'
             return self.checkDataBase_emailLang
         except Exception as msg:
-            log.my_logger('!!--!!change_emailLanguage').error(msg) 
+            log.my_logger('!!--!!check_dataBase_language').error(msg) 

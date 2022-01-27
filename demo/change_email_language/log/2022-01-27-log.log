@@ -1,0 +1,2 @@
+!!--!!change_emailLanguage - 2022-01-27 10:21:41,500 - location_of_email_language - [location_of_email_language.py-->line:152] - ERROR: 'Aboutdata' object has no attribute 'search_in_mongodb'
+!!--!!check_dataBase_language - 2022-01-27 10:24:02,946 - location_of_email_language - [location_of_email_language.py-->line:152] - ERROR: 'NoneType' object is not subscriptable

@@ -1252,8 +1252,8 @@ def txt_xls(filename,xlsname):
 #             print('不知道是啥')
 
 # is_chinese('中文')
-import langid
-print(langid.classify('Tiếng Việt')[0])
+# import langid
+# print(langid.classify('Tiếng Việt')[0])
 
 # from browser_actions import Commonweb
 
@@ -1265,13 +1265,13 @@ print(langid.classify('Tiếng Việt')[0])
 
 # print(common.check_language("css,[href='http://image.baidu.com/']"))
 
-# from handle_database import Dadabase_operate
-# from read_dataconfig import ReadConfig
+from handle_database import Dadabase_operate
+from read_dataconfig import ReadConfig
 
-# dealData=Dadabase_operate()
-# conFig=ReadConfig()
+dataBase=Dadabase_operate()
+conFig=ReadConfig()
 
-# dealData.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info','{"accountNumber":1000005349}','lang',N=0)
+dataBase.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info',{"accountNumber":1000005349},'lang',N=1)
 
 
 

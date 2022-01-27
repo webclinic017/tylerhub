@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:27:17
-LastEditTime: 2021-11-02 11:37:17
+LastEditTime: 2022-01-27 10:29:31
 LastEditors: Please set LastEditors
 Description: Query database and save
 FilePath: \tylerhub\demo\public\handle_database.py
@@ -220,8 +220,8 @@ if __name__=='__main__':
     # excelpath=r'D:\code\tylerhub\demo\public\about_data.xlsx'
     # dataBase.save_mongodb_data(excelpath,conFig.get_value('mongodb_test', 'uri'),'sample_mflix','movies',
     # {"year":1915},N=0,sortTerm=[('_id',-1)],title='A',runtime='B',rated='C')
-    # dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atfxgm-sit', 'atfx_trade_account',
-    # {"accountNumber":1000005349},'tradeAccount',N=1)
+    dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atfxgm-sit', 'atfx_trade_account',
+    {"accountNumber":1000005349},'tradeAccount',N=1)
     # encrypt_secret=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atclientpoolsit', 'usersgm',{"email":'tyler.tang@test.com'},'encrypt_secret',N=0)
     # print(encrypt_secret[0]['encrypt_secret'])
     # times=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'),
@@ -231,6 +231,6 @@ if __name__=='__main__':
     #     withdrawal_list.append(times[i]['channel'])
 
     # print(list(set(withdrawal_list)))
-
-    mysql_closeOrder=dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="66200125" and Close_Time!="1970-01-01 00:00:00" order by Ticket', conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')
-    print(mysql_closeOrder[0][6])
+    dataBase.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info',{"accountNumber":1000005349},'lang',N=1)
+    # mysql_closeOrder=dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="66200125" and Close_Time!="1970-01-01 00:00:00" order by Ticket', conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')
+    # print(mysql_closeOrder[0][6])
