@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-01-13 14:30:22
-LastEditTime: 2022-02-09 17:32:49
+LastEditTime: 2022-02-09 17:51:22
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\change_email_language\action_bin\test_change_emali_language.py
@@ -19,7 +19,7 @@ from about_data import Aboutdata
 from read_dataconfig import ReadConfig
 from location_of_email_language import Location_email_language_change
 
-
+@allure.epic('修改邮箱语言并核对数据库lang字段')
 class Test_change_emailLanguage(object):
 
     global changeLanguage,conFig,dealData,testdata,excelpath
@@ -46,20 +46,31 @@ class Test_change_emailLanguage(object):
             verifyList.closebrowser()
 
     @pytest.mark.parametrize('data',testdata)
+    @allure.feature('cp设置页面修改数据库语言')
+    @allure.story('用例执行')
+    @allure.description('读取测试文档数据，执行用例')
     def test_change_language(self,data):
         #当前测试数据下标
-        self.data_index=testdata.index(data)
-        changeLanguage.from_bos_to_cp(int(data['主账号']))
-        changeLanguage.change_emailLanguage(int(data['主账号']),excelpath,'B','C',self.data_index+2)
+        with allure.step('获取当前测试数据下标'):
+            self.data_index=testdata.index(data)
+
+        with allure.step('根据主账号从BOS登录CP'):    
+            changeLanguage.from_bos_to_cp(int(data['主账号']))
+
+        with allure.step('修改邮箱语言，并保存相关测试数据至测试文档'):    
+            changeLanguage.change_emailLanguage(int(data['主账号']),excelpath,'B','C',self.data_index+2)
         #查询数据库
-        changeLanguage.check_dataBase_language(int(data['主账号']),excelpath,'D',self.data_index+2)
-        check.equal(changeLanguage.randomLanguage, changeLanguage.checkDataBase_emailLang)
+        with allure.step('查询数据库'):  
+            changeLanguage.check_dataBase_language(int(data['主账号']),excelpath,'D',self.data_index+2)
+        
+        with allure.step('断言数据库lang字段'):    
+            check.equal(changeLanguage.randomLanguage, changeLanguage.checkDataBase_emailLang)
 
 
 
 if __name__=='__main__':
-    pytest.main(['-s','-v',os.path.abspath(__file__)])
-    # pytest.main(['-s','-v',os.path.abspath(__file__),
-    # r'--alluredir={}\report\result'.format(path_project),'--disable-pytest-warnings'])
-    # os.system(r'allure generate {}\report\result -o {}\report\allure_report --clean'.format(path_project,path_project))
-    # os.system(r'allure serve {}\report\result'.format(path_project))
+    # pytest.main(['-s','-v',os.path.abspath(__file__)])
+    pytest.main(['-s','-v',os.path.abspath(__file__),
+    r'--alluredir={}\report\result'.format(path_project),'--disable-pytest-warnings'])
+    os.system(r'allure generate {}\report\result -o {}\report\allure_report --clean'.format(path_project,path_project))
+    os.system(r'allure serve {}\report\result'.format(path_project))
