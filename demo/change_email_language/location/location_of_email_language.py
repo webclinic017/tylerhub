@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-01-13 14:29:47
-LastEditTime: 2022-01-27 10:43:52
+LastEditTime: 2022-02-09 17:30:07
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\change_email_language\location\location_of_email_language.py
@@ -96,8 +96,13 @@ class Location_email_language_change(object):
             log.my_logger('!!--!!from_bos_to_cp').error(msg)
 
     #更改邮箱语音
-    def change_emailLanguage(self):
+    def change_emailLanguage(self,account,excelpath,column,column1,row):
         try:
+            #获取修改前邮箱语言
+            self.befor_lang=dataBase.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info',{"accountNumber":account},'lang',N=1)[0]['lang']
+            #保存
+            dealData.saveainfo(excelpath, self.befor_lang, column, row)
+            time.sleep(0.5)
             common.display_click('css,.el-icon--right.el-icon-arrow-down')
             time.sleep(0.5)
             common.display_click("xpath,//span[.='设置']")
@@ -123,11 +128,13 @@ class Location_email_language_change(object):
             time.sleep(0.5)
             #保存
             common.display_click('xpath,//span[.="保存"]')
+            #保存修改后邮箱语言
+            dealData.saveainfo(excelpath, self.randomLanguage, column1, row)
             print(self.randomLanguage)
         except Exception as msg:
             log.my_logger('!!--!!change_emailLanguage').error(msg)    
 
-    def check_dataBase_language(self,account):
+    def check_dataBase_language(self,account,excelpath,column,row):
         try:
             time.sleep(2)
             self.database_lang=dataBase.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info',{"accountNumber":account},'lang',N=1)[0]['lang']
@@ -151,6 +158,15 @@ class Location_email_language_change(object):
                 self.checkDataBase_emailLang='th'
             else:
                 self.checkDataBase_emailLang='vi'
+            #保存修改后数据库邮箱语言
+            dealData.saveainfo(excelpath, self.checkDataBase_emailLang, column, row)
             return self.checkDataBase_emailLang
         except Exception as msg:
-            log.my_logger('!!--!!check_dataBase_language').error(msg) 
+            log.my_logger('!!--!!check_dataBase_language').error(msg)
+
+
+    def closebrowser(self):
+        common.close_browser()
+
+    def quitbrowser(self):
+        common.quit_browser()

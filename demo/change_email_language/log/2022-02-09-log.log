@@ -1,0 +1,3 @@
+!!--!!from_bos_to_cp - 2022-02-09 16:08:11,290 - location_of_email_language - [location_of_email_language.py-->line:96] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!from_bos_to_cp - 2022-02-09 16:10:08,974 - location_of_email_language - [location_of_email_language.py-->line:96] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!check_dataBase_language - 2022-02-09 16:48:31,162 - location_of_email_language - [location_of_email_language.py-->line:156] - ERROR: 'NoneType' object is not subscriptable

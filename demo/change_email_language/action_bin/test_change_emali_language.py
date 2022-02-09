@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-01-13 14:30:22
-LastEditTime: 2022-01-27 10:47:22
+LastEditTime: 2022-02-09 17:32:49
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\change_email_language\action_bin\test_change_emali_language.py
@@ -38,12 +38,21 @@ class Test_change_emailLanguage(object):
         changeLanguage.broswertype()
         changeLanguage.get_url('sit',conFig.get_value('bos_login', 'username'),conFig.get_value('bos_login', 'password'))
 
+
+    def teardown(self):
+        if self.data_index==testdata.index(testdata[-1]):
+            verifyList.quitbrowser()
+        else:
+            verifyList.closebrowser()
+
     @pytest.mark.parametrize('data',testdata)
     def test_change_language(self,data):
+        #当前测试数据下标
+        self.data_index=testdata.index(data)
         changeLanguage.from_bos_to_cp(int(data['主账号']))
-        changeLanguage.change_emailLanguage()
+        changeLanguage.change_emailLanguage(int(data['主账号']),excelpath,'B','C',self.data_index+2)
         #查询数据库
-        changeLanguage.check_dataBase_language(int(data['主账号']))
+        changeLanguage.check_dataBase_language(int(data['主账号']),excelpath,'D',self.data_index+2)
         check.equal(changeLanguage.randomLanguage, changeLanguage.checkDataBase_emailLang)
 
 
