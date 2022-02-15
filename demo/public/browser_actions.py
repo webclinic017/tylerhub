@@ -32,7 +32,7 @@ class Commonweb():
         打开浏览器，浏览器名称：Firefox，Chrome,Ie,Opera,Edge，默认以谷歌浏览器打开(Opera暂时找不到对应版本驱动)
         """
         try:
-            prefs={'download.default_directory':'{}'.format(download_path)} #设置下载路径
+            prefs={'download.default_directory':'{}'.format(download_path)} #设置chrome下载路径
             
             # self.pattern=r'[Pp]ython\d*\S?\d{1,}$'
             # for i in sys.path:
@@ -43,9 +43,29 @@ class Commonweb():
 
             #获取可执行文件安装路径
             self.pythonPath=sys.executable
+
             if browsername=='firefox' or browsername=='Firefox' or browsername=='fx': #火狐浏览器
+                #创建下载设置对象
+                self.profile=webdriver.FirefoxProfile()
+                self.profile.set_preference('browser.download.dir',download_path) #设置下载路径
+                #0表示下载到桌面，1下载到默认路径，2下载到指定路径
+                self.profile.set_preference('browser.download.folderList',2)#0表示下载到桌面，1下载到默认路径，2下载到指定路径
+                #浏览器下载文件时会对未知的MIME类型的文件弹框提示，True提示，False不提示
+                self.profile.set_preference('browser.helperApps.alwaysAsk.force',False)
+                #浏览器下载文件时会弹出下载框，True显示下载框，False隐藏
+                self.profile.set_preference('browser.download.manager.showwhenStarting',False)
+                #True表示获取焦点，False表示不获取焦点
+                self.profile.set_preference('browser.download.manager.focusWhenStarting',False)
+                #浏览器下载.exe文件时会弹出警告框，True弹出，False不弹出
+                self.profile.set_preference('browser.download.manager.alertOnEXEOpen',False)
+                #表示直接打开下载文件，不显示确认框
+                self.profile.set_preference('browser.helperApps.neverAsk.openFile','application/exe')
+                #对所给出的文件类型不再弹框询问，直接保存本地磁盘
+                self.profile.set_preference('browser.helperApps.neverAsk.saveToDisk','application/zip,application/octet-stream')
+                #True关闭下载管理器，False不关闭
+                self.profile.set_preference('browser.download.manager.showAlertOnComplete',False)
                 #设置浏览器配置
-                self.driver=webdriver.Firefox(executable_path=self.pythonPath.replace('python.exe','geckodriver.exe')) #添加配置
+                self.driver=webdriver.Firefox(executable_path=self.pythonPath.replace('python.exe','geckodriver.exe'),firefox_profile=self.profile) #添加配置
                 self.driver.maximize_window()
                 self.driver.implicitly_wait(5) #隐式等待5s
             elif browsername=='chrome' or browsername=='Chrome':
@@ -81,7 +101,9 @@ class Commonweb():
             # self.driver.maximize_window()
             return self.driver
         except Exception as msg:
+
             log.my_logger('!!--!!driver_name').error('启动浏览器异常{}'.format(msg))
+            return msg
 
     #访问url
     def open_web(self,url):
@@ -559,4 +581,4 @@ class Commonweb():
         try:
             self.driver.quit()
         except Exception as msg:
-            log.my_logger('qiut_browser').error('浏览器退出异常{}'.format(msg)) 
+            log.my_logger('qiut_browser').error('浏览器退出异常{}'.format(msg))

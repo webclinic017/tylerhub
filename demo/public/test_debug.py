@@ -1265,13 +1265,261 @@ def txt_xls(filename,xlsname):
 
 # print(common.check_language("css,[href='http://image.baidu.com/']"))
 
-from handle_database import Dadabase_operate
-from read_dataconfig import ReadConfig
+# from handle_database import Dadabase_operate
+# from read_dataconfig import ReadConfig
 
-dataBase=Dadabase_operate()
-conFig=ReadConfig()
+# dataBase=Dadabase_operate()
+# conFig=ReadConfig()
 
-dataBase.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info',{"accountNumber":1000005349},'lang',N=1)
+# dataBase.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info',{"accountNumber":1000005349},'lang',N=1)
+
+# from browser_actions import Commonweb
+
+
+# common=Commonweb()
+
+# # common.open_browser(browsername='firefox')
+
+# a=str(common.open_browser(browsername='firefox'))
+
+# if 'Message' in a:
+#     print(666)
+    
+# a='Message: session not created: This version of ChromeDriver only supports Chrome version 93 Current browser version is 98.0.4758.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
+# import re
+
+# pattern=r'Current browser version is \S*'
+
+# b=''.join(re.findall(pattern,a))
+# # print(re.sub(r'\D','',b))
+# pattern2=r'[\d*.]'
+# c=re.findall(pattern2,b)
+# print(''.join(c))
+
+# from selenium import webdriver
+
+# import time
+
+# profile=webdriver.FirefoxProfile()
+# profile.set_preference('browser.download.dir',r'D:\Python\Python38-32')
+
+# profile.set_preference('browser.download.folderList',2)
+# profile.set_preference('browser.helperApps.alwaysAsk.force',False)
+# profile.set_preference('browser.download.manager.showwhenStarting',False)
+# profile.set_preference('browser.download.manager.focusWhenStarting',False)
+# profile.set_preference('browser.download.manager.alertOnEXEOpen',False)
+# profile.set_preference('browser.helperApps.neverAsk.saveToDisk','application/zip,application/octet-stream')
+# profile.set_preference('browser.download.manager.showAlertOnComplete',False)
+
+# driver=webdriver.Firefox(firefox_profile=profile)
+
+# driver.get('http://chromedriver.storage.googleapis.com/index.html')
+# time.sleep(2)
+
+# driver.find_element_by_xpath("//a[.='70.0.3538.16']").click()
+# time.sleep(2)
+# driver.find_element_by_xpath("//a[.='chromedriver_win32.zip']").click()
+
+
+# from browser_actions import Commonweb
+
+# common=Commonweb()
+
+# common.open_browser(download_path=r'D:\Python\Python38-32',browsername='Firefox')
+
+# common.open_web('http://chromedriver.storage.googleapis.com/index.html?path=70.0.3538.16/')
+
+# common.display_click("xpath,//a[.='chromedriver_win32.zip']")
+
+
+# import zipfile
+
+# zip=zipfile.ZipFile(r'D:\code\chromedriver_win32.zip')
+
+# zip_list = zip.namelist()
+
+# for f in zip_list:
+#     zip.extract(f, r'D:\code')
+
+# zip.close()
+
+
+# import os
+
+# os.remove(r'D:\code\chromedriver.exe')
+
+
+a='D:\Python\Python38-32\python.exe'
+print(a[:-11])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

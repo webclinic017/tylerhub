@@ -1,0 +1,4 @@
+!!--!!driver_name - 2022-02-11 15:26:47,324 - browser_actions - [browser_actions.py-->line:84] - ERROR: 启动浏览器异常Message: Process unexpectedly closed with status 0
+
+!!--!!driver_name - 2022-02-11 15:31:51,530 - browser_actions - [browser_actions.py-->line:84] - ERROR: 启动浏览器异常Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
