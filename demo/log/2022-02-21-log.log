@@ -1,0 +1,44 @@
+!!--!!display_click - 2022-02-21 17:51:51,800 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-d98acb9a="" class="menu-font">...</span> is not clickable at point (99, 690). Other element would receive the click: <div class="el-scrollbar__bar is-horizontal">...</div>
+  (Session info: chrome=98.0.4758.102)
+
+!!--!!display_finds_element - 2022-02-21 17:51:59,334 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-02-21 17:51:59,334 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-02-21 17:51:59,336 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-02-21 17:51:59,336 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-02-21 17:53:07,656 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-d98acb9a="" class="menu-font">...</span> is not clickable at point (99, 690). Other element would receive the click: <div class="el-scrollbar__bar is-horizontal">...</div>
+  (Session info: chrome=98.0.4758.102)
+
+!!--!!display_click - 2022-02-21 17:58:04,231 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-d98acb9a="" class="menu-font">...</span> is not clickable at point (99, 690). Other element would receive the click: <div class="el-scrollbar__bar is-horizontal">...</div>
+  (Session info: chrome=98.0.4758.102)
+
+!!--!!display_click - 2022-02-21 18:00:37,833 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-d98acb9a="" class="menu-font">...</span> is not clickable at point (99, 690). Other element would receive the click: <div class="el-scrollbar__bar is-horizontal">...</div>
+  (Session info: chrome=98.0.4758.102)
+
+!!--!!display_click - 2022-02-21 18:01:30,554 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-d98acb9a="" class="menu-font">...</span> is not clickable at point (99, 690). Other element would receive the click: <div class="el-scrollbar__bar is-horizontal">...</div>
+  (Session info: chrome=98.0.4758.102)
+
+!!--!!display_finds_element - 2022-02-21 18:02:59,418 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.102)
+
+!!--!!nosuch_elements - 2022-02-21 18:02:59,419 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-02-21 18:02:59,420 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_click - 2022-02-21 18:03:55,306 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-d98acb9a="" class="menu-font">...</span> is not clickable at point (99, 690). Other element would receive the click: <div class="el-scrollbar__bar is-horizontal">...</div>
+  (Session info: chrome=98.0.4758.102)
+
+!!--!!display_finds_element - 2022-02-21 18:05:44,677 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-02-21 18:05:44,677 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-02-21 18:05:44,679 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2022-02-21 18:05:50,739 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-02-21 18:05:50,739 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-02-21 18:05:50,742 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-02-21 18:05:50,742 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-02-21 18:05:50,743 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-02-21 18:05:50,743 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-02-21 18:11:41,855 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-d98acb9a="" class="menu-font">...</span> is not clickable at point (99, 690). Other element would receive the click: <div class="el-scrollbar__bar is-horizontal">...</div>
+  (Session info: chrome=98.0.4758.102)
+

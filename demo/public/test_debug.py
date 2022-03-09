@@ -819,7 +819,7 @@ import requests
 # import datetime
 # from dateutil import parser
 
-# from handle_database import Dadabase_operate
+# from handle_database import Database_operate
 # from read_dataconfig import ReadConfig
 
 
@@ -850,7 +850,7 @@ import requests
 # print(b)
 
 
-# dataBase=Dadabase_operate()
+# dataBase=Database_operate()
 # conFig=ReadConfig()
 # dateStr1 = '2021-09-06T00:00:00Z'
 # dateStr2 = '2021-09-16T23:59:59Z'
@@ -866,13 +866,13 @@ import requests
 
 
 
-# from handle_database import Dadabase_operate
+# from handle_database import Database_operate
 # from read_dataconfig import ReadConfig
 # from dateutil import parser
 # import datetime
 
 
-# dataBase=Dadabase_operate()
+# dataBase=Database_operate()
 # conFig=ReadConfig()
 # dateStr1 = '2021-09-01T00:00:00Z'
 # dateStr2 = '2021-09-30T23:59:59Z'
@@ -918,10 +918,10 @@ import requests
 
 # if __name__=='__main__':
 #     pytest.main(['-s','-v',os.path.abspath(__file__)])
-# from handle_database import Dadabase_operate
+# from handle_database import Database_operate
 # from read_dataconfig import ReadConfig
 
-# dataBase=Dadabase_operate()
+# dataBase=Database_operate()
 # conFig=ReadConfig()
 # data=dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order where login ="{}" and Close_Time="1970-01-01 00:00:00"'.format(66200125),
 # conFig.get_value('mysql_AWS', 'host'),conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'))
@@ -1265,10 +1265,10 @@ def txt_xls(filename,xlsname):
 
 # print(common.check_language("css,[href='http://image.baidu.com/']"))
 
-# from handle_database import Dadabase_operate
+# from handle_database import Database_operate
 # from read_dataconfig import ReadConfig
 
-# dataBase=Dadabase_operate()
+# dataBase=Database_operate()
 # conFig=ReadConfig()
 
 # dataBase.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info',{"accountNumber":1000005349},'lang',N=1)
@@ -1349,8 +1349,40 @@ def txt_xls(filename,xlsname):
 # os.remove(r'D:\code\chromedriver.exe')
 
 
-a='D:\Python\Python38-32\python.exe'
-print(a[:-11])
+# print(3)
+
+# print(2)               
+# from selenium import webdriver
+# import time
+
+# dr=webdriver.Chrome()
+# dr.maximize_window()
+# dr.get('https://at-client-portal-sit.atfxdev.com/login')
+# time.sleep(2)
+
+# dr.find_element_by_css_selector("[placeholder='Please fill in your Email']").send_keys('tyler.tang@test.com')
+# dr.find_element_by_css_selector("[placeholder='Please fill in your password']").send_keys('Tl123456')
+# dr.find_element_by_css_selector('.login-btn').click()
+# time.sleep(5)
+
+# js='document.getElementsByClassName("el-scrollbar__thumb")[1].scrollTop=0'
+# dr.execute_script(js)
+# time.sleep(5)
+# dr.find_element_by_xpath("//span[.='Deposit Withdrawal List']").click()
+
+# from handle_database import Database_operate
+# from read_dataconfig import ReadConfig
+
+
+# dataBase=Database_operate()
+# ConFig=ReadConfig()
+
+
+# dataBase.search_in_mysql(sql, ConFig.get_value('mysql_datawarehouse_two', 'user'), ConFig.get_value('mysql_datawarehouse_two', 'host'), ConFig.get_value('mysql_datawarehouse_two', 'password'))
+
+a=['', '1000005375', '1000005378', '1000005379', '1000005389']
+
+print(list(filter(None, a)))
 
 
 
@@ -1365,6 +1397,23 @@ print(a[:-11])
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 

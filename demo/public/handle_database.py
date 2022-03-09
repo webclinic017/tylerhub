@@ -25,7 +25,7 @@ ssl._create_default_https_context=ssl._create_unverified_context()
 # os.environ['path']=os.path.join(config_path,'instantclient_19_11')
 
 
-class Dadabase_operate(object):
+class Database_operate(object):
     """
     mysql,oracle,mongodb数据库查询与保存
     """
@@ -214,7 +214,7 @@ class Dadabase_operate(object):
 
 #测试
 if __name__=='__main__':
-    dataBase=Dadabase_operate()
+    dataBase=Database_operate()
     # dataBase.search_in_mongodb(conFig.get_value('mongodb_test', 'uri'), 'sample_mflix', 
     # 'movies',{"year":1915},'title','runtime',N=0)
     # excelpath=r'D:\code\tylerhub\demo\public\about_data.xlsx'

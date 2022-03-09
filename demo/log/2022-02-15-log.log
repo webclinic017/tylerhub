@@ -28,3 +28,6 @@ Current browser version is 98.0.4758.82 with binary path C:\Program Files (x86)\
 !!--!!driver_name - 2022-02-15 17:53:34,417 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: session not created: This version of ChromeDriver only supports Chrome version 93
 Current browser version is 98.0.4758.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 
+!!--!!driver_name - 2022-02-15 18:32:22,815 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: session not created: This version of ChromeDriver only supports Chrome version 93
+Current browser version is 98.0.4758.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+

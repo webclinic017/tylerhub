@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-02 10:18:01
-LastEditTime: 2021-09-08 15:06:53
+LastEditTime: 2022-02-17 10:41:56
 LastEditors: Please set LastEditors
 Description: Execute testcase
 FilePath: \tylerhub\demo\add_ewallet_withdrawal\action_bin\test_add_ewallet.py
@@ -57,7 +57,7 @@ class Test_addEwallet(object):
             self.data_index=testdata.index(data)
         if self.data_index!=0:
             addEwallet.remove_login_topup()
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
         with allure.step('进入账号详情页判断该账号居住国是否为中国'):
             addEwallet.details_page(int(data['主账号']))
             #居住国家为中国，跳过该用例

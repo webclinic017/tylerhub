@@ -18,7 +18,7 @@ path_project=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 from browser_actions import Commonweb
 from common_method import Commonmethod
-from handle_database import Dadabase_operate
+from handle_database import Database_operate
 from handlelog import MyLog
 from randomdata import Random_data
 from read_dataconfig import ReadConfig
@@ -33,7 +33,7 @@ class Location_of_walaopay(object):
 
     common=Commonweb()
     common2=Commonweb()
-    dataBase=Dadabase_operate()
+    dataBase=Database_operate()
     log=MyLog()
     randomData=Random_data()
     conFig=ReadConfig()

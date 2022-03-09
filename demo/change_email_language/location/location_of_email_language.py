@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-01-13 14:29:47
-LastEditTime: 2022-02-09 17:30:07
+LastEditTime: 2022-02-21 17:41:52
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\change_email_language\location\location_of_email_language.py
@@ -21,7 +21,7 @@ path_project=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 from browser_actions import Commonweb
 from common_method import Commonmethod
-from handle_database import Dadabase_operate
+from handle_database import Database_operate
 from handlelog import MyLog
 from randomdata import Random_data
 from read_dataconfig import ReadConfig
@@ -33,7 +33,7 @@ class Location_email_language_change(object):
     global common,dataBase,log,randomData,conFig,dealData
 
     common=Commonweb()
-    dataBase=Dadabase_operate()
+    dataBase=Database_operate()
     log=MyLog()
     randomData=Random_data()
     conFig=ReadConfig()
@@ -79,7 +79,7 @@ class Location_email_language_change(object):
             time.sleep(2)
             common.switch_windows(1)
             time.sleep(1)
-            #判断页面是否加载完成
+            #判断页面是否正在跳转
             while True:
                 if common.ele_is_displayed("css,[src='/static/img/loading.webm']", 1):
                     continue

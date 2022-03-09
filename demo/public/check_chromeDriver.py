@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-02-14 10:37:15
-LastEditTime: 2022-02-15 17:55:59
+LastEditTime: 2022-02-16 16:22:55
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\public\check_chromeDriver.py
@@ -25,6 +25,7 @@ class CheckDriverExe(object):
         if 'Message' in self.massage:#默认打开谷歌浏览器
             return True
         else:
+            common.close_browser()
             return False
 
 
@@ -58,17 +59,17 @@ class CheckDriverExe(object):
 
                 #删除下载文件
                 os.remove(os.path.join(common.pythonPath[:-11],'chromedriver_win32.zip'))
-                common.close_browser()
                 
                 #测试驱动是否生效
                 if 'Message' in str(common2.open_browser()):#默认打开谷歌浏览器
                     print('驱动仍未生效请重新下载驱动')
-                    common2.close_browser()
                 else:
                     print('驱动更新成功')
-
+                    common2.close_browser()
             except:
-                print('请检查谷歌浏览器最新驱动版本是否与页面一致')
+                print('请检查谷歌浏览器最新驱动版本是否与页面对应')
+            finally:
+                common.close_browser()
 
         else:
             print('当前谷歌浏览器驱动未过期')
