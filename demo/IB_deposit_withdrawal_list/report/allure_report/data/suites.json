@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "demo.IB_deposit_withdrawal_list.actions_bin",
+    "children" : [ {
+      "name" : "Test_IB_Deposit_Withdrawal",
+      "children" : [ {
+        "name" : "Test_IB_deposit_withdrawal_list",
+        "children" : [ {
+          "name" : "test_IB_list[data0]",
+          "uid" : "219a4125f5a31e19",
+          "parentUid" : "301d7662f59bf977f8769ba86209fd1d",
+          "status" : "failed",
+          "time" : {
+            "start" : 1648200510832,
+            "stop" : 1648200883065,
+            "duration" : 372233
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'IB账号': 1000005349.0}" ]
+        } ],
+        "uid" : "301d7662f59bf977f8769ba86209fd1d"
+      } ],
+      "uid" : "39182468ebbd578b66c42519dd3cd951"
+    } ],
+    "uid" : "1d17217e46a23d496795855339db0618"
+  } ]
+}

@@ -1,0 +1,26 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "核对IB下级出入金记录，断言导出与复制功能",
+    "children" : [ {
+      "name" : "用例执行",
+      "children" : [ {
+        "name" : "test_IB_list[data0]",
+        "uid" : "219a4125f5a31e19",
+        "parentUid" : "e2e7a751e88e91e919d53371777cb905",
+        "status" : "failed",
+        "time" : {
+          "start" : 1648200510832,
+          "stop" : 1648200883065,
+          "duration" : 372233
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'IB账号': 1000005349.0}" ]
+      } ],
+      "uid" : "e2e7a751e88e91e919d53371777cb905"
+    } ],
+    "uid" : "aa0d6a3d4750ab84ec2bec07b3e7a6a8"
+  } ]
+}

@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:27:17
-LastEditTime: 2022-01-27 10:29:31
+LastEditTime: 2022-03-16 15:10:41
 LastEditors: Please set LastEditors
 Description: Query database and save
 FilePath: \tylerhub\demo\public\handle_database.py
@@ -44,7 +44,7 @@ class Database_operate(object):
         :param database：数据库
         :param muster：集合
         :param mongodbserch:mongodb查询语句,字典,类似于sql语句 如{"$and": [{"latdec": 9.3547792}, {"watlev": "always dry"}]}
-        :param N:查询条数，默认为0
+        :param N:查询条数，默认为0,查询所有
         :param args:需具体查询的字段
         :param sortTerm:是否排序，字典。1升序，-1降序，_id,-1 查询最新数据
         :return 以列表类型返回查询数据
@@ -122,7 +122,7 @@ class Database_operate(object):
                 print('读取数据库数据{}条'.format(len(self.list_data)))
                 return self.list_data
         except Exception as msg:
-            print('数据库连接或参数有误,请检查用户密码,参数或本机ip是否能连接数据库:{}'.format(msg))
+            print('数据库连接或参数有误,请检查用户密码,参数,查询字段或本机ip是否能连接数据库:{}'.format(msg))
 
 
     #mongodb数据保存
@@ -220,8 +220,8 @@ if __name__=='__main__':
     # excelpath=r'D:\code\tylerhub\demo\public\about_data.xlsx'
     # dataBase.save_mongodb_data(excelpath,conFig.get_value('mongodb_test', 'uri'),'sample_mflix','movies',
     # {"year":1915},N=0,sortTerm=[('_id',-1)],title='A',runtime='B',rated='C')
-    dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atfxgm-sit', 'atfx_trade_account',
-    {"accountNumber":1000005349},'tradeAccount',N=1)
+    # dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atfxgm-sit', 'atfx_trade_account',
+    # {"accountNumber":1000005349},'tradeAccount',N=1)
     # encrypt_secret=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atclientpoolsit', 'usersgm',{"email":'tyler.tang@test.com'},'encrypt_secret',N=0)
     # print(encrypt_secret[0]['encrypt_secret'])
     # times=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'),
@@ -231,6 +231,10 @@ if __name__=='__main__':
     #     withdrawal_list.append(times[i]['channel'])
 
     # print(list(set(withdrawal_list)))
-    dataBase.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info',{"accountNumber":1000005349},'lang',N=1)
+    # dataBase.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info',{"accountNumber":1000005349},'lang',N=1)
     # mysql_closeOrder=dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="66200125" and Close_Time!="1970-01-01 00:00:00" order by Ticket', conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')
     # print(mysql_closeOrder[0][6])
+    lower_withdrawalDatabase=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'),'atfxgm-sit', 'atfx_deposit',
+    {"accountNumber":1000006223},'mtRefNo','accountNumber','tradeAccount','clnName','lastUpdateDate','mt4Amt',N=0,sortTerm=[('_id',1)])
+    print(lower_withdrawalDatabase)
+    print('544097' in lower_withdrawalDatabase)

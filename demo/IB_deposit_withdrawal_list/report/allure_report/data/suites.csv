@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Fri Mar 25 17:28:30 GMT+08:00 2022","Fri Mar 25 17:34:43 GMT+08:00 2022","372233","demo.IB_deposit_withdrawal_list.actions_bin","Test_IB_Deposit_Withdrawal","Test_IB_deposit_withdrawal_list","","","test_IB_list[data0]","读取测试文档数据，执行用例"

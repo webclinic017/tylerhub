@@ -1,0 +1,11 @@
+[ {
+  "uid" : "219a4125f5a31e19",
+  "name" : "test_IB_list[data0]",
+  "time" : {
+    "start" : 1648200510832,
+    "stop" : 1648200883065,
+    "duration" : 372233
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

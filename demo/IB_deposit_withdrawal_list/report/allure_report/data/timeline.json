@@ -1,0 +1,77 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "SZ01-QA-G-10",
+    "children" : [ {
+      "name" : "8816-MainThread",
+      "children" : [ {
+        "name" : "test_IB_list[data0]",
+        "uid" : "219a4125f5a31e19",
+        "parentUid" : "9a82ba7450b795605f26304ab351382c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1648200510832,
+          "stop" : 1648200883065,
+          "duration" : 372233
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'IB账号': 1000005349.0}" ]
+      } ],
+      "uid" : "9a82ba7450b795605f26304ab351382c"
+    }, {
+      "name" : "15724-MainThread",
+      "children" : [ {
+        "name" : "test_IB_list[data0]",
+        "uid" : "4cf83355a31fdd8",
+        "parentUid" : "51569f981566db179ed4468d4af26df0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1648197506121,
+          "stop" : 1648197724976,
+          "duration" : 218855
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'IB账号': 1000005349.0}" ]
+      } ],
+      "uid" : "51569f981566db179ed4468d4af26df0"
+    }, {
+      "name" : "16272-MainThread",
+      "children" : [ {
+        "name" : "test_IB_list[data0]",
+        "uid" : "571d871ee9eb2e4b",
+        "parentUid" : "bb311f1144520e5b3e7c08ba6e646bd5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1648199638734,
+          "stop" : 1648200098305,
+          "duration" : 459571
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'IB账号': 1000005349.0}" ]
+      } ],
+      "uid" : "bb311f1144520e5b3e7c08ba6e646bd5"
+    }, {
+      "name" : "15556-MainThread",
+      "children" : [ {
+        "name" : "test_IB_list[data0]",
+        "uid" : "6542e0930d36c808",
+        "parentUid" : "2faa4f06a9885db6ff4369d1d1a00172",
+        "status" : "failed",
+        "time" : {
+          "start" : 1648198278749,
+          "stop" : 1648198475695,
+          "duration" : 196946
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'IB账号': 1000005349.0}" ]
+      } ],
+      "uid" : "2faa4f06a9885db6ff4369d1d1a00172"
+    } ],
+    "uid" : "22c9a7ca73ac7ac9efe14f8b8f896b03"
+  } ]
+}

@@ -1,0 +1,3 @@
+!!--!!get_url - 2022-03-17 16:52:53,623 - Location_of_Deposit_Withdrawal_List - [Location_of_Deposit_Withdrawal_List.py-->line:101] - ERROR: name 'pattern' is not defined
+!!--!!get_url - 2022-03-17 16:54:56,033 - Location_of_Deposit_Withdrawal_List - [Location_of_Deposit_Withdrawal_List.py-->line:101] - ERROR: list.remove(x): x not in list
+!!--!!search_ib_lower - 2022-03-17 16:58:35,014 - Location_of_Deposit_Withdrawal_List - [Location_of_Deposit_Withdrawal_List.py-->line:102] - ERROR: list.remove(x): x not in list

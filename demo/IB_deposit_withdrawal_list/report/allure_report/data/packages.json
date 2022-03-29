@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "demo.IB_deposit_withdrawal_list.actions_bin.Test_IB_Deposit_Withdrawal",
+    "children" : [ {
+      "name" : "test_IB_list[data0]",
+      "uid" : "219a4125f5a31e19",
+      "parentUid" : "b7a513a063836fd321d0d0c6f9ddb5de",
+      "status" : "failed",
+      "time" : {
+        "start" : 1648200510832,
+        "stop" : 1648200883065,
+        "duration" : 372233
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'IB账号': 1000005349.0}" ]
+    } ],
+    "uid" : "demo.IB_deposit_withdrawal_list.actions_bin.Test_IB_Deposit_Withdrawal"
+  } ]
+}

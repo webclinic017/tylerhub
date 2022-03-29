@@ -1,0 +1,22 @@
+{
+  "92a423ecdb2e2f337f7317946a40992b" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "219a4125f5a31e19",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: FAILURE: 数据库姓名：uitest勿动suidetest，页面姓名：(KOR1)uitest勿动suidetest，第1条数据断言失败\ndemo\\IB_deposit_withdrawal_list\\actions_bin\\Test_IB_Deposit_Withdrawal.py:136 in test_IB_list() -> check.equal(IBVerifyList.lower_depositDatabase[i]['clnName'].replace(' ',''),IBVerifyList.deposit_list[x]['clnName'].replace(' ',''),\nFAILURE: 数据库姓名：uitest勿动suidetest，页面姓名：(KOR1)uitest勿动suidetest，第2条数据断言失败\ndemo\\IB_deposit_withdrawal_list\\actions_bin\\Test_IB_Deposit_Withdrawal.py:136 in test_IB_list() -> check.equal(IBVerifyList.lower_depositDatabase[i]['clnName'].replace(' ',''),IBVerifyList.deposit_list[x]['clnName'].replace(' ',''),\nFAILURE: 数据库入金条数:20，页面入金条数：11，账号1200008177入金记录总数断言失败\ndemo\\IB_deposit_withdrawal_list\\actions_bin\\Test_IB_Deposit_Withdrawal.py:118 in test_IB_list() -> check.equal(len(IBVerifyList.lower_depositDatabase),IBVerifyList.len_deposit,\nFAILURE: 数据库入金条数:1，页面入金条数：2，账号1000006154入金记录总数断言失败\ndemo\\IB_deposit_withdrawal_list\\actions_bin\\Test_IB_Deposit_Withdrawal.py:118 in test_IB_list() -> check.equal(len(IBVerifyList.lower_depositDatabase),IBVerifyList.len_deposit,\nFAILURE: 数据库入金条数:4，页面入金条数：5，账号1000006140入金记录总数断言失败\ndemo\\IB_deposit_withdrawal_list\\actions_bin\\Test_IB_Deposit_Withdrawal.py:118 in test_IB_list() -> check.equal(len(IBVerifyList.lower_depositDatabase),IBVerifyList.len_deposit,\nFAILURE: 数据库姓名：ryan活动勿动，页面姓名：(SIT10001)ryan活动勿动，第1条数据断言失败\ndemo\\IB_deposit_withdrawal_list\\actions_bin\\Test_IB_Deposit_Withdrawal.py:136 in test_IB_list() -> check.equal(IBVerifyList.lower_depositDatabase[i]['clnName'].replace(' ',''),IBVerifyList.deposit_list[x]['clnName'].replace(' ',''),\nFAILURE: 数据库入金条数:9，页面入金条数：8，账号1000006223入金记录总数断言失败\ndemo\\IB_deposit_withdrawal_list\\actions_bin\\Test_IB_Deposit_Withdrawal.py:118 in test_IB_list() -> check.equal(len(IBVerifyList.lower_depositDatabase),IBVerifyList.len_deposit,\n------------------------------------------------------------\nFailed Checks: 7",
+      "time" : {
+        "start" : 1648200510832,
+        "stop" : 1648200883065,
+        "duration" : 372233
+      }
+    } ]
+  }
+}

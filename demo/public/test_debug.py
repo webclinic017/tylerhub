@@ -1370,51 +1370,73 @@ def txt_xls(filename,xlsname):
 # time.sleep(5)
 # dr.find_element_by_xpath("//span[.='Deposit Withdrawal List']").click()
 
-# from handle_database import Database_operate
-# from read_dataconfig import ReadConfig
+from handle_database import Database_operate
+from read_dataconfig import ReadConfig
+import re
+
+dataBase=Database_operate()
+conFig=ReadConfig()
+pattern=r'[10|12]\d{9}'
+
+a=dataBase.search_in_mysql('SELECT path FROM client_relationship2_sit.relationship where path like "%1000005349%"', conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')
+
+b=[]
+for i in a:
+    b.append(re.findall(pattern,''.join(list(i))))
 
 
-# dataBase=Database_operate()
-# ConFig=ReadConfig()
+d=[]
+for y in b:
+    for x in y:
+        d.append(x)
 
+print(d)
+g=list(set(d))
+print(g)
 
-# dataBase.search_in_mysql(sql, ConFig.get_value('mysql_datawarehouse_two', 'user'), ConFig.get_value('mysql_datawarehouse_two', 'host'), ConFig.get_value('mysql_datawarehouse_two', 'password'))
+# a=['', '1000005375', '1000005378', '1000005379', '1000005389']
 
-a=['', '1000005375', '1000005378', '1000005379', '1000005389']
+# print(list(filter(None, a)))
 
-print(list(filter(None, a)))
+# pattern=r'[10|12]\d{8}'
+# print(pattern)
+# import datetime
 
+# a={'lastUpdateDate': datetime.datetime(2021, 10, 18, 8, 6, 40, 34000)}
 
+# b=a['lastUpdateDate'].strftime('%Y-%m-%d %H:%M:%S')
 
+# c=datetime.datetime.strptime('2021-10-18 11:06:40','%Y-%m-%d %H:%M:%S')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# d=(c+datetime.timedelta(hours=-3)).strftime('%Y-%m-%d %H:%M:%S')
+# print(b,d)
 
 
 
+# a='tyler勿动 testttet'
+# b='tyler勿动testttet'
+# print(a.replace(' ',''))
+# a='2021-10-18 08:06:40'
 
+# print(a[0:-3])
 
+# for i in range(1,4):
+#     for x in range(0,5):
+#         if i==x:
+#             print('i',i)
+#             break
+#         else:
+#             print('x',x)
 
+# import re
+# pattern=r'({}/[10|12]\d*)'.format(1000005349)
+# pattern2=r'[10|12]\d*$'
 
+# a='/100000/8800000/188805/200038/1000005349/1000005562/66200285'
 
-
-
-
+# b='/100000/8800000/188805/200038/1000005349/1000006140/1000006127/66200557'
     
-
+# print(re.findall(pattern,b))
 
 
 
