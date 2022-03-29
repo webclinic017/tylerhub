@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-02-21 17:22:03
-LastEditTime: 2022-03-25 17:13:09
+LastEditTime: 2022-03-29 17:19:22
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\IB_deposit_withdrawal_list\location\Location_of_Deposit_Withdrawal_List.py
@@ -12,7 +12,6 @@ import sys
 import time
 import random
 import datetime
-from dateutil import parser
 import re
 import pyperclip
 
@@ -25,7 +24,6 @@ from browser_actions import Commonweb
 from common_method import Commonmethod
 from handle_database import Database_operate
 from handlelog import MyLog
-from randomdata import Random_data
 from read_dataconfig import ReadConfig
 from about_data import Aboutdata
 
@@ -35,12 +33,11 @@ class Location_of_deposit_withdrawal(object):
     页面定位等操作
     """
 
-    global common,dataBase,log,randomData,conFig,dealData
+    global common,dataBase,log,conFig,dealData
 
     common=Commonweb()
     dataBase=Database_operate()
     log=MyLog()
-    randomData=Random_data()
     conFig=ReadConfig()
     dealData=Aboutdata()
 
