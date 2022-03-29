@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-03-29 17:16:00
-LastEditTime: 2022-03-29 17:44:01
+LastEditTime: 2022-03-29 18:01:28
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\IB_Close_Open_Order_List\actions_bin\Test_ib_close_open_order_list.py
@@ -14,6 +14,7 @@ import pytest_check as check
 path_public=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),'public')
 sys.path.append(path_public)
 path_project=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+print(path_project)
 sys.path.append(path_project+r'\location')
 from about_data import Aboutdata
 from read_dataconfig import ReadConfig
