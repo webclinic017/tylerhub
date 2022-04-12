@@ -1370,29 +1370,29 @@ def txt_xls(filename,xlsname):
 # time.sleep(5)
 # dr.find_element_by_xpath("//span[.='Deposit Withdrawal List']").click()
 
-from handle_database import Database_operate
-from read_dataconfig import ReadConfig
-import re
+# from handle_database import Database_operate
+# from read_dataconfig import ReadConfig
+# import re
 
-dataBase=Database_operate()
-conFig=ReadConfig()
-pattern=r'[10|12]\d{9}'
+# dataBase=Database_operate()
+# conFig=ReadConfig()
+# pattern=r'[10|12]\d{9}'
 
-a=dataBase.search_in_mysql('SELECT path FROM client_relationship2_sit.relationship where path like "%1000005349%"', conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')
+# a=dataBase.search_in_mysql('SELECT path FROM client_relationship2_sit.relationship where path like "%1000005349%"', conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')
 
-b=[]
-for i in a:
-    b.append(re.findall(pattern,''.join(list(i))))
+# b=[]
+# for i in a:
+#     b.append(re.findall(pattern,''.join(list(i))))
 
 
-d=[]
-for y in b:
-    for x in y:
-        d.append(x)
+# d=[]
+# for y in b:
+#     for x in y:
+#         d.append(x)
 
-print(d)
-g=list(set(d))
-print(g)
+# print(d)
+# g=list(set(d))
+# print(g)
 
 # a=['', '1000005375', '1000005378', '1000005379', '1000005389']
 
@@ -1438,20 +1438,30 @@ print(g)
     
 # print(re.findall(pattern,b))
 
+# import random
+# W# print(random.randint(0,2-1))
 
+# import pytest
+# import os
+# class Test_demo():
 
+#     def set_up(self):
+#         print('用例开始')
+    
+#     def test01(self):
+#         for i in range(0,5):
+#             if i == 3: pytest.skip()
+               
+#             else:
+#                 print(i)
+            
+# if __name__=='__main__':
+#     pytest.main(['-s','-v',os.path.abspath(__file__)])
 
+li=[]
 
-
-
-
-
-
-
-
-
-
-
+li.append(5.5)
+print(li)
 
 
 

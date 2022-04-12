@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:27:17
-LastEditTime: 2022-03-16 15:10:41
+LastEditTime: 2022-04-01 10:39:49
 LastEditors: Please set LastEditors
 Description: Query database and save
 FilePath: \tylerhub\demo\public\handle_database.py
@@ -232,9 +232,16 @@ if __name__=='__main__':
 
     # print(list(set(withdrawal_list)))
     # dataBase.search_in_mongodb(conFig.get_value('mongodb','uri'),'atfxgm-sit','atfx_account_info',{"accountNumber":1000005349},'lang',N=1)
-    # mysql_closeOrder=dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="66200125" and Close_Time!="1970-01-01 00:00:00" order by Ticket', conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')
+    # mysql_closeOrder=dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="66200125" and Close_Time!="1970-01-01 00:00:00" order by Ticket',
+    #  conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')
     # print(mysql_closeOrder[0][6])
-    lower_withdrawalDatabase=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'),'atfxgm-sit', 'atfx_deposit',
-    {"accountNumber":1000006223},'mtRefNo','accountNumber','tradeAccount','clnName','lastUpdateDate','mt4Amt',N=0,sortTerm=[('_id',1)])
-    print(lower_withdrawalDatabase)
-    print('544097' in lower_withdrawalDatabase)
+    # lower_withdrawalDatabase=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'),'atfxgm-sit', 'atfx_deposit',
+    # {"accountNumber":1000006223},'mtRefNo','accountNumber','tradeAccount','clnName','lastUpdateDate','mt4Amt',N=0,sortTerm=[('_id',1)])
+    # print(lower_withdrawalDatabase)	
+
+    # print('544097' in lower_withdrawalDatabase)
+    print(dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="{}" and Close_Time="1970-01-01 00:00:00" and'
+    ' Open_Time between "{} 00:00:00" and "{} 23:59:59" order by Open_Time desc'.
+    format(672007722,'2022-03-30','2022-03-30'), conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all'))
+    
+    # print(dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="672007722"',conFig.get_value('mysql_AWS', 'host'),conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all'))

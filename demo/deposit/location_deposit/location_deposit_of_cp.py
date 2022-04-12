@@ -231,8 +231,13 @@ class Locations_of_deposit(object):
     def deposit_actions(self,traccount,amount):
         try:
             #点击入金
-            common.display_click('css,li.el-submenu>ul>li>ul>div>li>span',1)
+            common.display_click("xpath,//span[.='入金']")
             time.sleep(2)
+            while True:
+                if 'none' in common.get_attributes('css,.el-loading-mask','style'):
+                    break
+                else:
+                    continue
             #选择电子钱包neteller方式入金
             common.display_click('css,[title="电子钱包 Neteller"]')
             time.sleep(1)
@@ -249,7 +254,15 @@ class Locations_of_deposit(object):
             time.sleep(1)
             #确认提交
             common.display_click('css,.common-btn > span')
+            time.sleep(2)
+            #去除提示弹窗
+            if 'none' in common.get_attributes('css,.el-dialog__wrapper', 'style',2):
+                pass
+            else:
+                common.display_click('css,.ok > span')
             time.sleep(1)
+            common.display_click('css,.el-checkbox__inner')
+            time.sleep(0.5)
             #再次确认提交
             common.display_click('css,.common-btn > span')
             time.sleep(1)
@@ -280,16 +293,18 @@ class Locations_of_deposit(object):
             common.display_click('css,.ivu-select-visible li',6)
             time.sleep(1)
             #输入交易账号
+            common.web_clear('css,.ivu-input-group > [placeholder]')
+            time.sleep(0.5)
             common.display_input('css,.ivu-input-group > [placeholder]',traccount)
             time.sleep(1)
             #搜索
             common.display_click('css,.ivu-btn-icon-only > .ivu-icon')
-            time.sleep(2)
+            time.sleep(15)
             #勾选入金记录
             common.display_click('css,.ivu-table-tbody > tr .ivu-checkbox-input')
             time.sleep(1)
             #转未处理
-            common.display_click('css,button > span',6)
+            common.display_click("xpath,//span[.='转未处理']")
             time.sleep(1)
             #判断资金管理模块是展开
             if common.get_attributes('xpath,//*[@id="app"]/div/div/div[1]/div[1]/div[1]/div/ul/li[2]/ul', 'style')=='':
@@ -312,11 +327,13 @@ class Locations_of_deposit(object):
             common.display_click('css,.ivu-select-visible li',6)
             time.sleep(1)
             #输入交易账号
+            common.web_clear('css,.ivu-input-group > [placeholder]')
+            time.sleep(0.5)
             common.display_input('css,.ivu-input-group > [placeholder]',traccount)
             time.sleep(1)
             #搜索
             common.display_click('css,.ivu-btn-icon-only > .ivu-icon')
-            time.sleep(2)
+            time.sleep(15)
             common.display_click('css,.ivu-table-tbody > tr .ivu-checkbox-input')
             time.sleep(1)
             #处理完成
@@ -390,8 +407,7 @@ class Locations_of_deposit(object):
         try:
             common.switch_windows(1)
             time.sleep(1)
-            self.successText=common.display_get_text('xpath,//*[@id="app"]/div/div/div[4]/div/div[3]/div/'
-            'div[3]/div/div/div[1]/div[2]/table/tbody/tr[1]/td[3]/div/div/div/span')
+            self.successText=common.display_get_text("xpath,//span[@class='tips']")
             time.sleep(1)
             return self.successText
         except Exception as msg:

@@ -1,0 +1,20 @@
+!!--!!get_traccount_balance - 2022-04-11 17:46:23,077 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:228] - ERROR: unsupported operand type(s) for *: 'int' and 'NoneType'
+!!--!!logoutcp - 2022-04-11 17:46:34,328 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:391] - ERROR: Message: chrome not reachable
+  (Session info: chrome=100.0.4896.75)
+
+!!--!!login_bos - 2022-04-11 17:46:38,564 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:56] - ERROR: Message: chrome not reachable
+  (Session info: chrome=100.0.4896.75)
+
+!!--!!remove_topup - 2022-04-11 17:46:38,766 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:65] - ERROR: Message: chrome not reachable
+  (Session info: chrome=100.0.4896.75)
+
+!!--!!serarch_account - 2022-04-11 17:46:42,645 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:94] - ERROR: Message: chrome not reachable
+  (Session info: chrome=100.0.4896.75)
+
+!!--!!is_traccount_can_deposit - 2022-04-11 17:46:45,559 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:364] - ERROR: 'NoneType' object cannot be interpreted as an integer
+!!--!!deposit_cp - 2022-04-11 17:46:49,890 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:383] - ERROR: Message: chrome not reachable
+  (Session info: chrome=100.0.4896.75)
+
+!!--!!deposit_success - 2022-04-11 17:46:50,110 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:403] - ERROR: Message: chrome not reachable
+  (Session info: chrome=100.0.4896.75)
+

@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-18 16:08:10
-LastEditTime: 2021-12-07 11:12:42
+LastEditTime: 2022-04-11 17:22:38
 LastEditors: Please set LastEditors
 Description: Execute test cases
 FilePath: \tylerhub\demo\registration_process\register_actions_bin\review.py
@@ -60,7 +60,7 @@ class Review_account(unittest.TestCase):
             print('当前测试数据:邮箱：{}，主账号：{}'.format(data['邮箱'],int(data['主账号'])))
             rev.review_operation(int(data['主账号']))
             #断言
-            self.assertIn('初审处理中',rev.get_success_text())
+            self.assertIn('成功(初审)',rev.get_success_text())
 
 
 if __name__=='__main__':

@@ -272,6 +272,12 @@ class Kyc_approve():
         #点击下一步
         common.web_click('css,.submit-btn')
         time.sleep(6)
+        #页面是否响应
+        while True:
+            if common.ele_is_displayed('css,.el-loading-text', 1):
+                continue
+            else:
+                break
         #上传银行卡照片
         common.display_click('css,.img-text-required')
         time.sleep(1)
@@ -302,6 +308,11 @@ class Kyc_approve():
         #下一步
         common.web_click('css,.submit-btn')
         time.sleep(5)
+        while True:
+            if common.ele_is_displayed('css,.el-loading-text', 1):
+                continue
+            else:
+                break
         #选择地址认证
         common.display_click('css,.la-file-alt')
         time.sleep(1)

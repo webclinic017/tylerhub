@@ -226,7 +226,7 @@ class Location_deposit_bos():
             time.sleep(1)
             #搜索
             common.display_click('css,.ivu-btn-icon-only > .ivu-icon')
-            time.sleep(2)
+            time.sleep(10)
             #勾选入金记录
             common.display_click('css,.ivu-table-tbody > tr .ivu-checkbox-input')
             time.sleep(1)
@@ -245,8 +245,7 @@ class Location_deposit_bos():
     def deposit_success(self):
         try:
             time.sleep(1)
-            self.successText=common.display_get_text('xpath,//*[@id="app"]/div/div/div[4]/div/div[3]/div/'
-            'div[3]/div/div/div[1]/div[2]/table/tbody/tr[1]/td[3]/div/div/div/span')
+            self.successText=common.display_get_text("xpath,//span[@class='tips']")
             time.sleep(1)
             self.closebrowser()
             common.switch_windows(0)

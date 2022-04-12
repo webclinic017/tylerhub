@@ -1,0 +1,1 @@
+!!--!!search_period_openOrder - 2022-04-07 18:01:02,670 - Location_of_ib__close_open_order_list - [Location_of_ib__close_open_order_list.py-->line:305] - ERROR: 'Location_of_IB_CloseOpen_OrderList' object has no attribute 'dataBase'

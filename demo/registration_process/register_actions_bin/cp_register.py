@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-12-22 11:10:30
+LastEditTime: 2022-04-11 16:32:04
 LastEditors: Please set LastEditors
 Description: Perform cases of register
 FilePath: \tylerhub\demo\registration_process\register_actions_bin\cp_register.py

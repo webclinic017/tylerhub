@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-03-29 17:16:00
-LastEditTime: 2022-03-29 18:01:28
+LastEditTime: 2022-04-07 16:53:09
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\IB_Close_Open_Order_List\actions_bin\Test_ib_close_open_order_list.py
@@ -32,7 +32,7 @@ class Test_IB_CloseOpen_OrderList(object):
     # excelpath=os.path.join(path_project,r'test_data\IB_lowerData.xlsx')
     # rows=dealData.openexcel(excelpath,'Sheet1')
     # testdata=dealData.dict_data()
-
+    
     def setup_class(self):
         #默认谷歌浏览器打开
         VerifOrderyList.broswertype()
@@ -40,9 +40,17 @@ class Test_IB_CloseOpen_OrderList(object):
         VerifOrderyList.get_url('sit',conFig.get_value('bos_login', 'username'),conFig.get_value('bos_login', 'password'))
 
 
-
-    def Test_IB_Order_List(self):
-        print(8888)
+    def test_IB_Order_List(self):
+        VerifOrderyList.search_ib_lower(1000005349)
+        VerifOrderyList.logincp(1000005349)
+        if VerifOrderyList.filter_lower_openOrder():
+            for i in VerifOrderyList.tradeAccount_list2:
+                if VerifOrderyList.search_period_openOrder(i):
+                    print('断言open_orderList,mysql_openOrder')
+                else:
+                    print('断言长度')
+        else:
+            pytest.skip()
 
 
             

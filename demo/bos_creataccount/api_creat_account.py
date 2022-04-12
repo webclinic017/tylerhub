@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-18 18:04:52
-LastEditTime: 2021-09-23 17:32:04
+LastEditTime: 2022-03-30 18:14:14
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\bos_creataccount\api_creat_account.py
@@ -45,7 +45,7 @@ def loginbos():
     headers=headers_login,json=data_login)
     return lgoinData.json()['data']['token']
 
-def creataccount(parend_code,type):
+def creataccount(parent_code,type):
     if type=='IB':
         level='12'
         ib_code=ranData.get_rangenum(9)
@@ -88,7 +88,7 @@ def creataccount(parend_code,type):
             "mtName":"mt4_s02",
             "mtRegion":"SEA",
             "parentAccountNumber":"",
-            "parentCode":parend_code,
+            "parentCode":parent_code,
             "region":"7",
             "riskLevel":"Undetermined",
             "state":"",
@@ -154,4 +154,4 @@ if __name__=='__main__':
     "G0088AS7", "G0088AS8", "G0088AS14", "G0088AS15", "G0088AS17", "G0088AM3", "G0088AS9", "G0088AS10", "G0088AS12", 
     "G0088AS13", "G0088AS16", "G0088AR1", "G0088AR2"]
 
-    print(creataccount('G0088A','CL')['data']['accountNumber'])
+    print(creataccount('TYLERTESTIBDAD','cl')['data']['accountNumber'])

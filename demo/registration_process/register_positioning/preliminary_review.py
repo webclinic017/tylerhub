@@ -49,6 +49,7 @@ class Review_actions(Commonweb):
     def review_operation(self,account):
         try:
             #根据主账号搜索
+            self.switch_windows(0)
             self.web_clear('css,.ivu-input-default')
             time.sleep(0.5)
             self.web_input('css,.ivu-input-default',account) #输入主账户
