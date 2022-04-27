@@ -1,0 +1,3916 @@
+{
+  "uid" : "e3f56faab2da1a42",
+  "name" : "test_IB_Order_List[data0]",
+  "fullName" : "demo.IB_Close_Open_Order_List.actions_bin.Test_ib_open_order_list.Test_IB_Open_OrderList#test_IB_Order_List",
+  "historyId" : "7d466d7fb6fc5de3e742899a03015a1b",
+  "time" : {
+    "start" : 1650337474017,
+    "stop" : 1650337550229,
+    "duration" : 76212
+  },
+  "description" : "读取测试文档数据，执行用例",
+  "descriptionHtml" : "<p>读取测试文档数据，执行用例</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_IB_Open_OrderList",
+    "time" : {
+      "start" : 1650337458664,
+      "stop" : 1650337474013,
+      "duration" : 15349
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "读取测试文档数据，执行用例",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "获取当前测试数据下标",
+      "time" : {
+        "start" : 1650337474018,
+        "stop" : 1650337474018,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "查询当前代理账号存在多少个直属/非直属下级",
+      "time" : {
+        "start" : 1650337474018,
+        "stop" : 1650337474075,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "根据代理账号通过BOS登录CP，进入下级未平仓页面",
+      "time" : {
+        "start" : 1650337474075,
+        "stop" : 1650337488797,
+        "duration" : 14722
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "查询当前代理是否存在下级未平仓订单",
+      "time" : {
+        "start" : 1650337488797,
+        "stop" : 1650337550229,
+        "duration" : 61432
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "当前代理存在下级未平仓订单",
+        "time" : {
+          "start" : 1650337503246,
+          "stop" : 1650337550228,
+          "duration" : 46982
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查询下级主账号 1000006323 名下交易账号 66200731 在 1990-01-01 00:00:00~2055-12-31 23:59:59 的未平仓订单数据",
+          "time" : {
+            "start" : 1650337503246,
+            "stop" : 1650337520250,
+            "duration" : 17004
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "判断在该时间段内是否存在未平仓数据",
+            "time" : {
+              "start" : 1650337503246,
+              "stop" : 1650337520250,
+              "duration" : 17004
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "在该时间段内存在20条未平仓订单数据",
+              "time" : {
+                "start" : 1650337520234,
+                "stop" : 1650337520250,
+                "duration" : 16
+              },
+              "status" : "passed",
+              "steps" : [ {
+                "name" : "核对页面交易账号：66200731 在 1990-01-01 00:00:00~2055-12-31 23:59:59时间段内的总交易量，总佣金，总隔夜利息，总盈亏",
+                "time" : {
+                  "start" : 1650337520234,
+                  "stop" : 1650337520234,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "页面总交易量：160.0，数据库总交易量：160.0",
+                  "time" : {
+                    "start" : 1650337520234,
+                    "stop" : 1650337520234,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "页面总佣金：-1600.0，数据库总佣金：-1600.0",
+                  "time" : {
+                    "start" : 1650337520234,
+                    "stop" : 1650337520234,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "页面总利息：1113.24，数据库总利息：1113.24",
+                  "time" : {
+                    "start" : 1650337520234,
+                    "stop" : 1650337520234,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "页面总盈亏：82330.76，数据库总盈亏：82330.76",
+                  "time" : {
+                    "start" : 1650337520234,
+                    "stop" : 1650337520234,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 4,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545166与数据库订单号码545166：",
+                "time" : {
+                  "start" : 1650337520234,
+                  "stop" : 1650337520250,
+                  "duration" : 16
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520234,
+                    "stop" : 1650337520234,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:56:36，数据库开仓时间：2022-03-30 12:56:36",
+                  "time" : {
+                    "start" : 1650337520234,
+                    "stop" : 1650337520234,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520234,
+                    "stop" : 1650337520234,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：CHFJPY，数据库商品代码：CHFJPY",
+                  "time" : {
+                    "start" : 1650337520234,
+                    "stop" : 1650337520234,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：131.652，数据库开仓价：131.652",
+                  "time" : {
+                    "start" : 1650337520234,
+                    "stop" : 1650337520250,
+                    "duration" : 16
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：-363.06，数据库隔夜利息：-363.06",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545165与数据库订单号码545165：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:56:32，数据库开仓时间：2022-03-30 12:56:32",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：AUDJPY，数据库商品代码：AUDJPY",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：91.519，数据库开仓价：91.519",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：-317.94，数据库隔夜利息：-317.94",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545164与数据库订单号码545164：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:56:28，数据库开仓时间：2022-03-30 12:56:28",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：USDCAD，数据库商品代码：USDCAD",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：1.24833，数据库开仓价：1.24833",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：12.73，数据库隔夜利息：12.73",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545163与数据库订单号码545163：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:56:25，数据库开仓时间：2022-03-30 12:56:25",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：EURAUD，数据库商品代码：EURAUD",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：1.48388，数据库开仓价：1.48388",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：503.26，数据库隔夜利息：503.26",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545162与数据库订单号码545162：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:56:22，数据库开仓时间：2022-03-30 12:56:22",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：USDJPY，数据库商品代码：USDJPY",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：121.895，数据库开仓价：121.895",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：721.72，数据库隔夜利息：721.72",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545161与数据库订单号码545161：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:56:18，数据库开仓时间：2022-03-30 12:56:18",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：AUDUSD，数据库商品代码：AUDUSD",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：0.75125，数据库开仓价：0.75125",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：-625.63，数据库隔夜利息：-625.63",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545160与数据库订单号码545160：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:56:13，数据库开仓时间：2022-03-30 12:56:13",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：EURCAD，数据库商品代码：EURCAD",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：1.39104，数据库开仓价：1.39104",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：662.41，数据库隔夜利息：662.41",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545159与数据库订单号码545159：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:56:10，数据库开仓时间：2022-03-30 12:56:10",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：AUDJPY，数据库商品代码：AUDJPY",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：91.552，数据库开仓价：91.552",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：53.54，数据库隔夜利息：53.54",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545158与数据库订单号码545158：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:56:06，数据库开仓时间：2022-03-30 12:56:06",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：CADJPY，数据库商品代码：CADJPY",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：97.615，数据库开仓价：97.615",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：-400.48，数据库隔夜利息：-400.48",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545157与数据库订单号码545157：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:56:02，数据库开仓时间：2022-03-30 12:56:02",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：AUDNZD，数据库商品代码：AUDNZD",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：1.07656，数据库开仓价：1.07656",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：-70.4，数据库隔夜利息：-70.4",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545156与数据库订单号码545156：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:55:59，数据库开仓时间：2022-03-30 12:55:59",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：EURNZD，数据库商品代码：EURNZD",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：1.59774，数据库开仓价：1.59774",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：621.17，数据库隔夜利息：621.17",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545155与数据库订单号码545155：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:55:56，数据库开仓时间：2022-03-30 12:55:56",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：AUDCAD，数据库商品代码：AUDCAD",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：0.93765，数据库开仓价：0.93765",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：-315.53，数据库隔夜利息：-315.53",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545154与数据库订单号码545154：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:55:49，数据库开仓时间：2022-03-30 12:55:49",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：AUDNZD，数据库商品代码：AUDNZD",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：1.0767，数据库开仓价：1.0767",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：-70.4，数据库隔夜利息：-70.4",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545153与数据库订单号码545153：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:55:46，数据库开仓时间：2022-03-30 12:55:46",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：CHFJPY，数据库商品代码：CHFJPY",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：131.581，数据库开仓价：131.581",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：-47.72，数据库隔夜利息：-47.72",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545152与数据库订单号码545152：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:55:41，数据库开仓时间：2022-03-30 12:55:41",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：EURUSD，数据库商品代码：EURUSD",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：1.1145，数据库开仓价：1.1145",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：1040.77，数据库隔夜利息：1040.77",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545151与数据库订单号码545151：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:55:33，数据库开仓时间：2022-03-30 12:55:33",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：USDCAD，数据库商品代码：USDCAD",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：1.24808，数据库开仓价：1.24808",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：-513.74，数据库隔夜利息：-513.74",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545150与数据库订单号码545150：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:55:27，数据库开仓时间：2022-03-30 12:55:27",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：GBPJPY，数据库商品代码：GBPJPY",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：160.204，数据库开仓价：160.204",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：34.83，数据库隔夜利息：34.83",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545149与数据库订单号码545149：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:55:24，数据库开仓时间：2022-03-30 12:55:24",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：EURNZD，数据库商品代码：EURNZD",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：1.59799，数据库开仓价：1.59799",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：621.17，数据库隔夜利息：621.17",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545148与数据库订单号码545148：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:55:20，数据库开仓时间：2022-03-30 12:55:20",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：CHFJPY，数据库商品代码：CHFJPY",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：131.644，数据库开仓价：131.644",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：-363.06，数据库隔夜利息：-363.06",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              }, {
+                "name" : "断言页面订单号码545147与数据库订单号码545147：",
+                "time" : {
+                  "start" : 1650337520250,
+                  "stop" : 1650337520250,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓时间：2022-03-30 12:55:16，数据库开仓时间：2022-03-30 12:55:16",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面商品代码：AUDNZD，数据库商品代码：AUDNZD",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面开仓价：1.0767，数据库开仓价：1.0767",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面隔夜利息：-70.4，数据库隔夜利息：-70.4",
+                  "time" : {
+                    "start" : 1650337520250,
+                    "stop" : 1650337520250,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : false,
+                  "stepsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 7,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              } ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "hasContent" : true,
+              "stepsCount" : 165,
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "hasContent" : true,
+            "stepsCount" : 166,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : true,
+          "stepsCount" : 167,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "查询下级主账号：1000006323 名下交易账号 66200731 在1990-01-01 00:00:00~2055-12-31 23:59:59 时间段内类型为买/卖的未平仓订单数据",
+          "time" : {
+            "start" : 1650337520250,
+            "stop" : 1650337529757,
+            "duration" : 9507
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "判断在该时间段内是否存在类型为买/卖的未平仓数据",
+            "time" : {
+              "start" : 1650337520250,
+              "stop" : 1650337529757,
+              "duration" : 9507
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "判断在该时间段内是否存在类型为买/卖的未平仓数据",
+              "time" : {
+                "start" : 1650337520250,
+                "stop" : 1650337529757,
+                "duration" : 9507
+              },
+              "status" : "passed",
+              "steps" : [ {
+                "name" : "在该时间段内存在8条类型为买/卖的未平仓订单数据",
+                "time" : {
+                  "start" : 1650337529757,
+                  "stop" : 1650337529757,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "核对页面交易账号：66200731 在 1990-01-01 00:00:00~2055-12-31 23:59:59时间段内的总交易量，总佣金，总隔夜利息，总盈亏",
+                  "time" : {
+                    "start" : 1650337529757,
+                    "stop" : 1650337529757,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ {
+                    "name" : "页面总交易量：64.0，数据库总交易量：64.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "页面总佣金：-640.0，数据库总佣金：-640.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "页面总利息：-844.46，数据库总利息：-844.46",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "页面总盈亏：116728.89，数据库总盈亏：116728.89",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  } ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : true,
+                  "stepsCount" : 4,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面订单号码545166与数据库订单号码545166：",
+                  "time" : {
+                    "start" : 1650337529757,
+                    "stop" : 1650337529757,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ {
+                    "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓时间：2022-03-30 12:56:36，数据库开仓时间：2022-03-30 12:56:36",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面商品代码：CHFJPY，数据库商品代码：CHFJPY",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓价：131.652，数据库开仓价：131.652",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面隔夜利息：-363.06，数据库隔夜利息：-363.06",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面盈亏：21120.08，数据库盈亏：21120.08",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  } ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : true,
+                  "stepsCount" : 8,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面订单号码545164与数据库订单号码545164：",
+                  "time" : {
+                    "start" : 1650337529757,
+                    "stop" : 1650337529757,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ {
+                    "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓时间：2022-03-30 12:56:28，数据库开仓时间：2022-03-30 12:56:28",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面商品代码：USDCAD，数据库商品代码：USDCAD",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓价：1.24833，数据库开仓价：1.24833",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面隔夜利息：12.73，数据库隔夜利息：12.73",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面盈亏：6679.16，数据库盈亏：6679.16",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  } ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : true,
+                  "stepsCount" : 8,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面订单号码545162与数据库订单号码545162：",
+                  "time" : {
+                    "start" : 1650337529757,
+                    "stop" : 1650337529757,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ {
+                    "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓时间：2022-03-30 12:56:22，数据库开仓时间：2022-03-30 12:56:22",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面商品代码：USDJPY，数据库商品代码：USDJPY",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓价：121.895，数据库开仓价：121.895",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面隔夜利息：721.72，数据库隔夜利息：721.72",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面盈亏：36073.36，数据库盈亏：36073.36",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  } ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : true,
+                  "stepsCount" : 8,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面订单号码545161与数据库订单号码545161：",
+                  "time" : {
+                    "start" : 1650337529757,
+                    "stop" : 1650337529757,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ {
+                    "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓时间：2022-03-30 12:56:18，数据库开仓时间：2022-03-30 12:56:18",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面商品代码：AUDUSD，数据库商品代码：AUDUSD",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓价：0.75125，数据库开仓价：0.75125",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面隔夜利息：-625.63，数据库隔夜利息：-625.63",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面盈亏：-12168.0，数据库盈亏：-12168.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  } ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : true,
+                  "stepsCount" : 8,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面订单号码545159与数据库订单号码545159：",
+                  "time" : {
+                    "start" : 1650337529757,
+                    "stop" : 1650337529757,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ {
+                    "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓时间：2022-03-30 12:56:10，数据库开仓时间：2022-03-30 12:56:10",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面商品代码：AUDJPY，数据库商品代码：AUDJPY",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓价：91.552，数据库开仓价：91.552",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面隔夜利息：53.54，数据库隔夜利息：53.54",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面盈亏：15103.69，数据库盈亏：15103.69",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  } ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : true,
+                  "stepsCount" : 8,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面订单号码545155与数据库订单号码545155：",
+                  "time" : {
+                    "start" : 1650337529757,
+                    "stop" : 1650337529757,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ {
+                    "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓时间：2022-03-30 12:55:56，数据库开仓时间：2022-03-30 12:55:56",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面商品代码：AUDCAD，数据库商品代码：AUDCAD",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓价：0.93765，数据库开仓价：0.93765",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面隔夜利息：-315.53，数据库隔夜利息：-315.53",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面盈亏：-7009.62，数据库盈亏：-7009.62",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  } ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : true,
+                  "stepsCount" : 8,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面订单号码545150与数据库订单号码545150：",
+                  "time" : {
+                    "start" : 1650337529757,
+                    "stop" : 1650337529757,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ {
+                    "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓时间：2022-03-30 12:55:27，数据库开仓时间：2022-03-30 12:55:27",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面商品代码：GBPJPY，数据库商品代码：GBPJPY",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓价：160.204，数据库开仓价：160.204",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面隔夜利息：34.83，数据库隔夜利息：34.83",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面盈亏：35760.0，数据库盈亏：35760.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  } ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : true,
+                  "stepsCount" : 8,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                }, {
+                  "name" : "断言页面订单号码545148与数据库订单号码545148：",
+                  "time" : {
+                    "start" : 1650337529757,
+                    "stop" : 1650337529757,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ {
+                    "name" : "断言页面交易账号：66200731，数据库交易账号：66200731",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓时间：2022-03-30 12:55:20，数据库开仓时间：2022-03-30 12:55:20",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面交易量：8.0，数据库交易量：8.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面商品代码：CHFJPY，数据库商品代码：CHFJPY",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面开仓价：131.644，数据库开仓价：131.644",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面佣金：-80.0，数据库佣金：-80.0",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面隔夜利息：-363.06，数据库隔夜利息：-363.06",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  }, {
+                    "name" : "断言页面盈亏：21170.22，数据库盈亏：21170.22",
+                    "time" : {
+                      "start" : 1650337529757,
+                      "stop" : 1650337529757,
+                      "duration" : 0
+                    },
+                    "status" : "passed",
+                    "steps" : [ ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "hasContent" : false,
+                    "stepsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "attachmentsCount" : 0
+                  } ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "hasContent" : true,
+                  "stepsCount" : 8,
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "hasContent" : true,
+                "stepsCount" : 77,
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0
+              } ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "hasContent" : true,
+              "stepsCount" : 78,
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "hasContent" : true,
+            "stepsCount" : 79,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : true,
+          "stepsCount" : 80,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 249,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 250,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 254,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_IB_Open_OrderList::0",
+    "time" : {
+      "start" : 1650337552479,
+      "stop" : 1650337552479,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用例执行"
+  }, {
+    "name" : "feature",
+    "value" : "核对IB下级未平仓数据，断言导出与复制功能"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.IB_Close_Open_Order_List.actions_bin"
+  }, {
+    "name" : "suite",
+    "value" : "Test_ib_open_order_list"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_IB_Open_OrderList"
+  }, {
+    "name" : "host",
+    "value" : "SZ01-QA-G-10"
+  }, {
+    "name" : "thread",
+    "value" : "15532-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.IB_Close_Open_Order_List.actions_bin.Test_ib_open_order_list"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'代理账号': 1000005349.0, '订单号码': 545202.0}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e3f56faab2da1a42.json",
+  "parameterValues" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+}

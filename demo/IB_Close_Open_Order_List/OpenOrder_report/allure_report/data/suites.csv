@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Thu Apr 21 10:45:30 GMT+08:00 2022","Thu Apr 21 10:45:30 GMT+08:00 2022","0","demo.IB_Close_Open_Order_List.actions_bin","Test_ib_close_order_list","Test_IB_Open_OrderList","","","test_IB_Order_List",""
+"passed","Tue Apr 26 13:43:12 GMT+08:00 2022","Tue Apr 26 13:47:48 GMT+08:00 2022","276669","demo.IB_Close_Open_Order_List.actions_bin","Test_ib_close_order_list","Test_IB_Open_OrderList","","","IB下级未平仓订单数据核对报告","读取测试文档数据，执行用例"
+"passed","Thu Apr 21 10:16:36 GMT+08:00 2022","Thu Apr 21 10:18:30 GMT+08:00 2022","114118","demo.IB_Close_Open_Order_List.actions_bin","Test_ib_open_order_list","Test_IB_Open_OrderList","","","IB下级未平仓订单数据核对报告","读取测试文档数据，执行用例"

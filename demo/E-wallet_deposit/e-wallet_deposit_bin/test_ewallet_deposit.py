@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-28 17:32:52
-LastEditTime: 2021-08-04 21:49:49
+LastEditTime: 2022-04-12 14:25:22
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\E-wallet_deposit\e-wallet_deposit_bin\test_ewallet_deposti.py

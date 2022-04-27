@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-18 18:04:52
-LastEditTime: 2022-03-30 18:14:14
+LastEditTime: 2022-04-18 11:54:37
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\bos_creataccount\api_creat_account.py
@@ -45,7 +45,7 @@ def loginbos():
     headers=headers_login,json=data_login)
     return lgoinData.json()['data']['token']
 
-def creataccount(parent_code,type):
+def creataccount(parent_code:int,type):
     if type=='IB':
         level='12'
         ib_code=ranData.get_rangenum(9)

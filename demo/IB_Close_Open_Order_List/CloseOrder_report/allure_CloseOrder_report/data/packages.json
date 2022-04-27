@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "demo.IB_Close_Open_Order_List.actions_bin.Test_ib_close_order_list",
+    "children" : [ {
+      "name" : "IB下级未平仓订单数据核对报告",
+      "uid" : "c7812bf9a8f8e7f9",
+      "parentUid" : "a878811fefc69ff2ba601baf4703da21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650967949484,
+        "stop" : 1650968043313,
+        "duration" : 93829
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+    } ],
+    "uid" : "demo.IB_Close_Open_Order_List.actions_bin.Test_ib_close_order_list"
+  } ]
+}

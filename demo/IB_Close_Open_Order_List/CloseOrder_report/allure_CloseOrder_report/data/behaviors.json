@@ -1,0 +1,26 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "核对IB下级已平仓数据，断言导出与复制功能",
+    "children" : [ {
+      "name" : "用例执行",
+      "children" : [ {
+        "name" : "IB下级未平仓订单数据核对报告",
+        "uid" : "c7812bf9a8f8e7f9",
+        "parentUid" : "c9119063d51eb384274b7a41db85e07d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650967949484,
+          "stop" : 1650968043313,
+          "duration" : 93829
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+      } ],
+      "uid" : "c9119063d51eb384274b7a41db85e07d"
+    } ],
+    "uid" : "56b33234c7351b6a1ba6fcb872865f85"
+  } ]
+}

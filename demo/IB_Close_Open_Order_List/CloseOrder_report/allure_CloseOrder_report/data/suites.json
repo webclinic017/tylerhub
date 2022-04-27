@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "demo.IB_Close_Open_Order_List.actions_bin",
+    "children" : [ {
+      "name" : "Test_ib_close_order_list",
+      "children" : [ {
+        "name" : "Test_IB_Open_OrderList",
+        "children" : [ {
+          "name" : "IB下级未平仓订单数据核对报告",
+          "uid" : "c7812bf9a8f8e7f9",
+          "parentUid" : "5e22b0be9cc8061c9a7715e9a0b9ba71",
+          "status" : "passed",
+          "time" : {
+            "start" : 1650967949484,
+            "stop" : 1650968043313,
+            "duration" : 93829
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+        } ],
+        "uid" : "5e22b0be9cc8061c9a7715e9a0b9ba71"
+      } ],
+      "uid" : "115f9dee3d097eaa7d08f25024c5c901"
+    } ],
+    "uid" : "e2b681d0c9cd6666f139621eeac69887"
+  } ]
+}

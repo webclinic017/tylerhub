@@ -1,0 +1,332 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "SZ01-QA-G-10",
+    "children" : [ {
+      "name" : "15532-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "e3f56faab2da1a42",
+        "parentUid" : "66bf0c1dead291cff59a0b0adde7e3ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650337474017,
+          "stop" : 1650337550229,
+          "duration" : 76212
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "66bf0c1dead291cff59a0b0adde7e3ae"
+    }, {
+      "name" : "16840-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "13f865db9a12831",
+        "parentUid" : "32169463ef3e5ad8890b46b87d55cb0d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650427099285,
+          "stop" : 1650427170883,
+          "duration" : 71598
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "32169463ef3e5ad8890b46b87d55cb0d"
+    }, {
+      "name" : "18148-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "3d39d74a857a9837",
+        "parentUid" : "c7f414cd3cd18f295332479582f402dc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650422964912,
+          "stop" : 1650423241774,
+          "duration" : 276862
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "c7f414cd3cd18f295332479582f402dc"
+    }, {
+      "name" : "20060-MainThread",
+      "children" : [ {
+        "name" : "IB下级未平仓订单数据核对报告",
+        "uid" : "2d5d57c1c5bc42ad",
+        "parentUid" : "f16249169da8686e9584521a8d9033ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951792100,
+          "stop" : 1650952068769,
+          "duration" : 276669
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+      } ],
+      "uid" : "f16249169da8686e9584521a8d9033ac"
+    }, {
+      "name" : "31572-MainThread",
+      "children" : [ {
+        "name" : "IB下级未平仓订单数据核对报告",
+        "uid" : "cd19f4adc452a33f",
+        "parentUid" : "9b66a55fb33bbef390505bdecd577661",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650943393800,
+          "stop" : 1650943761567,
+          "duration" : 367767
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+      } ],
+      "uid" : "9b66a55fb33bbef390505bdecd577661"
+    }, {
+      "name" : "17836-MainThread",
+      "children" : [ {
+        "name" : "IB下级未平仓订单数据核对报告",
+        "uid" : "7156adb8da48b157",
+        "parentUid" : "c2e8120130ab67e17c7b7061078cd952",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951412873,
+          "stop" : 1650951485929,
+          "duration" : 73056
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+      } ],
+      "uid" : "c2e8120130ab67e17c7b7061078cd952"
+    }, {
+      "name" : "21944-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "f5b31d1c09304a96",
+        "parentUid" : "54d550fdc61c051bba311d5cafb413d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650504952305,
+          "stop" : 1650505002393,
+          "duration" : 50088
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "54d550fdc61c051bba311d5cafb413d8"
+    }, {
+      "name" : "21928-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "a8fb254690c956e0",
+        "parentUid" : "692fa760892405f3349382ce001341c9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650505285395,
+          "stop" : 1650505391166,
+          "duration" : 105771
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "692fa760892405f3349382ce001341c9"
+    }, {
+      "name" : "20772-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "1c9c1de791586a4",
+        "parentUid" : "4a3fd62fbe2064857abad7fa13c7e0fd",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650449162156,
+          "stop" : 1650449310150,
+          "duration" : 147994
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "4a3fd62fbe2064857abad7fa13c7e0fd"
+    }, {
+      "name" : "9044-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "d07d5faa3b84c1ad",
+        "parentUid" : "d24eaf9f185b936013ab82b2afea743e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650448830801,
+          "stop" : 1650449017904,
+          "duration" : 187103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "d24eaf9f185b936013ab82b2afea743e"
+    }, {
+      "name" : "21404-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "17b0989af688d6aa",
+        "parentUid" : "efef916cd14c68f60eea379575cc8c09",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650505142747,
+          "stop" : 1650505194638,
+          "duration" : 51891
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "efef916cd14c68f60eea379575cc8c09"
+    }, {
+      "name" : "17272-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "78b0b54f5b05b336",
+        "parentUid" : "78eaf2361e51f2da9c9e3a53d8c5950b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650350960050,
+          "stop" : 1650351025543,
+          "duration" : 65493
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "78eaf2361e51f2da9c9e3a53d8c5950b"
+    }, {
+      "name" : "19464-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "896c0ce2c50d5a7e",
+        "parentUid" : "fcf6db671b580540ac9459398f1b0f75",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650505548622,
+          "stop" : 1650505872881,
+          "duration" : 324259
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "fcf6db671b580540ac9459398f1b0f75"
+    }, {
+      "name" : "21956-MainThread",
+      "children" : [ {
+        "name" : "IB下级未平仓订单数据核对报告",
+        "uid" : "ee7584e58cb53f6f",
+        "parentUid" : "442c744ef9b1f5bc670b57d43582876d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650507396583,
+          "stop" : 1650507510701,
+          "duration" : 114118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "442c744ef9b1f5bc670b57d43582876d"
+    }, {
+      "name" : "18952-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "94c872f546279018",
+        "parentUid" : "78b7f8f5cb18dca6cfd5e47b0b0c27c6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650425633181,
+          "stop" : 1650425703636,
+          "duration" : 70455
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "78b7f8f5cb18dca6cfd5e47b0b0c27c6"
+    }, {
+      "name" : "18440-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List",
+        "uid" : "32505c0f5b1a8895",
+        "parentUid" : "8cbde84cfc9b9ebef9580791bfb051af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650509130005,
+          "stop" : 1650509130005,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8cbde84cfc9b9ebef9580791bfb051af"
+    }, {
+      "name" : "14448-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "4161fba2563522c9",
+        "parentUid" : "28c6f9279853b93ca0a7c7980f5bc26f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650335706732,
+          "stop" : 1650335908639,
+          "duration" : 201907
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "28c6f9279853b93ca0a7c7980f5bc26f"
+    }, {
+      "name" : "8296-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "7b50ab7ed0f29b0d",
+        "parentUid" : "8ad7b6be91fafcbc7791d9069bc6cbc7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650334509586,
+          "stop" : 1650334638703,
+          "duration" : 129117
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "8ad7b6be91fafcbc7791d9069bc6cbc7"
+    }, {
+      "name" : "2384-MainThread",
+      "children" : [ {
+        "name" : "test_IB_Order_List[data0]",
+        "uid" : "77ea742630c4e47c",
+        "parentUid" : "375bef32098f4a7ea4f19dc332027cbb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650506480148,
+          "stop" : 1650507194820,
+          "duration" : 714672
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "375bef32098f4a7ea4f19dc332027cbb"
+    } ],
+    "uid" : "22c9a7ca73ac7ac9efe14f8b8f896b03"
+  } ]
+}

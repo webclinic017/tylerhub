@@ -1448,52 +1448,57 @@ def txt_xls(filename,xlsname):
 #     def set_up(self):
 #         print('用例开始')
     
-#     def test01(self):
-#         for i in range(0,5):
-#             if i == 3: pytest.skip()
-               
-#             else:
-#                 print(i)
-            
+#     def teardown(self):
+#         print('每个用例之后')
+
+#     def test01(self): 
+#         pytest.skip()
+    
+#     def test02(self): 
+#         print(55555) 
+
 # if __name__=='__main__':
 #     pytest.main(['-s','-v',os.path.abspath(__file__)])
 
-li=[]
+# li=[]
 
-li.append(5.5)
-print(li)
+# li.append(5.5)
+# print(li)
 
-
-
-
-
-
+# a=-1978.3899999999999
+# b=('%.2f'%a)
+# print(b)
 
 
+# def a():
+#     return True
 
+# def b():
+#     a()
 
+# print(b)
+# for i in range(0,12):
+#     print(i)
 
+# a=float(2055/100)
+# b=20.55
+# print(a,b,a==b)
+# import datetime
+# a=datetime.datetime(2022, 3, 30, 13, 6, 5)
 
+# b=a.strftime('%Y-%m-%d %H:%M:%S')
+# print(a,type(a),b,type(b))
 
+# list1=[[1,3,5],[2,4,6]]
 
+# a=[y[0] for y in list1]
+# print(a)
 
+list1=['姓名','年龄']
+list2=['tyler','22']
+list3=[dict(zip(list1,list2))]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(list3)
 
 
 

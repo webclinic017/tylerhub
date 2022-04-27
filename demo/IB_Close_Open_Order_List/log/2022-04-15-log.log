@@ -1,0 +1,2 @@
+!!--!!copy_openOrderList - 2022-04-15 10:38:17,797 - Location_of_ib_open_order_list - [Location_of_ib_open_order_list.py-->line:407] - ERROR: [Errno 13] Permission denied: 'c:\\Users\\tyler.tang\\Desktop\\code\\tylerhub\\demo\\IB_Close_Open_Order_List\\test_data\\copy_openOrder.xlsx'
+!!--!!copy_open_export_OrderList - 2022-04-15 11:00:04,415 - Location_of_ib_open_order_list - [Location_of_ib_open_order_list.py-->line:423] - ERROR: [Errno 13] Permission denied: 'c:\\Users\\tyler.tang\\Desktop\\code\\tylerhub\\demo\\IB_Close_Open_Order_List\\test_data\\copy_openOrder.xlsx'

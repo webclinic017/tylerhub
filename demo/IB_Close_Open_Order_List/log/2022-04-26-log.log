@@ -1,0 +1,2 @@
+!!--!!search_ticket_openOrder - 2022-04-26 17:54:57,029 - Location_of_ib_close_order_list - [Location_of_ib_close_order_list.py-->line:418] - ERROR: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+!!--!!copy_close_export_OrderList - 2022-04-26 18:10:35,705 - Location_of_ib_close_order_list - [Location_of_ib_close_order_list.py-->line:491] - ERROR: [Errno 2] No such file or directory: 'c:\\Users\\tyler.tang\\Desktop\\code\\tylerhub\\demo\\IB_Close_Open_Order_List\\test_data\\Sub_Close_Trade_List_2022-04-26.xlsx'

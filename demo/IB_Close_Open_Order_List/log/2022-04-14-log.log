@@ -1,0 +1,2 @@
+!!--!!search_ticket_openOrder - 2022-04-14 09:56:29,319 - Location_of_ib__close_open_order_list - [Location_of_ib__close_open_order_list.py-->line:344] - ERROR: name 'i' is not defined
+!!--!!copy_openOrderList - 2022-04-14 10:05:02,633 - Location_of_ib__close_open_order_list - [Location_of_ib__close_open_order_list.py-->line:406] - ERROR: name 'openOrder_data' is not defined

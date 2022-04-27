@@ -1,0 +1,77 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "SZ01-QA-G-10",
+    "children" : [ {
+      "name" : "26812-MainThread",
+      "children" : [ {
+        "name" : "IB下级未平仓订单数据核对报告",
+        "uid" : "c7812bf9a8f8e7f9",
+        "parentUid" : "dce1979ebd1c96f4cd340670c0ce9f06",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650967949484,
+          "stop" : 1650968043313,
+          "duration" : 93829
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+      } ],
+      "uid" : "dce1979ebd1c96f4cd340670c0ce9f06"
+    }, {
+      "name" : "30668-MainThread",
+      "children" : [ {
+        "name" : "IB下级未平仓订单数据核对报告",
+        "uid" : "749ab7e9c91ddfda",
+        "parentUid" : "4d167eb1d13fbd5f0d998c591743c472",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650965549950,
+          "stop" : 1650965725204,
+          "duration" : 175254
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+      } ],
+      "uid" : "4d167eb1d13fbd5f0d998c591743c472"
+    }, {
+      "name" : "17428-MainThread",
+      "children" : [ {
+        "name" : "IB下级未平仓订单数据核对报告",
+        "uid" : "da15998c431381f2",
+        "parentUid" : "682a3b4326ad30653faea64758b8e569",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650967425884,
+          "stop" : 1650967510919,
+          "duration" : 85035
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+      } ],
+      "uid" : "682a3b4326ad30653faea64758b8e569"
+    }, {
+      "name" : "29544-MainThread",
+      "children" : [ {
+        "name" : "IB下级未平仓订单数据核对报告",
+        "uid" : "3e764ae8473eee53",
+        "parentUid" : "cddca68bb91e91c9b38d6abf352aa757",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650964926427,
+          "stop" : 1650965091096,
+          "duration" : 164669
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+      } ],
+      "uid" : "cddca68bb91e91c9b38d6abf352aa757"
+    } ],
+    "uid" : "22c9a7ca73ac7ac9efe14f8b8f896b03"
+  } ]
+}

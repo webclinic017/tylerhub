@@ -1,0 +1,1310 @@
+{
+  "uid" : "3e764ae8473eee53",
+  "name" : "IB下级未平仓订单数据核对报告",
+  "fullName" : "demo.IB_Close_Open_Order_List.actions_bin.Test_ib_close_order_list.Test_IB_Open_OrderList#test_IB_Order_List",
+  "historyId" : "854ab4728300a00df23315f0418bf791",
+  "time" : {
+    "start" : 1650964926427,
+    "stop" : 1650965091096,
+    "duration" : 164669
+  },
+  "description" : "读取测试文档数据，执行用例",
+  "descriptionHtml" : "<p>读取测试文档数据，执行用例</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: FAILURE: 第1条数据断言失败：订单号：543767，复制交易量：0.01，数据库交易量：1\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:314 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume'],\nFAILURE: 第1条数据断言失败：复制订单号码：543666，数据库订单号码：543767\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:345 in test_IB_Order_List() -> check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制交易账号：672006257，数据库交易账号：672006257\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:349 in test_IB_Order_List() -> check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制开仓时间：2021-09-22 05:47:31，数据库开仓时间：2021-09-22 05:47:31\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:353 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S'),\nFAILURE: 第1条数据断言失败：订单号：543666，复制平仓时间：2021-09-22 05:47:31，数据库平仓时间：2021-09-22 05:47:43\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:357 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['平仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S'),\nFAILURE: 第1条数据断言失败：订单号：543666，复制商品代码：GBPUSD，数据库商品代码：GBPUSD\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:365 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['商品代码'],VerifyOrderyList.mysql_closeOrder[i]['Symbol'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制开仓价：1.36602，数据库开仓价：1.36602\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:369 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['开仓价']),VerifyOrderyList.mysql_closeOrder[i]['Open_Price'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制平仓价格：1.36571，数据库平仓价格：1.36571\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:373 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['平仓价格']),VerifyOrderyList.mysql_closeOrder[i]['Close_Price'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制佣金：0.0，数据库佣金：0.0\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:377 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['佣金']),VerifyOrderyList.mysql_closeOrder[i]['Commission'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制盈亏：-0.31，数据库盈亏：-0.31\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:385 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['盈亏']),VerifyOrderyList.mysql_closeOrder[i]['Profit'],\n------------------------------------------------------------\nFailed Checks: 10",
+  "statusTrace" : "FAILURE: 第1条数据断言失败：订单号：543767，复制交易量：0.01，数据库交易量：1\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:314 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume'],\nFAILURE: 第1条数据断言失败：复制订单号码：543666，数据库订单号码：543767\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:345 in test_IB_Order_List() -> check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制交易账号：672006257，数据库交易账号：672006257\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:349 in test_IB_Order_List() -> check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制开仓时间：2021-09-22 05:47:31，数据库开仓时间：2021-09-22 05:47:31\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:353 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S'),\nFAILURE: 第1条数据断言失败：订单号：543666，复制平仓时间：2021-09-22 05:47:31，数据库平仓时间：2021-09-22 05:47:43\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:357 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['平仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S'),\nFAILURE: 第1条数据断言失败：订单号：543666，复制商品代码：GBPUSD，数据库商品代码：GBPUSD\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:365 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['商品代码'],VerifyOrderyList.mysql_closeOrder[i]['Symbol'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制开仓价：1.36602，数据库开仓价：1.36602\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:369 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['开仓价']),VerifyOrderyList.mysql_closeOrder[i]['Open_Price'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制平仓价格：1.36571，数据库平仓价格：1.36571\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:373 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['平仓价格']),VerifyOrderyList.mysql_closeOrder[i]['Close_Price'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制佣金：0.0，数据库佣金：0.0\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:377 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['佣金']),VerifyOrderyList.mysql_closeOrder[i]['Commission'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制盈亏：-0.31，数据库盈亏：-0.31\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:385 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['盈亏']),VerifyOrderyList.mysql_closeOrder[i]['Profit'],\n------------------------------------------------------------\nFailed Checks: 10",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_IB_Open_OrderList",
+    "time" : {
+      "start" : 1650964905913,
+      "stop" : 1650964926402,
+      "duration" : 20489
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "读取测试文档数据，执行用例",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: FAILURE: 第1条数据断言失败：订单号：543767，复制交易量：0.01，数据库交易量：1\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:314 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume'],\nFAILURE: 第1条数据断言失败：复制订单号码：543666，数据库订单号码：543767\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:345 in test_IB_Order_List() -> check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制交易账号：672006257，数据库交易账号：672006257\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:349 in test_IB_Order_List() -> check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制开仓时间：2021-09-22 05:47:31，数据库开仓时间：2021-09-22 05:47:31\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:353 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S'),\nFAILURE: 第1条数据断言失败：订单号：543666，复制平仓时间：2021-09-22 05:47:31，数据库平仓时间：2021-09-22 05:47:43\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:357 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['平仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S'),\nFAILURE: 第1条数据断言失败：订单号：543666，复制商品代码：GBPUSD，数据库商品代码：GBPUSD\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:365 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['商品代码'],VerifyOrderyList.mysql_closeOrder[i]['Symbol'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制开仓价：1.36602，数据库开仓价：1.36602\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:369 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['开仓价']),VerifyOrderyList.mysql_closeOrder[i]['Open_Price'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制平仓价格：1.36571，数据库平仓价格：1.36571\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:373 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['平仓价格']),VerifyOrderyList.mysql_closeOrder[i]['Close_Price'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制佣金：0.0，数据库佣金：0.0\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:377 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['佣金']),VerifyOrderyList.mysql_closeOrder[i]['Commission'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制盈亏：-0.31，数据库盈亏：-0.31\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:385 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['盈亏']),VerifyOrderyList.mysql_closeOrder[i]['Profit'],\n------------------------------------------------------------\nFailed Checks: 10",
+    "statusTrace" : "FAILURE: 第1条数据断言失败：订单号：543767，复制交易量：0.01，数据库交易量：1\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:314 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume'],\nFAILURE: 第1条数据断言失败：复制订单号码：543666，数据库订单号码：543767\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:345 in test_IB_Order_List() -> check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制交易账号：672006257，数据库交易账号：672006257\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:349 in test_IB_Order_List() -> check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制开仓时间：2021-09-22 05:47:31，数据库开仓时间：2021-09-22 05:47:31\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:353 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S'),\nFAILURE: 第1条数据断言失败：订单号：543666，复制平仓时间：2021-09-22 05:47:31，数据库平仓时间：2021-09-22 05:47:43\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:357 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['平仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S'),\nFAILURE: 第1条数据断言失败：订单号：543666，复制商品代码：GBPUSD，数据库商品代码：GBPUSD\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:365 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['商品代码'],VerifyOrderyList.mysql_closeOrder[i]['Symbol'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制开仓价：1.36602，数据库开仓价：1.36602\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:369 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['开仓价']),VerifyOrderyList.mysql_closeOrder[i]['Open_Price'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制平仓价格：1.36571，数据库平仓价格：1.36571\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:373 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['平仓价格']),VerifyOrderyList.mysql_closeOrder[i]['Close_Price'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制佣金：0.0，数据库佣金：0.0\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:377 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['佣金']),VerifyOrderyList.mysql_closeOrder[i]['Commission'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制盈亏：-0.31，数据库盈亏：-0.31\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:385 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['盈亏']),VerifyOrderyList.mysql_closeOrder[i]['Profit'],\n------------------------------------------------------------\nFailed Checks: 10",
+    "steps" : [ {
+      "name" : "获取当前测试数据下标",
+      "time" : {
+        "start" : 1650964926471,
+        "stop" : 1650964926471,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "查询当前代理账号存在多少个直属/非直属下级",
+      "time" : {
+        "start" : 1650964926472,
+        "stop" : 1650964926586,
+        "duration" : 114
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "根据代理账号通过BOS登录CP，进入下级已平仓页面",
+      "time" : {
+        "start" : 1650964926586,
+        "stop" : 1650964945494,
+        "duration" : 18908
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "查询当前代理是否存在下级已平仓订单",
+      "time" : {
+        "start" : 1650964945494,
+        "stop" : 1650965091095,
+        "duration" : 145601
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "当前代理存在已级已平仓订单",
+        "time" : {
+          "start" : 1650964959478,
+          "stop" : 1650964985685,
+          "duration" : 26207
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查询下级主账号 1000006154 名下交易账号 672006257 在 1990-01-01 00:00:00~2055-12-31 23:59:59 的已平仓订单数据",
+          "time" : {
+            "start" : 1650964959478,
+            "stop" : 1650964974780,
+            "duration" : 15302
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "判断在该时间段内是否存在已平仓数据",
+            "time" : {
+              "start" : 1650964959479,
+              "stop" : 1650964974780,
+              "duration" : 15301
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "在该时间段内存在1条未平仓订单数据",
+              "time" : {
+                "start" : 1650964974775,
+                "stop" : 1650964974780,
+                "duration" : 5
+              },
+              "status" : "passed",
+              "steps" : [ {
+                "name" : "核对页面交易账号：672006257 在 1990-01-01 00:00:00~2055-12-31 23:59:59时间段内的总交易量，总佣金，总隔夜利息，总盈亏",
+                "time" : {
+                  "start" : 1650964974775,
+                  "stop" : 1650964974776,
+                  "duration" : 1
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "页面总交易量：0.01，数据库总交易量：0.01",
+                  "time" : {
+                    "start" : 1650964974775,
+                    "stop" : 1650964974775,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "页面总佣金：0.0，数据库总佣金：0.0",
+                  "time" : {
+                    "start" : 1650964974776,
+                    "stop" : 1650964974776,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "页面总利息：0.00，数据库总利息：0.00",
+                  "time" : {
+                    "start" : 1650964974776,
+                    "stop" : 1650964974776,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "页面总盈亏：-0.31，数据库总盈亏：-0.31",
+                  "time" : {
+                    "start" : 1650964974776,
+                    "stop" : 1650964974776,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0,
+                "stepsCount" : 4,
+                "hasContent" : true
+              }, {
+                "name" : "断言页面订单号码543767与数据库订单号码543767：",
+                "time" : {
+                  "start" : 1650964974777,
+                  "stop" : 1650964974780,
+                  "duration" : 3
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：672006257，数据库交易账号：672006257",
+                  "time" : {
+                    "start" : 1650964974777,
+                    "stop" : 1650964974777,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面开仓时间：2021-09-22 05:47:31，数据库开仓时间：2021-09-22 05:47:31",
+                  "time" : {
+                    "start" : 1650964974777,
+                    "stop" : 1650964974777,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面平仓时间：2021-09-22 05:47:43，数据库平仓时间：2021-09-22 05:47:43",
+                  "time" : {
+                    "start" : 1650964974777,
+                    "stop" : 1650964974777,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面交易量：0.01，数据库交易量：0.01",
+                  "time" : {
+                    "start" : 1650964974778,
+                    "stop" : 1650964974778,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面商品代码：GBPUSD，数据库商品代码：GBPUSD",
+                  "time" : {
+                    "start" : 1650964974778,
+                    "stop" : 1650964974778,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面开仓价：1.36602，数据库开仓价：1.36602",
+                  "time" : {
+                    "start" : 1650964974778,
+                    "stop" : 1650964974778,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面平仓价：1.36571，数据库平仓价：1.36571",
+                  "time" : {
+                    "start" : 1650964974778,
+                    "stop" : 1650964974779,
+                    "duration" : 1
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面佣金：0.0，数据库佣金：0.0",
+                  "time" : {
+                    "start" : 1650964974779,
+                    "stop" : 1650964974779,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面隔夜利息：0.0，数据库隔夜利息：0.0",
+                  "time" : {
+                    "start" : 1650964974779,
+                    "stop" : 1650964974779,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面盈亏：-0.31，数据库盈亏：-0.31",
+                  "time" : {
+                    "start" : 1650964974779,
+                    "stop" : 1650964974780,
+                    "duration" : 1
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0,
+                "stepsCount" : 10,
+                "hasContent" : true
+              } ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 16,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 17,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 18,
+          "hasContent" : true
+        }, {
+          "name" : "查询下级主账号 1000006154 名下交易账号 672006257 在 1990-01-01 00:00:00~2055-12-31 23:59:59 类型为买/卖的已平仓订单数据",
+          "time" : {
+            "start" : 1650964974780,
+            "stop" : 1650964985685,
+            "duration" : 10905
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "判断在该时间段内是否存在类型为买/卖的已平仓数据",
+            "time" : {
+              "start" : 1650964974780,
+              "stop" : 1650964985685,
+              "duration" : 10905
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "在该时间段内存在1条类型为买的已平仓订单数据",
+              "time" : {
+                "start" : 1650964985680,
+                "stop" : 1650964985685,
+                "duration" : 5
+              },
+              "status" : "passed",
+              "steps" : [ {
+                "name" : "核对页面交易账号：672006257 在 1990-01-01 00:00:00~2055-12-31 23:59:59时间段内的总交易量，总佣金，总隔夜利息，总盈亏",
+                "time" : {
+                  "start" : 1650964985680,
+                  "stop" : 1650964985681,
+                  "duration" : 1
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "页面总交易量：0.01，数据库总交易量：0.01",
+                  "time" : {
+                    "start" : 1650964985680,
+                    "stop" : 1650964985680,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "页面总佣金：0.0，数据库总佣金：0.0",
+                  "time" : {
+                    "start" : 1650964985681,
+                    "stop" : 1650964985681,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "页面总利息：0.00，数据库总利息：0.00",
+                  "time" : {
+                    "start" : 1650964985681,
+                    "stop" : 1650964985681,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "页面总盈亏：-0.31，数据库总盈亏：-0.31",
+                  "time" : {
+                    "start" : 1650964985681,
+                    "stop" : 1650964985681,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0,
+                "stepsCount" : 4,
+                "hasContent" : true
+              }, {
+                "name" : "断言页面订单号码543767与数据库订单号码543767：",
+                "time" : {
+                  "start" : 1650964985682,
+                  "stop" : 1650964985685,
+                  "duration" : 3
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：672006257，数据库交易账号：672006257",
+                  "time" : {
+                    "start" : 1650964985682,
+                    "stop" : 1650964985682,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面开仓时间：2021-09-22 05:47:31，数据库开仓时间：2021-09-22 05:47:31",
+                  "time" : {
+                    "start" : 1650964985682,
+                    "stop" : 1650964985682,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面平仓时间：2021-09-22 05:47:43，数据库平仓时间：2021-09-22 05:47:43",
+                  "time" : {
+                    "start" : 1650964985682,
+                    "stop" : 1650964985682,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面交易量：0.01，数据库交易量：0.01",
+                  "time" : {
+                    "start" : 1650964985683,
+                    "stop" : 1650964985683,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面商品代码：GBPUSD，数据库商品代码：GBPUSD",
+                  "time" : {
+                    "start" : 1650964985683,
+                    "stop" : 1650964985683,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面开仓价：1.36602，数据库开仓价：1.36602",
+                  "time" : {
+                    "start" : 1650964985683,
+                    "stop" : 1650964985684,
+                    "duration" : 1
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面平仓价：1.36571，数据库平仓价：1.36571",
+                  "time" : {
+                    "start" : 1650964985684,
+                    "stop" : 1650964985684,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面佣金：0.0，数据库佣金：0.0",
+                  "time" : {
+                    "start" : 1650964985684,
+                    "stop" : 1650964985684,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面隔夜利息：0.0，数据库隔夜利息：0.0",
+                  "time" : {
+                    "start" : 1650964985684,
+                    "stop" : 1650964985684,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面盈亏：-0.31，数据库盈亏：-0.31",
+                  "time" : {
+                    "start" : 1650964985684,
+                    "stop" : 1650964985685,
+                    "duration" : 1
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0,
+                "stepsCount" : 10,
+                "hasContent" : true
+              } ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 16,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 17,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 18,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 38,
+        "hasContent" : true
+      }, {
+        "name" : "根据订单号码查询已平仓订单，核对数据库数据",
+        "time" : {
+          "start" : 1650964985685,
+          "stop" : 1650964993528,
+          "duration" : 7843
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "断言订单号码544620与数据库数据",
+          "time" : {
+            "start" : 1650964993525,
+            "stop" : 1650964993528,
+            "duration" : 3
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "断言页面交易账号：672006222，数据库交易账号：672006222",
+            "time" : {
+              "start" : 1650964993526,
+              "stop" : 1650964993526,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面开仓时间：2021-12-28 06:10:58，数据库开仓时间：2021-12-28 06:10:58",
+            "time" : {
+              "start" : 1650964993526,
+              "stop" : 1650964993526,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面平仓时间：2021-12-28 06:11:08，数据库平仓时间：2021-12-28 06:11:08",
+            "time" : {
+              "start" : 1650964993526,
+              "stop" : 1650964993526,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面交易量：49.0，数据库交易量：49.0",
+            "time" : {
+              "start" : 1650964993526,
+              "stop" : 1650964993526,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面商品代码：GBPUSD，数据库商品代码：GBPUSD",
+            "time" : {
+              "start" : 1650964993527,
+              "stop" : 1650964993527,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面开仓价：1.34308，数据库开仓价：1.34308",
+            "time" : {
+              "start" : 1650964993527,
+              "stop" : 1650964993527,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面平仓价：1.34278，数据库平仓价：1.34278",
+            "time" : {
+              "start" : 1650964993527,
+              "stop" : 1650964993527,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面佣金：0.0，数据库佣金：0.0",
+            "time" : {
+              "start" : 1650964993527,
+              "stop" : 1650964993527,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面隔夜利息：0.0，数据库隔夜利息：0.0",
+            "time" : {
+              "start" : 1650964993528,
+              "stop" : 1650964993528,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面盈亏：-30.0，数据库盈亏：-30.0",
+            "time" : {
+              "start" : 1650964993528,
+              "stop" : 1650964993528,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 10,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 11,
+        "hasContent" : true
+      }, {
+        "name" : "断言页面导出与复制功能是否与数据库数据一致",
+        "time" : {
+          "start" : 1650964993528,
+          "stop" : 1650965091095,
+          "duration" : 97567
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "断言复制功能",
+          "time" : {
+            "start" : 1650965005349,
+            "stop" : 1650965050954,
+            "duration" : 45605
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "断言复制订单号：543767，数据库订单号：543767",
+            "time" : {
+              "start" : 1650965049224,
+              "stop" : 1650965050954,
+              "duration" : 1730
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "断言复制交易账号：672006257，数据库交易账号：672006257",
+              "time" : {
+                "start" : 1650965049224,
+                "stop" : 1650965049224,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制开仓时间：2021-09-22 05:47:31，数据库开仓时间：2021-09-22 05:47:31",
+              "time" : {
+                "start" : 1650965049224,
+                "stop" : 1650965049225,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制平仓时间：2021-09-22 05:47:43，数据库平仓时间：2021-09-22 05:47:43",
+              "time" : {
+                "start" : 1650965049225,
+                "stop" : 1650965049225,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制交易量：0.01，数据库交易量：1",
+              "time" : {
+                "start" : 1650965049225,
+                "stop" : 1650965050951,
+                "duration" : 1726
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制商品代码：GBPUSD，数据库商品代码：GBPUSD",
+              "time" : {
+                "start" : 1650965050951,
+                "stop" : 1650965050951,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制开仓价：1.36602，数据库开仓价：1.36602",
+              "time" : {
+                "start" : 1650965050951,
+                "stop" : 1650965050951,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制平仓价格：1.36571，数据库平仓价格：1.36571",
+              "time" : {
+                "start" : 1650965050952,
+                "stop" : 1650965050952,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制佣金：0.0，数据库佣金：0.0",
+              "time" : {
+                "start" : 1650965050952,
+                "stop" : 1650965050952,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制隔夜利息：0.0，数据库隔夜利息：0.0",
+              "time" : {
+                "start" : 1650965050952,
+                "stop" : 1650965050952,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制盈亏：-0.31，数据库盈亏：-0.31",
+              "time" : {
+                "start" : 1650965050952,
+                "stop" : 1650965050953,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 10,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 11,
+          "hasContent" : true
+        }, {
+          "name" : "断言导出功能",
+          "time" : {
+            "start" : 1650965050954,
+            "stop" : 1650965091094,
+            "duration" : 40140
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "断言复制订单号：543666，数据库订单号：543767",
+            "time" : {
+              "start" : 1650965090319,
+              "stop" : 1650965091094,
+              "duration" : 775
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "断言复制交易账号：672006220，数据库交易账号：672006257",
+              "time" : {
+                "start" : 1650965090462,
+                "stop" : 1650965090569,
+                "duration" : 107
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制开仓时间：2021-09-17 10:12:18，数据库开仓时间：2021-09-22 05:47:31",
+              "time" : {
+                "start" : 1650965090570,
+                "stop" : 1650965090652,
+                "duration" : 82
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制平仓时间：2021-09-17 10:47:06，数据库平仓时间：2021-09-22 05:47:43",
+              "time" : {
+                "start" : 1650965090652,
+                "stop" : 1650965090771,
+                "duration" : 119
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制交易量：1.0，数据库交易量：1",
+              "time" : {
+                "start" : 1650965090771,
+                "stop" : 1650965090771,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制商品代码：USDJPY，数据库商品代码：GBPUSD",
+              "time" : {
+                "start" : 1650965090772,
+                "stop" : 1650965090838,
+                "duration" : 66
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制开仓价：109.854，数据库开仓价：1.36602",
+              "time" : {
+                "start" : 1650965090838,
+                "stop" : 1650965090902,
+                "duration" : 64
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制平仓价格：109.914，数据库平仓价格：1.36571",
+              "time" : {
+                "start" : 1650965090902,
+                "stop" : 1650965090976,
+                "duration" : 74
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制佣金：-10.0，数据库佣金：0.0",
+              "time" : {
+                "start" : 1650965090976,
+                "stop" : 1650965091034,
+                "duration" : 58
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制隔夜利息：0.0，数据库隔夜利息：0.0",
+              "time" : {
+                "start" : 1650965091035,
+                "stop" : 1650965091035,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制盈亏：54.59，数据库盈亏：-0.31",
+              "time" : {
+                "start" : 1650965091035,
+                "stop" : 1650965091094,
+                "duration" : 59
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 10,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 11,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 24,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 76,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 0,
+    "stepsCount" : 80,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_IB_Open_OrderList::0",
+    "time" : {
+      "start" : 1650965093772,
+      "stop" : 1650965093779,
+      "duration" : 7
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "核对IB下级已平仓数据，断言导出与复制功能"
+  }, {
+    "name" : "story",
+    "value" : "用例执行"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.IB_Close_Open_Order_List.actions_bin"
+  }, {
+    "name" : "suite",
+    "value" : "Test_ib_close_order_list"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_IB_Open_OrderList"
+  }, {
+    "name" : "host",
+    "value" : "SZ01-QA-G-10"
+  }, {
+    "name" : "thread",
+    "value" : "29544-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.IB_Close_Open_Order_List.actions_bin.Test_ib_close_order_list"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'代理账号': 1000005349.0, '订单号码': 544620.0}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3e764ae8473eee53.json",
+  "parameterValues" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+}

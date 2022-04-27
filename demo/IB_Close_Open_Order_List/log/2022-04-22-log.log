@@ -1,0 +1,1 @@
+!!--!!copy_open_export_OrderList - 2022-04-22 11:39:31,047 - Location_of_ib_close_order_list - [Location_of_ib_close_order_list.py-->line:494] - ERROR: 'Location_of_IB_Close_OrderList' object has no attribute 'mysql_openOrder'

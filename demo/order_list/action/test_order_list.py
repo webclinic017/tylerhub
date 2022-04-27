@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-10-20 10:30:09
-LastEditTime: 2021-11-18 18:36:24
+LastEditTime: 2022-04-18 12:32:17
 LastEditors: Please set LastEditors
 Description: Execute testcase
 FilePath: \tylerhub\demo\order_list\action\test_order_list.py
@@ -44,12 +44,15 @@ class Test_verify_order_list(object):
         else:
             verifyOrder.closebrowser()
         #删除下载的文件
-        os.remove(os.path.join(os.path.join(path_project,'test_data'),verifyOrder.openOrder_excel))
-        os.remove(os.path.join(os.path.join(path_project,'test_data'),verifyOrder.closeOrder_excel))
-        os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_openOrder.txt'))
-        os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_openOrder.xlsx'))
-        os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_closeOrder.txt'))
-        os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_closeOrder.xlsx'))
+        try:
+            os.remove(os.path.join(os.path.join(path_project,'test_data'),verifyOrder.openOrder_excel))
+            os.remove(os.path.join(os.path.join(path_project,'test_data'),verifyOrder.closeOrder_excel))
+            os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_openOrder.txt'))
+            os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_openOrder.xlsx'))
+            os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_closeOrder.txt'))
+            os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_closeOrder.xlsx'))
+        except Exception as msg:
+            print('用例跳过，未下载相应文件：{}'.format(msg))
 
 
 

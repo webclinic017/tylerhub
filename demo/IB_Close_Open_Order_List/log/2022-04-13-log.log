@@ -1,0 +1,4 @@
+!!--!!count_pageData - 2022-04-13 11:55:08,550 - Location_of_ib__close_open_order_list - [Location_of_ib__close_open_order_list.py-->line:405] - ERROR: 'NoneType' object cannot be interpreted as an integer
+!!--!!search_ticket - 2022-04-13 12:01:58,967 - Location_of_ib__close_open_order_list - [Location_of_ib__close_open_order_list.py-->line:344] - ERROR: name 'i' is not defined
+!!--!!search_ticket_openOrder - 2022-04-13 12:06:43,936 - Location_of_ib__close_open_order_list - [Location_of_ib__close_open_order_list.py-->line:344] - ERROR: name 'i' is not defined
+!!--!!search_ticket_openOrder - 2022-04-13 12:11:38,467 - Location_of_ib__close_open_order_list - [Location_of_ib__close_open_order_list.py-->line:344] - ERROR: name 'i' is not defined

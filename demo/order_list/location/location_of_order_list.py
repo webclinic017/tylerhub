@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-10-20 10:29:51
-LastEditTime: 2021-11-18 18:28:17
+LastEditTime: 2022-04-15 10:32:07
 LastEditors: Please set LastEditors
 Description: Page operation
 FilePath: \tylerhub\demo\order_list\location\location_of_order_list.py
@@ -177,7 +177,7 @@ class Location_of_order_list(object):
             #读取复制数据
             dealData.openexcel(self.xlsxname,'sheet1')
             self.openOrder_data=dealData.dict_data()
-            # print(self.openOrder_data)
+            print(self.openOrder_data)
 
 
             #查询已平仓订单
@@ -237,7 +237,7 @@ class Location_of_order_list(object):
                     self.close_orderDict['盈亏']=locale.atof(common.get_text('css,tbody > tr > .el-table_1_column_14 div span',i)) #盈亏
                     self.close_orderList.append(self.close_orderDict)
             time.sleep(1)
-        
+            
             #核对导出数据是否与页面一致
             common.display_click('css,.la-share-square') #导出
             time.sleep(1)
@@ -267,7 +267,7 @@ class Location_of_order_list(object):
 
             #写进txt文本
             with open(os.path.join(os.path.join(path_project,'test_data'),'copy_closeOrder.txt'), 'w') as f:
-                f.write(''.join(self.copy_closeList))
+                f.write(''.join(self.open_closeList))
             
             time.sleep(1)
             #txt转换成excel

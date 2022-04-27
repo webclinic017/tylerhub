@@ -1,0 +1,19 @@
+!!--!!display_finds_element - 2022-04-13 11:42:27,231 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-04-13 11:42:27,238 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-04-13 11:42:27,246 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_elements - 2022-04-13 11:55:08,504 - browser_actions - [browser_actions.py-->line:142] - ERROR: 元素不存在或者不可见：Message: chrome not reachable
+  (Session info: chrome=100.0.4896.75)
+
+!!--!!get_lenofelement - 2022-04-13 11:55:08,509 - browser_actions - [browser_actions.py-->line:149] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_finds_element - 2022-04-13 11:58:46,291 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: chrome not reachable
+  (Session info: chrome=100.0.4896.75)
+
+!!--!!nosuch_elements - 2022-04-13 11:58:46,344 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-04-13 11:58:46,394 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-04-13 12:01:55,140 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-1d0ef7e8="" class="el-tooltip" aria-describedby="el-tooltip-4653" tabindex="0">...</span> is not clickable at point (327, 449). Other element would receive the click: <span>...</span>
+  (Session info: chrome=100.0.4896.75)
+
+!!--!!display_click - 2022-04-13 12:06:39,774 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-1d0ef7e8="" class="el-tooltip" aria-describedby="el-tooltip-4497" tabindex="0">...</span> is not clickable at point (327, 449). Other element would receive the click: <span>...</span>
+  (Session info: chrome=100.0.4896.75)
+

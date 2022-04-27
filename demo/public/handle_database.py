@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:27:17
-LastEditTime: 2022-04-01 10:39:49
+LastEditTime: 2022-04-21 15:51:43
 LastEditors: Please set LastEditors
 Description: Query database and save
 FilePath: \tylerhub\demo\public\handle_database.py
@@ -186,7 +186,7 @@ class Database_operate(object):
 
     #连接mysql数据库查询
     @use_time #统计函数运行时间
-    def search_in_mysql(self,sql,host,user,psword,port:int=3306,type='single')->str:
+    def search_in_mysql(self,sql,host,user,psword,port:int=3306,type='single')->tuple:
         """
         :param vartuple:host,username,password,db,port,charset=utf-8
         :param sql: 执行查询的sql语句
@@ -210,7 +210,40 @@ class Database_operate(object):
             self.db.close()
             return self.data
         except Exception as msg:
-            print('请检查连接信息及sql语句是否正确：{}'.format(msg)) 
+            print('请检查连接信息及sql语句是否正确：{}'.format(msg))
+
+
+
+    #查询mysql，并以字典形式返回查询数据
+    def search_mysql_dict(self,sql,host,user,psword,port:int=3306,type='single')->dict:
+        """
+        :param vartuple:host,username,password,db,port,charset=utf-8
+        :param sql: 执行查询的sql语句
+        :param type: 查询单条或者所有符合sql语句的数据
+        :return 返回查询数据
+        """
+        try:
+            #连接数据库
+            self.db = pymysql.connect(host=host,user=user,password=psword,port=port)
+            #创建游标对象
+            self.cursor=self.db.cursor()
+            #执行sql语句
+            self.cursor.execute(sql)
+            #查询单条数据
+            if type=='single':
+                self.data=self.cursor.fetchone()
+                self.column=[index[0] for index in self.cursor.description]
+                self.dict_data=[dict(zip(self.column,row) for row in self.data)]
+            #查询所有数据
+            else:
+                self.data=self.cursor.fetchall()
+                self.column=[index[0] for index in self.cursor.description]
+                self.dict_data=[dict(zip(self.column,row)) for row in self.data]
+            return self.dict_data
+        except Exception as msg:
+            print('请检查连接信息及sql语句是否正确：{}'.format(msg))
+
+
 
 #测试
 if __name__=='__main__':
@@ -240,8 +273,9 @@ if __name__=='__main__':
     # print(lower_withdrawalDatabase)	
 
     # print('544097' in lower_withdrawalDatabase)
-    print(dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="{}" and Close_Time="1970-01-01 00:00:00" and'
-    ' Open_Time between "{} 00:00:00" and "{} 23:59:59" order by Open_Time desc'.
-    format(672007722,'2022-03-30','2022-03-30'), conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all'))
+    # print(list(dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="{}" and Close_Time="1970-01-01 00:00:00" and'
+    # ' Open_Time between "{} 00:00:00" and "{} 23:59:59" order by Open_Time desc'.
+    # format(672007722,'2022-03-30','2022-03-30'), conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')))
     
     # print(dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="672007722"',conFig.get_value('mysql_AWS', 'host'),conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all'))
+    print(dataBase.search_mysql_dict('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="672006226"',conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all'))

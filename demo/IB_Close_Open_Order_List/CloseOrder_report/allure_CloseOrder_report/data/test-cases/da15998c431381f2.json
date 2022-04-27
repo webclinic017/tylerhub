@@ -1,0 +1,1725 @@
+{
+  "uid" : "da15998c431381f2",
+  "name" : "IB下级未平仓订单数据核对报告",
+  "fullName" : "demo.IB_Close_Open_Order_List.actions_bin.Test_ib_close_order_list.Test_IB_Open_OrderList#test_IB_Order_List",
+  "historyId" : "854ab4728300a00df23315f0418bf791",
+  "time" : {
+    "start" : 1650967425884,
+    "stop" : 1650967510919,
+    "duration" : 85035
+  },
+  "description" : "读取测试文档数据，执行用例",
+  "descriptionHtml" : "<p>读取测试文档数据，执行用例</p>\n",
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'mysql_closeOrder' is not defined",
+  "statusTrace" : "self = <Test_ib_close_order_list.Test_IB_Open_OrderList object at 0x074A7DC0>, data = {'代理账号': 1000005349.0, '订单号码': 544620.0}\n\n    @allure.feature('核对IB下级已平仓数据，断言导出与复制功能')\n    @allure.story('用例执行')\n    @allure.description('读取测试文档数据，执行用例')\n    @allure.title('IB下级未平仓订单数据核对报告')\n    @pytest.mark.parametrize('data',testdata)\n    def test_IB_Order_List(self,data):\n    \n        print('当前执行用例账号：{}'.format(int(data['代理账号'])))\n    \n        with allure.step('获取当前测试数据下标'):\n            self.data_index=testdata.index(data)\n    \n        with allure.step('查询当前代理账号存在多少个直属/非直属下级'):\n            VerifyOrderyList.search_ib_lower(int(data['代理账号']))\n    \n        with allure.step('根据代理账号通过BOS登录CP，进入下级已平仓页面'):\n            VerifyOrderyList.logincp(int(data['代理账号']))\n    \n        with allure.step('查询当前代理是否存在下级已平仓订单'):\n    \n            if VerifyOrderyList.filter_lower_openOrder():\n                with allure.step('当前代理存在已级已平仓订单'):\n    \n                    for i in VerifyOrderyList.tradeAccount_list2:\n    \n                        with allure.step('查询下级主账号 {} 名下交易账号 {} 在 {} 00:00:00~{} 23:59:59 的已平仓订单数据'.format(VerifyOrderyList.\n                        deduplication_lower_list[VerifyOrderyList.randomIndex],i,VerifyOrderyList.dateStart,VerifyOrderyList.dateEnd)):\n    \n                            with allure.step('判断在该时间段内是否存在已平仓数据'):\n                                if VerifyOrderyList.search_period_openOrder(i):\n    \n                                    with allure.step('在该时间段内存在{}条未平仓订单数据'.format(len(VerifyOrderyList.close_orderList))):\n    \n                                        with allure.step('核对页面交易账号：{} 在 {} 00:00:00~{} 23:59:59时间段内的总交易量，总佣金，总隔夜利息，总盈亏'.format(i,VerifyOrderyList.dateStart,VerifyOrderyList.dateEnd)):\n                                            with allure.step('页面总交易量：{}，数据库总交易量：{}'.format(VerifyOrderyList.total_Volume,VerifyOrderyList.dataBase_total_Volume)):\n                                                check.equal(VerifyOrderyList.total_Volume,VerifyOrderyList.dataBase_total_Volume,\n                                                '断言失败：页面总交易量：{}，数据库总交易量：{}'.format(VerifyOrderyList.total_Volume,VerifyOrderyList.dataBase_total_Volume))\n    \n                                            with allure.step('页面总佣金：{}，数据库总佣金：{}'.format(VerifyOrderyList.total_Commission,VerifyOrderyList.dataBase_total_Commission)):\n                                                check.equal(VerifyOrderyList.total_Commission,VerifyOrderyList.dataBase_total_Commission,\n                                                '断言失败：页面总佣金：{}，数据库总佣金：{}'.format(VerifyOrderyList.total_Commission,VerifyOrderyList.dataBase_total_Commission))\n    \n                                            with allure.step('页面总利息：{}，数据库总利息：{}'.format('%.2f'%VerifyOrderyList.total_Swaps,'%.2f'%VerifyOrderyList.dataBase_total_Swaps)):\n                                                check.equal('%.2f'%VerifyOrderyList.total_Swaps,'%.2f'%VerifyOrderyList.dataBase_total_Swaps,\n                                                '断言失败：页面总利息：{}，数据库总利息：{}'.format('%.2f'%VerifyOrderyList.total_Swaps,'%.2f'%VerifyOrderyList.dataBase_total_Swaps))\n    \n                                            with allure.step('页面总盈亏：{}，数据库总盈亏：{}'.format('%.2f'%VerifyOrderyList.total_Profit,'%.2f'%VerifyOrderyList.dataBase_total_Profit)):\n                                                check.equal('%.2f'%VerifyOrderyList.total_Profit,'%.2f'%VerifyOrderyList.dataBase_total_Profit,\n                                                '断言失败：页面总盈亏：{}，数据库总盈亏：{}'.format('%.2f'%VerifyOrderyList.total_Profit,'%.2f'%VerifyOrderyList.dataBase_total_Profit))\n    \n                                        for y in range(0,len(VerifyOrderyList.close_orderList)):\n    \n                                            with allure.step('断言页面订单号码{}与数据库订单号码{}：'.format(VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.mysql_closeOrder[y]['Ticket'])):\n                                                check.equal(VerifyOrderyList.close_orderList[y]['Ticket'], VerifyOrderyList.mysql_closeOrder[y]['Ticket'],\n                                                '第{}条数据断言失败：页面订单号码：{}，数据库订单号码：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.mysql_closeOrder[y]['Ticket']))\n    \n                                                with allure.step('断言页面交易账号：{}，数据库交易账号：{}'.format(VerifyOrderyList.close_orderList[y]['Login'], VerifyOrderyList.mysql_closeOrder[y]['Login'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Login'], VerifyOrderyList.mysql_closeOrder[y]['Login'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面交易账号：{}，数据库交易账号：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Login'], VerifyOrderyList.mysql_closeOrder[y]['Login']))\n    \n                                                with allure.step('断言页面开仓时间：{}，数据库开仓时间：{}'.format(VerifyOrderyList.close_orderList[y]['Open_Time'], VerifyOrderyList.mysql_closeOrder[y]['Open_Time'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Open_Time'], VerifyOrderyList.mysql_closeOrder[y]['Open_Time'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面开仓时间：{}，数据库开仓时间：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Open_Time'],VerifyOrderyList.mysql_closeOrder[y]['Open_Time']))\n    \n                                                with allure.step('断言页面平仓时间：{}，数据库平仓时间：{}'.format(VerifyOrderyList.close_orderList[y]['Close_Time'], VerifyOrderyList.mysql_closeOrder[y]['Close_Time'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Close_Time'], VerifyOrderyList.mysql_closeOrder[y]['Close_Time'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面平仓时间：{}，数据库平仓时间：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Close_Time'],VerifyOrderyList.mysql_closeOrder[y]['Close_Time']))\n    \n                                                with allure.step('断言页面交易量：{}，数据库交易量：{}'.format(VerifyOrderyList.close_orderList[y]['Volume'], float(VerifyOrderyList.mysql_closeOrder[y]['Volume']/100))):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Volume'], float(VerifyOrderyList.mysql_closeOrder[y]['Volume']/100),\n                                                    '第{}条数据断言失败：页面订单号码：{},页面交易量：{}，数据库交易量：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Volume'],float(VerifyOrderyList.mysql_closeOrder[y]['Volume']/100)))\n    \n                                                with allure.step('断言页面商品代码：{}，数据库商品代码：{}'.format(VerifyOrderyList.close_orderList[y]['Symbol'], VerifyOrderyList.mysql_closeOrder[y]['Symbol'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Symbol'], VerifyOrderyList.mysql_closeOrder[y]['Symbol'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面商品代码：{}，数据库商品代码：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Symbol'],VerifyOrderyList.mysql_closeOrder[y]['Symbol']))\n    \n                                                with allure.step('断言页面开仓价：{}，数据库开仓价：{}'.format(VerifyOrderyList.close_orderList[y]['Open_Price'], VerifyOrderyList.mysql_closeOrder[y]['Open_Price'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Open_Price'], VerifyOrderyList.mysql_closeOrder[y]['Open_Price'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面开仓价：{}，数据库开仓价：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Open_Price'],VerifyOrderyList.mysql_closeOrder[y]['Open_Price']))\n    \n                                                with allure.step('断言页面平仓价：{}，数据库平仓价：{}'.format(VerifyOrderyList.close_orderList[y]['Close_Price'], VerifyOrderyList.mysql_closeOrder[y]['Close_Price'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Close_Price'], VerifyOrderyList.mysql_closeOrder[y]['Close_Price'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面平仓价：{}，数据库平仓价：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Close_Price'],VerifyOrderyList.mysql_closeOrder[y]['Close_Price']))\n    \n                                                with allure.step('断言页面佣金：{}，数据库佣金：{}'.format(VerifyOrderyList.close_orderList[y]['Commission'], VerifyOrderyList.mysql_closeOrder[y]['Commission'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Commission'], VerifyOrderyList.mysql_closeOrder[y]['Commission'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面佣金：{}，数据库佣金：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Commission'],VerifyOrderyList.mysql_closeOrder[y]['Commission']))\n    \n                                                with allure.step('断言页面隔夜利息：{}，数据库隔夜利息：{}'.format(VerifyOrderyList.close_orderList[y]['Swaps'], VerifyOrderyList.mysql_closeOrder[y]['Swaps'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Swaps'], VerifyOrderyList.mysql_closeOrder[y]['Swaps'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面隔夜利息：{}，数据库隔夜利息：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Swaps'],VerifyOrderyList.mysql_closeOrder[y]['Swaps']))\n    \n                                                with allure.step('断言页面盈亏：{}，数据库盈亏：{}'.format(VerifyOrderyList.close_orderList[y]['Profit'], VerifyOrderyList.mysql_closeOrder[y]['Profit'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Profit'], VerifyOrderyList.mysql_closeOrder[y]['Profit'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面盈亏：{}，数据库盈亏：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Profit'],VerifyOrderyList.mysql_closeOrder[y]['Profit']))\n    \n                                else:\n                                    with allure.step('在该时间段内部存在已平仓订单，断言数据库查询数据是否为空'):\n                                        check.equal(VerifyOrderyList.close_order_len, len(VerifyOrderyList.mysql_closeOrder),\n                                        '断言失败，页面数据{}条，数据库数据{}条'.format(VerifyOrderyList.close_order_len,len(VerifyOrderyList.mysql_closeOrder)))\n    \n    \n                        with allure.step('查询下级主账号 {} 名下交易账号 {} 在 {} 00:00:00~{} 23:59:59 类型为买/卖的已平仓订单数据'.format(VerifyOrderyList.\n                        deduplication_lower_list[VerifyOrderyList.randomIndex],i,VerifyOrderyList.dateStart,VerifyOrderyList.dateEnd)):\n    \n                            with allure.step('判断在该时间段内是否存在类型为买/卖的已平仓数据'):\n    \n                                if VerifyOrderyList.search_buyOrSale_openOrder(i):\n    \n                                    with allure.step('在该时间段内存在{}条类型为{}的已平仓订单数据'.format(len(VerifyOrderyList.close_orderList),VerifyOrderyList.tradeType)):\n    \n                                        with allure.step('核对页面交易账号：{} 在 {} 00:00:00~{} 23:59:59时间段内的总交易量，总佣金，总隔夜利息，总盈亏'.format(i,VerifyOrderyList.dateStart,VerifyOrderyList.dateEnd)):\n    \n                                            with allure.step('页面总交易量：{}，数据库总交易量：{}'.format(VerifyOrderyList.total_Volume,VerifyOrderyList.dataBase_total_Volume)):\n                                                check.equal(VerifyOrderyList.total_Volume,VerifyOrderyList.dataBase_total_Volume,\n                                                '断言失败：页面总交易量：{}，数据库总交易量：{}'.format(VerifyOrderyList.total_Volume,VerifyOrderyList.dataBase_total_Volume))\n    \n                                            with allure.step('页面总佣金：{}，数据库总佣金：{}'.format(VerifyOrderyList.total_Commission,VerifyOrderyList.dataBase_total_Commission)):\n                                                check.equal(VerifyOrderyList.total_Commission,VerifyOrderyList.dataBase_total_Commission,\n                                                '断言失败：页面总佣金：{}，数据库总佣金：{}'.format(VerifyOrderyList.total_Commission,VerifyOrderyList.dataBase_total_Commission))\n    \n                                            with allure.step('页面总利息：{}，数据库总利息：{}'.format('%.2f'%VerifyOrderyList.total_Swaps,'%.2f'%VerifyOrderyList.dataBase_total_Swaps)):\n                                                check.equal('%.2f'%VerifyOrderyList.total_Swaps,'%.2f'%VerifyOrderyList.dataBase_total_Swaps,\n                                                '断言失败：页面总利息：{}，数据库总利息：{}'.format('%.2f'%VerifyOrderyList.total_Swaps,'%.2f'%VerifyOrderyList.dataBase_total_Swaps))\n    \n                                            with allure.step('页面总盈亏：{}，数据库总盈亏：{}'.format('%.2f'%VerifyOrderyList.total_Profit,'%.2f'%VerifyOrderyList.dataBase_total_Profit)):\n                                                check.equal('%.2f'%VerifyOrderyList.total_Profit,'%.2f'%VerifyOrderyList.dataBase_total_Profit,\n                                                    '断言失败：页面总盈亏：{}，数据库总盈亏：{}'.format('%.2f'%VerifyOrderyList.total_Profit,'%.2f'%VerifyOrderyList.dataBase_total_Profit))\n    \n                                        for y in range(0,len(VerifyOrderyList.close_orderList)):\n    \n                                            with allure.step('断言页面订单号码{}与数据库订单号码{}：'.format(VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.mysql_closeOrder[y]['Ticket'])):\n                                                check.equal(VerifyOrderyList.close_orderList[y]['Ticket'], VerifyOrderyList.mysql_closeOrder[y]['Ticket'],\n                                                '第{}条数据断言失败：页面订单号码：{}，数据库订单号码：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.mysql_closeOrder[y]['Ticket']))\n    \n                                                with allure.step('断言页面交易账号：{}，数据库交易账号：{}'.format(VerifyOrderyList.close_orderList[y]['Login'], VerifyOrderyList.mysql_closeOrder[y]['Login'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Login'], VerifyOrderyList.mysql_closeOrder[y]['Login'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面交易账号：{}，数据库交易账号：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Login'], VerifyOrderyList.mysql_closeOrder[y]['Login']))\n    \n                                                with allure.step('断言页面开仓时间：{}，数据库开仓时间：{}'.format(VerifyOrderyList.close_orderList[y]['Open_Time'], VerifyOrderyList.mysql_closeOrder[y]['Open_Time'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Open_Time'], VerifyOrderyList.mysql_closeOrder[y]['Open_Time'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面开仓时间：{}，数据库开仓时间：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Open_Time'],VerifyOrderyList.mysql_closeOrder[y]['Open_Time']))\n    \n                                                with allure.step('断言页面平仓时间：{}，数据库平仓时间：{}'.format(VerifyOrderyList.close_orderList[y]['Close_Time'], VerifyOrderyList.mysql_closeOrder[y]['Close_Time'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Close_Time'], VerifyOrderyList.mysql_closeOrder[y]['Close_Time'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面平仓时间：{}，数据库平仓时间：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Close_Time'],VerifyOrderyList.mysql_closeOrder[y]['Close_Time']))\n    \n                                                with allure.step('断言页面交易量：{}，数据库交易量：{}'.format(VerifyOrderyList.close_orderList[y]['Volume'], float(VerifyOrderyList.mysql_closeOrder[y]['Volume']/100))):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Volume'], float(VerifyOrderyList.mysql_closeOrder[y]['Volume']/100),\n                                                    '第{}条数据断言失败：页面订单号码：{},页面交易量：{}，数据库交易量：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Volume'],float(VerifyOrderyList.mysql_closeOrder[y]['Volume']/100)))\n    \n                                                with allure.step('断言页面商品代码：{}，数据库商品代码：{}'.format(VerifyOrderyList.close_orderList[y]['Symbol'], VerifyOrderyList.mysql_closeOrder[y]['Symbol'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Symbol'], VerifyOrderyList.mysql_closeOrder[y]['Symbol'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面商品代码：{}，数据库商品代码：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Symbol'],VerifyOrderyList.mysql_closeOrder[y]['Symbol']))\n    \n                                                with allure.step('断言页面开仓价：{}，数据库开仓价：{}'.format(VerifyOrderyList.close_orderList[y]['Open_Price'], VerifyOrderyList.mysql_closeOrder[y]['Open_Price'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Open_Price'], VerifyOrderyList.mysql_closeOrder[y]['Open_Price'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面开仓价：{}，数据库开仓价：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Open_Price'],VerifyOrderyList.mysql_closeOrder[y]['Open_Price']))\n    \n                                                with allure.step('断言页面平仓价：{}，数据库平仓价：{}'.format(VerifyOrderyList.close_orderList[y]['Close_Price'], VerifyOrderyList.mysql_closeOrder[y]['Close_Price'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Close_Price'], VerifyOrderyList.mysql_closeOrder[y]['Close_Price'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面平仓价：{}，数据库平仓价：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Close_Price'],VerifyOrderyList.mysql_closeOrder[y]['Close_Price']))\n    \n                                                with allure.step('断言页面佣金：{}，数据库佣金：{}'.format(VerifyOrderyList.close_orderList[y]['Commission'], VerifyOrderyList.mysql_closeOrder[y]['Commission'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Commission'], VerifyOrderyList.mysql_closeOrder[y]['Commission'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面佣金：{}，数据库佣金：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Commission'],VerifyOrderyList.mysql_closeOrder[y]['Commission']))\n    \n                                                with allure.step('断言页面隔夜利息：{}，数据库隔夜利息：{}'.format(VerifyOrderyList.close_orderList[y]['Swaps'], VerifyOrderyList.mysql_closeOrder[y]['Swaps'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Swaps'], VerifyOrderyList.mysql_closeOrder[y]['Swaps'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面隔夜利息：{}，数据库隔夜利息：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Swaps'],VerifyOrderyList.mysql_closeOrder[y]['Swaps']))\n    \n                                                with allure.step('断言页面盈亏：{}，数据库盈亏：{}'.format(VerifyOrderyList.close_orderList[y]['Profit'], VerifyOrderyList.mysql_closeOrder[y]['Profit'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Profit'], VerifyOrderyList.mysql_closeOrder[y]['Profit'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面盈亏：{}，数据库盈亏：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Profit'],VerifyOrderyList.mysql_closeOrder[y]['Profit']))\n    \n                                else:\n                                    with allure.step('在该时间段内不存在类型为{}的未平仓订单数据,断言数据库查询数据是否为空'.format(VerifyOrderyList.tradeType)):\n                                        check.equal(VerifyOrderyList.close_order_len, len(VerifyOrderyList.mysql_closeOrder),\n                                        '断言失败，页面数据{}条，数据库数据{}条'.format(VerifyOrderyList.close_order_len, len(VerifyOrderyList.mysql_closeOrder)))\n    \n                with allure.step('根据订单号码查询已平仓订单，核对数据库数据'):\n                    VerifyOrderyList.search_ticket_openOrder(int(data['订单号码']))\n    \n                    with allure.step('断言订单号码{}与数据库数据'.format(int(data['订单号码']))):\n    \n                        with allure.step('断言页面交易账号：{}，数据库交易账号：{}'.format(VerifyOrderyList.close_orderDict['Login'], VerifyOrderyList.mysql_closeOrder[0]['Login'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Login'], VerifyOrderyList.mysql_closeOrder[0]['Login'],\n                            '断言失败：页面交易账号：{}，数据库交易账号：{}'.format(VerifyOrderyList.close_orderDict['Login'],VerifyOrderyList.mysql_closeOrder[0]['Login']))\n    \n                        with allure.step('断言页面开仓时间：{}，数据库开仓时间：{}'.format(VerifyOrderyList.close_orderDict['Open_Time'], VerifyOrderyList.mysql_closeOrder[0]['Open_Time'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Open_Time'], VerifyOrderyList.mysql_closeOrder[0]['Open_Time'],\n                            '断言失败：页面开仓时间：{}，数据库开仓时间：{}'.format(VerifyOrderyList.close_orderDict['Open_Time'],VerifyOrderyList.mysql_closeOrder[0]['Open_Time']))\n    \n                        with allure.step('断言页面平仓时间：{}，数据库平仓时间：{}'.format(VerifyOrderyList.close_orderDict['Close_Time'], VerifyOrderyList.mysql_closeOrder[0]['Close_Time'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Close_Time'], VerifyOrderyList.mysql_closeOrder[0]['Close_Time'],\n                            '断言失败：页面平仓时间：{}，数据库平仓时间：{}'.format(VerifyOrderyList.close_orderDict['Close_Time'],VerifyOrderyList.mysql_closeOrder[0]['Close_Time']))\n    \n                        with allure.step('断言页面交易量：{}，数据库交易量：{}'.format(VerifyOrderyList.close_orderDict['Volume'], float(VerifyOrderyList.mysql_closeOrder[0]['Volume']/100))):\n                            check.equal(VerifyOrderyList.close_orderDict['Volume'], float(VerifyOrderyList.mysql_closeOrder[0]['Volume']/100),\n                            '断言失败：页面交易量：{}，数据库交易量：{}'.format(VerifyOrderyList.close_orderDict['Volume'],float(VerifyOrderyList.mysql_closeOrder[0]['Volume']/100)))\n    \n                        with allure.step('断言页面商品代码：{}，数据库商品代码：{}'.format(VerifyOrderyList.close_orderDict['Symbol'], VerifyOrderyList.mysql_closeOrder[0]['Symbol'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Symbol'], VerifyOrderyList.mysql_closeOrder[0]['Symbol'],\n                            '断言失败：页面商品代码：{}，数据库商品代码：{}'.format(VerifyOrderyList.close_orderDict['Symbol'],VerifyOrderyList.mysql_closeOrder[0]['Symbol']))\n    \n                        with allure.step('断言页面开仓价：{}，数据库开仓价：{}'.format(VerifyOrderyList.close_orderDict['Open_Price'], VerifyOrderyList.mysql_closeOrder[0]['Open_Price'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Open_Price'], VerifyOrderyList.mysql_closeOrder[0]['Open_Price'],\n                            '断言失败：页面开仓价：{}，数据库开仓价：{}'.format(VerifyOrderyList.close_orderDict['Open_Price'],VerifyOrderyList.mysql_closeOrder[0]['Open_Price']))\n    \n                        with allure.step('断言页面平仓价：{}，数据库平仓价：{}'.format(VerifyOrderyList.close_orderDict['Close_Price'], VerifyOrderyList.mysql_closeOrder[0]['Close_Price'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Close_Price'], VerifyOrderyList.mysql_closeOrder[0]['Close_Price'],\n                            '断言失败：页面平仓价：{}，数据库平仓价：{}'.format(VerifyOrderyList.close_orderDict['Close_Price'],VerifyOrderyList.mysql_closeOrder[0]['Close_Price']))\n    \n                        with allure.step('断言页面佣金：{}，数据库佣金：{}'.format(VerifyOrderyList.close_orderDict['Commission'], VerifyOrderyList.mysql_closeOrder[0]['Commission'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Commission'], VerifyOrderyList.mysql_closeOrder[0]['Commission'],\n                            '断言失败：页面佣金：{}，数据库佣金：{}'.format(VerifyOrderyList.close_orderDict['Commission'],VerifyOrderyList.mysql_closeOrder[0]['Commission']))\n    \n                        with allure.step('断言页面隔夜利息：{}，数据库隔夜利息：{}'.format(VerifyOrderyList.close_orderDict['Swaps'], VerifyOrderyList.mysql_closeOrder[0]['Swaps'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Swaps'], VerifyOrderyList.mysql_closeOrder[0]['Swaps'],\n                            '断言失败：页面隔夜利息：{}，数据库隔夜利息：{}'.format(VerifyOrderyList.close_orderDict['Swaps'],VerifyOrderyList.mysql_closeOrder[0]['Swaps']))\n    \n                        with allure.step('断言页面盈亏：{}，数据库盈亏：{}'.format(VerifyOrderyList.close_orderDict['Profit'], VerifyOrderyList.mysql_closeOrder[0]['Profit'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Profit'], VerifyOrderyList.mysql_closeOrder[0]['Profit'],\n                            '断言失败：页面盈亏：{}，数据库盈亏：{}'.format(VerifyOrderyList.close_orderDict['Profit'],VerifyOrderyList.mysql_closeOrder[0]['Profit']))\n    \n    \n                with allure.step('断言页面导出与复制功能是否与数据库数据一致'):\n                    VerifyOrderyList.copy_close_export_OrderList(VerifyOrderyList.tradeAccount_list2[0])\n    \n                    with allure.step('断言复制功能'):\n                        for i in range(0,len(VerifyOrderyList.closeOrder_data)):\n                            with allure.step('断言复制订单号：{}，数据库订单号：{}'.format(int(VerifyOrderyList.closeOrder_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket'])):\n                                check.equal(int(VerifyOrderyList.closeOrder_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket'],\n                                '第{}条数据断言失败：复制订单号码：{}，数据库订单号码：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket']))\n    \n                                with allure.step('断言复制交易账号：{}，数据库交易账号：{}'.format(int(VerifyOrderyList.closeOrder_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login'])):\n                                    check.equal(int(VerifyOrderyList.closeOrder_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login'],\n                                    '第{}条数据断言失败：订单号：{}，复制交易账号：{}，数据库交易账号：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),int(VerifyOrderyList.closeOrder_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login']))\n    \n                                with allure.step('断言复制开仓时间：{}，数据库开仓时间：{}'.format(VerifyOrderyList.closeOrder_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S'))):\n                                    check.equal(VerifyOrderyList.closeOrder_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S'),\n                                    '第{}条数据断言失败：订单号：{}，复制开仓时间：{}，数据库开仓时间：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),VerifyOrderyList.closeOrder_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S')))\n    \n                                with allure.step('断言复制平仓时间：{}，数据库平仓时间：{}'.format(VerifyOrderyList.closeOrder_data[i]['平仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S'))):\n                                    check.equal(VerifyOrderyList.closeOrder_data[i]['平仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S'),\n                                    '第{}条数据断言失败：订单号：{}，复制平仓时间：{}，数据库平仓时间：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),VerifyOrderyList.closeOrder_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S')))\n    \n                                with allure.step('断言复制交易量：{}，数据库交易量：{}'.format(float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume']/100)):\n                                    check.equal(float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume']/100,\n                                    '第{}条数据断言失败：订单号：{}，复制交易量：{}，数据库交易量：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume']/100))\n    \n                                with allure.step('断言复制商品代码：{}，数据库商品代码：{}'.format(VerifyOrderyList.closeOrder_data[i]['商品代码'],VerifyOrderyList.mysql_closeOrder[i]['Symbol'])):\n                                    check.equal(VerifyOrderyList.closeOrder_data[i]['商品代码'],VerifyOrderyList.mysql_closeOrder[i]['Symbol'],\n                                    '第{}条数据断言失败：订单号：{}，复制商品代码：{}，数据库商品代码：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),VerifyOrderyList.closeOrder_data[i]['商品代码'],VerifyOrderyList.mysql_closeOrder[i]['Symbol']))\n    \n                                with allure.step('断言复制开仓价：{}，数据库开仓价：{}'.format(float(VerifyOrderyList.closeOrder_data[i]['开仓价']),VerifyOrderyList.mysql_closeOrder[i]['Open_Price'])):\n                                    check.equal(float(VerifyOrderyList.closeOrder_data[i]['开仓价']),VerifyOrderyList.mysql_closeOrder[i]['Open_Price'],\n                                    '第{}条数据断言失败：订单号：{}，复制开仓价：{}，数据库开仓价：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['开仓价']),VerifyOrderyList.mysql_closeOrder[i]['Open_Price']))\n    \n                                with allure.step('断言复制平仓价格：{}，数据库平仓价格：{}'.format(float(VerifyOrderyList.closeOrder_data[i]['平仓价格']),VerifyOrderyList.mysql_closeOrder[i]['Close_Price'])):\n                                    check.equal(float(VerifyOrderyList.closeOrder_data[i]['平仓价格']),VerifyOrderyList.mysql_closeOrder[i]['Close_Price'],\n                                    '第{}条数据断言失败：订单号：{}，复制平仓价格：{}，数据库平仓价格：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['平仓价格']),VerifyOrderyList.mysql_closeOrder[i]['Close_Price']))\n    \n                                with allure.step('断言复制佣金：{}，数据库佣金：{}'.format(float(VerifyOrderyList.closeOrder_data[i]['佣金']),VerifyOrderyList.mysql_closeOrder[i]['Commission'])):\n                                    check.equal(float(VerifyOrderyList.closeOrder_data[i]['佣金']),VerifyOrderyList.mysql_closeOrder[i]['Commission'],\n                                    '第{}条数据断言失败：订单号：{}，复制佣金：{}，数据库佣金：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['佣金']),VerifyOrderyList.mysql_closeOrder[i]['Commission']))\n    \n                                with allure.step('断言复制隔夜利息：{}，数据库隔夜利息：{}'.format(float(VerifyOrderyList.closeOrder_data[i]['隔夜利息']),VerifyOrderyList.mysql_closeOrder[i]['Swaps'])):\n                                    check.equal(float(VerifyOrderyList.closeOrder_data[i]['隔夜利息']),VerifyOrderyList.mysql_closeOrder[i]['Swaps'],\n                                    '第{}条数据断言失败：订单号：{}，复制隔夜利息：{}，数据库隔夜利息：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['隔夜利息']),VerifyOrderyList.mysql_closeOrder[i]['Swaps']))\n    \n                                with allure.step('断言复制盈亏：{}，数据库盈亏：{}'.format(float(VerifyOrderyList.closeOrder_data[i]['盈亏']),VerifyOrderyList.mysql_closeOrder[i]['Profit'])):\n                                    check.equal(float(VerifyOrderyList.closeOrder_data[i]['盈亏']),VerifyOrderyList.mysql_closeOrder[i]['Profit'],\n                                    '第{}条数据断言失败：订单号：{}，复制盈亏：{}，数据库盈亏：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['盈亏']),VerifyOrderyList.mysql_closeOrder[i]['Profit']))\n    \n    \n                    with allure.step('断言导出功能'):\n                        for i in range(0,len(VerifyOrderyList.closeOrderexcel_data)):\n                            with allure.step('断言导出订单号：{}，数据库订单号：{}'.format(int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket'])):\n                                check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket'],\n                                '第{}条数据断言失败：导出订单号码：{}，数据库订单号码：{}'.format(i+1,int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket']))\n    \n                                with allure.step('断言导出交易账号：{}，数据库交易账号：{}'.format(int(VerifyOrderyList.closeOrderexcel_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login'])):\n                                    check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login'],\n                                    '第{}条数据断言失败：订单号：{}，导出交易账号：{}，数据库交易账号：{}'.format(i+1,int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),int(VerifyOrderyList.closeOrder_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login']))\n    \n                                with allure.step('断言导出开仓时间：{}，数据库开仓时间：{}'.format(VerifyOrderyList.closeOrderexcel_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S'))):\n                                    check.equal(VerifyOrderyList.closeOrderexcel_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S'),\n                                    '第{}条数据断言失败：订单号：{}，导出开仓时间：{}，数据库开仓时间：{}'.format(i+1,int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.closeOrder_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S')))\n    \n                                with allure.step('断言导出平仓时间：{}，数据库平仓时间：{}'.format(VerifyOrderyList.closeOrderexcel_data[i]['平仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S'))):\n                                    check.equal(VerifyOrderyList.closeOrderexcel_data[i]['平仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S'),\n                                    '第{}条数据断言失败：订单号：{}，导出平仓时间：{}，数据库平仓时间：{}'.format(i+1,int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.closeOrder_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S')))\n    \n                                with allure.step('断言导出交易量：{}，数据库交易量：{}'.format(float(VerifyOrderyList.closeOrderexcel_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume']/100)):\n>                                   check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['手数']),mysql_closeOrder[i]['Volume']/100,\n                                    '第{}条数据断言失败：订单号：{}，导出交易量：{}，数据库交易量：{}'.format(i+1,int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume']/100))\nE                                   NameError: name 'mysql_closeOrder' is not defined\n\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:361: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_IB_Open_OrderList",
+    "time" : {
+      "start" : 1650967408770,
+      "stop" : 1650967425880,
+      "duration" : 17110
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "读取测试文档数据，执行用例",
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'mysql_closeOrder' is not defined",
+    "statusTrace" : "self = <Test_ib_close_order_list.Test_IB_Open_OrderList object at 0x074A7DC0>, data = {'代理账号': 1000005349.0, '订单号码': 544620.0}\n\n    @allure.feature('核对IB下级已平仓数据，断言导出与复制功能')\n    @allure.story('用例执行')\n    @allure.description('读取测试文档数据，执行用例')\n    @allure.title('IB下级未平仓订单数据核对报告')\n    @pytest.mark.parametrize('data',testdata)\n    def test_IB_Order_List(self,data):\n    \n        print('当前执行用例账号：{}'.format(int(data['代理账号'])))\n    \n        with allure.step('获取当前测试数据下标'):\n            self.data_index=testdata.index(data)\n    \n        with allure.step('查询当前代理账号存在多少个直属/非直属下级'):\n            VerifyOrderyList.search_ib_lower(int(data['代理账号']))\n    \n        with allure.step('根据代理账号通过BOS登录CP，进入下级已平仓页面'):\n            VerifyOrderyList.logincp(int(data['代理账号']))\n    \n        with allure.step('查询当前代理是否存在下级已平仓订单'):\n    \n            if VerifyOrderyList.filter_lower_openOrder():\n                with allure.step('当前代理存在已级已平仓订单'):\n    \n                    for i in VerifyOrderyList.tradeAccount_list2:\n    \n                        with allure.step('查询下级主账号 {} 名下交易账号 {} 在 {} 00:00:00~{} 23:59:59 的已平仓订单数据'.format(VerifyOrderyList.\n                        deduplication_lower_list[VerifyOrderyList.randomIndex],i,VerifyOrderyList.dateStart,VerifyOrderyList.dateEnd)):\n    \n                            with allure.step('判断在该时间段内是否存在已平仓数据'):\n                                if VerifyOrderyList.search_period_openOrder(i):\n    \n                                    with allure.step('在该时间段内存在{}条未平仓订单数据'.format(len(VerifyOrderyList.close_orderList))):\n    \n                                        with allure.step('核对页面交易账号：{} 在 {} 00:00:00~{} 23:59:59时间段内的总交易量，总佣金，总隔夜利息，总盈亏'.format(i,VerifyOrderyList.dateStart,VerifyOrderyList.dateEnd)):\n                                            with allure.step('页面总交易量：{}，数据库总交易量：{}'.format(VerifyOrderyList.total_Volume,VerifyOrderyList.dataBase_total_Volume)):\n                                                check.equal(VerifyOrderyList.total_Volume,VerifyOrderyList.dataBase_total_Volume,\n                                                '断言失败：页面总交易量：{}，数据库总交易量：{}'.format(VerifyOrderyList.total_Volume,VerifyOrderyList.dataBase_total_Volume))\n    \n                                            with allure.step('页面总佣金：{}，数据库总佣金：{}'.format(VerifyOrderyList.total_Commission,VerifyOrderyList.dataBase_total_Commission)):\n                                                check.equal(VerifyOrderyList.total_Commission,VerifyOrderyList.dataBase_total_Commission,\n                                                '断言失败：页面总佣金：{}，数据库总佣金：{}'.format(VerifyOrderyList.total_Commission,VerifyOrderyList.dataBase_total_Commission))\n    \n                                            with allure.step('页面总利息：{}，数据库总利息：{}'.format('%.2f'%VerifyOrderyList.total_Swaps,'%.2f'%VerifyOrderyList.dataBase_total_Swaps)):\n                                                check.equal('%.2f'%VerifyOrderyList.total_Swaps,'%.2f'%VerifyOrderyList.dataBase_total_Swaps,\n                                                '断言失败：页面总利息：{}，数据库总利息：{}'.format('%.2f'%VerifyOrderyList.total_Swaps,'%.2f'%VerifyOrderyList.dataBase_total_Swaps))\n    \n                                            with allure.step('页面总盈亏：{}，数据库总盈亏：{}'.format('%.2f'%VerifyOrderyList.total_Profit,'%.2f'%VerifyOrderyList.dataBase_total_Profit)):\n                                                check.equal('%.2f'%VerifyOrderyList.total_Profit,'%.2f'%VerifyOrderyList.dataBase_total_Profit,\n                                                '断言失败：页面总盈亏：{}，数据库总盈亏：{}'.format('%.2f'%VerifyOrderyList.total_Profit,'%.2f'%VerifyOrderyList.dataBase_total_Profit))\n    \n                                        for y in range(0,len(VerifyOrderyList.close_orderList)):\n    \n                                            with allure.step('断言页面订单号码{}与数据库订单号码{}：'.format(VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.mysql_closeOrder[y]['Ticket'])):\n                                                check.equal(VerifyOrderyList.close_orderList[y]['Ticket'], VerifyOrderyList.mysql_closeOrder[y]['Ticket'],\n                                                '第{}条数据断言失败：页面订单号码：{}，数据库订单号码：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.mysql_closeOrder[y]['Ticket']))\n    \n                                                with allure.step('断言页面交易账号：{}，数据库交易账号：{}'.format(VerifyOrderyList.close_orderList[y]['Login'], VerifyOrderyList.mysql_closeOrder[y]['Login'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Login'], VerifyOrderyList.mysql_closeOrder[y]['Login'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面交易账号：{}，数据库交易账号：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Login'], VerifyOrderyList.mysql_closeOrder[y]['Login']))\n    \n                                                with allure.step('断言页面开仓时间：{}，数据库开仓时间：{}'.format(VerifyOrderyList.close_orderList[y]['Open_Time'], VerifyOrderyList.mysql_closeOrder[y]['Open_Time'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Open_Time'], VerifyOrderyList.mysql_closeOrder[y]['Open_Time'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面开仓时间：{}，数据库开仓时间：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Open_Time'],VerifyOrderyList.mysql_closeOrder[y]['Open_Time']))\n    \n                                                with allure.step('断言页面平仓时间：{}，数据库平仓时间：{}'.format(VerifyOrderyList.close_orderList[y]['Close_Time'], VerifyOrderyList.mysql_closeOrder[y]['Close_Time'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Close_Time'], VerifyOrderyList.mysql_closeOrder[y]['Close_Time'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面平仓时间：{}，数据库平仓时间：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Close_Time'],VerifyOrderyList.mysql_closeOrder[y]['Close_Time']))\n    \n                                                with allure.step('断言页面交易量：{}，数据库交易量：{}'.format(VerifyOrderyList.close_orderList[y]['Volume'], float(VerifyOrderyList.mysql_closeOrder[y]['Volume']/100))):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Volume'], float(VerifyOrderyList.mysql_closeOrder[y]['Volume']/100),\n                                                    '第{}条数据断言失败：页面订单号码：{},页面交易量：{}，数据库交易量：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Volume'],float(VerifyOrderyList.mysql_closeOrder[y]['Volume']/100)))\n    \n                                                with allure.step('断言页面商品代码：{}，数据库商品代码：{}'.format(VerifyOrderyList.close_orderList[y]['Symbol'], VerifyOrderyList.mysql_closeOrder[y]['Symbol'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Symbol'], VerifyOrderyList.mysql_closeOrder[y]['Symbol'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面商品代码：{}，数据库商品代码：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Symbol'],VerifyOrderyList.mysql_closeOrder[y]['Symbol']))\n    \n                                                with allure.step('断言页面开仓价：{}，数据库开仓价：{}'.format(VerifyOrderyList.close_orderList[y]['Open_Price'], VerifyOrderyList.mysql_closeOrder[y]['Open_Price'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Open_Price'], VerifyOrderyList.mysql_closeOrder[y]['Open_Price'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面开仓价：{}，数据库开仓价：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Open_Price'],VerifyOrderyList.mysql_closeOrder[y]['Open_Price']))\n    \n                                                with allure.step('断言页面平仓价：{}，数据库平仓价：{}'.format(VerifyOrderyList.close_orderList[y]['Close_Price'], VerifyOrderyList.mysql_closeOrder[y]['Close_Price'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Close_Price'], VerifyOrderyList.mysql_closeOrder[y]['Close_Price'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面平仓价：{}，数据库平仓价：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Close_Price'],VerifyOrderyList.mysql_closeOrder[y]['Close_Price']))\n    \n                                                with allure.step('断言页面佣金：{}，数据库佣金：{}'.format(VerifyOrderyList.close_orderList[y]['Commission'], VerifyOrderyList.mysql_closeOrder[y]['Commission'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Commission'], VerifyOrderyList.mysql_closeOrder[y]['Commission'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面佣金：{}，数据库佣金：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Commission'],VerifyOrderyList.mysql_closeOrder[y]['Commission']))\n    \n                                                with allure.step('断言页面隔夜利息：{}，数据库隔夜利息：{}'.format(VerifyOrderyList.close_orderList[y]['Swaps'], VerifyOrderyList.mysql_closeOrder[y]['Swaps'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Swaps'], VerifyOrderyList.mysql_closeOrder[y]['Swaps'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面隔夜利息：{}，数据库隔夜利息：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Swaps'],VerifyOrderyList.mysql_closeOrder[y]['Swaps']))\n    \n                                                with allure.step('断言页面盈亏：{}，数据库盈亏：{}'.format(VerifyOrderyList.close_orderList[y]['Profit'], VerifyOrderyList.mysql_closeOrder[y]['Profit'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Profit'], VerifyOrderyList.mysql_closeOrder[y]['Profit'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面盈亏：{}，数据库盈亏：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Profit'],VerifyOrderyList.mysql_closeOrder[y]['Profit']))\n    \n                                else:\n                                    with allure.step('在该时间段内部存在已平仓订单，断言数据库查询数据是否为空'):\n                                        check.equal(VerifyOrderyList.close_order_len, len(VerifyOrderyList.mysql_closeOrder),\n                                        '断言失败，页面数据{}条，数据库数据{}条'.format(VerifyOrderyList.close_order_len,len(VerifyOrderyList.mysql_closeOrder)))\n    \n    \n                        with allure.step('查询下级主账号 {} 名下交易账号 {} 在 {} 00:00:00~{} 23:59:59 类型为买/卖的已平仓订单数据'.format(VerifyOrderyList.\n                        deduplication_lower_list[VerifyOrderyList.randomIndex],i,VerifyOrderyList.dateStart,VerifyOrderyList.dateEnd)):\n    \n                            with allure.step('判断在该时间段内是否存在类型为买/卖的已平仓数据'):\n    \n                                if VerifyOrderyList.search_buyOrSale_openOrder(i):\n    \n                                    with allure.step('在该时间段内存在{}条类型为{}的已平仓订单数据'.format(len(VerifyOrderyList.close_orderList),VerifyOrderyList.tradeType)):\n    \n                                        with allure.step('核对页面交易账号：{} 在 {} 00:00:00~{} 23:59:59时间段内的总交易量，总佣金，总隔夜利息，总盈亏'.format(i,VerifyOrderyList.dateStart,VerifyOrderyList.dateEnd)):\n    \n                                            with allure.step('页面总交易量：{}，数据库总交易量：{}'.format(VerifyOrderyList.total_Volume,VerifyOrderyList.dataBase_total_Volume)):\n                                                check.equal(VerifyOrderyList.total_Volume,VerifyOrderyList.dataBase_total_Volume,\n                                                '断言失败：页面总交易量：{}，数据库总交易量：{}'.format(VerifyOrderyList.total_Volume,VerifyOrderyList.dataBase_total_Volume))\n    \n                                            with allure.step('页面总佣金：{}，数据库总佣金：{}'.format(VerifyOrderyList.total_Commission,VerifyOrderyList.dataBase_total_Commission)):\n                                                check.equal(VerifyOrderyList.total_Commission,VerifyOrderyList.dataBase_total_Commission,\n                                                '断言失败：页面总佣金：{}，数据库总佣金：{}'.format(VerifyOrderyList.total_Commission,VerifyOrderyList.dataBase_total_Commission))\n    \n                                            with allure.step('页面总利息：{}，数据库总利息：{}'.format('%.2f'%VerifyOrderyList.total_Swaps,'%.2f'%VerifyOrderyList.dataBase_total_Swaps)):\n                                                check.equal('%.2f'%VerifyOrderyList.total_Swaps,'%.2f'%VerifyOrderyList.dataBase_total_Swaps,\n                                                '断言失败：页面总利息：{}，数据库总利息：{}'.format('%.2f'%VerifyOrderyList.total_Swaps,'%.2f'%VerifyOrderyList.dataBase_total_Swaps))\n    \n                                            with allure.step('页面总盈亏：{}，数据库总盈亏：{}'.format('%.2f'%VerifyOrderyList.total_Profit,'%.2f'%VerifyOrderyList.dataBase_total_Profit)):\n                                                check.equal('%.2f'%VerifyOrderyList.total_Profit,'%.2f'%VerifyOrderyList.dataBase_total_Profit,\n                                                    '断言失败：页面总盈亏：{}，数据库总盈亏：{}'.format('%.2f'%VerifyOrderyList.total_Profit,'%.2f'%VerifyOrderyList.dataBase_total_Profit))\n    \n                                        for y in range(0,len(VerifyOrderyList.close_orderList)):\n    \n                                            with allure.step('断言页面订单号码{}与数据库订单号码{}：'.format(VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.mysql_closeOrder[y]['Ticket'])):\n                                                check.equal(VerifyOrderyList.close_orderList[y]['Ticket'], VerifyOrderyList.mysql_closeOrder[y]['Ticket'],\n                                                '第{}条数据断言失败：页面订单号码：{}，数据库订单号码：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.mysql_closeOrder[y]['Ticket']))\n    \n                                                with allure.step('断言页面交易账号：{}，数据库交易账号：{}'.format(VerifyOrderyList.close_orderList[y]['Login'], VerifyOrderyList.mysql_closeOrder[y]['Login'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Login'], VerifyOrderyList.mysql_closeOrder[y]['Login'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面交易账号：{}，数据库交易账号：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Login'], VerifyOrderyList.mysql_closeOrder[y]['Login']))\n    \n                                                with allure.step('断言页面开仓时间：{}，数据库开仓时间：{}'.format(VerifyOrderyList.close_orderList[y]['Open_Time'], VerifyOrderyList.mysql_closeOrder[y]['Open_Time'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Open_Time'], VerifyOrderyList.mysql_closeOrder[y]['Open_Time'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面开仓时间：{}，数据库开仓时间：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Open_Time'],VerifyOrderyList.mysql_closeOrder[y]['Open_Time']))\n    \n                                                with allure.step('断言页面平仓时间：{}，数据库平仓时间：{}'.format(VerifyOrderyList.close_orderList[y]['Close_Time'], VerifyOrderyList.mysql_closeOrder[y]['Close_Time'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Close_Time'], VerifyOrderyList.mysql_closeOrder[y]['Close_Time'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面平仓时间：{}，数据库平仓时间：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Close_Time'],VerifyOrderyList.mysql_closeOrder[y]['Close_Time']))\n    \n                                                with allure.step('断言页面交易量：{}，数据库交易量：{}'.format(VerifyOrderyList.close_orderList[y]['Volume'], float(VerifyOrderyList.mysql_closeOrder[y]['Volume']/100))):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Volume'], float(VerifyOrderyList.mysql_closeOrder[y]['Volume']/100),\n                                                    '第{}条数据断言失败：页面订单号码：{},页面交易量：{}，数据库交易量：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Volume'],float(VerifyOrderyList.mysql_closeOrder[y]['Volume']/100)))\n    \n                                                with allure.step('断言页面商品代码：{}，数据库商品代码：{}'.format(VerifyOrderyList.close_orderList[y]['Symbol'], VerifyOrderyList.mysql_closeOrder[y]['Symbol'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Symbol'], VerifyOrderyList.mysql_closeOrder[y]['Symbol'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面商品代码：{}，数据库商品代码：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Symbol'],VerifyOrderyList.mysql_closeOrder[y]['Symbol']))\n    \n                                                with allure.step('断言页面开仓价：{}，数据库开仓价：{}'.format(VerifyOrderyList.close_orderList[y]['Open_Price'], VerifyOrderyList.mysql_closeOrder[y]['Open_Price'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Open_Price'], VerifyOrderyList.mysql_closeOrder[y]['Open_Price'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面开仓价：{}，数据库开仓价：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Open_Price'],VerifyOrderyList.mysql_closeOrder[y]['Open_Price']))\n    \n                                                with allure.step('断言页面平仓价：{}，数据库平仓价：{}'.format(VerifyOrderyList.close_orderList[y]['Close_Price'], VerifyOrderyList.mysql_closeOrder[y]['Close_Price'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Close_Price'], VerifyOrderyList.mysql_closeOrder[y]['Close_Price'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面平仓价：{}，数据库平仓价：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Close_Price'],VerifyOrderyList.mysql_closeOrder[y]['Close_Price']))\n    \n                                                with allure.step('断言页面佣金：{}，数据库佣金：{}'.format(VerifyOrderyList.close_orderList[y]['Commission'], VerifyOrderyList.mysql_closeOrder[y]['Commission'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Commission'], VerifyOrderyList.mysql_closeOrder[y]['Commission'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面佣金：{}，数据库佣金：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Commission'],VerifyOrderyList.mysql_closeOrder[y]['Commission']))\n    \n                                                with allure.step('断言页面隔夜利息：{}，数据库隔夜利息：{}'.format(VerifyOrderyList.close_orderList[y]['Swaps'], VerifyOrderyList.mysql_closeOrder[y]['Swaps'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Swaps'], VerifyOrderyList.mysql_closeOrder[y]['Swaps'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面隔夜利息：{}，数据库隔夜利息：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Swaps'],VerifyOrderyList.mysql_closeOrder[y]['Swaps']))\n    \n                                                with allure.step('断言页面盈亏：{}，数据库盈亏：{}'.format(VerifyOrderyList.close_orderList[y]['Profit'], VerifyOrderyList.mysql_closeOrder[y]['Profit'])):\n                                                    check.equal(VerifyOrderyList.close_orderList[y]['Profit'], VerifyOrderyList.mysql_closeOrder[y]['Profit'],\n                                                    '第{}条数据断言失败：页面订单号码：{},页面盈亏：{}，数据库盈亏：{}'.format(y+1,VerifyOrderyList.close_orderList[y]['Ticket'],VerifyOrderyList.close_orderList[y]['Profit'],VerifyOrderyList.mysql_closeOrder[y]['Profit']))\n    \n                                else:\n                                    with allure.step('在该时间段内不存在类型为{}的未平仓订单数据,断言数据库查询数据是否为空'.format(VerifyOrderyList.tradeType)):\n                                        check.equal(VerifyOrderyList.close_order_len, len(VerifyOrderyList.mysql_closeOrder),\n                                        '断言失败，页面数据{}条，数据库数据{}条'.format(VerifyOrderyList.close_order_len, len(VerifyOrderyList.mysql_closeOrder)))\n    \n                with allure.step('根据订单号码查询已平仓订单，核对数据库数据'):\n                    VerifyOrderyList.search_ticket_openOrder(int(data['订单号码']))\n    \n                    with allure.step('断言订单号码{}与数据库数据'.format(int(data['订单号码']))):\n    \n                        with allure.step('断言页面交易账号：{}，数据库交易账号：{}'.format(VerifyOrderyList.close_orderDict['Login'], VerifyOrderyList.mysql_closeOrder[0]['Login'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Login'], VerifyOrderyList.mysql_closeOrder[0]['Login'],\n                            '断言失败：页面交易账号：{}，数据库交易账号：{}'.format(VerifyOrderyList.close_orderDict['Login'],VerifyOrderyList.mysql_closeOrder[0]['Login']))\n    \n                        with allure.step('断言页面开仓时间：{}，数据库开仓时间：{}'.format(VerifyOrderyList.close_orderDict['Open_Time'], VerifyOrderyList.mysql_closeOrder[0]['Open_Time'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Open_Time'], VerifyOrderyList.mysql_closeOrder[0]['Open_Time'],\n                            '断言失败：页面开仓时间：{}，数据库开仓时间：{}'.format(VerifyOrderyList.close_orderDict['Open_Time'],VerifyOrderyList.mysql_closeOrder[0]['Open_Time']))\n    \n                        with allure.step('断言页面平仓时间：{}，数据库平仓时间：{}'.format(VerifyOrderyList.close_orderDict['Close_Time'], VerifyOrderyList.mysql_closeOrder[0]['Close_Time'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Close_Time'], VerifyOrderyList.mysql_closeOrder[0]['Close_Time'],\n                            '断言失败：页面平仓时间：{}，数据库平仓时间：{}'.format(VerifyOrderyList.close_orderDict['Close_Time'],VerifyOrderyList.mysql_closeOrder[0]['Close_Time']))\n    \n                        with allure.step('断言页面交易量：{}，数据库交易量：{}'.format(VerifyOrderyList.close_orderDict['Volume'], float(VerifyOrderyList.mysql_closeOrder[0]['Volume']/100))):\n                            check.equal(VerifyOrderyList.close_orderDict['Volume'], float(VerifyOrderyList.mysql_closeOrder[0]['Volume']/100),\n                            '断言失败：页面交易量：{}，数据库交易量：{}'.format(VerifyOrderyList.close_orderDict['Volume'],float(VerifyOrderyList.mysql_closeOrder[0]['Volume']/100)))\n    \n                        with allure.step('断言页面商品代码：{}，数据库商品代码：{}'.format(VerifyOrderyList.close_orderDict['Symbol'], VerifyOrderyList.mysql_closeOrder[0]['Symbol'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Symbol'], VerifyOrderyList.mysql_closeOrder[0]['Symbol'],\n                            '断言失败：页面商品代码：{}，数据库商品代码：{}'.format(VerifyOrderyList.close_orderDict['Symbol'],VerifyOrderyList.mysql_closeOrder[0]['Symbol']))\n    \n                        with allure.step('断言页面开仓价：{}，数据库开仓价：{}'.format(VerifyOrderyList.close_orderDict['Open_Price'], VerifyOrderyList.mysql_closeOrder[0]['Open_Price'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Open_Price'], VerifyOrderyList.mysql_closeOrder[0]['Open_Price'],\n                            '断言失败：页面开仓价：{}，数据库开仓价：{}'.format(VerifyOrderyList.close_orderDict['Open_Price'],VerifyOrderyList.mysql_closeOrder[0]['Open_Price']))\n    \n                        with allure.step('断言页面平仓价：{}，数据库平仓价：{}'.format(VerifyOrderyList.close_orderDict['Close_Price'], VerifyOrderyList.mysql_closeOrder[0]['Close_Price'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Close_Price'], VerifyOrderyList.mysql_closeOrder[0]['Close_Price'],\n                            '断言失败：页面平仓价：{}，数据库平仓价：{}'.format(VerifyOrderyList.close_orderDict['Close_Price'],VerifyOrderyList.mysql_closeOrder[0]['Close_Price']))\n    \n                        with allure.step('断言页面佣金：{}，数据库佣金：{}'.format(VerifyOrderyList.close_orderDict['Commission'], VerifyOrderyList.mysql_closeOrder[0]['Commission'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Commission'], VerifyOrderyList.mysql_closeOrder[0]['Commission'],\n                            '断言失败：页面佣金：{}，数据库佣金：{}'.format(VerifyOrderyList.close_orderDict['Commission'],VerifyOrderyList.mysql_closeOrder[0]['Commission']))\n    \n                        with allure.step('断言页面隔夜利息：{}，数据库隔夜利息：{}'.format(VerifyOrderyList.close_orderDict['Swaps'], VerifyOrderyList.mysql_closeOrder[0]['Swaps'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Swaps'], VerifyOrderyList.mysql_closeOrder[0]['Swaps'],\n                            '断言失败：页面隔夜利息：{}，数据库隔夜利息：{}'.format(VerifyOrderyList.close_orderDict['Swaps'],VerifyOrderyList.mysql_closeOrder[0]['Swaps']))\n    \n                        with allure.step('断言页面盈亏：{}，数据库盈亏：{}'.format(VerifyOrderyList.close_orderDict['Profit'], VerifyOrderyList.mysql_closeOrder[0]['Profit'])):\n                            check.equal(VerifyOrderyList.close_orderDict['Profit'], VerifyOrderyList.mysql_closeOrder[0]['Profit'],\n                            '断言失败：页面盈亏：{}，数据库盈亏：{}'.format(VerifyOrderyList.close_orderDict['Profit'],VerifyOrderyList.mysql_closeOrder[0]['Profit']))\n    \n    \n                with allure.step('断言页面导出与复制功能是否与数据库数据一致'):\n                    VerifyOrderyList.copy_close_export_OrderList(VerifyOrderyList.tradeAccount_list2[0])\n    \n                    with allure.step('断言复制功能'):\n                        for i in range(0,len(VerifyOrderyList.closeOrder_data)):\n                            with allure.step('断言复制订单号：{}，数据库订单号：{}'.format(int(VerifyOrderyList.closeOrder_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket'])):\n                                check.equal(int(VerifyOrderyList.closeOrder_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket'],\n                                '第{}条数据断言失败：复制订单号码：{}，数据库订单号码：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket']))\n    \n                                with allure.step('断言复制交易账号：{}，数据库交易账号：{}'.format(int(VerifyOrderyList.closeOrder_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login'])):\n                                    check.equal(int(VerifyOrderyList.closeOrder_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login'],\n                                    '第{}条数据断言失败：订单号：{}，复制交易账号：{}，数据库交易账号：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),int(VerifyOrderyList.closeOrder_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login']))\n    \n                                with allure.step('断言复制开仓时间：{}，数据库开仓时间：{}'.format(VerifyOrderyList.closeOrder_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S'))):\n                                    check.equal(VerifyOrderyList.closeOrder_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S'),\n                                    '第{}条数据断言失败：订单号：{}，复制开仓时间：{}，数据库开仓时间：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),VerifyOrderyList.closeOrder_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S')))\n    \n                                with allure.step('断言复制平仓时间：{}，数据库平仓时间：{}'.format(VerifyOrderyList.closeOrder_data[i]['平仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S'))):\n                                    check.equal(VerifyOrderyList.closeOrder_data[i]['平仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S'),\n                                    '第{}条数据断言失败：订单号：{}，复制平仓时间：{}，数据库平仓时间：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),VerifyOrderyList.closeOrder_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S')))\n    \n                                with allure.step('断言复制交易量：{}，数据库交易量：{}'.format(float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume']/100)):\n                                    check.equal(float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume']/100,\n                                    '第{}条数据断言失败：订单号：{}，复制交易量：{}，数据库交易量：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume']/100))\n    \n                                with allure.step('断言复制商品代码：{}，数据库商品代码：{}'.format(VerifyOrderyList.closeOrder_data[i]['商品代码'],VerifyOrderyList.mysql_closeOrder[i]['Symbol'])):\n                                    check.equal(VerifyOrderyList.closeOrder_data[i]['商品代码'],VerifyOrderyList.mysql_closeOrder[i]['Symbol'],\n                                    '第{}条数据断言失败：订单号：{}，复制商品代码：{}，数据库商品代码：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),VerifyOrderyList.closeOrder_data[i]['商品代码'],VerifyOrderyList.mysql_closeOrder[i]['Symbol']))\n    \n                                with allure.step('断言复制开仓价：{}，数据库开仓价：{}'.format(float(VerifyOrderyList.closeOrder_data[i]['开仓价']),VerifyOrderyList.mysql_closeOrder[i]['Open_Price'])):\n                                    check.equal(float(VerifyOrderyList.closeOrder_data[i]['开仓价']),VerifyOrderyList.mysql_closeOrder[i]['Open_Price'],\n                                    '第{}条数据断言失败：订单号：{}，复制开仓价：{}，数据库开仓价：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['开仓价']),VerifyOrderyList.mysql_closeOrder[i]['Open_Price']))\n    \n                                with allure.step('断言复制平仓价格：{}，数据库平仓价格：{}'.format(float(VerifyOrderyList.closeOrder_data[i]['平仓价格']),VerifyOrderyList.mysql_closeOrder[i]['Close_Price'])):\n                                    check.equal(float(VerifyOrderyList.closeOrder_data[i]['平仓价格']),VerifyOrderyList.mysql_closeOrder[i]['Close_Price'],\n                                    '第{}条数据断言失败：订单号：{}，复制平仓价格：{}，数据库平仓价格：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['平仓价格']),VerifyOrderyList.mysql_closeOrder[i]['Close_Price']))\n    \n                                with allure.step('断言复制佣金：{}，数据库佣金：{}'.format(float(VerifyOrderyList.closeOrder_data[i]['佣金']),VerifyOrderyList.mysql_closeOrder[i]['Commission'])):\n                                    check.equal(float(VerifyOrderyList.closeOrder_data[i]['佣金']),VerifyOrderyList.mysql_closeOrder[i]['Commission'],\n                                    '第{}条数据断言失败：订单号：{}，复制佣金：{}，数据库佣金：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['佣金']),VerifyOrderyList.mysql_closeOrder[i]['Commission']))\n    \n                                with allure.step('断言复制隔夜利息：{}，数据库隔夜利息：{}'.format(float(VerifyOrderyList.closeOrder_data[i]['隔夜利息']),VerifyOrderyList.mysql_closeOrder[i]['Swaps'])):\n                                    check.equal(float(VerifyOrderyList.closeOrder_data[i]['隔夜利息']),VerifyOrderyList.mysql_closeOrder[i]['Swaps'],\n                                    '第{}条数据断言失败：订单号：{}，复制隔夜利息：{}，数据库隔夜利息：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['隔夜利息']),VerifyOrderyList.mysql_closeOrder[i]['Swaps']))\n    \n                                with allure.step('断言复制盈亏：{}，数据库盈亏：{}'.format(float(VerifyOrderyList.closeOrder_data[i]['盈亏']),VerifyOrderyList.mysql_closeOrder[i]['Profit'])):\n                                    check.equal(float(VerifyOrderyList.closeOrder_data[i]['盈亏']),VerifyOrderyList.mysql_closeOrder[i]['Profit'],\n                                    '第{}条数据断言失败：订单号：{}，复制盈亏：{}，数据库盈亏：{}'.format(i+1,int(VerifyOrderyList.closeOrder_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['盈亏']),VerifyOrderyList.mysql_closeOrder[i]['Profit']))\n    \n    \n                    with allure.step('断言导出功能'):\n                        for i in range(0,len(VerifyOrderyList.closeOrderexcel_data)):\n                            with allure.step('断言导出订单号：{}，数据库订单号：{}'.format(int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket'])):\n                                check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket'],\n                                '第{}条数据断言失败：导出订单号码：{}，数据库订单号码：{}'.format(i+1,int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket']))\n    \n                                with allure.step('断言导出交易账号：{}，数据库交易账号：{}'.format(int(VerifyOrderyList.closeOrderexcel_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login'])):\n                                    check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login'],\n                                    '第{}条数据断言失败：订单号：{}，导出交易账号：{}，数据库交易账号：{}'.format(i+1,int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),int(VerifyOrderyList.closeOrder_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login']))\n    \n                                with allure.step('断言导出开仓时间：{}，数据库开仓时间：{}'.format(VerifyOrderyList.closeOrderexcel_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S'))):\n                                    check.equal(VerifyOrderyList.closeOrderexcel_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S'),\n                                    '第{}条数据断言失败：订单号：{}，导出开仓时间：{}，数据库开仓时间：{}'.format(i+1,int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.closeOrder_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S')))\n    \n                                with allure.step('断言导出平仓时间：{}，数据库平仓时间：{}'.format(VerifyOrderyList.closeOrderexcel_data[i]['平仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S'))):\n                                    check.equal(VerifyOrderyList.closeOrderexcel_data[i]['平仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S'),\n                                    '第{}条数据断言失败：订单号：{}，导出平仓时间：{}，数据库平仓时间：{}'.format(i+1,int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.closeOrder_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S')))\n    \n                                with allure.step('断言导出交易量：{}，数据库交易量：{}'.format(float(VerifyOrderyList.closeOrderexcel_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume']/100)):\n>                                   check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['手数']),mysql_closeOrder[i]['Volume']/100,\n                                    '第{}条数据断言失败：订单号：{}，导出交易量：{}，数据库交易量：{}'.format(i+1,int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume']/100))\nE                                   NameError: name 'mysql_closeOrder' is not defined\n\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:361: NameError",
+    "steps" : [ {
+      "name" : "获取当前测试数据下标",
+      "time" : {
+        "start" : 1650967425998,
+        "stop" : 1650967425999,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "查询当前代理账号存在多少个直属/非直属下级",
+      "time" : {
+        "start" : 1650967425999,
+        "stop" : 1650967426091,
+        "duration" : 92
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "根据代理账号通过BOS登录CP，进入下级已平仓页面",
+      "time" : {
+        "start" : 1650967426091,
+        "stop" : 1650967446875,
+        "duration" : 20784
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "查询当前代理是否存在下级已平仓订单",
+      "time" : {
+        "start" : 1650967446875,
+        "stop" : 1650967510919,
+        "duration" : 64044
+      },
+      "status" : "broken",
+      "statusMessage" : "NameError: name 'mysql_closeOrder' is not defined\n",
+      "statusTrace" : "  File \"c:\\Users\\tyler.tang\\Desktop\\code\\tylerhub\\demo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py\", line 361, in test_IB_Order_List\n    check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['手数']),mysql_closeOrder[i]['Volume']/100,\n",
+      "steps" : [ {
+        "name" : "当前代理存在已级已平仓订单",
+        "time" : {
+          "start" : 1650967463181,
+          "stop" : 1650967491089,
+          "duration" : 27908
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查询下级主账号 1000006140 名下交易账号 672006222 在 1990-01-01 00:00:00~2055-12-31 23:59:59 的已平仓订单数据",
+          "time" : {
+            "start" : 1650967463181,
+            "stop" : 1650967479965,
+            "duration" : 16784
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "判断在该时间段内是否存在已平仓数据",
+            "time" : {
+              "start" : 1650967463181,
+              "stop" : 1650967479965,
+              "duration" : 16784
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "在该时间段内存在2条未平仓订单数据",
+              "time" : {
+                "start" : 1650967479963,
+                "stop" : 1650967479965,
+                "duration" : 2
+              },
+              "status" : "passed",
+              "steps" : [ {
+                "name" : "核对页面交易账号：672006222 在 1990-01-01 00:00:00~2055-12-31 23:59:59时间段内的总交易量，总佣金，总隔夜利息，总盈亏",
+                "time" : {
+                  "start" : 1650967479963,
+                  "stop" : 1650967479964,
+                  "duration" : 1
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "页面总交易量：50.0，数据库总交易量：50.0",
+                  "time" : {
+                    "start" : 1650967479963,
+                    "stop" : 1650967479963,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "页面总佣金：0.0，数据库总佣金：0.0",
+                  "time" : {
+                    "start" : 1650967479963,
+                    "stop" : 1650967479963,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "页面总利息：0.00，数据库总利息：0.00",
+                  "time" : {
+                    "start" : 1650967479963,
+                    "stop" : 1650967479963,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "页面总盈亏：-61.00，数据库总盈亏：-61.00",
+                  "time" : {
+                    "start" : 1650967479963,
+                    "stop" : 1650967479964,
+                    "duration" : 1
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0,
+                "stepsCount" : 4,
+                "hasContent" : true
+              }, {
+                "name" : "断言页面订单号码544620与数据库订单号码544620：",
+                "time" : {
+                  "start" : 1650967479964,
+                  "stop" : 1650967479964,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：672006222，数据库交易账号：672006222",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面开仓时间：2021-12-28 06:10:58，数据库开仓时间：2021-12-28 06:10:58",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面平仓时间：2021-12-28 06:11:08，数据库平仓时间：2021-12-28 06:11:08",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面交易量：49.0，数据库交易量：49.0",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面商品代码：GBPUSD，数据库商品代码：GBPUSD",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面开仓价：1.34308，数据库开仓价：1.34308",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面平仓价：1.34278，数据库平仓价：1.34278",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面佣金：0.0，数据库佣金：0.0",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面隔夜利息：0.0，数据库隔夜利息：0.0",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面盈亏：-30.0，数据库盈亏：-30.0",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0,
+                "stepsCount" : 10,
+                "hasContent" : true
+              }, {
+                "name" : "断言页面订单号码543641与数据库订单号码543641：",
+                "time" : {
+                  "start" : 1650967479964,
+                  "stop" : 1650967479965,
+                  "duration" : 1
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：672006222，数据库交易账号：672006222",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面开仓时间：2021-09-17 06:26:28，数据库开仓时间：2021-09-17 06:26:28",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面平仓时间：2021-09-17 06:29:20，数据库平仓时间：2021-09-17 06:29:20",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面交易量：1.0，数据库交易量：1.0",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面商品代码：EURUSD，数据库商品代码：EURUSD",
+                  "time" : {
+                    "start" : 1650967479964,
+                    "stop" : 1650967479964,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面开仓价：1.17699，数据库开仓价：1.17699",
+                  "time" : {
+                    "start" : 1650967479965,
+                    "stop" : 1650967479965,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面平仓价：1.17668，数据库平仓价：1.17668",
+                  "time" : {
+                    "start" : 1650967479965,
+                    "stop" : 1650967479965,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面佣金：0.0，数据库佣金：0.0",
+                  "time" : {
+                    "start" : 1650967479965,
+                    "stop" : 1650967479965,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面隔夜利息：0.0，数据库隔夜利息：0.0",
+                  "time" : {
+                    "start" : 1650967479965,
+                    "stop" : 1650967479965,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面盈亏：-31.0，数据库盈亏：-31.0",
+                  "time" : {
+                    "start" : 1650967479965,
+                    "stop" : 1650967479965,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0,
+                "stepsCount" : 10,
+                "hasContent" : true
+              } ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 27,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 28,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 29,
+          "hasContent" : true
+        }, {
+          "name" : "查询下级主账号 1000006140 名下交易账号 672006222 在 1990-01-01 00:00:00~2055-12-31 23:59:59 类型为买/卖的已平仓订单数据",
+          "time" : {
+            "start" : 1650967479965,
+            "stop" : 1650967491089,
+            "duration" : 11124
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "判断在该时间段内是否存在类型为买/卖的已平仓数据",
+            "time" : {
+              "start" : 1650967479965,
+              "stop" : 1650967491089,
+              "duration" : 11124
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "在该时间段内存在2条类型为买的已平仓订单数据",
+              "time" : {
+                "start" : 1650967491087,
+                "stop" : 1650967491089,
+                "duration" : 2
+              },
+              "status" : "passed",
+              "steps" : [ {
+                "name" : "核对页面交易账号：672006222 在 1990-01-01 00:00:00~2055-12-31 23:59:59时间段内的总交易量，总佣金，总隔夜利息，总盈亏",
+                "time" : {
+                  "start" : 1650967491087,
+                  "stop" : 1650967491088,
+                  "duration" : 1
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "页面总交易量：50.0，数据库总交易量：50.0",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "页面总佣金：0.0，数据库总佣金：0.0",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "页面总利息：0.00，数据库总利息：0.00",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "页面总盈亏：-61.00，数据库总盈亏：-61.00",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0,
+                "stepsCount" : 4,
+                "hasContent" : true
+              }, {
+                "name" : "断言页面订单号码544620与数据库订单号码544620：",
+                "time" : {
+                  "start" : 1650967491088,
+                  "stop" : 1650967491088,
+                  "duration" : 0
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：672006222，数据库交易账号：672006222",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面开仓时间：2021-12-28 06:10:58，数据库开仓时间：2021-12-28 06:10:58",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面平仓时间：2021-12-28 06:11:08，数据库平仓时间：2021-12-28 06:11:08",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面交易量：49.0，数据库交易量：49.0",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面商品代码：GBPUSD，数据库商品代码：GBPUSD",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面开仓价：1.34308，数据库开仓价：1.34308",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面平仓价：1.34278，数据库平仓价：1.34278",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面佣金：0.0，数据库佣金：0.0",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面隔夜利息：0.0，数据库隔夜利息：0.0",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面盈亏：-30.0，数据库盈亏：-30.0",
+                  "time" : {
+                    "start" : 1650967491088,
+                    "stop" : 1650967491088,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0,
+                "stepsCount" : 10,
+                "hasContent" : true
+              }, {
+                "name" : "断言页面订单号码543641与数据库订单号码543641：",
+                "time" : {
+                  "start" : 1650967491088,
+                  "stop" : 1650967491089,
+                  "duration" : 1
+                },
+                "status" : "passed",
+                "steps" : [ {
+                  "name" : "断言页面交易账号：672006222，数据库交易账号：672006222",
+                  "time" : {
+                    "start" : 1650967491089,
+                    "stop" : 1650967491089,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面开仓时间：2021-09-17 06:26:28，数据库开仓时间：2021-09-17 06:26:28",
+                  "time" : {
+                    "start" : 1650967491089,
+                    "stop" : 1650967491089,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面平仓时间：2021-09-17 06:29:20，数据库平仓时间：2021-09-17 06:29:20",
+                  "time" : {
+                    "start" : 1650967491089,
+                    "stop" : 1650967491089,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面交易量：1.0，数据库交易量：1.0",
+                  "time" : {
+                    "start" : 1650967491089,
+                    "stop" : 1650967491089,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面商品代码：EURUSD，数据库商品代码：EURUSD",
+                  "time" : {
+                    "start" : 1650967491089,
+                    "stop" : 1650967491089,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面开仓价：1.17699，数据库开仓价：1.17699",
+                  "time" : {
+                    "start" : 1650967491089,
+                    "stop" : 1650967491089,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面平仓价：1.17668，数据库平仓价：1.17668",
+                  "time" : {
+                    "start" : 1650967491089,
+                    "stop" : 1650967491089,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面佣金：0.0，数据库佣金：0.0",
+                  "time" : {
+                    "start" : 1650967491089,
+                    "stop" : 1650967491089,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面隔夜利息：0.0，数据库隔夜利息：0.0",
+                  "time" : {
+                    "start" : 1650967491089,
+                    "stop" : 1650967491089,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                }, {
+                  "name" : "断言页面盈亏：-31.0，数据库盈亏：-31.0",
+                  "time" : {
+                    "start" : 1650967491089,
+                    "stop" : 1650967491089,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "shouldDisplayMessage" : false,
+                  "attachmentsCount" : 0,
+                  "stepsCount" : 0,
+                  "hasContent" : false
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ ],
+                "shouldDisplayMessage" : false,
+                "attachmentsCount" : 0,
+                "stepsCount" : 10,
+                "hasContent" : true
+              } ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 27,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 28,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 29,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 60,
+        "hasContent" : true
+      }, {
+        "name" : "根据订单号码查询已平仓订单，核对数据库数据",
+        "time" : {
+          "start" : 1650967491089,
+          "stop" : 1650967498803,
+          "duration" : 7714
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "断言订单号码544620与数据库数据",
+          "time" : {
+            "start" : 1650967498803,
+            "stop" : 1650967498803,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "断言页面交易账号：672006222，数据库交易账号：672006222",
+            "time" : {
+              "start" : 1650967498803,
+              "stop" : 1650967498803,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面开仓时间：2021-12-28 06:10:58，数据库开仓时间：2021-12-28 06:10:58",
+            "time" : {
+              "start" : 1650967498803,
+              "stop" : 1650967498803,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面平仓时间：2021-12-28 06:11:08，数据库平仓时间：2021-12-28 06:11:08",
+            "time" : {
+              "start" : 1650967498803,
+              "stop" : 1650967498803,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面交易量：49.0，数据库交易量：49.0",
+            "time" : {
+              "start" : 1650967498803,
+              "stop" : 1650967498803,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面商品代码：GBPUSD，数据库商品代码：GBPUSD",
+            "time" : {
+              "start" : 1650967498803,
+              "stop" : 1650967498803,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面开仓价：1.34308，数据库开仓价：1.34308",
+            "time" : {
+              "start" : 1650967498803,
+              "stop" : 1650967498803,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面平仓价：1.34278，数据库平仓价：1.34278",
+            "time" : {
+              "start" : 1650967498803,
+              "stop" : 1650967498803,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面佣金：0.0，数据库佣金：0.0",
+            "time" : {
+              "start" : 1650967498803,
+              "stop" : 1650967498803,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面隔夜利息：0.0，数据库隔夜利息：0.0",
+            "time" : {
+              "start" : 1650967498803,
+              "stop" : 1650967498803,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          }, {
+            "name" : "断言页面盈亏：-30.0，数据库盈亏：-30.0",
+            "time" : {
+              "start" : 1650967498803,
+              "stop" : 1650967498803,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 0,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 10,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 11,
+        "hasContent" : true
+      }, {
+        "name" : "断言页面导出与复制功能是否与数据库数据一致",
+        "time" : {
+          "start" : 1650967498804,
+          "stop" : 1650967510918,
+          "duration" : 12114
+        },
+        "status" : "broken",
+        "statusMessage" : "NameError: name 'mysql_closeOrder' is not defined\n",
+        "statusTrace" : "  File \"c:\\Users\\tyler.tang\\Desktop\\code\\tylerhub\\demo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py\", line 361, in test_IB_Order_List\n    check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['手数']),mysql_closeOrder[i]['Volume']/100,\n",
+        "steps" : [ {
+          "name" : "断言复制功能",
+          "time" : {
+            "start" : 1650967510914,
+            "stop" : 1650967510916,
+            "duration" : 2
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "断言复制订单号：544620，数据库订单号：544620",
+            "time" : {
+              "start" : 1650967510914,
+              "stop" : 1650967510915,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "断言复制交易账号：672006222，数据库交易账号：672006222",
+              "time" : {
+                "start" : 1650967510914,
+                "stop" : 1650967510914,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制开仓时间：2021-12-28 06:10:58，数据库开仓时间：2021-12-28 06:10:58",
+              "time" : {
+                "start" : 1650967510914,
+                "stop" : 1650967510914,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制平仓时间：2021-12-28 06:11:08，数据库平仓时间：2021-12-28 06:11:08",
+              "time" : {
+                "start" : 1650967510914,
+                "stop" : 1650967510914,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制交易量：49.0，数据库交易量：49.0",
+              "time" : {
+                "start" : 1650967510914,
+                "stop" : 1650967510914,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制商品代码：GBPUSD，数据库商品代码：GBPUSD",
+              "time" : {
+                "start" : 1650967510914,
+                "stop" : 1650967510914,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制开仓价：1.34308，数据库开仓价：1.34308",
+              "time" : {
+                "start" : 1650967510914,
+                "stop" : 1650967510914,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制平仓价格：1.34278，数据库平仓价格：1.34278",
+              "time" : {
+                "start" : 1650967510914,
+                "stop" : 1650967510914,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制佣金：0.0，数据库佣金：0.0",
+              "time" : {
+                "start" : 1650967510915,
+                "stop" : 1650967510915,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制隔夜利息：0.0，数据库隔夜利息：0.0",
+              "time" : {
+                "start" : 1650967510915,
+                "stop" : 1650967510915,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制盈亏：-30.0，数据库盈亏：-30.0",
+              "time" : {
+                "start" : 1650967510915,
+                "stop" : 1650967510915,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 10,
+            "hasContent" : true
+          }, {
+            "name" : "断言复制订单号：543641，数据库订单号：543641",
+            "time" : {
+              "start" : 1650967510915,
+              "stop" : 1650967510916,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "断言复制交易账号：672006222，数据库交易账号：672006222",
+              "time" : {
+                "start" : 1650967510915,
+                "stop" : 1650967510915,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制开仓时间：2021-09-17 06:26:28，数据库开仓时间：2021-09-17 06:26:28",
+              "time" : {
+                "start" : 1650967510915,
+                "stop" : 1650967510915,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制平仓时间：2021-09-17 06:29:20，数据库平仓时间：2021-09-17 06:29:20",
+              "time" : {
+                "start" : 1650967510915,
+                "stop" : 1650967510915,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制交易量：1.0，数据库交易量：1.0",
+              "time" : {
+                "start" : 1650967510915,
+                "stop" : 1650967510915,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制商品代码：EURUSD，数据库商品代码：EURUSD",
+              "time" : {
+                "start" : 1650967510915,
+                "stop" : 1650967510915,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制开仓价：1.17699，数据库开仓价：1.17699",
+              "time" : {
+                "start" : 1650967510915,
+                "stop" : 1650967510915,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制平仓价格：1.17668，数据库平仓价格：1.17668",
+              "time" : {
+                "start" : 1650967510915,
+                "stop" : 1650967510915,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制佣金：0.0，数据库佣金：0.0",
+              "time" : {
+                "start" : 1650967510915,
+                "stop" : 1650967510915,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制隔夜利息：0.0，数据库隔夜利息：0.0",
+              "time" : {
+                "start" : 1650967510915,
+                "stop" : 1650967510916,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言复制盈亏：-31.0，数据库盈亏：-31.0",
+              "time" : {
+                "start" : 1650967510916,
+                "stop" : 1650967510916,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 10,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 22,
+          "hasContent" : true
+        }, {
+          "name" : "断言导出功能",
+          "time" : {
+            "start" : 1650967510916,
+            "stop" : 1650967510918,
+            "duration" : 2
+          },
+          "status" : "broken",
+          "statusMessage" : "NameError: name 'mysql_closeOrder' is not defined\n",
+          "statusTrace" : "  File \"c:\\Users\\tyler.tang\\Desktop\\code\\tylerhub\\demo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py\", line 361, in test_IB_Order_List\n    check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['手数']),mysql_closeOrder[i]['Volume']/100,\n",
+          "steps" : [ {
+            "name" : "断言导出订单号：544620，数据库订单号：544620",
+            "time" : {
+              "start" : 1650967510916,
+              "stop" : 1650967510918,
+              "duration" : 2
+            },
+            "status" : "broken",
+            "statusMessage" : "NameError: name 'mysql_closeOrder' is not defined\n",
+            "statusTrace" : "  File \"c:\\Users\\tyler.tang\\Desktop\\code\\tylerhub\\demo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py\", line 361, in test_IB_Order_List\n    check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['手数']),mysql_closeOrder[i]['Volume']/100,\n",
+            "steps" : [ {
+              "name" : "断言导出交易账号：672006222，数据库交易账号：672006222",
+              "time" : {
+                "start" : 1650967510916,
+                "stop" : 1650967510916,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言导出开仓时间：2021-12-28 06:10:58，数据库开仓时间：2021-12-28 06:10:58",
+              "time" : {
+                "start" : 1650967510916,
+                "stop" : 1650967510916,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言导出平仓时间：2021-12-28 06:11:08，数据库平仓时间：2021-12-28 06:11:08",
+              "time" : {
+                "start" : 1650967510916,
+                "stop" : 1650967510916,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : false
+            }, {
+              "name" : "断言导出交易量：49.0，数据库交易量：49.0",
+              "time" : {
+                "start" : 1650967510916,
+                "stop" : 1650967510916,
+                "duration" : 0
+              },
+              "status" : "broken",
+              "statusMessage" : "NameError: name 'mysql_closeOrder' is not defined\n",
+              "statusTrace" : "  File \"c:\\Users\\tyler.tang\\Desktop\\code\\tylerhub\\demo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py\", line 361, in test_IB_Order_List\n    check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['手数']),mysql_closeOrder[i]['Volume']/100,\n",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : true,
+              "attachmentsCount" : 0,
+              "stepsCount" : 0,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "stepsCount" : 4,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 5,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 29,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 103,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 0,
+    "stepsCount" : 107,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_IB_Open_OrderList::0",
+    "time" : {
+      "start" : 1650967515884,
+      "stop" : 1650967515884,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "核对IB下级已平仓数据，断言导出与复制功能"
+  }, {
+    "name" : "story",
+    "value" : "用例执行"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.IB_Close_Open_Order_List.actions_bin"
+  }, {
+    "name" : "suite",
+    "value" : "Test_ib_close_order_list"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_IB_Open_OrderList"
+  }, {
+    "name" : "host",
+    "value" : "SZ01-QA-G-10"
+  }, {
+    "name" : "thread",
+    "value" : "17428-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.IB_Close_Open_Order_List.actions_bin.Test_ib_close_order_list"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'代理账号': 1000005349.0, '订单号码': 544620.0}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "da15998c431381f2.json",
+  "parameterValues" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+}

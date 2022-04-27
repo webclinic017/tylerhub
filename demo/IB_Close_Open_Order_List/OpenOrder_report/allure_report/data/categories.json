@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "_pytest.fixtures.FixtureLookupError: ('data', <FixtureRequest for <Function test_IB_Order_List>>)",
+      "children" : [ {
+        "name" : "test_IB_Order_List",
+        "uid" : "32505c0f5b1a8895",
+        "parentUid" : "1a35d19ef534e8814efe3cc5ba157302",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650509130005,
+          "stop" : 1650509130005,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1a35d19ef534e8814efe3cc5ba157302"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

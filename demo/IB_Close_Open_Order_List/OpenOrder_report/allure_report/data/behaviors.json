@@ -1,0 +1,60 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "核对IB下级未平仓数据，断言导出与复制功能",
+    "children" : [ {
+      "name" : "用例执行",
+      "children" : [ {
+        "name" : "IB下级未平仓订单数据核对报告",
+        "uid" : "ee7584e58cb53f6f",
+        "parentUid" : "261b5e4984ca0fb0032abfd9983eee39",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650507396583,
+          "stop" : 1650507510701,
+          "duration" : 114118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 545202.0}" ]
+      } ],
+      "uid" : "261b5e4984ca0fb0032abfd9983eee39"
+    } ],
+    "uid" : "74172712fb93f2578def747db21d516e"
+  }, {
+    "name" : "test_IB_Order_List",
+    "uid" : "32505c0f5b1a8895",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1650509130005,
+      "stop" : 1650509130005,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "核对IB下级已平仓数据，断言导出与复制功能",
+    "children" : [ {
+      "name" : "用例执行",
+      "children" : [ {
+        "name" : "IB下级未平仓订单数据核对报告",
+        "uid" : "2d5d57c1c5bc42ad",
+        "parentUid" : "c9119063d51eb384274b7a41db85e07d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951792100,
+          "stop" : 1650952068769,
+          "duration" : 276669
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+      } ],
+      "uid" : "c9119063d51eb384274b7a41db85e07d"
+    } ],
+    "uid" : "56b33234c7351b6a1ba6fcb872865f85"
+  } ]
+}

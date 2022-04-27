@@ -1,7 +1,7 @@
 '''
-Author: your name
+Author: tyler
 Date: 2022-02-21 17:22:37
-LastEditTime: 2022-03-25 17:28:00
+LastEditTime: 2022-04-21 10:22:03
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\IB_deposit_withdrawal_list\actions\Test_IB_Deposit_Withdrawal.py
@@ -43,9 +43,12 @@ class Test_IB_deposit_withdrawal_list(object):
             IBVerifyList.quitbrowser()
         else:
             IBVerifyList.closebrowser()
-        os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_data.txt'))
-        os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_data.xlsx'))
-        os.remove(os.path.join(os.path.join(path_project,'test_data'),IBVerifyList.exportData_excel))
+        try:
+            os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_data.txt'))
+            os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_data.xlsx'))
+            os.remove(os.path.join(os.path.join(path_project,'test_data'),IBVerifyList.exportData_excel))
+        except Exception as msg:
+            print('用例跳过，未下载相应文件：{}'.format(msg))    
     
     
     @allure.feature('核对IB下级出入金记录，断言导出与复制功能')
@@ -260,11 +263,3 @@ if __name__=='__main__':
     r'--alluredir={}\report\result'.format(path_project),'--disable-pytest-warnings'])
     os.system(r'allure generate {}\report\result -o {}\report\allure_report --clean'.format(path_project,path_project))
     os.system(r'allure serve {}\report\result'.format(path_project))
-
-
-
-
-
-
-
-
