@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-09-02 10:17:39
-LastEditTime: 2021-09-08 16:26:05
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-12 15:45:38
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\add_ewallet_withdrawal\location\location_of_add_ewallet.py
 '''
@@ -121,9 +121,14 @@ class Location_of_add_ewallet(object):
     def get_live_country(self):
         try:
             common.switch_windows(2)
-            time.sleep(3)
+            time.sleep(1)
             #基本资料
             common.display_click("xpath,//a[.='基本资料']")
+            while True:
+                if common.ele_is_displayed('css,//*[@id="clientInfo"]/div[2]/div/div/div[1]/div/div/i', 1):
+                    continue
+                else:
+                    break
             time.sleep(1)
             #获取该账号居住国家
             self.liveCountry=common.display_get_text("xpath,//div[@class='page']//div[7]//span")
