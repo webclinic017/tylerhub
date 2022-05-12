@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2022-04-28 16:17:56
-LastEditTime: 2022-05-11 17:09:30
+LastEditTime: 2022-05-12 16:56:34
 LastEditors: Tyler96-QA 1718459369@qq.com
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\Position_Summary\Action_bin\Test_position_summary.py
@@ -122,9 +122,9 @@ class Test_position_summary(object):
 if __name__=='__main__':
     # pytest.main(['-s','-v',os.path.abspath(__file__)])
     pytest.main(['-s','-v',os.path.abspath(__file__),
-    r'--alluredir={}\CloseOrder_report\result'.format(path_project),'--disable-pytest-warnings'])
-    os.system(r'allure generate {}\CloseOrder_report\result -o {}\CloseOrder_report\allure_CloseOrder_report --clean'.format(path_project,path_project))
-    os.system(r'allure serve {}\CloseOrder_report\result'.format(path_project))
+    r'--alluredir={}\report\result'.format(path_project),'--disable-pytest-warnings'])
+    os.system(r'allure generate {}\report\result -o {}\report\allure_report --clean'.format(path_project,path_project))
+    os.system(r'allure serve {}\report\result'.format(path_project))
 
 
 
