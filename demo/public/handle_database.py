@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:27:17
-LastEditTime: 2022-04-21 15:51:43
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-10 15:27:59
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: Query database and save
 FilePath: \tylerhub\demo\public\handle_database.py
 '''
@@ -13,6 +13,7 @@ import  cx_Oracle
 import pymysql
 import os
 import sys
+import re
 from read_dataconfig import ReadConfig
 from about_data import Aboutdata
 from verification_code import use_time
@@ -278,4 +279,6 @@ if __name__=='__main__':
     # format(672007722,'2022-03-30','2022-03-30'), conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all')))
     
     # print(dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="672007722"',conFig.get_value('mysql_AWS', 'host'),conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all'))
-    print(dataBase.search_mysql_dict('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="672006226"',conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all'))
+    # print(dataBase.search_mysql_dict('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="672006226"',conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all'))
+    mongodbDeposit=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'),
+    'atfxgm-sit', 'atfx_fund_adjust',{"$and":[{"status":1},{"tradeAccount": 66200218},{"remark":re.compile('Deposit')}]},'mtOrderNo','amount',N=0)

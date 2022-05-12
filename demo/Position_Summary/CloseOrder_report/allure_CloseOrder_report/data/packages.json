@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "demo.Position_Summary.Action_bin.Test_position_summary",
+    "children" : [ {
+      "name" : "IB仓位总结数据核对报告",
+      "uid" : "874e42f13aa3128f",
+      "parentUid" : "2746553a167e2a4d862b15b47bf0f87d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652260237115,
+        "stop" : 1652260276192,
+        "duration" : 39077
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'IB主账号': 1000005349.0, '交易账号': 672006219.0}" ]
+    } ],
+    "uid" : "demo.Position_Summary.Action_bin.Test_position_summary"
+  } ]
+}

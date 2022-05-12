@@ -1,0 +1,26 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "核对IB仓位总结数据，断言页面数据是否与数据库一致",
+    "children" : [ {
+      "name" : "用例执行",
+      "children" : [ {
+        "name" : "IB仓位总结数据核对报告",
+        "uid" : "874e42f13aa3128f",
+        "parentUid" : "00f7d4d2fbb2be799be6577d916387b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652260237115,
+          "stop" : 1652260276192,
+          "duration" : 39077
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'IB主账号': 1000005349.0, '交易账号': 672006219.0}" ]
+      } ],
+      "uid" : "00f7d4d2fbb2be799be6577d916387b2"
+    } ],
+    "uid" : "75e3e809a51da3f078f1ab1c408ea6d5"
+  } ]
+}

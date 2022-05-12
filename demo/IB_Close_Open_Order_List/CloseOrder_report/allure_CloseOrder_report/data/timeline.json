@@ -4,27 +4,10 @@
   "children" : [ {
     "name" : "SZ01-QA-G-10",
     "children" : [ {
-      "name" : "26812-MainThread",
-      "children" : [ {
-        "name" : "IB下级未平仓订单数据核对报告",
-        "uid" : "c7812bf9a8f8e7f9",
-        "parentUid" : "dce1979ebd1c96f4cd340670c0ce9f06",
-        "status" : "passed",
-        "time" : {
-          "start" : 1650967949484,
-          "stop" : 1650968043313,
-          "duration" : 93829
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
-      } ],
-      "uid" : "dce1979ebd1c96f4cd340670c0ce9f06"
-    }, {
       "name" : "30668-MainThread",
       "children" : [ {
         "name" : "IB下级未平仓订单数据核对报告",
-        "uid" : "749ab7e9c91ddfda",
+        "uid" : "28e2d3fc2f7f327f",
         "parentUid" : "4d167eb1d13fbd5f0d998c591743c472",
         "status" : "failed",
         "time" : {
@@ -41,7 +24,7 @@
       "name" : "17428-MainThread",
       "children" : [ {
         "name" : "IB下级未平仓订单数据核对报告",
-        "uid" : "da15998c431381f2",
+        "uid" : "bcd669f17e283bd9",
         "parentUid" : "682a3b4326ad30653faea64758b8e569",
         "status" : "broken",
         "time" : {
@@ -55,10 +38,74 @@
       } ],
       "uid" : "682a3b4326ad30653faea64758b8e569"
     }, {
+      "name" : "29920-MainThread",
+      "children" : [ {
+        "name" : "IB下级已平仓订单数据核对报告",
+        "uid" : "bd198eef5ec625c3",
+        "parentUid" : "d211ca4ef560a66a18e967faadd79745",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651026862462,
+          "stop" : 1651027039169,
+          "duration" : 176707
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+      } ],
+      "uid" : "d211ca4ef560a66a18e967faadd79745"
+    }, {
+      "name" : "26812-MainThread",
+      "children" : [ {
+        "name" : "IB下级未平仓订单数据核对报告",
+        "uid" : "b87a2e5a0b823c51",
+        "parentUid" : "dce1979ebd1c96f4cd340670c0ce9f06",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650967949484,
+          "stop" : 1650968043313,
+          "duration" : 93829
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+      } ],
+      "uid" : "dce1979ebd1c96f4cd340670c0ce9f06"
+    }, {
+      "name" : "28140-MainThread",
+      "children" : [ {
+        "name" : "IB下级已平仓订单数据核对报告",
+        "uid" : "fffa1d78852b4e22",
+        "parentUid" : "691d88cc4684a687aacdad143f99cf54",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651027155652,
+          "stop" : 1651027223945,
+          "duration" : 68293
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+      }, {
+        "name" : "IB下级已平仓订单数据核对报告",
+        "uid" : "1970aa0886e7ebf1",
+        "parentUid" : "691d88cc4684a687aacdad143f99cf54",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651027224177,
+          "stop" : 1651027288688,
+          "duration" : 64511
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544265.0}" ]
+      } ],
+      "uid" : "691d88cc4684a687aacdad143f99cf54"
+    }, {
       "name" : "29544-MainThread",
       "children" : [ {
         "name" : "IB下级未平仓订单数据核对报告",
-        "uid" : "3e764ae8473eee53",
+        "uid" : "1df0ca064d0ce93a",
         "parentUid" : "cddca68bb91e91c9b38d6abf352aa757",
         "status" : "failed",
         "time" : {

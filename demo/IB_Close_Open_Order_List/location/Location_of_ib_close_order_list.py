@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2022-04-21 10:20:53
-LastEditTime: 2022-04-26 17:31:44
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-09 11:38:35
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\IB_Close_Open_Order_List\location\Location_of_ib_close_order_list.py
 '''
@@ -132,7 +132,7 @@ class Location_of_IB_Close_OrderList(object):
     #格式化时间
     def fromat_datetime(self):
         #随机选择时间random.randint(0, 6)
-        self.index=0
+        self.index=random.randint(0, 6)
         #今天
         self.nowTime=datetime.datetime.now()
         #本月第一天

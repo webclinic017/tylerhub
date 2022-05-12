@@ -1,0 +1,3 @@
+!!--!!login_bos - 2022-05-10 10:41:55,696 - common_method - [common_method.py-->line:141] - ERROR: Message: element click intercepted: Element <button data-v-ed6d4d3c="" type="button" class="ivu-btn ivu-btn-primary ivu-btn-large">...</button> is not clickable at point (960, 496). Other element would receive the click: <div class="ivu-spin ivu-spin-large ivu-spin-fix ivu-spin-fullscreen">...</div>
+  (Session info: chrome=101.0.4951.41)
+

@@ -1494,20 +1494,26 @@ def txt_xls(filename,xlsname):
 # a=[y[0] for y in list1]
 # print(a)
 
-list1=['姓名','年龄']
-list2=['tyler','22']
-list3=[dict(zip(list1,list2))]
+# list1=['姓名','年龄']
+# list2=['tyler','22']
+# list3=[dict(zip(list1,list2))]
 
-print(list3)
+# print(list3)
 
+# A=[{'mt4Amt': 99.99}, {'mt4Amt': 55}]
+# total=0
+# for i in A:
+#     total+=i['mt4Amt']
 
+# print(total)
+# import re
 
+# parten=r'[^A-Z]'
+# a='55,55.68USD'
+# b=''.join(re.findall(parten,a)).replace(',','')
+# print(b)
 
-
-
-
-
-
+list=[99064,'','',454]
 
 
 

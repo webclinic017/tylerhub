@@ -1,0 +1,4 @@
+!!--!!search_mongodb - 2022-05-05 16:57:52,158 - Location_of_position_summary - [Location_of_position_summary.py-->line:182] - ERROR: 'mt4Amt'
+!!--!!search_mongodb_deposit - 2022-05-05 17:24:45,408 - Location_of_position_summary - [Location_of_position_summary.py-->line:206] - ERROR: could not convert string to float: '68,959.54 USD'
+!!--!!search_mongodb_deposit - 2022-05-05 17:37:27,001 - Location_of_position_summary - [Location_of_position_summary.py-->line:208] - ERROR: could not convert string to float: '68,959.54 '
+!!--!!search_mongodb_deposit - 2022-05-05 17:45:30,579 - Location_of_position_summary - [Location_of_position_summary.py-->line:208] - ERROR: 'mt4Amt'

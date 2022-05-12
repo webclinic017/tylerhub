@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "demo.Position_Summary.Action_bin",
+    "children" : [ {
+      "name" : "Test_position_summary",
+      "children" : [ {
+        "name" : "Test_position_summary",
+        "children" : [ {
+          "name" : "IB仓位总结数据核对报告",
+          "uid" : "874e42f13aa3128f",
+          "parentUid" : "07ab0fceb712d43be248c454b7b1ffe5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1652260237115,
+            "stop" : 1652260276192,
+            "duration" : 39077
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'IB主账号': 1000005349.0, '交易账号': 672006219.0}" ]
+        } ],
+        "uid" : "07ab0fceb712d43be248c454b7b1ffe5"
+      } ],
+      "uid" : "8abe39d2f51d824ee8e51bdfe9f6286c"
+    } ],
+    "uid" : "70d48a7dbea56783843856382db992b0"
+  } ]
+}

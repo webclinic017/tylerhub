@@ -1,0 +1,94 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "SZ01-QA-G-10",
+    "children" : [ {
+      "name" : "24536-MainThread",
+      "children" : [ {
+        "name" : "IB仓位总结数据核对报告",
+        "uid" : "e3bc4839c3b7cff1",
+        "parentUid" : "84b7a02d62a3b453898887951ede3c19",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652259857012,
+          "stop" : 1652259918691,
+          "duration" : 61679
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'IB主账号': 1000005349.0, '交易账号': 672006219.0}" ]
+      } ],
+      "uid" : "84b7a02d62a3b453898887951ede3c19"
+    }, {
+      "name" : "29428-MainThread",
+      "children" : [ {
+        "name" : "IB仓位总结数据核对报告",
+        "uid" : "a9d66cfedde2cfa7",
+        "parentUid" : "3bf0f64a5e3370a38d29772923fba89f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652260065892,
+          "stop" : 1652260173241,
+          "duration" : 107349
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'IB主账号': 1000005349.0, '交易账号': 672006219.0}" ]
+      } ],
+      "uid" : "3bf0f64a5e3370a38d29772923fba89f"
+    }, {
+      "name" : "2720-MainThread",
+      "children" : [ {
+        "name" : "IB仓位总结数据核对报告",
+        "uid" : "2b8454f435c8e683",
+        "parentUid" : "d7e23d68ef71878db2964120194a5dee",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652259643102,
+          "stop" : 1652259707606,
+          "duration" : 64504
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'IB主账号': 1000005349.0, '交易账号': 672006219.0}" ]
+      } ],
+      "uid" : "d7e23d68ef71878db2964120194a5dee"
+    }, {
+      "name" : "28268-MainThread",
+      "children" : [ {
+        "name" : "IB仓位总结数据核对报告",
+        "uid" : "874e42f13aa3128f",
+        "parentUid" : "6795ebde6ba261106dbeb90dec530aa1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652260237115,
+          "stop" : 1652260276192,
+          "duration" : 39077
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'IB主账号': 1000005349.0, '交易账号': 672006219.0}" ]
+      } ],
+      "uid" : "6795ebde6ba261106dbeb90dec530aa1"
+    }, {
+      "name" : "28652-MainThread",
+      "children" : [ {
+        "name" : "IB仓位总结数据核对报告",
+        "uid" : "e67ee3489837a1ee",
+        "parentUid" : "da8037931721789b78397ea5f831ee58",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652173420426,
+          "stop" : 1652173461671,
+          "duration" : 41245
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'IB主账号': 1000005349.0, '交易账号': 672006219.0}" ]
+      } ],
+      "uid" : "da8037931721789b78397ea5f831ee58"
+    } ],
+    "uid" : "22c9a7ca73ac7ac9efe14f8b8f896b03"
+  } ]
+}

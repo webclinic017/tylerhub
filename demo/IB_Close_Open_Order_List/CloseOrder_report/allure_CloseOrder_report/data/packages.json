@@ -4,18 +4,31 @@
   "children" : [ {
     "name" : "demo.IB_Close_Open_Order_List.actions_bin.Test_ib_close_order_list",
     "children" : [ {
-      "name" : "IB下级未平仓订单数据核对报告",
-      "uid" : "c7812bf9a8f8e7f9",
+      "name" : "IB下级已平仓订单数据核对报告",
+      "uid" : "fffa1d78852b4e22",
       "parentUid" : "a878811fefc69ff2ba601baf4703da21",
       "status" : "passed",
       "time" : {
-        "start" : 1650967949484,
-        "stop" : 1650968043313,
-        "duration" : 93829
+        "start" : 1651027155652,
+        "stop" : 1651027223945,
+        "duration" : 68293
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
+    }, {
+      "name" : "IB下级已平仓订单数据核对报告",
+      "uid" : "1970aa0886e7ebf1",
+      "parentUid" : "a878811fefc69ff2ba601baf4703da21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651027224177,
+        "stop" : 1651027288688,
+        "duration" : 64511
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'代理账号': 1000005349.0, '订单号码': 544265.0}" ]
     } ],
     "uid" : "demo.IB_Close_Open_Order_List.actions_bin.Test_ib_close_order_list"
   } ]

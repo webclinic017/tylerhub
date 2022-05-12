@@ -1,5 +1,5 @@
 {
-  "uid" : "c7812bf9a8f8e7f9",
+  "uid" : "b87a2e5a0b823c51",
   "name" : "IB下级未平仓订单数据核对报告",
   "fullName" : "demo.IB_Close_Open_Order_List.actions_bin.Test_ib_close_order_list.Test_IB_Open_OrderList#test_IB_Order_List",
   "historyId" : "854ab4728300a00df23315f0418bf791",
@@ -26,8 +26,8 @@
     "parameters" : [ ],
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
-    "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "stepsCount" : 0
   } ],
   "testStage" : {
     "description" : "读取测试文档数据，执行用例",
@@ -45,8 +45,8 @@
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "查询当前代理账号存在多少个直属/非直属下级",
       "time" : {
@@ -60,8 +60,8 @@
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "根据代理账号通过BOS登录CP，进入下级已平仓页面",
       "time" : {
@@ -75,8 +75,8 @@
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "查询当前代理是否存在下级已平仓订单",
       "time" : {
@@ -138,8 +138,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "页面总佣金：-10.0，数据库总佣金：-10.0",
                   "time" : {
@@ -153,8 +153,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "页面总利息：0.00，数据库总利息：0.00",
                   "time" : {
@@ -168,8 +168,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "页面总盈亏：54.59，数据库总盈亏：54.59",
                   "time" : {
@@ -183,15 +183,15 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 } ],
                 "attachments" : [ ],
                 "parameters" : [ ],
                 "shouldDisplayMessage" : false,
                 "attachmentsCount" : 0,
-                "stepsCount" : 4,
-                "hasContent" : true
+                "hasContent" : true,
+                "stepsCount" : 4
               }, {
                 "name" : "断言页面订单号码543666与数据库订单号码543666：",
                 "time" : {
@@ -213,8 +213,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面开仓时间：2021-09-17 10:12:18，数据库开仓时间：2021-09-17 10:12:18",
                   "time" : {
@@ -228,8 +228,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面平仓时间：2021-09-17 10:47:06，数据库平仓时间：2021-09-17 10:47:06",
                   "time" : {
@@ -243,8 +243,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面交易量：1.0，数据库交易量：1.0",
                   "time" : {
@@ -258,8 +258,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面商品代码：USDJPY，数据库商品代码：USDJPY",
                   "time" : {
@@ -273,8 +273,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面开仓价：109.854，数据库开仓价：109.854",
                   "time" : {
@@ -288,8 +288,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面平仓价：109.914，数据库平仓价：109.914",
                   "time" : {
@@ -303,8 +303,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面佣金：-10.0，数据库佣金：-10.0",
                   "time" : {
@@ -318,8 +318,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面隔夜利息：0.0，数据库隔夜利息：0.0",
                   "time" : {
@@ -333,8 +333,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面盈亏：54.59，数据库盈亏：54.59",
                   "time" : {
@@ -348,36 +348,36 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 } ],
                 "attachments" : [ ],
                 "parameters" : [ ],
                 "shouldDisplayMessage" : false,
                 "attachmentsCount" : 0,
-                "stepsCount" : 10,
-                "hasContent" : true
+                "hasContent" : true,
+                "stepsCount" : 10
               } ],
               "attachments" : [ ],
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 16,
-              "hasContent" : true
+              "hasContent" : true,
+              "stepsCount" : 16
             } ],
             "attachments" : [ ],
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 17,
-            "hasContent" : true
+            "hasContent" : true,
+            "stepsCount" : 17
           } ],
           "attachments" : [ ],
           "parameters" : [ ],
           "shouldDisplayMessage" : false,
           "attachmentsCount" : 0,
-          "stepsCount" : 18,
-          "hasContent" : true
+          "hasContent" : true,
+          "stepsCount" : 18
         }, {
           "name" : "查询下级主账号 1200008177 名下交易账号 672006220 在 1990-01-01 00:00:00~2055-12-31 23:59:59 类型为买/卖的已平仓订单数据",
           "time" : {
@@ -423,8 +423,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "页面总佣金：-10.0，数据库总佣金：-10.0",
                   "time" : {
@@ -438,8 +438,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "页面总利息：0.00，数据库总利息：0.00",
                   "time" : {
@@ -453,8 +453,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "页面总盈亏：54.59，数据库总盈亏：54.59",
                   "time" : {
@@ -468,15 +468,15 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 } ],
                 "attachments" : [ ],
                 "parameters" : [ ],
                 "shouldDisplayMessage" : false,
                 "attachmentsCount" : 0,
-                "stepsCount" : 4,
-                "hasContent" : true
+                "hasContent" : true,
+                "stepsCount" : 4
               }, {
                 "name" : "断言页面订单号码543666与数据库订单号码543666：",
                 "time" : {
@@ -498,8 +498,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面开仓时间：2021-09-17 10:12:18，数据库开仓时间：2021-09-17 10:12:18",
                   "time" : {
@@ -513,8 +513,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面平仓时间：2021-09-17 10:47:06，数据库平仓时间：2021-09-17 10:47:06",
                   "time" : {
@@ -528,8 +528,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面交易量：1.0，数据库交易量：1.0",
                   "time" : {
@@ -543,8 +543,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面商品代码：USDJPY，数据库商品代码：USDJPY",
                   "time" : {
@@ -558,8 +558,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面开仓价：109.854，数据库开仓价：109.854",
                   "time" : {
@@ -573,8 +573,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面平仓价：109.914，数据库平仓价：109.914",
                   "time" : {
@@ -588,8 +588,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面佣金：-10.0，数据库佣金：-10.0",
                   "time" : {
@@ -603,8 +603,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面隔夜利息：0.0，数据库隔夜利息：0.0",
                   "time" : {
@@ -618,8 +618,8 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 }, {
                   "name" : "断言页面盈亏：54.59，数据库盈亏：54.59",
                   "time" : {
@@ -633,43 +633,43 @@
                   "parameters" : [ ],
                   "shouldDisplayMessage" : false,
                   "attachmentsCount" : 0,
-                  "stepsCount" : 0,
-                  "hasContent" : false
+                  "hasContent" : false,
+                  "stepsCount" : 0
                 } ],
                 "attachments" : [ ],
                 "parameters" : [ ],
                 "shouldDisplayMessage" : false,
                 "attachmentsCount" : 0,
-                "stepsCount" : 10,
-                "hasContent" : true
+                "hasContent" : true,
+                "stepsCount" : 10
               } ],
               "attachments" : [ ],
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 16,
-              "hasContent" : true
+              "hasContent" : true,
+              "stepsCount" : 16
             } ],
             "attachments" : [ ],
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 17,
-            "hasContent" : true
+            "hasContent" : true,
+            "stepsCount" : 17
           } ],
           "attachments" : [ ],
           "parameters" : [ ],
           "shouldDisplayMessage" : false,
           "attachmentsCount" : 0,
-          "stepsCount" : 18,
-          "hasContent" : true
+          "hasContent" : true,
+          "stepsCount" : 18
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
         "shouldDisplayMessage" : false,
         "attachmentsCount" : 0,
-        "stepsCount" : 38,
-        "hasContent" : true
+        "hasContent" : true,
+        "stepsCount" : 38
       }, {
         "name" : "根据订单号码查询已平仓订单，核对数据库数据",
         "time" : {
@@ -699,8 +699,8 @@
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 0,
-            "hasContent" : false
+            "hasContent" : false,
+            "stepsCount" : 0
           }, {
             "name" : "断言页面开仓时间：2021-12-28 06:10:58，数据库开仓时间：2021-12-28 06:10:58",
             "time" : {
@@ -714,8 +714,8 @@
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 0,
-            "hasContent" : false
+            "hasContent" : false,
+            "stepsCount" : 0
           }, {
             "name" : "断言页面平仓时间：2021-12-28 06:11:08，数据库平仓时间：2021-12-28 06:11:08",
             "time" : {
@@ -729,8 +729,8 @@
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 0,
-            "hasContent" : false
+            "hasContent" : false,
+            "stepsCount" : 0
           }, {
             "name" : "断言页面交易量：49.0，数据库交易量：49.0",
             "time" : {
@@ -744,8 +744,8 @@
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 0,
-            "hasContent" : false
+            "hasContent" : false,
+            "stepsCount" : 0
           }, {
             "name" : "断言页面商品代码：GBPUSD，数据库商品代码：GBPUSD",
             "time" : {
@@ -759,8 +759,8 @@
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 0,
-            "hasContent" : false
+            "hasContent" : false,
+            "stepsCount" : 0
           }, {
             "name" : "断言页面开仓价：1.34308，数据库开仓价：1.34308",
             "time" : {
@@ -774,8 +774,8 @@
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 0,
-            "hasContent" : false
+            "hasContent" : false,
+            "stepsCount" : 0
           }, {
             "name" : "断言页面平仓价：1.34278，数据库平仓价：1.34278",
             "time" : {
@@ -789,8 +789,8 @@
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 0,
-            "hasContent" : false
+            "hasContent" : false,
+            "stepsCount" : 0
           }, {
             "name" : "断言页面佣金：0.0，数据库佣金：0.0",
             "time" : {
@@ -804,8 +804,8 @@
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 0,
-            "hasContent" : false
+            "hasContent" : false,
+            "stepsCount" : 0
           }, {
             "name" : "断言页面隔夜利息：0.0，数据库隔夜利息：0.0",
             "time" : {
@@ -819,8 +819,8 @@
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 0,
-            "hasContent" : false
+            "hasContent" : false,
+            "stepsCount" : 0
           }, {
             "name" : "断言页面盈亏：-30.0，数据库盈亏：-30.0",
             "time" : {
@@ -834,22 +834,22 @@
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 0,
-            "hasContent" : false
+            "hasContent" : false,
+            "stepsCount" : 0
           } ],
           "attachments" : [ ],
           "parameters" : [ ],
           "shouldDisplayMessage" : false,
           "attachmentsCount" : 0,
-          "stepsCount" : 10,
-          "hasContent" : true
+          "hasContent" : true,
+          "stepsCount" : 10
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
         "shouldDisplayMessage" : false,
         "attachmentsCount" : 0,
-        "stepsCount" : 11,
-        "hasContent" : true
+        "hasContent" : true,
+        "stepsCount" : 11
       }, {
         "name" : "断言页面导出与复制功能是否与数据库数据一致",
         "time" : {
@@ -887,8 +887,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言复制开仓时间：2021-09-17 10:12:18，数据库开仓时间：2021-09-17 10:12:18",
               "time" : {
@@ -902,8 +902,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言复制平仓时间：2021-09-17 10:47:06，数据库平仓时间：2021-09-17 10:47:06",
               "time" : {
@@ -917,8 +917,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言复制交易量：1.0，数据库交易量：1.0",
               "time" : {
@@ -932,8 +932,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言复制商品代码：USDJPY，数据库商品代码：USDJPY",
               "time" : {
@@ -947,8 +947,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言复制开仓价：109.854，数据库开仓价：109.854",
               "time" : {
@@ -962,8 +962,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言复制平仓价格：109.914，数据库平仓价格：109.914",
               "time" : {
@@ -977,8 +977,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言复制佣金：-10.0，数据库佣金：-10.0",
               "time" : {
@@ -992,8 +992,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言复制隔夜利息：0.0，数据库隔夜利息：0.0",
               "time" : {
@@ -1007,8 +1007,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言复制盈亏：54.59，数据库盈亏：54.59",
               "time" : {
@@ -1022,22 +1022,22 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             } ],
             "attachments" : [ ],
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 10,
-            "hasContent" : true
+            "hasContent" : true,
+            "stepsCount" : 10
           } ],
           "attachments" : [ ],
           "parameters" : [ ],
           "shouldDisplayMessage" : false,
           "attachmentsCount" : 0,
-          "stepsCount" : 11,
-          "hasContent" : true
+          "hasContent" : true,
+          "stepsCount" : 11
         }, {
           "name" : "断言导出功能",
           "time" : {
@@ -1067,8 +1067,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言导出开仓时间：2021-09-17 10:12:18，数据库开仓时间：2021-09-17 10:12:18",
               "time" : {
@@ -1082,8 +1082,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言导出平仓时间：2021-09-17 10:47:06，数据库平仓时间：2021-09-17 10:47:06",
               "time" : {
@@ -1097,8 +1097,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言导出交易量：1.0，数据库交易量：1.0",
               "time" : {
@@ -1112,8 +1112,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言导出商品代码：USDJPY，数据库商品代码：USDJPY",
               "time" : {
@@ -1127,8 +1127,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言导出开仓价：109.854，数据库开仓价：109.854",
               "time" : {
@@ -1142,8 +1142,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言导出平仓价格：109.914，数据库平仓价格：109.914",
               "time" : {
@@ -1157,8 +1157,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言导出佣金：-10.0，数据库佣金：-10.0",
               "time" : {
@@ -1172,8 +1172,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言导出隔夜利息：0.0，数据库隔夜利息：0.0",
               "time" : {
@@ -1187,8 +1187,8 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             }, {
               "name" : "断言导出盈亏：54.59，数据库盈亏：54.59",
               "time" : {
@@ -1202,43 +1202,43 @@
               "parameters" : [ ],
               "shouldDisplayMessage" : false,
               "attachmentsCount" : 0,
-              "stepsCount" : 0,
-              "hasContent" : false
+              "hasContent" : false,
+              "stepsCount" : 0
             } ],
             "attachments" : [ ],
             "parameters" : [ ],
             "shouldDisplayMessage" : false,
             "attachmentsCount" : 0,
-            "stepsCount" : 10,
-            "hasContent" : true
+            "hasContent" : true,
+            "stepsCount" : 10
           } ],
           "attachments" : [ ],
           "parameters" : [ ],
           "shouldDisplayMessage" : false,
           "attachmentsCount" : 0,
-          "stepsCount" : 11,
-          "hasContent" : true
+          "hasContent" : true,
+          "stepsCount" : 11
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
         "shouldDisplayMessage" : false,
         "attachmentsCount" : 0,
-        "stepsCount" : 24,
-        "hasContent" : true
+        "hasContent" : true,
+        "stepsCount" : 24
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 76,
-      "hasContent" : true
+      "hasContent" : true,
+      "stepsCount" : 76
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
-    "stepsCount" : 80,
-    "hasContent" : true
+    "hasContent" : true,
+    "stepsCount" : 80
   },
   "afterStages" : [ {
     "name" : "xunit_setup_class_fixture_Test_IB_Open_OrderList::0",
@@ -1253,8 +1253,8 @@
     "parameters" : [ ],
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
-    "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "stepsCount" : 0
   } ],
   "labels" : [ {
     "name" : "story",
@@ -1295,41 +1295,12 @@
     "value" : "{'代理账号': 1000005349.0, '订单号码': 544620.0}"
   } ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "da15998c431381f2",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'mysql_closeOrder' is not defined",
-      "time" : {
-        "start" : 1650967425884,
-        "stop" : 1650967510919,
-        "duration" : 85035
-      }
-    }, {
-      "uid" : "749ab7e9c91ddfda",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: FAILURE: 第1条数据断言失败：订单号：544265，复制交易量：100.0，数据库交易量：10000\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:314 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume'],\nFAILURE: 第1条数据断言失败：订单号：544265，导出交易量：100.0，数据库交易量：10000\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:361 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume'],\n------------------------------------------------------------\nFailed Checks: 2",
-      "time" : {
-        "start" : 1650965549950,
-        "stop" : 1650965725204,
-        "duration" : 175254
-      }
-    }, {
-      "uid" : "3e764ae8473eee53",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: FAILURE: 第1条数据断言失败：订单号：543767，复制交易量：0.01，数据库交易量：1\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:314 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrder_data[i]['手数']),VerifyOrderyList.mysql_closeOrder[i]['Volume'],\nFAILURE: 第1条数据断言失败：复制订单号码：543666，数据库订单号码：543767\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:345 in test_IB_Order_List() -> check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['订单号码']),VerifyOrderyList.mysql_closeOrder[i]['Ticket'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制交易账号：672006257，数据库交易账号：672006257\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:349 in test_IB_Order_List() -> check.equal(int(VerifyOrderyList.closeOrderexcel_data[i]['交易账号']),VerifyOrderyList.mysql_closeOrder[i]['Login'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制开仓时间：2021-09-22 05:47:31，数据库开仓时间：2021-09-22 05:47:31\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:353 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['开仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Open_Time'].strftime('%Y-%m-%d %H:%M:%S'),\nFAILURE: 第1条数据断言失败：订单号：543666，复制平仓时间：2021-09-22 05:47:31，数据库平仓时间：2021-09-22 05:47:43\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:357 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['平仓时间'],VerifyOrderyList.mysql_closeOrder[i]['Close_Time'].strftime('%Y-%m-%d %H:%M:%S'),\nFAILURE: 第1条数据断言失败：订单号：543666，复制商品代码：GBPUSD，数据库商品代码：GBPUSD\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:365 in test_IB_Order_List() -> check.equal(VerifyOrderyList.closeOrderexcel_data[i]['商品代码'],VerifyOrderyList.mysql_closeOrder[i]['Symbol'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制开仓价：1.36602，数据库开仓价：1.36602\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:369 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['开仓价']),VerifyOrderyList.mysql_closeOrder[i]['Open_Price'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制平仓价格：1.36571，数据库平仓价格：1.36571\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:373 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['平仓价格']),VerifyOrderyList.mysql_closeOrder[i]['Close_Price'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制佣金：0.0，数据库佣金：0.0\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:377 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['佣金']),VerifyOrderyList.mysql_closeOrder[i]['Commission'],\nFAILURE: 第1条数据断言失败：订单号：543666，复制盈亏：-0.31，数据库盈亏：-0.31\ndemo\\IB_Close_Open_Order_List\\actions_bin\\Test_ib_close_order_list.py:385 in test_IB_Order_List() -> check.equal(float(VerifyOrderyList.closeOrderexcel_data[i]['盈亏']),VerifyOrderyList.mysql_closeOrder[i]['Profit'],\n------------------------------------------------------------\nFailed Checks: 10",
-      "time" : {
-        "start" : 1650964926427,
-        "stop" : 1650965091096,
-        "duration" : 164669
-      }
-    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c7812bf9a8f8e7f9.json",
+  "source" : "b87a2e5a0b823c51.json",
   "parameterValues" : [ "{'代理账号': 1000005349.0, '订单号码': 544620.0}" ]
 }

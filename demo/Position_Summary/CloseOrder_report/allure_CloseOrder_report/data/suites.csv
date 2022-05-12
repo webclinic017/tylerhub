@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed May 11 17:10:37 GMT+08:00 2022","Wed May 11 17:11:16 GMT+08:00 2022","39077","demo.Position_Summary.Action_bin","Test_position_summary","Test_position_summary","","","IB仓位总结数据核对报告","读取测试文档数据，执行用例"

@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2022-04-21 10:21:22
-LastEditTime: 2022-04-26 18:14:58
+LastEditTime: 2022-04-27 10:33:34
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\IB_Close_Open_Order_List\actions_bin\Test_ib_close_order_list.py
@@ -54,7 +54,6 @@ class Test_IB_Open_OrderList(object):
             VerifyOrderyList.quitbrowser()
         else:
             VerifyOrderyList.closebrowser()
-
         try:
             os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_closeOrder.txt'))
             os.remove(os.path.join(os.path.join(path_project,'test_data'),'copy_closeOrder.xlsx'))
