@@ -1512,11 +1512,16 @@ def txt_xls(filename,xlsname):
 # a='55,55.68USD'
 # b=''.join(re.findall(parten,a)).replace(',','')
 # print(b)
+from browser_actions import Commonweb
+import time
 
-list=[99064,'','',454]
+common=Commonweb()
 
+common.open_browser()
 
-print(1)
+common.open_web('https://at-client-portal-sit.atfxdev.com/register')
+time.sleep(0.5)
+common.discern_code('tyler','123456','register','jietu',"css,.el-col-16 svg")
 
 
 

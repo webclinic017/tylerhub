@@ -510,7 +510,7 @@ class Commonweb():
             log.my_logger('!!--!!js_scroll_inline').error(msg)
 
 
-    #截取屏幕，定点截图
+    #截取屏幕，定点截图，返回截图路径
     def fixed_point_image(self,name,filename,locator,index=0):
         """
         截取屏幕，抓取元素定位处的截图
@@ -551,11 +551,11 @@ class Commonweb():
         """ 
         try:
             #获取验证码图片,并打开
-            self.img=Image.open(self.fixed_point_image(name,filename,locator,index=0))
+            self.img=self.fixed_point_image(name,filename,locator,index=0)
             self.result_code=Base64_api(username,psword,self.img)
             return self.result_code
         except Exception as msg:
-            log.my_logger('discern_code').error(msg)  
+            log.my_logger('discern_code').error('请勿随意移动窗口导致验证码图片截取错误'.format(msg))  
 
 
     #判断语种

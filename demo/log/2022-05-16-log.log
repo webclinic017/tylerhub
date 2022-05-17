@@ -1,0 +1,7 @@
+!!--!!driver_name - 2022-05-16 18:05:01,122 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+!!--!!url_error - 2022-05-16 18:05:01,122 - browser_actions - [browser_actions.py-->line:113] - WARNING: 请输入正确的域名
+!!--!!driver_name - 2022-05-16 18:05:21,185 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+!!--!!url_error - 2022-05-16 18:05:21,187 - browser_actions - [browser_actions.py-->line:113] - WARNING: 请输入正确的域名
+discern_code - 2022-05-16 18:16:13,944 - browser_actions - [browser_actions.py-->line:558] - ERROR: 'Commonweb' object has no attribute 'img'

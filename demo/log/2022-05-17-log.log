@@ -1,0 +1,3 @@
+discern_code - 2022-05-17 15:14:47,621 - browser_actions - [browser_actions.py-->line:558] - ERROR: 'Commonweb' object has no attribute 'img'
+discern_code - 2022-05-17 15:48:57,353 - browser_actions - [browser_actions.py-->line:570] - ERROR: 'Commonweb' object has no attribute 'img'
+discern_code - 2022-05-17 15:50:24,497 - browser_actions - [browser_actions.py-->line:570] - ERROR: 'Commonweb' object has no attribute 'img'
