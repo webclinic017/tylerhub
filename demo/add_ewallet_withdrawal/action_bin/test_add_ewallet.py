@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-09-02 10:18:01
-LastEditTime: 2022-02-17 10:41:56
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-17 18:07:13
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: Execute testcase
 FilePath: \tylerhub\demo\add_ewallet_withdrawal\action_bin\test_add_ewallet.py
 '''

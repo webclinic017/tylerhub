@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-02 10:17:39
-LastEditTime: 2022-05-12 15:45:38
+LastEditTime: 2022-05-17 18:06:52
 LastEditors: Tyler96-QA 1718459369@qq.com
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\add_ewallet_withdrawal\location\location_of_add_ewallet.py
@@ -148,6 +148,19 @@ class Location_of_add_ewallet(object):
     def is_ewallet_morethan_three(self):
         try:
             time.sleep(3)
+            #判断页面是否加载完成
+            while True:
+                if common.ele_is_displayed("css,[src='/static/img/loading.webm']", 1):
+                    continue
+                else:
+                    break
+            time.sleep(1)
+            while True:
+                self.loading_attributes=common.get_attributes('css,.el-loading-mask', 'style')
+                if 'none' in self.loading_attributes:
+                    break
+                else:
+                    continue
             #进入账户设定页面
             common.display_click('css,.el-icon--right.el-icon-arrow-down')
             time.sleep(1)
@@ -157,16 +170,14 @@ class Location_of_add_ewallet(object):
             common.display_click('css,#tab-second')
             time.sleep(1)
             #判断当前账号是否存电子钱包出金方式
-            if common.ele_is_displayed("xpath,//div[@class='bankinfo-page']/div[@class='info-row el-row']//div//span[.='渠道:']",2):
+            if common.ele_is_displayed("xpath,//span[.='渠道:']",2):
                 print('当前账号存在电子钱包出金方式')
                 #判断存在几种电子钱包出金方式
-                self.ewalletType_len=common.get_lenofelement("xpath,//div[@class='bankinfo-page']/div\
-                    [@class='info-row el-row']//div//span[.='渠道:']")
+                self.ewalletType_len=common.get_lenofelement("xpath,//span[.='渠道:']")
                 self.ewallet_list=[]
                 for i in range(0,self.ewalletType_len):
                     self.ewallet_dict={}
-                    common.display_click("xpath,//div[@class='bankinfo-page']/div\
-                        [@class='info-row el-row']//div//span[.='渠道:']",i)
+                    common.display_click("xpath,//span[.='渠道:']",i)
                     time.sleep(1)
                     #获取当前出金类型存在几个出金方式
                     self.ewallet_len=common.get_lenofelement("xpath,//div[@class='bankinfo-page']/div[1]//div\
@@ -185,7 +196,7 @@ class Location_of_add_ewallet(object):
                         #赋值ewallet
                         self.ewallet=''.join(self.ewallet_list[0].keys())
                         self.times=int(self.ewallet_list[0][self.ewallet])
-                    print('需添加{}条{}出金方式'.format(3-self.times,self.ewallet))
+                print('需添加{}条{}出金方式'.format(3-self.times,self.ewallet))
             else:
                 print('当前账号不存在电子钱包出金方式')
                 self.ewallet='Skrill'
@@ -226,14 +237,33 @@ class Location_of_add_ewallet(object):
             #新增
             common.display_click('css,.el-button--default span span')
             time.sleep(1)
-            #发送验证码
-            common.display_click('css,.el-button--default.sendBtn')
-            time.sleep(1)
+            while True:
+                #识别验证码
+                self.code=common.discern_code('tyler','123456','code','screenshot',"css,[width='150']")
+                #填写验证码
+                common.web_clear("css,[placeholder='验证码']")
+                time.sleep(0.5)
+                common.display_input("css,[placeholder='验证码']", self.code)
+                time.sleep(0.5)
+                common.display_click("xpath,//span[.='发送']",1)
+                time.sleep(0.5)
+                #判断验证码是否填写正确
+                if common.ele_is_displayed('css,.el-form-item__error', 1):
+                    common.display_click("css,[width='150']")
+                    time.sleep(1)
+                    continue
+                elif common.ele_is_displayed("xpath,//div[@class='content']//div[@class='captcha']//div[3]", 1):
+                    common.display_click("css,[width='150']")
+                    time.sleep(1)
+                    continue
+                else:
+                    break
+
             #获取验证码
             self.get_verify_code()
             #填写验证码
             common.switch_windows(0)
-            common.display_input("css,[placeholder='验证码']", self.emailcode)
+            common.display_input("css,.content > div > .verificationCode [placeholder='验证码']", self.emailcode)
             time.sleep(1)
             #提交
             common.display_click('css,.el-button--primary.sendBtn > span')
@@ -270,7 +300,14 @@ class Location_of_add_ewallet(object):
                             common.display_input('css,.el-input__inner', randomData.get_rangenemail(9),2)
                         time.sleep(1)
                         #提交并继续添加
-                        common.display_click('css,.el-button--text > span')
+                        common.display_click('xpath,//span[.="提交并继续添加"]')
+                        time.sleep(3)
+                        while True:
+                            self.style=common.get_attributes('css,.el-loading-mask', 'style')
+                            if 'none' in self.style:
+                                break
+                            else:
+                                continue
                         time.sleep(2)
                         common.display_click('xpath,//span[.="继续添加"]')
         except Exception as msg:
