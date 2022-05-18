@@ -1,8 +1,8 @@
 '''
 Author: your name
 Date: 2022-01-13 14:30:22
-LastEditTime: 2022-02-09 17:51:22
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-18 17:41:49
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\change_email_language\action_bin\test_change_emali_language.py
 '''
@@ -41,12 +41,12 @@ class Test_change_emailLanguage(object):
 
     def teardown(self):
         if self.data_index==testdata.index(testdata[-1]):
-            verifyList.quitbrowser()
+            changeLanguage.quitbrowser()
         else:
-            verifyList.closebrowser()
+            changeLanguage.closebrowser()
 
     @pytest.mark.parametrize('data',testdata)
-    @allure.feature('cp设置页面修改数据库语言')
+    @allure.feature('cp设置页面修改数据库邮箱语言')
     @allure.story('用例执行')
     @allure.description('读取测试文档数据，执行用例')
     def test_change_language(self,data):
@@ -63,8 +63,9 @@ class Test_change_emailLanguage(object):
         with allure.step('查询数据库'):  
             changeLanguage.check_dataBase_language(int(data['主账号']),excelpath,'D',self.data_index+2)
         
-        with allure.step('断言数据库lang字段'):    
-            check.equal(changeLanguage.randomLanguage, changeLanguage.checkDataBase_emailLang)
+        with allure.step('断言修改后数据库lang字段：{}与页面邮箱语言：{}'.format(changeLanguage.checkDataBase_emailLang,changeLanguage.randomLanguage)):    
+            check.equal(changeLanguage.randomLanguage, changeLanguage.checkDataBase_emailLang,
+            '断言失败，修改后邮箱语言：{}，页面语言：{}'.format(changeLanguage.checkDataBase_emailLang,changeLanguage.randomLanguage))
 
 
 

@@ -1,8 +1,8 @@
 '''
 Author: your name
 Date: 2022-01-13 14:29:47
-LastEditTime: 2022-02-21 17:41:52
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-18 17:42:15
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\change_email_language\location\location_of_email_language.py
 '''
@@ -86,12 +86,12 @@ class Location_email_language_change(object):
                 else:
                     break
             time.sleep(1)
-            # while True:
-            #     self.loading_attributes=common.get_attributes('css,.el-loading-mask', 'style')
-            #     if 'none' in self.loading_attributes:
-            #         break
-            #     else:
-            #         continue
+            while True:
+                self.loading_attributes=common.get_attributes('css,.el-loading-mask', 'style')
+                if 'none' in self.loading_attributes:
+                    break
+                else:
+                    continue
         except Exception as msg:
             log.my_logger('!!--!!from_bos_to_cp').error(msg)
 
@@ -114,23 +114,28 @@ class Location_email_language_change(object):
             common.display_click('css,.el-select__caret')
             time.sleep(0.5)
             #随机选择邮箱语言random.randint(1,9)
-            self.index=random.randint(0,9)
-            #判断随机选择邮箱语种 
-            time.sleep(0.5)
+            self.index=random.randint(1,9)
+            #判断随机选择邮箱语种
+            time.sleep(1)
             if self.index==1:
-                self.randomLanguage='cht' 
+                self.randomLanguage='cht'
             elif self.index==7:
                 self.randomLanguage='ms'
             else:
+                common.display_click('css,.el-select-dropdown__list > li > span',self.index)
+                time.sleep(0.5)
+                common.display_click('css,.el-select__caret')
+                time.sleep(0.5)
                 self.randomLanguage=common.check_language('css,.el-select-dropdown__list > li > span',self.index)
             time.sleep(0.5)
+            
             common.display_click('css,.el-select-dropdown__list > li > span',self.index)
             time.sleep(0.5)
             #保存
             common.display_click('xpath,//span[.="保存"]')
             #保存修改后邮箱语言
             dealData.saveainfo(excelpath, self.randomLanguage, column1, row)
-            print(self.randomLanguage)
+            print('修改后邮箱语言为{}'.format(self.randomLanguage))
         except Exception as msg:
             log.my_logger('!!--!!change_emailLanguage').error(msg)    
 

@@ -490,7 +490,7 @@ class Commonweb():
         try:
             #通过ID属性
             if type=='ID' or type=='id':
-                self.js='document.getElementsByid({})["{}"].scrollTop ={} '.format(element,index,num)
+                self.js='document.getElementsById("{}")[{}].scrollTop ={} '.format(element,index,num)
                 self.driver.execute_script(self.js)
             #通过class属性
             elif type=='class' or type=='Class':
