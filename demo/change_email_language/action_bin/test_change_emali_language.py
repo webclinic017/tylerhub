@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-01-13 14:30:22
-LastEditTime: 2022-05-18 17:41:49
+LastEditTime: 2022-05-18 17:44:44
 LastEditors: Tyler96-QA 1718459369@qq.com
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\change_email_language\action_bin\test_change_emali_language.py
