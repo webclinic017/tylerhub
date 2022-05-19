@@ -86,8 +86,6 @@ class Location():
                 time.sleep(1)
                 #判断验证码是否填写正确
                 if common.ele_is_displayed('css,.el-form-item__error', 1):
-                    common.display_click("css,.la-redo-alt")
-                    time.sleep(1)
                     continue
                 else:
                     break

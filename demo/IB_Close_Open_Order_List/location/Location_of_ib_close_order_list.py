@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2022-04-21 10:20:53
-LastEditTime: 2022-05-09 11:38:35
+LastEditTime: 2022-05-19 18:15:10
 LastEditors: Tyler96-QA 1718459369@qq.com
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\IB_Close_Open_Order_List\location\Location_of_ib_close_order_list.py
@@ -105,7 +105,7 @@ class Location_of_IB_Close_OrderList(object):
         time.sleep(0.5)
         #登录
         common.display_click('css,.ivu-btn > span',-1)
-        time.sleep(3)
+        time.sleep(2)
         #下级未平仓记录页面
         common.switch_windows(1)
         #判断页面是否加载完成

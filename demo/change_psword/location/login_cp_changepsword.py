@@ -68,7 +68,21 @@ class Location():
             common.switch_windows(0)
             time.sleep(1)
             self.commeThod.login_cp(username,psword)
-            time.sleep(3)
+            time.sleep(2)
+            #判断页面是否加载完成
+            while True:
+                if common.ele_is_displayed("css,[src='/static/img/loading.webm']",1):
+                    continue
+                else:
+                    break
+            time.sleep(1)
+            while True:
+                self.loading_attributes=common.get_attributes('css,.el-loading-mask', 'style')
+                if 'none' in self.loading_attributes:
+                    break
+                else:
+                    continue
+            time.sleep(1)            
             #进入账号设定页面
             common.display_click('css,.el-icon--right.el-icon-arrow-down')
             time.sleep(1)

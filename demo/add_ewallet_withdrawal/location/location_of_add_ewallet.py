@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-02 10:17:39
-LastEditTime: 2022-05-17 18:06:52
+LastEditTime: 2022-05-19 18:03:57
 LastEditors: Tyler96-QA 1718459369@qq.com
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\add_ewallet_withdrawal\location\location_of_add_ewallet.py
@@ -249,12 +249,8 @@ class Location_of_add_ewallet(object):
                 time.sleep(0.5)
                 #判断验证码是否填写正确
                 if common.ele_is_displayed('css,.el-form-item__error', 1):
-                    common.display_click("css,[width='150']")
-                    time.sleep(1)
                     continue
                 elif common.ele_is_displayed("xpath,//div[@class='content']//div[@class='captcha']//div[3]", 1):
-                    common.display_click("css,[width='150']")
-                    time.sleep(1)
                     continue
                 else:
                     break
