@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-12-08 17:00:10
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-19 18:00:31
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: Enforcement change password testcase
 FilePath: \tylerhub\demo\change_psword\action_bin\login_cp_changepsword_bin.py
 '''
@@ -55,7 +55,7 @@ class Change_password(unittest.TestCase):
             loca.remove_topup()
         else:
             pass
-        loca.change_psword(data['邮箱'],data['旧密码'],int(data['主账号']),testdata_path,'C',self.data_index+2,8)
+        loca.change_psword(data['邮箱'],data['新密码'],int(data['主账号']),testdata_path,'C',self.data_index+2,8)
         self.assertIn(loca.get_sucessful_change(),'重设会员中心账号密码成功')
 
 if __name__=='__main__':

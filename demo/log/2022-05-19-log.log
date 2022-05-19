@@ -1,3 +1,8 @@
 !!--!!display_click - 2022-05-19 11:49:01,841 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
   (Session info: chrome=101.0.4951.64)
 
+!!--!!remove_register_topup - 2022-05-19 17:50:28,555 - common_method - [common_method.py-->line:43] - ERROR: Message: element not interactable
+  (Session info: chrome=100.0.4896.127)
+
+!!--!!nosuch_elements - 2022-05-19 17:57:31,855 - browser_actions - [browser_actions.py-->line:202] - ERROR: list index out of range
+!!--!!display_input - 2022-05-19 17:57:31,857 - browser_actions - [browser_actions.py-->line:278] - ERROR: 'NoneType' object has no attribute 'send_keys'

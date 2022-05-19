@@ -80,8 +80,23 @@ class Location():
             #重置会员中心账号密码
             common.display_click('css,.password-page > div .opt-btn')
             time.sleep(1)
-            #发送验证码
-            common.display_click('css,.sendBtn>span')
+            #识别验证码
+            while True:
+                self.code=common.discern_code('tyler','123456','code','screenshot',"css,[width='150']")
+                #填写验证码
+                common.web_clear("css,[placeholder='验证码']")
+                time.sleep(0.5)
+                common.display_input("css,[placeholder='验证码']", self.code)
+                time.sleep(0.5)
+                common.display_click("xpath,//span[.='发送']")
+                time.sleep(1)
+                #判断验证码是否填写正确
+                if common.ele_is_displayed('css,.el-form-item__error', 1):
+                    continue
+                elif common.ele_is_displayed("xpath,//div[@class='content']//div[@class='captcha']//div[3]", 1):
+                    continue
+                else:
+                    break
             time.sleep(1)
         except Exception as msg:
             log.my_logger('!!--!!login_and_send_emailcode').error(msg)
@@ -97,7 +112,12 @@ class Location():
             time.sleep(1)
             #搜索
             common.web_click('css,.ivu-icon-ios-search',1)
-            time.sleep(3)
+            time.sleep(1)
+            while True:
+                if common.ele_is_displayed('css,.ivu-spin-dot', 1):
+                    continue
+                else:
+                    break
             #进入详情页
             common.display_click('css,div.ivu-table-overflowX>table>tbody.ivu-table-tbody>tr>td',1)
             #点击邮件短信记录
@@ -107,16 +127,18 @@ class Location():
             common.display_click("xpath,//a[.='邮件记录']")
             time.sleep(0.5)
             while True:
+                common.display_click("xpath,//div[@class='emailRecord-page']//span[contains(.,'刷新')]")
+                time.sleep(1)
                 emailtext=common.get_text('css,.emailRecod-table .ivu-table-tip span')
                 if not emailtext=='暂无数据':
                     break
                 else:
                     continue
-            time.sleep(2)
+            time.sleep(1)
             common.web_click('css,.tips',1)
             time.sleep(1)
             #获取验证码文本
-            code_text=common.display_get_text('xpath,//div[@class="ivu-drawer-wrap"]//tr[2]//tr[4]/td[1]/span')
+            code_text=common.display_get_text("css,[bgcolor='#ffffff'][width='598'] span")
             time.sleep(1)
             #提取验证码
             self.email_code=randomData.extract_numbers(code_text)
@@ -137,16 +159,17 @@ class Location():
             #填写验证码
             common.switch_windows(0)
             time.sleep(1)
-            common.display_input('css,.el-input__inner',self.email_code,1)
+            common.display_input('css,.el-input__inner',self.email_code,2)
             #提交
             common.display_click('css,.el-button--primary.sendBtn > span')
             time.sleep(1)
             #生成随机新密码
             self.newpsword=randomData.get_psword_type(8)
             #输入新密码
-            common.display_input('css,.el-input__inner',self.newpsword,2)
+            common.display_input("css,[placeholder='新密码']",self.newpsword)
+            time.sleep(0.5)
             #确认新密码
-            common.display_input('css,.el-input__inner',self.newpsword,-1)
+            common.display_input("css,[placeholder='再次确认新密码']",self.newpsword)
             time.sleep(1)
             #提交
             common.display_click('css,.save>span')
