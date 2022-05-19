@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-12-10 10:08:10
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-19 16:24:06
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: Enforcement change password testcase
 FilePath: \tylerhub\demo\change_psword\action_bin\Change_password_cp.py
 '''
@@ -42,8 +42,6 @@ class Change_in_cp(unittest.TestCase):
     def tearDown(self):
         if self.data_index==testdata.index(testdata[-1]):
             loca.quitbroswer()
-        else:
-            loca.clear_bos_serch()
 
     @ddt.data(*testdata)
     def testchange(self,data):

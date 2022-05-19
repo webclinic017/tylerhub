@@ -74,20 +74,36 @@ class Location():
             time.sleep(1)
             common.display_input('css,.el-input__inner',email)
             time.sleep(1)
-            #发送验证码
-            common.display_click('css,div.b-send > .el-button')
+            #识别验证码
+            while True:
+                self.code=common.discern_code('tyler','123456','code','screenshot',"css,[width='150']")
+                #填写验证码
+                common.web_clear("css,[placeholder='验证码']")
+                time.sleep(0.5)
+                common.display_input("css,[placeholder='验证码']", self.code)
+                time.sleep(0.5)
+                common.display_click("xpath,//span[.='发送']")
+                time.sleep(1)
+                #判断验证码是否填写正确
+                if common.ele_is_displayed('css,.el-form-item__error', 1):
+                    common.display_click("css,.la-redo-alt")
+                    time.sleep(1)
+                    continue
+                else:
+                    break
+            time.sleep(1)
             #获取验证码
             self.get_code(account)
             #输入验证码
             common.switch_windows(0)
-            common.display_input('css,.el-input__inner',self.email_code,1)
+            common.display_input('css,.el-input__inner',self.email_code,2)
             time.sleep(1)
             #输入新密码
             self.psword=digital.get_psword_type(8)
-            common.display_input('css,.el-input__inner',self.psword,2)
+            common.display_input('css,.el-input__inner',self.psword,3)
             time.sleep(1)
             #确认新密码
-            common.display_input('css,.el-input__inner',self.psword,3)
+            common.display_input('css,.el-input__inner',self.psword,4)
             time.sleep(1)
             dealData.saveainfo(path,self.psword,column,row)
             #确认
@@ -110,13 +126,21 @@ class Location():
         try:
             common.switch_windows(1)
             #输入主账户搜索
-            common.display_input('css,.ivu-input-default',account)
+            common.web_clear('css,.ivu-input-group-with-append > [placeholder]')
+            time.sleep(0.5)
+            common.display_input('css,.ivu-input-group-with-append > [placeholder]',account)
             time.sleep(1)
             #搜索
             common.web_click('css,.ivu-icon-ios-search',1)
             time.sleep(1)
+            while True:
+                if common.ele_is_displayed('css,.ivu-spin-dot', 1):
+                    continue
+                else:
+                    break
             #进入详情页
             common.display_click('css,div.ivu-table-overflowX>table>tbody.ivu-table-tbody>tr>td',1)
+            time.sleep(1)
             #点击邮件短信记录
             time.sleep(1)
             common.switch_windows(2)
@@ -124,12 +148,14 @@ class Location():
             common.web_click("xpath,//a[.='邮件记录']")
             time.sleep(1)
             while True:
+                common.display_click("xpath,//div[@class='emailRecord-page']//span[contains(.,'刷新')]")
+                time.sleep(1)
                 emailtext=common.get_text('css,.emailRecod-table .ivu-table-tip span')
                 if not emailtext=='暂无数据':
                     break
                 else:
                     continue
-            time.sleep(2)
+            time.sleep(1)
             #打开验证码邮件
             common.display_click('css,.tips',1)
             time.sleep(2)
@@ -142,13 +168,6 @@ class Location():
             return self.email_code
         except Exception as msg:
             log.my_logger('!!--!!get_code').error(msg)
-
-
-    #清空bos的账号搜索添加
-    def clear_bos_serch(self):
-        common.switch_windows(1)
-        time.sleep(1)
-        common.web_clear('css,.ivu-input-default')
 
 
     def closerbrowser(self):
