@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-09-17 15:00:40
-LastEditTime: 2022-01-13 14:40:59
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-20 09:38:57
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: Page operation
 FilePath: \tylerhub\demo\walaopay_withdrawal\location\location_of_walaopay_withdrawal.py
 '''
@@ -78,7 +78,20 @@ class Location_of_deposit_withdrawal(object):
         time.sleep(0.5)
         #登录
         common.display_click('css,.ivu-btn > span',-1)
-        time.sleep(3)
+        time.sleep(1)
+        #判断页面是否加载完成
+        while True:
+            if common.ele_is_displayed("css,[src='/static/img/loading.webm']",1):
+                continue
+            else:
+                break
+        time.sleep(1)
+        while True:
+            self.loading_attributes=common.get_attributes('css,.el-loading-mask', 'style')
+            if 'none' in self.loading_attributes:
+                break
+            else:
+                continue
         #出入金记录页面
         common.switch_windows(1)
         time.sleep(1)
