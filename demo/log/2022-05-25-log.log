@@ -54,3 +54,112 @@
 !!--!!display_click - 2022-05-25 16:33:28,181 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (927, 656). Other element would receive the click: <li data-v-a8f47daa="" class="el-select-dropdown__item">...</li>
   (Session info: chrome=101.0.4951.67)
 
+!!--!!display_click - 2022-05-25 17:00:59,485 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-25 17:01:11,121 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-25 17:01:11,121 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_finds_element - 2022-05-25 17:01:18,705 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-25 17:01:18,707 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-05-25 17:01:18,709 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2022-05-25 17:01:19,433 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_finds_element - 2022-05-25 17:01:19,433 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!nosuch_elements - 2022-05-25 17:01:19,437 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:01:19,437 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-05-25 17:01:19,439 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2022-05-25 17:01:19,439 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2022-05-25 17:01:19,444 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_finds_element - 2022-05-25 17:01:19,444 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_finds_element - 2022-05-25 17:01:19,444 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!nosuch_elements - 2022-05-25 17:01:19,449 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:01:19,449 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:01:19,449 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-05-25 17:01:19,451 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2022-05-25 17:01:19,451 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2022-05-25 17:01:19,451 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2022-05-25 17:01:19,460 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_finds_element - 2022-05-25 17:01:19,460 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_finds_element - 2022-05-25 17:01:19,460 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_finds_element - 2022-05-25 17:01:19,460 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!nosuch_elements - 2022-05-25 17:01:19,486 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:01:19,486 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:01:19,486 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:01:19,486 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-05-25 17:01:19,488 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2022-05-25 17:01:19,488 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2022-05-25 17:01:19,488 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2022-05-25 17:01:19,488 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!remove_register_topup - 2022-05-25 17:02:06,265 - common_method - [common_method.py-->line:43] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_finds_element - 2022-05-25 17:02:31,236 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-25 17:02:31,236 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-25 17:02:31,236 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-25 17:02:31,236 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-25 17:02:31,236 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-25 17:02:31,252 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:02:31,252 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:02:31,252 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:02:31,252 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:02:31,252 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-05-25 17:02:31,258 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2022-05-25 17:02:37,835 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-25 17:02:37,835 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-25 17:02:37,835 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-25 17:02:37,835 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-25 17:02:37,835 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-25 17:02:37,835 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-25 17:02:37,857 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:02:37,857 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:02:37,857 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:02:37,857 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:02:37,857 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 17:02:37,857 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-05-25 17:02:37,868 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2022-05-25 17:02:37,868 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2022-05-25 17:02:37,868 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2022-05-25 17:02:37,868 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2022-05-25 17:02:37,868 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
