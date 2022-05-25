@@ -1,0 +1,14 @@
+!!--!!revise_demolever - 2022-05-25 15:34:13,178 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:329] - ERROR: 'Location_of_opendemo' object has no attribute 'row'
+!!--!!revise_demolever - 2022-05-25 15:38:59,658 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:329] - ERROR: 'Location_of_opendemo' object has no attribute 'row'
+!!--!!get_demo_group - 2022-05-25 16:23:38,710 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:234] - ERROR: invalid literal for int() with base 10: ''
+!!--!!get_demo_lever - 2022-05-25 16:23:38,788 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:244] - ERROR: invalid literal for int() with base 10: ''
+!!--!!get_demo_markup - 2022-05-25 16:23:38,957 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:265] - ERROR: invalid literal for int() with base 10: ''
+!!--!!get_demo_group - 2022-05-25 16:39:00,395 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:243] - ERROR: invalid literal for int() with base 10: ''
+!!--!!get_demo_lever - 2022-05-25 16:39:00,552 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:253] - ERROR: invalid literal for int() with base 10: ''
+!!--!!get_demo_markup - 2022-05-25 16:39:00,801 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:274] - ERROR: invalid literal for int() with base 10: ''
+!!--!!get_demo_group - 2022-05-25 17:01:18,711 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:244] - ERROR: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+!!--!!get_demo_lever - 2022-05-25 17:01:19,441 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:254] - ERROR: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+!!--!!get_demo_spreadtype - 2022-05-25 17:01:19,454 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:264] - ERROR: 'Location_of_opendemo' object has no attribute 'bosDemo'
+!!--!!get_demo_markup - 2022-05-25 17:01:19,491 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:275] - ERROR: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+!!--!!creat_demoaccount - 2022-05-25 17:02:31,260 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:171] - ERROR: argument of type 'NoneType' is not iterable
+!!--!!get_demoaccount - 2022-05-25 17:02:37,875 - location_of_cl_opendome - [location_of_cl_opendome.py-->line:214] - ERROR: argument of type 'NoneType' is not iterable

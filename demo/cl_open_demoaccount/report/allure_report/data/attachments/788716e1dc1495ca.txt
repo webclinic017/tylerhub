@@ -1,0 +1,45 @@
+[1m[31mERROR   [0m !!--!!display_click:browser_actions.py:318 Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+[1m[31mERROR   [0m !!--!!display_click:browser_actions.py:318 Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+[1m[31mERROR   [0m !!--!!display_finds_element:browser_actions.py:175 元素不存在或者不可见：Message: 
+
+[1m[31mERROR   [0m !!--!!nosuch_elements:browser_actions.py:202 object of type 'NoneType' has no len()
+[1m[31mERROR   [0m !!--!!display_get_text:browser_actions.py:302 'NoneType' object has no attribute 'text'
+[1m[31mERROR   [0m !!--!!get_demo_group:location_of_cl_opendome.py:244 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[1m[31mERROR   [0m !!--!!display_finds_element:browser_actions.py:175 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+[1m[31mERROR   [0m !!--!!nosuch_elements:browser_actions.py:202 object of type 'NoneType' has no len()
+[1m[31mERROR   [0m !!--!!display_get_text:browser_actions.py:302 'NoneType' object has no attribute 'text'
+[1m[31mERROR   [0m !!--!!get_demo_lever:location_of_cl_opendome.py:254 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[1m[31mERROR   [0m !!--!!display_finds_element:browser_actions.py:175 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+[1m[31mERROR   [0m !!--!!nosuch_elements:browser_actions.py:202 object of type 'NoneType' has no len()
+[1m[31mERROR   [0m !!--!!display_get_text:browser_actions.py:302 'NoneType' object has no attribute 'text'
+[1m[31mERROR   [0m !!--!!get_demo_spreadtype:location_of_cl_opendome.py:264 'Location_of_opendemo' object has no attribute 'bosDemo'
+[1m[31mERROR   [0m !!--!!display_finds_element:browser_actions.py:175 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+[1m[31mERROR   [0m !!--!!nosuch_elements:browser_actions.py:202 object of type 'NoneType' has no len()
+[1m[31mERROR   [0m !!--!!display_get_text:browser_actions.py:302 'NoneType' object has no attribute 'text'
+[1m[31mERROR   [0m !!--!!get_demo_markup:location_of_cl_opendome.py:275 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[1m[31mERROR   [0m !!--!!remove_register_topup:common_method.py:43 Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+[1m[31mERROR   [0m !!--!!display_finds_element:browser_actions.py:175 元素不存在或者不可见：Message: 
+
+[1m[31mERROR   [0m !!--!!nosuch_elements:browser_actions.py:202 object of type 'NoneType' has no len()
+[1m[31mERROR   [0m !!--!!get_attributes:browser_actions.py:212 'NoneType' object has no attribute 'get_attribute'
+[1m[31mERROR   [0m !!--!!creat_demoaccount:location_of_cl_opendome.py:171 argument of type 'NoneType' is not iterable
+[1m[31mERROR   [0m !!--!!display_finds_element:browser_actions.py:175 元素不存在或者不可见：Message: 
+
+[1m[31mERROR   [0m !!--!!nosuch_elements:browser_actions.py:202 object of type 'NoneType' has no len()
+[1m[31mERROR   [0m !!--!!display_get_text:browser_actions.py:302 'NoneType' object has no attribute 'text'
+[1m[31mERROR   [0m !!--!!get_demoaccount:location_of_cl_opendome.py:214 argument of type 'NoneType' is not iterable

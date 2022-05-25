@@ -1,8 +1,8 @@
 '''
 Author:tyler
 Date: 2021-08-26 18:21:36
-LastEditTime: 2022-05-25 11:42:51
-LastEditors: Tyler96-QA 1718459369@qq.com
+LastEditTime: 2022-05-25 17:03:59
+LastEditors: Tyler Tang tyler.tang@6317.io
 Description: Execution use case
 FilePath: \tylerhub\demo\cl_open_demoaccount\action_bin\test_cl_opendemo.py
 '''
@@ -48,11 +48,12 @@ class Test_opendemo_cl(object):
             openDemo.logoutcp()
 
         
-    @allure.feature('CL账号新开demo,校验数据库demo账号信息,修改杠杆')
+    @allure.feature('CL/IB账号新开demo,校验数据库demo账号信息,修改杠杆')
+    @allure.title('CL/IB新开demo测试报告')
     @allure.story('用例执行')
     @allure.description('读取测试文档数据，执行用例：登录CP新开demo，bos获取demo账号信息与数据库比对，CP修改杠杆')
     @pytest.mark.parametrize('data',testdata)
-    @pytest.mark.flaky(reruns=2, reruns_delay=2) #失败重跑
+    @pytest.mark.flaky(reruns=2, reruns_delay=2) #报错失败后重跑
     def test_execution_demo(self,data):
         print('当前测试数据：主账号：{}'.format(int(data['主账号'])))
         with allure.step('获取当前测试数据下标'):
@@ -66,7 +67,7 @@ class Test_opendemo_cl(object):
             openDemo.creat_demoaccount()
         
         with allure.step('查询数据库，获取新开demo账号信息'):
-            if openDemo.get_demoaccount(int(data['主账号'])):
+            if not openDemo.get_demoaccount(int(data['主账号'])):
                 print('demo账号创建失败，用例跳过')
                 pytest.skip()
             else:
@@ -83,11 +84,11 @@ class Test_opendemo_cl(object):
             openDemo.where_demo_incp()
 
         with allure.step('修改demo账号杠杆'):
-            openDemo.revise_demolever(openDemo.row)
+            openDemo.revise_demolever()
 
         with allure.step('断言修改后杠杆是否与数据库一致'):
             openDemo.revise_mongolever(int(data['主账号']))
-            pytest.assume(openDemo.reviseLever == int(openDemo.serchData[0]['leverage']))
+            pytest.assume(openDemo.reviseLever == openDemo.serchData[0]['leverage'])
         
         with allure.step('保存测试数据'):
             dealData.saveainfo(excelpath, openDemo.demoAccount, 'D', self.data_index+2)

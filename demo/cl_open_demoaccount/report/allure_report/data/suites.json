@@ -8,31 +8,31 @@
       "children" : [ {
         "name" : "Test_opendemo_cl",
         "children" : [ {
-          "name" : "test_execution_demo[data0]",
-          "uid" : "79feeaed01f10708",
+          "name" : "CL/IB新开demo测试报告",
+          "uid" : "b020af0666bcc228",
           "parentUid" : "f4b2e90907f0a9eabe32a41d83e1ca55",
-          "status" : "passed",
+          "status" : "skipped",
           "time" : {
-            "start" : 1634542475229,
-            "stop" : 1634542523026,
-            "duration" : 47797
+            "start" : 1653469131904,
+            "stop" : 1653469189591,
+            "duration" : 57687
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '新开demo': 200001745.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
+          "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '新开demo': 200001880.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
         }, {
-          "name" : "test_execution_demo[data1]",
-          "uid" : "809e2fa6048de81c",
+          "name" : "CL/IB新开demo测试报告",
+          "uid" : "9b9349fe9d299d1d",
           "parentUid" : "f4b2e90907f0a9eabe32a41d83e1ca55",
-          "status" : "passed",
+          "status" : "skipped",
           "time" : {
-            "start" : 1634542530659,
-            "stop" : 1634542578916,
-            "duration" : 48257
+            "start" : 1653469318438,
+            "stop" : 1653469357879,
+            "duration" : 39441
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "{'主账号': 1200008141.0, '邮箱': '18696194961@qq.com', '密码': 'Tl123456', '新开demo': 200001746.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
+          "parameters" : [ "{'主账号': 1200008141.0, '邮箱': '18696194961@qq.com', '密码': 'Tl123456', '新开demo': 200001881.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
         } ],
         "uid" : "f4b2e90907f0a9eabe32a41d83e1ca55"
       } ],

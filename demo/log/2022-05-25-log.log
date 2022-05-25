@@ -1,0 +1,56 @@
+!!--!!display_finds_element - 2022-05-25 14:41:46,061 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-25 14:41:46,065 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-05-25 14:41:46,067 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2022-05-25 15:17:35,448 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-25 15:17:35,454 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-05-25 15:17:35,460 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2022-05-25 15:55:03,535 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-25 15:55:03,542 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-05-25 15:55:03,546 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2022-05-25 16:10:43,062 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-25 16:10:43,066 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-05-25 16:10:43,069 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-05-25 16:10:46,392 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (927, 656). Other element would receive the click: <li data-v-a8f47daa="" class="el-select-dropdown__item">...</li>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-25 16:10:46,392 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (927, 656). Other element would receive the click: <li data-v-a8f47daa="" class="el-select-dropdown__item">...</li>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_finds_element - 2022-05-25 16:11:33,848 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-25 16:11:33,848 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-25 16:11:33,855 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-25 16:11:33,855 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-05-25 16:11:33,859 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-05-25 16:11:33,859 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-05-25 16:11:33,859 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-05-25 16:11:37,214 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (927, 656). Other element would receive the click: <li data-v-a8f47daa="" class="el-select-dropdown__item">...</li>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-25 16:11:37,214 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (927, 656). Other element would receive the click: <li data-v-a8f47daa="" class="el-select-dropdown__item">...</li>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-25 16:11:37,214 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (927, 656). Other element would receive the click: <li data-v-a8f47daa="" class="el-select-dropdown__item">...</li>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-25 16:11:37,214 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (927, 656). Other element would receive the click: <li data-v-a8f47daa="" class="el-select-dropdown__item">...</li>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-25 16:23:25,650 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <div id="tab-demo" aria-controls="pane-demo" role="tab" tabindex="-1" class="el-tabs__item is-top">...</div> is not clickable at point (717, 133). Other element would receive the click: <span class="el-dialog__title">...</span>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_finds_element - 2022-05-25 16:33:24,835 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-25 16:33:24,838 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-05-25 16:33:24,840 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-05-25 16:33:28,181 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (927, 656). Other element would receive the click: <li data-v-a8f47daa="" class="el-select-dropdown__item">...</li>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-25 16:33:28,181 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (927, 656). Other element would receive the click: <li data-v-a8f47daa="" class="el-select-dropdown__item">...</li>
+  (Session info: chrome=101.0.4951.67)
+

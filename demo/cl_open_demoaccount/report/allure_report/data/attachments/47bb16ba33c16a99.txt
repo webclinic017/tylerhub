@@ -1,0 +1,1 @@
+[31m[1mERROR   [0m !!--!!revise_demolever:location_of_cl_opendome.py:329 'Location_of_opendemo' object has no attribute 'row'

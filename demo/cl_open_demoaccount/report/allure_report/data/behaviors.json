@@ -4,39 +4,39 @@
   "children" : [ {
     "name" : "CL账号开通demo",
     "children" : [ {
-      "name" : "CL账号新开demo,校验数据库demo账号信息,修改杠杆",
+      "name" : "CL/IB账号新开demo,校验数据库demo账号信息,修改杠杆",
       "children" : [ {
         "name" : "用例执行",
         "children" : [ {
-          "name" : "test_execution_demo[data0]",
-          "uid" : "79feeaed01f10708",
-          "parentUid" : "6608c82f1b100a82108210e5f15908f6",
-          "status" : "passed",
+          "name" : "CL/IB新开demo测试报告",
+          "uid" : "b020af0666bcc228",
+          "parentUid" : "0198cacb8ed756962fe6da9a663239ad",
+          "status" : "skipped",
           "time" : {
-            "start" : 1634542475229,
-            "stop" : 1634542523026,
-            "duration" : 47797
+            "start" : 1653469131904,
+            "stop" : 1653469189591,
+            "duration" : 57687
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '新开demo': 200001745.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
+          "parameters" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '新开demo': 200001880.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
         }, {
-          "name" : "test_execution_demo[data1]",
-          "uid" : "809e2fa6048de81c",
-          "parentUid" : "6608c82f1b100a82108210e5f15908f6",
-          "status" : "passed",
+          "name" : "CL/IB新开demo测试报告",
+          "uid" : "9b9349fe9d299d1d",
+          "parentUid" : "0198cacb8ed756962fe6da9a663239ad",
+          "status" : "skipped",
           "time" : {
-            "start" : 1634542530659,
-            "stop" : 1634542578916,
-            "duration" : 48257
+            "start" : 1653469318438,
+            "stop" : 1653469357879,
+            "duration" : 39441
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "{'主账号': 1200008141.0, '邮箱': '18696194961@qq.com', '密码': 'Tl123456', '新开demo': 200001746.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
+          "parameters" : [ "{'主账号': 1200008141.0, '邮箱': '18696194961@qq.com', '密码': 'Tl123456', '新开demo': 200001881.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
         } ],
-        "uid" : "6608c82f1b100a82108210e5f15908f6"
+        "uid" : "0198cacb8ed756962fe6da9a663239ad"
       } ],
-      "uid" : "a24a02ad0107f3ea35616b7d6cf3a528"
+      "uid" : "6e9bb506cd4ea54c1a1fd3c86a49e555"
     } ],
     "uid" : "efb57759495126d968c334b0bf864b4a"
   } ]

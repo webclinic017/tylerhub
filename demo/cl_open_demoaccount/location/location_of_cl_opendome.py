@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:21:05
-LastEditTime: 2022-05-25 11:42:44
-LastEditors: Tyler96-QA 1718459369@qq.com
+LastEditTime: 2022-05-25 16:50:36
+LastEditors: Tyler Tang tyler.tang@6317.io
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\cl_open_demoaccount\location\location_of_cl_opendome.py
 '''
@@ -156,10 +156,11 @@ class Location_of_opendemo(object):
             time.sleep(1)
             #输入随机密码
             self.passWord=randomData.get_psword_type(8)
+            time.sleep(0.5)
             common.display_input('css,.el-input__inner', self.passWord,-1)
             time.sleep(1)
             #点击下一步
-            common.display_click('css,.el-button > span')
+            common.display_click("xpath,//span[contains(.,'下一步')]")
             time.sleep(1)
             while True:
                 if common.ele_is_displayed('css,.circular', 1):
@@ -182,8 +183,17 @@ class Location_of_opendemo(object):
                 self.demoAccount=int(self.serchData[0]['tradeAccount'])
                 print('demo账号创建成功：{}'.format(self.demoAccount))
                 
-                #返回首页，demo账号列表
-                common.display_click("xpath,//span[.='首页']")
+                #查看交易账户
+                common.display_click("xpath,//span[.='交易账户']")
+                time.sleep(1)
+
+                #是否存在入金须知弹窗
+                if common.ele_is_displayed('css,.el-checkbox__inner', 1):
+                    common.display_click('css,.el-checkbox__inner')
+                    time.sleep(0.5) #勾选条款
+                    common.display_click('css,.confirm-btn > span')
+                    time.sleep(1) #确定
+
                 time.sleep(1)
                 while True:
                     self.demoLoading=common.get_attributes('css,.el-loading-mask','style')
@@ -196,6 +206,8 @@ class Location_of_opendemo(object):
                 return True
             else:
                 common.get_screenpict('creat_demo_failed')
+                common.switch_windows(2)
+                self.closebrowser()
                 print('创建失败,截图保持在项目目录picture下')
                 return False
         except Exception as msg:
@@ -213,8 +225,13 @@ class Location_of_opendemo(object):
             #刷新
             common.display_click("xpath,//div[@id='demoAccount']//span[.='刷新']")
             time.sleep(1)
+            while True:
+                if common.ele_is_displayed('css,.spin-icon-load', 1):
+                    continue
+                else:
+                    break
             #查看新开模拟账号信息
-            common.display_click("xpath,//div[@id='demoAccount']//div[@class='ivu-table-fixed-right']//tr[@class='ivu-table-row']//a[contains(.,'查看')]")
+            common.display_click("xpath,//div[@id='demoAccount']//div[@class='ivu-table-fixed-right']//tr[@class='ivu-table-row']//a[contains(.,'查看')] ")
             time.sleep(2)
             #获取demo账号
             self.bosDemo=int(common.display_get_text("xpath,//div[@class='ivu-drawer-wrap']//span"))
@@ -283,6 +300,12 @@ class Location_of_opendemo(object):
     def where_demo_incp(self):
         try:
             common.switch_windows(0)
+            while True:
+                self.demoLoading=common.get_attributes('css,.el-loading-mask','style')
+                if 'none' in self.demoLoading:
+                    break
+                else:
+                    continue
             time.sleep(1)
             self.cpDemolist=common.get_lenofelement('css,.tradeAccount-info > div .el-card__body')
             time.sleep(1)
@@ -300,13 +323,13 @@ class Location_of_opendemo(object):
 
 
     #修改demo账号杠杆
-    def revise_demolever(self,index):
+    def revise_demolever(self):
         try:
             #修改新开demo账号杠杆
-            common.display_click('css,.tradeAccount-info > div span > i',index)
+            common.display_click('css,.tradeAccount-info > div span > i',self.row+1)
             time.sleep(2)
             #选择杠杆
-            common.display_click('css,.el-select__caret')
+            common.display_click('css,.el-select__caret',1)
             time.sleep(1)
             #获取修改后杠杆
             self.reviseLever=int(common.display_get_text('css,.el-select-dropdown__item span'))
@@ -315,8 +338,9 @@ class Location_of_opendemo(object):
             common.display_click('css,.el-select-dropdown__item')
             time.sleep(1)
             #确定
-            common.display_click('css,.submitEditBtn > span')
-            time.sleep(1)
+            common.display_click('css,.ok > span')
+            time.sleep(2)
+            common.display_click("xpath,//div[@class='leverage-mod']//button[1]/span[.='确定']")
             return self.reviseLever
         except Exception as msg:
             log.my_logger('!!--!!revise_demolever').error(msg)
@@ -327,7 +351,7 @@ class Location_of_opendemo(object):
             self.serchData=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atfxgm-sit', 'atfx_trade_account',
             {"$and": [{"accountNumber": account}, {"tradeAccount": "{}".format(self.demoAccount)}]},'leverage',N=1)
             self.mongoReviselever=int(self.serchData[0]['leverage'])
-            print('修改杠杆后，数据库{}账号杠杆为{}'.format(self.demoAccount,self.mongoReviselever))
+            print('修改杠杆后，数据库{} 账号杠杆为{}'.format(self.demoAccount,self.mongoReviselever))
             return self.mongoReviselever
         except Exception as msg:
             log.my_logger('!!--!!revise_mongolever').error(msg)

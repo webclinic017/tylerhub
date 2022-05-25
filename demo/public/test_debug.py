@@ -1494,12 +1494,12 @@ def txt_xls(filename,xlsname):
 # a=[y[0] for y in list1]
 # print(a)
 
-list1=['姓名','年龄']
-list2=['tyler','22']
-list3=dict(zip(list1,list2))
+# list1=['姓名','年龄']
+# list2=['tyler','22']
+# list3=dict(zip(list1,list2))
 
-print(list3)
-print(zip(list1,list2))
+# print(list3)
+# print(zip(list1,list2))
 # A=[{'mt4Amt': 99.99}, {'mt4Amt': 55}]
 # total=0
 # for i in A:
@@ -1532,7 +1532,10 @@ print(zip(list1,list2))
 #         return a
 # print(return_small(1,5))
 
-
+try:
+    print(a)
+except Exception as msg:
+    print(55)
 
 
 

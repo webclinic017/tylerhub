@@ -1,21 +1,21 @@
 [ {
-  "uid" : "809e2fa6048de81c",
-  "name" : "test_execution_demo[data1]",
+  "uid" : "9b9349fe9d299d1d",
+  "name" : "CL/IB新开demo测试报告",
   "time" : {
-    "start" : 1634542530659,
-    "stop" : 1634542578916,
-    "duration" : 48257
+    "start" : 1653469318438,
+    "stop" : 1653469357879,
+    "duration" : 39441
   },
-  "status" : "passed",
+  "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "79feeaed01f10708",
-  "name" : "test_execution_demo[data0]",
+  "uid" : "b020af0666bcc228",
+  "name" : "CL/IB新开demo测试报告",
   "time" : {
-    "start" : 1634542475229,
-    "stop" : 1634542523026,
-    "duration" : 47797
+    "start" : 1653469131904,
+    "stop" : 1653469189591,
+    "duration" : 57687
   },
-  "status" : "passed",
+  "status" : "skipped",
   "severity" : "normal"
 } ]

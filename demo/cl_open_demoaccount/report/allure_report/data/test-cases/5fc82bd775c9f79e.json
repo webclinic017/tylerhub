@@ -1,166 +1,151 @@
 {
-  "uid" : "75934b6b06398a3e",
-  "name" : "test_execution_demo[data1]",
+  "uid" : "5fc82bd775c9f79e",
+  "name" : "test_execution_demo[data0]",
   "fullName" : "demo.cl_open_demoaccount.action_bin.test_cl_opendemo.Test_opendemo_cl#test_execution_demo",
-  "historyId" : "b7692aa4bfd1d6251a5c24068ddae24b",
+  "historyId" : "052d0b4284ecab7cce809908c45e3af4",
   "time" : {
-    "start" : 1630401630818,
-    "stop" : 1630401673936,
-    "duration" : 43118
+    "start" : 1653466358660,
+    "stop" : 1653466953683,
+    "duration" : 595023
   },
   "description" : "读取测试文档数据，执行用例：登录CP新开demo，bos获取demo账号信息与数据库比对，CP修改杠杆",
   "descriptionHtml" : "<p>读取测试文档数据，执行用例：登录CP新开demo，bos获取demo账号信息与数据库比对，CP修改杠杆</p>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
-  "beforeStages" : [ {
-    "name" : "xunit_setup_class_fixture_Test_opendemo_cl",
-    "time" : {
-      "start" : 1630401558240,
-      "stop" : 1630401580416,
-      "duration" : 22176
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "hasContent" : false,
-    "stepsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
-  } ],
+  "beforeStages" : [ ],
   "testStage" : {
     "description" : "读取测试文档数据，执行用例：登录CP新开demo，bos获取demo账号信息与数据库比对，CP修改杠杆",
     "status" : "passed",
     "steps" : [ {
       "name" : "获取当前测试数据下标",
       "time" : {
-        "start" : 1630401630819,
-        "stop" : 1630401630819,
+        "start" : 1653466358669,
+        "stop" : 1653466358669,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "登录cp新开demo",
       "time" : {
-        "start" : 1630401633231,
-        "stop" : 1630401652290,
-        "duration" : 19059
+        "start" : 1653466358669,
+        "stop" : 1653466421374,
+        "duration" : 62705
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "查询数据库，获取新开demo账号信息",
       "time" : {
-        "start" : 1630401652290,
-        "stop" : 1630401665264,
-        "duration" : 12974
+        "start" : 1653466421374,
+        "stop" : 1653466443425,
+        "duration" : 22051
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "断言新开demo账号信息是否与数据库一致",
       "time" : {
-        "start" : 1630401665264,
-        "stop" : 1630401665374,
-        "duration" : 110
+        "start" : 1653466443425,
+        "stop" : 1653466444937,
+        "duration" : 1512
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "获取新开demo位于demo列表中第几个",
       "time" : {
-        "start" : 1630401665374,
-        "stop" : 1630401667606,
-        "duration" : 2232
+        "start" : 1653466444937,
+        "stop" : 1653466918014,
+        "duration" : 473077
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "修改demo账号杠杆",
       "time" : {
-        "start" : 1630401667606,
-        "stop" : 1630401673361,
-        "duration" : 5755
+        "start" : 1653466918014,
+        "stop" : 1653466946468,
+        "duration" : 28454
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "断言修改后杠杆是否与数据库一致",
+      "time" : {
+        "start" : 1653466946468,
+        "stop" : 1653466950223,
+        "duration" : 3755
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "保存测试数据",
       "time" : {
-        "start" : 1630401673361,
-        "stop" : 1630401673936,
-        "duration" : 575
+        "start" : 1653466950223,
+        "stop" : 1653466953683,
+        "duration" : 3460
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "hasContent" : true,
-    "stepsCount" : 7,
     "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "stepsCount" : 8,
+    "hasContent" : true
   },
-  "afterStages" : [ {
-    "name" : "xunit_setup_class_fixture_Test_opendemo_cl::0",
-    "time" : {
-      "start" : 1630401676410,
-      "stop" : 1630401676410,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "hasContent" : false,
-    "stepsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
-  } ],
+  "afterStages" : [ ],
   "labels" : [ {
     "name" : "story",
     "value" : "用例执行"
@@ -170,6 +155,9 @@
   }, {
     "name" : "feature",
     "value" : "CL账号新开demo,校验数据库demo账号信息,修改杠杆"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=2, reruns_delay=2)"
   }, {
     "name" : "parentSuite",
     "value" : "demo.cl_open_demoaccount.action_bin"
@@ -184,7 +172,7 @@
     "value" : "SZ01-QA-G-10"
   }, {
     "name" : "thread",
-    "value" : "14352-MainThread"
+    "value" : "13820-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -200,15 +188,15 @@
   } ],
   "parameters" : [ {
     "name" : "data",
-    "value" : "{'主账号': 1200008141.0, '邮箱': '18696194961@qq.com', '密码': 'Tl123456', '新开demo': 200001744.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}"
+    "value" : "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '新开demo': 200001868.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 200.0}"
   } ],
   "links" : [ ],
   "hidden" : true,
   "retry" : true,
   "extra" : {
     "categories" : [ ],
-    "tags" : [ ]
+    "tags" : [ "flaky(reruns=2, reruns_delay=2)" ]
   },
-  "source" : "75934b6b06398a3e.json",
-  "parameterValues" : [ "{'主账号': 1200008141.0, '邮箱': '18696194961@qq.com', '密码': 'Tl123456', '新开demo': 200001744.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 400.0}" ]
+  "source" : "5fc82bd775c9f79e.json",
+  "parameterValues" : [ "{'主账号': 1000005349.0, '邮箱': 'tyler.tang@test.com', '密码': 'Tl123456', '新开demo': 200001868.0, '组别': 'demoforex', '点差': 200.0, '加点': 7.0, '杠杆': 200.0, '修改后杠杆': 200.0}" ]
 }
