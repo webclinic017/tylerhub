@@ -2,42 +2,42 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "demo.deposit_withdrawal_list.action_bin",
+    "name" : "demo.cl_deposit_withdrawal_list.action_bin",
     "children" : [ {
       "name" : "test_verify_deposti_withdrawal",
       "children" : [ {
         "name" : "Test_deposti_withdrawal_list",
         "children" : [ {
           "name" : "test_verify_deposit_withdrawal_list[data0]",
-          "uid" : "fa97e7944f3e3df6",
-          "parentUid" : "7c0905bf130692daaf941a27be64b221",
-          "status" : "passed",
+          "uid" : "f2aa7138c5314e60",
+          "parentUid" : "88a892e952af8fbc64eb03dafed3a139",
+          "status" : "failed",
           "time" : {
-            "start" : 1634543460279,
-            "stop" : 1634543496272,
-            "duration" : 35993
+            "start" : 1653446488274,
+            "stop" : 1653446606703,
+            "duration" : 118429
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "{'主账号': 1000005349.0}" ]
         }, {
           "name" : "test_verify_deposit_withdrawal_list[data1]",
-          "uid" : "f6ffc4f2b7d57e36",
-          "parentUid" : "7c0905bf130692daaf941a27be64b221",
+          "uid" : "4b8aee5392b35ce5",
+          "parentUid" : "88a892e952af8fbc64eb03dafed3a139",
           "status" : "passed",
           "time" : {
-            "start" : 1634543496415,
-            "stop" : 1634543520205,
-            "duration" : 23790
+            "start" : 1653446606953,
+            "stop" : 1653446687841,
+            "duration" : 80888
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "{'主账号': 1200008143.0}" ]
         } ],
-        "uid" : "7c0905bf130692daaf941a27be64b221"
+        "uid" : "88a892e952af8fbc64eb03dafed3a139"
       } ],
-      "uid" : "4be57d83c813e8df47a46cf2660e6e63"
+      "uid" : "ac361c68de0591349dc63826275af42b"
     } ],
-    "uid" : "f5ca0ecbb5b2baafcf3bba47499c532a"
+    "uid" : "1efcecc446bde202377e38f391e3fca2"
   } ]
 }

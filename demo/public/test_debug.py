@@ -1524,6 +1524,13 @@ def txt_xls(filename,xlsname):
 # common.discern_code('tyler','123456','register','jietu',"css,.el-col-16 svg")
 
 
+# 
+def return_small(a,b):
+    if a>b:
+        return b
+    else:
+        return a
+print(return_small(1,5))
 
 
 

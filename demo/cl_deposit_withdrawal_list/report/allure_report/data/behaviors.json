@@ -9,26 +9,26 @@
         "name" : "用例执行",
         "children" : [ {
           "name" : "test_verify_deposit_withdrawal_list[data0]",
-          "uid" : "fa97e7944f3e3df6",
+          "uid" : "f2aa7138c5314e60",
           "parentUid" : "ee71e81beee0347eabaf29abd0f9b0f0",
-          "status" : "passed",
+          "status" : "failed",
           "time" : {
-            "start" : 1634543460279,
-            "stop" : 1634543496272,
-            "duration" : 35993
+            "start" : 1653446488274,
+            "stop" : 1653446606703,
+            "duration" : 118429
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "{'主账号': 1000005349.0}" ]
         }, {
           "name" : "test_verify_deposit_withdrawal_list[data1]",
-          "uid" : "f6ffc4f2b7d57e36",
+          "uid" : "4b8aee5392b35ce5",
           "parentUid" : "ee71e81beee0347eabaf29abd0f9b0f0",
           "status" : "passed",
           "time" : {
-            "start" : 1634543496415,
-            "stop" : 1634543520205,
-            "duration" : 23790
+            "start" : 1653446606953,
+            "stop" : 1653446687841,
+            "duration" : 80888
           },
           "flaky" : false,
           "newFailed" : false,

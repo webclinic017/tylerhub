@@ -2,34 +2,34 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "demo.deposit_withdrawal_list.action_bin.test_verify_deposti_withdrawal",
+    "name" : "demo.cl_deposit_withdrawal_list.action_bin.test_verify_deposti_withdrawal",
     "children" : [ {
       "name" : "test_verify_deposit_withdrawal_list[data0]",
-      "uid" : "fa97e7944f3e3df6",
-      "parentUid" : "1bc3c6fddbd4fc34d3d637b84a01e24d",
-      "status" : "passed",
+      "uid" : "f2aa7138c5314e60",
+      "parentUid" : "da2bb55d6284a11eec839b9eb3570dd4",
+      "status" : "failed",
       "time" : {
-        "start" : 1634543460279,
-        "stop" : 1634543496272,
-        "duration" : 35993
+        "start" : 1653446488274,
+        "stop" : 1653446606703,
+        "duration" : 118429
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "{'主账号': 1000005349.0}" ]
     }, {
       "name" : "test_verify_deposit_withdrawal_list[data1]",
-      "uid" : "f6ffc4f2b7d57e36",
-      "parentUid" : "1bc3c6fddbd4fc34d3d637b84a01e24d",
+      "uid" : "4b8aee5392b35ce5",
+      "parentUid" : "da2bb55d6284a11eec839b9eb3570dd4",
       "status" : "passed",
       "time" : {
-        "start" : 1634543496415,
-        "stop" : 1634543520205,
-        "duration" : 23790
+        "start" : 1653446606953,
+        "stop" : 1653446687841,
+        "duration" : 80888
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "{'主账号': 1200008143.0}" ]
     } ],
-    "uid" : "demo.deposit_withdrawal_list.action_bin.test_verify_deposti_withdrawal"
+    "uid" : "demo.cl_deposit_withdrawal_list.action_bin.test_verify_deposti_withdrawal"
   } ]
 }

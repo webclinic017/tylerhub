@@ -1,0 +1,49 @@
+!!--!!display_click - 2022-05-23 10:23:15,510 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2022-05-23 11:43:29,023 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-23 11:43:29,027 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-05-23 11:43:29,030 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!get_attributes - 2022-05-23 11:43:31,210 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2022-05-23 11:46:17,431 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-23 11:46:17,465 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-05-23 11:46:17,489 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!get_attributes - 2022-05-23 11:46:19,678 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2022-05-23 11:46:36,150 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-23 11:46:36,150 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-23 11:46:36,156 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-23 11:46:36,156 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-05-23 11:46:36,164 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!get_attributes - 2022-05-23 11:46:36,164 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2022-05-23 13:52:54,237 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-23 13:52:54,244 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-05-23 13:52:54,246 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!get_attributes - 2022-05-23 13:52:56,552 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2022-05-23 15:32:54,778 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-23 15:32:54,808 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-05-23 15:32:54,810 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!clear_error - 2022-05-23 15:33:01,422 - browser_actions - [browser_actions.py-->line:288] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-05-23 15:33:07,972 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-23 15:33:07,972 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-23 15:33:07,976 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-23 15:33:07,976 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-05-23 15:33:07,978 - browser_actions - [browser_actions.py-->line:278] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-05-23 15:33:14,035 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-23 15:33:14,035 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-23 15:33:14,035 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-23 15:33:14,041 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-23 15:33:14,041 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-23 15:33:14,041 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-05-23 15:33:14,044 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-05-23 17:56:26,420 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+

@@ -1,5 +1,5 @@
 {
-  "682cf6603bcd17c41f8ceac3fec44f0b" : {
+  "f8df8090e8dff32049ada8cec59d5207" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -9,31 +9,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "fa97e7944f3e3df6",
+      "uid" : "4b8aee5392b35ce5",
       "status" : "passed",
       "time" : {
-        "start" : 1634543460279,
-        "stop" : 1634543496272,
-        "duration" : 35993
+        "start" : 1653446606953,
+        "stop" : 1653446687841,
+        "duration" : 80888
       }
     } ]
   },
-  "83ac68768f7423ce4a0ced1cd7a3b6bc" : {
+  "89e46155540b38e117bc293929a6e232" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f6ffc4f2b7d57e36",
-      "status" : "passed",
+      "uid" : "f2aa7138c5314e60",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: FAILURE: 第23条数据断言失败：数据库出金时间 2021-06-24 12:59，页面出金时间 2021-03-17 14:19\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:86 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['createDate_mt'].strftime('%Y-%m-%d %H:%M'),\nFAILURE: 第23条数据断言失败：数据库出金交易金额：7;页面出金交易金额：17024.23\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:94 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],verifyList.withdrawal_list[i]['settleAmt'],\nFAILURE: 第23条数据断言失败：数据库出金汇率：1;页面出金汇率：1134.9486\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:99 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['realRate'],verifyList.withdrawal_list[i]['realRate'],\nFAILURE: 第23条数据断言失败：数据库出金mt金额：12;页面出金mt金额：20.0\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:104 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['mtAmt'],verifyList.withdrawal_list[i]['mtAmt'],\nFAILURE: 断言失败，数据库入金记录83条，页面入金记录84条\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:131 in test_verify_deposit_withdrawal_list() -> check.equal(len(verifyList.mongodbDeposit),verifyList.deposit_len,\nFAILURE: 第1条数据断言失败：数据库入金交易金额：-100;页面入金交易金额：100.0\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:146 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbDeposit[i]['fromAmt'],verifyList.deposti_list[i]['fromAmt'],\nFAILURE: 第1条数据断言失败：数据库交易入金mt金额：-100;页面交易入金mt金额：100.0\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:156 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbDeposit[i]['mt4Amt'],verifyList.deposti_list[i]['mt4Amt'],\nFAILURE: 第4条数据断言失败：数据库入金交易金额：-100;页面入金交易金额：100.0\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:146 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbDeposit[i]['fromAmt'],verifyList.deposti_list[i]['fromAmt'],\nFAILURE: 第4条数据断言失败：数据库交易入金mt金额：-100;页面交易入金mt金额：100.0\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:156 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbDeposit[i]['mt4Amt'],verifyList.deposti_list[i]['mt4Amt'],\nFAILURE: 第23条数据断言失败：数据库出金时间 2021-06-24 12:59，页面出金时间 2021-03-17 14:19\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:86 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['createDate_mt'].strftime('%Y-%m-%d %H:%M'),\nFAILURE: 第23条数据断言失败：数据库出金交易金额：7;页面出金交易金额：17024.23\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:94 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['settleAmt'],verifyList.withdrawal_list[i]['settleAmt'],\nFAILURE: 第23条数据断言失败：数据库出金汇率：1;页面出金汇率：1134.9486\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:99 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['realRate'],verifyList.withdrawal_list[i]['realRate'],\nFAILURE: 第23条数据断言失败：数据库出金mt金额：12;页面出金mt金额：20.0\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:104 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbWithdrawal[i]['mtAmt'],verifyList.withdrawal_list[i]['mtAmt'],\nFAILURE: 断言失败，数据库入金记录83条，页面入金记录84条\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:131 in test_verify_deposit_withdrawal_list() -> check.equal(len(verifyList.mongodbDeposit),verifyList.deposit_len,\nFAILURE: 第1条数据断言失败：数据库入金交易金额：-100;页面入金交易金额：100.0\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:146 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbDeposit[i]['fromAmt'],verifyList.deposti_list[i]['fromAmt'],\nFAILURE: 第1条数据断言失败：数据库交易入金mt金额：-100;页面交易入金mt金额：100.0\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:156 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbDeposit[i]['mt4Amt'],verifyList.deposti_list[i]['mt4Amt'],\nFAILURE: 第4条数据断言失败：数据库入金交易金额：-100;页面入金交易金额：100.0\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:146 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbDeposit[i]['fromAmt'],verifyList.deposti_list[i]['fromAmt'],\nFAILURE: 第4条数据断言失败：数据库交易入金mt金额：-100;页面交易入金mt金额：100.0\ndemo\\cl_deposit_withdrawal_list\\action_bin\\test_verify_deposti_withdrawal.py:156 in test_verify_deposit_withdrawal_list() -> check.equal(verifyList.mongodbDeposit[i]['mt4Amt'],verifyList.deposti_list[i]['mt4Amt'],\n------------------------------------------------------------\nFailed Checks: 18",
       "time" : {
-        "start" : 1634543496415,
-        "stop" : 1634543520205,
-        "duration" : 23790
+        "start" : 1653446488274,
+        "stop" : 1653446606703,
+        "duration" : 118429
       }
     } ]
   }

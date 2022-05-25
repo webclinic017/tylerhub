@@ -1,3 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Oct 18 15:51:00 CST 2021","Mon Oct 18 15:51:36 CST 2021","35993","demo.deposit_withdrawal_list.action_bin","test_verify_deposti_withdrawal","Test_deposti_withdrawal_list","","","test_verify_deposit_withdrawal_list[data0]","读取测试文档数据，执行用例"
-"passed","Mon Oct 18 15:51:36 CST 2021","Mon Oct 18 15:52:00 CST 2021","23790","demo.deposit_withdrawal_list.action_bin","test_verify_deposti_withdrawal","Test_deposti_withdrawal_list","","","test_verify_deposit_withdrawal_list[data1]","读取测试文档数据，执行用例"
+"failed","Wed May 25 10:41:28 GMT+08:00 2022","Wed May 25 10:43:26 GMT+08:00 2022","118429","demo.cl_deposit_withdrawal_list.action_bin","test_verify_deposti_withdrawal","Test_deposti_withdrawal_list","","","test_verify_deposit_withdrawal_list[data0]","读取测试文档数据，执行用例"
+"passed","Wed May 25 10:43:26 GMT+08:00 2022","Wed May 25 10:44:47 GMT+08:00 2022","80888","demo.cl_deposit_withdrawal_list.action_bin","test_verify_deposti_withdrawal","Test_deposti_withdrawal_list","","","test_verify_deposit_withdrawal_list[data1]","读取测试文档数据，执行用例"

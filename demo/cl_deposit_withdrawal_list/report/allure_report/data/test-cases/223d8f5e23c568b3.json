@@ -1,0 +1,3679 @@
+{
+  "uid" : "223d8f5e23c568b3",
+  "name" : "test_verify_deposit_withdrawal_list[data1]",
+  "fullName" : "demo.cl_deposit_withdrawal_list.action_bin.test_verify_deposti_withdrawal.Test_deposti_withdrawal_list#test_verify_deposit_withdrawal_list",
+  "historyId" : "f8df8090e8dff32049ada8cec59d5207",
+  "time" : {
+    "start" : 1653363833017,
+    "stop" : 1653363917370,
+    "duration" : 84353
+  },
+  "description" : "读取测试文档数据，执行用例",
+  "descriptionHtml" : "<p>读取测试文档数据，执行用例</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_deposti_withdrawal_list",
+    "time" : {
+      "start" : 1653363653256,
+      "stop" : 1653363709668,
+      "duration" : 56412
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "读取测试文档数据，执行用例",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "获取当前测试数据下标",
+      "time" : {
+        "start" : 1653363833019,
+        "stop" : 1653363833019,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "bos登录cp，进入出入金记录页面",
+      "time" : {
+        "start" : 1653363833019,
+        "stop" : 1653363852695,
+        "duration" : 19676
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "判断当前时间段是否存在出入金转账记录",
+      "time" : {
+        "start" : 1653363852696,
+        "stop" : 1653363884834,
+        "duration" : 32138
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "测试账号：1200008143在该时间段存在出入金转账记录",
+        "time" : {
+          "start" : 1653363865187,
+          "stop" : 1653363884834,
+          "duration" : 19647
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "判断当前时间段是否存在出金记录",
+          "time" : {
+            "start" : 1653363865187,
+            "stop" : 1653363871151,
+            "duration" : 5964
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "存在出金记录13条，断言页面每条出金记录是否与数据库一致",
+            "time" : {
+              "start" : 1653363871145,
+              "stop" : 1653363871151,
+              "duration" : 6
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "断言出金条数，数据库13条，页面13条",
+              "time" : {
+                "start" : 1653363871145,
+                "stop" : 1653363871145,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-10-18 11:06；页面出金时间 2021-10-18 11:06",
+              "time" : {
+                "start" : 1653363871145,
+                "stop" : 1653363871145,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363871145,
+                "stop" : 1653363871145,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-10-18 10:41；页面出金时间 2021-10-18 10:41",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-16 05:19；页面出金时间 2021-09-16 05:19",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871146,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363871146,
+                "stop" : 1653363871147,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 12:10；页面出金时间 2021-09-15 12:10",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 12:04；页面出金时间 2021-09-15 12:04",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 11:56；页面出金时间 2021-09-15 11:56",
+              "time" : {
+                "start" : 1653363871147,
+                "stop" : 1653363871147,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 11:52；页面出金时间 2021-09-15 11:52",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 11:40；页面出金时间 2021-09-15 11:40",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871148,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363871148,
+                "stop" : 1653363871149,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871149,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871149,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 11:34；页面出金时间 2021-09-15 11:34",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871149,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871149,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871149,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871149,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871149,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871149,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 10:38；页面出金时间 2021-09-15 10:38",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871149,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 738.15；页面出金交易金额 738.15",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871149,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871149,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 777；页面出金mt金额 777.0",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871149,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871149,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363871149,
+                "stop" : 1653363871150,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-10 05:45；页面出金时间 2021-09-10 05:45",
+              "time" : {
+                "start" : 1653363871150,
+                "stop" : 1653363871150,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 96.9；页面出金交易金额 96.9",
+              "time" : {
+                "start" : 1653363871150,
+                "stop" : 1653363871150,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363871150,
+                "stop" : 1653363871150,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 102；页面出金mt金额 102.0",
+              "time" : {
+                "start" : 1653363871150,
+                "stop" : 1653363871150,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363871150,
+                "stop" : 1653363871150,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363871150,
+                "stop" : 1653363871150,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-10 05:34；页面出金时间 2021-09-10 05:34",
+              "time" : {
+                "start" : 1653363871150,
+                "stop" : 1653363871150,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 7；页面出金交易金额 7.0",
+              "time" : {
+                "start" : 1653363871150,
+                "stop" : 1653363871150,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363871150,
+                "stop" : 1653363871150,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 12；页面出金mt金额 12.0",
+              "time" : {
+                "start" : 1653363871150,
+                "stop" : 1653363871150,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363871150,
+                "stop" : 1653363871150,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363871150,
+                "stop" : 1653363871150,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-10 05:32；页面出金时间 2021-09-10 05:32",
+              "time" : {
+                "start" : 1653363871150,
+                "stop" : 1653363871151,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 5；页面出金交易金额 5.0",
+              "time" : {
+                "start" : 1653363871151,
+                "stop" : 1653363871151,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363871151,
+                "stop" : 1653363871151,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 10；页面出金mt金额 10.0",
+              "time" : {
+                "start" : 1653363871151,
+                "stop" : 1653363871151,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363871151,
+                "stop" : 1653363871151,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363871151,
+                "stop" : 1653363871151,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : true,
+            "stepsCount" : 79
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "hasContent" : true,
+          "stepsCount" : 80
+        }, {
+          "name" : "判断当前时间段是否存在入金记录",
+          "time" : {
+            "start" : 1653363871151,
+            "stop" : 1653363875746,
+            "duration" : 4595
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "存在入金记录5条，断言页面每条入金记录是否与数据库一致",
+            "time" : {
+              "start" : 1653363875744,
+              "stop" : 1653363875746,
+              "duration" : 2
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "断言入金条数，数据库5条，页面5条",
+              "time" : {
+                "start" : 1653363875744,
+                "stop" : 1653363875744,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库入金时间 2021-09-24 10:19；页面入金时间 2021-09-24 10:19",
+              "time" : {
+                "start" : 1653363875744,
+                "stop" : 1653363875744,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金交易金额：数据库入金交易金额 208920；页面交易金额 208920.0",
+              "time" : {
+                "start" : 1653363875744,
+                "stop" : 1653363875744,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金汇率：数据库入金汇率 4.1783；页面入金汇率 4.1783",
+              "time" : {
+                "start" : 1653363875744,
+                "stop" : 1653363875744,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金mt金额：数据库入金mt金额 50001.2；页面入金mt金额 50001.2",
+              "time" : {
+                "start" : 1653363875744,
+                "stop" : 1653363875744,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金状态：数据库入金状态 S；页面入金状态 成功",
+              "time" : {
+                "start" : 1653363875744,
+                "stop" : 1653363875744,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金渠道：数据库入金渠道 walaopayMYR",
+              "time" : {
+                "start" : 1653363875744,
+                "stop" : 1653363875744,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库入金时间 2021-09-24 10:19；页面入金时间 2021-09-24 10:19",
+              "time" : {
+                "start" : 1653363875744,
+                "stop" : 1653363875744,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金交易金额：数据库入金交易金额 21；页面交易金额 21.0",
+              "time" : {
+                "start" : 1653363875744,
+                "stop" : 1653363875744,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金汇率：数据库入金汇率 4.1783；页面入金汇率 4.1783",
+              "time" : {
+                "start" : 1653363875744,
+                "stop" : 1653363875744,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金mt金额：数据库入金mt金额 5.03；页面入金mt金额 5.03",
+              "time" : {
+                "start" : 1653363875745,
+                "stop" : 1653363875745,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金状态：数据库入金状态 S；页面入金状态 成功",
+              "time" : {
+                "start" : 1653363875745,
+                "stop" : 1653363875745,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金渠道：数据库入金渠道 walaopayMYR",
+              "time" : {
+                "start" : 1653363875745,
+                "stop" : 1653363875745,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库入金时间 2021-09-10 06:01；页面入金时间 2021-09-10 06:01",
+              "time" : {
+                "start" : 1653363875745,
+                "stop" : 1653363875745,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金交易金额：数据库入金交易金额 7000；页面交易金额 7000.0",
+              "time" : {
+                "start" : 1653363875745,
+                "stop" : 1653363875745,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金汇率：数据库入金汇率 1；页面入金汇率 1.0",
+              "time" : {
+                "start" : 1653363875745,
+                "stop" : 1653363875745,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金mt金额：数据库入金mt金额 7000；页面入金mt金额 7000.0",
+              "time" : {
+                "start" : 1653363875745,
+                "stop" : 1653363875745,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金状态：数据库入金状态 S；页面入金状态 成功",
+              "time" : {
+                "start" : 1653363875745,
+                "stop" : 1653363875745,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金渠道：数据库入金渠道 bankwire",
+              "time" : {
+                "start" : 1653363875745,
+                "stop" : 1653363875745,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库入金时间 2021-09-10 05:35；页面入金时间 2021-09-10 05:35",
+              "time" : {
+                "start" : 1653363875745,
+                "stop" : 1653363875745,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金交易金额：数据库入金交易金额 5000；页面交易金额 5000.0",
+              "time" : {
+                "start" : 1653363875745,
+                "stop" : 1653363875745,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金汇率：数据库入金汇率 1；页面入金汇率 1.0",
+              "time" : {
+                "start" : 1653363875745,
+                "stop" : 1653363875745,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金mt金额：数据库入金mt金额 5000；页面入金mt金额 5000.0",
+              "time" : {
+                "start" : 1653363875745,
+                "stop" : 1653363875745,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金状态：数据库入金状态 S；页面入金状态 成功",
+              "time" : {
+                "start" : 1653363875746,
+                "stop" : 1653363875746,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金渠道：数据库入金渠道 skrill",
+              "time" : {
+                "start" : 1653363875746,
+                "stop" : 1653363875746,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库入金时间 2021-09-06 10:49；页面入金时间 2021-09-06 10:49",
+              "time" : {
+                "start" : 1653363875746,
+                "stop" : 1653363875746,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金交易金额：数据库入金交易金额 100；页面交易金额 100.0",
+              "time" : {
+                "start" : 1653363875746,
+                "stop" : 1653363875746,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金汇率：数据库入金汇率 1；页面入金汇率 1.0",
+              "time" : {
+                "start" : 1653363875746,
+                "stop" : 1653363875746,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金mt金额：数据库入金mt金额 100；页面入金mt金额 100.0",
+              "time" : {
+                "start" : 1653363875746,
+                "stop" : 1653363875746,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金状态：数据库入金状态 S；页面入金状态 成功",
+              "time" : {
+                "start" : 1653363875746,
+                "stop" : 1653363875746,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金渠道：数据库入金渠道 bankwire",
+              "time" : {
+                "start" : 1653363875746,
+                "stop" : 1653363875746,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : true,
+            "stepsCount" : 31
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "hasContent" : true,
+          "stepsCount" : 32
+        }, {
+          "name" : "判断当前时间段是否存在转账记录",
+          "time" : {
+            "start" : 1653363875746,
+            "stop" : 1653363884834,
+            "duration" : 9088
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "不存在转账记录，断言数据库数据库是否为空",
+            "time" : {
+              "start" : 1653363884833,
+              "stop" : 1653363884834,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "hasContent" : true,
+          "stepsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : true,
+        "stepsCount" : 116
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 117
+    }, {
+      "name" : "判断当前时间段是否存在出入金转账记录",
+      "time" : {
+        "start" : 1653363884834,
+        "stop" : 1653363917369,
+        "duration" : 32535
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "测试账号：1200008143在该时间段存在出入金转账记录",
+        "time" : {
+          "start" : 1653363897378,
+          "stop" : 1653363917369,
+          "duration" : 19991
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "判断当前时间段是否存在出金记录",
+          "time" : {
+            "start" : 1653363897378,
+            "stop" : 1653363903995,
+            "duration" : 6617
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "存在出金记录13条，断言页面每条出金记录是否与数据库一致",
+            "time" : {
+              "start" : 1653363903988,
+              "stop" : 1653363903995,
+              "duration" : 7
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "断言出金条数，数据库13条，页面13条",
+              "time" : {
+                "start" : 1653363903989,
+                "stop" : 1653363903989,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-10-18 11:06；页面出金时间 2021-10-18 11:06",
+              "time" : {
+                "start" : 1653363903989,
+                "stop" : 1653363903989,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363903989,
+                "stop" : 1653363903989,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363903989,
+                "stop" : 1653363903989,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363903989,
+                "stop" : 1653363903990,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363903990,
+                "stop" : 1653363903990,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363903990,
+                "stop" : 1653363903990,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-10-18 10:41；页面出金时间 2021-10-18 10:41",
+              "time" : {
+                "start" : 1653363903990,
+                "stop" : 1653363903990,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363903990,
+                "stop" : 1653363903990,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363903990,
+                "stop" : 1653363903990,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363903990,
+                "stop" : 1653363903990,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363903990,
+                "stop" : 1653363903990,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363903990,
+                "stop" : 1653363903990,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-16 05:19；页面出金时间 2021-09-16 05:19",
+              "time" : {
+                "start" : 1653363903990,
+                "stop" : 1653363903990,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363903990,
+                "stop" : 1653363903990,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363903990,
+                "stop" : 1653363903991,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363903991,
+                "stop" : 1653363903991,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363903991,
+                "stop" : 1653363903991,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363903991,
+                "stop" : 1653363903991,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 12:10；页面出金时间 2021-09-15 12:10",
+              "time" : {
+                "start" : 1653363903991,
+                "stop" : 1653363903991,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363903991,
+                "stop" : 1653363903991,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363903991,
+                "stop" : 1653363903991,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363903991,
+                "stop" : 1653363903991,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363903991,
+                "stop" : 1653363903991,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363903991,
+                "stop" : 1653363903991,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 12:04；页面出金时间 2021-09-15 12:04",
+              "time" : {
+                "start" : 1653363903991,
+                "stop" : 1653363903991,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363903991,
+                "stop" : 1653363903991,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363903992,
+                "stop" : 1653363903992,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363903992,
+                "stop" : 1653363903992,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363903992,
+                "stop" : 1653363903992,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363903992,
+                "stop" : 1653363903992,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 11:56；页面出金时间 2021-09-15 11:56",
+              "time" : {
+                "start" : 1653363903992,
+                "stop" : 1653363903992,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363903992,
+                "stop" : 1653363903992,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363903992,
+                "stop" : 1653363903992,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363903992,
+                "stop" : 1653363903992,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363903992,
+                "stop" : 1653363903992,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363903992,
+                "stop" : 1653363903992,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 11:52；页面出金时间 2021-09-15 11:52",
+              "time" : {
+                "start" : 1653363903992,
+                "stop" : 1653363903992,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363903992,
+                "stop" : 1653363903992,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 11:40；页面出金时间 2021-09-15 11:40",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 11:34；页面出金时间 2021-09-15 11:34",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 95.95；页面出金交易金额 95.95",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 101；页面出金mt金额 101.0",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363903993,
+                "stop" : 1653363903993,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363903994,
+                "stop" : 1653363903994,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-15 10:38；页面出金时间 2021-09-15 10:38",
+              "time" : {
+                "start" : 1653363903994,
+                "stop" : 1653363903994,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 738.15；页面出金交易金额 738.15",
+              "time" : {
+                "start" : 1653363903994,
+                "stop" : 1653363903994,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363903994,
+                "stop" : 1653363903994,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 777；页面出金mt金额 777.0",
+              "time" : {
+                "start" : 1653363903994,
+                "stop" : 1653363903994,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363903994,
+                "stop" : 1653363903994,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363903994,
+                "stop" : 1653363903994,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-10 05:45；页面出金时间 2021-09-10 05:45",
+              "time" : {
+                "start" : 1653363903994,
+                "stop" : 1653363903994,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 96.9；页面出金交易金额 96.9",
+              "time" : {
+                "start" : 1653363903994,
+                "stop" : 1653363903994,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363903994,
+                "stop" : 1653363903994,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 102；页面出金mt金额 102.0",
+              "time" : {
+                "start" : 1653363903994,
+                "stop" : 1653363903994,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363903994,
+                "stop" : 1653363903994,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363903994,
+                "stop" : 1653363903994,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-10 05:34；页面出金时间 2021-09-10 05:34",
+              "time" : {
+                "start" : 1653363903995,
+                "stop" : 1653363903995,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 7；页面出金交易金额 7.0",
+              "time" : {
+                "start" : 1653363903995,
+                "stop" : 1653363903995,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363903995,
+                "stop" : 1653363903995,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 12；页面出金mt金额 12.0",
+              "time" : {
+                "start" : 1653363903995,
+                "stop" : 1653363903995,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363903995,
+                "stop" : 1653363903995,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363903995,
+                "stop" : 1653363903995,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库出金时间 2021-09-10 05:32；页面出金时间 2021-09-10 05:32",
+              "time" : {
+                "start" : 1653363903995,
+                "stop" : 1653363903995,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言交易金额：数据库出金交易金额 5；页面出金交易金额 5.0",
+              "time" : {
+                "start" : 1653363903995,
+                "stop" : 1653363903995,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金汇率：数据库出金汇率 1；页面出金汇率 1.0",
+              "time" : {
+                "start" : 1653363903995,
+                "stop" : 1653363903995,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金mt金额：数据库出金mt金额 10；页面出金mt金额 10.0",
+              "time" : {
+                "start" : 1653363903995,
+                "stop" : 1653363903995,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金状态：数据库出金状态 S；页面出金状态 成功",
+              "time" : {
+                "start" : 1653363903995,
+                "stop" : 1653363903995,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言出金渠道：数据库出金渠道 E-wallet",
+              "time" : {
+                "start" : 1653363903995,
+                "stop" : 1653363903995,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : true,
+            "stepsCount" : 79
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "hasContent" : true,
+          "stepsCount" : 80
+        }, {
+          "name" : "判断当前时间段是否存在入金记录",
+          "time" : {
+            "start" : 1653363903995,
+            "stop" : 1653363908372,
+            "duration" : 4377
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "存在入金记录5条，断言页面每条入金记录是否与数据库一致",
+            "time" : {
+              "start" : 1653363908370,
+              "stop" : 1653363908372,
+              "duration" : 2
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "断言入金条数，数据库5条，页面5条",
+              "time" : {
+                "start" : 1653363908370,
+                "stop" : 1653363908370,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库入金时间 2021-09-24 10:19；页面入金时间 2021-09-24 10:19",
+              "time" : {
+                "start" : 1653363908370,
+                "stop" : 1653363908370,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金交易金额：数据库入金交易金额 208920；页面交易金额 208920.0",
+              "time" : {
+                "start" : 1653363908370,
+                "stop" : 1653363908370,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金汇率：数据库入金汇率 4.1783；页面入金汇率 4.1783",
+              "time" : {
+                "start" : 1653363908370,
+                "stop" : 1653363908370,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金mt金额：数据库入金mt金额 50001.2；页面入金mt金额 50001.2",
+              "time" : {
+                "start" : 1653363908370,
+                "stop" : 1653363908370,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金状态：数据库入金状态 S；页面入金状态 成功",
+              "time" : {
+                "start" : 1653363908370,
+                "stop" : 1653363908370,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金渠道：数据库入金渠道 walaopayMYR",
+              "time" : {
+                "start" : 1653363908370,
+                "stop" : 1653363908370,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库入金时间 2021-09-24 10:19；页面入金时间 2021-09-24 10:19",
+              "time" : {
+                "start" : 1653363908371,
+                "stop" : 1653363908371,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金交易金额：数据库入金交易金额 21；页面交易金额 21.0",
+              "time" : {
+                "start" : 1653363908371,
+                "stop" : 1653363908371,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金汇率：数据库入金汇率 4.1783；页面入金汇率 4.1783",
+              "time" : {
+                "start" : 1653363908371,
+                "stop" : 1653363908371,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金mt金额：数据库入金mt金额 5.03；页面入金mt金额 5.03",
+              "time" : {
+                "start" : 1653363908371,
+                "stop" : 1653363908371,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金状态：数据库入金状态 S；页面入金状态 成功",
+              "time" : {
+                "start" : 1653363908371,
+                "stop" : 1653363908371,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金渠道：数据库入金渠道 walaopayMYR",
+              "time" : {
+                "start" : 1653363908371,
+                "stop" : 1653363908371,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库入金时间 2021-09-10 06:01；页面入金时间 2021-09-10 06:01",
+              "time" : {
+                "start" : 1653363908371,
+                "stop" : 1653363908371,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金交易金额：数据库入金交易金额 7000；页面交易金额 7000.0",
+              "time" : {
+                "start" : 1653363908371,
+                "stop" : 1653363908371,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金汇率：数据库入金汇率 1；页面入金汇率 1.0",
+              "time" : {
+                "start" : 1653363908371,
+                "stop" : 1653363908371,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金mt金额：数据库入金mt金额 7000；页面入金mt金额 7000.0",
+              "time" : {
+                "start" : 1653363908371,
+                "stop" : 1653363908371,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金状态：数据库入金状态 S；页面入金状态 成功",
+              "time" : {
+                "start" : 1653363908371,
+                "stop" : 1653363908371,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金渠道：数据库入金渠道 bankwire",
+              "time" : {
+                "start" : 1653363908371,
+                "stop" : 1653363908372,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库入金时间 2021-09-10 05:35；页面入金时间 2021-09-10 05:35",
+              "time" : {
+                "start" : 1653363908372,
+                "stop" : 1653363908372,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金交易金额：数据库入金交易金额 5000；页面交易金额 5000.0",
+              "time" : {
+                "start" : 1653363908372,
+                "stop" : 1653363908372,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金汇率：数据库入金汇率 1；页面入金汇率 1.0",
+              "time" : {
+                "start" : 1653363908372,
+                "stop" : 1653363908372,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金mt金额：数据库入金mt金额 5000；页面入金mt金额 5000.0",
+              "time" : {
+                "start" : 1653363908372,
+                "stop" : 1653363908372,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金状态：数据库入金状态 S；页面入金状态 成功",
+              "time" : {
+                "start" : 1653363908372,
+                "stop" : 1653363908372,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金渠道：数据库入金渠道 skrill",
+              "time" : {
+                "start" : 1653363908372,
+                "stop" : 1653363908372,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言时间：数据库入金时间 2021-09-06 10:49；页面入金时间 2021-09-06 10:49",
+              "time" : {
+                "start" : 1653363908372,
+                "stop" : 1653363908372,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金交易金额：数据库入金交易金额 100；页面交易金额 100.0",
+              "time" : {
+                "start" : 1653363908372,
+                "stop" : 1653363908372,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金汇率：数据库入金汇率 1；页面入金汇率 1.0",
+              "time" : {
+                "start" : 1653363908372,
+                "stop" : 1653363908372,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金mt金额：数据库入金mt金额 100；页面入金mt金额 100.0",
+              "time" : {
+                "start" : 1653363908372,
+                "stop" : 1653363908372,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金状态：数据库入金状态 S；页面入金状态 成功",
+              "time" : {
+                "start" : 1653363908372,
+                "stop" : 1653363908372,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            }, {
+              "name" : "断言入金渠道：数据库入金渠道 bankwire",
+              "time" : {
+                "start" : 1653363908372,
+                "stop" : 1653363908372,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "shouldDisplayMessage" : false,
+              "attachmentsCount" : 0,
+              "hasContent" : false,
+              "stepsCount" : 0
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : true,
+            "stepsCount" : 31
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "hasContent" : true,
+          "stepsCount" : 32
+        }, {
+          "name" : "判断当前时间段是否存在转账记录",
+          "time" : {
+            "start" : 1653363908372,
+            "stop" : 1653363917369,
+            "duration" : 8997
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "不存在转账记录，断言数据库数据库是否为空",
+            "time" : {
+              "start" : 1653363917369,
+              "stop" : 1653363917369,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0,
+            "hasContent" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "hasContent" : true,
+          "stepsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : true,
+        "stepsCount" : 116
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 117
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 238
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_deposti_withdrawal_list::0",
+    "time" : {
+      "start" : 1653363919897,
+      "stop" : 1653363919897,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用例执行"
+  }, {
+    "name" : "epic",
+    "value" : "查询出入金列表"
+  }, {
+    "name" : "feature",
+    "value" : "随机选择时间，查询两次出入金列表数据并与数据库对应数据内数据核对"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.cl_deposit_withdrawal_list.action_bin"
+  }, {
+    "name" : "suite",
+    "value" : "test_verify_deposti_withdrawal"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_deposti_withdrawal_list"
+  }, {
+    "name" : "host",
+    "value" : "SZ01-QA-G-10"
+  }, {
+    "name" : "thread",
+    "value" : "17396-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.cl_deposit_withdrawal_list.action_bin.test_verify_deposti_withdrawal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'主账号': 1200008143.0}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "223d8f5e23c568b3.json",
+  "parameterValues" : [ "{'主账号': 1200008143.0}" ]
+}

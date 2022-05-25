@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:27:17
-LastEditTime: 2022-05-10 15:27:59
-LastEditors: Tyler96-QA 1718459369@qq.com
+LastEditTime: 2022-05-23 14:44:35
+LastEditors: Tyler Tang tyler.tang@6317.io
 Description: Query database and save
 FilePath: \tylerhub\demo\public\handle_database.py
 '''
@@ -281,4 +281,6 @@ if __name__=='__main__':
     # print(dataBase.search_in_mysql('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="672007722"',conFig.get_value('mysql_AWS', 'host'),conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all'))
     # print(dataBase.search_mysql_dict('SELECT * FROM report_atfx2_test.mt4_sync_order WHERE Login="672006226"',conFig.get_value('mysql_AWS', 'host'), conFig.get_value('mysql_AWS','user'),conFig.get_value('mysql_AWS','password'),type='all'))
     mongodbDeposit=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'),
-    'atfxgm-sit', 'atfx_fund_adjust',{"$and":[{"status":1},{"tradeAccount": 66200218},{"remark":re.compile('Deposit')}]},'mtOrderNo','amount',N=0)
+    'atfxgm-sit', 'atfx_deposit',{"$and":[{"currStatus":"S"},{"accountNumber": 1000005349}]}
+    ,'createDate','fromAmt','rate','mt4Amt','currStatus','channel',N=0)
+    print(mongodbDeposit)

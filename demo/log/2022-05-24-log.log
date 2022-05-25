@@ -1,0 +1,16 @@
+!!--!!display_finds_element - 2022-05-24 11:19:51,937 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-24 11:19:51,939 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-05-24 11:19:51,941 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!clear_error - 2022-05-24 11:19:58,400 - browser_actions - [browser_actions.py-->line:288] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-05-24 11:20:07,322 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-05-24 11:20:07,322 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-24 11:20:07,329 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-24 11:20:07,329 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-05-24 11:20:07,332 - browser_actions - [browser_actions.py-->line:278] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2022-05-24 11:31:19,800 - browser_actions - [browser_actions.py-->line:142] - ERROR: 元素不存在或者不可见：('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+!!--!!find_element - 2022-05-24 11:31:19,805 - browser_actions - [browser_actions.py-->line:189] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_text_error - 2022-05-24 11:31:19,807 - browser_actions - [browser_actions.py-->line:295] - ERROR: 'NoneType' object has no attribute 'text'
+close_browser - 2022-05-24 11:31:28,010 - browser_actions - [browser_actions.py-->line:577] - ERROR: 浏览器关闭异常:HTTPConnectionPool(host='127.0.0.1', port=58823): Max retries exceeded with url: /session/741ef4be5364042c4e34ebd74da9b67c/window (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0922B298>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))

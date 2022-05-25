@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-10-08 18:12:06
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-23 15:26:28
+LastEditors: Tyler Tang tyler.tang@6317.io
 Description: This module is used to store random data and data processing.Including regular matching of the re module, etc
 FilePath: tylerhub\demo\public\randomdata.py
 '''
@@ -113,7 +113,13 @@ class Random_data():
         #格式化
         data_time=time.strftime('%Y-%m-%d',data_tuple)
         return data_time
-
+    
+    #判断两个数字大小，返回小数
+    def return_small(self,a,b):
+        if a>b:
+            return b
+        else:
+            return a
 
             
 #测试
@@ -127,7 +133,7 @@ if __name__=='__main__':
     #pub.log_output('test').error('testttttt')
     # print(int(pub.extract_numbers('( 可取款金额 | 50,265.01 USD )'))/100)
     # print(float(int(pub.extract_numbers('您的出金申请將收取5.00USD美元手续费'))/100))
-    print(int(pub.extract_numbers('20.00 USD'))/100)
+    print(pub.return_small(3,8))
 
 
 

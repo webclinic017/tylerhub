@@ -1,13 +1,13 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "f5ca0ecbb5b2baafcf3bba47499c532a",
-    "name" : "demo.deposit_withdrawal_list.action_bin",
+    "uid" : "1efcecc446bde202377e38f391e3fca2",
+    "name" : "demo.cl_deposit_withdrawal_list.action_bin",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 2
     }
