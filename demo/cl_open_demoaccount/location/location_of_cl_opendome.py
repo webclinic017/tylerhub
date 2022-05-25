@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:21:05
-LastEditTime: 2021-09-02 11:46:06
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-25 11:42:44
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\cl_open_demoaccount\location\location_of_cl_opendome.py
 '''
@@ -94,7 +94,13 @@ class Location_of_opendemo(object):
             common.switch_windows(1)
             time.sleep(1)
             self.commeThod.loginbos(username, password)
-            time.sleep(2)
+            time.sleep(1)
+            #判断页面是否加载完成
+            while True:
+                if common.ele_is_displayed('css,.ivu-spin-dot', 1):
+                    continue
+                else:
+                    break
             #客户管理
             common.display_click('css,[width="200"] li .ivu-icon-ios-arrow-down')
             time.sleep(1)
@@ -118,15 +124,28 @@ class Location_of_opendemo(object):
     def creat_demoaccount(self):
         time.sleep(1)
         try:
+            #判断页面是否加载完成
             while True:
-                self.attribute=common.get_attributes('xpath,//div[@class="el-loading-mask"]','style')
-                if 'display' not in self.attribute:
+                if common.ele_is_displayed("css,[src='/static/img/loading.webm']", 1):
                     continue
                 else:
                     break
-            #点击模拟账号
-            common.display_click('css,.el-tabs__item',1)
             time.sleep(1)
+            while True:
+                self.loading_attributes=common.get_attributes('css,.el-loading-mask', 'style')
+                if 'none' in self.loading_attributes:
+                    break
+                else:
+                    continue
+            #点击模拟账号
+            common.display_click('css,#tab-demo')
+            time.sleep(1)
+            while True:
+                self.demoLoading=common.get_attributes('css,.el-loading-mask','style')
+                if 'none' in self.demoLoading:
+                    break
+                else:
+                    continue
             #开立模拟账号
             common.display_click('xpath,//span[text()="开立模拟交易账号"]')
             time.sleep(1)
@@ -142,6 +161,11 @@ class Location_of_opendemo(object):
             #点击下一步
             common.display_click('css,.el-button > span')
             time.sleep(1)
+            while True:
+                if common.ele_is_displayed('css,.circular', 1):
+                    continue
+                else:
+                    break
         except Exception as msg:
             log.my_logger('!!--!!creat_demoaccount').error(msg)
 
@@ -149,7 +173,7 @@ class Location_of_opendemo(object):
     def get_demoaccount(self,account:int):
         try:
             #获取创建成功后文本
-            time.sleep(2)
+            time.sleep(1)
             self.successText=common.display_get_text('css,.title')
             if '创建完成' in self.successText:
                 #查询数据库获取最新创建的demo账号
@@ -157,15 +181,23 @@ class Location_of_opendemo(object):
                 {"accountNumber":account},'tradeAccount',N=1)
                 self.demoAccount=int(self.serchData[0]['tradeAccount'])
                 print('demo账号创建成功：{}'.format(self.demoAccount))
+                
                 #返回首页，demo账号列表
                 common.display_click("xpath,//span[.='首页']")
-                time.sleep(2)
+                time.sleep(1)
+                while True:
+                    self.demoLoading=common.get_attributes('css,.el-loading-mask','style')
+                    if 'none' in self.demoLoading:
+                        break
+                    else:
+                        continue
                 #demo账号列表
                 common.display_click('css,#tab-demo')
-                return self.demoAccount
+                return True
             else:
                 common.get_screenpict('creat_demo_failed')
                 print('创建失败,截图保持在项目目录picture下')
+                return False
         except Exception as msg:
             log.my_logger('!!--!!get_demoaccount').error(msg)
         
@@ -234,22 +266,21 @@ class Location_of_opendemo(object):
         self.get_demo_markup()
 
     #查询数据库，获取新开demo账号组别
-    def search_mongodb_demoinfo(self,account,tdAccount):
+    def search_mongodb_demoinfo(self,account):
         try:
             time.sleep(1)
             #查询数据库
             self.serchDemodata=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atfxgm-sit', 'atfx_trade_account',
-            {"$and": [{"accountNumber": account}, {"tradeAccount": "{}".format(tdAccount)}]},'group','leverage','spreadType','markup',N=1)
+            {"$and": [{"accountNumber": account}, {"tradeAccount": "{}".format(self.demoAccount)}]},'group','leverage','spreadType','markup',N=1)
             #输出
             print('新开demo账号数据数据库信息，组别：{}，杠杆：{}，点差：{}，加点：{}'.format(self.serchDemodata[0]['group'],
             self.serchDemodata[0]['leverage'],self.serchDemodata[0]['spreadType'],self.serchDemodata[0]['markup']))
-            return self.serchDemodata
         except Exception as msg:
             log.my_logger('!!--!!search_mongodb_demoinfo').error(msg)
 
 
     #获取新开demo账号在cp所处位置
-    def where_demo_incp(self,tdAccount):
+    def where_demo_incp(self):
         try:
             common.switch_windows(0)
             time.sleep(1)
@@ -257,7 +288,7 @@ class Location_of_opendemo(object):
             time.sleep(1)
             print('当前账号已开通{}个demo交易账号'.format(self.cpDemolist))
             for i in range(0,self.cpDemolist):
-                if tdAccount==int(randomData.regex(r'\d{9}', common.get_text('css,.tradeAccount-info > div .account-number-cla',i))):
+                if self.demoAccount==int(randomData.regex(r'\d{9}', common.get_text('css,.tradeAccount-info > div .account-number-cla',i))):
                     print('新开demo账号位于第{}个'.format(i+1))
                     self.row=i
                     return self.row
@@ -291,12 +322,12 @@ class Location_of_opendemo(object):
             log.my_logger('!!--!!revise_demolever').error(msg)
 
     #数据库查询修杠杆是否与修改后杠杆一致
-    def revise_mongolever(self,account,tdAccount):
+    def revise_mongolever(self,account):
         try:
             self.serchData=dataBase.search_in_mongodb(conFig.get_value('mongodb', 'uri'), 'atfxgm-sit', 'atfx_trade_account',
-            {"$and": [{"accountNumber": account}, {"tradeAccount": "{}".format(tdAccount)}]},'leverage',N=1)
+            {"$and": [{"accountNumber": account}, {"tradeAccount": "{}".format(self.demoAccount)}]},'leverage',N=1)
             self.mongoReviselever=int(self.serchData[0]['leverage'])
-            print('修改杠杆后，数据库{}账号杠杆为{}'.format(tdAccount,self.mongoReviselever))
+            print('修改杠杆后，数据库{}账号杠杆为{}'.format(self.demoAccount,self.mongoReviselever))
             return self.mongoReviselever
         except Exception as msg:
             log.my_logger('!!--!!revise_mongolever').error(msg)

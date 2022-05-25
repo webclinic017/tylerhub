@@ -1,8 +1,8 @@
 '''
 Author:tyler
 Date: 2021-08-26 18:21:36
-LastEditTime: 2021-09-02 11:44:12
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-25 11:42:51
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: Execution use case
 FilePath: \tylerhub\demo\cl_open_demoaccount\action_bin\test_cl_opendemo.py
 '''
@@ -66,9 +66,12 @@ class Test_opendemo_cl(object):
             openDemo.creat_demoaccount()
         
         with allure.step('查询数据库，获取新开demo账号信息'):
-            openDemo.get_demoaccount(int(data['主账号']))
-            openDemo.get_demo_info()
-            openDemo.search_mongodb_demoinfo(int(data['主账号']),openDemo.demoAccount)
+            if openDemo.get_demoaccount(int(data['主账号'])):
+                print('demo账号创建失败，用例跳过')
+                pytest.skip()
+            else:
+                openDemo.get_demo_info()
+                openDemo.search_mongodb_demoinfo(int(data['主账号']))
         
         with allure.step('断言新开demo账号信息是否与数据库一致'):
             pytest.assume(openDemo.demoGroup == str(openDemo.serchDemodata[0]['group']))
@@ -77,13 +80,13 @@ class Test_opendemo_cl(object):
             pytest.assume(openDemo.demoBit == int(openDemo.serchDemodata[0]['markup']))
 
         with allure.step('获取新开demo位于demo列表中第几个'):
-            openDemo.where_demo_incp(openDemo.demoAccount)
+            openDemo.where_demo_incp()
 
         with allure.step('修改demo账号杠杆'):
             openDemo.revise_demolever(openDemo.row)
 
         with allure.step('断言修改后杠杆是否与数据库一致'):
-            openDemo.revise_mongolever(int(data['主账号']),openDemo.demoAccount)
+            openDemo.revise_mongolever(int(data['主账号']))
             pytest.assume(openDemo.reviseLever == int(openDemo.serchData[0]['leverage']))
         
         with allure.step('保存测试数据'):
