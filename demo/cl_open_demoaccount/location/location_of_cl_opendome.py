@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-08-26 18:21:05
-LastEditTime: 2022-05-25 16:50:36
+LastEditTime: 2022-05-25 18:00:55
 LastEditors: Tyler Tang tyler.tang@6317.io
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\cl_open_demoaccount\location\location_of_cl_opendome.py

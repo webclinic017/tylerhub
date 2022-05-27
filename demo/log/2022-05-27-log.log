@@ -1,0 +1,292 @@
+!!--!!display_click - 2022-05-27 09:57:14,607 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-800c8fda="">...</span> is not clickable at point (74, 158). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1292;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:20,702 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:20,702 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!login_bos - 2022-05-27 09:57:24,872 - common_method - [common_method.py-->line:141] - ERROR: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:38,093 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-800c8fda="">...</span> is not clickable at point (74, 158). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:38,093 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-800c8fda="">...</span> is not clickable at point (74, 158). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:38,093 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-800c8fda="">...</span> is not clickable at point (74, 158). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:39,699 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-1fb3867c="">...</span> is not clickable at point (71, 228). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:39,699 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-1fb3867c="">...</span> is not clickable at point (71, 228). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:39,699 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-1fb3867c="">...</span> is not clickable at point (71, 228). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:39,699 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-1fb3867c="">...</span> is not clickable at point (71, 228). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:42,820 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (937, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:42,820 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (937, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:42,820 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (937, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:42,820 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (937, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:42,820 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (937, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:48,365 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:48,365 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:48,365 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:48,365 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:48,365 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:48,365 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:50,778 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1158, 230). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:50,778 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1158, 230). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:50,778 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1158, 230). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:50,778 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1158, 230). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:50,778 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1158, 230). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:50,778 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1158, 230). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:50,778 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1158, 230). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:57,510 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:57,510 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:57,510 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:57,510 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:57,510 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:57,510 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:57,510 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:57:57,510 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1797;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:58:00,585 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (438, 277). Other element would receive the click: <div class="ivu-modal-body">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:58:00,585 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (438, 277). Other element would receive the click: <div class="ivu-modal-body">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:58:00,585 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (438, 277). Other element would receive the click: <div class="ivu-modal-body">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:58:00,585 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (438, 277). Other element would receive the click: <div class="ivu-modal-body">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:58:00,585 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (438, 277). Other element would receive the click: <div class="ivu-modal-body">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:58:00,585 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (438, 277). Other element would receive the click: <div class="ivu-modal-body">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:58:00,585 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (438, 277). Other element would receive the click: <div class="ivu-modal-body">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:58:00,585 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (438, 277). Other element would receive the click: <div class="ivu-modal-body">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 09:58:00,585 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (438, 277). Other element would receive the click: <div class="ivu-modal-body">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_finds_element - 2022-05-27 09:58:11,729 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-27 09:58:11,732 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-05-27 09:58:11,735 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!nosuch_elements - 2022-05-27 10:07:19,439 - browser_actions - [browser_actions.py-->line:202] - ERROR: list index out of range
+!!--!!display_click - 2022-05-27 10:07:19,507 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-05-27 10:07:21,825 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-800c8fda="">...</span> is not clickable at point (74, 158). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:21,825 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-800c8fda="">...</span> is not clickable at point (74, 158). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:27,886 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:27,886 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:27,886 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!login_bos - 2022-05-27 10:07:32,044 - common_method - [common_method.py-->line:141] - ERROR: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:47,205 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-800c8fda="">...</span> is not clickable at point (74, 158). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:47,205 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-800c8fda="">...</span> is not clickable at point (74, 158). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:47,205 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-800c8fda="">...</span> is not clickable at point (74, 158). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:47,205 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-800c8fda="">...</span> is not clickable at point (74, 158). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:48,926 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-1fb3867c="">...</span> is not clickable at point (71, 228). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:48,926 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-1fb3867c="">...</span> is not clickable at point (71, 228). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:48,926 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-1fb3867c="">...</span> is not clickable at point (71, 228). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:48,926 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-1fb3867c="">...</span> is not clickable at point (71, 228). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:48,926 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span data-v-1fb3867c="">...</span> is not clickable at point (71, 228). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:52,071 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (933, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:52,071 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (933, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:52,071 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (933, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:52,071 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (933, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:52,071 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (933, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:52,071 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"></i> is not clickable at point (933, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:57,692 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:57,692 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:57,692 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:57,692 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:57,692 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:57,692 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:07:57,692 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:00,722 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1150, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:00,722 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1150, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:00,722 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1150, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:00,722 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1150, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:00,722 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1150, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:00,722 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1150, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:00,722 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1150, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:00,722 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <i class="ivu-icon ivu-icon-ios-search"></i> is not clickable at point (1150, 230). Other element would receive the click: <div class="ivu-col ivu-col-span-12" style="padding-left: 8px; padding-right: 8px;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:08,412 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:08,412 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:08,412 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:08,412 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:08,412 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:08,412 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:08,412 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:08,412 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_click - 2022-05-27 10:08:08,412 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <input type="checkbox" class="ivu-checkbox-input"> is not clickable at point (289, 374). Other element would receive the click: <div class="ivu-modal-wrap" style="z-index: 1318;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!display_finds_element - 2022-05-27 10:08:11,849 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!nosuch_elements - 2022-05-27 10:08:11,852 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-27 10:08:11,852 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-05-27 10:08:11,855 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!find_elements - 2022-05-27 10:08:11,862 - browser_actions - [browser_actions.py-->line:142] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!find_element - 2022-05-27 10:08:11,865 - browser_actions - [browser_actions.py-->line:189] - ERROR: object of type 'NoneType' has no len()
+!!--!!click_error - 2022-05-27 10:08:11,867 - browser_actions - [browser_actions.py-->line:311] - ERROR: 'NoneType' object has no attribute 'click'

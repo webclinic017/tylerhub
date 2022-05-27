@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-08-24 17:18:52
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-26 17:03:05
+LastEditors: Tyler Tang tyler.tang@6317.io
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\deposit\deposit_bin\deposit_in_bos.py
 '''
@@ -53,10 +53,12 @@ class Deposit_bos(unittest.TestCase):
         self.data_index=testdata.index(data)
         print('当前测试账号：主账号：{}；交易账号：{}；入金金额；{}'.format(int(data['主账号']),int(data['交易账号']),data['入金金额']))
         deposit.login_bos(conFig.get_value('bos_login', 'username'),conFig.get_value('bos_login', 'password'))
-        deposit.Deposit_bos_comply(int(data['主账号']),int(data['交易账号']),
-        conFig.get_value('bos_login', 'username2'),conFig.get_value('bos_login', 'password'),int(float(data['入金金额'])))
-        #断言
-        self.assertEqual('成功', deposit.deposit_success())
+        if deposit.Deposit_bos_comply(int(data['主账号']),int(data['交易账号']),
+        conFig.get_value('bos_login', 'username2'),conFig.get_value('bos_login', 'password'),int(float(data['入金金额']))):
+            #断言
+            self.assertEqual('成功', deposit.deposit_success())
+        else:
+            unittest.skip('交易账号{}状态为{}无法入金'.format(int(data['交易账号']),deposit.account_status))
 
 if __name__=='__main__':
     #测试报告

@@ -1532,10 +1532,10 @@ def txt_xls(filename,xlsname):
 #         return a
 # print(return_small(1,5))
 
-try:
-    print(a)
-except Exception as msg:
-    print(55)
+# try:
+#     print(a)
+# except Exception as msg:
+#     print(55)
 
 
 
