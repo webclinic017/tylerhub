@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2022-05-26 17:03:05
-LastEditors: Tyler Tang tyler.tang@6317.io
+LastEditTime: 2022-05-27 10:31:13
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\deposit\deposit_bin\deposit_in_bos.py
 '''
@@ -22,19 +22,22 @@ from about_data import Aboutdata
 from read_dataconfig import ReadConfig
 from location_deposit_of_bos import Location_deposit_bos
 
-#实例化
-deposit=Location_deposit_bos()
-conFig=ReadConfig()
 
-#读取测试文档数据
-e=Aboutdata()
-excelpath=os.path.join(path_deposit,'test_data\deposit_bos.xlsx')
-rows=e.openexcel(excelpath,'Sheet1')
-testdata=e.dict_data()
 
 @ddt.ddt
 class Deposit_bos(unittest.TestCase):
+
+    global dealData,deposit,conFig,excelpath,testdata
     
+    deposit=Location_deposit_bos()
+    conFig=ReadConfig()
+
+    #读取测试文档数据
+    dealData=Aboutdata()
+    excelpath=os.path.join(path_deposit,'test_data\deposit_bos.xlsx')
+    rows=dealData.openexcel(excelpath,'Sheet1')
+    testdata=dealData.dict_data()
+
     @classmethod
     def setUpClass(cls):
         deposit.broswertype()

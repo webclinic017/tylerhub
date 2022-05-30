@@ -1,0 +1,16 @@
+!!--!!find_elements - 2022-05-30 16:36:21,231 - browser_actions - [browser_actions.py-->line:142] - ERROR: 元素不存在或者不可见：Message: invalid selector: Unable to locate an element with the xpath expression [placeholder='请输入邮箱'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '[placeholder='请输入邮箱']' is not a valid XPath expression.
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!find_element - 2022-05-30 16:36:21,231 - browser_actions - [browser_actions.py-->line:189] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2022-05-30 16:36:21,231 - browser_actions - [browser_actions.py-->line:271] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2022-05-30 16:39:53,256 - browser_actions - [browser_actions.py-->line:142] - ERROR: 元素不存在或者不可见：Message: invalid selector: Unable to locate an element with the xpath expression [placeholder='请输入邮箱'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '[placeholder='请输入邮箱']' is not a valid XPath expression.
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!find_element - 2022-05-30 16:39:53,258 - browser_actions - [browser_actions.py-->line:189] - ERROR: object of type 'NoneType' has no len()
+!!--!!input_error - 2022-05-30 16:39:53,258 - browser_actions - [browser_actions.py-->line:271] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-05-30 16:41:27,877 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-30 16:41:27,878 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-05-30 16:41:27,879 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'

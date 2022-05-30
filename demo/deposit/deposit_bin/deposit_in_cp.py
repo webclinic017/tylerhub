@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-05-13 10:43:00
-LastEditTime: 2021-08-25 10:00:31
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-30 17:59:33
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: Execution testcase
 FilePath: \tylerhub\demo\deposit\deposit_bin\deposit_in_cp.py
 '''
@@ -21,18 +21,20 @@ from about_data import Aboutdata
 from read_dataconfig import ReadConfig
 from location_deposit_of_cp import Locations_of_deposit
 
-#实例化
-conFig=ReadConfig()
-deposit=Locations_of_deposit()
-
-#读取测试文档数据
-e=Aboutdata()
-excelpath=os.path.join(path_deposit,'test_data\deposit_cp.xlsx')
-rows=e.openexcel(excelpath,'Sheet1')
-testdata=e.dict_data()
 
 @ddt.ddt
 class Depositin_cp(unittest.TestCase):
+
+    global conFig,deposit,excelpath,testdata
+    #实例化
+    conFig=ReadConfig()
+    deposit=Locations_of_deposit()
+
+    #读取测试文档数据
+    dealData=Aboutdata()
+    excelpath=os.path.join(path_deposit,'test_data\deposit_cp.xlsx')
+    rows=dealData.openexcel(excelpath,'Sheet1')
+    testdata=dealData.dict_data()
 
     @classmethod
     def setUpClass(cls):
@@ -45,23 +47,25 @@ class Depositin_cp(unittest.TestCase):
     def tearDown(self):
         if self.data_index==testdata.index(testdata[-1]):
             deposit.quitbrowser()
-        else:
-            deposit.logoutcp()
-            deposit.logoutbos()
+
 
     @ddt.data(*testdata)
     def test_deposti(self,data):
         #获取每组测试数据的下标
         self.data_index=testdata.index(data)
+        print('当前测试数据：主账号：{}，交易账号：{}，入金金额：{}'.format(int(data['主账号']),int(data['交易账号']),float(data['入金金额'])))
         if self.data_index!=0:
             deposit.remove_topup()
         #判断交易账号是否满足入金权限
-        deposit.is_traccount_can_deposit(int(data['主账号']),int(data['交易账号']))
-        #会员中心入金
-        deposit.deposit_cp(int(data['交易账号']),data['邮箱'],data['登录密码'],int(float(data['入金金额'])),
-        conFig.get_value('bos_login', 'username2'),conFig.get_value('bos_login', 'password'),excelpath,'F','G',self.data_index+2)
-        #断言
-        self.assertEqual('成功', deposit.deposit_success())
+        if deposit.is_traccount_can_deposit(int(data['主账号']),int(data['交易账号'])):
+            #会员中心入金
+            deposit.deposit_cp(int(data['交易账号']),data['邮箱'],data['登录密码'],int(float(data['入金金额'])),
+            conFig.get_value('bos_login', 'username2'),conFig.get_value('bos_login', 'password'),excelpath,'F','G',self.data_index+2)
+            #断言
+            self.assertEqual('成功', deposit.deposit_success())
+        else:
+            print('跳过该用例')
+            unittest.skip('交易账号状态同步中无法入金')
         
 if __name__=='__main__':
     #测试报告

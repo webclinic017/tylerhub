@@ -13,17 +13,18 @@ from randomdata import Random_data
 from read_dataconfig import ReadConfig
 from handlelog import MyLog
 
-#实例化
-common=Commonweb()
-randomData=Random_data()
-e=Aboutdata()
-conFig=ReadConfig()
-log=MyLog()
 
 class Location_deposit_bos():
     """
     bos入金页面定位输入等操作
     """
+
+    global common,randomData,conFig,log
+
+    common=Commonweb()
+    randomData=Random_data()
+    conFig=ReadConfig()
+    log=MyLog()
 
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
