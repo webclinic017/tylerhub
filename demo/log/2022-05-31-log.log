@@ -1,0 +1,83 @@
+!!--!!choose_register_lang - 2022-05-31 09:34:28,852 - common_method - [common_method.py-->line:75] - ERROR: Message: element click intercepted: Element <i data-v-1787b7d2="" class="el-icon-arrow-down el-icon--right"></i> is not clickable at point (1859, 43). Other element would receive the click: <div data-v-d17ea674="" class="el-dialog__wrapper" style="z-index: 2001;">...</div>
+  (Session info: chrome=101.0.4951.67)
+
+!!--!!driver_name - 2022-05-31 09:41:25,147 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: session not created: This version of ChromeDriver only supports Chrome version 100
+Current browser version is 102.0.5005.62 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+
+!!--!!url_error - 2022-05-31 09:41:25,156 - browser_actions - [browser_actions.py-->line:113] - WARNING: 请输入正确的域名
+!!--!!choose_register_lang - 2022-05-31 09:41:27,178 - common_method - [common_method.py-->line:75] - ERROR: 'SessionNotCreatedException' object has no attribute 'find_element_by_css_selector'
+!!--!!display_finds_element - 2022-05-31 09:41:29,202 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!nosuch_elements - 2022-05-31 09:41:29,205 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-05-31 09:41:29,206 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2022-05-31 09:41:29,209 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:29,209 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!nosuch_elements - 2022-05-31 09:41:29,212 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:29,212 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-05-31 09:41:29,242 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!get_attributes - 2022-05-31 09:41:29,242 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2022-05-31 09:41:29,289 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:29,289 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:29,289 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!nosuch_elements - 2022-05-31 09:41:29,295 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:29,295 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:29,295 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-05-31 09:41:29,405 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_elements - 2022-05-31 09:41:29,462 - browser_actions - [browser_actions.py-->line:142] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!get_lenofelement - 2022-05-31 09:41:29,464 - browser_actions - [browser_actions.py-->line:149] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_finds_element - 2022-05-31 09:41:31,519 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:31,519 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:31,519 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:31,519 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!nosuch_elements - 2022-05-31 09:41:31,524 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:31,524 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:31,524 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:31,524 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-05-31 09:41:31,528 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!get_attributes - 2022-05-31 09:41:31,528 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!get_attributes - 2022-05-31 09:41:31,528 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2022-05-31 09:41:31,532 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:31,532 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:31,532 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:31,532 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:31,532 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!nosuch_elements - 2022-05-31 09:41:31,537 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:31,537 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:31,537 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:31,537 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:31,537 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-05-31 09:41:31,541 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!get_attributes - 2022-05-31 09:41:31,541 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!get_attributes - 2022-05-31 09:41:31,541 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!get_attributes - 2022-05-31 09:41:31,541 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2022-05-31 09:41:31,546 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:31,546 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:31,546 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:31,546 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:31,546 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-05-31 09:41:31,546 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!nosuch_elements - 2022-05-31 09:41:31,585 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:31,585 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:31,585 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:31,585 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:31,585 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-05-31 09:41:31,585 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-05-31 09:41:31,635 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-05-31 09:41:31,635 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_elements - 2022-05-31 09:41:31,657 - browser_actions - [browser_actions.py-->line:142] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!find_elements - 2022-05-31 09:41:31,657 - browser_actions - [browser_actions.py-->line:142] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!get_lenofelement - 2022-05-31 09:41:31,817 - browser_actions - [browser_actions.py-->line:149] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_lenofelement - 2022-05-31 09:41:31,817 - browser_actions - [browser_actions.py-->line:149] - ERROR: object of type 'NoneType' has no len()
+!!--!!driver_name - 2022-05-31 09:47:02,478 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: session not created: This version of ChromeDriver only supports Chrome version 99
+Current browser version is 102.0.5005.62 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+
+!!--!!remove_register_topup - 2022-05-31 09:59:05,715 - common_method - [common_method.py-->line:43] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.62)
+
+!!--!!remove_register_topup - 2022-05-31 10:11:33,230 - common_method - [common_method.py-->line:43] - ERROR: 'Commonmethod' object has no attribute 'driver'
+!!--!!remove_register_topup - 2022-05-31 10:13:05,892 - common_method - [common_method.py-->line:44] - ERROR: name 'common' is not defined
+!!--!!remove_register_topup - 2022-05-31 10:40:22,947 - common_method - [common_method.py-->line:29] - ERROR: name 'common' is not defined
+!!--!!remove_register_topup - 2022-05-31 10:44:10,291 - common_method - [common_method.py-->line:29] - ERROR: name 'common' is not defined
+!!--!!remove_register_topup - 2022-05-31 10:45:48,698 - common_method - [common_method.py-->line:29] - ERROR: name 'common' is not defined
+!!--!!display_click - 2022-05-31 11:58:32,489 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.62)
+

@@ -29,23 +29,23 @@ class Locations_of_deposit(object):
 
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
-        self.commethod=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
 
     def get_url(self,environment,lang='CN'):
         try:
             common.open_web(conFig.get_value('cp_login', '{}'.format(environment)))
             time.sleep(1)
             #去除弹窗
-            self.remove_topup()
+            self.comMethod.remove_register_topup(common)
             #选择页面语言
-            self.commethod.choose_register_lang(lang)
+            self.comMethod.choose_register_lang(common,lang)
             time.sleep(1)
             #新开窗口访问bos登录页
             common.js_openwindows(conFig.get_value('bos_login', '{}'.format(environment)))
             time.sleep(1)
             common.switch_windows(1)
             #选择页面语言
-            self.commethod.choose_bos_lang(lang)
+            self.comMethod.choose_bos_lang(common,lang)
         except Exception as msg:
             log.my_logger('!!--!!get_url').error(msg)
 
@@ -54,7 +54,7 @@ class Locations_of_deposit(object):
         try:
             common.switch_windows(1)
             time.sleep(1)
-            self.commethod.loginbos(username,psword)
+            self.comMethod.loginbos(common,username,psword)
             #判断页面是否加载完成
             while True:
                 if common.ele_is_displayed('css,.ivu-spin-dot', 1):
@@ -69,7 +69,7 @@ class Locations_of_deposit(object):
     def remove_topup(self):
         try:
             common.switch_windows(0)
-            self.commethod.remove_register_topup()
+            self.comMethod.remove_register_topup(common)
         except Exception as msg:
             log.my_logger('!!--!!remove_topup').error(msg)
 
@@ -406,7 +406,7 @@ class Locations_of_deposit(object):
             time.sleep(1)
             #登出bos
             self.logoutbos()
-            self.commethod.loginbos(bos_username,bos_psword)
+            self.comMethod.loginbos(common,bos_username,bos_psword)
             time.sleep(1)
             #判断页面是否加载完成
             while True:
@@ -436,6 +436,7 @@ class Locations_of_deposit(object):
                     continue
                 else:
                     break
+            time.sleep(2)
             common.display_click('css,.ivu-table-tbody > tr .ivu-checkbox-input')
             time.sleep(2)
             #处理完成
@@ -498,7 +499,7 @@ class Locations_of_deposit(object):
         try:
             #登录会员中心
             common.switch_windows(0)
-            self.commethod.login_cp(username,psword)
+            self.comMethod.login_cp(common,username,psword)
             #判断页面是否加载完成
             while True:
                 if common.ele_is_displayed("css,[src='/static/img/loading.webm']", 1):
@@ -528,7 +529,7 @@ class Locations_of_deposit(object):
     def logoutcp(self):
         try:
             common.switch_windows(0)
-            self.commethod.logout_cp()
+            self.comMethod.logout_cp(common)
         except Exception as msg:
             log.my_logger('!!--!!logoutcp').error(msg)
 

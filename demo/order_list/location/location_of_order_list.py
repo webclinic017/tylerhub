@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-10-20 10:29:51
-LastEditTime: 2022-04-15 10:32:07
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-31 11:38:09
+LastEditors: Tyler Tang tyler.tang@6317.io
 Description: Page operation
 FilePath: \tylerhub\demo\order_list\location\location_of_order_list.py
 '''
@@ -47,7 +47,7 @@ class Location_of_order_list(object):
     #赋值对象driver
     def broswertype(self,download_path=os.path.join(path_project,'test_data'),browsername=conFig.get_value('browser', 'default')):
         self.driver=common.open_browser(download_path=download_path,browsername=browsername)
-        self.commeThod=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
 
 
     #登录页
@@ -56,9 +56,9 @@ class Location_of_order_list(object):
             common.open_web(conFig.get_value('bos_login', '{}'.format(environment)))
             #选择bos页面语言,默认简中
             time.sleep(1)
-            self.commeThod.choose_bos_lang(lang)
+            self.comMethod.choose_bos_lang(common,lang)
             #登录bos
-            self.commeThod.loginbos(username, password)
+            self.comMethod.loginbos(common,username, password)
             time.sleep(1)
             common.display_click('css,[width="200"] li .ivu-icon-ios-arrow-down')
             time.sleep(0.5)

@@ -44,7 +44,7 @@ class Location_of_deposit_withdrawal(object):
     #赋值对象driver,设置下载文件路径
     def broswertype(self,download_path=os.path.join(path_project,'test_data'),browsername=conFig.get_value('browser', 'default')):
         self.driver=common.open_browser(download_path=download_path,browsername=browsername)
-        self.commeThod=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
 
 
     #登录页
@@ -53,9 +53,9 @@ class Location_of_deposit_withdrawal(object):
             common.open_web(conFig.get_value('bos_login', '{}'.format(environment)))
             #选择bos页面语言,默认简中
             time.sleep(1)
-            self.commeThod.choose_bos_lang(lang)
+            self.comMethod.choose_bos_lang(common,lang)
             #登录bos
-            self.commeThod.loginbos(username, password)
+            self.comMethod.loginbos(common,username, password)
             time.sleep(1)
             common.display_click('css,[width="200"] li .ivu-icon-ios-arrow-down')
             time.sleep(0.5)

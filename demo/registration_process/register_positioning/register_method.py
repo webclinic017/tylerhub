@@ -15,7 +15,7 @@ from read_dataconfig import ReadConfig
 #创建继承基础类的注册页表单操作模块
 class Form_operations():
     """会员中心注册页表单方法封装，注册页表单填写，定位元素封装在此类中，若页面元素发生变化，维护此模块即可"""
-    global driver,common,randomData,ex,log,conFig
+    global common,randomData,ex,log,conFig
 
     common=Commonweb()
     randomData=Random_data()
@@ -27,7 +27,7 @@ class Form_operations():
     #默认以谷歌浏览器执行测试用例
     def browsertype(self,browsername='Chrome'):
         self.driver=common.open_browser(browsername)
-        self.commethod=Commonmethod(self.driver) #赋值对象driver
+        self.comMethod=Commonmethod() #赋值对象driver
 
 
     #根据链接/邀请码/直客注册
@@ -47,14 +47,14 @@ class Form_operations():
                 common.open_web(url)
                 ex.saveainfo(os.path.join(path_process,'test_excel_data\Account_number.xlsx'),'专属链接', column, row) #
                 time.sleep(2)
-                self.commethod.remove_register_topup() #去除弹窗
+                self.comMethod.remove_register_topup(common) #去除弹窗
                 print('专属链接注册')
             elif len(code)!=0:
                 #通过邀请码
                 common.open_web(conFig.get_value('cp_register','{}'.format(environment)))
                 time.sleep(2)
                 ex.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx','邀请码', column, row)#备注注册方式
-                self.commethod.remove_register_topup()
+                self.comMethod.remove_register_topup(common)
                 time.sleep(1)
                 #输入邀请码
                 common.web_input('css,.el-textarea__inner',code)
@@ -64,7 +64,7 @@ class Form_operations():
                 common.open_web(conFig.get_value('cp_register','{}'.format(environment)))
                 ex.saveainfo(path_process+r'\test_excel_data\Account_number.xlsx','直客', column, row)#备注注册方式
                 time.sleep(2)
-                self.commethod.remove_register_topup()
+                self.comMethod.remove_register_topup(common)
         except Exception as msg:
             log.my_logger('!!--!!get_url').error('访问注册页异常{}'.format(msg))
 
@@ -86,7 +86,7 @@ class Form_operations():
     #注册页表单填写
     def fill_inform(self,lang,fristname,lastname,emali,password,cn_country,en_country,code=None):
         #选择页面语言
-        self.commethod.choose_register_lang(lang)
+        self.comMethod.choose_register_lang(common,lang)
         try:
             #选择国家
             common.web_click('css,.el-input__inner')

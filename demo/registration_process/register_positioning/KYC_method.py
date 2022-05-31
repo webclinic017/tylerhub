@@ -20,21 +20,21 @@ conFig=ReadConfig()
 
 #继承基本类
 class Kyc_approve():
-    global driver
+    
 
     #默认以谷歌浏览器执行测试用例
     def browsertype(self,browsername='Chrome'):
         self.driver=common.open_browser(browsername)
-        self.commethod=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
 
     #去除登录页弹窗
     def login_topup(self):
         common.switch_windows(0)
-        self.commethod.remove_register_topup()
+        self.comMethod.remove_register_topup(common)
 
     #选择会员中心登录页语言
     def cp_lang(self,lang):
-        self.commethod.choose_register_lang(lang)
+        self.comMethod.choose_register_lang(common,lang)
 
     #访问会员中心及BOS登录页,选择页面语言
     def loginweb(self,environment,lang):
@@ -42,7 +42,7 @@ class Kyc_approve():
             common.open_web(conFig.get_value('cp_login', '{}'.format(environment)))
             #点击弹窗
             common.switch_windows(0)
-            self.commethod.remove_register_topup()
+            self.comMethod.remove_register_topup(common)
             time.sleep(1)
             #选择页面语言
             self.cp_lang(lang)
@@ -52,7 +52,7 @@ class Kyc_approve():
             #切换窗口
             common.switch_windows(1)
             #选择页面语言
-            self.commethod.choose_bos_lang(lang)
+            self.comMethod.choose_bos_lang(common,lang)
             time.sleep(1)
         except Exception as msg:
             log.my_logger('!!--!!loginweb').error('访问cp/bos登录页失败：{}'.format(msg))
@@ -60,7 +60,7 @@ class Kyc_approve():
     #登录会员中心
     def login_cp(self,username,psword):
         common.switch_windows(0)
-        self.commethod.login_cp(username,psword)
+        self.comMethod.login_cp(common,username,psword)
         time.sleep(3)
 
     #去除弹窗，公司声明
@@ -118,7 +118,7 @@ class Kyc_approve():
     def login_bos(self,username,psword):
         try:
             #登录bos
-            self.commethod.loginbos(username,psword)
+            self.comMethod.loginbos(username,psword)
             time.sleep(1)
             #点击客户管理
             common.web_click('css,.ivu-badge')

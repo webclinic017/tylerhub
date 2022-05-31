@@ -26,7 +26,7 @@ class Location():
     #赋值对象driver
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
-        self.commeThod=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
 
     #访问url
     def geturl(self,environment,username,psword,lang='CN'):
@@ -37,15 +37,15 @@ class Location():
             self.remove_topup()
             time.sleep(1)
             #页面语言
-            self.commeThod.choose_register_lang(lang)
+            self.comMethod.choose_register_lang(common,lang)
             #新开窗口访问bos登录页
             common.js_openwindows(conFig.get_value('bos_login', '{}'.format(environment)))
             time.sleep(1)
             common.switch_windows(1)
             #选择页面语言
-            self.commeThod.choose_bos_lang(lang)
+            self.comMethod.choose_bos_lang(common,lang)
             #登录bos
-            self.commeThod.loginbos(username,psword)
+            self.comMethod.loginbos(common,username,psword)
             time.sleep(2)
             #进入客户名单页面
             common.display_click('css,.ivu-badge')
@@ -57,7 +57,7 @@ class Location():
     #去除登录页弹窗
     def remove_topup(self):
         try:
-            self.commeThod.remove_register_topup()
+            self.comMethod.remove_register_topup(common)
         except Exception as msg:
             log.my_logger('!!--!!remove_topup').error(msg)
 
@@ -67,7 +67,7 @@ class Location():
             #登录会员中心
             common.switch_windows(0)
             time.sleep(1)
-            self.commeThod.login_cp(username,psword)
+            self.comMethod.login_cp(common,username,psword)
             time.sleep(2)
             #判断页面是否加载完成
             while True:
@@ -196,7 +196,7 @@ class Location():
 
     #登出会员中心
     def logoutcp(self):
-        self.commeThod.logout_cp()
+        self.comMethod.logout_cp(common)
 
     #捕获修改成功后的文本
     def get_sucessful_change(self):

@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-05-24 11:16:04
-LastEditTime: 2021-08-24 11:01:12
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-31 11:43:28
+LastEditors: Tyler Tang tyler.tang@6317.io
 Description: Page positioning
 FilePath: \tylerhub\demo\registration_process\register_positioning\verify_message_location.py
 '''
@@ -32,7 +32,7 @@ class Location_of_verify_data():
     #默认以谷歌浏览器执行测试用例
     def browsertype(self,browsername='Chrome'):
         self.driver=common.open_browser(browsername)
-        self.commethd=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
 
     #登录bos
     def login_bos(self,environment,username,psword,lang='CN'):
@@ -40,9 +40,9 @@ class Location_of_verify_data():
             common.open_web(conFig.get_value('bos_login', '{}'.format(environment)))
             time.sleep(1)
             #页面语言
-            self.commethd.choose_bos_lang(lang)
+            self.comMethod.choose_bos_lang(common,lang)
             time.sleep(1)
-            self.commethd.loginbos(username, psword)
+            self.comMethod.loginbos(common,username, psword)
             time.sleep(3)
             #客户管理
             common.display_click('css,.ivu-badge>span')

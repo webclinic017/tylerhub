@@ -16,7 +16,7 @@ from read_dataconfig import ReadConfig
 
 class Review_actions(Commonweb):
     
-    global driver,randomData,conFig,log
+    global randomData,conFig,log
 
     randomData=Random_data()
     conFig=ReadConfig()
@@ -25,7 +25,7 @@ class Review_actions(Commonweb):
     #默认以谷歌浏览器执行测试用例
     def browsertype(self,browsername='Chrome'):
         self.driver=self.open_browser(browsername)
-        self.commethd=Commonmethod(self.driver)
+        self.commethd=Commonmethod()
 
     #登录bos并打开客户名单页
     def login_bos(self,environment,username,psword,lang='CN'):

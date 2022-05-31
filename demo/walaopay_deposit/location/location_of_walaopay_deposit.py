@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-09-17 15:00:40
-LastEditTime: 2021-09-24 10:44:39
-LastEditors: Please set LastEditors
+LastEditTime: 2022-05-31 11:47:35
+LastEditors: Tyler Tang tyler.tang@6317.io
 Description: Page operation
 FilePath: \tylerhub\demo\walaopay_withdrawal\location\location_of_walaopay_withdrawal.py
 '''
@@ -42,9 +42,9 @@ class Location_of_walaopay(object):
     #赋值对象driver
     def broswertype(self,broswername=conFig.get_value('browser', 'default')):
         self.driver=common.open_browser(broswername)
-        self.commeThod=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
         self.driver2=common2.open_browser(broswername)
-        self.commeThod2=Commonmethod(self.driver2)
+        self.comMethod2=Commonmethod()
 
 
     #登录页
@@ -54,13 +54,13 @@ class Location_of_walaopay(object):
             #去除登录页弹窗
             self.remove_login_topup()
             #选择页面语音，默认简中
-            self.commeThod.choose_register_lang(lang)
+            self.comMethod.choose_register_lang(common,lang)
             #新开窗口访问
             common.js_openwindows(conFig.get_value('bos_login', '{}'.format(environment)))
             time.sleep(1)
             common.switch_windows(1)
             #选择bos页面语言,默认简中
-            self.commeThod.choose_bos_lang(lang)
+            self.comMethod.choose_bos_lang(common,lang)
         except Exception as msg:
             log.my_logger('!!--!!get_url').error(msg)
 
@@ -70,7 +70,7 @@ class Location_of_walaopay(object):
         try:
             common.switch_windows(0)
             time.sleep(1)
-            self.commeThod.remove_register_topup()
+            self.comMethod.remove_register_topup(common)
         except Exception as msg:
             log.my_logger('!!--!!remove_login_topup').error(msg)
 
@@ -80,7 +80,7 @@ class Location_of_walaopay(object):
         try:
             common.switch_windows(0)
             time.sleep(1)
-            self.commeThod.login_cp(username, password)
+            self.comMethod.login_cp(common,username, password)
             time.sleep(1)
         except Exception as msg:
             log.my_logger('!!--!!logincp').error(msg)
@@ -91,7 +91,7 @@ class Location_of_walaopay(object):
         try:
             common.switch_windows(0)
             time.sleep(1)
-            self.commeThod.logout_cp()
+            self.comMethod.logout_cp(common)
         except Exception as msg:
             log.my_logger('!!--!!logoutcp').error(msg)
 
@@ -101,7 +101,7 @@ class Location_of_walaopay(object):
         try:
             common.switch_windows(1)
             time.sleep(1)
-            self.commeThod.loginbos(username, password)
+            self.comMethod.loginbos(common,username, password)
             time.sleep(2)
             #客户管理
             common.display_click('css,[width="200"] li .ivu-icon-ios-arrow-down')
@@ -179,9 +179,9 @@ class Location_of_walaopay(object):
     def new_driver(self,environment,username,password,lang='CN'):
         #浏览器新进程，登录bos第二个账号
         common2.open_web(conFig.get_value('bos_login', '{}'.format(environment)))
-        self.commeThod2.choose_bos_lang(lang)
+        self.comMethod2.choose_bos_lang(common2,lang)
         #登录
-        self.commeThod2.loginbos(username,password)
+        self.comMethod2.loginbos(common2,username,password)
         #进入入金管理页面
         time.sleep(1)
         common2.display_click('css,[width="200"] li .ivu-icon-ios-arrow-down',1)
@@ -199,7 +199,7 @@ class Location_of_walaopay(object):
         try:
             common.switch_windows(1)
             time.sleep(1)
-            self.commeThod.enter_details_page(account)
+            self.comMethod.enter_details_page(common,account)
         except Exception as msg:
             log.my_logger('!!--!!details_page').error(msg)
 

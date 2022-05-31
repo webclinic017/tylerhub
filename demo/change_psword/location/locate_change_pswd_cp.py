@@ -29,7 +29,7 @@ class Location():
     #赋值对象driver
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
-        self.commeThod=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
     
     #访问cp注册页和登录bos
     def geturl(self,environment,username,psword,lang='CN'):
@@ -38,17 +38,17 @@ class Location():
         #去除弹窗
         self.remove_topup()
         #选择页面语言
-        self.commeThod.choose_register_lang(lang)
+        self.comMethod.choose_register_lang(common,lang)
         time.sleep(1)
         #js打开新窗口
         common.js_openwindows(conFig.get_value('bos_login', '{}'.format(environment)))
         time.sleep(1)
         common.switch_windows(1)
         #页面语言，默认为简中
-        self.commeThod.choose_bos_lang(lang)
+        self.comMethod.choose_bos_lang(common,lang)
         time.sleep(1)
         #登录bos
-        self.commeThod.loginbos(username,psword)
+        self.comMethod.loginbos(common,username,psword)
         time.sleep(1)
         #进入客户名单页面
         common.display_click('css,.ivu-badge')
@@ -59,7 +59,7 @@ class Location():
     #去除登录页弹窗
     def remove_topup(self):
         common.switch_windows(0)
-        self.commeThod.remove_register_topup()
+        self.comMethod.remove_register_topup(common)
 
     #忘记密码
     def change_psword(self,email,account,path,column,row):

@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-09-17 15:00:40
-LastEditTime: 2022-05-25 10:41:14
+LastEditTime: 2022-05-31 11:26:52
 LastEditors: Tyler Tang tyler.tang@6317.io
 Description: Page operation
 FilePath: \tylerhub\demo\walaopay_withdrawal\location\location_of_walaopay_withdrawal.py
@@ -44,7 +44,7 @@ class Location_of_deposit_withdrawal(object):
     #赋值对象driver
     def broswertype(self,browsername=conFig.get_value('browser', 'default')):
         self.driver=common.open_browser(browsername)
-        self.commeThod=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
 
 
     #登录页
@@ -53,9 +53,9 @@ class Location_of_deposit_withdrawal(object):
             common.open_web(conFig.get_value('bos_login', '{}'.format(environment)))
             #选择bos页面语言,默认简中
             time.sleep(1)
-            self.commeThod.choose_bos_lang(lang)
+            self.comMethod.choose_bos_lang(common,lang)
             #登录bos
-            self.commeThod.loginbos(username, password)
+            self.comMethod.loginbos(common,username, password)
             time.sleep(1)
             common.display_click('css,[width="200"] li .ivu-icon-ios-arrow-down')
             time.sleep(0.5)

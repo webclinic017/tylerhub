@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-09-02 10:17:39
-LastEditTime: 2022-05-19 18:03:57
-LastEditors: Tyler96-QA 1718459369@qq.com
+LastEditTime: 2022-05-31 11:21:23
+LastEditors: Tyler Tang tyler.tang@6317.io
 Description: Related operations such as page positioning
 FilePath: \tylerhub\demo\add_ewallet_withdrawal\location\location_of_add_ewallet.py
 '''
@@ -38,7 +38,7 @@ class Location_of_add_ewallet(object):
     #赋值对象driver
     def broswertype(self,broswername=conFig.get_value('browser', 'default')):
         self.driver=common.open_browser(broswername)
-        self.commeThod=Commonmethod(self.driver)
+        self.self.comMethod=Commonmethod()
 
 
     #登录页
@@ -48,13 +48,13 @@ class Location_of_add_ewallet(object):
             #去除登录页弹窗
             self.remove_login_topup()
             #选择页面语音，默认简中
-            self.commeThod.choose_register_lang(lang)
+            self.self.comMethod.choose_register_lang(common,lang)
             #新开窗口访问
             common.js_openwindows(conFig.get_value('bos_login', '{}'.format(environment)))
             time.sleep(1)
             common.switch_windows(1)
             #选择bos页面语言,默认简中
-            self.commeThod.choose_bos_lang(lang)
+            self.self.comMethod.choose_bos_lang(common,lang)
         except Exception as msg:
             log.my_logger('!!--!!get_url').error(msg)
 
@@ -64,7 +64,7 @@ class Location_of_add_ewallet(object):
         try:
             common.switch_windows(0)
             time.sleep(1)
-            self.commeThod.remove_register_topup()
+            self.self.comMethod.remove_register_topup(common)
         except Exception as msg:
             log.my_logger('!!--!!remove_login_topup').error(msg)
 
@@ -74,7 +74,7 @@ class Location_of_add_ewallet(object):
         try:
             common.switch_windows(0)
             time.sleep(1)
-            self.commeThod.login_cp(username, password)
+            self.self.comMethod.login_cp(common,username, password)
             time.sleep(1)
         except Exception as msg:
             log.my_logger('!!--!!logincp').error(msg)
@@ -85,7 +85,7 @@ class Location_of_add_ewallet(object):
         try:
             common.switch_windows(0)
             time.sleep(1)
-            self.commeThod.logout_cp()
+            self.self.comMethod.logout_cp(common)
         except Exception as msg:
             log.my_logger('!!--!!logoutcp').error(msg)
 
@@ -95,7 +95,7 @@ class Location_of_add_ewallet(object):
         try:
             common.switch_windows(1)
             time.sleep(1)
-            self.commeThod.loginbos(username, password)
+            self.self.comMethod.loginbos(common,username, password)
             time.sleep(2)
             #客户管理
             common.display_click('css,[width="200"] li .ivu-icon-ios-arrow-down')
@@ -112,7 +112,7 @@ class Location_of_add_ewallet(object):
         try:
             common.switch_windows(1)
             time.sleep(1)
-            self.commeThod.enter_details_page(account)
+            self.self.comMethod.enter_details_page(common,account)
         except Exception as msg:
             log.my_logger('!!--!!details_page').error(msg)
 

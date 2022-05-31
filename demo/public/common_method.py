@@ -1,157 +1,137 @@
 import time
 
-from selenium import webdriver
-
-from read_dataconfig import ReadConfig
-
 from handlelog import MyLog
-#实例化
-conFig=ReadConfig()
-log=MyLog()
+
 
 class Commonmethod():
     """
     此模块用于封装常用方法，例如登录会员中心/登录bos等
     """
-    global diriver
-    #初始化函数，赋值driver对象
-    def __init__(self,driver):
-        self.driver=driver
-    
-    #切换窗口
-    def switchwindows(self,n):
-        self.all_handles=self.driver.window_handles
-        #切换窗口
-        try:
-            if n<len(self.all_handles):
-                self.driver.switch_to.window(self.all_handles[n]) #切换窗口
-            else:
-                print('{}超过窗口句柄列表下标最大值'.format(n))
-        except Exception as msg:
-            log.my_logger('!!--!!switch_windows').error(msg)
+    global log
 
+    log=MyLog()
 
     #去除注册页弹窗
-    def remove_register_topup(self):
+    def remove_register_topup(self,common):
         try:
             time.sleep(1)
-            if conFig.get_value('ip', 'ip')=='香港':
-                self.driver.find_element_by_css_selector('.blk-sure-btn').click()
+            if 'none' not in common.get_attributes('css,.el-dialog__wrapper', 'style'):
+                common.display_click('css,.blk-sure-btn')
+                time.sleep(1)
             else:
                 pass
         except Exception as msg:
             log.my_logger('!!--!!remove_register_topup').error(msg)
 
     #选择会员中心页面语言
-    def choose_register_lang(self,lang):
+    def choose_register_lang(self,common,lang):
         """
-        lang值为简中、简体中文、EN、EN
+        lang值为简中、简体中文、EN
         """
         try:
             time.sleep(1)
-            self.driver.find_element_by_css_selector('.el-icon-arrow-down').click()
+            common.display_click('css,.el-icon-arrow-down')
             time.sleep(1)
             if lang=='简中' or lang=='CN':
-                self.driver.find_element_by_xpath('//li[contains(.,"简体中文")]').click()
+                common.display_click('xpath,//li[contains(.,"简体中文")]')
             elif lang=='EN' or lang=='英语':
-                self.driver.find_element_by_xpath('//li[contains(.,"English")]').click()
+                common.display_click('xpath,//li[contains(.,"English")]')
             elif lang=='zh-hant' or lang=='繁中':
-                self.driver.find_element_by_xpath('//li[contains(.,"繁體中文")]').click()
+                common.display_click('xpath,//li[contains(.,"繁體中文")]')
             elif lang=='ar' or lang=='阿拉伯语':
-                self.driver.find_element_by_xpath('//li[contains(.,"العربية")]').click()
+                common.display_click("xpath,//li[contains(.,'العربية')]")
             elif lang=='ur' or lang=='乌尔都语':
-                self.driver.find_element_by_xpath('//li[contains(.,"اردو")]').click()
+                common.display_click('xpath,//li[contains(.,"اردو")]')
             elif lang=='id' or lang=='印尼':
-                self.driver.find_element_by_xpath('//li[contains(.,"Bahasa indonesia")]').click()
+                common.display_click('xpath,//li[contains(.,"Bahasa indonesia")]')
             elif lang=='ko' or lang=='韩语':
-                self.driver.find_element_by_xpath('//li[contains(.,"한국어")]').click()
+                common.display_click('xpath,//li[contains(.,"한국어")]')
             elif lang=='th' or lang=='泰语':
-                self.driver.find_element_by_xpath('//li[contains(.,"ไทย")]').click()
+                common.display_click('xpath,//li[contains(.,"ไทย")]')
             elif lang=='vi' or lang=='越南语':
-                self.driver.find_element_by_xpath('//li[contains(.,"Tiếng Việt")]').click()
+                common.display_click('xpath,//li[contains(.,"Tiếng Việt")]')
             else:
                 print('请输入正确的页面语言')
         except Exception as msg:
             log.my_logger('!!--!!choose_register_lang').error(msg)
 
     #登录会员中心
-    def login_cp(self,username,psword):
+    def login_cp(self,common,username,psword):
         try:
-            self.eles=self.driver.find_elements_by_css_selector('.el-input__inner')
             #输入用户名
-            self.eles[1].clear()
+            common.web_clear('css,.el-input__inner',1)
             time.sleep(0.5)
-            self.eles[1].send_keys(username)
+            common.display_input('css,.el-input__inner',username,1)
             time.sleep(0.5)
-            self.eles[-1].clear()
+            common.web_clear('css,.el-input__inner',-1)
             time.sleep(0.5)
-            self.eles[-1].send_keys(psword)
+            common.display_input('css,.el-input__inner',psword,-1)
             time.sleep(0.5)
-            self.driver.find_element_by_css_selector('.login-btn').click()
+            common.display_click('css,.login-btn')
         except Exception as msg:
             log.my_logger('!!--!!login_cp').error(msg)
 
     #登出会员中心
-    def logout_cp(self):
+    def logout_cp(self,common):
         try:
             time.sleep(1)
-            self.driver.find_element_by_css_selector('.el-icon--right').click()
+            common.display_click('css,.el-icon--right')
             time.sleep(1)
-            self.out_ele=self.driver.find_elements_by_css_selector('.drop-sub-title')
+            common.display_click('css,.drop-sub-title',-1)
             time.sleep(1)
-            self.out_ele[-1].click()
-            time.sleep(1)
-            self.quit_ele=self.driver.find_elements_by_css_selector('.logout-btn-confirm')
-            time.sleep(1)
-            self.quit_ele[-1].click()
+            common.display_click('css,.logout-btn-confirm')
             time.sleep(1)
         except Exception as msg:
             log.my_logger('!!--!!lgoout_cp').error('登出会员中心失败：{}'.format(msg))
 
     #选择bos页面语言
-    def choose_bos_lang(self,lang):
+    def choose_bos_lang(self,common,lang):
         """
         :param lang:CN/简中
         """
         try:
             if lang=='CN' or lang=='简中':
-                self.driver.find_element_by_css_selector('.ivu-icon-ios-arrow-down').click()
+                common.display_click('css,.ivu-icon-ios-arrow-down')
                 time.sleep(1)
-                self.driver.find_element_by_xpath('//li[@class="ivu-select-item"]').click()
+                common.display_click('xpath,//li[@class="ivu-select-item"]')
             else:
                 pass
         except Exception as msg:
             log.my_logger('!!--!!choose_bos_lang').error(msg)
 
     #登录bos
-    def loginbos(self,username,psword):
+    def loginbos(self,common,username,psword):
         try:
-            self.ele_bos=self.driver.find_elements_by_css_selector('.ivu-input-default')
+            common.web_clear('css,.ivu-input-default')
             time.sleep(0.5)
-            self.ele_bos[0].clear()
+            common.display_input('css,.ivu-input-default',username)
             time.sleep(0.5)
-            self.ele_bos[0].send_keys(username)
+            common.web_clear('css,.ivu-input-default',1)
             time.sleep(0.5)
-            self.ele_bos[1].clear()
+            common.display_input('css,.ivu-input-default',psword,1)
             time.sleep(0.5)
-            self.ele_bos[1].send_keys(psword)
-            time.sleep(0.5)
-            self.driver.find_element_by_css_selector('.ivu-btn-large').click() #登录
+            common.display_click('css,.ivu-btn-large')
         except Exception as msg:
             log.my_logger('!!--!!login_bos').error(msg)
 
     #进入账号详情页
-    def enter_details_page(self,account):
+    def enter_details_page(self,common,account):
         try:
             #输入主账号
-            self.driver.find_element_by_css_selector('.ivu-input-group-with-append > [placeholder]').clear()
-            time.sleep(1)
-            self.driver.find_element_by_css_selector('.ivu-input-group-with-append > [placeholder]').send_keys(account)
+            common.web_clear('css,.ivu-input-group-with-append > [placeholder]')
+            time.sleep(0.5)
+            common.display_input('css,.ivu-input-group-with-append > [placeholder]',account)
             time.sleep(1)
             #搜索
-            self.driver.find_element_by_css_selector('.ivu-btn-icon-only > .ivu-icon').click()
-            time.sleep(2)
+            common.display_click('css,.ivu-btn-icon-only > .ivu-icon')
+            time.sleep(1)
+            while True:
+                if common.ele_is_displayed('css,.ivu-spin-dot',1):
+                    continue
+                else:
+                    break
+
             #进入账号详情页
-            self.driver.find_element_by_xpath("//a[.='{}']".format(account)).click()
+            common.display_click("xpath,//a[.='{}']".format(account))
         except Exception as msg:
             log.my_logger('!!--!!enter_details_page').error(msg)

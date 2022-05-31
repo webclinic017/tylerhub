@@ -1,0 +1,12 @@
+!!--!!remove_topup - 2022-05-31 09:41:26,165 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:74] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!get_url - 2022-05-31 09:41:28,188 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:50] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!login_bos - 2022-05-31 09:41:28,192 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:65] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!serarch_account - 2022-05-31 09:41:28,194 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:113] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!is_traccount_can_deposit - 2022-05-31 09:41:30,484 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:491] - ERROR: 'NoneType' object cannot be interpreted as an integer
+!!--!!login_bos - 2022-05-31 09:41:30,496 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:65] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!login_bos - 2022-05-31 09:41:30,496 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:65] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!remove_topup - 2022-05-31 09:41:30,504 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:74] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!remove_topup - 2022-05-31 09:41:30,504 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:74] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!serarch_account - 2022-05-31 09:41:30,507 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:113] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!serarch_account - 2022-05-31 09:41:30,507 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:113] - ERROR: 'Commonweb' object has no attribute 'driver'
+!!--!!get_url - 2022-05-31 11:16:14,678 - location_deposit_of_cp - [location_deposit_of_cp.py-->line:50] - ERROR: choose_bos_lang() takes 2 positional arguments but 3 were given

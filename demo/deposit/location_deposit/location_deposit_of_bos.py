@@ -28,13 +28,13 @@ class Location_deposit_bos():
 
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
-        self.commethod=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
 
     def get_url(self,environment,lang='CN'):
         try:
             common.open_web(conFig.get_value('bos_login', '{}'.format(environment)))
             time.sleep(1)
-            self.commethod.choose_bos_lang(lang)
+            self.comMethod.choose_bos_lang(common,lang)
         except Exception as msg:
             log.my_logger('!!--!!get_url').error(msg)
 
@@ -42,7 +42,7 @@ class Location_deposit_bos():
     def login_bos(self,username,psword):
         try:
             time.sleep(1)
-            self.commethod.loginbos(username,psword)
+            self.comMethod.loginbos(common,username,psword)
             #判断页面是否加载完成
             while True:
                 if common.ele_is_displayed('css,.ivu-spin-dot', 1):

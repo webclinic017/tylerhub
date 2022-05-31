@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2022-04-21 10:20:53
-LastEditTime: 2022-05-19 18:15:10
-LastEditors: Tyler96-QA 1718459369@qq.com
+LastEditTime: 2022-05-31 11:33:41
+LastEditors: Tyler Tang tyler.tang@6317.io
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\IB_Close_Open_Order_List\location\Location_of_ib_close_order_list.py
 '''
@@ -43,7 +43,7 @@ class Location_of_IB_Close_OrderList(object):
     #赋值对象driver,设置下载文件路径
     def broswertype(self,download_path=os.path.join(path_project,'test_data'),browsername=conFig.get_value('browser', 'default')):
         self.driver=common.open_browser(download_path=download_path,browsername=browsername)
-        self.commeThod=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
 
     #登录页
     def get_url(self,environment,username,password,lang='CN'):
@@ -51,9 +51,9 @@ class Location_of_IB_Close_OrderList(object):
             common.open_web(conFig.get_value('bos_login', '{}'.format(environment)))
             #选择bos页面语言,默认简中
             time.sleep(1)
-            self.commeThod.choose_bos_lang(lang)
+            self.comMethod.choose_bos_lang(common,lang)
             #登录bos
-            self.commeThod.loginbos(username, password)
+            self.comMethod.loginbos(common,username, password)
             time.sleep(1)
             common.display_click('css,[width="200"] li .ivu-icon-ios-arrow-down')
             time.sleep(0.5)

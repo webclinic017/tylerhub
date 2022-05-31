@@ -30,7 +30,7 @@ class Location_withdrawal_incp(object):
 
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
-        self.commethod=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
 
     def get_url(self,environment,username,psword,lang='CN'):
         try:
@@ -39,16 +39,16 @@ class Location_withdrawal_incp(object):
             #去除弹窗
             self.remove_topup()
             #选择页面语言
-            self.commethod.choose_register_lang(lang)
+            self.comMethod.choose_register_lang(common,lang)
             time.sleep(1)
             #新开窗口访问bos登录页
             common.js_openwindows('https://at-bos-frontend-uat.atfxdev.com/login')
             time.sleep(1)
             common.switch_windows(1)
             #选择页面语言
-            self.commethod.choose_bos_lang(lang)
+            self.comMethod.choose_bos_lang(common,lang)
             #登录bos
-            self.commethod.loginbos(username,psword)
+            self.comMethod.loginbos(common,username,psword)
             time.sleep(1)
             #客户管理
             common.display_click('css,.ivu-badge>span')
@@ -61,7 +61,7 @@ class Location_withdrawal_incp(object):
     def remove_topup(self):
         try:
             common.switch_windows(0)
-            self.commethod.remove_register_topup()
+            self.comMethod.remove_register_topup(common)
         except Exception as msg:
             log.my_logger('!!--!!remove_topup').error(msg)
 
@@ -383,7 +383,7 @@ class Location_withdrawal_incp(object):
     def logincp(self,username,psword):
         try:
             common.switch_windows(0)
-            self.commethod.login_cp(username,psword)
+            self.comMethod.login_cp(common,username,psword)
         except Exception as msg:
             log.my_logger('!!--!!logincp').error(msg)
 
@@ -391,7 +391,7 @@ class Location_withdrawal_incp(object):
     def logoutcp(self):
         try:
             common.switch_windows(0)
-            self.commethod.logout_cp()
+            self.comMethod.logout_cp(common)
         except Exception as msg:
             log.my_logger('!!--!!logoutcp').error(msg)
 

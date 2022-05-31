@@ -28,16 +28,16 @@ class Ewallet_deposti():
 
     def broswertype(self,broswername='Chrome'):
         self.driver=common.open_browser(broswername)
-        self.commethod=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
 
     def get_url(self,url,username,psword,lang='CN'):
         try:
             common.open_web(url)
             time.sleep(1)
             #bos页面语言
-            self.commethod.choose_bos_lang(lang)
+            self.comMethod.choose_bos_lang(common,lang)
             time.sleep(1)
-            self.login_bos(username, psword)
+            self.login_bos(common,username, psword)
             time.sleep(2)
             #资金管理
             common.display_click('xpath,//div[@class="scroll-content"]//span[.="资金管理"]')
@@ -50,7 +50,7 @@ class Ewallet_deposti():
     #登录bos
     def login_bos(self,username,psword):
         try:
-            self.commethod.loginbos(username, psword)
+            self.comMethod.loginbos(username, psword)
         except Exception as msg:
             log.my_logger('!!--!!login_bos').error(msg)
 

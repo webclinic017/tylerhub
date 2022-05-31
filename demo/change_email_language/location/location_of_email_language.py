@@ -1,8 +1,8 @@
 '''
 Author: your name
 Date: 2022-01-13 14:29:47
-LastEditTime: 2022-05-18 17:42:15
-LastEditors: Tyler96-QA 1718459369@qq.com
+LastEditTime: 2022-05-31 11:23:08
+LastEditors: Tyler Tang tyler.tang@6317.io
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\change_email_language\location\location_of_email_language.py
 '''
@@ -42,7 +42,7 @@ class Location_email_language_change(object):
     #赋值对象driver
     def broswertype(self,browsername=conFig.get_value('browser', 'default')):
         self.driver=common.open_browser(browsername)
-        self.commeThod=Commonmethod(self.driver)
+        self.comMethod=Commonmethod()
 
     #登录页
     def get_url(self,environment,username,password,lang='CN'):
@@ -50,9 +50,9 @@ class Location_email_language_change(object):
             common.open_web(conFig.get_value('bos_login', '{}'.format(environment)))
             #选择bos页面语言,默认简中
             time.sleep(1)
-            self.commeThod.choose_bos_lang(lang)
+            self.comMethod.choose_bos_lang(common,lang)
             #登录bos
-            self.commeThod.loginbos(username, password)
+            self.comMethod.loginbos(common,username, password)
             time.sleep(1)
             common.display_click('css,[width="200"] li .ivu-icon-ios-arrow-down')
             time.sleep(0.5)

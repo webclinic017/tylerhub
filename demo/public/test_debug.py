@@ -1537,7 +1537,8 @@ def txt_xls(filename,xlsname):
 # except Exception as msg:
 #     print(55)
 
-
+import sys
+print(sys.executable)
 
 
 
