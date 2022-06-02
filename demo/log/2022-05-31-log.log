@@ -81,3 +81,30 @@ Current browser version is 102.0.5005.62 with binary path C:\Program Files\Googl
 !!--!!display_click - 2022-05-31 11:58:32,489 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
   (Session info: chrome=102.0.5005.62)
 
+!!--!!display_click - 2022-05-31 18:01:48,462 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.62)
+
+!!--!!display_click - 2022-05-31 18:01:54,531 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.62)
+
+!!--!!display_click - 2022-05-31 18:01:54,531 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.62)
+
+!!--!!display_finds_element - 2022-05-31 18:02:03,673 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-05-31 18:02:03,676 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-05-31 18:02:03,678 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-05-31 18:02:03,678 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-05-31 18:02:03,678 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-05-31 18:02:15,286 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.62)
+
+!!--!!display_click - 2022-05-31 18:02:15,286 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.62)
+
+!!--!!display_click - 2022-05-31 18:02:15,286 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.62)
+
+!!--!!display_click - 2022-05-31 18:02:15,286 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.62)
+
