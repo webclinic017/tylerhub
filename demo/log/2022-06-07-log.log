@@ -1,0 +1,74 @@
+!!--!!driver_name - 2022-06-07 11:08:18,583 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: session not created: This version of ChromeDriver only supports Chrome version 100
+Current browser version is 102.0.5005.63 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+!!--!!url_error - 2022-06-07 11:08:18,586 - browser_actions - [browser_actions.py-->line:113] - WARNING: 请输入正确的域名
+!!--!!display_finds_element - 2022-06-07 11:08:19,599 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!nosuch_elements - 2022-06-07 11:08:19,601 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-07 11:08:19,602 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2022-06-07 11:08:20,613 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-06-07 11:08:20,613 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!nosuch_elements - 2022-06-07 11:08:20,614 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-07 11:08:20,614 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-07 11:08:20,615 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-06-07 11:08:20,615 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!driver_name - 2022-06-07 11:08:39,055 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: session not created: This version of ChromeDriver only supports Chrome version 100
+Current browser version is 102.0.5005.63 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+!!--!!driver_name - 2022-06-07 11:09:34,593 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+!!--!!display_finds_element - 2022-06-07 11:09:50,990 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-07 11:09:50,990 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-07 11:09:50,992 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!driver_name - 2022-06-07 11:09:57,712 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+!!--!!driver_name - 2022-06-07 11:14:45,159 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: session not created: This version of ChromeDriver only supports Chrome version 83
+
+!!--!!driver_name - 2022-06-07 11:14:50,409 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: Process unexpectedly closed with status 0
+
+!!--!!driver_name - 2022-06-07 11:14:50,409 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: Process unexpectedly closed with status 0
+
+!!--!!url_error - 2022-06-07 11:14:50,410 - browser_actions - [browser_actions.py-->line:113] - WARNING: 请输入正确的域名
+!!--!!display_finds_element - 2022-06-07 11:14:52,419 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!nosuch_elements - 2022-06-07 11:14:52,419 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-07 11:14:52,423 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2022-06-07 11:14:54,426 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!display_finds_element - 2022-06-07 11:14:54,426 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：'Commonweb' object has no attribute 'driver'
+!!--!!nosuch_elements - 2022-06-07 11:14:54,427 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-07 11:14:54,427 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-07 11:14:54,428 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-06-07 11:14:54,428 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!driver_name - 2022-06-07 11:15:54,230 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 102.0.5005.63 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+!!--!!driver_name - 2022-06-07 11:24:03,438 - browser_actions - [browser_actions.py-->line:105] - ERROR: 启动浏览器异常Message: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 102.0.5005.63 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+!!--!!display_finds_element - 2022-06-07 11:39:39,299 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-07 11:39:39,302 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-06-07 11:39:39,303 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2022-06-07 11:39:45,373 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-06-07 11:39:45,373 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-07 11:39:45,375 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-07 11:39:45,375 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-07 11:39:45,377 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2022-06-07 11:41:12,990 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-07 11:41:12,993 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-06-07 11:41:12,994 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2022-06-07 11:41:19,054 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-06-07 11:41:19,054 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-07 11:41:19,056 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-07 11:41:19,056 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-07 11:41:19,058 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-06-07 11:46:46,950 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (376, 9). Other element would receive the click: <div data-v-e02386f4="" data-v-717db866="" class="ivu-breadcrumb">...</div>
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_click - 2022-06-07 11:55:49,059 - browser_actions - [browser_actions.py-->line:318] - ERROR: Message: element click intercepted: Element <span>...</span> is not clickable at point (376, 9). Other element would receive the click: <div data-v-e02386f4="" data-v-717db866="" class="ivu-breadcrumb">...</div>
+  (Session info: chrome=102.0.5005.63)
+

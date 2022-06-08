@@ -1537,10 +1537,16 @@ def txt_xls(filename,xlsname):
 # except Exception as msg:
 #     print(55)
 
-import sys
-print(sys.executable)
+# from read_dataconfig import ReadConfig
 
+# conFig=ReadConfig()
+# a=conFig.get_valueList('ewalletType','type')
+# # b=list(i for i in a.split(','))
+# print(a)
 
+import os
+
+print(os.path.exists(r'D:\Python\Python38-32\chromedriver.exe'))
 
 
 

@@ -1,8 +1,8 @@
 '''
 Author: tyler
 Date: 2021-08-18 16:08:10
-LastEditTime: 2021-12-23 16:50:06
-LastEditors: Please set LastEditors
+LastEditTime: 2022-06-07 10:30:47
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: Read configuration file
 FilePath: \tylerhub\demo\public\read_dataconfig.py
 '''
@@ -38,15 +38,26 @@ class ReadConfig():
         else:
             print('请检查配置文件是否存在该section节点')
 
-    def get_value(self,section,opthon):
+    def get_value(self,section,opthon)->str:
         """
-        获取某个section节点下option的具体值
+        获取某个section节点下option的具体值,返回字符串
         """
         if self.config.has_section(section):
             return self.config.get(section,opthon)
         else:
             print('请检查配置文件是否存在该section节点')
 
+
+    def get_valueList(self,section,opthon)->list:
+        """
+        获取某个section节点下option的具体值，返回列表
+        """
+        if self.config.has_section(section):
+            return list(i for i in (self.config.get(section,opthon)).split(','))
+        else:
+            print('请检查配置文件是否存在该section节点')
+
+    
     def get_int(self,section,opthon):
         """
         获取指定section节点下的opthon值，并以int类型返回

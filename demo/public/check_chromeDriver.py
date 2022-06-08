@@ -1,8 +1,8 @@
 '''
 Author: your name
 Date: 2022-02-14 10:37:15
-LastEditTime: 2022-02-16 16:22:55
-LastEditors: Please set LastEditors
+LastEditTime: 2022-06-07 11:22:58
+LastEditors: Tyler96-QA 1718459369@qq.com
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\public\check_chromeDriver.py
 '''
@@ -50,12 +50,17 @@ class CheckDriverExe(object):
                 #删除过期谷歌驱动
                 os.remove(os.path.join(common.pythonPath[:-11],'chromedriver.exe'))
                 #解压下载的驱动包
-                self.zip=zipfile.ZipFile(os.path.join(common.pythonPath[:-11],'chromedriver_win32.zip'))
-                self.zip_list = self.zip.namelist()
-                for f in self.zip_list:
-                    self.zip.extract(f, common.pythonPath[:-11])
+                while True:
+                    if os.path.exists(os.path.join(common.pythonPath[:-11],'chromedriver_win32.zip')):
+                        self.zip=zipfile.ZipFile(os.path.join(common.pythonPath[:-11],'chromedriver_win32.zip'))
+                        self.zip_list = self.zip.namelist()
+                        for f in self.zip_list:
+                            self.zip.extract(f, common.pythonPath[:-11])
 
-                self.zip.close()
+                        self.zip.close()
+                        break
+                    else:
+                        continue
 
                 #删除下载文件
                 os.remove(os.path.join(common.pythonPath[:-11],'chromedriver_win32.zip'))

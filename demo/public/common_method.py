@@ -111,6 +111,11 @@ class Commonmethod():
             common.display_input('css,.ivu-input-default',psword,1)
             time.sleep(0.5)
             common.display_click('css,.ivu-btn-large')
+            while True:
+                if common.ele_is_displayed('css,.ivu-spin-dot',1):
+                    continue
+                else:
+                    break
         except Exception as msg:
             log.my_logger('!!--!!login_bos').error(msg)
 
