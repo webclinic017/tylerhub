@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "demo.E-wallet_deposit.e-wallet_deposit_bin.test_ewallet_deposit",
+    "children" : [ {
+      "name" : "ewallet入金测试报告",
+      "uid" : "84f6a8a79fe72962",
+      "parentUid" : "5df621023b3552cf43533fd9162873b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654855021277,
+        "stop" : 1654855146147,
+        "duration" : 124870
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+    }, {
+      "name" : "ewallet入金测试报告",
+      "uid" : "3f2399cbd740d62",
+      "parentUid" : "5df621023b3552cf43533fd9162873b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654855229385,
+        "stop" : 1654855353587,
+        "duration" : 124202
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 77.0}" ]
+    } ],
+    "uid" : "demo.E-wallet_deposit.e-wallet_deposit_bin.test_ewallet_deposit"
+  } ]
+}

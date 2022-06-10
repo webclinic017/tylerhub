@@ -1,0 +1,16 @@
+[32mINFO    [0m !!--!!index_error:browser_actions.py:186 index值错误，超过列表下标
+[31m[1mERROR   [0m !!--!!clear_error:browser_actions.py:287 'NoneType' object has no attribute 'send_keys'
+[31m[1mERROR   [0m !!--!!display_finds_element:browser_actions.py:174 元素不存在或者不可见：Message: 
+
+[31m[1mERROR   [0m !!--!!nosuch_elements:browser_actions.py:201 object of type 'NoneType' has no len()
+[31m[1mERROR   [0m !!--!!display_input:browser_actions.py:277 'NoneType' object has no attribute 'send_keys'
+[32mINFO    [0m !!--!!index_error:browser_actions.py:186 index值错误，超过列表下标
+[31m[1mERROR   [0m !!--!!clear_error:browser_actions.py:287 'NoneType' object has no attribute 'send_keys'
+[31m[1mERROR   [0m !!--!!display_finds_element:browser_actions.py:174 元素不存在或者不可见：Message: 
+
+[31m[1mERROR   [0m !!--!!nosuch_elements:browser_actions.py:201 object of type 'NoneType' has no len()
+[31m[1mERROR   [0m !!--!!display_input:browser_actions.py:277 'NoneType' object has no attribute 'send_keys'
+[31m[1mERROR   [0m !!--!!display_finds_element:browser_actions.py:174 元素不存在或者不可见：Message: 
+
+[31m[1mERROR   [0m !!--!!nosuch_elements:browser_actions.py:201 object of type 'NoneType' has no len()
+[31m[1mERROR   [0m !!--!!display_click:browser_actions.py:317 'NoneType' object has no attribute 'click'

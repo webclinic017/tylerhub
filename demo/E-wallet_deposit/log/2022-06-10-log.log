@@ -1,0 +1,9 @@
+!!--!!deposit_ewallet - 2022-06-10 11:40:40,443 - location_deposit_of_ewallet - [location_deposit_of_ewallet.py-->line:297] - ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!review_deposit - 2022-06-10 11:44:43,525 - location_deposit_of_ewallet - [location_deposit_of_ewallet.py-->line:298] - ERROR: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!bos_to_cp - 2022-06-10 17:45:53,066 - location_deposit_of_ewallet - [location_deposit_of_ewallet.py-->line:112] - ERROR: argument of type 'NoneType' is not iterable

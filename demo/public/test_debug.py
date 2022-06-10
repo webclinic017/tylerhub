@@ -1544,9 +1544,8 @@ def txt_xls(filename,xlsname):
 # # b=list(i for i in a.split(','))
 # print(a)
 
-import os
-
-print(os.path.exists(r'D:\Python\Python38-32\chromedriver.exe'))
+import random
+print(random.randint(1, 7))
 
 
 

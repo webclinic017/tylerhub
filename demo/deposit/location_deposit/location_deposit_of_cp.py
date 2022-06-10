@@ -408,12 +408,6 @@ class Locations_of_deposit(object):
             self.logoutbos()
             self.comMethod.loginbos(common,bos_username,bos_psword)
             time.sleep(1)
-            #判断页面是否加载完成
-            while True:
-                if common.ele_is_displayed('css,.ivu-spin-dot', 1):
-                    continue
-                else:
-                    break
             #资金管理
             common.display_click('css,.ivu-badge >span',3)
             #入金管理

@@ -1,0 +1,4 @@
+[31m[1mERROR   [0m !!--!!display_finds_element:browser_actions.py:174 元素不存在或者不可见：Message: 
+
+[31m[1mERROR   [0m !!--!!nosuch_elements:browser_actions.py:201 object of type 'NoneType' has no len()
+[31m[1mERROR   [0m !!--!!display_get_text:browser_actions.py:301 'NoneType' object has no attribute 'text'

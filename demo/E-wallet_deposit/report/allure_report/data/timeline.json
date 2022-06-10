@@ -1,0 +1,256 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "SZ01-QA-G-10",
+    "children" : [ {
+      "name" : "15392-MainThread",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "ab934b1f2038d86a",
+        "parentUid" : "8e2bef8adab2f20567302f76551aba76",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654849719853,
+          "stop" : 1654849814005,
+          "duration" : 94152
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      } ],
+      "uid" : "8e2bef8adab2f20567302f76551aba76"
+    }, {
+      "name" : "14212-MainThread",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "c2144924a945e340",
+        "parentUid" : "674b9e89aa62e3b855786e934dc99768",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654848733963,
+          "stop" : 1654848738443,
+          "duration" : 4480
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      } ],
+      "uid" : "674b9e89aa62e3b855786e934dc99768"
+    }, {
+      "name" : "5020-MainThread",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "98c4474306bd7999",
+        "parentUid" : "9d1452920e5a8394f584973014f9907d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654848536300,
+          "stop" : 1654848536305,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      }, {
+        "name" : "ewallet入金测试报告",
+        "uid" : "704bb0ae716ce456",
+        "parentUid" : "9d1452920e5a8394f584973014f9907d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654848572241,
+          "stop" : 1654848572247,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 77.0}" ]
+      } ],
+      "uid" : "9d1452920e5a8394f584973014f9907d"
+    }, {
+      "name" : "15644-MainThread",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "84f6a8a79fe72962",
+        "parentUid" : "8c886695d32621d28049e091b0a55141",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654855021277,
+          "stop" : 1654855146147,
+          "duration" : 124870
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      }, {
+        "name" : "ewallet入金测试报告",
+        "uid" : "3f2399cbd740d62",
+        "parentUid" : "8c886695d32621d28049e091b0a55141",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654855229385,
+          "stop" : 1654855353587,
+          "duration" : 124202
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 77.0}" ]
+      } ],
+      "uid" : "8c886695d32621d28049e091b0a55141"
+    }, {
+      "name" : "11364-MainThread",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "a3b75c3a42621ddf",
+        "parentUid" : "cec071ace185d33a8f91be86d7365b43",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654854480213,
+          "stop" : 1654854595431,
+          "duration" : 115218
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      } ],
+      "uid" : "cec071ace185d33a8f91be86d7365b43"
+    }, {
+      "name" : "7668-MainThread",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "b0c8636a0f86c1b2",
+        "parentUid" : "73afe618ec4211aad93d265dd640056e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654851763572,
+          "stop" : 1654851820271,
+          "duration" : 56699
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      } ],
+      "uid" : "73afe618ec4211aad93d265dd640056e"
+    }, {
+      "name" : "10936-MainThread",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "25f946b5eb5a004f",
+        "parentUid" : "c0edca81d3ef59f4a66214f45f06c4db",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654850945510,
+          "stop" : 1654851049071,
+          "duration" : 103561
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      } ],
+      "uid" : "c0edca81d3ef59f4a66214f45f06c4db"
+    }, {
+      "name" : "17224-MainThread",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "733b5f0d96b88711",
+        "parentUid" : "297ca620d9d6af0e5898eadf7b02b954",
+        "status" : "failed",
+        "time" : {
+          "start" : 1654852286840,
+          "stop" : 1654852653346,
+          "duration" : 366506
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      } ],
+      "uid" : "297ca620d9d6af0e5898eadf7b02b954"
+    }, {
+      "name" : "16644-MainThread",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "427a09cfb04b14b1",
+        "parentUid" : "bbf674967c9876c4ce35ca22cf01af05",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654854712040,
+          "stop" : 1654854853130,
+          "duration" : 141090
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      } ],
+      "uid" : "bbf674967c9876c4ce35ca22cf01af05"
+    }, {
+      "name" : "6992-MainThread",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "a3ccc393ec20f79e",
+        "parentUid" : "082a2aa8f070eb7f28cf57c3e4269adf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654849952724,
+          "stop" : 1654850022125,
+          "duration" : 69401
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      } ],
+      "uid" : "082a2aa8f070eb7f28cf57c3e4269adf"
+    }, {
+      "name" : "15404-MainThread",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "479331b824f31e8b",
+        "parentUid" : "621c98335c55e58b6589a42968ec70a6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654848451907,
+          "stop" : 1654848452000,
+          "duration" : 93
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      } ],
+      "uid" : "621c98335c55e58b6589a42968ec70a6"
+    }, {
+      "name" : "5484-MainThread",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "75ffa027f65990c8",
+        "parentUid" : "dbc3ea5d04d6b13849a3ef4f0e91f8d9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654850226001,
+          "stop" : 1654850868268,
+          "duration" : 642267
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      } ],
+      "uid" : "dbc3ea5d04d6b13849a3ef4f0e91f8d9"
+    }, {
+      "name" : "14340-MainThread",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "6ca3d61674a952eb",
+        "parentUid" : "84da094594cf4175cf4ac8aa542e266f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654854165579,
+          "stop" : 1654854321594,
+          "duration" : 156015
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      } ],
+      "uid" : "84da094594cf4175cf4ac8aa542e266f"
+    } ],
+    "uid" : "22c9a7ca73ac7ac9efe14f8b8f896b03"
+  } ]
+}

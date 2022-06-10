@@ -16,13 +16,12 @@ from selenium.webdriver.support.wait import WebDriverWait
 from handlelog import MyLog
 from verification_code import Base64_api
 
-#实例化
-log=MyLog()
 
 class Commonweb():
     """selenium二次封装：浏览器驱动，访问url等自定义基类方法"""
     #定义全局变量
-    global driver
+    global driver,log
+    log=MyLog()
 
     def open_browser(self,download_path=None,browsername='Chrome'):
         """

@@ -1,0 +1,20 @@
+!!--!!display_finds_element - 2022-06-09 15:50:55,778 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-09 15:50:55,783 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-06-09 15:50:55,788 - browser_actions - [browser_actions.py-->line:302] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2022-06-09 16:04:21,656 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-09 16:04:21,662 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-09 16:04:21,668 - browser_actions - [browser_actions.py-->line:318] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_finds_element - 2022-06-09 16:18:40,590 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-09 16:18:40,595 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-09 16:18:40,598 - browser_actions - [browser_actions.py-->line:278] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-09 16:20:20,255 - browser_actions - [browser_actions.py-->line:175] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-09 16:20:20,262 - browser_actions - [browser_actions.py-->line:202] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-06-09 16:20:20,265 - browser_actions - [browser_actions.py-->line:212] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!display_finds_element - 2022-06-09 16:32:24,452 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-09 16:32:24,456 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-06-09 16:32:24,462 - browser_actions - [browser_actions.py-->line:301] - ERROR: 'NoneType' object has no attribute 'text'

@@ -1,0 +1,39 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "随机选择电子钱包中的一种渠道入金",
+    "children" : [ {
+      "name" : "用例执行",
+      "children" : [ {
+        "name" : "ewallet入金测试报告",
+        "uid" : "84f6a8a79fe72962",
+        "parentUid" : "561be680461c458375bd26be47369780",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654855021277,
+          "stop" : 1654855146147,
+          "duration" : 124870
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+      }, {
+        "name" : "ewallet入金测试报告",
+        "uid" : "3f2399cbd740d62",
+        "parentUid" : "561be680461c458375bd26be47369780",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654855229385,
+          "stop" : 1654855353587,
+          "duration" : 124202
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 77.0}" ]
+      } ],
+      "uid" : "561be680461c458375bd26be47369780"
+    } ],
+    "uid" : "fe2ef093cc7461ca46e1d9c118ab82d6"
+  } ]
+}

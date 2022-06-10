@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jun 10 18:00:29 GMT+08:00 2022","Fri Jun 10 18:02:33 GMT+08:00 2022","124202","demo.E-wallet_deposit.e-wallet_deposit_bin","test_ewallet_deposit","Test_Ewallet_deposit","","","ewallet入金测试报告","读取测试文档数据，执行用例"
+"passed","Fri Jun 10 17:57:01 GMT+08:00 2022","Fri Jun 10 17:59:06 GMT+08:00 2022","124870","demo.E-wallet_deposit.e-wallet_deposit_bin","test_ewallet_deposit","Test_Ewallet_deposit","","","ewallet入金测试报告","读取测试文档数据，执行用例"

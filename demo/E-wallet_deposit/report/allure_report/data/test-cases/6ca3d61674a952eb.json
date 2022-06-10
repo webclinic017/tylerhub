@@ -1,0 +1,203 @@
+{
+  "uid" : "6ca3d61674a952eb",
+  "name" : "ewallet入金测试报告",
+  "fullName" : "demo.E-wallet_deposit.e-wallet_deposit_bin.test_ewallet_deposit.Test_Ewallet_deposit#test_deposit_of_ewallet",
+  "historyId" : "fed3779c8b077e420fb4a070602b992a",
+  "time" : {
+    "start" : 1654854165579,
+    "stop" : 1654854321594,
+    "duration" : 156015
+  },
+  "description" : "读取测试文档数据，执行用例",
+  "descriptionHtml" : "<p>读取测试文档数据，执行用例</p>\n",
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'verifyList' is not defined",
+  "statusTrace" : "self = <test_ewallet_deposit.Test_Ewallet_deposit object at 0x0875E700>\n\n    def teardown(self):\n        if self.data_index==testdata.index(testdata[-1]):\n            verifyList.quitbrowser()\n        else:\n>           verifyList.logoutbos()\nE           NameError: name 'verifyList' is not defined\n\ndemo\\E-wallet_deposit\\e-wallet_deposit_bin\\test_ewallet_deposit.py:49: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "读取测试文档数据，执行用例",
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'verifyList' is not defined",
+    "statusTrace" : "self = <test_ewallet_deposit.Test_Ewallet_deposit object at 0x0875E700>\n\n    def teardown(self):\n        if self.data_index==testdata.index(testdata[-1]):\n            verifyList.quitbrowser()\n        else:\n>           verifyList.logoutbos()\nE           NameError: name 'verifyList' is not defined\n\ndemo\\E-wallet_deposit\\e-wallet_deposit_bin\\test_ewallet_deposit.py:49: NameError",
+    "steps" : [ {
+      "name" : "获取当前测试数据下标",
+      "time" : {
+        "start" : 1654854165581,
+        "stop" : 1654854165581,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "从bos登录cp",
+      "time" : {
+        "start" : 1654854165581,
+        "stop" : 1654854198457,
+        "duration" : 32876
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "判断当前交易账号是否存在电子钱包入金方式",
+      "time" : {
+        "start" : 1654854198457,
+        "stop" : 1654854321583,
+        "duration" : 123126
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "存在电子钱包入金方式",
+        "time" : {
+          "start" : 1654854199156,
+          "stop" : 1654854321583,
+          "duration" : 122427
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "随机选择一种渠道入金",
+          "time" : {
+            "start" : 1654854199168,
+            "stop" : 1654854229427,
+            "duration" : 30259
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "b216a323101b4f9d",
+            "name" : "渠道入金成功",
+            "source" : "b216a323101b4f9d.png",
+            "type" : "image/png",
+            "size" : 367648
+          } ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1,
+          "hasContent" : true,
+          "stepsCount" : 0
+        }, {
+          "name" : "bos审核入金",
+          "time" : {
+            "start" : 1654854229428,
+            "stop" : 1654854318241,
+            "duration" : 88813
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "ee768bb3817baea0",
+            "name" : "BOS审核入金成功",
+            "source" : "ee768bb3817baea0.png",
+            "type" : "image/png",
+            "size" : 107469
+          } ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1,
+          "hasContent" : true,
+          "stepsCount" : 0
+        }, {
+          "name" : "断言是否审核成功",
+          "time" : {
+            "start" : 1654854318241,
+            "stop" : 1654854321583,
+            "duration" : 3342
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ {
+          "uid" : "295698a21e1e2a1c",
+          "name" : "入金方式",
+          "source" : "295698a21e1e2a1c.png",
+          "type" : "image/png",
+          "size" : 397347
+        } ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 3,
+        "hasContent" : true,
+        "stepsCount" : 3
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3,
+      "hasContent" : true,
+      "stepsCount" : 4
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 3,
+    "hasContent" : true,
+    "stepsCount" : 7
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用例执行"
+  }, {
+    "name" : "feature",
+    "value" : "随机选择电子钱包中的一种渠道入金"
+  }, {
+    "name" : "parentSuite",
+    "value" : "demo.E-wallet_deposit.e-wallet_deposit_bin"
+  }, {
+    "name" : "suite",
+    "value" : "test_ewallet_deposit"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Ewallet_deposit"
+  }, {
+    "name" : "host",
+    "value" : "SZ01-QA-G-10"
+  }, {
+    "name" : "thread",
+    "value" : "14340-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "demo.E-wallet_deposit.e-wallet_deposit_bin.test_ewallet_deposit"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6ca3d61674a952eb.json",
+  "parameterValues" : [ "{'主账号': 1000005349.0, '交易账号': 66200218.0, '入金金额': 66.0}" ]
+}

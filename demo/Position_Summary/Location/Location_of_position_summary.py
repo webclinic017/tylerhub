@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2022-04-28 16:17:30
-LastEditTime: 2022-05-31 11:38:53
+LastEditTime: 2022-06-09 15:53:42
 LastEditors: Tyler Tang tyler.tang@6317.io
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \tylerhub\demo\Position_Summary\Location\Location_of_position_summary.py
@@ -124,7 +124,7 @@ class Location_position_summary(object):
     def format_time(self):
         try:
             #随机选择时间random.randint(0, 6)
-            self.index=0
+            self.index=random.randint(0, 6)
             #今天
             self.nowTime=datetime.datetime.now()
             #本月第一天

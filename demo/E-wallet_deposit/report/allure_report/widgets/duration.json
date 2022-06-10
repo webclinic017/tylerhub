@@ -1,0 +1,21 @@
+[ {
+  "uid" : "3f2399cbd740d62",
+  "name" : "ewallet入金测试报告",
+  "time" : {
+    "start" : 1654855229385,
+    "stop" : 1654855353587,
+    "duration" : 124202
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "84f6a8a79fe72962",
+  "name" : "ewallet入金测试报告",
+  "time" : {
+    "start" : 1654855021277,
+    "stop" : 1654855146147,
+    "duration" : 124870
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

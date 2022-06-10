@@ -1,0 +1,530 @@
+!!--!!clear_error - 2022-06-10 16:07:39,456 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:07:45,496 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-10 16:07:45,500 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 16:07:45,503 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!clear_error - 2022-06-10 16:07:51,203 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!clear_error - 2022-06-10 16:07:51,203 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:07:57,244 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-06-10 16:07:57,244 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-10 16:07:57,250 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:07:57,250 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 16:07:57,253 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_input - 2022-06-10 16:07:57,253 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!clear_error - 2022-06-10 16:09:02,862 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:09:08,910 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-10 16:09:08,913 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 16:09:08,916 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!clear_error - 2022-06-10 16:09:14,466 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!clear_error - 2022-06-10 16:09:14,466 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:09:20,545 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-06-10 16:09:20,545 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-10 16:09:20,551 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:09:20,551 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 16:09:20,558 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_input - 2022-06-10 16:09:20,558 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:09:26,625 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-06-10 16:09:26,625 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-06-10 16:09:26,625 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-10 16:09:26,638 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:09:26,638 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:09:26,638 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-10 16:09:26,667 - browser_actions - [browser_actions.py-->line:317] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_elements - 2022-06-10 16:30:15,510 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 16:30:15,523 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 16:30:15,545 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:30:16,063 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 16:30:16,067 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 16:30:16,070 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2022-06-10 16:30:16,581 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_elements - 2022-06-10 16:30:16,581 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 16:30:16,587 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2022-06-10 16:30:16,587 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 16:30:16,591 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!clear_error - 2022-06-10 16:30:16,591 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:30:17,115 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 16:30:17,115 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 16:30:17,121 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:30:17,121 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 16:30:17,124 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_input - 2022-06-10 16:30:17,124 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:30:17,635 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 16:30:17,635 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 16:30:17,635 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 16:30:17,643 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:30:17,643 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:30:17,643 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-10 16:30:17,647 - browser_actions - [browser_actions.py-->line:317] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_elements - 2022-06-10 16:33:43,626 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 16:33:43,637 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 16:33:43,641 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:33:44,156 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 16:33:44,161 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 16:33:44,165 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2022-06-10 16:33:44,687 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_elements - 2022-06-10 16:33:44,687 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 16:33:44,693 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2022-06-10 16:33:44,693 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 16:33:44,696 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!clear_error - 2022-06-10 16:33:44,696 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:33:45,204 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 16:33:45,204 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 16:33:45,209 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:33:45,209 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 16:33:45,213 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_input - 2022-06-10 16:33:45,213 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:33:45,737 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 16:33:45,737 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 16:33:45,737 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 16:33:45,744 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:33:45,744 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:33:45,744 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-10 16:33:45,748 - browser_actions - [browser_actions.py-->line:317] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_elements - 2022-06-10 16:47:51,023 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 16:47:51,028 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 16:47:51,030 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:47:51,547 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 16:47:51,550 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 16:47:51,552 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2022-06-10 16:47:52,067 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_elements - 2022-06-10 16:47:52,067 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 16:47:52,073 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2022-06-10 16:47:52,073 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 16:47:52,075 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!clear_error - 2022-06-10 16:47:52,075 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:47:52,611 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 16:47:52,611 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 16:47:52,616 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:47:52,616 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 16:47:52,617 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_input - 2022-06-10 16:47:52,617 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:47:53,129 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 16:47:53,129 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 16:47:53,129 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 16:47:53,135 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:47:53,135 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:47:53,135 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-10 16:47:53,139 - browser_actions - [browser_actions.py-->line:317] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-06-10 16:47:59,343 - browser_actions - [browser_actions.py-->line:317] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_click - 2022-06-10 16:47:59,343 - browser_actions - [browser_actions.py-->line:317] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_elements - 2022-06-10 16:50:51,003 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 16:50:51,010 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 16:50:51,013 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:50:51,534 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 16:50:51,539 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 16:50:51,542 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2022-06-10 16:50:52,066 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_elements - 2022-06-10 16:50:52,066 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 16:50:52,074 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2022-06-10 16:50:52,074 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 16:50:52,078 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!clear_error - 2022-06-10 16:50:52,078 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:50:52,597 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 16:50:52,597 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 16:50:52,604 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:50:52,604 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 16:50:52,610 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_input - 2022-06-10 16:50:52,610 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 16:50:53,280 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 16:50:53,280 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 16:50:53,280 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 16:50:53,295 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:50:53,295 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 16:50:53,295 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-10 16:50:53,302 - browser_actions - [browser_actions.py-->line:317] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-06-10 16:50:59,562 - browser_actions - [browser_actions.py-->line:317] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_click - 2022-06-10 16:50:59,562 - browser_actions - [browser_actions.py-->line:317] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_elements - 2022-06-10 17:03:42,293 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 17:03:42,317 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 17:03:42,324 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 17:03:42,855 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 17:03:42,858 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 17:03:42,861 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2022-06-10 17:03:43,370 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_elements - 2022-06-10 17:03:43,370 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 17:03:43,375 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2022-06-10 17:03:43,375 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 17:03:43,378 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!clear_error - 2022-06-10 17:03:43,378 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 17:03:43,900 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:03:43,900 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 17:03:43,906 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:03:43,906 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 17:03:43,909 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_input - 2022-06-10 17:03:43,909 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 17:03:44,418 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:03:44,418 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:03:44,418 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 17:03:44,424 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:03:44,424 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:03:44,424 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-10 17:03:44,428 - browser_actions - [browser_actions.py-->line:317] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-06-10 17:03:50,217 - browser_actions - [browser_actions.py-->line:317] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_click - 2022-06-10 17:03:50,217 - browser_actions - [browser_actions.py-->line:317] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:17:30,179 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-10 17:17:30,184 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-06-10 17:17:30,188 - browser_actions - [browser_actions.py-->line:301] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!find_elements - 2022-06-10 17:17:34,385 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 17:17:34,584 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 17:17:34,596 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 17:17:35,113 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:17:35,113 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 17:17:35,121 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:17:35,121 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 17:17:35,124 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2022-06-10 17:17:35,634 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_elements - 2022-06-10 17:17:35,634 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 17:17:35,639 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2022-06-10 17:17:35,639 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 17:17:35,642 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!clear_error - 2022-06-10 17:17:35,642 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 17:17:36,195 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:17:36,195 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:17:36,195 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 17:17:36,201 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:17:36,201 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:17:36,201 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 17:17:36,206 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_input - 2022-06-10 17:17:36,206 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 17:17:36,714 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:17:36,714 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:17:36,714 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:17:36,714 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 17:17:36,721 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:17:36,721 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:17:36,721 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:17:36,721 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-10 17:17:36,725 - browser_actions - [browser_actions.py-->line:317] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-06-10 17:17:43,078 - browser_actions - [browser_actions.py-->line:317] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_click - 2022-06-10 17:17:43,078 - browser_actions - [browser_actions.py-->line:317] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_elements - 2022-06-10 17:45:23,278 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 17:45:23,386 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 17:45:23,424 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 17:45:23,946 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 17:45:23,950 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 17:45:23,952 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2022-06-10 17:45:24,466 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_elements - 2022-06-10 17:45:24,466 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 17:45:24,471 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2022-06-10 17:45:24,471 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 17:45:24,474 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!clear_error - 2022-06-10 17:45:24,474 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 17:45:24,986 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:45:24,986 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 17:45:24,990 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:45:24,990 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 17:45:24,994 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_input - 2022-06-10 17:45:24,994 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 17:45:25,691 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:45:25,691 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:45:25,691 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 17:45:25,698 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:45:25,698 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:45:25,698 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-10 17:45:25,701 - browser_actions - [browser_actions.py-->line:317] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!display_click - 2022-06-10 17:45:32,086 - browser_actions - [browser_actions.py-->line:317] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_click - 2022-06-10 17:45:32,086 - browser_actions - [browser_actions.py-->line:317] - ERROR: Message: element not interactable
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:45:52,506 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-06-10 17:45:52,506 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-06-10 17:45:52,506 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-06-10 17:45:52,506 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-10 17:45:52,930 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:45:52,930 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:45:52,930 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:45:52,930 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!get_attributes - 2022-06-10 17:45:53,061 - browser_actions - [browser_actions.py-->line:211] - ERROR: 'NoneType' object has no attribute 'get_attribute'
+!!--!!find_elements - 2022-06-10 17:49:56,825 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 17:49:56,829 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 17:49:56,831 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 17:49:57,342 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 17:49:57,345 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 17:49:57,347 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!find_elements - 2022-06-10 17:49:57,859 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_elements - 2022-06-10 17:49:57,859 - browser_actions - [browser_actions.py-->line:141] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!find_element - 2022-06-10 17:49:57,863 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!find_element - 2022-06-10 17:49:57,863 - browser_actions - [browser_actions.py-->line:188] - ERROR: object of type 'NoneType' has no len()
+!!--!!clear_error - 2022-06-10 17:49:57,866 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!clear_error - 2022-06-10 17:49:57,866 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 17:49:58,378 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:49:58,378 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 17:49:58,382 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:49:58,382 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_input - 2022-06-10 17:49:58,385 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_input - 2022-06-10 17:49:58,385 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 17:49:58,961 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:49:58,961 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!display_finds_element - 2022-06-10 17:49:58,961 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.63)
+
+!!--!!nosuch_elements - 2022-06-10 17:49:58,966 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:49:58,966 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:49:58,966 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-10 17:49:58,969 - browser_actions - [browser_actions.py-->line:317] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!find_element - 2022-06-10 17:54:23,276 - browser_actions - [browser_actions.py-->line:188] - ERROR: list index out of range
+!!--!!clear_error - 2022-06-10 17:54:23,283 - browser_actions - [browser_actions.py-->line:287] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!nosuch_elements - 2022-06-10 17:54:23,804 - browser_actions - [browser_actions.py-->line:201] - ERROR: list index out of range
+!!--!!display_input - 2022-06-10 17:54:23,807 - browser_actions - [browser_actions.py-->line:277] - ERROR: 'NoneType' object has no attribute 'send_keys'
+!!--!!display_finds_element - 2022-06-10 17:54:29,845 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-10 17:54:29,849 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-10 17:54:29,849 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_click - 2022-06-10 17:54:29,855 - browser_actions - [browser_actions.py-->line:317] - ERROR: 'NoneType' object has no attribute 'click'
+!!--!!clear_error - 2022-06-10 18:10:51,577 - browser_actions - [browser_actions.py-->line:287] - ERROR: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=102.0.5005.63)
+
