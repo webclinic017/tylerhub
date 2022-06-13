@@ -1,0 +1,16 @@
+!!--!!display_finds_element - 2022-06-13 16:17:15,412 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-13 16:17:15,416 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-06-13 16:17:15,418 - browser_actions - [browser_actions.py-->line:301] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2022-06-13 16:29:48,970 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-13 16:29:48,974 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-06-13 16:29:48,980 - browser_actions - [browser_actions.py-->line:301] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_finds_element - 2022-06-13 16:30:01,137 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!display_finds_element - 2022-06-13 16:30:01,137 - browser_actions - [browser_actions.py-->line:174] - ERROR: 元素不存在或者不可见：Message: 
+
+!!--!!nosuch_elements - 2022-06-13 16:30:01,141 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!nosuch_elements - 2022-06-13 16:30:01,141 - browser_actions - [browser_actions.py-->line:201] - ERROR: object of type 'NoneType' has no len()
+!!--!!display_get_text - 2022-06-13 16:30:01,145 - browser_actions - [browser_actions.py-->line:301] - ERROR: 'NoneType' object has no attribute 'text'
+!!--!!display_get_text - 2022-06-13 16:30:01,145 - browser_actions - [browser_actions.py-->line:301] - ERROR: 'NoneType' object has no attribute 'text'

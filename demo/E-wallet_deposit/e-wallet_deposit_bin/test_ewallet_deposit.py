@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-28 17:32:52
-LastEditTime: 2022-06-10 18:06:33
+LastEditTime: 2022-06-13 16:56:46
 LastEditors: Tyler Tang tyler.tang@6317.io
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\E-wallet_deposit\e-wallet_deposit_bin\test_ewallet_deposti.py
@@ -75,7 +75,7 @@ class Test_Ewallet_deposit():
 
                         with open(ewallet.depositSuccessPicPath,'rb') as f: #渠道入金成功截图
                             comtent=f.read()
-                        allure.attach(comtent,'渠道入金成功',allure.attachment_type.PNG)
+                        allure.attach(comtent,'渠道{}入金成功'.format(ewallet.ewalletType),allure.attachment_type.PNG)
                     
                     with allure.step('bos审核入金'):
                         ewallet.review_deposit(int(data['交易账号']),'sit',conFig.get_value('bos_login', 'username2'),conFig.get_value('bos_login', 'password'))

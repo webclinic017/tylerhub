@@ -1,7 +1,7 @@
 '''
 Author: tyler
 Date: 2021-05-28 17:29:27
-LastEditTime: 2022-06-10 18:06:29
+LastEditTime: 2022-06-13 16:52:55
 LastEditors: Tyler Tang tyler.tang@6317.io
 Description: In User Settings Edit
 FilePath: \tylerhub\demo\E-wallet_deposit\location_ewallet\location_deposti_of_ewallet.py
@@ -149,8 +149,8 @@ class Ewallet_deposti():
     def deposit_ewallet(self,tradaccount,amount):
         try:
             while True:
-                #随机选择一种渠道入金random.randint(1,self.ewalletLen)
-                self.index=4
+                #随机选择一种渠道入金
+                self.index=random.randint(1,self.ewalletLen)
                 self.ewalletType=common.display_get_text('xpath,/html/body/div[1]/div[3]/div[2]\
                     /div[2]/div/div[2]/div[1]/div[2]/div/div[1]/div/div/div/div[2]/div[2]/div/div[{}]/div[2]/p[1]'.format(self.index))
                 print('选择{}渠道入金'.format(self.ewalletType))
@@ -256,6 +256,16 @@ class Ewallet_deposti():
                 else:
                     break
             #转未处理
+            while True:
+                if common.ele_is_displayed('xpath,//*[@id="app"]/div/div/div[4]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[3]\
+                    /div/div[3]/div/div/div[1]/div[2]/table/tbody/tr[1]/td[3]/div/div/div/span', 1):
+                    if common.display_get_text('xpath,//*[@id="app"]/div/div/div[4]/div/div/div/div/div[2]/div/div[2]/div[1]/div/\
+                        div[3]/div/div[3]/div/div/div[1]/div[2]/table/tbody/tr[1]/td[3]/div/div/div/span') == '验证中':
+                        break
+                    else:
+                        continue
+                else:
+                    continue    
             time.sleep(1)
             common.display_click('css,.ivu-table-tbody > tr .ivu-checkbox-input')
             time.sleep(1)
@@ -292,6 +302,16 @@ class Ewallet_deposti():
                 else:
                     break
             #转成功
+            while True:
+                if common.ele_is_displayed('xpath,//*[@id="app"]/div/div/div[4]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[3]\
+                    /div/div[3]/div/div/div[1]/div[2]/table/tbody/tr[1]/td[3]/div/div/div/span', 1):
+                    if common.display_get_text('xpath,//*[@id="app"]/div/div/div[4]/div/div/div/div/div[2]/div/div[2]/div[1]/div/\
+                        div[3]/div/div[3]/div/div/div[1]/div[2]/table/tbody/tr[1]/td[3]/div/div/div/span') == '未处理':
+                        break
+                    else:
+                        continue
+                else:
+                    continue  
             common.display_click('css,.ivu-table-tbody > tr .ivu-checkbox-input')
             time.sleep(1)
             while True:
@@ -310,7 +330,7 @@ class Ewallet_deposti():
             print(common.display_get_text('css,.ivu-modal-confirm-body > div'))
             #点击确定
             common.display_click('css,.ivu-modal-confirm-footer span')
-            time.sleep(1)
+            time.sleep(2)
             #获取审核成功后的文本
             self.reviewSuccessText=common.display_get_text('xpath,//*[@id="app"]/div/div/div[4]/div/div/div/div/div[2]/div/div[2]/div[1]/div\
                 /div[3]/div/div[3]/div/div/div[1]/div[2]/table/tbody/tr[1]/td[3]/div/div/div/span')
